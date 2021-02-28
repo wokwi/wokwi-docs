@@ -28,8 +28,21 @@ file ("wokwi").
 
 ## Parts
 
-The `"parts"` section defines the list of components in the simulation, their
-unique identifier, position on the screen, and their properties.
+The `"parts"` section defines the list of components in the simulation.
+It's an array of objects with the following keys:
+
+| Name   | Type    | Description                                     |
+| ------ | ------- | ----------------------------------------------- |
+| id     | string  | the unique identifier of the part (e.g. "led1") |
+| type   | string  | the type of the part (e.g. "wokwi-led")         |
+| left   | number  | x screen coordinate (in pixels)                 |
+| top    | number  | y screen coordinate (in pixels)                 |
+| attrs  | object  | part attributes (e.g. "color" for wokwi-led)    |
+| rotate | number  | rotation in degress (e.g. 90)                   |
+| hide   | boolean | if true, the part won't be visible              |
+
+`id` and `type` are required, the other fields are optional.
+
 For example, here's how you define a red LED called `"led1"` at position (x=100, y=50):
 
 ```json
