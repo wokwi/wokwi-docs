@@ -19,6 +19,16 @@
     "react": "^16.8.4",
     "react-dom": "^16.8.4"
   },
+  "devDependencies": {
+    "husky": "^5.1.1",
+    "prettier": "^2.2.1",
+    "pretty-quick": "^3.1.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  },
   "browserslist": {
     "production": [
       ">0.5%",
