@@ -14,6 +14,7 @@ module.exports = {
       logo: {
         alt: 'Wokwi Logo',
         src: 'img/logo.svg',
+        href: 'https://wokwi.com',
       },
       items: [
         {
@@ -25,6 +26,12 @@ module.exports = {
         {
           href: 'https://blog.wokwi.com',
           label: 'Blog',
+          position: 'right',
+        },
+        {
+          href: 'https://wokwi.com',
+          label: 'Simulator',
+          className: 'simulator-link',
           position: 'right',
         },
       ],
