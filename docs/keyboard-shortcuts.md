@@ -8,8 +8,6 @@ sidebar_label: Keyboard Shortcuts
 | Description                    | Windows / Linux | Mac     |
 | ------------------------------ | --------------- | ------- |
 | Start simulation               | Ctrl + Enter    | ⌘ Enter |
-| Start simulation               | Ctrl + U        | ⌘ U     |
-| Start simulation               | Ctrl + R        | ⌘ R     |
 | Save project                   | Ctrl + S        | ⌘ S     |
 | Auto format code               | Alt + Shift + F | ⌥ ⇧ F   |
 | Trigger auto complete          | Ctrl + Space    | ⌘ Space |
