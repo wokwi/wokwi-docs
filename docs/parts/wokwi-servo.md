@@ -24,12 +24,12 @@ A standard Micro Servo Motor
 
 ### Examples
 
-| Result                           | Attrs                     |
-| -------------------------------- | ------------------------- |
-| <wokwi-servo horn="single" />    | `{ "horn": "single" }`    |
-| <wokwi-servo hornColor="#008" /> | `{ "hornColor": "#008" }` |
-| <wokwi-servo horn="double" />    | `{ "horn": "double" }`    |
-| <wokwi-servo horn="cross" />     | `{ "horn": "cross" }`     |
+| Result                           | Attrs                        |
+| -------------------------------- | ---------------------------- |
+| <wokwi-servo horn="single" />    | `{ "horn": "single" }`       |
+| <wokwi-servo hornColor="#008" /> | `{ "hornColor": "#000088" }` |
+| <wokwi-servo horn="double" />    | `{ "horn": "double" }`       |
+| <wokwi-servo horn="cross" />     | `{ "horn": "cross" }`        |
 
 ## Simulator examples
 
