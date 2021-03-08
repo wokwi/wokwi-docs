@@ -1,7 +1,7 @@
 module.exports = {
   main: {
     'Getting Started': ['welcome'],
-    'Code Editor': ['keyboard-shortcuts'],
+    'Guides': ['keyboard-shortcuts', 'gdb-debugging'],
     'Diagram File Format': ['diagram-format'],
   },
 };
