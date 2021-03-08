@@ -28,11 +28,11 @@ and run it until the beginning of `setup()`:
 
 ```
 (gdb) tbreak setup
-Temporary breakpoint 1 at 0x2ca: file /tmp/build-pamOkh/sketch/sketch.ino, line 28.
+Temporary breakpoint 1 at 0x2ca: file sketch.ino, line 28.
 (gdb) c
 Continuing.
 
-Temporary breakpoint 1, setup () at /tmp/build-pamOkh/sketch/sketch.ino:28
+Temporary breakpoint 1, setup () at sketch.ino:28
 28        pinMode(LED_BUILTIN, OUTPUT);
 (gdb)
 ```
