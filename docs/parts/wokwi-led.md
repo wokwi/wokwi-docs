@@ -1,5 +1,5 @@
 ---
-title: wokwi-led Part
+title: wokwi-led Reference
 sidebar_label: wokwi-led
 ---
 
