@@ -8,6 +8,12 @@ module.exports = {
   favicon: 'img/favicon.ico',
   organizationName: 'wokwi',
   projectName: 'wokwi-docs',
+  scripts: [
+    {
+      src: 'https://unpkg.com/@wokwi/elements@0.31.1/dist/wokwi-elements.bundle.min.js',
+      async: true,
+    },
+  ],
   themeConfig: {
     navbar: {
       title: 'Wokwi',

@@ -5,6 +5,8 @@ sidebar_label: wokwi-servo
 
 A standard Micro Servo Motor
 
+<wokwi-servo />
+
 ## Pin names
 
 | Name | Description           |
@@ -19,6 +21,15 @@ A standard Micro Servo Motor
 | --------- | ---------------------------------------- | ------------- |
 | horn      | Horn type: "single", "double" or "cross" | "single"      |
 | hornColor | The color of the servo's horn            | "#ccc"        |
+
+### Examples
+
+| Result                           | Attrs                     |
+| -------------------------------- | ------------------------- |
+| <wokwi-servo horn="single" />    | `{ "horn": "single" }`    |
+| <wokwi-servo hornColor="#008" /> | `{ "hornColor": "#008" }` |
+| <wokwi-servo horn="double" />    | `{ "horn": "double" }`    |
+| <wokwi-servo horn="cross" />     | `{ "horn": "cross" }`     |
 
 ## Simulator examples
 
