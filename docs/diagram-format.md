@@ -84,7 +84,7 @@ For example, the following definition will connect the A (anode) pin of `led1`
 to pin 13 of the `uno` part:
 
 ```json
-  ["led1:A", "uno:13", "black", []],
+  ["led1:A", "uno:13", "green", []],
 ```
 
 You can find the name of a component pin by moving the mouse over it.
