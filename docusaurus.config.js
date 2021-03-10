@@ -10,7 +10,7 @@ module.exports = {
   projectName: 'wokwi-docs',
   scripts: [
     {
-      src: 'https://unpkg.com/@wokwi/elements@0.31.1/dist/wokwi-elements.bundle.min.js',
+      src: 'https://unpkg.com/@wokwi/elements@0.31.2/dist/wokwi-elements.bundle.min.js',
       async: true,
     },
   ],
@@ -32,6 +32,10 @@ module.exports = {
           to: '/',
           activeBasePath: '/',
           label: 'Docs',
+          position: 'left',
+        },
+        {
+          type: 'localeDropdown',
           position: 'left',
         },
         {
@@ -113,4 +117,16 @@ module.exports = {
       },
     ],
   ],
+  i18n: {
+    defaultLocale: 'en',
+    locales: ['en', 'pt-BR'],
+    localeConfigs: {
+      en: {
+        label: 'English',
+      },
+      'pt-BR': {
+        label: 'Português (Brasil)',
+      },
+    },
+  },
 };

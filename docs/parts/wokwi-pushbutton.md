@@ -27,10 +27,11 @@ that pin as `INPUT_PULLUP`, and the other contact (e.g. `2.r` or `2.l`) to the g
 
 ## Attributes
 
-| Name  | Description                  | Default value |
-| ----- | ---------------------------- | ------------- |
-| color | The color of the push button | "red"         |
-| key   | Keyboard shortcut for button |               |
+| Name  | Description                        | Default value |
+| ----- | ---------------------------------- | ------------- |
+| color | The color of the push button       | "red"         |
+| label | Text that appears below the button | ""            |
+| key   | Keyboard shortcut for button       |               |
 
 ### Defining a keyboard shortcut
 
@@ -52,10 +53,11 @@ Note the the special key names are case sensitive - so "Escape" will work, "esca
 
 ### Examples
 
-| Result                               | Attrs                    |
-| ------------------------------------ | ------------------------ |
-| <wokwi-pushbutton color="green" />   | `{ "color": "green" }`   |
-| <wokwi-pushbutton color="#FFFF00" /> | `{ "color": "#FFFF00" }` |
+| Result                                | Attrs                     |
+| ------------------------------------- | ------------------------- |
+| <wokwi-pushbutton color="green" />    | `{ "color": "green" }`    |
+| <wokwi-pushbutton color="#FFFF00" />  | `{ "color": "#FFFF00" }`  |
+| <wokwi-pushbutton label="Push me!" /> | `{ "label": "Push me!" }` |
 
 ## Simulator examples
 
