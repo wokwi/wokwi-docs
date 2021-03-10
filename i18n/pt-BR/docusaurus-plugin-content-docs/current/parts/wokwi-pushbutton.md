@@ -27,10 +27,11 @@ aquele pino como `INPUT_PULLUP`, e o outro contato (ex: `2.r` ou `2.l`) para o t
 
 ## Atributos
 
-| Name  | Descrição                    | Valor padrão  |
-| ----- | ---------------------------- | ------------- |
-| color | A cor do botão momentâneo    | "red"         |
-| key   | Tecla de atalho para o botão |               |
+| Name  | Descrição                          | Valor padrão  |
+| ----- | ---------------------------------- | ------------- |
+| color | A cor do botão momentâneo          | "red"         |
+| label | Texto que aparece abaixo do botão  | ""            |
+| key   | Tecla de atalho para o botão       |               |
 
 ### Definindo uma tecla de atalho
 
@@ -52,10 +53,11 @@ Observe que o nome de chaves especiais diferenciam maiúsculas de minúsculas - 
 
 ### Exemplos
 
-| Resultado                            | Atributos (attrs)        |
-| ------------------------------------ | ------------------------ |
-| <wokwi-pushbutton color="green" />   | `{ "color": "green" }`   |
-| <wokwi-pushbutton color="#FFFF00" /> | `{ "color": "#FFFF00" }` |
+| Resultado                               | Atributos (attrs)           |
+| --------------------------------------- | --------------------------- |
+| <wokwi-pushbutton color="green" />      | `{ "color": "green" }`      |
+| <wokwi-pushbutton color="#FFFF00" />    | `{ "color": "#FFFF00" }`    |
+| <wokwi-pushbutton label="Pressione!" /> | `{ "label": "Pressione!" }` |
 
 ## Exemplos no Simulador
 
