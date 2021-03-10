@@ -1,0 +1,18 @@
+{
+  "version.label": {
+    "message": "Próximo",
+    "description": "O rótulo para a versão atual"
+  },
+  "sidebar.main.category.Getting Started": {
+    "message": "Começando",
+    "description": "O rótulo da categoria Introdução na barra lateral principal"
+  },
+  "sidebar.main.category.Guides": {
+    "message": "Guias",
+    "description": "O rótulo para a categoria Guias na barra lateral principal"
+  },
+  "sidebar.main.category.Diagram Reference": {
+    "message": "Referência do Diagrama",
+    "description": "O rótulo para a categoria Referência de Diagrama na barra lateral principal"
+  }
+}

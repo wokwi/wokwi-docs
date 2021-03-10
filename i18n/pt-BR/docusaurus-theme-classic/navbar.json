@@ -1,0 +1,18 @@
+{
+  "title": {
+    "message": "Wokwi",
+    "description": "O título na barra de navegação"
+  },
+  "item.label.Docs": {
+    "message": "Docs",
+    "description": "Item da barra de navegação com rótulo Documentos"
+  },
+  "item.label.Blog": {
+    "message": "Blog",
+    "description": "Item da barra de navegação com rótulo Blog"
+  },
+  "item.label.Simulator": {
+    "message": "Simulador",
+    "description": "Item da barra de navegação com rótulo Simulador"
+  }
+}
