@@ -117,3 +117,10 @@ move 10 pixels right of the target pin, then "v-15" will move 15 pixels up.
 
 Finally, the simulator will connect the two ends of the wire with a combination
 of horizontal and a vertical wire that cover the remaining distance, as necessary.
+
+### Wire placement animation
+
+If you are a visual learner, you may find the following GIF animation useful.
+The animation was created by Steve Sigma.
+
+![diagram.json wire placement mini language](diagram-format-connections.gif)
