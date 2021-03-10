@@ -1,0 +1,198 @@
+{
+  "theme.NotFound.title": {
+    "message": "Página não encontrada",
+    "description": "O título da página 404"
+  },
+  "theme.NotFound.p1": {
+    "message": "Não foi possível encontrar o que você estava procurando.",
+    "description": "O primeiro parágrafo da página 404"
+  },
+  "theme.NotFound.p2": {
+    "message": "Entre em contato com o proprietário do site que vinculou a URL original e informe a ele que o link está quebrado.",
+    "description": "O segundo parágrafo da página 404"
+  },
+  "theme.AnnouncementBar.closeButtonAriaLabel": {
+    "message": "Fechar",
+    "description": "O rótulo ARIA para o botão Fechar da barra de anúncios"
+  },
+  "theme.blog.post.readingTime.plurals": {
+    "message": "Um minuto lido|{readingTime} minutos lidos",
+    "description": "Rótulo pluralizado para \"{readingTime} minutos lidos\". Use o máximo de formas plurais (separado por \"|\") como seu suporte de idioma (veja https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.tags.tagsListLabel": {
+    "message": "Tags:",
+    "description": "O rótulo ao lado de uma lista de tags"
+  },
+  "theme.blog.post.readMore": {
+    "message": "Leia Mais",
+    "description": "O rótulo usado nos trechos do item da postagem do blog para vincular a postagens completas do blog"
+  },
+  "theme.blog.paginator.navAriaLabel": {
+    "message": "Navegação da página da lista de blogs",
+    "description": "O rótulo ARIA para a paginação do blog"
+  },
+  "theme.blog.paginator.newerEntries": {
+    "message": "Novas Entradas",
+    "description": "O rótulo usado para navegar para a página de postagens mais recentes do blog (página anterior)"
+  },
+  "theme.blog.paginator.olderEntries": {
+    "message": "Entradas Antigas",
+    "description": "O rótulo usado para navegar para a página de postagens mais antigas do blog (próxima página)"
+  },
+  "theme.blog.post.paginator.navAriaLabel": {
+    "message": "Navegação na página de postagem do blog",
+    "description": "O rótulo ARIA para a paginação das postagens do blog"
+  },
+  "theme.blog.post.paginator.newerPost": {
+    "message": "Postagem mais recente",
+    "description": "O rótulo do botão de postagem do blog para navegar para a postagem mais recente/anterior"
+  },
+  "theme.blog.post.paginator.olderPost": {
+    "message": "Postagem mais antiga",
+    "description": "O rótulo do botão de postagem do blog para navegar para a próxima postagem/anterior"
+  },
+  "theme.tags.tagsPageTitle": {
+    "message": "Tags",
+    "description": "O título da página da lista de tags"
+  },
+  "theme.blog.post.plurals": {
+    "message": "Uma postagem|{count} postagens",
+    "description": "Rótulo pluralizado para \"{count} postagens\". Use o máximo de formas plurais (separado por \"|\") como seu suporte de idioma (veja https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.blog.tagTitle": {
+    "message": "{nPosts} tagged with \"{tagName}\"",
+    "description": "The title of the page for a blog tag"
+  },
+  "theme.tags.tagsPageLink": {
+    "message": "Exibir todas as tags",
+    "description": "O rótulo do link que direciona a página da lista de tags"
+  },
+  "theme.CodeBlock.copyButtonAriaLabel": {
+    "message": "Copiar o código para a área de transferência",
+    "description": "O rótulo ARIA para copiar o botão de blocos de código"
+  },
+  "theme.CodeBlock.copied": {
+    "message": "Copiado",
+    "description": "O rótulo do botão copiado em blocos de código"
+  },
+  "theme.CodeBlock.copy": {
+    "message": "Copiar",
+    "description": "O rótulo do botão de cópia em blocos de código"
+  },
+  "theme.docs.sidebar.expandButtonTitle": {
+    "message": "Expandir barra lateral",
+    "description": "O rótulo ARIA e o atributo de título para o botão de expansão da barra lateral de documentos"
+  },
+  "theme.docs.sidebar.expandButtonAriaLabel": {
+    "message": "Expandir barra lateral",
+    "description": "O rótulo ARIA e o atributo de título para o botão de expansão da barra lateral de documentos"
+  },
+  "theme.docs.paginator.navAriaLabel": {
+    "message": "Navegação nas páginas do Documentos",
+    "description": "O rótulo ARIA para a paginação de documentos"
+  },
+  "theme.docs.paginator.previous": {
+    "message": "Anterior",
+    "description": "O rótulo usado para navegar para o documento anterior"
+  },
+  "theme.docs.paginator.next": {
+    "message": "Próximo",
+    "description": "O rótulo usado para navegar para o próximo documento"
+  },
+  "theme.docs.sidebar.responsiveCloseButtonLabel": {
+    "message": "Fechar menu",
+    "description": "O rótulo ARIA para o botão Fechar da barra lateral de documentos móveis"
+  },
+  "theme.docs.sidebar.responsiveOpenButtonLabel": {
+    "message": "Abrir menu",
+    "description": "O rótulo ARIA para o botão abrir da barra lateral de documentos móveis"
+  },
+  "theme.docs.sidebar.collapseButtonTitle": {
+    "message": "Recolher barra lateral",
+    "description": "O atributo de título para o botão de recolhimento da barra lateral de documentos"
+  },
+  "theme.docs.sidebar.collapseButtonAriaLabel": {
+    "message": "Recolher barra lateral",
+    "description": "O atributo de título para o botão de recolhimento da barra lateral de documentos"
+  },
+  "theme.docs.versions.unreleasedVersionLabel": {
+    "message": "Esta é uma documentação não lançada para {siteTitle} na versão {versionLabel}.",
+    "description": "O rótulo usado para informar ao usuário que ele está navegando em uma versão de documento não lançada"
+  },
+  "theme.docs.versions.unmaintainedVersionLabel": {
+    "message": "Esta é a documentação para {siteTitle} {versionLabel}, que não é mais mantido ativamente.",
+    "description": "O rótulo usado para informar ao usuário que ele está navegando em uma versão de documento não mantida"
+  },
+  "theme.docs.versions.latestVersionSuggestionLabel": {
+    "message": "Para documentação atualizada, consulte a {latestVersionLink} ({versionLabel}).",
+    "description": "O rótulo userd para informar ao usuário que ele está navegando em uma versão de documento não mantida"
+  },
+  "theme.docs.versions.latestVersionLinkLabel": {
+    "message": "última versão",
+    "description": "O rótulo usado para o rótulo do link de sugestão da versão mais recente"
+  },
+  "theme.common.editThisPage": {
+    "message": "Editar essa página",
+    "description": "O rótulo do link para editar a página atual"
+  },
+  "theme.common.headingLinkTitle": {
+    "message": "Link direto para o título",
+    "description": "Título para link para cabeçalho"
+  },
+  "theme.lastUpdated.atDate": {
+    "message": " em {date}",
+    "description": "As palavras usadas para descrever em que data uma página foi atualizada pela última vezd"
+  },
+  "theme.lastUpdated.byUser": {
+    "message": " por {user}",
+    "description": "As palavras usadas para descrever por quem a página foi atualizada pela última vez"
+  },
+  "theme.lastUpdated.lastUpdatedAtBy": {
+    "message": "Ultima atualização{atDate}{byUser}",
+    "description": "A frase usada para exibir quando uma página foi atualizada pela última vez e por quem"
+  },
+  "theme.common.skipToMainContent": {
+    "message": "Ir para o conteúdo principal",
+    "description": "O salto para o rótulo de conteúdo usado para acessibilidade, permitindo navegar rapidamente para o conteúdo principal com a navegação do teclado tab/enter"
+  },
+  "theme.SearchPage.documentsFound.plurals": {
+    "message": "Um documento encontrado|{count} documentos encontrados",
+    "description": "Rótulo pluralizado para \"{count} documentos encontrados\". Use o máximo de formas plurais (separados por \"|\") como seu suporte de idioma (veja https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.SearchPage.existingResultsTitle": {
+    "message": "Resultados da busca por \"{query}\"",
+    "description": "O título da página de pesquisa para consulta não vazia"
+  },
+  "theme.SearchPage.emptyResultsTitle": {
+    "message": "Pesquise a documentação",
+    "description": "O título da página de pesquisa para consulta vazia"
+  },
+  "theme.SearchPage.inputPlaceholder": {
+    "message": "Digite sua pesquisa aqui",
+    "description": "O espaço reservado para a entrada da página de pesquisa"
+  },
+  "theme.SearchPage.inputLabel": {
+    "message": "Procurar",
+    "description": "O rótulo ARIA para entrada da página de pesquisa"
+  },
+  "theme.SearchPage.algoliaLabel": {
+    "message": "Pesquisa por Algolia",
+    "description": "O rótulo ARIA para menção Algolia"
+  },
+  "theme.SearchPage.noResultsText": {
+    "message": "Nenhum resultado foi encontrado",
+    "description": "O parágrafo para o resultado da pesquisa vazio"
+  },
+  "theme.SearchPage.fetchingNewResults": {
+    "message": "Buscando novos resultados...",
+    "description": "O parágrafo para buscar novos resultados de pesquisa"
+  },
+  "theme.SearchBar.label": {
+    "message": "Procurar",
+    "description": "O rótulo ARIA e o espaço reservado para o botão de pesquisa"
+  },
+  "theme.Tip.label": {
+    "message": "Dica",
+    "description": "O rótulo ARIA e o espaço reservado para a dica de mensagem"
+  }
+}

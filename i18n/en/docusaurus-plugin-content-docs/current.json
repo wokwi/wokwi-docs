@@ -1,0 +1,18 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.main.category.Getting Started": {
+    "message": "Getting Started",
+    "description": "The label for category Getting Started in sidebar main"
+  },
+  "sidebar.main.category.Guides": {
+    "message": "Guides",
+    "description": "The label for category Guides in sidebar main"
+  },
+  "sidebar.main.category.Diagram Reference": {
+    "message": "Diagram Reference",
+    "description": "The label for category Diagram Reference in sidebar main"
+  }
+}

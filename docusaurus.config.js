@@ -113,4 +113,16 @@ module.exports = {
       },
     ],
   ],
+  i18n: {
+    defaultLocale: 'en',
+    locales: ['en', 'pt-BR'],
+    localeConfigs: {
+      en: {
+        label: 'English',
+      },
+      "pt-BR": {
+        label: 'Português (Brasil)',
+      },
+    },
+  }
 };
