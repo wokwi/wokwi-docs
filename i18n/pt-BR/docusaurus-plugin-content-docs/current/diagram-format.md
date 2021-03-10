@@ -8,8 +8,7 @@ que serão usados para a simulação, suas propriedades e as conexões entre os 
 
 ## Estrutura do arquivo
 
-O arquivo de diagrama é um arquivo JSON com várias seções. A estrutura básica do arquivo é tão
-segue:
+O arquivo de diagrama é um arquivo JSON com várias seções. A estrutura básica do arquivo é a seguinte:
 
 ```json
 {
