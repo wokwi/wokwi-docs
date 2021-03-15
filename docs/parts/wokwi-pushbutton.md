@@ -21,6 +21,10 @@ Each contact has a pin of the left side of the push button, and another pin on t
 So pin `1.l` is the left pin for first contact, and `1.r` is the right pin for the first contact. Since both belong
 to the same contact, they are always connected, even when the button is not pressed.
 
+The following diagram illustrates the connections inside the pushbutton:
+
+![Pushbutton connection diagram](wokwi-pushbutton-diagram.svg)
+
 When working with Arduino, you'd usually connect one contact (e.g. `1.r` or `1.l`) to a digital pin and configure
 that pin as `INPUT_PULLUP`, and the other contact (e.g. `2.r` or `2.l`) to the ground. The digital pin will read
 `LOW` when you press the button, and `HIGH` when the button is not pressed.
