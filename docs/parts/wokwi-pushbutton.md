@@ -27,11 +27,12 @@ that pin as `INPUT_PULLUP`, and the other contact (e.g. `2.r` or `2.l`) to the g
 
 ## Attributes
 
-| Name  | Description                        | Default value |
-| ----- | ---------------------------------- | ------------- |
-| color | The color of the push button       | "red"         |
-| label | Text that appears below the button | ""            |
-| key   | Keyboard shortcut for button       |               |
+| Name   | Description                        | Default value |
+| ------ | ---------------------------------- | ------------- |
+| color  | The color of the push button       | "red"         |
+| label  | Text that appears below the button | ""            |
+| key    | Keyboard shortcut for button       |               |
+| bounce | Set to "0" to disable bouncing     | ""            |
 
 ### Defining a keyboard shortcut
 
@@ -51,6 +52,28 @@ could be blocked by the browser (e.g. "F5" that refreshes the page).
 The full list of key names can be found [here](https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/key/Key_Values).
 Note the the special key names are case sensitive - so "Escape" will work, "escape" won't.
 
+### Bouncing
+
+When you press physical pushbutton, the circuit opens and closes tens or hundreds of times.
+This phenomenon is called Bouncing. This happens because of the mechanical nature of pushbuttons:
+when the metal contacts come together, there's a brief period when the contact isn't perfect, which
+causes a series of rapid open/close transitions.
+
+Wokwi simulates button bouncing by default. You can disable bouncing simulation by setting the
+"bounce" attr to "0":
+
+`{ "bounce": "0" }`
+
+The bouncing simulation follows the behaviour described in "The Art of electronics" by Horowitz & Hill:
+
+> When the switch is closed, the two contacts actually separate and reconnect, typically 10 to 100
+> times over a period of about 1ms.
+
+For example, [this project shows the difference between bouncing and non bouncing button](https://wokwi.com/arduino/projects/288681423014986248). It has two buttons connected to the same Arduino input pin:
+
+- The blue button does not simulate bouncing. Pressing on it once will only print a single pair of "pressed" and "released" messages.
+- The red button simulates bouncing. Pressing on it once will print multiple "pressed" and "released" messages.
+
 ### Examples
 
 | Result                                | Attrs                     |
@@ -63,3 +86,4 @@ Note the the special key names are case sensitive - so "Escape" will work, "esca
 
 - [Simon Game](https://wokwi.com/arduino/libraries/demo/simon-game) - A memory game with 4 push buttons
 - [Diatonic Piano](https://wokwi.com/arduino/projects/291958456169005577) - A 8-note piano, use keys 1-8 to press the buttons and play the notes.
+- [Bounce vs non-bounce](https://wokwi.com/arduino/projects/288681423014986248)
