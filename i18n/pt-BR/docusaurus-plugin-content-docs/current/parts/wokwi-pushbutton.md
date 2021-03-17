@@ -21,6 +21,10 @@ Cada contato tem um pino do lado esquerdo do botão e outro pino do lado direito
 Portanto, o pino `1.l` é o pino esquerdo para o primeiro contato e` 1.r` é o pino direito para o primeiro contato. Uma vez que ambos pertencem
 para o mesmo contato, eles estão sempre conectados, mesmo quando o botão não é pressionado.
 
+O diagrama a seguir ilustra as conexões dentro do botão momentâneo:
+
+![Diagrama de conexão do botão momentâneo](wokwi-pushbutton-diagram.svg)
+
 Ao trabalhar com o Arduino, você normalmente conecta um contato (por exemplo, `1.r` ou` 1.l`) a um pino digital e configura
 aquele pino como `INPUT_PULLUP`, e o outro contato (ex: `2.r` ou `2.l`) para o terra. O pino digital irá ler
 `BAIXO` quando você pressiona o botão e` ALTO` quando o botão não é pressionado.
