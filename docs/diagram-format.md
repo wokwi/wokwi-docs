@@ -62,8 +62,14 @@ Each part must have a unique "id" property. If two parts have the same "id",
 the simulation may not function correctly.
 :::
 
-A partial list of part types (e.g. `wokwi-led`) is available at [Wokwi Elements](https://elements.wokwi.com).
-A complete list will appear here some day.
+A partial list of part types (e.g. [wokwi-led](parts/wokwi-led)) can be found under the "Diagram Reference" section of this guide. We're currently working to expand this list. Meanwhile, some of the parts are also documented at [Wokwi Elements](https://elements.wokwi.com).
+
+Each diagram should include a microcontroller part. The following microcontrollers are currently supported:
+
+- `wokwi-attiny85` - ATtiny85
+- `wokwi-arduino-nano` - Arduino Nano
+- `wokwi-arduino-mega` - Arduino Mega 2560
+- `wokwi-arduino-uno` - Arduino Uno R3
 
 :::tip
 Instead of manually specifying the left/top coordinates for each item, you
