@@ -27,11 +27,12 @@ aquele pino como `INPUT_PULLUP`, e o outro contato (ex: `2.r` ou `2.l`) para o t
 
 ## Atributos
 
-| Name  | Descrição                          | Valor padrão  |
-| ----- | ---------------------------------- | ------------- |
-| color | A cor do botão momentâneo          | "red"         |
-| label | Texto que aparece abaixo do botão  | ""            |
-| key   | Tecla de atalho para o botão       |               |
+| Name   | Descrição                                 | Valor padrão  |
+| ------ | ----------------------------------------- | ------------- |
+| color  | A cor do botão momentâneo                 | "red"         |
+| label  | Texto que aparece abaixo do botão         | ""            |
+| key    | Tecla de atalho para o botão              |               |
+| bounce | Defina como "0" para desativar o bouncing | ""            |
 
 ### Definindo uma tecla de atalho
 
@@ -51,6 +52,29 @@ pode ser bloqueadas pelo navegador (por exemplo, "F5" que atualiza a página).
 A lista completa de nomes de chaves pode ser encontrada [aqui](https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/key/Key_Values).
 Observe que o nome de chaves especiais diferenciam maiúsculas de minúsculas - portanto, "Escape" funcionará, "escape" não.
 
+### Bouncing
+
+Quando você pressiona um botão físico, o circuito abre e fecha dezenas ou até mesmo centenas de vezes.
+Este fenômeno é denominado de Bouncing. Isso acontece devido à natureza mecânica dos botões de pressão:
+quando os contatos de metal se juntam, há um breve período em que o contato não é perfeito, o que
+causa uma série de transições de abertura/fechamento rápidas.
+
+O Wokwi simula o bouncing do botão por padrão. Você pode desativar a simulação de bouncing definindo o
+atributo "bounce" para "0":
+
+`{ "bounce": "0" }`
+
+A simulação de salto segue o comportamento descrito em "The Art of electronics" por Horowitz & Hill:
+
+> Quando a chave é fechada, os dois contatos realmente se separam e se reconectam, normalmente 10 a 100
+> vezes durante um período de cerca de 1ms.
+
+Por exemplo, [este projeto mostra a diferença de botão com bouncing e sem bouncing](https://wokwi.com/arduino/projects/288681423014986248).
+Ele tem dois botões conectados ao mesmo pino de entrada do Arduino:
+
+- O botão azul simula sem o bouncing. Pressionando uma vez só imprimirá um único par de mensagens "pressionado" e "liberado".
+- O botão vermelho simula o bouncing. Pressionando uma vez imprimirá várias mensagens "pressionado" e "liberado".
+
 ### Exemplos
 
 | Resultado                               | Atributos (attrs)           |
@@ -63,3 +87,4 @@ Observe que o nome de chaves especiais diferenciam maiúsculas de minúsculas - 
 
 - [Simon Game](https://wokwi.com/arduino/libraries/demo/simon-game) - Um jogo de memória com 4 botões momentâneo
 - [Diatonic Piano](https://wokwi.com/arduino/projects/291958456169005577) - Um piano de 8 notas, use as teclas 1 a 8 para pressionar os botões e tocar as notas.
+- [Bounce vs non-bounce](https://wokwi.com/arduino/projects/288681423014986248)
