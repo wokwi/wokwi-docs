@@ -26,6 +26,8 @@ follows:
 file, and `"editor"` is the name of the application that was used to edit the
 file ("wokwi").
 
+In addition, you can add a `"serialMonitor"` section to [configure the Serial Monitor](guides/serial-monitor#configuring-the-serial-monitor).
+
 ## Parts
 
 The `"parts"` section defines the list of components in the simulation.

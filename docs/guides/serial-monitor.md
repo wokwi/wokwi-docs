@@ -25,7 +25,7 @@ void loop() {
 ```
 
 :::caution
-The serial monitor will only show once you print some output from your program.
+The serial monitor will only show once you print some output from your program. To change this behavior, [see below](#display).
 :::
 
 The Arduino Mega has multiple hardware Serial ports. You can connect the Serial monitor to a different serial port by configuring the pins in diagram.json. For instance, to connect `Serial2` to the serial monitor, add the following lines to the `connections` section in your diagram:
@@ -79,3 +79,42 @@ value will get you garbage in the Serial monitor.
 :::
 
 For a complete example, check out the [ATtiny85 SoftwareSerial example project](https://wokwi.com/arduino/projects/290883003139228169).
+
+## Configuring the Serial Monitor
+
+You can configure the Serial Monitor by adding a `"serialMonitor"` section to your [diagram.json](../diagram-format) file.
+
+The default configuration is as follows:
+
+```json
+"serialMonitor": {
+  "display": "auto",
+  "newline": "lf"
+}
+```
+
+### Display
+
+The `display` property configures when to display the serial monitor. The possible values are:
+
+| Value     | Description                                                       |
+| --------- | ----------------------------------------------------------------- |
+| "auto"    | Display the Serial Monitor when there's some output (the default) |
+| "always"  | Always display the Serial Monitor when simulation starts          |
+| "never"   | Never display the Serial Monitor                                  |
+| "plotter" | Display the Serial Plotter when simulation starts                 |
+
+### Newline
+
+When you input a line of text in the Serial Monitor, the simulator sends that text to your program.
+Your program can read it using `Serial.read()` and also some other [Serial methods](https://www.arduino.cc/reference/en/language/functions/communication/serial/).
+
+By default, the simulator also appends a line feed character ("\n", ASCII code 10) to every line
+of text that it sends to your program. You can use the `newline` property to change this behavior and configure a different sequence of characters:
+
+| Value  | Characters | ASCII codes | Description                                |
+| ------ | ---------- | ----------- | ------------------------------------------ |
+| "lf"   | "\n"       | 10          | Line feed (the default)                    |
+| "cr"   | "\r"       | 13          | Carriage return                            |
+| "crlf" | "\r\n"     | 10 13       | Carraige return + linefeed                 |
+| "none" | ""         |             | Don't append any characters to input lines |
