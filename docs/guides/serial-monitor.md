@@ -97,12 +97,12 @@ The default configuration is as follows:
 
 The `display` property configures when to display the serial monitor. The possible values are:
 
-| Value     | Description                                                       |
-| --------- | ----------------------------------------------------------------- |
-| "auto"    | Display the Serial Monitor when there's some output (the default) |
-| "always"  | Always display the Serial Monitor when simulation starts          |
-| "never"   | Never display the Serial Monitor                                  |
-| "plotter" | Display the Serial Plotter when simulation starts                 |
+| Value   | Description                                                       |
+| ------- | ----------------------------------------------------------------- |
+| auto    | Display the Serial Monitor when there's some output (the default) |
+| always  | Always display the Serial Monitor when simulation starts          |
+| never   | Never display the Serial Monitor                                  |
+| plotter | Display the Serial Plotter when simulation starts                 |
 
 ### Newline
 
@@ -112,9 +112,9 @@ Your program can read it using `Serial.read()` and also some other [Serial metho
 By default, the simulator also appends a line feed character ("\n", ASCII code 10) to every line
 of text that it sends to your program. You can use the `newline` property to change this behavior and configure a different sequence of characters:
 
-| Value  | Characters | ASCII codes | Description                                |
-| ------ | ---------- | ----------- | ------------------------------------------ |
-| "lf"   | "\n"       | 10          | Line feed (the default)                    |
-| "cr"   | "\r"       | 13          | Carriage return                            |
-| "crlf" | "\r\n"     | 10 13       | Carraige return + linefeed                 |
-| "none" | ""         |             | Don't append any characters to input lines |
+| Value | Characters | ASCII codes | Description                                |
+| ----- | ---------- | ----------- | ------------------------------------------ |
+| lf    | "\n"       | 10          | Line feed (the default)                    |
+| cr    | "\r"       | 13          | Carriage return                            |
+| crlf  | "\r\n"     | 10 13       | Carraige return + linefeed                 |
+| none  | ""         |             | Don't append any characters to input lines |
