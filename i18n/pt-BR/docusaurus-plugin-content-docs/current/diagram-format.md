@@ -24,6 +24,8 @@ O arquivo de diagrama é um arquivo JSON com várias seções. A estrutura bási
 arquivo, e `"editor"` é o nome do aplicativo que foi usado para editar o
 arquivo ("wokwi").
 
+Além disso, você pode adicionar uma seção `"serialMonitor"` para [Configurando o Monitor Serial](guides/serial-monitor#configuring-the-serial-monitor).
+
 ## Componentes
 
 As seção `"parts"` define a lista de componentes da simulação.

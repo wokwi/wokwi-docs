@@ -24,7 +24,7 @@ void loop() {
 ```
 
 :::caution
-O Monitor Serial só será mostrado quando você imprimir alguma saída de seu programa.
+O Monitor Serial só será mostrado quando você imprimir alguma saída de seu programa. Para mudar este comportamento, [veja abaixo](#display).
 :::
 
 O Arduino Mega possui várias portas seriais de hardware. Você pode conectar o monitor serial a uma porta serial diferente configurando os pinos em diagram.json. Por exemplo, para conectar `Serial2` ao monitor serial, adicione as seguintes linhas a seção `connections` do seu diagrama:
@@ -78,3 +78,43 @@ vai exibir caracteres estranhos no monitor Serial.
 :::
 
 Para um exemplo completo, verifique o [Projeto de exemplo SoftwareSerial com ATtiny85](https://wokwi.com/arduino/projects/290883003139228169).
+
+## Configurando o Monitor Serial
+
+Você pode configurar o Monitor Serial adicionando uma seção `"serialMonitor"` ao seu arquivo [diagram.json](../diagram-format).
+
+A configuração padrão é a seguinte:
+
+```json
+"serialMonitor": {
+  "display": "auto",
+  "newline": "lf"
+}
+```
+
+### Display
+
+A propriedade `display` configura quando exibir o monitor serial. Os valores possíveis são:
+
+| Valor     | Descrição                                                         |
+| --------- | ----------------------------------------------------------------- |
+| "auto"    | Exibe o monitor serial quando houver alguma saída (por padrão)    |
+| "always"  | Sempre exibe o Monitor Serial quando a simulação é iniciada       |
+| "never"   | Nunca exiba o monitor serial                                      |
+| "plotter" | Exibe o plotter serial quando a simulação é iniciada              |
+
+### Newline
+
+Quando você insere uma linha de texto no Monitor Serial, o simulador envia esse texto para o seu programa.
+
+Seu programa pode lê-lo usando `Serial.read()` e também alguns outros [métodos seriais](https://www.arduino.cc/reference/pt/language/functions/communication/serial/).
+
+Por padrão, o simulador também anexa um caractere de quebra de linha ("\n", código ASCII 10) a cada linha
+de texto que envia ao seu programa. Você pode usar a propriedade `newline` para alterar esse comportamento e configurar uma sequência diferente de caracteres:
+
+| Valor  | Caracteres | Código ASCII | Descrição                                            |
+| ------ | ---------- | ------------ | ---------------------------------------------------- |
+| "lf"   | "\n"       | 10           | Quebra de linha (por padrão)                         |
+| "cr"   | "\r"       | 13           | Retorno de carro                                     |
+| "crlf" | "\r\n"     | 10 13        | Retorno de carro + quebra de linha                   |
+| "none" | ""         |              | Não acrescenta nenhum caractere especial na entrada  |
