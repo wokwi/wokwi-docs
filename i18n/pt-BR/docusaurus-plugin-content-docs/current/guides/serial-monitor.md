@@ -96,12 +96,12 @@ A configuração padrão é a seguinte:
 
 A propriedade `display` configura quando exibir o monitor serial. Os valores possíveis são:
 
-| Valor     | Descrição                                                         |
-| --------- | ----------------------------------------------------------------- |
-| "auto"    | Exibe o monitor serial quando houver alguma saída (por padrão)    |
-| "always"  | Sempre exibe o Monitor Serial quando a simulação é iniciada       |
-| "never"   | Nunca exiba o monitor serial                                      |
-| "plotter" | Exibe o plotter serial quando a simulação é iniciada              |
+| Valor   | Descrição                                                         |
+| --------| ----------------------------------------------------------------- |
+| auto    | Exibe o monitor serial quando houver alguma saída (por padrão)    |
+| always  | Sempre exibe o Monitor Serial quando a simulação é iniciada       |
+| never   | Nunca exiba o monitor serial                                      |
+| plotter | Exibe o plotter serial quando a simulação é iniciada              |
 
 ### Newline
 
@@ -112,9 +112,9 @@ Seu programa pode lê-lo usando `Serial.read()` e também alguns outros [método
 Por padrão, o simulador também anexa um caractere de quebra de linha ("\n", código ASCII 10) a cada linha
 de texto que envia ao seu programa. Você pode usar a propriedade `newline` para alterar esse comportamento e configurar uma sequência diferente de caracteres:
 
-| Valor  | Caracteres | Código ASCII | Descrição                                            |
-| ------ | ---------- | ------------ | ---------------------------------------------------- |
-| "lf"   | "\n"       | 10           | Quebra de linha (por padrão)                         |
-| "cr"   | "\r"       | 13           | Retorno de carro                                     |
-| "crlf" | "\r\n"     | 10 13        | Retorno de carro + quebra de linha                   |
-| "none" | ""         |              | Não acrescenta nenhum caractere especial na entrada  |
+| Valor | Caracteres | Código ASCII | Descrição                                            |
+| ----- | ---------- | ------------ | ---------------------------------------------------- |
+| lf    | "\n"       | 10           | Quebra de linha (por padrão)                         |
+| cr    | "\r"       | 13           | Retorno de carro                                     |
+| crlf  | "\r\n"     | 10 13        | Retorno de carro + quebra de linha                   |
+| none  | ""         |              | Não acrescenta nenhum caractere especial na entrada  |
