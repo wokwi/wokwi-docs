@@ -94,25 +94,6 @@ You can also [try this example on Wokwi](https://wokwi.com/arduino/projects/2943
 | i2c-address | I2C address (I2C configuration)    | "0x27"        |
 | color       | The color of the text              | "black"       |
 | background  | The color of the backlight         | "green"       |
-
-### Defining a keyboard shortcut
-
-You can use the "key" attribute to define a keyboard key that will control the button.
-The key is only active when the simulation is running and the diagram has focus.
-
-For example, suppose you defined "key" to "Q". Then, when you run the simulation,
-pressing _Q_ in the keyboard will press the push button. The button will be kept
-in pressed state as long as you keep pressing _Q_, and once you release the key,
-the button will also be released.
-
-You can define any alphanumerical keyboard shortcut (so English letters and numbers), and for letters,
-the value of "key" is case insensitive (so "q" and "Q" mean the same).
-
-You can also target some special keys, such as "Escape", "ArrowUp", "F8", " " (space), or "PageDown", but some keys
-could be blocked by the browser (e.g. "F5" that refreshes the page).
-The full list of key names can be found [here](https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/key/Key_Values).
-Note the the special key names are case sensitive - so "Escape" will work, "escape" won't.
-
 ### Examples
 
 | Result                                                                | Attrs                                        |
