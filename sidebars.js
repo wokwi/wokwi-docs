@@ -6,6 +6,7 @@ module.exports = {
       'diagram-format',
       'parts/wokwi-attiny85',
       'parts/wokwi-pushbutton',
+      'parts/wokwi-lcd1602',
       'parts/wokwi-led',
       'parts/wokwi-servo',
     ],
