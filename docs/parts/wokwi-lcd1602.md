@@ -5,7 +5,7 @@ sidebar_label: wokwi-lcd1602
 
 An LCD display with 2 lines, 16 characters per line.
 
-<wokwi-lcd1602 />
+<wokwi-lcd1602 text=" wokwi-lcd1602" />
 
 ## Pin names
 
@@ -94,6 +94,7 @@ You can also [try this example on Wokwi](https://wokwi.com/arduino/projects/2943
 | i2c-address | I2C address (I2C configuration)    | "0x27"        |
 | color       | The color of the text              | "black"       |
 | background  | The color of the backlight         | "green"       |
+
 ### Examples
 
 | Result                                                                | Attrs                                        |
