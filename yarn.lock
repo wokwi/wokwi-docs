@@ -4078,6 +4078,11 @@ dns-txt@^2.0.2:
   dependencies:
     buffer-indexof "^1.0.0"
 
+docusaurus-plugin-plausible@^0.0.4:
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/docusaurus-plugin-plausible/-/docusaurus-plugin-plausible-0.0.4.tgz#884e45f6985faf79aac04ba0141c9878629d9bd3"
+  integrity sha512-AiHS0feDaGfUpVuD4VY0MESR8Te3jlE0x+dYuaZ0Cyyprfb6Ex8fe5qD+2yNkGt8yqtIamVgG6LCdAxdGbkQqw==
+
 dom-converter@^0.2:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/dom-converter/-/dom-converter-0.2.0.tgz#6721a9daee2e293682955b6afe416771627bb768"

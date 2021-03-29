@@ -117,6 +117,14 @@ module.exports = {
       },
     ],
   ],
+  plugins: [
+    [
+      'docusaurus-plugin-plausible',
+      {
+        domain: 'docs.wokwi.com',
+      },
+    ],
+  ],
   i18n: {
     defaultLocale: 'en',
     locales: ['en', 'pt-BR'],
