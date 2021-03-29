@@ -3,6 +3,9 @@ title: wokwi-lcd1602 Reference
 sidebar_label: wokwi-lcd1602
 ---
 
+import FontA00p1 from './wokwi-lcd1602-fonta00-1.svg';
+import FontA00p2 from './wokwi-lcd1602-fonta00-2.svg';
+
 An LCD display with 2 lines, 16 characters per line.
 
 <wokwi-lcd1602 text=" wokwi-lcd1602" />
@@ -103,9 +106,89 @@ You can also [try this example on Wokwi](https://wokwi.com/arduino/projects/2943
 | <wokwi-lcd1602 text="Hello World!" pins="i2c" />                      | `{ "pins": "i2c" }`                          |
 | <wokwi-lcd1602 background="blue" color="white" text="Hello World!" /> | `{ "background": "blue", "color": "white" }` |
 
+## Font
+
+The LCD1602 uses the [Hitachi HD44780 LCD Controller chip](https://en.wikipedia.org/wiki/Hitachi_HD44780_LCD_controller).
+The chip comes with a built-in font, as well as the ability to define up to 8 custom characters.
+
+There are two versions of the chip's ROM with two different fonts: HD44780UA00, which includes Japanese katakana characters,
+and HD44780UA02, which includes Western European characters.
+
+Wokwi simulates the HD44780UA00 variant. It has total of 256 characters:
+
+| Range   | Description                                         |
+| ------- | --------------------------------------------------- |
+| 0-7     | [User defined characters](#user-defined-characters) |
+| 8-31    | Blank characters                                    |
+| 32-127  | Standard ASCII characters                           |
+| 128-160 | Blank characters                                    |
+| 161-255 | Japanese katankana and symbols                      |
+
+ASCII character glyphs:
+
+<FontA00p1 className="svg-font-table" />
+
+High characters glyphs:
+
+<FontA00p2 className="svg-font-table"  />
+
+Note: if you need the HD44780UA02 font variant, please [open a feature request](https://github.com/wokwi/wokwi-features/issues/new) or
+reach out on [Discord](https://wokwi.com/discord).
+
+### User defined characters
+
+You can define custom characters using the [createChar](https://www.arduino.cc/en/Reference/LiquidCrystalCreateChar) method of the LiquidCrsytal (or LiquidCrystal_I2C) library. The custom characters are the first 8 characters in the font, with indexes from 0 to 7. You can print them to the LCD
+display using the `write()` method, or using C string escape sequence, such as `"\x07"`.
+
+The following code example defines a heart shaped character, stores it at index 3, and then uses it to display the text "I (heart) Arduino":
+
+```cpp
+#include <LiquidCrystal.h>
+
+LiquidCrystal lcd(12, 11, 10, 9, 8, 7);
+
+uint8_t heart[8] = {
+  0b00000,
+  0b01010,
+  0b11111,
+  0b11111,
+  0b11111,
+  0b01110,
+  0b00100,
+  0b00000,
+};
+
+void setup() {
+  lcd.createChar(3, heart);
+  lcd.begin(16, 2);
+  lcd.print("  I \x03 Arduino");
+}
+
+void loop() { }
+```
+
+You can also [run this example on Wokwi](https://wokwi.com/arduino/projects/294395602645549578).
+
+You can modify any custom character while the program is running. This method is useful for
+creating simple animations. For example, change `loop()` in the code sample above to slowly
+reveal the heart icon, line-by-line:
+
+```cpp
+void loop() {
+  uint8_t heart2[8] = {0};
+  for (int i = 0; i < 8; i++) {
+    heart2[i] = heart[i];
+    lcd.createChar(3, heart2);
+    delay(100);
+  }
+  delay(500);
+}
+```
+
 ## Simulator examples
 
 - [LiquidCrystal Hello World](https://wokwi.com/arduino/projects/294342288335700490)
 - [LiquidCrystal I2C Hello World](https://wokwi.com/arduino/libraries/LiquidCrystal_I2C/HelloWorld)
+- [LiquidCystal Custom characters](https://wokwi.com/arduino/projects/294395602645549578)
 - [Electronic Safe](https://wokwi.com/arduino/libraries/demo/electronic-safe)
 - [DS1307 Clock](https://wokwi.com/arduino/projects/286806448514531852)
