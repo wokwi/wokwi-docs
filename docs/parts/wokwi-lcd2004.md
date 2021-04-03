@@ -18,3 +18,7 @@ For **complete information and code examples**, please see the [wokwi-lcd1602 re
 | <wokwi-lcd2004 text="Hello World!" />                                 | `{ }`                                        |
 | <wokwi-lcd2004 text="Hello World!" pins="i2c" />                      | `{ "pins": "i2c" }`                          |
 | <wokwi-lcd2004 background="blue" color="white" text="Hello World!" /> | `{ "background": "blue", "color": "white" }` |
+
+## Simulator examples
+
+- [LCD2004 Tiny Pacman on Wokwi](https://wokwi.com/arduino/projects/294590769009787402)
