@@ -66,7 +66,7 @@ Uma lista parcial dos tipos de componentes (por exemplo, [wokwi-led] (peças / w
 
 Cada diagrama deve incluir um componente do microcontrolador. Os seguintes microcontroladores são atualmente suportados:
 
-- `wokwi-attiny85` - ATtiny85
+- [`wokwi-attiny85`](parts/wokwi-attiny85) - ATtiny85
 - `wokwi-arduino-nano` - Arduino Nano
 - `wokwi-arduino-mega` - Arduino Mega 2560
 - `wokwi-arduino-uno` - Arduino Uno R3
