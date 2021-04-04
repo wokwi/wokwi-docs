@@ -9,6 +9,7 @@ module.exports = {
       'parts/wokwi-lcd1602',
       'parts/wokwi-lcd2004',
       'parts/wokwi-led',
+      'parts/wokwi-membrane-keypad',
       'parts/wokwi-servo',
     ],
   },
