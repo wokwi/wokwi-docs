@@ -1,7 +1,7 @@
 module.exports = {
   main: {
     'Getting Started': ['welcome'],
-    Guides: ['keyboard-shortcuts', 'gdb-debugging', 'guides/serial-monitor'],
+    Guides: ['keyboard-shortcuts', 'gdb-debugging', 'guides/serial-monitor', 'guides/libraries'],
     'Diagram Reference': [
       'diagram-format',
       'parts/wokwi-attiny85',
