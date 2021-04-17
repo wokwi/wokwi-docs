@@ -13,6 +13,7 @@ module.exports = {
       'parts/wokwi-led',
       'parts/wokwi-membrane-keypad',
       'parts/wokwi-servo',
+      'parts/wokwi-slide-switch',
     ],
   },
 };
