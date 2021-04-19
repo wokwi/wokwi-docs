@@ -19,7 +19,7 @@ Analog Joystick with two axes (horizontal/vertical) and an integrated push butto
 
 The idle position voltage is VCC/2. Moving the joystick along the vertical axis changes the voltage of the VERT pin from 0 volts (bottom) to VCC (top). Moving the joystick along the horizontal axis changes the voltages of the HORZ pin from 0 volts (right) to VCC (left).
 
-The SEL pin is normally open (floating). Clicking on the center of the joystick shorts the SEL pin to ground. The joystick's button simulates [bouncing](wokwi-pushbutton-bouncing) by default. You can disable bouncing by setting the "bounce" attribute to "0".
+The SEL pin is normally open (floating). Clicking on the center of the joystick shorts the SEL pin to ground. The joystick's button simulates [bouncing](wokwi-pushbutton#bouncing) by default. You can disable bouncing by setting the "bounce" attribute to "0".
 
 ## Attributes
 
