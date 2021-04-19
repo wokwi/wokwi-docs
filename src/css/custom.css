@@ -36,3 +36,17 @@ html .svg-font-table {
 html[data-theme='dark'] .svg-font-table path {
   fill: seagreen;
 }
+
+wokwi-analog-joystick[disabled] {
+  display: inline-block;
+  position: relative;
+}
+
+wokwi-analog-joystick[disabled]:before {
+  position: absolute;
+  content: ' ';
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}

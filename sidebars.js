@@ -4,6 +4,7 @@ module.exports = {
     Guides: ['keyboard-shortcuts', 'gdb-debugging', 'guides/serial-monitor', 'guides/libraries'],
     'Diagram Reference': [
       'diagram-format',
+      'parts/wokwi-analog-joystick',
       'parts/wokwi-arduino-nano',
       'parts/wokwi-arduino-uno',
       'parts/wokwi-attiny85',
