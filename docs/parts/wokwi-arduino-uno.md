@@ -15,7 +15,7 @@ There are three ground pins: GND.1, which is on top of the board, next to pin 13
 
 Pins VIN / 5V are connected to the positive power supply.
 
-Pins 3.3V / IOREF / AREF / RESETS are not available in the simulation.
+Pins 3.3V / IOREF / AREF / RESET are not available in the simulation.
 
 Digital pins 3, 5, 6, 7, 9, 10, and 11 have hardware PWM support.
 
