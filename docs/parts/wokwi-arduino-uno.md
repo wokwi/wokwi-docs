@@ -45,7 +45,7 @@ The board includes four LEDs:
 | TX  | Serial TX Activity                                   |
 | ON  | Power LED. Always on while the simulation is running |
 
-In general, only the "L" LED can be controlled by the user's code. You can use the `LED_BUILTIN` constant to reference it for your code:
+In general, only the "L" LED can be controlled by the user's code. You can use the `LED_BUILTIN` constant to reference it from your code:
 
 ```cpp
 pinMode(LED_BUILTIN, OUTPUT);
