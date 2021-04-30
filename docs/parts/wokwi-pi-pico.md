@@ -122,6 +122,20 @@ The example assumes that the Pi Pico was defined with an id of "pico", e.g.
   ]
 ```
 
+To initialize the Serial monitor in your code use `Serial1.begin(115200)`, and then print messages with `Serial1.println()`. For example:
+
+```cpp
+void setup() {
+  Serial1.begin(115200);
+  Serial1.println("Hello, world!");
+}
+
+void loop() { }
+```
+
+Note the usage of `Serial1`. The standard `Serial` in the Arduino Core uses Serial over USB (CDC), which is currently not
+supported in the simulation. `Serial1`, in contrast, uses the hardware UART (connected to pins GP0/GP1).
+
 TODO link to a complete example with Serial Monitor
 
 ## Simulator examples
