@@ -6,7 +6,7 @@ sidebar_label: Diagram Editor
 The diagram editor provides an interactive way to edit your diagram: add components to the simulation and define the connections between them. It's a convenient alternative for editing the [diagram.json](../diagram-format) file directly.
 
 :::info
-The diagram editor is currently in beta, and we are improving it on a daily basis. The documentation may lag behind a bit.
+The diagram editor is currently in beta, and we are improving it daily. The documentation may lag behind a bit.
 :::
 
 ## Editing parts
@@ -30,7 +30,7 @@ a different amount (e.g. 45 degrees), you can achieve that by [editing diagram.j
 
 ### Deleting a part
 
-Rotate a part by clicking on it (to select it) and then pressing the Delete button.
+Delete a part by clicking on it (to select it) and then pressing the Delete button.
 
 ## Editing wires
 
@@ -59,6 +59,6 @@ Any change that you make in the interactive editor is also reflected in [diagram
 The interactive editor **does not** have an undo feature at the moment (there's an [open issue for that](https://github.com/wokwi/wokwi-features/issues/77)).
 
 You can still get complete Undo history if you select the "diagram.json" tab in the code editor. Any changes made in the interactive diagram editor
-will immediately reflect in the code editor, and you'll be able to undo them by clicking on the code editor, and then pressing Ctrl+Z.
+will immediately reflect in the code editor, and you'll be able to undo them by clicking on the code editor and then pressing Ctrl+Z.
 
-Note that this only works if the "diagram.json" tab is active while you make changes. This is a temporary solution, until we implement Undo in the interactive diagram editor.
+Note that this only works if the "diagram.json" tab is active while you make changes. This is a temporary solution until we implement Undo in the interactive diagram editor.
