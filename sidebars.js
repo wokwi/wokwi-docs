@@ -18,6 +18,7 @@ module.exports = {
       'parts/wokwi-lcd2004',
       'parts/wokwi-led',
       'parts/wokwi-membrane-keypad',
+      'parts/wokwi-pi-pico',
       'parts/wokwi-pushbutton',
       'parts/wokwi-servo',
       'parts/wokwi-slide-switch',
