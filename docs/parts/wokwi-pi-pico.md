@@ -39,7 +39,7 @@ pinMode(LED_BUILTIN, OUTPUT);
 digitalWrite(LED_BUILTIN, HIGH);
 ```
 
-See [Blink](TODO: link to Blink) for a complete code example.
+See [Blink](https://wokwi.com/arduino/projects/297755575592157709) for a complete code example.
 
 ## Simulation features
 
@@ -72,8 +72,7 @@ We're adding the missing features in [weekly live streams](https://www.youtube.c
 
 ### Arduino core
 
-The Arduino core provides the built-in Arduino functions, such as `pinMode()` and `digitalRead()`, as well as a set of standard Arduino
-libraries, such as Servo, Wire and SPI.
+The Arduino core provides the built-in Arduino functions, such as `pinMode()` and `digitalRead()`, as well as a set of standard Arduino libraries, such as Servo, Wire and SPI.
 
 When compiling your code for the Raspberry Pi Pi Pico, you can choose between two different cores:
 
@@ -98,8 +97,7 @@ To select a core, set the "env" attribute of the `wokwi-pi-pico` part. For the o
 
 ### Serial Monitor
 
-You can use the Serial Monitor to receive information from the code running on the Pi Pico, such as debug prints. To configure the serial monitor
-connection with the Raspberry Pi Pico, add the following connections to your [diagram.json](../diagram-format#connections) file:
+You can use the Serial Monitor to receive information from the code running on the Pi Pico, such as debug prints. To configure the serial monitor connection with the Raspberry Pi Pico, add the following connections to your [diagram.json](../diagram-format#connections) file:
 
 ```json
   "connections": [
@@ -133,11 +131,10 @@ void setup() {
 void loop() { }
 ```
 
-Note the usage of `Serial1`. The standard `Serial` in the Arduino Core uses Serial over USB (CDC), which is currently not
-supported in the simulation. `Serial1`, in contrast, uses the hardware UART (connected to pins GP0/GP1).
+Note the usage of `Serial1`. The standard `Serial` in the Arduino Core uses Serial over USB (CDC), which is currently not supported in the simulation. `Serial1`, in contrast, uses the hardware UART (connected to pins GP0/GP1).
 
-TODO link to a complete example with Serial Monitor
+For a complete example, check out the [Pi Pico Serial Monitor Example](https://wokwi.com/arduino/projects/297755360074138125).
 
 ## Simulator examples
 
-TODO: links
+* [Pi Pico and LCD1602](https://wokwi.com/arduino/projects/297323005822894602)
