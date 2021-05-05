@@ -138,3 +138,4 @@ For a complete example, check out the [Pi Pico Serial Monitor Example](https://w
 ## Simulator examples
 
 * [Pi Pico and LCD1602](https://wokwi.com/arduino/projects/297323005822894602)
+* [Pi Pico Traffic Light](https://wokwi.com/arduino/projects/297322571959894536)
