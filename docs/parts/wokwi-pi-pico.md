@@ -80,6 +80,8 @@ When compiling your code for the Raspberry Pi Pi Pico, you can choose between tw
 - The [official Pi Pico core](https://github.com/arduino/ArduinoCore-mbed), based on Mbed OS. This is the default.
 - [Community maintained Pi Pico Arduino Core](https://github.com/earlephilhower/arduino-pico), built on top of [the Pi Pico SDK](https://github.com/raspberrypi/pico-sdk).
 
+You can learn about the key differences between these two cores in [this GitHub comment](https://github.com/earlephilhower/arduino-pico/issues/117#issuecomment-830356795).
+
 To select a core, set the "env" attribute of the `wokwi-pi-pico` part. For the official Arduino core, use the value "arduino-core". For the community maintained core, set "env" to "arduino-community". e.g.:
 
 ```json
