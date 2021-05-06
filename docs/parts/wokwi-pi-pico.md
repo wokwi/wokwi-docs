@@ -49,7 +49,7 @@ The following table summarizes the status of the simulation features:
 | Peripheral        | Status | Notes                                                                 |
 | ----------------- | ------ | --------------------------------------------------------------------- |
 | Processor core    | 🟡     | Only a single core is simulated, a few instructions are still missing |
-| GPIO              | 🟡     | Output implemented, input not yet                                     |
+| GPIO              | 🟡     | Input/output working, interrupts missing                              |
 | PIO               | ❌     |                                                                       |
 | USB               | ❌     |                                                                       |
 | UART              | 🟡     | TX only (sending data from the Pico to the computer)                  |
@@ -57,6 +57,7 @@ The following table summarizes the status of the simulation features:
 | SPI               | ❌     |                                                                       |
 | PWM               | ❌     |                                                                       |
 | Timer             | 🟡     | 64 bit counter implemented, but alarms not                            |
+| ARM SysTick Timer | 🟡     | Partial implementation                                                |
 | Watchdog          | ❌     |                                                                       |
 | RTC               | ❌     |                                                                       |
 | ADC + Temp sensor | ❌     |                                                                       |
@@ -137,5 +138,5 @@ For a complete example, check out the [Pi Pico Serial Monitor Example](https://w
 
 ## Simulator examples
 
-* [Pi Pico and LCD1602](https://wokwi.com/arduino/projects/297323005822894602)
-* [Pi Pico Traffic Light](https://wokwi.com/arduino/projects/297322571959894536)
+- [Pi Pico and LCD1602](https://wokwi.com/arduino/projects/297323005822894602)
+- [Pi Pico Traffic Light](https://wokwi.com/arduino/projects/297322571959894536)
