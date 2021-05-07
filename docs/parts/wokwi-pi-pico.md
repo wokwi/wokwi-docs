@@ -30,7 +30,7 @@ Pins 3V3_EN / RUN / ADC_VREF are not available in the simulation and are therefo
 
 ### Onboard LED
 
-The Rasberry Pi Pico has an onboard LED, attached to GPIO PIN 25. The LED is lit when the pin is driven high.
+The Raspberry Pi Pico has an onboard LED, attached to GPIO PIN 25. The LED is lit when the pin is driven high.
 
 You can also use the `LED_BUILTIN` constant to reference the LED in your Arduino code:
 
