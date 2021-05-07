@@ -6,7 +6,7 @@ sidebar_label: wokwi-lcd1602
 import FontA00p1 from './wokwi-lcd1602-fonta00-1.svg';
 import FontA00p2 from './wokwi-lcd1602-fonta00-2.svg';
 
-An LCD display with 2 lines, 16 characters per line.
+An LCD with 2 lines, 16 characters per line.
 
 <wokwi-lcd1602 text=" wokwi-lcd1602" />
 
@@ -24,7 +24,7 @@ The following table summarizes the key differences:
 
 \* Controlling the backlight requires another I/O pin.
 
-You can select the desired configuration by setting the `pins` attribute. Set it to "i2c" for the I2C configuration, or to "full" for the standard configuration (the default).
+You can select the desired configuration by setting the `pins` attribute. Set it to "i2c" for the I2C configuration, or "full" for the standard configuration (the default).
 
 ### I2C configuration
 
@@ -61,8 +61,8 @@ Note: The I2C configuration simulates a PCF8574T chip that controls the LCD modu
 | K    | Backlight cathode                   | GND.1         |
 
 \* These are just example pin numbers, they are not mandatory. You need can use any digital/analog pin, but make sure to update the code accordingly!  
-† Normally, you'd configure the chip in 4-bit parellel mode, which means you only need to connect RS, E, D4, D5, D6, and D7 pins to Arduino.  
-‡ If you need to control the backlight, connect the anode to an I/O pin. Otherwise, connect it to the supply voltage. For a real circuit you'd also
+† Normally, you'd configure the chip in 4-bit parallel mode, which means you only need to connect RS, E, D4, D5, D6, and D7 pins to Arduino.  
+‡ If you need to control the backlight, connect the anode to an I/O pin. Otherwise, connect it to the supply voltage. For a real circuit, you'd also
 need a current-limiting resistor, but you may skip it in the simulation environment.
 
 #### Arduino code example
@@ -114,7 +114,7 @@ The chip comes with a built-in font, as well as the ability to define up to 8 cu
 There are two versions of the chip's ROM with two different fonts: HD44780UA00, which includes Japanese katakana characters,
 and HD44780UA02, which includes Western European characters.
 
-Wokwi simulates the HD44780UA00 variant. It has total of 256 characters:
+Wokwi simulates the HD44780UA00 variant. It has a total of 256 characters:
 
 | Range   | Description                                         |
 | ------- | --------------------------------------------------- |
