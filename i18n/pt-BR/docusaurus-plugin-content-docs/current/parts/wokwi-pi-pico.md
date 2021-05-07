@@ -30,7 +30,7 @@ Os pinos 3V3_EN / RUN / ADC_VREF não estão disponíveis na simulação e, port
 
 ### LED integrado
 
-O Rasberry Pi Pico tem um LED integrado, conectado ao pino GPIO número 25. O LED acende quando o pino é elevado.
+O Rasberry Pi Pico tem um LED integrado, conectado ao pino GPIO 25. O LED acende quando o pino é elevado.
 
 Você também pode usar a constante `LED_BUILTIN` para fazer referência ao LED em seu código Arduino:
 
@@ -66,7 +66,7 @@ A tabela a seguir resume o status dos recursos de simulação:
 
 Legenda:
 ✔️ Simulado
-🟡 Implementação parcial / trabalho em andamento
+🟡 Implementação parcial/trabalho em andamento
 ❌ Não implementado
 
 Estamos adicionando os recursos que faltam em [transmissões ao vivo semanais](https://www.youtube.com/playlist?list=PLLomdjsHtJTxT-vdJHwa3z62dFXZnzYBm). Espere que a lista acima seja atualizada a cada uma ou duas semanas.
@@ -77,8 +77,10 @@ O núcleo do Arduino fornece as funções integradas do Arduino, como `pinMode()
 
 Ao compilar seu código para o Raspberry Pi Pi Pico, você pode escolher entre dois núcleos diferentes:
 
-- O [núcleo oficial do Pi Pico] (https://github.com/arduino/ArduinoCore-mbed), baseado no sistema operacional Mbed. Este é o padrão.
-- [Mantido pela comunidade Pi Pico Arduino Core](https://github.com/earlephilhower/arduino-pico), construído sobre [o Pi Pico SDK](https://github.com/raspberrypi/pico-sdk).
+- O [núcleo oficial do Pi Pico](https://github.com/arduino/ArduinoCore-mbed), baseado no sistema operacional Mbed. Este é o padrão.
+- [Mantido pela comunidade Pi Pico Arduino Core](https://github.com/earlephilhower/arduino-pico), construído sobre o [Pi Pico SDK](https://github.com/raspberrypi/pico-sdk).
+
+Você pode aprender sobre as principais diferenças entre esses dois núcleos [neste comentário do GitHub](https://github.com/earlephilhower/arduino-pico/issues/117#issuecomment-830356795).
 
 Para selecionar um núcleo, defina o atributo "env" da parte `wokwi-pi-pico`. Para o núcleo oficial do Arduino, use o valor "arduino-core". Para o núcleo mantido pela comunidade, defina "env" como "arduino-community". por exemplo.:
 
