@@ -6,7 +6,7 @@ sidebar_label: wokwi-lcd1602
 import FontA00p1 from './wokwi-lcd1602-fonta00-1.svg';
 import FontA00p2 from './wokwi-lcd1602-fonta00-2.svg';
 
-Um display LCD com 2 linhas, 16 caracteres por linha.
+Um LCD com 2 linhas, 16 caracteres por linha.
 
 <wokwi-lcd1602 text=" wokwi-lcd1602" />
 
