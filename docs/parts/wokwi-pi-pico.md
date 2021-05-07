@@ -3,7 +3,7 @@ title: wokwi-pi-pico Reference
 sidebar_label: wokwi-pi-pico
 ---
 
-Raspberry Pi Pico, a RP2040 microcontroller board with dual-core ARM Cortex-M0+ processor, 264k of internal RAM, and flexible
+Raspberry Pi Pico, an RP2040 microcontroller board with dual-core ARM Cortex-M0+ processor, 264k of internal RAM, and flexible
 Programmable I/O (PIO) feature.
 
 ![Raspberry Pi Pico](wokwi-pi-pico.svg)
@@ -26,11 +26,11 @@ Pins GP0 to GP22 are digital GPIO pins. Pins GP26, GP27, and GP28 are digital GP
 \* The physical pin numbers of the ground pins are 3, 8, 13, 18, 23, 28, 33, and 38.  
 † These pins do not appear in the visual diagram editor, but you can use them in your [diagram.json](../diagram-format) file.
 
-Pins 3V3_EN / RUN / ADC_VREF are not available in the simulation, and are therefore omitted from the table.
+Pins 3V3_EN / RUN / ADC_VREF are not available in the simulation and are therefore omitted from the table.
 
-### On board LED
+### Onboard LED
 
-The Rasberry Pi Pico has an on-board LED, attached to GPIO pin number 25. The LED is lit when the pin is driven high.
+The Rasberry Pi Pico has an onboard LED, attached to GPIO PIN 25. The LED is lit when the pin is driven high.
 
 You can also use the `LED_BUILTIN` constant to reference the LED in your Arduino code:
 
@@ -62,11 +62,11 @@ The following table summarizes the status of the simulation features:
 | RTC               | ❌     |                                                                       |
 | ADC + Temp sensor | ❌     |                                                                       |
 | SSI               | 🟡     | Just the minimum to make the bootloader happy                         |
-| GDB Debugging     | 🟡     | Implemented, but missing the web-gdb interface                        |
+| GDB Debugging     | 🟡     | Implemented but missing the web-gdb interface                        |
 
 Legend:  
 ✔️ Simulated  
-🟡 Partial implementation / work in progress  
+🟡 Partial implementation/work in progress  
 ❌ Not implemented
 
 We're adding the missing features in [weekly live streams](https://www.youtube.com/playlist?list=PLLomdjsHtJTxT-vdJHwa3z62dFXZnzYBm). Expect the list above to update every week or two.
@@ -78,7 +78,7 @@ The Arduino core provides the built-in Arduino functions, such as `pinMode()` an
 When compiling your code for the Raspberry Pi Pi Pico, you can choose between two different cores:
 
 - The [official Pi Pico core](https://github.com/arduino/ArduinoCore-mbed), based on Mbed OS. This is the default.
-- [Community maintained Pi Pico Arduino Core](https://github.com/earlephilhower/arduino-pico), built on top of [the Pi Pico SDK](https://github.com/raspberrypi/pico-sdk).
+- [The community maintained Pi Pico Arduino Core](https://github.com/earlephilhower/arduino-pico), built on top of [the Pi Pico SDK](https://github.com/raspberrypi/pico-sdk).
 
 You can learn about the key differences between these two cores in [this GitHub comment](https://github.com/earlephilhower/arduino-pico/issues/117#issuecomment-830356795).
 
