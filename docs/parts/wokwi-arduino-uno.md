@@ -17,7 +17,7 @@ Pins VIN / 5V are connected to the positive power supply.
 
 Pins 3.3V / IOREF / AREF / RESET are not available in the simulation.
 
-Digital pins 3, 5, 6, 7, 9, 10, and 11 have hardware PWM support.
+Digital pins 3, 5, 6, 9, 10, and 11 have hardware PWM support.
 
 Some of the digital pins also have additional functions:
 

@@ -17,7 +17,7 @@ Os pinos VIN / 5V são conectados à fonte de alimentação positiva.
 
 Os pinos 3.3V / IOREF / AREF / RESET não estão disponíveis na simulação.
 
-Os pinos digitais 3, 5, 6, 7, 9, 10 e 11 têm suporte de hardware PWM.
+Os pinos digitais 3, 5, 6, 9, 10 e 11 têm suporte de hardware PWM.
 
 Alguns dos pinos digitais também têm funções adicionais:
 
