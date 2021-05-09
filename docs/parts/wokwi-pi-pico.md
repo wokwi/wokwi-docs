@@ -62,7 +62,7 @@ The following table summarizes the status of the simulation features:
 | RTC               | ❌     |                                                                       |
 | ADC + Temp sensor | ❌     |                                                                       |
 | SSI               | 🟡     | Just the minimum to make the bootloader happy                         |
-| GDB Debugging     | 🟡     | Implemented but missing the web-gdb interface                        |
+| GDB Debugging     | 🟡     | Implemented but missing the web-gdb interface                         |
 
 Legend:  
 ✔️ Simulated  
@@ -142,3 +142,5 @@ For a complete example, check out the [Pi Pico Serial Monitor Example](https://w
 
 - [Pi Pico and LCD1602](https://wokwi.com/arduino/projects/297323005822894602)
 - [Pi Pico Traffic Light](https://wokwi.com/arduino/projects/297322571959894536)
+- [Pi Pico C++ SDK Blink](https://wokwi.com/arduino/projects/298013072042230285)
+- [Pi Pico C++ SDK 7-Segment Example](https://wokwi.com/arduino/projects/298014884249993738)
