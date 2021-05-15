@@ -27,8 +27,8 @@ This means you can use most of the standard Arduino functions and libraries in y
 
 ### Serial Output
 
-The ATtiny85 doesn't have a dedicate UART peripheral, but it it still possible to get Serial Output using the Software Serial library.
-For more information and demo code, please see the [Serial Monitor Guide](../guides/serial-monitor#attiny85--softwareserial)
+The ATtiny85 doesn't have a dedicated UART peripheral, but it it still possible to get Serial Output using the Software Serial library.
+For more information and demo code, please see the [Serial Monitor Guide](../guides/serial-monitor#attiny85--softwareserial).
 
 ### I2C
 
