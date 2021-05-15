@@ -69,9 +69,10 @@ A partial list of part types (e.g. [wokwi-led](parts/wokwi-led)) can be found un
 Each diagram should include a microcontroller part. The following microcontrollers are currently supported:
 
 - [`wokwi-attiny85`](parts/wokwi-attiny85) - ATtiny85
-- `wokwi-arduino-nano` - Arduino Nano
+- [`wokwi-arduino-nano`](parts/wokwi-arduino-nano) - Arduino Nano
 - `wokwi-arduino-mega` - Arduino Mega 2560
-- `wokwi-arduino-uno` - Arduino Uno R3
+- [`wokwi-arduino-uno`](parts/wokwi-arduino-uno) - Arduino Uno R3
+- [`wokwi-pi-pico`](parts/wokwi-pi-pico) - Raspberry Pi Pico
 
 :::tip
 Instead of manually specifying the left/top coordinates for each item, you
