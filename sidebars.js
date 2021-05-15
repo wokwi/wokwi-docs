@@ -20,6 +20,7 @@ module.exports = {
       'parts/wokwi-led',
       'parts/wokwi-membrane-keypad',
       'parts/wokwi-pi-pico',
+      'parts/wokwi-potentiometer',
       'parts/wokwi-pushbutton',
       'parts/wokwi-servo',
       'parts/wokwi-slide-switch',
