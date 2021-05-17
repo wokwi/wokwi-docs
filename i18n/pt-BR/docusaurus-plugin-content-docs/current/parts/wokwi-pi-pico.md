@@ -44,25 +44,25 @@ Veja o [Blink](https://wokwi.com/arduino/projects/297755575592157709) para um ex
 ## Recursos do simulador
 
 O Raspberry Pi Pico é simulado usando a [Biblioteca RP2040js](https://github.com/wokwi/rp2040js).
-A tabela a seguir resume o status dos recursos de simulação:
+Esta tabela resume o status dos recursos da simulação:
 
-| Periférico               | Status | Notas                                                                      |
-| ------------------------ | ------ | -------------------------------------------------------------------------- |
-| Núcleo do processador    | 🟡     | Apenas um único núcleo é simulado, algumas instruções ainda estão faltando |
-| GPIO                     | 🟡     | Entrada/saída funcionando, interrupções ausentes                           |
-| PIO                      | ❌     |                                                                            |
-| USB                      | ❌     |                                                                            |
-| UART                     | 🟡     | Apenas TX (envio de dados do Pico para o computador)                       |
-| I2C                      | ❌     |                                                                            |
-| SPI                      | ❌     |                                                                            |
-| PWM                      | ❌     |                                                                            |
-| Timer                    | 🟡     | Contador de 64 bits implementado, mas os alarmes não                       |
-| ARM SysTick Timer        | 🟡     | Implementação parcial                                                      |
-| Watchdog                 | ❌     |                                                                            |
-| RTC                      | ❌     |                                                                            |
-| ADC + Sensor Temperatura | ❌     |                                                                            |
-| SSI                      | 🟡     | Apenas o mínimo para deixar o bootloader feliz                             |
-| GDB Debugging            | 🟡     | Implementado, mas sem a interface web-gdb                                  |
+| Periférico               | Status | Notas                                                |
+| ------------------------ | ------ | ---------------------------------------------------- |
+| Núcleo do processador    | ✔️     | Apenas um único núcleo é simulado                    |
+| GPIO                     | 🟡     | Entrada/saída funcionando, interrupções ausentes     |
+| PIO                      | ❌     |                                                      |
+| USB                      | ❌     |                                                      |
+| UART                     | 🟡     | Apenas TX (envio de dados do Pico para o computador) |
+| I2C                      | ❌     |                                                      |
+| SPI                      | ❌     |                                                      |
+| PWM                      | ❌     |                                                      |
+| Timer                    | 🟡     | Contador de 64 bits implementado, mas os alarmes não |
+| ARM SysTick Timer        | 🟡     | Implementação parcial                                |
+| Watchdog                 | ❌     |                                                      |
+| RTC                      | ❌     |                                                      |
+| ADC + Sensor Temperatura | ❌     |                                                      |
+| SSI                      | 🟡     | Apenas o mínimo para deixar o bootloader feliz       |
+| GDB Debugging            | 🟡     | Implementado, mas sem a interface web-gdb            |
 
 Legenda:
 ✔️ Simulado
@@ -142,3 +142,5 @@ Para um exemplo completo, confira o [Exemplo de monitor serial Pi Pico](https://
 
 - [LCD1602 com Pi Pico](https://wokwi.com/arduino/projects/297323005822894602)
 - [Semáforo com Pi Pico](https://wokwi.com/arduino/projects/297322571959894536)
+- [Pi Pico C++ SDK Blink](https://wokwi.com/arduino/projects/298013072042230285)
+- [Pi Pico C++ SDK 7-Segment Example](https://wokwi.com/arduino/projects/298014884249993738)
