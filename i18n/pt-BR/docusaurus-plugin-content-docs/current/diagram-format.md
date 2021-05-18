@@ -62,14 +62,15 @@ Cada componente deve ter uma única propriedade "id". Se dois componentes têm o
 a simulação pode não funcionar corretamente.
 :::
 
-Uma lista parcial dos tipos de componentes (por exemplo, [wokwi-led] (peças / wokwi-led)) pode ser encontrada na seção "Referência do diagrama" deste guia. No momento, estamos trabalhando para expandir esta lista. Enquanto isso, algumas das partes também estão documentadas em [Wokwi Elements] (https://elements.wokwi.com).
+Uma lista parcial dos tipos de componentes (por exemplo, [wokwi-led](parts/wokwi-led)) pode ser encontrada na seção "Referência do diagrama" deste guia. No momento, estamos trabalhando para expandir esta lista. Enquanto isso, algumas das partes também estão documentadas em [Wokwi Elements](https://elements.wokwi.com).
 
 Cada diagrama deve incluir um componente do microcontrolador. Os seguintes microcontroladores são atualmente suportados:
 
 - [`wokwi-attiny85`](parts/wokwi-attiny85) - ATtiny85
-- `wokwi-arduino-nano` - Arduino Nano
+- [`wokwi-arduino-nano`](parts/wokwi-arduino-nano) - Arduino Nano
 - `wokwi-arduino-mega` - Arduino Mega 2560
-- `wokwi-arduino-uno` - Arduino Uno R3
+- [`wokwi-arduino-uno`](parts/wokwi-arduino-uno) - Arduino Uno R3
+- [`wokwi-pi-pico`](parts/wokwi-pi-pico) - Raspberry Pi Pico
 
 :::tip
 Em vez de especificar manualmente as coordenadas esquerda/superior para cada item, você
