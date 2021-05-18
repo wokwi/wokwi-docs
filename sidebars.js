@@ -16,6 +16,8 @@ module.exports = {
       'parts/wokwi-attiny85',
       'parts/wokwi-dht22',
       'parts/wokwi-ds1307',
+      'parts/wokwi-ir-receiver',
+      'parts/wokwi-ir-remote',
       'parts/wokwi-lcd1602',
       'parts/wokwi-lcd2004',
       'parts/wokwi-led',
