@@ -56,7 +56,7 @@ This table summarizes the status of the simulation features:
 | I2C               | ❌     |                                                      |
 | SPI               | ❌     |                                                      |
 | PWM               | ❌     |                                                      |
-| Timer             | 🟡     | 64 bit counter implemented, but alarms not           |
+| Timer             | ✔️     | Pausing the timer not implemented yet                |
 | ARM SysTick Timer | 🟡     | Partial implementation                               |
 | Watchdog          | ❌     |                                                      |
 | RTC               | ❌     |                                                      |
