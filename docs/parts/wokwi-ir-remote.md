@@ -1,6 +1,6 @@
 ---
-title: wokwi-ir-receiver Reference
-sidebar_label: wokwi-ir-receiver
+title: wokwi-ir-remote Reference
+sidebar_label: wokwi-ir-remote
 ---
 
 38KHz infrared remote with 20 function keys. Use together with the [IR Receiver module](wokwi-ir-receiver).
