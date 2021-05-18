@@ -16,9 +16,9 @@ Resistência variável controlada por botão (potenciômetro linear)
 | VCC  | Tensão de alimentação                         |
 
 Nota: Wokwi **não** suporta simulação analógica totalmente, então você terá o mesmo
-resultados mesmo se você não conectar os pinos GND/VCC.
+resultado se não conectar os pinos GND/VCC.
 
-Isso pode mudar no futuro, então é uma boa ideia conectar o GND / VCC de qualquer maneira.
+Isso pode mudar no futuro, então é uma boa ideia conectar o GND/VCC de qualquer maneira.
 
 ## Atributos
 

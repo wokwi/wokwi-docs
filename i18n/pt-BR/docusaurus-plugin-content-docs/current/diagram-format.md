@@ -62,7 +62,7 @@ Cada componente deve ter uma única propriedade "id". Se dois componentes têm o
 a simulação pode não funcionar corretamente.
 :::
 
-Uma lista parcial dos tipos de componentes (por exemplo, [wokwi-led](peças/wokwi-led)) pode ser encontrada na seção "Referência do diagrama" deste guia. No momento, estamos trabalhando para expandir esta lista. Enquanto isso, algumas das partes também estão documentadas em [Wokwi Elements] (https://elements.wokwi.com).
+Uma lista parcial dos tipos de componentes (por exemplo, [wokwi-led](parts/wokwi-led)) pode ser encontrada na seção "Referência do diagrama" deste guia. No momento, estamos trabalhando para expandir esta lista. Enquanto isso, algumas das partes também estão documentadas em [Wokwi Elements](https://elements.wokwi.com).
 
 Cada diagrama deve incluir um componente do microcontrolador. Os seguintes microcontroladores são atualmente suportados:
 
