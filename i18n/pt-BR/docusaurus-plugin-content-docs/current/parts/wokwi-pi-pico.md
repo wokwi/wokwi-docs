@@ -56,7 +56,7 @@ Esta tabela resume o status dos recursos da simulação:
 | I2C                      | ❌     |                                                      |
 | SPI                      | ❌     |                                                      |
 | PWM                      | ❌     |                                                      |
-| Timer                    | 🟡     | Contador de 64 bits implementado, mas os alarmes não |
+| Timer                    | ✔️     | A pausa do cronômetro ainda não foi implementada     |
 | ARM SysTick Timer        | 🟡     | Implementação parcial                                |
 | Watchdog                 | ❌     |                                                      |
 | RTC                      | ❌     |                                                      |
