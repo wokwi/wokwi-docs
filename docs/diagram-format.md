@@ -70,7 +70,7 @@ Each diagram should include a microcontroller part. The following microcontrolle
 
 - [`wokwi-attiny85`](parts/wokwi-attiny85) - ATtiny85
 - [`wokwi-arduino-nano`](parts/wokwi-arduino-nano) - Arduino Nano
-- `wokwi-arduino-mega` - Arduino Mega 2560
+- [`wokwi-arduino-mega`](parts/wokwi-arduino-mega) - Arduino Mega 2560
 - [`wokwi-arduino-uno`](parts/wokwi-arduino-uno) - Arduino Uno R3
 - [`wokwi-pi-pico`](parts/wokwi-pi-pico) - Raspberry Pi Pico
 
