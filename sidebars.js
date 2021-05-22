@@ -24,6 +24,7 @@ module.exports = {
       'parts/wokwi-led',
       'parts/wokwi-membrane-keypad',
       'parts/wokwi-pi-pico',
+      'parts/wokwi-pir-motion-sensor',
       'parts/wokwi-potentiometer',
       'parts/wokwi-pushbutton',
       'parts/wokwi-servo',
