@@ -7,6 +7,8 @@ Knob-controlled variable resistor (linear potentiometer)
 
 <wokwi-potentiometer />
 
+The information below also applies to the [slide potentiometer](wokwi-slide-potentiometer).
+
 ## Pin names
 
 | Name | Description                            |

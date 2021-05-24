@@ -29,6 +29,7 @@ module.exports = {
       'parts/wokwi-potentiometer',
       'parts/wokwi-pushbutton',
       'parts/wokwi-servo',
+      'parts/wokwi-slide-potentiometer',
       'parts/wokwi-slide-switch',
     ],
   },
