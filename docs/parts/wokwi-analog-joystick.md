@@ -3,7 +3,7 @@ title: wokwi-analog-joystick Reference
 sidebar_label: wokwi-analog-joystick
 ---
 
-Analog Joystick with two axes (horizontal/vertical) and an integrated push button.
+Analog Joystick with two axes (horizontal/vertical) and an integrated push button for wokwi online Arduino Simulator
 
 <wokwi-analog-joystick />
 
@@ -40,7 +40,7 @@ to press the joystick while moving the shaft.
 
 Partial movement and touch control are not currently supported. We'd love to see them supported though - so if you are up to the task, there's [an open issue waiting for your love](https://github.com/wokwi/wokwi-elements/issues/62).
 
-## Using the Joystick in Arduino
+## Using the Joystick in the online Arduino simulator
 
 | Joystick Pin | Arduino Pins             | Example code pin |
 | ------------ | ------------------------ | ---------------- |
@@ -50,7 +50,7 @@ Partial movement and touch control are not currently supported. We'd love to see
 | SEL          | any digital pin          | 2                |
 | GND          | GND                      |                  |
 
-To use the Joystick in Arduino, connect the VERT and the HORZ pins to analog pins (A0...A6), and configure these pins as input. Read the joystick position using `analogRead()`.
+To use the Joystick in the Arduino simulator, connect the VERT and the HORZ pins to analog pins (A0...A6), and configure these pins as input. Read the joystick position using `analogRead()`.
 
 ```cpp
 #define VERT_PIN A0
@@ -95,6 +95,6 @@ You can use the [map() function](https://www.arduino.cc/reference/en/language/fu
 For instance, `map(analogRead(HORZ_PIN), 0, 1023, -100, 100)` will return -100 when the joystick is all the way to the right, 0 when the joystick
 in centered, and 100 when the joystick is all the way to the left.
 
-## Simulator examples
+## Arduino Simulator examples
 
 - [Etch-a-sketch](https://wokwi.com/arduino/projects/296234816685212169) - A simple drawing game using a MAX7219 LED Dot Matrix
