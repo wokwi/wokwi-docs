@@ -49,7 +49,7 @@ This table summarizes the status of the simulation features:
 | Peripheral        | Status | Notes                                                |
 | ----------------- | ------ | ---------------------------------------------------- |
 | Processor core    | ✔️     | Only a single core is simulated                      |
-| GPIO              | 🟡     | Input/output working, interrupts missing             |
+| GPIO              | ✔️     |                                                      |
 | PIO               | ❌     |                                                      |
 | USB               | ❌     |                                                      |
 | UART              | 🟡     | TX only (sending data from the Pico to the computer) |
