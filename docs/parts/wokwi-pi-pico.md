@@ -62,7 +62,7 @@ This table summarizes the status of the simulation features:
 | RTC               | ❌     |                                                      |
 | ADC + Temp sensor | ❌     |                                                      |
 | SSI               | 🟡     | Just the minimum to make the bootloader happy        |
-| GDB Debugging     | 🟡     | Implemented but missing the web-gdb interface        |
+| GDB Debugging     | ✔️     | See the [GDB Debugging guide](../gdb-debugging)      |
 
 Legend:  
 ✔️ Simulated  
