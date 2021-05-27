@@ -95,14 +95,15 @@ The default configuration is as follows:
 
 ### Display
 
-The `display` property configures when to display the serial monitor. The possible values are:
+The `display` property configures when/how to display the serial monitor. The possible values are:
 
-| Value   | Description                                                       |
-| ------- | ----------------------------------------------------------------- |
-| auto    | Display the Serial Monitor when there's some output (the default) |
-| always  | Always display the Serial Monitor when simulation starts          |
-| never   | Never display the Serial Monitor                                  |
-| plotter | Display the Serial Plotter when simulation starts                 |
+| Value    | Description                                                       |
+| -------- | ----------------------------------------------------------------- |
+| auto     | Display the Serial Monitor when there's some output (the default) |
+| always   | Always display the Serial Monitor when simulation starts          |
+| never    | Never display the Serial Monitor                                  |
+| plotter  | Display the Serial Plotter when simulation starts                 |
+| terminal | Display a terminal (using [XTerm.js](https://xtermjs.org/))       |
 
 ### Newline
 
