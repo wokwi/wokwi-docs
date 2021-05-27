@@ -46,23 +46,23 @@ See [Blink](https://wokwi.com/arduino/projects/297755575592157709) for a complet
 The Raspberry Pi Pico is simulated using the [RP2040js Library](https://github.com/wokwi/rp2040js).  
 This table summarizes the status of the simulation features:
 
-| Peripheral        | Status | Notes                                                |
-| ----------------- | ------ | ---------------------------------------------------- |
-| Processor core    | ✔️     | Only a single core is simulated                      |
-| GPIO              | ✔️     |                                                      |
-| PIO               | ❌     |                                                      |
-| USB               | ❌     |                                                      |
-| UART              | 🟡     | TX only (sending data from the Pico to the computer) |
-| I2C               | ❌     |                                                      |
-| SPI               | ❌     |                                                      |
-| PWM               | ❌     |                                                      |
-| Timer             | ✔️     | Pausing the timer not implemented yet                |
-| ARM SysTick Timer | 🟡     | Partial implementation                               |
-| Watchdog          | ❌     |                                                      |
-| RTC               | ❌     |                                                      |
-| ADC + Temp sensor | ❌     |                                                      |
-| SSI               | 🟡     | Just the minimum to make the bootloader happy        |
-| GDB Debugging     | ✔️     | See the [GDB Debugging guide](../gdb-debugging)      |
+| Peripheral        | Status | Notes                                           |
+| ----------------- | ------ | ----------------------------------------------- |
+| Processor core    | ✔️     | Only a single core is simulated                 |
+| GPIO              | ✔️     |                                                 |
+| PIO               | ❌     |                                                 |
+| USB               | ❌     |                                                 |
+| UART              | ✔️     |                                                 |
+| I2C               | ❌     |                                                 |
+| SPI               | ❌     |                                                 |
+| PWM               | ❌     |                                                 |
+| Timer             | ✔️     | Pausing the timer not implemented yet           |
+| ARM SysTick Timer | 🟡     | Partial implementation                          |
+| Watchdog          | ❌     |                                                 |
+| RTC               | ❌     |                                                 |
+| ADC + Temp sensor | ❌     |                                                 |
+| SSI               | 🟡     | Just the minimum to make the bootloader happy   |
+| GDB Debugging     | ✔️     | See the [GDB Debugging guide](../gdb-debugging) |
 
 Legend:  
 ✔️ Simulated  
