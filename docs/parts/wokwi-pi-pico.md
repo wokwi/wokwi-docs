@@ -138,6 +138,16 @@ Note the usage of `Serial1`. The standard `Serial` in the Arduino Core uses Seri
 
 For a complete example, check out the [Pi Pico Serial Monitor Example](https://wokwi.com/arduino/projects/297755360074138125).
 
+## Exporting UF2 binary
+
+You can upload the program from the emulator directly into a physical Raspberry Pi Pico board. The steps are:
+
+1. Press "F1" in the Wokwi code editor and select "Download UF2 Binary".
+   The download should start within a few seconds.
+2. Start your Pi Pico in bootloader mode. You can do this by pressing the boot loader button while
+   plugging the Pi Pico into the USB port of your computer.
+3. You should see a new drive appear on your computer (named "RPI-RP2"). Copy the UF2 file you downloaded into that drive.
+
 ## Simulator examples
 
 - [Pi Pico and LCD1602](https://wokwi.com/arduino/projects/297323005822894602)
