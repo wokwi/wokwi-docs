@@ -96,12 +96,13 @@ A configuração padrão é a seguinte:
 
 A propriedade `display` configura quando exibir o monitor serial. Os valores possíveis são:
 
-| Valor   | Descrição                                                         |
-| --------| ----------------------------------------------------------------- |
-| auto    | Exibe o monitor serial quando houver alguma saída (por padrão)    |
-| always  | Sempre exibe o Monitor Serial quando a simulação é iniciada       |
-| never   | Nunca exiba o monitor serial                                      |
-| plotter | Exibe o plotter serial quando a simulação é iniciada              |
+| Valor    | Descrição                                                         |
+| -------- | ----------------------------------------------------------------- |
+| auto     | Exibe o monitor serial quando houver alguma saída (por padrão)    |
+| always   | Sempre exibe o Monitor Serial quando a simulação é iniciada       |
+| never    | Nunca exiba o monitor serial                                      |
+| plotter  | Exibe o plotter serial quando a simulação é iniciada              |
+| terminal | Exibe um terminal (usando [XTerm.js](https://xtermjs.org/))       |
 
 ### Newline
 
