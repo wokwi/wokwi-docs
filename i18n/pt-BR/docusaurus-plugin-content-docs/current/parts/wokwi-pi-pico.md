@@ -49,10 +49,10 @@ Esta tabela resume o status dos recursos da simulação:
 | Periférico               | Status | Notas                                                |
 | ------------------------ | ------ | ---------------------------------------------------- |
 | Núcleo do processador    | ✔️     | Apenas um único núcleo é simulado                    |
-| GPIO                     | 🟡     | Entrada/saída funcionando, interrupções ausentes     |
+| GPIO                     | ✔️     |                                                      |
 | PIO                      | ❌     |                                                      |
 | USB                      | ❌     |                                                      |
-| UART                     | 🟡     | Apenas TX (envio de dados do Pico para o computador) |
+| UART                     | ✔️     |                                                      |
 | I2C                      | ❌     |                                                      |
 | SPI                      | ❌     |                                                      |
 | PWM                      | ❌     |                                                      |
@@ -62,7 +62,7 @@ Esta tabela resume o status dos recursos da simulação:
 | RTC                      | ❌     |                                                      |
 | ADC + Sensor Temperatura | ❌     |                                                      |
 | SSI                      | 🟡     | Apenas o mínimo para deixar o bootloader feliz       |
-| GDB Debugging            | 🟡     | Implementado, mas sem a interface web-gdb            |
+| GDB Debugging            | ✔️     | Consulte o [Guia de depuração GDB](../gdb-debugging) |
 
 Legenda:
 ✔️ Simulado
@@ -137,6 +137,16 @@ void loop() { }
 Observe o uso de `Serial1`. O `Serial` padrão no Arduino Core usa Serial over USB (CDC), que atualmente não é suportado na simulação. `Serial1`, em contraste, usa o hardware UART (conectado aos pinos GP0/GP1).
 
 Para um exemplo completo, confira o [Exemplo de monitor serial Pi Pico](https://wokwi.com/arduino/projects/297755360074138125).
+
+## Exportando binário UF2
+
+Você pode carregar o programa do emulador diretamente em uma placa física Raspberry Pi Pico. As etapas são:
+
+1. Pressione "F1" no editor de código Wokwi e selecione "Download UF2 Binary".
+   O download deve começar em alguns segundos.
+2. Inicie seu Pi Pico no modo bootloader. Você pode fazer isso pressionando o botão do carregador de boot enquanto estiver
+   conectando o Pi Pico na porta USB do seu computador.
+3. Você deve ver uma nova unidade aparecer em seu computador (chamada "RPI-RP2"). Copie o arquivo UF2 que você baixou para essa unidade.
 
 ## Exemplos no simulador
 
