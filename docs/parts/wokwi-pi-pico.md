@@ -148,6 +148,10 @@ You can upload the program from the emulator directly into a physical Raspberry 
    plugging the Pi Pico into the USB port of your computer.
 3. You should see a new drive appear on your computer (named "RPI-RP2"). Copy the UF2 file you downloaded into that drive.
 
+## MicroPython Support
+
+The Raspberry Pi Pico supports MicroPython, and you can use it for running MicroPython projects in Wokwi. For more information, check out the [MicroPython Guide](../guides/micropython).
+
 ## Simulator examples
 
 - [Pi Pico and LCD1602](https://wokwi.com/arduino/projects/297323005822894602)

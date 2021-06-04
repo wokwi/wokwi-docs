@@ -7,6 +7,7 @@ module.exports = {
       'gdb-debugging',
       'guides/serial-monitor',
       'guides/libraries',
+      'guides/micropython',
     ],
     'Diagram Reference': [
       'diagram-format',
