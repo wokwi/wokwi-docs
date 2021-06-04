@@ -148,6 +148,10 @@ Você pode carregar o programa do emulador diretamente em uma placa física Rasp
    conectando o Pi Pico na porta USB do seu computador.
 3. Você deve ver uma nova unidade aparecer em seu computador (chamada "RPI-RP2"). Copie o arquivo UF2 que você baixou para essa unidade.
 
+## MicroPython Suporte
+
+O Raspberry Pi Pico oferece suporte a MicroPython e você pode usá-lo para executar projetos MicroPython no Wokwi. Para obter mais informações, consulte o [Guia MicroPython](../guides/micropython).
+
 ## Exemplos no simulador
 
 - [LCD1602 com Pi Pico](https://wokwi.com/arduino/projects/297323005822894602)
