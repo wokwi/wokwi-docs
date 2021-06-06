@@ -56,6 +56,7 @@ This table summarizes the status of the simulation features:
 | I2C               | ❌     |                                                 |
 | SPI               | ❌     |                                                 |
 | PWM               | ❌     |                                                 |
+| DMA               | ❌     |                                                 |
 | Timer             | ✔️     | Pausing the timer not implemented yet           |
 | ARM SysTick Timer | 🟡     | Partial implementation                          |
 | Watchdog          | ❌     |                                                 |
