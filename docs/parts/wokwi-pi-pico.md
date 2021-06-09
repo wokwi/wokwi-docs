@@ -50,7 +50,7 @@ This table summarizes the status of the simulation features:
 | ----------------- | ------ | ----------------------------------------------- |
 | Processor core    | ✔️     | Only a single core is simulated                 |
 | GPIO              | ✔️     |                                                 |
-| PIO               | ❌     |                                                 |
+| PIO               | ✔️     | Not widely tested; PIO Debugger available       |
 | USB               | ❌     |                                                 |
 | UART              | ✔️     |                                                 |
 | I2C               | ❌     |                                                 |
