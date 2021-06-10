@@ -54,6 +54,14 @@ digitalWrite(LED_BUILTIN, HIGH);
 
 See [Blink](https://wokwi.com/arduino/libraries/demo/blink) for a complete code example.
 
+## Attributes
+
+| Name      | Description                                                             | Default value |
+| --------- | ----------------------------------------------------------------------- | ------------- |
+| frequency | MCU clock frequency, in hertz. Common values: "8m", "16m", and "20m" \* | "16m"         |
+
+\* Many Arduino libraries assume 16 MHz clock frequency. Changing the clock frequency will void your warranty!
+
 ## Simulation features
 
 The Arduino Uno is simulated using the [AVR8js Library](https://github.com/wokwi/avr8js). The table below summarizes the status of features:

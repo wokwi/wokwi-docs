@@ -20,6 +20,12 @@ The ATtiny85 is a small 8-bit AVR microcontroller. It has 8KB of Flash program m
 | 7   | PB2  | SPI:SCK, I2C:SCL  | 1              |
 | 8   | VCC  | Positive voltage  |                |
 
+## Attributes
+
+| Name      | Description                                                                | Default value |
+| --------- | -------------------------------------------------------------------------- | ------------- |
+| frequency | MCU clock frequency, in hertz. Common values: "1m", "8m", "16m", and "20m" | "8m"          |
+
 ## Code and libraries
 
 The code is compiled using the [ATtiny Core for Arduino](https://github.com/damellis/attiny).
