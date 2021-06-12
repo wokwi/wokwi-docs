@@ -46,7 +46,7 @@ All the above libraries are available on Wokwi.
 
 - [SSD1306 Snake Game](https://wokwi.com/arduino/projects/296135008348799496) (using Adafruit SSD1306)
 - [ATtiny85 Digital Temperature + Humidity on SSD1306](https://wokwi.com/arduino/projects/292900020514980360)
-- [U8glib Progress Bar](https://wokwi.com/arduino/projects/286806448514531852)
+- [U8glib Progress Bar](https://wokwi.com/arduino/projects/300867986768527882)
 - [SSD1306Ascii Fonts](https://wokwi.com/arduino/projects/291197274604700168)
 - [Adafruit SSD1306 Showcase](https://wokwi.com/arduino/libraries/Adafruit_SSD1306/ssd1306_128x64_i2c)
 - [U8g2 Menu](https://wokwi.com/arduino/projects/291572875238834696)
