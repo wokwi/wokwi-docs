@@ -3,7 +3,7 @@ title: Referência do wokwi-slide-switch
 sidebar_label: wokwi-slide-switch
 ---
 
-Interruptor deslizante padrão (SPDT) Single Pull Double Throw.
+Interruptor deslizante padrão (SPDT) Single Pole Double Throw.
 
 <wokwi-slide-switch />
 
