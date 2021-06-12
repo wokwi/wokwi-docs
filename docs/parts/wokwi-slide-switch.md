@@ -3,7 +3,7 @@ title: wokwi-slide-switch Reference
 sidebar_label: wokwi-slide-switch
 ---
 
-Standard Single Pull Double Throw (SPDT) slide switch.
+Standard Single Pole Double Throw (SPDT) slide switch.
 
 <wokwi-slide-switch />
 
