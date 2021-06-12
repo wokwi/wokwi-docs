@@ -11,6 +11,7 @@ module.exports = {
     ],
     'Diagram Reference': [
       'diagram-format',
+      'parts/wokwi-74hc595',
       'parts/wokwi-analog-joystick',
       'parts/wokwi-arduino-mega',
       'parts/wokwi-arduino-nano',
