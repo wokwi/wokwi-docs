@@ -50,12 +50,13 @@ Esta tabela resume o status dos recursos da simulação:
 | ------------------------ | ------ | ---------------------------------------------------- |
 | Núcleo do processador    | ✔️     | Apenas um único núcleo é simulado                    |
 | GPIO                     | ✔️     |                                                      |
-| PIO                      | ❌     |                                                      |
+| PIO                      | ✔️     | Not widely tested; PIO Debugger available            |
 | USB                      | ❌     |                                                      |
 | UART                     | ✔️     |                                                      |
 | I2C                      | ❌     |                                                      |
 | SPI                      | ❌     |                                                      |
 | PWM                      | ❌     |                                                      |
+| DMA                      | ❌     |                                                      |
 | Timer                    | ✔️     | A pausa do cronômetro ainda não foi implementada     |
 | ARM SysTick Timer        | 🟡     | Implementação parcial                                |
 | Watchdog                 | ❌     |                                                      |

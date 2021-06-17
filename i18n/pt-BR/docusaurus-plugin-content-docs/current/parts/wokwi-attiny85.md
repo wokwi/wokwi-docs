@@ -20,6 +20,12 @@ O ATtiny85 é um pequeno microcontrolador AVR de 8 bits. Possui 8 KB de memória
 | 7    | PB2  | SPI:SCK, I2C:SCL  | 1               |
 | 8    | VCC  | Tensão positiva   |                 |
 
+## Attributes
+
+| Nome      | Descrição                                                                        | Valor padrão |
+| --------- | -------------------------------------------------------------------------------- | ------------ |
+| frequency | Frequência de clock do MCU, em hertz. Valores comuns: "1m", "8m", "16m", e "20m" | "8m"         |
+
 ## Código e bibliotecas
 
 O código é compilado usando o [ATtiny Core para Arduino](https://github.com/damellis/attiny).
