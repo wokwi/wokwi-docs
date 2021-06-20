@@ -42,3 +42,5 @@ The board includes two 3mm LEDs:
 
 - [Franzininho Blink](https://wokwi.com/arduino/projects/301693553069785610)
 - [Franzininho Clock](https://wokwi.com/arduino/projects/301738586036765194), using two [74HC595 shift registers](wokwi-74hc595) and [DS1307 RTC](wokwi-ds1307).
+- [Franzininho Analog Temperature Sensor](https://wokwi.com/arduino/projects/301751077214093834), using [NTC thermistor](wokwi-ntc-temperature-sensor) and [SSD1306](wokwi-ssd1306).
+- [Franzininho Digital Humidity and Temperature](https://wokwi.com/arduino/projects/301745949656482317), using [DHT22](wokwi-dht22) and [SSD1306](wokwi-ssd1306).
