@@ -26,6 +26,7 @@ module.exports = {
       'parts/wokwi-lcd2004',
       'parts/wokwi-led',
       'parts/wokwi-membrane-keypad',
+      'parts/wokwi-nano-rp2040-connect',
       'parts/wokwi-ntc-temperature-sensor',
       'parts/wokwi-pi-pico',
       'parts/wokwi-pir-motion-sensor',
