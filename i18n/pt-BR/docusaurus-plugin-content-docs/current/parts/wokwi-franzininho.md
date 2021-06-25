@@ -39,7 +39,10 @@ A placa inclui dois LEDs de 3 mm:
 
 ## Exemplos no simulador
 
-- [Franzininho Pisca LED](https://wokwi.com/arduino/projects/301693553069785610)
-- [Franzininho Relógio](https://wokwi.com/arduino/projects/301738586036765194), usando dois [74HC595](wokwi-74hc595) e [RTC DS1307](wokwi-ds1307).
-- [Franzininho Sensor Analógico de Temperatura](https://wokwi.com/arduino/projects/301751077214093834), usando [Termistor NTC](wokwi-dht22) e [SSD1306](wokwi-ssd1306)
-- [Franzininho Umidade e Temperatura Digital](https://wokwi.com/arduino/projects/301745949656482317), usando [DHT22](wokwi-ntc-temperature-sensor) e [SSD1306](wokwi-ssd1306)
+- [Pisca LED](https://wokwi.com/arduino/projects/301693553069785610)
+- [Relógio](https://wokwi.com/arduino/projects/301738586036765194), usando dois [74HC595](wokwi-74hc595) e [RTC DS1307](wokwi-ds1307)
+- [Sensor de Temperatura NTC](https://wokwi.com/arduino/projects/301751077214093834), usando [Termistor NTC](wokwi-ntc-temperature-sensor) e [SSD1306](wokwi-ssd1306)
+- [Sensor de Umidade e Temperatura Digital](https://wokwi.com/arduino/projects/301745949656482317), usando [DHT22](wokwi-dht22) e [SSD1306](wokwi-ssd1306)
+- [Sensor Ultra-sônico](https://wokwi.com/arduino/projects/302020345098928648), usando [74HC595](wokwi-74hc595) e HC-SR04
+- [Controle de posição Servo Motor](https://wokwi.com/arduino/projects/302291615188255242), usando um [Motor Micro Servo](wokwi-servo) e um [LCD1602](wokwi-lcd1602)
+- [Contador de pulsos externos](https://wokwi.com/arduino/projects/302199144424931848)
