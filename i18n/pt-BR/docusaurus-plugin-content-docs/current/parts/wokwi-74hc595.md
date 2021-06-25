@@ -60,4 +60,7 @@ Você também pode [executar este exemplo no Wokwi](https://wokwi.com/arduino/pr
 
 ## Exemplos no Simulador
 
-- [75HC595 Shift Register com 8 LEDs](https://wokwi.com/arduino/projects/301188813482361352)
+- [75HC595 shift register com 8 LEDs](https://wokwi.com/arduino/projects/301188813482361352)
+- [Arduino 16-LED shift register blink](https://wokwi.com/arduino/projects/301213976182653448)
+- [ATtiny85 75HC595 clock](https://wokwi.com/arduino/projects/301366580039647753)
+- [8-digit seven-segment hex counter](https://wokwi.com/arduino/projects/301304715310793225)
