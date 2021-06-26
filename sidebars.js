@@ -17,6 +17,7 @@ module.exports = {
       'parts/wokwi-arduino-nano',
       'parts/wokwi-arduino-uno',
       'parts/wokwi-attiny85',
+      'parts/wokwi-buzzer',
       'parts/wokwi-dht22',
       'parts/wokwi-ds1307',
       'parts/wokwi-franzininho',
