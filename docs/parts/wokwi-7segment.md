@@ -55,6 +55,7 @@ And the digit mapping:
 | ------------------------------------------------------------- | --------------------------------- |
 | <wokwi-7segment color="green" values="[1,1,1,1,0,1,1,0]" />   | `{ "color": "green" }`            |
 | <wokwi-7segment color="#d040d0" values="[1,1,1,1,0,1,1,0]" /> | `{ "color": "#d040d0" }`          |
+| <wokwi-7segment digits="2" />                                 | `{ "digits": "2" }`               |
 | <wokwi-7segment digits="4" />                                 | `{ "digits": "4" }`               |
 | <wokwi-7segment digits="4" colon="1" colonValue="1" />        | `{ "digits": "4", "colon": "1" }` |
 
