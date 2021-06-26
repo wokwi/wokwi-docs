@@ -22,9 +22,9 @@ pull-up/pull-down externos.
 
 ## Atributos
 
-| Name  | Description         | Default value |
-| ----- | ------------------- | ------------- |
-| value | Resistance, in ohms | "1000"        |
+| Nome  | Descrição            | Valor padrão |
+| ----- | -------------------- | ------------ |
+| value | Resistência, em ohms | "1000"       |
 
 ### Exemplos
 
@@ -34,7 +34,7 @@ pull-up/pull-down externos.
 | <wokwi-resistor value="220" />      | `{ "value": "220" }`      |
 | <wokwi-resistor value="10000000" /> | `{ "value": "10000000" }` |
 
-Confira a [demonstração do resistor por Koepel(https://wokwi.com/arduino/projects/300936732038136328) para mais exemplos.
+Confira a [demonstração do resistor por Koepel](https://wokwi.com/arduino/projects/300936732038136328) para mais exemplos.
 
 ## Exemplos no Simulador
 
