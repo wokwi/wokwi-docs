@@ -80,6 +80,8 @@ value will get you garbage in the Serial monitor.
 
 For a complete example, check out the [ATtiny85 SoftwareSerial example project](https://wokwi.com/arduino/projects/290883003139228169).
 
+Note: if you just want to use the Serial monitor for printing debug messages, take a look at [the TinyDebug library](../parts/wokwi-attiny85#debug-prints-with-tinydebug).
+
 ## Configuring the Serial Monitor
 
 You can configure the Serial Monitor by adding a `"serialMonitor"` section to your [diagram.json](../diagram-format) file.

@@ -31,6 +31,42 @@ The ATtiny85 is a small 8-bit AVR microcontroller. It has 8KB of Flash program m
 The code is compiled using the [ATtiny Core for Arduino](https://github.com/damellis/attiny).
 This means you can use most of the standard Arduino functions and libraries in your code.
 
+### Debug prints with TinyDebug
+
+You can use the [TinyDebug library](https://github.com/wokwi/TinyDebug) to print debug messages from your code. These messages appear in Wokwi's Serial Monitor. To use the library, include "TinyDebug.h" in your project, call `Debug.begin()` and then print your debug messages using `Debug.println()`:
+
+```cpp
+#include <TinyDebug.h>
+
+void setup() {
+  Debug.begin();
+  Debug.println(F("Hello, TinyDebug!"));
+}
+
+void loop() {
+  /* Sprinkle some magic code here */
+}
+```
+
+Similarly, you can use the `Debug` object to read input from the Simulator's serial monitor:
+
+```cpp
+if (Debug.read() == 'c') {
+  // Do something, e.g. toggle an LED
+}
+```
+
+For more information about the available methods, check out the [Stream class documentation](https://www.arduino.cc/reference/en/language/functions/communication/stream/#_functions).
+
+The TinyDebug library works out of the box in Wokwi, without any changes to your diagram. It uses an
+internal debug interface that is part of the Wokwi simulation engine, and does not use any MCU pins.
+
+You can safely run code that uses TinyDebug on a physical ATtiny85 chip. The physical chip doesn't
+have the debug interface, so you obviously won't see the debugging messages, but other than that it
+shouldn't interfere with your code. However, note that TinyDebug uses about 32 bytes of SRAM.
+
+For a complete code example, check out the [TinyDebug demo project on Wokwi](https://wokwi.com/arduino/projects/300650387867697672).
+
 ### Serial Output
 
 The ATtiny85 doesn't have a dedicated UART peripheral, but it it still possible to get Serial Output using the Software Serial library.
