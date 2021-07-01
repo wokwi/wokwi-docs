@@ -31,6 +31,58 @@ O ATtiny85 é um pequeno microcontrolador AVR de 8 bits. Possui 8 KB de memória
 O código é compilado usando o [ATtiny Core para Arduino](https://github.com/damellis/attiny).
 Isso significa que você pode usar a maioria das funções e bibliotecas padrão do Arduino em seu código.
 
+### Depuração com TinyDebug
+
+Você pode usar a [biblioteca TinyDebug](https://github.com/wokwi/TinyDebug) para imprimir mensagens de depuração do seu código. Essas mensagens aparecem no Monitor Serial do Wokwi. Para usar a biblioteca, inclua "TinyDebug.h" em seu projeto, chame `Debug.begin()` e imprima suas mensagens de depuração usando `Debug.println()`:
+
+```cpp
+#include <TinyDebug.h>
+
+void setup() {
+  Debug.begin();
+  Debug.println(F("Olá, TinyDebug!"));
+}
+
+void loop() {
+  /* Espalhe um pouco de código mágico aqui */
+}
+```
+
+Da mesma forma, você pode usar o objeto `Debug` para ler a entrada do monitor serial do Simulador:
+
+```cpp
+if (Debug.read() == 'c') {
+  // Faça algo, por exemplo alternar um LED
+}
+```
+
+Para obter mais informações sobre os métodos disponíveis, verifique a [documentação da classe Stream](https://www.arduino.cc/reference/pt/language/functions/communication/stream/).
+
+A interface `Debug` consome cerca de 30 bytes de SRAM e 150 bytes de memória Flash, dependendo de quais métodos você usa em seu código. Isso às vezes pode ser um problema, já que o ATtiny85 tem apenas 512 bytes de SRAM.
+
+É por isso que o TinyDebug também fornece uma interface de registro leve e alternativa que não usa SRAM. Ele fornece duas funções, `tdPrint()` e `tdPrintln()`. A desvantagem é que você só pode imprimir strings de estilo c (`char *`):
+
+```cpp
+#include <TinyDebug.h>
+
+void setup() {
+  tdPrintln(F("Eu não uso SRAM!"));
+}
+
+void loop() {
+  /* ... */
+}
+```
+
+A biblioteca TinyDebug funciona fora da caixa no Wokwi, sem nenhuma alteração em seu diagrama. Usa uma
+interface de depuração interna que faz parte do mecanismo de simulação Wokwi e não usa nenhum pino do MCU.
+
+Você pode executar com segurança o código que usa o TinyDebug em um chip ATtiny85 físico. O chip físico não
+tem a interface de depuração, então você obviamente não verá as mensagens de depuração, mas além disso,
+não deve interferir no seu código.
+
+Para um exemplo completo de código, confira o [projeto de demonstração do TinyDebug no Wokwi](https://wokwi.com/arduino/projects/300650387867697672).
+
 ### Saída Serial
 
 O ATtiny85 não tem um periférico UART dedicado, mas ainda é possível obter saída serial usando a biblioteca Software Serial.

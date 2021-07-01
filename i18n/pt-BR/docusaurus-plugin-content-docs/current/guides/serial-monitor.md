@@ -79,6 +79,8 @@ vai exibir caracteres estranhos no monitor Serial.
 
 Para um exemplo completo, verifique o [Projeto de exemplo SoftwareSerial com ATtiny85](https://wokwi.com/arduino/projects/290883003139228169).
 
+Nota: se você quiser apenas usar o monitor serial para imprimir mensagens de depuração, dê uma olhada na [biblioteca TinyDebug](../parts/wokwi-attiny85#depuração-com-tinydebug).
+
 ## Configurando o Monitor Serial
 
 Você pode configurar o Monitor Serial adicionando uma seção `"serialMonitor"` ao seu arquivo [diagram.json](../diagram-format).
