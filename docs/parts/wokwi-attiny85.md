@@ -58,12 +58,28 @@ if (Debug.read() == 'c') {
 
 For more information about the available methods, check out the [Stream class documentation](https://www.arduino.cc/reference/en/language/functions/communication/stream/#_functions).
 
+The `Debug` interface consumes ~30 bytes of SRAM and 150 bytes of Flash memory, depending on which methods you use in your code. This can sometimes be an issue, since the ATtiny85 only has 512 bytes of SRAM.
+
+That's why TinyDebug also provides an alternative, lightweight logging interface that doesn't use any SRAM. It provides two functions, `tdPrint()` and `tdPrintln()`. The downside is that you can only print c-style (`char*`) strings:
+
+```cpp
+#include <TinyDebug.h>
+
+void setup() {
+  tdPrintln(F("I do not use any SRAM!"));
+}
+
+void loop() {
+  /* ... */
+}
+```
+
 The TinyDebug library works out of the box in Wokwi, without any changes to your diagram. It uses an
 internal debug interface that is part of the Wokwi simulation engine, and does not use any MCU pins.
 
 You can safely run code that uses TinyDebug on a physical ATtiny85 chip. The physical chip doesn't
 have the debug interface, so you obviously won't see the debugging messages, but other than that it
-shouldn't interfere with your code. However, note that TinyDebug uses about 32 bytes of SRAM.
+shouldn't interfere with your code. 
 
 For a complete code example, check out the [TinyDebug demo project on Wokwi](https://wokwi.com/arduino/projects/300650387867697672).
 
