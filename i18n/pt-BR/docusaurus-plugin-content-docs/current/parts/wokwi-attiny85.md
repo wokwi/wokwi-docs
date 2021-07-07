@@ -60,7 +60,7 @@ Para obter mais informações sobre os métodos disponíveis, verifique a [docum
 
 A interface `Debug` consome cerca de 30 bytes de SRAM e 150 bytes de memória Flash, dependendo de quais métodos você usa em seu código. Isso às vezes pode ser um problema, já que o ATtiny85 tem apenas 512 bytes de SRAM.
 
-É por isso que o TinyDebug também fornece uma interface de registro leve e alternativa que não usa SRAM. Ele fornece duas funções, `tdPrint()` e `tdPrintln()`. A desvantagem é que você só pode imprimir strings de estilo c (`char *`):
+É por isso que o TinyDebug também fornece uma interface de registro leve e alternativa que não usa SRAM. Ele fornece duas funções, `tdPrint()` e `tdPrintln()`. A desvantagem é que você só pode imprimir strings no estilo C (`char*`):
 
 ```cpp
 #include <TinyDebug.h>
