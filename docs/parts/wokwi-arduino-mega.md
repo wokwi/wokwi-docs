@@ -25,16 +25,16 @@ Some of the digital pins also have additional functions:
 | --- | -------- | ---------------- | ------------------ |
 | 0   | Serial   | RX               |                    |
 | 1   | Serial   | TX               |                    |
-| 2   |          |                  | INT0               |
-| 3   |          |                  | INT1               |
-| 19  | Serial1  | RX               | INT4               |
-| 18  | Serial1  | TX               | INT5               |
+| 2   |          |                  | INT4               |
+| 3   |          |                  | INT5               |
+| 19  | Serial1  | RX               | INT2               |
+| 18  | Serial1  | TX               | INT3               |
 | 17  | Serial2  | RX               |                    |
 | 16  | Serial2  | TX               |                    |
 | 15  | Serial3  | RX               |                    |
 | 14  | Serial3  | TX               |                    |
-| 20  | I2C      | SCL (Clock)      | INT3               |
-| 21  | I2C      | SDA (Data)       | INT2               |
+| 20  | I2C      | SCL (Clock)      | INT1               |
+| 21  | I2C      | SDA (Data)       | INT0               |
 | 50  | SPI      | MISO             |                    |
 | 51  | SPI      | MOSI             |                    |
 | 52  | SPI      | SCK (Clock)      |                    |
