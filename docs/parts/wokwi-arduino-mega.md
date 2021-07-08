@@ -33,8 +33,8 @@ Some of the digital pins also have additional functions:
 | 16  | Serial2  | TX               |                    |
 | 15  | Serial3  | RX               |                    |
 | 14  | Serial3  | TX               |                    |
-| 20  | I2C      | SCL (Clock)      | INT1               |
-| 21  | I2C      | SDA (Data)       | INT0               |
+| 20  | I2C      | SDA (Clock)      | INT1               |
+| 21  | I2C      | SCL (Data)       | INT0               |
 | 50  | SPI      | MISO             |                    |
 | 51  | SPI      | MOSI             |                    |
 | 52  | SPI      | SCK (Clock)      |                    |

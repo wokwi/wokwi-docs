@@ -10,7 +10,7 @@ module.exports = {
   projectName: 'wokwi-docs',
   scripts: [
     {
-      src: 'https://unpkg.com/@wokwi/elements@0.42.0/dist/wokwi-elements.bundle.min.js',
+      src: 'https://unpkg.com/@wokwi/elements@0.45.2/dist/wokwi-elements.bundle.min.js',
       async: true,
     },
   ],
