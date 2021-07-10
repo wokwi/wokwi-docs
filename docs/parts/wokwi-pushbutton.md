@@ -78,6 +78,11 @@ For example, [this project shows the difference between bouncing and non bouncin
 - The blue button does not simulate bouncing. Pressing on it once will only print a single pair of "pressed" and "released" messages.
 - The red button simulates bouncing. Pressing on it once will print multiple "pressed" and "released" messages.
 
+### Stickiness
+
+If you want the button to stay pressed, Ctrl-click it (Cmd-click on Mac). It will cause the button to stay pressed until the next click.
+This is useful when you need multiple buttons pressed at the same time.
+
 ### Examples
 
 | Result                                | Attrs                     |
