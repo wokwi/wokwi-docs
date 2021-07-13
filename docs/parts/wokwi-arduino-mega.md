@@ -33,8 +33,8 @@ Some of the digital pins also have additional functions:
 | 16  | Serial2  | TX               |                    |
 | 15  | Serial3  | RX               |                    |
 | 14  | Serial3  | TX               |                    |
-| 20  | I2C      | SDA (Clock)      | INT1               |
-| 21  | I2C      | SCL (Data)       | INT0               |
+| 20  | I2C      | SDA (Data)       | INT1               |
+| 21  | I2C      | SCL (Clock)      | INT0               |
 | 50  | SPI      | MISO             |                    |
 | 51  | SPI      | MOSI             |                    |
 | 52  | SPI      | SCK (Clock)      |                    |
@@ -81,9 +81,9 @@ The Arduino Mega 2560 is simulated using the [AVR8js Library](https://github.com
 | Analog Comparator        | ❌     |                                                 |
 | GDB Debugging            | ✔️     | See the [GDB Debugging Guide](../gdb-debugging) |
 
-Legend:  
-✔️ Simulated  
-🟡 Simulated, but see notes  
+Legend:
+✔️ Simulated
+🟡 Simulated, but see notes
 ❌ Not implemented
 
 \* Compare Match C and Input Capture are not implemented in the 16-bit timers.
