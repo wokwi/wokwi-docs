@@ -6,6 +6,7 @@ module.exports = {
       'keyboard-shortcuts',
       'gdb-debugging',
       'guides/serial-monitor',
+      'guides/logic-analyzer',
       'guides/libraries',
       'guides/micropython',
     ],
