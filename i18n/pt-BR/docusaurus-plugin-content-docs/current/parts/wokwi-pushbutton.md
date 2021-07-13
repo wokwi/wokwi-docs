@@ -79,6 +79,11 @@ Ele tem dois botões conectados ao mesmo pino de entrada do Arduino:
 - O botão azul simula sem o bouncing. Pressionando uma vez só imprimirá um único par de mensagens "pressionado" e "liberado".
 - O botão vermelho simula o bouncing. Pressionando uma vez imprimirá várias mensagens "pressionado" e "liberado".
 
+### Contato de selo
+
+Se quiser que o botão permaneça pressionado, clique com a tecla Ctrl pressionada (Cmd-clique no Mac). Isso fará com que o botão permaneça pressionado até o próximo clique.
+Isso é útil quando você precisa que vários botões sejam pressionados ao mesmo tempo.
+
 ### Exemplos
 
 | Resultado                               | Atributos (attrs)           |
