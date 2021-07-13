@@ -21,24 +21,24 @@ Os pinos digitais 2 a 13, 44, 45 e 46 têm suporte de hardware PWM (total de 15 
 
 Alguns dos pinos digitais também possuem funções adicionais:
 
-| Pino | Função   | Sinal            | Interrupção externa |
-| ---- | -------- | ---------------- | ------------------- |
-| 0    | Serial   | RX               |                     |
-| 1    | Serial   | TX               |                     |
-| 2    |          |                  | INT4                |
-| 3    |          |                  | INT5                |
-| 19   | Serial1  | RX               | INT2                |
-| 18   | Serial1  | TX               | INT3                |
-| 17   | Serial2  | RX               |                     |
-| 16   | Serial2  | TX               |                     |
-| 15   | Serial3  | RX               |                     |
-| 14   | Serial3  | TX               |                     |
-| 20   | I2C      | SCL (Clock)      | INT1                |
-| 21   | I2C      | SDA (Data)       | INT0                |
-| 50   | SPI      | MISO             |                     |
-| 51   | SPI      | MOSI             |                     |
-| 52   | SPI      | SCK (Clock)      |                     |
-| 53   | SPI      | SS (Chip select) |                     |
+| Pino | Função  | Sinal            | Interrupção externa |
+| ---- | ------- | ---------------- | ------------------- |
+| 0    | Serial  | RX               |                     |
+| 1    | Serial  | TX               |                     |
+| 2    |         |                  | INT4                |
+| 3    |         |                  | INT5                |
+| 19   | Serial1 | RX               | INT2                |
+| 18   | Serial1 | TX               | INT3                |
+| 17   | Serial2 | RX               |                     |
+| 16   | Serial2 | TX               |                     |
+| 15   | Serial3 | RX               |                     |
+| 14   | Serial3 | TX               |                     |
+| 20   | I2C     | SDA (Data)       | INT1                |
+| 21   | I2C     | SCL (Clock)      | INT0                |
+| 50   | SPI     | MISO             |                     |
+| 51   | SPI     | MOSI             |                     |
+| 52   | SPI     | SCK (Clock)      |                     |
+| 53   | SPI     | SS (Chip select) |                     |
 
 ### LEDs integrados
 
