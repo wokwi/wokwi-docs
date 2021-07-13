@@ -30,4 +30,6 @@ The logic analyzer displays the number of samples captured while the simulation 
 
 ## Viewing the data
 
-When you stop the simulation, the logic analyzer downloads a file with the recorded samples to your computer. The recording file uses the standard [Value Change Dump (VCD)](https://en.wikipedia.org/wiki/Value_change_dump) format. You can use software such as [PulseView](https://sigrok.org/wiki/Downloads) to open the file and view the recorded data. The file is called "wokwi-logic.vcd" by default, but you can configure the name using the `filename` attribute.
+When you stop the simulation, the logic analyzer downloads a file with the recorded samples to your computer. The recording file uses the standard [Value Change Dump (VCD)](https://en.wikipedia.org/wiki/Value_change_dump) format. The file is called "wokwi-logic.vcd" by default, but you can configure the name using the `filename` attribute.
+
+To learn how to view the data, please visit our [Logic Analyzer Guide](../guides/logic-analyzer#using-the-logic-analzer).
