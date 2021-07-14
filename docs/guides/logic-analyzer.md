@@ -30,7 +30,7 @@ Next, connect the signals you want to record to the Logic Analyzer pins. For ins
 
 Start the simulation. You should see the green activity LEDs blink as the signals are coming in, and the number of samples show go up.
 
-To view the capture, stop the simulation. This will download a file called "wokwi-logic.vcd" to your computer. The file contains the recorded signals in [Value Change Dump](https://en.wikipedia.org/wiki/Value_change_dump) format. 
+To view the capture, stop the simulation. This will download a file called "wokwi-logic.vcd" to your computer. The file contains the recorded signals in [Value Change Dump](https://en.wikipedia.org/wiki/Value_change_dump) format.
 
 You can use software such as PulseView or GTKWave to open and view the capture files. These software also include powerful protocol analyzers that can decode many common protocols such as UART, I2C, WS2812, and many others.
 
@@ -46,8 +46,15 @@ You'll see a dialog where you can choose the VCD file to import. Once you select
 
 ![PulseView: Compress idle periods](logic-analyzer-pulseview-2.png)
 
-You can go with the default options or set "Compress idle periods" to "1". Compressing idle periods speeds up PulseView, but it may trim the edges of the recording (i.e. the beginning / end when there are no signal changes).
+Unfortunately, the default options usually cause PulseView to consume a lot of RAM and become sluggish. You can reduce the memory usage by setting **Downsampling factor**. A value of **50** should work for most use cases. The following table lists some common values:
 
-After confirming the import options, you should see the imported signals on the screen. They'll be labeled "logic.D0", "logic.D1", etc.
+| Downsampling factor | Sample rate | When to use?                                          |
+| ------------------- | ----------- | ----------------------------------------------------- |
+| 1000                | 1MHz        | Low frequency signals / long recordings (10+ minutes) |
+| **50**              | **20MHz**   | Common signals (UART, I2C, LED PWM, WS2812, etc.)     |
+| 10                  | 100MHz      | High speed signals (10Mhz+)                           |
+| 1                   | 1GHz        | Very high speed signals (50MHz+)                      |
+
+After confirming the import options, you should see the imported signals on the screen. The signal names will be "logic.D0", "logic.D1", etc.
 
 To learn more about using PulseView, please consult the [PulseView user manual](https://sigrok.org/doc/pulseview/unstable/manual.html).
