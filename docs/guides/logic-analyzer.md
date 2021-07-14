@@ -52,7 +52,7 @@ Unfortunately, the default options usually cause PulseView to consume a lot of R
 | ------------------- | ----------- | ----------------------------------------------------- |
 | 1000                | 1MHz        | Low frequency signals / long recordings (10+ minutes) |
 | **50**              | **20MHz**   | Common signals (UART, I2C, LED PWM, WS2812, etc.)     |
-| 10                  | 100MHz      | High speed signals (10Mhz+)                           |
+| 10                  | 100MHz      | High speed signals (10MHz+)                           |
 | 1                   | 1GHz        | Very high speed signals (50MHz+)                      |
 
 After confirming the import options, you should see the imported signals on the screen. The signal names will be "logic.D0", "logic.D1", etc.
