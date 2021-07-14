@@ -30,4 +30,6 @@ O analisador lógico exibe o número de amostras capturadas durante a execução
 
 ## Visualizando os Dados
 
-Quando a simulação é interrompida, o analisador lógico baixa um arquivo com as amostras registradas para o seu computador. O arquivo de gravação usa o formato padrão [Value Change Dump (VCD)](https://en.wikipedia.org/wiki/Value_change_dump). Você pode usar softwares como [PulseView](https://sigrok.org/wiki/Downloads) para abrir o arquivo e ver os dados gravados. O arquivo por padrão é denominado como "wokwi-logic.vcd", mas você pode configurar o nome usando o atributo `filename`.
+Quando a simulação é interrompida, o analisador lógico baixa um arquivo com as amostras registradas para o seu computador. O arquivo de gravação usa o formato padrão [Value Change Dump (VCD)](https://en.wikipedia.org/wiki/Value_change_dump). O arquivo é denominado "wokwi-logic.vcd" por padrão, mas você pode configurar o nome usando o atributo `filename`.
+
+Para saber como visualizar os dados, visite o nosso [Guia do Analisador Lógico](../guides/logic-analyzer#usando-o-analisador-lógico).
