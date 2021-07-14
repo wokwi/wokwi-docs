@@ -1,13 +1,13 @@
 ---
 title: Guia do Analisador Lógico
-sidebar_label: Logic Analyzer
+sidebar_label: Analisador Lógico
 ---
 
 O [Analisador Lógico](../parts/wokwi-logic-analyzer) registra os valores dos sinais digitais do seu projeto. É uma ferramenta de depuração poderosa e pode ajudá-lo a diagnosticar problemas em seu circuito e código. Também é muito útil para auxiliar no processo de aprendizagem.
 
 Alguns casos de uso incluem:
 
-- Observar o sinal de PWM gerado pela [função analogWrite()](https://www.arduino.cc/reference/en/language/functions/analog-io/analogwrite/)
+- Observar o sinal de PWM gerado pela [função analogWrite()](https://www.arduino.cc/reference/pt/language/functions/analog-io/analogwrite/)
 - Analisar o sinal de controle de um [Motor Micro Servo](../parts/wokwi-servo)
 - Desenvolver e depurar máquinas de estado (PIO) para o [Raspberry Pi Pico](../parts/wokwi-pi-pico)
 - Aprender sobre o protocolo I2C observando os sinais SCL/SDA
