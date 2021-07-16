@@ -3,7 +3,7 @@ title: Guia do Analisador Lógico
 sidebar_label: Analisador Lógico
 ---
 
-O [Analisador Lógico](../parts/wokwi-logic-analyzer) registra os valores dos sinais digitais do seu projeto. É uma ferramenta de depuração poderosa e pode ajudá-lo a diagnosticar problemas em seu circuito e código. Também é muito útil para auxiliar no processo de aprendizagem.
+O [Analisador Lógico Wokwi](../parts/wokwi-logic-analyzer) registra os valores dos sinais digitais do seu projeto. É uma ferramenta de depuração poderosa e pode ajudá-lo a diagnosticar problemas em seu circuito e código. Também é muito útil para auxiliar no processo de aprendizagem.
 
 Alguns casos de uso incluem:
 
@@ -14,20 +14,19 @@ Alguns casos de uso incluem:
 
 ## Características
 
-O Wokwi Logic Analyzer possui 8 canais digitais, chamados D0 a D7. Ele tem uma taxa de amostragem de 1 GHz, que deve ser mais do que suficiente para a maioria das aplicações.
+O Analisador Lógico Wokwi possui 8 canais digitais, chamados D0 a D7. Ele tem uma taxa de amostragem de 1 GHz, que deve ser mais do que suficiente para a maioria das aplicações.
 
-Cada canal possui um LED de atividade que fica verde sempre que há uma atividade no canal. Os LEDs de atividade fornecem uma maneira fácil de ver se os sinais estão conectados
-corretamente.
+Cada canal possui um LED de atividade que fica verde sempre que há uma atividade no canal. Os LEDs de atividade fornecem uma maneira fácil de ver se os sinais estão conectados corretamente.
 
-O analisador lógico possui um pequeno display. Mostra o número de amostras capturadas desde o inicio da simulação.
+Também possui um pequeno display, onde mostra o número de amostras capturadas desde o inicio da simulação.
 
 ## Usando o Analisador Lógico
 
 Primeiro, adicione o Analisador Lógico ao seu projeto. Você pode fazer isso clicando no botão de adição roxo e selecionando "Logic Analyzer (8 channels)".
 
-Em seguida, conecte os sinais que deseja gravar aos pinos do Analisador Lógico. Por exemplo, se você deseja gravar a comunicação I2C entre um Arduino Uno e alguns periférico (como o [DS1307 RTC](../parts/wokwi-ds1307)), você pode conectar os pinos A4 / A5 (que transportam os sinais SDA/SCL) aos pinos D0/D1 do Analisador Lógico.
+Em seguida, conecte os sinais que deseja gravar aos pinos do Analisador Lógico. Por exemplo, se você deseja gravar a comunicação I2C entre um Arduino Uno e alguns periférico (como o [DS1307 RTC](../parts/wokwi-ds1307)), você pode conectar os pinos A4/A5 (que transportam os sinais SDA/SCL) aos pinos D0/D1 do Analisador Lógico.
 
-Inicie a simulação. Você deve ver os LEDs verdes de atividade piscando conforme os sinais estão chegando, e o número de amostras aparecerão somadas.
+Inicie a simulação. Você deve ver os LEDs verdes em atividade piscando conforme os sinais estão chegando, e o número de amostras aparecerão acumuladas.
 
 Para visualizar a captura, pare a simulação. Isso baixará um arquivo chamado "wokwi-logic.vcd" para o seu computador. O arquivo contém os sinais gravados no formato [Value Change Dump](https://en.wikipedia.org/wiki/Value_change_dump).
 
@@ -45,7 +44,7 @@ Você verá uma caixa de diálogo onde pode escolher o arquivo VCD a ser importa
 
 ![PulseView: Compress idle periods](logic-analyzer-pulseview-2.png)
 
-Infelizmente, as opções padrão geralmente fazem com que o PulseView consuma muita RAM e fique lento. Você pode reduzir o uso de memória definindo **Downsampling factor**. Um valor de **50** deve funcionar para a maioria dos casos de uso. A tabela a seguir lista alguns valores comuns:
+Infelizmente, as opções padrão geralmente fazem com que o PulseView consuma muita memória RAM e fique lento. Você pode reduzir o uso de memória definindo um valor em **Downsampling factor** (Fator de redução da resolução). Um valor de **50** deve funcionar para a maioria dos casos de uso. A tabela a seguir mostra alguns valores comuns:
 
 | Downsampling factor | Taxa de amostragem | Quando usar?                                                       |
 | ------------------- | ------------------ | ------------------------------------------------------------------ |
