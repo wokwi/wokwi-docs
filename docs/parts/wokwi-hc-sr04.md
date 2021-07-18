@@ -33,6 +33,11 @@ the following table to convert the ECHO pulse length in microseconds into centim
 | Centimeters | PulseMicros / 58  |
 | Inches      | PulseMicros / 148 |
 
+### Setting the distance
+
+To change the distance while the simulation is running, click on the HC-SR04 drawing in the diagram and use the slider
+to set the distance value. You can choose any value between 2cm and 400cm.
+
 ## Arduino code example
 
 ```cpp
