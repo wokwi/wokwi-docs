@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" height="20mm" width="20mm">
+  <style type="text/css">
+    .led {
+      fill: var(--pixel-color, red);
+      animation: led-offset 2s steps(20, jump-end) infinite;
+      offset-path: path('M2.5 2.5H15M17.5 2.5V15M17.5 17.5H5M2.5 17.5V5');
+      offset-distance: 0%;
+    }
+
+    @keyframes led-offset {
+      from {
+        offset-distance: 0%;
+      }
+      to {
+        offset-distance: 100%;
+      }
+    }
+  </style>
+  <defs>
+    <pattern id="background" width="2.5" height="2.5" patternUnits="userSpaceOnUse">
+      <rect width="2.5" height="2.5" />
+      <circle cx="1.25" cy="1.25" r="0.9" fill="#444" />
+    </pattern>
+  </defs>
+  <rect width="20" height="20" fill="url(#background)" />
+  <circle cx="1.25" cy="1.25" r="0.9" fill="red" class="led" />
+</svg>
