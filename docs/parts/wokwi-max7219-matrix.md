@@ -1,13 +1,13 @@
 ---
-title: wokwi-max7129-matrix Dot Matrix Reference
-sidebar_label: wokwi-max7129-matrix
+title: wokwi-max7219-matrix Dot Matrix Reference
+sidebar_label: wokwi-max7219-matrix
 ---
 
-import DotMatrix from './wokwi-max7129-matrix.svg';
+import DotMatrix from './wokwi-max7219-matrix.svg';
 
-8x8 LED Dot Matrix with MAX7129 Controller
+8x8 LED Dot Matrix with MAX7219 Controller
 
-![MAX7129 LED Dot Matrix](wokwi-max7129-matrix.svg)
+![MAX7219 LED Dot Matrix](wokwi-max7219-matrix.svg)
 
 ## Pin names
 
