@@ -158,9 +158,10 @@ To control the rotary encoder with the keyboard, first on on it, then use the fo
 | Spacebar    | Press the button                   |
 
 \* Hold down the arrow keys to continuously rotate the encoder,
-   generating a series of pulses on the CLK/DT pins.
+generating a series of pulses on the CLK/DT pins.
 
 ## Simulator examples
 
 - [Basic usage example](https://wokwi.com/arduino/projects/304184298969236032)
 - [Rotary encoder counter](https://wokwi.com/arduino/projects/304184909747978816)
+- [Volume/Bass/Treble controller](https://wokwi.com/arduino/projects/304919215794553409)
