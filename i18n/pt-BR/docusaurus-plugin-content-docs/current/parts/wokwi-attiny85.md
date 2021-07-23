@@ -20,7 +20,7 @@ O ATtiny85 é um pequeno microcontrolador AVR de 8 bits. Possui 8 KB de memória
 | 7    | PB2  | SPI:SCK, I2C:SCL  | 1               |
 | 8    | VCC  | Tensão positiva   |                 |
 
-## Attributes
+## Atributos
 
 | Nome      | Descrição                                                                        | Valor padrão |
 | --------- | -------------------------------------------------------------------------------- | ------------ |
