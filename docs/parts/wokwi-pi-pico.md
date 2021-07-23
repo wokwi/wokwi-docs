@@ -46,24 +46,24 @@ See [Blink](https://wokwi.com/arduino/projects/297755575592157709) for a complet
 The Raspberry Pi Pico is simulated using the [RP2040js Library](https://github.com/wokwi/rp2040js).  
 This table summarizes the status of the simulation features:
 
-| Peripheral        | Status | Notes                                           |
-| ----------------- | ------ | ----------------------------------------------- |
-| Processor core    | ✔️     | Only a single core is simulated                 |
-| GPIO              | ✔️     |                                                 |
-| PIO               | ✔️     | Not widely tested; PIO Debugger available       |
-| USB               | ❌     |                                                 |
-| UART              | ✔️     |                                                 |
-| I2C               | ❌     |                                                 |
-| SPI               | ❌     |                                                 |
-| PWM               | ❌     |                                                 |
-| DMA               | ❌     |                                                 |
-| Timer             | ✔️     | Pausing the timer not implemented yet           |
-| ARM SysTick Timer | 🟡     | Partial implementation                          |
-| Watchdog          | ❌     |                                                 |
-| RTC               | ❌     |                                                 |
-| ADC + Temp sensor | ❌     |                                                 |
-| SSI               | 🟡     | Just the minimum to make the bootloader happy   |
-| GDB Debugging     | ✔️     | See the [GDB Debugging guide](../gdb-debugging) |
+| Peripheral        | Status | Notes                                                                   |
+| ----------------- | ------ | ----------------------------------------------------------------------- |
+| Processor core    | ✔️     | Only a single core is simulated                                         |
+| GPIO              | ✔️     |                                                                         |
+| PIO               | ✔️     | PIO Debugger available                                                  |
+| USB               | 🟡     | USB CDC (Serial) supported, see [Serial Monitor](#serial-monitor) below |
+| UART              | ✔️     |                                                                         |
+| I2C               | ❌     |                                                                         |
+| SPI               | ❌     |                                                                         |
+| PWM               | ❌     |                                                                         |
+| DMA               | ❌     |                                                                         |
+| Timer             | ✔️     | Pausing the timer not implemented yet                                   |
+| ARM SysTick Timer | 🟡     | Partial implementation                                                  |
+| Watchdog          | ❌     |                                                                         |
+| RTC               | ❌     |                                                                         |
+| ADC + Temp sensor | ❌     |                                                                         |
+| SSI               | 🟡     | Just the minimum to make the bootloader happy                           |
+| GDB Debugging     | ✔️     | See the [GDB Debugging guide](../gdb-debugging)                         |
 
 Legend:  
 ✔️ Simulated  
@@ -101,7 +101,26 @@ To select a core, set the "env" attribute of the `wokwi-pi-pico` part. For the o
 
 ### Serial Monitor
 
-You can use the Serial Monitor to receive information from the code running on the Pi Pico, such as debug prints. To configure the serial monitor connection with the Raspberry Pi Pico, add the following connections to your [diagram.json](../diagram-format#connections) file:
+You can use the Serial Monitor to receive information from the code running on the Pi Pico, such as debug prints. By default, the Serial Monitor communicates with
+the Pi Pico over USB.
+
+Setting up the USB connection can take some time, and any messages printed during
+the USB setup time will be lost. Therefore, it's recommended to tell `setup()` to wait for the Serial Monitor connection before printing anything:
+
+```cpp
+void setup() {
+  Serial.begin(115200);
+  while (!Serial) {
+    delay(10); // wait for serial port to connect. Needed for native USB
+  }
+  // Now you can safely print message:
+  Serial.println("Hello, Serial Monitor!");
+}
+```
+
+### Serial Monitor over UART
+
+The Serial Monitor can also communicate with the Pi Pico over the physical UART interface. To configure the UART communication between the Raspberry Pi Pico and the Serial Monitor, add the following connections to your [diagram.json](../diagram-format#connections) file:
 
 ```json
   "connections": [
@@ -124,7 +143,7 @@ The example assumes that the Pi Pico was defined with an id of "pico", e.g.
   ]
 ```
 
-To initialize the Serial monitor in your code use `Serial1.begin(115200)`, and then print messages with `Serial1.println()`. For example:
+The use the `Serial1` object in your code: initialize the port using `Serial1.begin(115200)`, and then print messages with `Serial1.println()`. For example:
 
 ```cpp
 void setup() {
@@ -135,9 +154,7 @@ void setup() {
 void loop() { }
 ```
 
-Note the usage of `Serial1`. The standard `Serial` in the Arduino Core uses Serial over USB (CDC), which is currently not supported in the simulation. `Serial1`, in contrast, uses the hardware UART (connected to pins GP0/GP1).
-
-For a complete example, check out the [Pi Pico Serial Monitor Example](https://wokwi.com/arduino/projects/297755360074138125).
+For a complete example, check out the [Pi Pico Serial Monitor over UART Example](https://wokwi.com/arduino/projects/297755360074138125).
 
 ## Exporting UF2 binary
 
