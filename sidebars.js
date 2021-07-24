@@ -44,6 +44,7 @@ module.exports = {
       'parts/wokwi-slide-potentiometer',
       'parts/wokwi-slide-switch',
       'parts/wokwi-ssd1306',
+      'parts/wokwi-tv',
     ],
   },
 };
