@@ -56,6 +56,8 @@ could be blocked by the browser (e.g. "F5" that refreshes the page).
 The full list of key names can be found [here](https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/key/Key_Values).
 Note the the special key names are case sensitive - so "Escape" will work, "escape" won't.
 
+Firefox users: if the keyboard shortcuts don't work for you, please make sure that the "Search for text when you start typing" setting is disabled.
+
 ### Bouncing
 
 When you press physical pushbutton, the circuit opens and closes tens or hundreds of times.
