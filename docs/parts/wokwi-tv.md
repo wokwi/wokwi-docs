@@ -54,7 +54,7 @@ Composite video usually uses RCA connectors. You'd need the make the following c
 2. DATA pin through a 470Ω\* resistor
 3. Optionally, another 75Ω that goes to the ground (the resistor is usually already built into the TV receiver circuit).
 
-\* if you use a 3.3V board (such as the [Raspberry Pi Pico](wokwi-raspberry-pi-pico)), use 470Ω for SYNC and 270Ω for DATA.
+\* if you use a 3.3V board (such as the [Raspberry Pi Pico](wokwi-pi-pico)), use 470Ω for SYNC and 270Ω for DATA.
 
 Also make sure you also connect the ground to the ring of the RCA connector.
 
