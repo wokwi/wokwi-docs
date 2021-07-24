@@ -5,10 +5,6 @@ sidebar_label: Diagram Editor
 
 The diagram editor provides an interactive way to edit your diagram: add components to the simulation and define the connections between them. It's a convenient alternative for editing the [diagram.json](../diagram-format) file directly.
 
-:::info
-The diagram editor is currently in beta, and we are improving it daily. The documentation may lag behind a bit.
-:::
-
 ## Editing parts
 
 ### Adding a part
