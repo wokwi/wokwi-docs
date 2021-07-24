@@ -48,6 +48,21 @@ The interactive editor does not support setting the color of wires. You can, how
 
 Delete a wire by clicking on it.
 
+## Keyboard shortcuts
+
+The following table summarizes the keyboard shortcuts:
+
+| Key    | Function                                 |
+| ------ | ---------------------------------------- |
+| -      | Zoom out                                 |
+| +      | Zoom in                                  |
+| R      | Rotate the selected part                 |
+| Delete | Delete the selected part                 |
+| ?      | Open documentation for the selected part |
+| Escape | Cancel wire (in wiring mode)             |
+
+Firefox users: if the keyboard shortcuts don't work for you, please make sure that the "Search for text when you start typing" setting is disabled.
+
 ## Undo / Redo
 
 Any change that you make in the interactive editor is also reflected in [diagram.json](../diagram-format).
