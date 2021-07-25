@@ -56,6 +56,8 @@ pode ser bloqueadas pelo navegador (por exemplo, "F5" que atualiza a página).
 A lista completa de nomes de chaves pode ser encontrada [aqui](https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/key/Key_Values).
 Observe que o nome de chaves especiais diferenciam maiúsculas de minúsculas - portanto, "Escape" funcionará, "escape" não.
 
+Usuários do Firefox: se os atalhos do teclado não funcionarem, certifique-se de que a configuração "Pesquisar texto ao começar a digitar" esteja desabilitada.
+
 ### Bouncing
 
 Quando você pressiona um botão físico, o circuito abre e fecha dezenas ou até mesmo centenas de vezes.

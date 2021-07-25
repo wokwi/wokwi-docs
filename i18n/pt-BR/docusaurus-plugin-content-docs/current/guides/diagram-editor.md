@@ -5,10 +5,6 @@ sidebar_label: Editor de Diagrama
 
 O editor de diagramas fornece uma maneira interativa de editar seu diagrama: adicionar componentes à simulação e definir as conexões entre eles. É uma alternativa conveniente para editar o arquivo [diagram.json](../diagram-format) diretamente.
 
-:::info
-O editor de diagramas está atualmente em beta e o estamos aprimorando diariamente. A documentação pode ficar um pouco para trás.
-:::
-
 ## Editando peças
 
 ### Adicionando uma peça
@@ -51,6 +47,21 @@ O editor interativo não oferece suporte para definir a cor dos fios. Você pode
 ### Excluindo uma ligação
 
 Exclua um fio clicando nele.
+
+## Atalhos do teclado
+
+A tabela a seguir resume os atalhos do teclado:
+
+| Tecla  | Função                                  |
+| ------ | --------------------------------------- |
+| -      | Reduz o zoom                            |
+| +      | Aumenta o zoom                          |
+| R      | Gira a peça selecionada                 |
+| Delete | Remove a peça selecionada               |
+| ?      | Abre a documentação da peça selecionada |
+| Escape | Cancela o fio (no modo de fiação)       |
+
+Usuários do Firefox: se os atalhos do teclado não funcionarem, certifique-se de que a configuração "Pesquisar texto ao começar a digitar" esteja desabilitada.
 
 ## Desfazer / Refazer
 

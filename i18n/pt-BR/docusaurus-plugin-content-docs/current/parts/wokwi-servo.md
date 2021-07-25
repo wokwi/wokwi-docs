@@ -35,3 +35,4 @@ Um Motor Micro Servo padrão
 
 - [Sweep](https://wokwi.com/arduino/libraries/Servo/Sweep)
 - [Knob](https://wokwi.com/arduino/libraries/Servo/Knob)
+- [Controlando vários servo motores](https://wokwi.com/arduino/projects/305087394119418434)
