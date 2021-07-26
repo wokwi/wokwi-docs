@@ -48,7 +48,8 @@ on the AO pin when gamma = 0.7 and rl10 = 50 (the default values):
 | Full daylight        | 10,000             | 397Ω           | 0.19      | 39                 |
 | Direct sunlight      | 100,000            | 79Ω            | 0.04      | 8                  |
 
-\* When VCC = 5V \* Measured one meter away from the monitor
+\* When VCC = 5V  
+\*\* Measured one meter away from the monitor
 
 The following code to convert the return value of `analogRead()` into a illumination value (in lux):
 
