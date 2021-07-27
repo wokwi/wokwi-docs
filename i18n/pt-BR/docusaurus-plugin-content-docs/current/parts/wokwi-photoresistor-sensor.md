@@ -48,7 +48,7 @@ no pino AO quando gama = 0,7 e rl10 = 50 (os valores padrão):
 | Luz do dia                | 10,000                     | 397Ω            | 0.19     | 39                 |
 | Luz direta do sol         | 100,000                    | 79Ω             | 0.04     | 8                  |
 
-\* Quando VCC = 5V
+\* Quando VCC = 5V  
 \*\* Medido a um metro de distância do monitor
 
 O código a seguir para converter o valor de retorno de `analogRead()` em um valor de nível de iluminância (em lux):
