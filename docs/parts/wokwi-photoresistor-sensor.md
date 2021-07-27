@@ -18,12 +18,12 @@ Photoresistor (LDR) sensor module
 
 ## Attributes
 
-| Name      | Description                             | Default value |
-| --------- | --------------------------------------- | ------------- |
-| lux       | Initial light value (lux)               | "500"         |
-| threshold | Digital output threshold voltage        | "2.5"         |
-| rl10      | Light resistance @ 10lux (in kilo-ohms) | "50"          |
-| gamma     | Slope of the log(R) / log(lux) graph    | "0.7"         |
+| Name      | Description                           | Default value |
+| --------- | ------------------------------------- | ------------- |
+| lux       | Initial light value (lux)             | "500"         |
+| threshold | Digital output threshold voltage      | "2.5"         |
+| rl10      | LDR resistance @ 10lux (in kilo-ohms) | "50"          |
+| gamma     | Slope of the log(R) / log(lux) graph  | "0.7"         |
 
 ## Operation
 
