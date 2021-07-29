@@ -22,7 +22,7 @@ Módulo sensor fotoresistor (LDR)
 | --------- | --------------------------------------- | -------------|
 | lux       | Valor do nível de iluminância (lx)      | "500"        |
 | threshold | Tensão de limiar da saída digital (Vth) | "2.5"        |
-| rl10      | Resistência à luz @ 10lx (em kilo-ohms) | "50"         |
+| rl10      | Resistência LDR @ 10lx (em kilo-ohms)   | "50"         |
 | gamma     | Inclinação do gráfico log(R) / log(lx)  | "0.7"        |
 
 ## Operação
