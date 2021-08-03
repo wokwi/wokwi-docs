@@ -33,6 +33,7 @@ module.exports = {
       'parts/wokwi-logic-analyzer',
       'parts/wokwi-max7219-matrix',
       'parts/wokwi-membrane-keypad',
+      'parts/wokwi-mpu6050',
       'parts/wokwi-nano-rp2040-connect',
       'parts/wokwi-ntc-temperature-sensor',
       'parts/wokwi-photoresistor-sensor',
