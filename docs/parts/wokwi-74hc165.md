@@ -43,7 +43,7 @@ Changing the input pins while PL is high has no effect.
 
 ### Using the shift register
 
-To use the shift register, connect pins D0…D7 to your inputs (e.g. [slide switches](wokwi-slideswitch) or [pushbuttons](wokwi-pushbuttons)). You may need to add external pull-up or pull-down [resistors](wokwi-resistor), especially if you go with the buttons.
+To use the shift register, connect pins D0…D7 to your inputs (e.g. [slide switches](wokwi-slide-switch) or [pushbuttons](wokwi-pushbutton)). You may need to add external pull-up or pull-down [resistors](wokwi-resistor), especially if you go with the buttons.
 
 You also need to connect PL, CP, and Q7 to your microcontroller. Configure PL and CP as digital outputs, and Q7 as a digital input.
 
