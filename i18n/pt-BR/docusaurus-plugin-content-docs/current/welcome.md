@@ -3,7 +3,7 @@ slug: /
 title: Bem vindo ao Wokwi!
 ---
 
-Wokwi é um simulador online para Arduino e Eletrônica. Foi projetado para makers, por makers.
+Wokwi é um simulador online para Arduino e Eletrônica. Foi desenvolvido para makers, por makers.
 
 Você pode usar o Wokwi para aprender a programar Arduino, criar protótipos de suas idéias, e compartilhar seus projetos com outros makers.
 
