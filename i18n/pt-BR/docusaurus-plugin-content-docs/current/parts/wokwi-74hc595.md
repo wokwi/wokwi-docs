@@ -7,6 +7,8 @@ Registrador de deslocamento (shift register) de 8 bits Serial-In Parallel-Out (S
 
 ![74HC595](wokwi-74hc595.svg)
 
+Use o registrador de deslocamento 74HC595 para expandir o número de pinos de _output_ em seu microcontrolador. Para registro de deslocamento de entrada (por exemplo, leitura de vários botões com um único pino de entrada), consulte o [wokwi-74hc165](wokwi-74hc165).
+
 ## Nome dos Pinos
 
 | Pino  | Descrição                                                         |
