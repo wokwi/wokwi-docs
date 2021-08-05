@@ -23,7 +23,7 @@ Note: for output shift register (e.g. controlling multiple LEDs with just a few 
 | GND   | Ground                                    |
 | VCC   | Supply voltage                            |
 
-\* Use the DS to chain multiple 74HC165 units together. Connect DS to the Q7 pin of the previous 74HC165 chip in chain.
+\* Use the DS to daisy-chain multiple 74HC165 units together. Connect DS to the Q7 pin of the previous 74HC165 chip in the chain. You can leave DS disconnected if you don't chain or for the first chip in the chain.
 
 ## Operation
 
@@ -55,7 +55,13 @@ Read the value by setting PL to high. Read the first (most-significant) bit from
 
 ### Chaining multiple shift registers
 
-You can chain multiple shift registers by connecting the Q7 pin of one unit to the DS (serial pin) pin of the next unit. The operation is the same as above: sampling and then shifting. The difference is that you read more than 8 bits when shifting. For a chain of n shift register, you'll shift 8\*n bits by repeatedly reading Q7 and then pulsing CP high. So for two 74hc165 units you'd shift 16 bits, for three units you'd shift 24 bits, etc.
+You can chain several shift registers and still use a single microcontroller input pin. This configuration is also called a cascade. The connections are as follows:
+
+1. Connect the Q7 pin of each unit (other than the last) to the DS (serial input) pin of the next unit. 
+2. Connect the Q7 pin of the last unit to the microcontroller.
+3. The PL (parallel load) and CP (clock) pins are shared between all the units. So you only need two microcontroller pins to control the entire chain. If you use the CE (clock enable pin), it can also be shared. Otherwise, just connect it to the ground.
+
+The operation is same as above: sampling and then shifting. There is one difference: you read more than 8 bits when shifting. For a chain of n shift registers, you'll shift 8\*n bits by repeatedly reading Q7 and then pulsing CP high. So for two 74hc165 units you'd shift 16 bits, for three units you'd shift 24 bits, etc.
 
 If you don't need all the bits (e.g. you have two shift register units, by only use 10 inputs), then you can shift a smaller number of bits, as many as you are interested in.
 
@@ -115,4 +121,5 @@ void loop() {
 
 ## Simulator examples
 
-* [Single input shift register](https://wokwi.com/arduino/projects/306031380875182657)
+- [Single input shift register](https://wokwi.com/arduino/projects/306031380875182657)
+- [74HC165 shift register cascade](https://wokwi.com/arduino/projects/306024460940476993) - four units daisy-chained to read the state of 32 switches
