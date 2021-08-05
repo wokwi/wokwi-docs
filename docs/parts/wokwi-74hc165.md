@@ -7,7 +7,7 @@ sidebar_label: wokwi-74hc165
 
 ![74HC165](wokwi-74hc165.svg)
 
-Note: for output shift register (e.g. controlling multiple LEDs with just a few pins), please see the [wokwi-74hc595](wokwi-74hc595).
+Use the 74HC165 shift register to expand the number of _input_ pins on your microcontroller. For output shift register (e.g. controlling multiple LEDs with just a few pins), please see the [wokwi-74hc595](wokwi-74hc595).
 
 ## Pin names
 
@@ -57,7 +57,7 @@ Read the value by setting PL to high. Read the first (most-significant) bit from
 
 You can chain several shift registers and still use a single microcontroller input pin. This configuration is also called a cascade. The connections are as follows:
 
-1. Connect the Q7 pin of each unit (other than the last) to the DS (serial input) pin of the next unit. 
+1. Connect the Q7 pin of each unit (other than the last) to the DS (serial input) pin of the next unit.
 2. Connect the Q7 pin of the last unit to the microcontroller.
 3. The PL (parallel load) and CP (clock) pins are shared between all the units. So you only need two microcontroller pins to control the entire chain. If you use the CE (clock enable pin), it can also be shared. Otherwise, just connect it to the ground.
 

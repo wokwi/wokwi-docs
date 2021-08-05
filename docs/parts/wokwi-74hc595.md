@@ -7,6 +7,8 @@ sidebar_label: wokwi-74hc595
 
 ![74HC595](wokwi-74hc595.svg)
 
+Use the 74HC595 shift register to expand the number of _output_ pins on your microcontroller. For input shift register (e.g. reading multiple buttons with a single input pin), please see the [wokwi-74hc165](wokwi-74hc165).
+
 ## Pin names
 
 | Pin   | Description                                            |
