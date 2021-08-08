@@ -53,7 +53,7 @@ This table summarizes the status of the simulation features:
 | PIO               | ✔️     | PIO Debugger available                                                  |
 | USB               | 🟡     | USB CDC (Serial) supported, see [Serial Monitor](#serial-monitor) below |
 | UART              | ✔️     |                                                                         |
-| I2C               | ❌     |                                                                         |
+| I2C               | ✔️     | Master mode only                                                        |
 | SPI               | ❌     |                                                                         |
 | PWM               | ❌     |                                                                         |
 | DMA               | ❌     |                                                                         |
