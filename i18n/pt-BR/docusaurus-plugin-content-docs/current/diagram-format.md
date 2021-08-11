@@ -57,7 +57,7 @@ Por exemplo, aqui está como você define um LED vermelho chamado `"led1"` na po
 }
 ```
 
-:::warning
+:::warning AVISO
 Cada componente deve ter uma única propriedade "id". Se dois componentes têm o mesmo "id",
 a simulação pode não funcionar corretamente.
 :::
@@ -72,7 +72,7 @@ Cada diagrama deve incluir um componente do microcontrolador. Os seguintes micro
 - [`wokwi-arduino-uno`](parts/wokwi-arduino-uno) - Arduino Uno R3
 - [`wokwi-pi-pico`](parts/wokwi-pi-pico) - Raspberry Pi Pico
 
-:::tip
+:::tip DICA
 Em vez de especificar manualmente as coordenadas esquerda/superior para cada item, você
 pode arrastá-los com o mouse para a posição desejada.
 :::

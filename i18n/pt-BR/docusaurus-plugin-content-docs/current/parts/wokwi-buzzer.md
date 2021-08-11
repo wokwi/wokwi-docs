@@ -42,7 +42,7 @@ Conecte o pino 1 da campainha ao pino GND do Arduino e o pino 2 da campainha ao 
 tone(8, 262, 250); // Toca um tom de 262Hz por 0,250 segundos
 ```
 
-## Exemplos no Simulador
+## Exemplos no simulador
 
 - [Jogo Simon](https://wokwi.com/arduino/libraries/demo/simon-game) - Um jogo de memória com 4 botões de pressão
 - [Piano diatônico](https://wokwi.com/arduino/projects/291958456169005577) - Um piano de 8 notas, use as teclas 1 a 8 para pressionar os botões e tocar as notas.

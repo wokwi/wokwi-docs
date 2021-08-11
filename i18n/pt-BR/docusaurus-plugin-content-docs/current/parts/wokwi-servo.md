@@ -31,7 +31,7 @@ Um Motor Micro Servo padrão
 | <wokwi-servo horn="double" />    | `{ "horn": "double" }`       |
 | <wokwi-servo horn="cross" />     | `{ "horn": "cross" }`        |
 
-## Exemplos no Simulador
+## Exemplos no simulador
 
 - [Sweep](https://wokwi.com/arduino/libraries/Servo/Sweep)
 - [Knob](https://wokwi.com/arduino/libraries/Servo/Knob)

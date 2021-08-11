@@ -91,7 +91,7 @@ void loop() {
 }
 ```
 
-## Exemplos no Simulador
+## Exemplos no simulador
 
 - [TVout demo reel](https://wokwi.com/arduino/projects/301776607665717769)
 - [Jogo Flappy Cat](https://wokwi.com/arduino/projects/286182458416693768) - Use o botão azul para pular

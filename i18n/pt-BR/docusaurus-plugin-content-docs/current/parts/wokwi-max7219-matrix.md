@@ -39,7 +39,7 @@ Cada unidade matricial é uma matriz de LED 8x8. Todos os LEDs da matriz têm a 
 | <DotMatrix style={{'--pixel-color': 'green'}} />                                                   | `{ "color": "green" }` |
 | <DotMatrix /><span style={{'--pixel-color':'none'}}><DotMatrix /><DotMatrix /><DotMatrix /></span> | `{ "chain": "4" }`     |
 
-## Exemplos no Simulador
+## Exemplos no simulador
 
 - [Relogio Matrix de LED](https://wokwi.com/arduino/projects/289186888566178317)
 - [Esboço de um jogo Etch](https://wokwi.com/arduino/projects/296234816685212169)

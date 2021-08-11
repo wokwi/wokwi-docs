@@ -79,7 +79,7 @@ Você também pode tentar [este exemplo no Wokwi](https://wokwi.com/arduino/proj
 | <wokwi-membrane-keypad connector="true" columns="3" />                                                              | `{ "columns": "3" }`                                                            |
 | <wokwi-membrane-keypad connector="true" keys='["1","2","3","4","Q","W","E","R","A","S","D","F","Z","X","C","V"]' /> | `{ "keys": ["1","2","3","4","Q","W","E","R","A","S","D","F","Z","X","C","V"] }` |
 
-## Exemplos no Simulador
+## Exemplos no simulador
 
 - [Basic Keypad example](https://wokwi.com/arduino/projects/294980637632233994)
 - [Arduino Calculator](https://wokwi.com/arduino/projects/276825819240727048)
