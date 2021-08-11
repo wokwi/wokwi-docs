@@ -24,12 +24,35 @@ The ATtiny85 is a small 8-bit AVR microcontroller. It has 8KB of Flash program m
 
 | Name      | Description                                                                | Default value |
 | --------- | -------------------------------------------------------------------------- | ------------- |
+| env       | Arduino core to use: "attiny" or "ATTinyCore"                              | "attiny"      |
 | frequency | MCU clock frequency, in hertz. Common values: "1m", "8m", "16m", and "20m" | "8m"          |
 
 ## Code and libraries
 
-The code is compiled using the [ATtiny Core for Arduino](https://github.com/damellis/attiny).
-This means you can use most of the standard Arduino functions and libraries in your code.
+The Arduino core provides the built-in Arduino functions, such as `pinMode()` and `digitalRead()`, as well as a set of standard Arduino libraries, such as Servo, Wire and SPI.
+
+When compiling your code for the ATtiny85, you can choose between two different cores:
+
+- [attiny](https://github.com/damellis/attiny) - A minimal core, provides most of the standard Arduino functions. This is the default.
+- [ATTinyCore](https://github.com/SpenceKonde/ATTinyCore) - Advanced core which includes the Wire, SPI, Servo, and Serial libraries. Learn more in the [ATTinyCore documentation](https://github.com/SpenceKonde/ATTinyCore/blob/master/avr/extras/ATtiny_x5.md).
+
+Note: The ATTinyCore is a new option and hasn't been widely tested.
+
+To select a core, set the "env" attribute of the `wokwi-attiny85` part, e.g.
+
+```json
+  "parts": [
+    {
+      "type": "wokwi-attiny85",
+      "id": "tiny",
+      "attrs": {
+        "env": "ATTinyCore"
+      }
+      …
+    },
+    …
+  ]
+```
 
 ### Debug prints with TinyDebug
 
@@ -79,7 +102,7 @@ internal debug interface that is part of the Wokwi simulation engine, and does n
 
 You can safely run code that uses TinyDebug on a physical ATtiny85 chip. The physical chip doesn't
 have the debug interface, so you obviously won't see the debugging messages, but other than that it
-shouldn't interfere with your code. 
+shouldn't interfere with your code.
 
 For a complete code example, check out the [TinyDebug demo project on Wokwi](https://wokwi.com/arduino/projects/300650387867697672).
 
