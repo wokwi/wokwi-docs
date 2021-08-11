@@ -44,7 +44,7 @@ O Wokwi simula o bouncing do interruptor por padrão. Você pode desativar a sim
 
 `{ "bounce": "0" }`
 
-## Exemplos no Simulador
+## Exemplos no simulador
 
 - [Slide Switch and LED](https://wokwi.com/arduino/projects/288276100805558797) - Usando um botão deslizante para alternar um LED
 - [Slide Switch and 2 LEDs](https://wokwi.com/arduino/projects/288278249939665421) - Um interruptor deslizante que alterna entre 2 LEDs

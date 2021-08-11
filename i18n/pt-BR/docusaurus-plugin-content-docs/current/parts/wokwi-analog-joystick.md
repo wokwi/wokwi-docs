@@ -95,6 +95,6 @@ Você pode usar a [função map()](https://www.arduino.cc/reference/pt/language/
 Por exemplo, `map(analogRead(HORZ_PIN), 0, 1023, -100, 100)` retornará -100 quando o joystick estiver totalmente para a direita, 0 quando o joystick
 estiver centralizado e 100 quando o joystick estiver totalmente à esquerda.
 
-## Exemplos no Simulador
+## Exemplos no simulador
 
 - [Etch-a-sketch](https://wokwi.com/arduino/projects/296234816685212169) - Um jogo de desenho simples usando uma Matriz de LED MAX7219

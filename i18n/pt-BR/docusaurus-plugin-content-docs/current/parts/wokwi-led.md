@@ -46,6 +46,6 @@ fator gamma definindo este atributo com o valor desejado. O fator de correção 
 
 O [projeto de demonstração da correção de gamma](https://wokwi.com/arduino/projects/304762988710068800) mostra o comportamento de diferentes valores: o LED à esquerda tem o fator gamma padrão de "2.8", enquanto o LED à direita tem um fator gamma de "1.0". Você pode ver como valores mais baixos em `analogWrite()` parecem muito mais brilhantes no LED esquerdo.
 
-## Exemplos no Simulador
+## Exemplos no simulador
 
 - [Blink](https://wokwi.com/arduino/libraries/demo/blink) - Esboço Blink padrão do Arduino

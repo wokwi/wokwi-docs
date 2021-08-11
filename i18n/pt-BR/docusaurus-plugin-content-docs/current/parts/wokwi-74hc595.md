@@ -60,7 +60,7 @@ void loop() {
 
 Você também pode [executar este exemplo no Wokwi](https://wokwi.com/arduino/projects/301192672203244042).
 
-## Exemplos no Simulador
+## Exemplos no simulador
 
 - [75HC595 shift register com 8 LEDs](https://wokwi.com/arduino/projects/301188813482361352)
 - [Arduino 16-LED shift register blink](https://wokwi.com/arduino/projects/301213976182653448)

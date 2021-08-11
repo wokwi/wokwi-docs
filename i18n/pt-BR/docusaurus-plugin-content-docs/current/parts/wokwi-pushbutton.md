@@ -94,7 +94,7 @@ Isso é útil quando você precisa que vários botões sejam pressionados ao mes
 | <wokwi-pushbutton color="#FFFF00" />    | `{ "color": "#FFFF00" }`    |
 | <wokwi-pushbutton label="Pressione!" /> | `{ "label": "Pressione!" }` |
 
-## Exemplos no Simulador
+## Exemplos no simulador
 
 - [Simon Game](https://wokwi.com/arduino/libraries/demo/simon-game) - Um jogo de memória com 4 botões momentâneo
 - [Diatonic Piano](https://wokwi.com/arduino/projects/291958456169005577) - Um piano de 8 notas, use as teclas 1 a 8 para pressionar os botões e tocar as notas.

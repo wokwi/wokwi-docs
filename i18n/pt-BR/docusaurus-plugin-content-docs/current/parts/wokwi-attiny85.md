@@ -24,12 +24,35 @@ O ATtiny85 é um pequeno microcontrolador AVR de 8 bits. Possui 8 KB de memória
 
 | Nome      | Descrição                                                                        | Valor padrão |
 | --------- | -------------------------------------------------------------------------------- | ------------ |
+| env       | Arduino core a ser usado: "attiny" ou "ATTinyCore"                               | "attiny"     |
 | frequency | Frequência de clock do MCU, em hertz. Valores comuns: "1m", "8m", "16m", e "20m" | "8m"         |
 
 ## Código e bibliotecas
 
-O código é compilado usando o [ATtiny Core para Arduino](https://github.com/damellis/attiny).
-Isso significa que você pode usar a maioria das funções e bibliotecas padrão do Arduino em seu código.
+O Arduino core fornece as funções integradas, como `pinMode()` e `digitalRead()`, bem como um conjunto de bibliotecas padrão do Arduino, como Servo, Wire e SPI.
+
+Ao compilar seu código para o ATtiny85, você pode escolher entre dois cores diferentes:
+
+- [attiny](https://github.com/damellis/attiny) - Um core mínimo que fornece a maioria das funções padrão do Arduino. Este é o padrão.
+- [ATTinyCore](https://github.com/SpenceKonde/ATTinyCore) - Core avançado que inclui as bibliotecas Wire, SPI, Servo e Serial. Saiba mais na [Documentação](https://github.com/SpenceKonde/ATTinyCore/blob/master/avr/extras/ATtiny_x5.md) do ATTinyCore.
+
+Nota: O ATTinyCore é uma nova opção e não foi amplamente testado.
+
+Para selecionar um core, defina o atributo "env" na parte `wokwi-attiny85`, por exemplo:
+
+```json
+  "parts": [
+    {
+      "type": "wokwi-attiny85",
+      "id": "tiny",
+      "attrs": {
+        "env": "ATTinyCore"
+      }
+      …
+    },
+    …
+  ]
+```
 
 ### Depuração com TinyDebug
 

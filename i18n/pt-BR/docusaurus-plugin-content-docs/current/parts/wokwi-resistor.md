@@ -7,7 +7,7 @@ Um resistor.
 
 <wokwi-resistor value="470"></wokwi-resistor>
 
-:::caution
+:::caution ALERTA
 Wokwi tem apenas uma simulação de circuito analógico muito básica. Você não será capaz de usar resistores junto com
 componentes analógicos (por exemplo, potenciômetro ou sensor de temperatura NTC). Você ainda pode usar os resistores como
 pull-up/pull-down externos.
@@ -36,6 +36,6 @@ pull-up/pull-down externos.
 
 Confira a [demonstração do resistor por Koepel](https://wokwi.com/arduino/projects/300936732038136328) para mais exemplos.
 
-## Exemplos no Simulador
+## Exemplos no simulador
 
 - [Resistor externo pull-down](https://wokwi.com/arduino/projects/302214836102627848) - Como usar um resistor como pull-down para um botão

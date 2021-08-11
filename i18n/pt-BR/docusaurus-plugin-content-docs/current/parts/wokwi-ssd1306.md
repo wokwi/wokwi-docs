@@ -42,7 +42,7 @@ Você pode escolher entre várias bibliotecas do Arduino para o SSD1306:
 
 Todas as bibliotecas acima estão disponíveis no Wokwi.
 
-## Exemplos no Simulador
+## Exemplos no simulador
 
 - [SSD1306 Snake Game](https://wokwi.com/arduino/projects/296135008348799496) (usando Adafruit SSD1306)
 - [ATtiny85 Temperatura Digital + Umidade no SSD1306](https://wokwi.com/arduino/projects/292900020514980360)

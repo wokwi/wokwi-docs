@@ -50,10 +50,10 @@ Esta tabela resume o status dos recursos da simulação:
 | ------------------------ | ------ | ---------------------------------------------------- |
 | Núcleo do processador    | ✔️     | Apenas um único núcleo é simulado                    |
 | GPIO                     | ✔️     |                                                      |
-| PIO                      | ✔️     | Not widely tested; PIO Debugger available            |
+| PIO                      | ✔️     | Não amplamente testado; PIO Debugger disponível      |
 | USB                      | ❌     |                                                      |
 | UART                     | ✔️     |                                                      |
-| I2C                      | ❌     |                                                      |
+| I2C                      | ✔️     | Modo mestre apenas                                   |
 | SPI                      | ❌     |                                                      |
 | PWM                      | ❌     |                                                      |
 | DMA                      | ❌     |                                                      |

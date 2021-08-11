@@ -72,7 +72,7 @@ Felizmente, existem bibliotecas que podem ajudar:
 
 Se você estiver sem pinos do microcontrolador, considere o uso de um [74HC595 Shift Register](wokwi-74hc595) para controlar o display.
 
-## Exemplos no Simulador
+## Exemplos no simulador
 
 - [Exemplo SevSeg: Contador](https://wokwi.com/arduino/libraries/SevSeg/SevSeg_Counter)
 - [Exemplo SevSeg: String com ponto](https://wokwi.com/arduino/libraries/SevSeg/stringWithPeriod)
