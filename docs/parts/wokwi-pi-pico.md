@@ -61,7 +61,7 @@ This table summarizes the status of the simulation features:
 | ARM SysTick Timer | 🟡     | Partial implementation                                                  |
 | Watchdog          | ❌     |                                                                         |
 | RTC               | ❌     |                                                                         |
-| ADC + Temp sensor | ❌     |                                                                         |
+| ADC + Temp sensor | ✔️     | Temperature sensor always reads 0                                       |
 | SSI               | 🟡     | Just the minimum to make the bootloader happy                           |
 | GDB Debugging     | ✔️     | See the [GDB Debugging guide](../gdb-debugging)                         |
 
