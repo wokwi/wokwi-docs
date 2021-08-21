@@ -61,7 +61,7 @@ Esta tabela resume o status dos recursos da simulação:
 | ARM SysTick Timer        | 🟡     | Implementação parcial                                |
 | Watchdog                 | ❌     |                                                      |
 | RTC                      | ❌     |                                                      |
-| ADC + Sensor Temperatura | ❌     |                                                      |
+| ADC + Sensor Temperatura | ✔️     | O sensor de temperatura sempre lê o valor 0          |
 | SSI                      | 🟡     | Apenas o mínimo para deixar o bootloader feliz       |
 | GDB Debugging            | ✔️     | Consulte o [Guia de depuração GDB](../gdb-debugging) |
 

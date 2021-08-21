@@ -191,4 +191,4 @@ void loop() {
 - [LiquidCrystal I2C Hello World](https://wokwi.com/arduino/libraries/LiquidCrystal_I2C/HelloWorld)
 - [LiquidCystal Custom characters](https://wokwi.com/arduino/projects/294395602645549578)
 - [Electronic Safe](https://wokwi.com/arduino/libraries/demo/electronic-safe)
-- [DS1307 Clock](https://wokwi.com/arduino/projects/286806448514531852)
+- [DS1307 Clock](https://wokwi.com/arduino/projects/298783436806554120)
