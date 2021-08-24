@@ -3,21 +3,25 @@ title: Bibliotecas Arduino
 sidebar_label: Bibliotecas
 ---
 
-import { LibraryList } from '@site/src/library-list';
+Para incluir uma biblioteca, vá ao editor de código e digite `#` em uma linha vazia. Você verá uma lista suspensa de preenchimento automático com sugestões do `#include`
+para as bibliotecas mais populares.
 
-Você pode usar muitas bibliotecas populares do Arduino no Wokwi.
+Por padrão, o Wokwi compila seu código com as bibliotecas padrão integradas do Arduino, como Wire.h e SPI.h.
 
-Para incluir uma biblioteca, vá ao editor de código e digite `#` em uma linha vazia. Você verá uma lista suspensa de preenchimento automático com muitas sugestões `#include`.
-Essa lista inclui a maioria das bibliotecas disponíveis, mas não todas.
+Para adicionar bibliotecas de terceiros ao seu projeto, adicione um arquivo "libraries.txt" ao seu projeto. Liste as bibliotecas que deseja incluir, uma biblioteca por linha. As linhas que começam com "#" são comentários.
 
-A lista completa das bibliotecas atualmente disponíveis no Wokwi:
+Por exemplo, o arquivo a seguir instalará as versões mais recentes de Servo e FastLED, bem como a versão 2.3.0 de MySensors:
 
-<LibraryList />
+```
+# Arquivo de exemplo libraries.txt:
+Servo
+FastLED
 
 ## Solicitando uma biblioteca
+# Instala uma versão específica de uma biblioteca:
+MySensors@2.3.0
+```
 
-Se precisar de uma biblioteca que não está na lista acima, você pode adicionar os arquivos de código-fonte individuais da biblioteca ao seu projeto.
+Você pode encontrar os nomes das bibliotecas no Arduino Library Manager. Alternativamente, você pode encontrá-lo dentro do código-fonte da biblioteca. Procure o campo `name` no arquivo `library.properties`.
 
-Como alternativa, você pode [abrir um problema e solicitar a adição de uma biblioteca](https://github.com/wokwi/wokwi-features/issues/new). Tentaremos
-responder ao seu pedido dentro de 24 horas. Bibliotecas padrão (que estão disponíveis através do Arduino Library Manager) são mais fáceis para
-adicionar, para que você obtenha uma resposta mais rápida.
+No momento, apenas as bibliotecas do Arduino Library Manager são suportadas. Se precisar de uma biblioteca que não está disponível no Arduino Library Manager, você pode copiar os arquivos de origem da biblioteca para o seu projeto ou [enviá-lo para o Arduino Library Manager](https://github.com/arduino/library-registry/blob/main/FAQ.md#submission).
