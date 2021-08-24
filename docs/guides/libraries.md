@@ -3,21 +3,24 @@ title: Arduino Libraries
 sidebar_label: Libraries
 ---
 
-import { LibraryList } from '@site/src/library-list';
+To include a library, go to the code editor and type `#` on an empty line. You'll see a autocomplete dropdown with `#include` suggestions
+for popular libraries.
 
-You can use many popular Arduino libraries on Wokwi.
+By default, Wokwi compiles your code with the standard built-in Arduino libraries, such as Wire.h and SPI.h.
 
-To include a library, go to the code editor and type `#` on an empty line. You'll see a autocomplete dropdown with many `#include` suggestions.
-This list includes most of the available libraries, but not all of them.
+To add third-party libraries to your project, add a "libraries.txt" file to your project. List the libraries that you want to include, one library per line. Lines that start with "#" are comments.
 
-The complete list of libraries currently available on Wokwi:
+For example, the following file will install the latest versions of Servo and FastLED, as well as version 2.3.0 of MySensors:
 
-<LibraryList />
+```
+# Sample libraries.txt file:
+Servo
+FastLED
 
-## Requesting a library
+# Install a specific version of a library:
+MySensors@2.3.0
+```
 
-If you need a library that is not on the list above, you can add the individual source code files from the library to your project.
+You can find the library names in the Arduino Library Manager. Alternatively, you can find it inside the source code of the library. Look for the `name` field of the `library.properties` file.
 
-Alternatively, you can [open an issue and request to add a library](https://github.com/wokwi/wokwi-features/issues/new). We'll try
-to answer your request within 24 hours. Standard libraries (that are available through the Arduino Library Manager) are easier for
-us to add, so you'll usually get faster response.
+At the moment, only libraries from the Arduino Library Manager are supported. If you need a library that is not available on the Arduino Library Manager, you can either copy the library source files to your project, or [submit it to the Arduino Library Manager](https://github.com/arduino/library-registry/blob/main/FAQ.md#submission).
