@@ -95,6 +95,8 @@ The default configuration is as follows:
 }
 ```
 
+When you add a  `"serialMonitor"` section, either add it after the last item in diagram.json, or make sure to add a comma after the closing curly brace. You can find a complete example [here](https://wokwi.com/arduino/projects/308893120796295745).
+
 ### Display
 
 The `display` property configures when/how to display the serial monitor. The possible values are:
@@ -106,6 +108,8 @@ The `display` property configures when/how to display the serial monitor. The po
 | never    | Never display the Serial Monitor                                  |
 | plotter  | Display the Serial Plotter when simulation starts                 |
 | terminal | Display a terminal (using [XTerm.js](https://xtermjs.org/))       |
+
+Note: the "terminal" mode supports text and background colors. You can check out [the Arduino ANSI colors example](https://wokwi.com/arduino/projects/308893120796295745) to see it in action.
 
 ### Newline
 
