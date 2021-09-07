@@ -23,7 +23,7 @@ void loop() {
 }
 ```
 
-:::caution
+:::caution ATENÇÃO
 O Monitor Serial só será mostrado quando você imprimir alguma saída de seu programa. Para mudar este comportamento, [veja abaixo](#display).
 :::
 
@@ -72,7 +72,7 @@ Certifique-se de que o nome dos pinos em seu código correspondam aos do arquivo
 O primeiro parâmetro para o construtor `SoftwareSerial` deve corresponder ao pino conectado ao `$serialMonitor:TX`, e
 o segundo parâmetro deve corresponder ao pino conectado ao `$serialMonitor:RX`.
 
-:::caution
+:::caution ATENÇÃO
 A taxa de transmissão deve ser definida como **9600**. Isso é codificado no simulador e ao usar um valor diferente
 vai exibir caracteres estranhos no monitor Serial.
 :::
@@ -94,6 +94,8 @@ A configuração padrão é a seguinte:
 }
 ```
 
+Ao adicionar uma seção `"serialMonitor"`, adicione-a após o último item em diagram.json ou certifique-se de adicionar uma vírgula após a chave de fechamento. Você pode encontrar um exemplo completo [aqui](https://wokwi.com/arduino/projects/308893120796295745).
+
 ### Display
 
 A propriedade `display` configura quando exibir o monitor serial. Os valores possíveis são:
@@ -105,6 +107,8 @@ A propriedade `display` configura quando exibir o monitor serial. Os valores pos
 | never    | Nunca exiba o monitor serial                                      |
 | plotter  | Exibe o plotter serial quando a simulação é iniciada              |
 | terminal | Exibe um terminal (usando [XTerm.js](https://xtermjs.org/))       |
+
+Nota: o modo "terminal" suporta cores de texto e de fundo. Você pode verificar [o exemplo de cores ANSI do Arduino](https://wokwi.com/arduino/projects/308893120796295745) para vê-lo em ação.
 
 ### Newline
 
