@@ -66,21 +66,21 @@ See [Blink](https://wokwi.com/arduino/libraries/demo/blink) for a complete code 
 
 The Arduino Uno is simulated using the [AVR8js Library](https://github.com/wokwi/avr8js). The table below summarizes the status of features:
 
-| Peripheral        | Status | Notes                                           |
-| ----------------- | ------ | ----------------------------------------------- |
-| Processor         | ✔️     |                                                 |
-| GPIO              | ✔️     | Including External/Pin Change Interrupts        |
-| 8-bit timers      | ✔️     | Timer0, Timer2                                  |
-| 16-bit timer      | ✔️     | Timer1                                          |
-| Watchdog Timer    | ❌     |                                                 |
-| USART             | ✔️     |                                                 |
-| SPI               | 🟡     | Master mode only                                |
-| I2C               | 🟡     | Master mode only                                |
-| EEPROM            | ✔️     |                                                 |
-| Clock Prescale    | ✔️     |                                                 |
-| ADC               | ✔️     | Used by analogRead()                            |
-| Analog Comparator | ❌     |                                                 |
-| GDB Debugging     | ✔️     | See the [GDB Debugging Guide](../gdb-debugging) |
+| Peripheral        | Status | Notes                                                                  |
+| ----------------- | ------ | ---------------------------------------------------------------------- |
+| Processor         | ✔️     |                                                                        |
+| GPIO              | ✔️     | Including External/Pin Change Interrupts                               |
+| 8-bit timers      | ✔️     | Timer0, Timer2                                                         |
+| 16-bit timer      | ✔️     | Timer1                                                                 |
+| Watchdog Timer    | ✔️     | [Usage example](https://wokwi.com/arduino/projects/309372800631571009) |
+| USART             | ✔️     |                                                                        |
+| SPI               | 🟡     | Master mode only                                                       |
+| I2C               | 🟡     | Master mode only                                                       |
+| EEPROM            | ✔️     |                                                                        |
+| Clock Prescale    | ✔️     |                                                                        |
+| ADC               | ✔️     | Used by analogRead()                                                   |
+| Analog Comparator | ❌     |                                                                        |
+| GDB Debugging     | ✔️     | See the [GDB Debugging Guide](../gdb-debugging)                        |
 
 Legend:  
 ✔️ Simulated  

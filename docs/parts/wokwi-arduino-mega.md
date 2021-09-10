@@ -71,7 +71,7 @@ The Arduino Mega 2560 is simulated using the [AVR8js Library](https://github.com
 | 8-bit timers             | ✔️     | Timer0, Timer2                                  |
 | 16-bit timers            | ✔️     | Timer1, Timer3, Timer4, Timer5 \*               |
 | Output Compare Modulator | ❌     |
-| Watchdog Timer           | ❌     |                                                 |
+| Watchdog Timer           | ✔️     |                                                 |
 | USART                    | ✔️     | USART0, USART1, USART1, USART3                  |
 | SPI                      | 🟡     | Master mode only                                |
 | I2C                      | 🟡     | Master mode only                                |
