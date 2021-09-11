@@ -9,6 +9,7 @@ module.exports = {
       'guides/logic-analyzer',
       'guides/libraries',
       'guides/micropython',
+      'guides/circuitpython',
     ],
     'Diagram Reference': [
       'diagram-format',
