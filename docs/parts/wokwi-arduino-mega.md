@@ -86,7 +86,7 @@ Legend:
 🟡 Simulated, but see notes
 ❌ Not implemented
 
-\* Compare Match C and Input Capture are not implemented in the 16-bit timers.
+\* Input Capture is not implemented in the 16-bit timers.
 
 If you need any of the missing features, please [open an issue on the AVR8js repo](https://github.com/wokwi/avr8js/issues/new)
 or [reach out on Discord](https://wokwi.com/discord).
