@@ -126,7 +126,7 @@ O ATtiny85 é simulado usando a [Biblioteca AVR8js](https://github.com/wokwi/avr
 | USI                  | 🟡     | Só funciona no modo I2C                              |
 | Timer0               | ✔️     | Suporte PWM para PB0/PB1                             |
 | Timer1               | ❌     |                                                      |
-| Watchdog Timer       | ❌     |                                                      |
+| Watchdog Timer       | ✔️     |                                                      |
 | EEPROM               | ✔️     |                                                      |
 | ADC                  | ✔️     | Usado por analogRead()                               |
 | Comparador Analógico | ❌     |                                                      |

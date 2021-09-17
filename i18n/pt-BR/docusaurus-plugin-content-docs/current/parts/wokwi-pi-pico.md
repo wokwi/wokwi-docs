@@ -56,7 +56,7 @@ Esta tabela resume o status dos recursos da simulação:
 | I2C                      | ✔️     | Modo mestre apenas                                   |
 | SPI                      | ❌     |                                                      |
 | PWM                      | ❌     |                                                      |
-| DMA                      | ❌     |                                                      |
+| DMA                      | ✔️     |                                                      |
 | Timer                    | ✔️     | A pausa do cronômetro ainda não foi implementada     |
 | ARM SysTick Timer        | 🟡     | Implementação parcial                                |
 | Watchdog                 | ❌     |                                                      |

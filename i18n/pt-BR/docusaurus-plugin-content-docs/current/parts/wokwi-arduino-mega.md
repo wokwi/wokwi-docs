@@ -71,7 +71,7 @@ O Arduino Mega 2560 é simulado usando a [Biblioteca AVR8js](https://github.com/
 | 8-bit timers             | ✔️     | Timer0, Timer2                                       |
 | 16-bit timers            | ✔️     | Timer1, Timer3, Timer4, Timer5 \*                    |
 | Output Compare Modulator | ❌     |                                                      |
-| Watchdog Timer           | ❌     |                                                      |
+| Watchdog Timer           | ✔️     |                                                      |
 | USART                    | ✔️     | USART0, USART1, USART1, USART3                       |
 | SPI                      | 🟡     | Apenas modo master                                   |
 | I2C                      | 🟡     | Apenas modo master                                   |
@@ -86,7 +86,7 @@ Legenda:
 🟡 Simulado, mas veja as notas
 ❌ Não implementado
 
-\* Compare Match C e Input Capture não são implementados nos temporizadores de 16 bits.
+\* A Captura de entrada não é implementada nos temporizadores de 16 bits.
 
 Se você precisar de algum dos recursos ausentes, [abra uma solicitação de recurso no repositório AVR8js](https://github.com/wokwi/avr8js/issues/new)
 ou [entre em contato no Discord](https://wokwi.com/discord).
