@@ -36,7 +36,7 @@ You can use software such as PulseView or GTKWave to open and view the capture f
 
 ### Viewing the data in PulseView
 
-PulseView an open source Logic Analyzer GUI. It runs on Linux, Windows, Mac OS X, and there's even an Android version. You can visit their [downloads page](https://sigrok.org/wiki/Downloads) to get the lastest version.
+PulseView an open source Logic Analyzer GUI. It runs on Linux, Windows, Mac OS X, and there's even an Android version. You can visit their [downloads page](https://sigrok.org/wiki/Downloads) to get the latest version.
 
 Load the recorded signal (VCD) file by clicking on the small arrow next to the "Open" button, and choosing: "Import Value Change Dump data..."
 
