@@ -22,7 +22,7 @@ correctly.
 The Logic analyzer has a small display. It shows the number of samples captured since
 the simulation started.
 
-## Using the Logic Analzer
+## Using the Logic Analyzer
 
 First, add the Logic Analyzer to your project. You can do this by clicking the purple Plus button, then selecting "Logic Analyzer (8 channels)".
 
