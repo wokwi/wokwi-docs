@@ -58,3 +58,14 @@ Unfortunately, the default options usually cause PulseView to consume a lot of R
 After confirming the import options, you should see the imported signals on the screen. The signal names will be "logic.D0", "logic.D1", etc.
 
 To learn more about using PulseView, please consult the [PulseView user manual](https://sigrok.org/doc/pulseview/unstable/manual.html).
+
+#### Configuring Windows to open VCD files in PulseView
+
+You can configure Windows to automatically open VCD files in PulseView. Open a command prompt (cmd) window **as administrator**, and type the following commands:
+
+```
+ftype vcdfile="%ProgramFiles%\sigrok\PulseView\pulseview.exe" "-I" "vcd:downsample=50" "%1"
+assoc .vcd=vcdfile
+```
+
+Note that these commands don't work in powershell. The only work in cmd with Administrator privileges. The command sets the Downsampling factor to 50, but you can choose a different value that fits your needs (see table above).
