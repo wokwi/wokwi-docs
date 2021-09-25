@@ -56,3 +56,14 @@ Infelizmente, as opções padrão geralmente fazem com que o PulseView consuma m
 Após confirmar as opções de importação, você deverá ver os sinais importados na tela. Os nomes dos sinais serão "logic.D0", "logic.D1", etc.
 
 Para saber mais sobre como usar o PulseView, consulte o [manual do usuário do PulseView](https://sigrok.org/doc/pulseview/unstable/manual.html).
+
+#### Configurando o Windows para abrir arquivos VCD no PulseView
+
+Você pode configurar o Windows para abrir automaticamente arquivos VCD no PulseView. Abra uma janela do Prompt de Comando (cmd) **como administrador** e digite os seguintes comandos:
+
+```
+ftype vcdfile="%ProgramFiles%\sigrok\PulseView\pulseview.exe" "-I" "vcd:downsample=50" "%1"
+assoc .vcd=vcdfile
+```
+
+Observe que esses comandos não funcionam no PowerShell. Funciona apenas no Prompt de Comando (cmd) com privilégios de administrador. O comando define o fator de redução da resolução para 50, mas você pode escolher um valor diferente que se adapte às suas necessidades (consulte a tabela acima).
