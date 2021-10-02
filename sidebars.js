@@ -10,6 +10,7 @@ module.exports = {
       'guides/libraries',
       'guides/micropython',
       'guides/circuitpython',
+      'guides/esp32',
     ],
     'Diagram Reference': [
       'diagram-format',
