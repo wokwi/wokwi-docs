@@ -9,17 +9,17 @@ Full color 240x320 2.8" LCD-TFT display with SPI interface
 
 ## Pin names
 
-| Name | Description           | Arduino Uno pin |
-| ---- | --------------------- | --------------- |
-| VCC  | Supply voltage        | 5V              |
-| GND  | Ground                | GND             |
-| CS   | Chip select           | 10†             |
-| RST  | Reset\*               | -               |
-| D/C  | Data/command pin      | 9†              |
-| MOSI | SPI data (MCU → LCD)  | 11              |
-| SCK  | SPI clock             | 13              |
-| LED  | Backlight LED\*       | 5V              |
-| MISO | SPI data (LCD → MCU)‡ | 12              |
+| #   | Name | Description           | Arduino Uno pin |
+| --- | ---- | --------------------- | --------------- |
+| 1   | VCC  | Supply voltage        | 5V              |
+| 2   | GND  | Ground                | GND             |
+| 3   | CS   | Chip select           | 10†             |
+| 4   | RST  | Reset\*               | -               |
+| 5   | D/C  | Data/command pin      | 9†              |
+| 6   | MOSI | SPI data (MCU → LCD)  | 11              |
+| 7   | SCK  | SPI clock             | 13              |
+| 8   | LED  | Backlight LED\*       | 5V              |
+| 9   | MISO | SPI data (LCD → MCU)‡ | 12              |
 
 \* The RST and backlight (LED) pins are not available in the simulation.  
 † You connect CS and D/C to any digital Arduino pin. The pin numbers here are just an example.  
