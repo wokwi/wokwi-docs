@@ -9,17 +9,17 @@ Display colorido LCD-TFT 240x320 de 2,8" com interface SPI
 
 ## Nome dos Pinos
 
-| Nome | Descrição              | Pino do Arduino Uno |
-| ---- | ---------------------- | ------------------- |
-| VCC  | Tensão de alimentação  | 5V                  |
-| GND  | Terra                  | GND                 |
-| CS   | Seletor de chip        | 10†                 |
-| RST  | Reset\*                | -                   |
-| D/C  | Pino de dados/comando  | 9†                  |
-| MOSI | Dados SPI (MCU → LCD)  | 11                  |
-| SCK  | Clock SPI              | 13                  |
-| LED  | Luz de fundo com LED\* | 5V                  |
-| MISO | Dados SPI (LCD → MCU)‡ | 12                  |
+| #   | Nome | Descrição              | Pino do Arduino Uno |
+| --- | ---- | ---------------------- | ------------------- |
+| 1   | VCC  | Tensão de alimentação  | 5V                  |
+| 2   | GND  | Terra                  | GND                 |
+| 3   | CS   | Seletor de chip        | 10†                 |
+| 4   | RST  | Reset\*                | -                   |
+| 5   | D/C  | Pino de dados/comando  | 9†                  |
+| 6   | MOSI | Dados SPI (MCU → LCD)  | 11                  |
+| 7   | SCK  | Clock SPI              | 13                  |
+| 8   | LED  | Luz de fundo com LED\* | 5V                  |
+| 9   | MISO | Dados SPI (LCD → MCU)‡ | 12                  |
 
 \* Os pinos RST e luz de fundo (LED) não estão disponíveis na simulação.  
 † Você pode conectar o CS e D/C a qualquer pino digital do Arduino. Os números dos pinos aqui são apenas um exemplo.  
