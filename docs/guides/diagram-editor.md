@@ -40,7 +40,7 @@ To cancel a new wire (delete it without selecting a target pin) click the right 
 
 ### Changing the color of a wire
 
-The color of new wires is automatically determined by the function of the pin: wires starting from ground pins are black, and other wires are green.
+The color of new wires is automatically determined by the function of the pin: wires starting from ground pins are black, 5&nbsp;V pins are red, and other wires are green.
 
 The interactive editor does not support setting the color of wires. You can, however, change the color of any wire by editing [diagram.json](../diagram-format#connections)
 
@@ -56,6 +56,7 @@ The following table summarizes the keyboard shortcuts:
 | ------ | ---------------------------------------- |
 | -      | Zoom out                                 |
 | +      | Zoom in                                  |
+| G      | Switch the grid on.                      |
 | R      | Rotate the selected part                 |
 | Delete | Delete the selected part                 |
 | ?      | Open documentation for the selected part |
@@ -73,3 +74,15 @@ You can still get complete Undo history if you select the "diagram.json" tab in 
 will immediately reflect in the code editor, and you'll be able to undo them by clicking on the code editor and then pressing Ctrl+Z.
 
 Note that this only works if the "diagram.json" tab is active while you make changes. This is a temporary solution until we implement Undo in the interactive diagram editor.
+
+## Grid snapping
+
+The grid view is activated by pressing "G" or by clicking the grid icon in the menu. This displays a grid and rulers. The coarse grid is 2.54&nbsp;mm or 0.1&nbsp;inches and the fine grid is 1.27&nbsp;mm or 0.05&nbsp;inches. Tick labels on the rulers show measurements in millimetres (the default), but you can switch to inches if you wish by clicking on the units in the top right corner.
+
+The grid snapping defaults to off to allow free movement and the Shift key temporarily switches to the coarse grid, and the Alt key and the Ctrl key temporarily switch to the fine grid.
+
+When grid snapping is switched on, it defaults to the coarse grid and the Shift key temporarily switches to no grid (free movement), and the Alt key and the Ctrl key temporarily switch to the fine grid.
+
+In other words, the Shift key temporarily toggles the grid snapping mode, and the Alt key and the Ctrl key always temporarily switch to the fine grid.
+
+This grid snapping behaviour is the same for both parts and new wires.
