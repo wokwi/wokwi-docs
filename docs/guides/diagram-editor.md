@@ -52,15 +52,18 @@ Delete a wire by clicking on it.
 
 The following table summarizes the keyboard shortcuts:
 
-| Key    | Function                                 |
-| ------ | ---------------------------------------- |
-| -      | Zoom out                                 |
-| +      | Zoom in                                  |
-| G      | Switch the grid on.                      |
-| R      | Rotate the selected part                 |
-| Delete | Delete the selected part                 |
-| ?      | Open documentation for the selected part |
-| Escape | Cancel wire (in wiring mode)             |
+| Key    | Function                                    |
+| ------ | ------------------------------------------- |
+| -      | Zoom out                                    |
+| +      | Zoom in                                     |
+| R      | Rotate the selected part                    |
+| Delete | Delete the selected part                    |
+| ?      | Open documentation for the selected part    |
+| Escape | Cancel wire (in wiring mode)                |
+| G      | Toggle the grid                             |
+| Shift  | Toggle coarse grid snapping while dragging  |
+| Alt    | Toggle fine grid snapping while dragging    |
+| Ctrl   | Toggle fine grid snapping while dragging    |
 
 Firefox users: if the keyboard shortcuts don't work for you, please make sure that the "Search for text when you start typing" setting is disabled.
 
@@ -77,12 +80,10 @@ Note that this only works if the "diagram.json" tab is active while you make cha
 
 ## Grid snapping
 
-The grid view is activated by pressing "G" or by clicking the grid icon in the menu. This displays a grid and rulers. The coarse grid is 2.54&nbsp;mm or 0.1&nbsp;inches and the fine grid is 1.27&nbsp;mm or 0.05&nbsp;inches. Tick labels on the rulers show measurements in millimetres (the default), but you can switch to inches if you wish by clicking on the units in the top right corner.
+Activate the grid view by pressing "G" or by clicking the grid icon in the menu. This displays a grid and rulers. The coarse grid is 2.54&nbsp;mm or 0.1&nbsp;inches and the fine grid is 1.27&nbsp;mm or 0.05&nbsp;inches. Tick labels on the rulers show measurements in millimetres (the default), but you can switch to inches by clicking on the units in the top right corner.
 
-The grid snapping defaults to off to allow free movement and the Shift key temporarily switches to the coarse grid, and the Alt key and the Ctrl key temporarily switch to the fine grid.
+The Shift key temporarily toggles the grid snapping mode between the coarse grid and free movement. If the grid is on, it toggles to free movement; if the grid is off, it toggles to coarse grid snapping.
 
-When grid snapping is switched on, it defaults to the coarse grid and the Shift key temporarily switches to no grid (free movement), and the Alt key and the Ctrl key temporarily switch to the fine grid.
+The Alt key or the Ctrl key temporarily toggle to fine grid snapping whether the grid is visible or not.
 
-In other words, the Shift key temporarily toggles the grid snapping mode, and the Alt key and the Ctrl key always temporarily switch to the fine grid.
-
-This grid snapping behaviour is the same for both parts and new wires.
+This grid snapping behaviour is the same for both parts and new wires, and the modifier keys allow you to perform grid snapping whether the grid is on or off.
