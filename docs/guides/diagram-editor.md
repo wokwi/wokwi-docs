@@ -40,7 +40,7 @@ To cancel a new wire (delete it without selecting a target pin) click the right 
 
 ### Changing the color of a wire
 
-The color of new wires is automatically determined by the function of the pin: wires starting from ground pins are black, and other wires are green.
+The color of new wires is automatically determined by the function of the pin: wires starting from ground pins are black, 5&nbsp;V pins are red, and other wires are green.
 
 The interactive editor does not support setting the color of wires. You can, however, change the color of any wire by editing [diagram.json](../diagram-format#connections)
 
@@ -52,14 +52,18 @@ Delete a wire by clicking on it.
 
 The following table summarizes the keyboard shortcuts:
 
-| Key    | Function                                 |
-| ------ | ---------------------------------------- |
-| -      | Zoom out                                 |
-| +      | Zoom in                                  |
-| R      | Rotate the selected part                 |
-| Delete | Delete the selected part                 |
-| ?      | Open documentation for the selected part |
-| Escape | Cancel wire (in wiring mode)             |
+| Key    | Function                                    |
+| ------ | ------------------------------------------- |
+| -      | Zoom out                                    |
+| +      | Zoom in                                     |
+| R      | Rotate the selected part                    |
+| Delete | Delete the selected part                    |
+| ?      | Open documentation for the selected part    |
+| Escape | Cancel wire (in wiring mode)                |
+| G      | Toggle the grid                             |
+| Shift  | Toggle coarse grid snapping while dragging  |
+| Alt    | Toggle fine grid snapping while dragging    |
+| Ctrl   | Toggle fine grid snapping while dragging    |
 
 Firefox users: if the keyboard shortcuts don't work for you, please make sure that the "Search for text when you start typing" setting is disabled.
 
@@ -73,3 +77,13 @@ You can still get complete Undo history if you select the "diagram.json" tab in 
 will immediately reflect in the code editor, and you'll be able to undo them by clicking on the code editor and then pressing Ctrl+Z.
 
 Note that this only works if the "diagram.json" tab is active while you make changes. This is a temporary solution until we implement Undo in the interactive diagram editor.
+
+## Grid snapping
+
+Activate the grid view by pressing "G" or by clicking the grid icon in the menu. This displays a grid and rulers. The coarse grid is 2.54&nbsp;mm or 0.1&nbsp;inches and the fine grid is 1.27&nbsp;mm or 0.05&nbsp;inches. Tick labels on the rulers show measurements in millimetres (the default), but you can switch to inches by clicking on the units in the top right corner.
+
+The Shift key temporarily toggles the grid snapping mode between the coarse grid and free movement. If the grid is on, it toggles to free movement; if the grid is off, it toggles to coarse grid snapping.
+
+The Alt key or the Ctrl key temporarily toggle to fine grid snapping whether the grid is visible or not.
+
+This grid snapping behaviour is the same for both parts and new wires, and the modifier keys allow you to perform grid snapping whether the grid is on or off.
