@@ -40,7 +40,7 @@ Para cancelar um novo fio (exclua-o sem selecionar um pino de destino), clique c
 
 ### Mudando a cor de um fio
 
-A cor dos novos fios é determinada automaticamente pela função do pino: os fios que começam nos pinos de aterramento são pretos e os outros fios são verdes.
+A cor dos novos fios é determinada automaticamente pela função do pino: os fios que começam nos pinos de aterramento são pretos, pinos de 5V são vermelhos e os outros fios são verdes.
 
 O editor interativo não oferece suporte para definir a cor dos fios. Você pode, no entanto, alterar a cor de qualquer fio editando [diagram.json](../diagram-format#connections)
 
@@ -52,14 +52,18 @@ Exclua um fio clicando nele.
 
 A tabela a seguir resume os atalhos do teclado:
 
-| Tecla  | Função                                  |
-| ------ | --------------------------------------- |
-| -      | Reduz o zoom                            |
-| +      | Aumenta o zoom                          |
-| R      | Gira a peça selecionada                 |
-| Delete | Remove a peça selecionada               |
-| ?      | Abre a documentação da peça selecionada |
-| Escape | Cancela o fio (no modo de fiação)       |
+| Tecla  | Função                                      |
+| ------ | ------------------------------------------- |
+| -      | Reduz o zoom                                |
+| +      | Aumenta o zoom                              |
+| R      | Gira a peça selecionada                     |
+| Delete | Remove a peça selecionada                   |
+| ?      | Abre a documentação da peça selecionada     |
+| Escape | Cancela o fio (no modo de fiação)           |
+| G      | Alterna a grade                             |
+| Shift  | Alterna ajuste grosso da grade ao arrastar  |
+| Alt    | Alterna ajuste fino da grade ao arrastar    |
+| Ctrl   | Alterna ajuste fino da grade ao arrastar    |
 
 Usuários do Firefox: se os atalhos do teclado não funcionarem, certifique-se de que a configuração "Pesquisar texto ao começar a digitar" esteja desabilitada.
 
@@ -73,3 +77,13 @@ Você ainda pode obter o histórico completo de Desfazer se selecionar a guia "d
 refletirá imediatamente no editor de código e você poderá desfazê-los clicando no editor de código e pressionando Ctrl+Z.
 
 Observe que isso só funciona se a guia "diagram.json" estiver ativa enquanto você faz alterações. Esta é uma solução temporária até implementarmos o Desfazer no editor de diagramas interativo.
+
+## Grade de encaixe
+
+Ative a visualização da grade pressionando "G" ou clicando no ícone da grade no menu. Isso exibe uma grade com réguas. A grade grossa é de 2,54 mm ou 0,1 polegadas e a grade fina é de 1,27 mm ou 0,05 polegadas. Os rótulos das réguas mostram as medidas em milímetros (por padrão), mas você pode mudar para polegadas clicando nas unidades no canto superior direito.
+
+A tecla Shift alterna temporariamente o modo de ajuste da grade entre a grade grossa e o movimento livre. Se a grade estiver ativada, ele alterna para movimento livre; se a grade estiver desligada, ele alterna para o encaixe grosso da grade.
+
+A tecla Alt ou a tecla Ctrl alternam temporariamente para grade fina ajustando-se se a grade está visível ou não.
+
+Este comportamento de ajuste da grade é o mesmo para as peças e os fios, e as teclas modificadoras permitem que você execute o ajuste se a grade estiver ligada ou desligada.
