@@ -12,15 +12,17 @@
     "clear": "docusaurus clear"
   },
   "dependencies": {
-    "@docusaurus/core": "2.0.0-beta.0",
-    "@docusaurus/preset-classic": "2.0.0-beta.0",
-    "@mdx-js/react": "^1.6.21",
+    "@algolia/client-search": "^4.10.5",
+    "@docusaurus/core": "2.0.0-beta.7",
+    "@docusaurus/preset-classic": "2.0.0-beta.7",
+    "@mdx-js/react": "^1.6.22",
     "clsx": "^1.1.1",
     "docusaurus-plugin-plausible": "^0.0.5",
     "react": "^16.8.4",
     "react-dom": "^16.8.4"
   },
   "devDependencies": {
+    "@types/react": "^17.0.30",
     "husky": "^5.1.1",
     "prettier": "^2.2.1",
     "pretty-quick": "^3.1.0"
