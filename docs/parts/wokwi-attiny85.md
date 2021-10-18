@@ -56,7 +56,9 @@ To select a core, set the "env" attribute of the `wokwi-attiny85` part, e.g.
 
 ### Debug prints with TinyDebug
 
-You can use the [TinyDebug library](https://github.com/wokwi/TinyDebug) to print debug messages from your code. These messages appear in Wokwi's Serial Monitor. To use the library, include "TinyDebug.h" in your project, call `Debug.begin()` and then print your debug messages using `Debug.println()`:
+You can use the [TinyDebug library](https://github.com/wokwi/TinyDebug) to print debug messages from your code. These messages appear in Wokwi's Serial Monitor. To use the library, include "TinyDebug.h" in your project and create a [libraries.txt](../guides/libraries) file with the text "TinyDebug" in it. 
+
+Call `Debug.begin()` and then print your debug messages using `Debug.println()`:
 
 ```cpp
 #include <TinyDebug.h>
