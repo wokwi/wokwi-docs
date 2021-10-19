@@ -56,7 +56,9 @@ Para selecionar um core, defina o atributo "env" na parte `wokwi-attiny85`, por 
 
 ### Depuração com TinyDebug
 
-Você pode usar a [biblioteca TinyDebug](https://github.com/wokwi/TinyDebug) para imprimir mensagens de depuração do seu código. Essas mensagens aparecem no Monitor Serial do Wokwi. Para usar a biblioteca, inclua "TinyDebug.h" em seu projeto, chame `Debug.begin()` e imprima suas mensagens de depuração usando `Debug.println()`:
+Você pode usar a [biblioteca TinyDebug](https://github.com/wokwi/TinyDebug) para imprimir mensagens de depuração do seu código. Essas mensagens aparecem no Monitor Serial do Wokwi. Para usar a biblioteca, inclua "TinyDebug.h" em seu projeto e crie um arquivo [libraries.txt](../guides/libraries) com o texto "TinyDebug" nele.
+
+Chame `Debug.begin()` e, em seguida, imprima suas mensagens de depuração usando `Debug.println()`:
 
 ```cpp
 #include <TinyDebug.h>
