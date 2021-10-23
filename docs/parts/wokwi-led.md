@@ -46,6 +46,9 @@ gamma factor by setting this attribute to the desired value. The default gamma c
 
 The [Gamma Correction Demo project](https://wokwi.com/arduino/projects/304762988710068800) shows the behavior of different gamma values: the LED on the left has the default gamma factor of 2.8, while the LED on the right has a gamma factor of 1.0. You can see how lower values of `analogWrite()` look much brighter on the left LED.
 
+For more information about _gamma correction_, including some code examples, check out this [great guide from Adafruit](https://learn.adafruit.com/led-tricks-gamma-correction).
+
 ## Simulator examples
 
 - [Blink](https://wokwi.com/arduino/libraries/demo/blink) - Arduino's standard Blink sketch
+- [Fade](https://wokwi.com/arduino/projects/313268562698437186) - Using analogWrite() + gamma correction
