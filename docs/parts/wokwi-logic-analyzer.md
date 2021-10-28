@@ -47,6 +47,8 @@ The "edge" mode starts recording when the `triggerPin` changes to `triggerLevel`
 
 The "level" mode is more versatile: just like the "edge" mode, it starts recording when the `triggerPin` changes to `triggerLevel`, but it will pause the recording as soon as `triggerPin` changes again.
 
+For usage examples, check out the [Using the Trigger section](../guides/logic-analyzer#using-the-trigger) in the Logic Analyzer Guide.
+
 ## Viewing the data
 
 When you stop the simulation, the logic analyzer downloads a file with the recorded samples to your computer. The recording file uses the standard [Value Change Dump (VCD)](https://en.wikipedia.org/wiki/Value_change_dump) format. The file is called "wokwi-logic.vcd" by default, but you can configure the name using the `filename` attribute.

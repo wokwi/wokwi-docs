@@ -19,8 +19,9 @@ The Wokwi Logic Analyzer has 8 digital channels, called D0 to D7. It has a sampl
 Each channel has an activity LED that turns green whenever there is an activity on the channel. The activity LEDs provide an easy way to see that the signals are connected
 correctly.
 
-The Logic analyzer has a small display. It shows the number of samples captured since
-the simulation started.
+The logic analyzer has a small display. It shows the number of samples captured since the simulation started.
+
+The [configurable trigger](#using-the-trigger) lets you record just part of the data. For instance, you can start recording on button press, or record only while SPI communication is active (using the SS pin as a trigger).
 
 ## Using the Logic Analyzer
 
@@ -33,6 +34,18 @@ Start the simulation. You should see the green activity LEDs blink as the signal
 To view the capture, stop the simulation. This will download a file called "wokwi-logic.vcd" to your computer. The file contains the recorded signals in [Value Change Dump](https://en.wikipedia.org/wiki/Value_change_dump) format.
 
 You can use software such as PulseView or GTKWave to open and view the capture files. These software also include powerful protocol analyzers that can decode many common protocols such as UART, I2C, WS2812, and many others.
+
+### Using the Trigger
+
+By default, the logic analyzer records data for the entire duration of the simulation. The trigger allows you to control the recording of data, by setting the value of one of the digital analyzer's input pins (D7 by default).
+
+Here are some examples for common use cases:
+
+- [Start recording when a button is pressed](https://wokwi.com/arduino/projects/313698551063380544) - Set the `triggerMode` to "edge", and connect the trigger pin (D7) to ground through a pull-down resistor. Connect the other end of the button to the positive power supply (VCC/5V).
+- [Record only while the button is pressed](https://wokwi.com/arduino/projects/313706149095408193) - Same setup as above, but the `triggerMode` is set to "level".
+- [Start recording after 1.5 seconds](https://wokwi.com/arduino/projects/313706408220557888) - Set `triggerMode` to "edge", connect the trigger pin (D7) and change the pin level to high after 1.5 seconds.
+
+Use the `triggerPin` and `triggerLevel` attributes to configure the trigger pin and set the trigger level ("high" or "low"). Check out the [wokwi-logic-analyzer documentation](../parts/wokwi-logic-analyzer) for more information.
 
 ### Viewing the data in PulseView
 
