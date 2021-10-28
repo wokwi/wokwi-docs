@@ -3,6 +3,8 @@ title: Logic Analyzer Guide
 sidebar_label: Logic Analyzer
 ---
 
+import LogicAnalyzerI2CImage from './logic-analyzer-i2c-decoder.png';
+
 The [Logic Analyzer](../parts/wokwi-logic-analyzer) records the values of digital signals in your project. It's a powerful debugging tool, and can help you diagnose issues in your circuit and code. It's also very useful as a learning aid.
 
 Some use cases include:
@@ -11,6 +13,11 @@ Some use cases include:
 - Look at the [Servo](../parts/wokwi-servo) control signal
 - Develop and debug PIO machines for the [Raspberry Pi Pico](../parts/wokwi-pi-pico)
 - Learn about the I2C protocol by looking at the SCL/SDA signals
+
+<figure>
+  <img src={LogicAnalyzerI2CImage} alt="I2C protocol signals decoded in PulseView" />
+  <figcaption>Logic Analyzer: I2C protocol signals decoded in PulseView</figcaption>
+</figure>
 
 ## Features
 

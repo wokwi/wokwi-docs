@@ -17,6 +17,22 @@
   --ifm-code-font-size: 95%;
 }
 
+figure {
+  margin-top: 56px;
+}
+
+figure > img {
+  display: block;
+}
+
+figcaption {
+  text-align: center;
+  margin-top: 10px;
+  color: rgb(117, 117, 117);
+  line-height: 20px;
+  font-size: 14px;
+}
+
 .docusaurus-highlight-code-line {
   background-color: rgb(72, 77, 91);
   display: block;
