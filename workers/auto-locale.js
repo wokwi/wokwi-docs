@@ -9,6 +9,9 @@
 
 const docsUrl = 'https://docs.wokwi.com';
 
+/**
+ * @param {Request} request
+ */
 function getLanguages(request) {
   const acceptLanguage = request.headers.get('Accept-Language');
   const result = [];
@@ -20,6 +23,11 @@ function getLanguages(request) {
   return result;
 }
 
+/**
+ * @param {ReturnType<getLanguages>} langs
+ * @param {string[]} supportedLangs
+ * @param {string} defaultLang
+ */
 function pickLanguage(langs, supportedLangs, defaultLang) {
   langs = [...langs].sort((a, b) => b.quality - a.quality);
   for (const { lang, quality } of langs) {
@@ -31,11 +39,13 @@ function pickLanguage(langs, supportedLangs, defaultLang) {
 }
 
 addEventListener('fetch', (event) => {
-  event.respondWith(
-    handleRequest(event.request).catch((err) => new Response(err.stack, { status: 500 })),
-  );
+  event.respondWith(handleRequest(event.request).catch((err) => new Response({ status: 500 })));
 });
 
+/**
+ * @param {Request} request
+ * @returns {Promise<Response>}
+ */
 async function handleRequest(request) {
   const { pathname } = new URL(request.url);
   const referer = request.headers.get('Referer');
