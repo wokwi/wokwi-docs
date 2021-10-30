@@ -23,7 +23,7 @@ function getLanguages(request) {
 function pickLanguage(langs, supportedLangs, defaultLang) {
   langs = [...langs].sort((a, b) => b.quality - a.quality);
   for (const { lang, quality } of langs) {
-    if (supportedLangs.includes(lang)) {
+    if (supportedLangs.includes(lang.toLowerCase())) {
       return { lang, quality };
     }
   }
@@ -40,7 +40,7 @@ async function handleRequest(request) {
   const { pathname } = new URL(request.url);
   const referer = request.headers.get('Referer');
   const secFetchSite = request.headers.get('Sec-Fetch-Site');
-  const { lang } = pickLanguage(getLanguages(request), ['pt-BR', 'pt', 'en'], 'en');
+  const { lang } = pickLanguage(getLanguages(request), ['pt-br', 'pt', 'en'], 'en');
 
   if (secFetchSite !== 'same-origin' && (!referer || !referer.startsWith(docsUrl))) {
     if (
