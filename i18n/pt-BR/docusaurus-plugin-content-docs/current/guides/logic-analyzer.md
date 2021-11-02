@@ -3,6 +3,8 @@ title: Guia do Analisador Lógico
 sidebar_label: Analisador Lógico
 ---
 
+import LogicAnalyzerI2CImage from './logic-analyzer-i2c-decoder.png';
+
 O [Analisador Lógico Wokwi](../parts/wokwi-logic-analyzer) registra os valores dos sinais digitais do seu projeto. É uma ferramenta de depuração poderosa e pode ajudá-lo a diagnosticar problemas em seu circuito e código. Também é muito útil para auxiliar no processo de aprendizagem.
 
 Alguns casos de uso incluem:
@@ -12,6 +14,11 @@ Alguns casos de uso incluem:
 - Desenvolver e depurar máquinas de estado (PIO) para o [Raspberry Pi Pico](../parts/wokwi-pi-pico)
 - Aprender sobre o protocolo I2C observando os sinais SCL/SDA
 
+<figure>
+  <img src={LogicAnalyzerI2CImage} alt="Sinais de protocolo I2C decodificados no PulseView" />
+  <figcaption>Analisador Lógico: sinais do protocolo I2C decodificados no PulseView</figcaption>
+</figure>
+
 ## Características
 
 O Analisador Lógico Wokwi possui 8 canais digitais, chamados D0 a D7. Ele tem uma taxa de amostragem de 1 GHz, que deve ser mais do que suficiente para a maioria das aplicações.
@@ -19,6 +26,8 @@ O Analisador Lógico Wokwi possui 8 canais digitais, chamados D0 a D7. Ele tem u
 Cada canal possui um LED de atividade que fica verde sempre que há uma atividade no canal. Os LEDs de atividade fornecem uma maneira fácil de ver se os sinais estão conectados corretamente.
 
 Também possui um pequeno display, onde mostra o número de amostras capturadas desde o inicio da simulação.
+
+O [acionamento configurável](#usando-o-acionamento) permite registrar apenas parte dos dados. Por exemplo, você pode iniciar a gravação ao pressionar o botão ou gravar apenas enquanto a comunicação SPI estiver ativa (usando o pino SS como um acionamento).
 
 ## Usando o Analisador Lógico
 
@@ -31,6 +40,18 @@ Inicie a simulação. Você deve ver os LEDs verdes em atividade piscando confor
 Para visualizar a captura, pare a simulação. Isso baixará um arquivo chamado "wokwi-logic.vcd" para o seu computador. O arquivo contém os sinais gravados no formato [Value Change Dump](https://en.wikipedia.org/wiki/Value_change_dump).
 
 Você pode usar um software como o PulseView ou GTKWave para abrir e visualizar os arquivos de captura. Esse software também inclui analisadores de protocolo poderosos que podem decodificar muitos protocolos comuns, como UART, I2C, WS2812 e muitos outros.
+
+### Usando o Acionamento
+
+Por padrão, o analisador lógico registra dados para toda a duração da simulação. O acionamento permite controlar a gravação de dados, definindo o valor de um dos pinos de entrada do analisador digital (D7 por padrão).
+
+Aqui estão alguns exemplos de casos de uso comuns:
+
+- [Inicia a gravação quando um botão for pressionado](https://wokwi.com/arduino/projects/313698551063380544) - Define o `triggerMode` como "edge" e conecta o pino do acionamento (D7) ao aterramento por meio de um resitor pull-down. Conecta a outra extremidade do botão à fonte de alimentação positiva (VCC/5V).
+- [Grava apenas enquanto o botão é pressionado](https://wokwi.com/arduino/projects/313706149095408193) - Mesma configuração que acima, mas o `triggerMode` está definido para "level".
+- [Inicia a gravação após 1,5 segundos](https://wokwi.com/arduino/projects/313706408220557888) - Define `triggerMode` como "edge", conecta o pino de disparo (D7) e altera o nível do pino para alto após 1,5 segundos.
+
+Use os atributos `triggerPin` e `triggerLevel` para configurar o pino de acionamento e definir o nível de disparo ("alto" ou "baixo"). Verifique a [documentação do Analisador Lógico Wokwi](../parts/wokwi-logic-analyzer) para obter mais informações.
 
 ### Visualizando os dados no PulseView
 
