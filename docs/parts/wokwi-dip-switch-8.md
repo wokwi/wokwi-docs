@@ -26,3 +26,4 @@ Click on the DIP Switch to focus on it, and then toggle the switches by pressing
 ## Simulator examples
 
 - [DIP Switch + LED Bar example](https://wokwi.com/arduino/projects/314167394611233344)
+- [Arduino PIND register example](https://wokwi.com/arduino/projects/314168546236039745)
