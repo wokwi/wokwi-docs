@@ -1,0 +1,47 @@
+<svg width="88.2mm" height="54mm" viewBox="0 0 334 204" xmlns="http://www.w3.org/2000/svg">
+  <path fill="#ffffc2" fill-opacity=".6" d="M161 86.5h87.5V174H161z"/>
+  <g stroke="#840000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.19" fill="none">
+    <path d="M161 86.5h87.5V174H161zM202 154a23.6 23.6 0 000-47.2"/>
+    <circle cx="172" cy="130" r="2.19" fill="#840000" stroke-width="1.31"/>
+    <circle cx="202" cy="130" r="16.4"/>
+    <circle cx="242" cy="139" r="1.09"/>
+    <circle cx="242" cy="122" r="1.09"/>
+    <path d="M161 86.5h87.5V174H161z"/>
+  </g>
+  <g fill="none" stroke="#840000" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M200 146v-30.6m2 30.6v-30.6m2-.4v30.6m34-15.6h-3.28m3.28-8v17.5" stroke-width="2.19"/>
+    <path d="M161 152h10.9v-4.37M161 108h10.9v4.37" stroke-width="1.31"/>
+    <path d="M207 157l-6.56-2.19 5.47-3.28M207 105l-6.56 2.19 5.47 3.28M249 152h-6.56v-13.1M249 108h-6.56v13.1" stroke-width="2.19"/>
+    <path d="M161 130h10.9v8.75l4.37 8.75M168 130h4.37v-8.75l4.37-8.75" stroke-width="1.31"/>
+  </g>
+  <g stroke-linecap="round" stroke-linejoin="round">
+    <path d="M161 108h-21.9" stroke="#840000" stroke-width="1.31" fill="none"/>
+    <text fill="#840000" font-size="14.454" stroke-width="1.314" text-anchor="middle">
+      <tspan x="151.55" y="106">A</tspan>
+      <tspan x="151.55" y="150">B</tspan>
+      <tspan x="151.55" y="128">C</tspan>
+      <tspan x="263.05" y="106">S1</tspan>
+      <tspan x="263.05" y="149">S2</tspan>
+    </text>
+    <path d="M161 152h-21.9M161 130h-21.9M249 108h21.9M249 152h21.9" stroke="#840000" stroke-width="1.31" fill="none"/>
+  </g>
+  <g fill="none" stroke="#840000" stroke-width="1.31" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M117.975 84.35v2.19m0-41.6v-2.19m0 28.5l8.76 3.28-17.5 6.57 8.76 3.28m0-26.3l8.76 3.28-17.5 6.57 8.76 3.28"/>
+    <path d="M117.975 44.95l8.76 3.28-17.5 6.57 8.76 3.28m0-15.3v-11m0 54.8v11M84.775 84.45v2.19m0-41.6v-2.19m0 28.5l8.76 3.28-17.5 6.57 8.76 3.28m0-26.3l8.76 3.28-17.5 6.57 8.76 3.28"/>
+    <path d="M84.775 45.05l8.76 3.28-17.5 6.57 8.76 3.28m0-15.3v-11m0 54.8v11"/>
+  </g>
+  <path d="M118 97.5v10.9M84.8 20.9h32.8m-32.8 11V21m33.2-.1v10.9M8.22 20.9h76.5M84.8 152H8.3m76.5-54.5v54.7m54.2-.2H84.3m33.7-44H9m130 0h-21.9m-54.2 22H8.2m54.7 66v-65.6M271 196H63m208-44v43.7m0-87.7h54.7M139 130H62.5" stroke="#008400" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.31" fill="none"/>
+  <text font-size="14.454" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" paint-order="stroke">
+    <tspan x="9.2" y="106">CLK</tspan>
+    <tspan x="9.2" y="150">DT</tspan>
+    <tspan x="9.2" y="19">VCC</tspan>
+    <tspan x="330" y="106" text-anchor="end">SW</tspan>
+    <tspan x="9.2" y="128">GND</tspan>
+  </text>
+  <g fill="#008400" stroke="#008400" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.19">
+    <circle cx="118" cy="108" r="4.37"/>
+    <circle cx="62.9" cy="130" r="4.37"/>
+    <circle cx="84.8" cy="152" r="4.37"/>
+    <circle cx="84.8" cy="20.9" r="4.37"/>
+  </g>
+</svg>

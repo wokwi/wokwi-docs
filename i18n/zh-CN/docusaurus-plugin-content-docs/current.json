@@ -1,0 +1,18 @@
+{
+  "version.label": {
+    "message": "下一页",
+    "description": "The label for version current"
+  },
+  "sidebar.main.category.Getting Started": {
+    "message": "开始",
+    "description": "The label for category Getting Started in sidebar main"
+  },
+  "sidebar.main.category.Guides": {
+    "message": "指南",
+    "description": "The label for category Guides in sidebar main"
+  },
+  "sidebar.main.category.Diagram Reference": {
+    "message": "Diagram指南",
+    "description": "The label for category Diagram Reference in sidebar main"
+  }
+}
