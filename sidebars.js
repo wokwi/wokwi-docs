@@ -43,7 +43,6 @@ module.exports = {
       'parts/wokwi-membrane-keypad',
       'parts/wokwi-microsd-card',
       'parts/wokwi-mpu6050',
-      'parts/wokwi-nano-rp2040-connect',
       'parts/wokwi-nlsf595',
       'parts/wokwi-ntc-temperature-sensor',
       'parts/wokwi-photoresistor-sensor',
