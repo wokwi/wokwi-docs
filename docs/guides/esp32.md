@@ -76,7 +76,7 @@ The following examples use the ESP-IDF functions. They are compiled using Arduin
 | RMT                | 🟡     | Transmit-only, use to control NeoPixels                                  |
 | PWM                | ❌     |                                                                          |
 | DMA                | ❌     |                                                                          |
-| WIFI               | 🟡     | Scanning works; See [notes](#wifi-simulation)                            |
+| WiFi               | 🟡     | Scanning works; See [notes](#wifi-simulation)                            |
 | Bluetooth          | ❌     |                                                                          |
 | Timers             | 🟡     |                                                                          |
 | Watchdog           | ❌     |                                                                          |
