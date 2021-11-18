@@ -83,6 +83,9 @@ The following examples use the ESP-IDF functions. They are compiled using Arduin
 | RTC                | 🟡     | Only RTC Pull-up / Pull-down resistors                                   |
 | ADC                | ✔️     | Note: analogRead() returns values up to 4095                             |
 | RNG                | ✔️     | Random Number Generator                                                  |
+| AES Accelerator    | ❌     | Required for HTTPS / SSL                                                 |
+| SHA Accelerator    | ❌     |                                                                          |
+| RSA Accelerator    | ❌     |                                                                          |
 | Hall Effect Sensor | ❌     |                                                                          |
 | GDB Debugging      | 🟡     | Only through [wokwi-gdbserver](https://github.com/wokwi/wokwi-gdbserver) |
 
