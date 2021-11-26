@@ -1,0 +1,16 @@
+<svg width="19.812mm" height="8.35mm" viewBox="0 0 19.812 8.35" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <pattern id="pins" width="2.54" height="8.4" patternUnits="userSpaceOnUse">
+      <rect x=".5" width="1.2" height="1" fill="#ccc" rx=".1"/>
+      <rect x=".5" y="7.35" width="1.2" height="1" fill="#ccc" rx=".1"/>
+    </pattern>
+  </defs>
+  <path fill="#222" d="M0 1h19.812v6.35H0z"/>
+  <path fill="url(#pins)" d="M0 0h19.812v8.5H0z"/>
+  <circle cx="17.526" cy="4.175" r="1.25"/>
+  <circle cy="4.175" r="1"/>
+  <circle cx="1.25" cy="6.15" fill="#444" r=".5"/>
+  <text fill="olive" font-family="sans-serif" font-weight="bold" font-size="2" text-anchor="middle">
+    <tspan x="9.9" y="3.75">NLSF</tspan><tspan x="9.9" y="6.25">595</tspan>
+  </text>
+</svg>
