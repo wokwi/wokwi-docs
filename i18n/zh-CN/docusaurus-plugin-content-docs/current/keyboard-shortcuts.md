@@ -1,11 +1,11 @@
 ---
-title: Editor Keyboard Shortcuts
-sidebar_label: Keyboard Shortcuts
+title: 编辑器键盘快捷键
+sidebar_label: 键盘快捷键
 ---
 
-## General shortcuts
+## 一般快捷键
 
-| Description                    | Windows / Linux | Mac     |
+| 描述                           | Windows / Linux | Mac     |
 | ------------------------------ | --------------- | ------- |
 | Start simulation               | Ctrl + Enter    | ⌘ Enter |
 | Save project                   | Ctrl + S        | ⌘ S     |
