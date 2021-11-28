@@ -27,62 +27,62 @@ sidebar_label: 图表编辑器
 
 点击一个组件选中，然后按下Delete键删除。
 
-## Editing wires
+## 编辑连线
 
-### Creating a wire between two parts
+### 在两个组件之间连线
 
-To create a new wire between two parts, click on one of the pins that you'd like to connect. Then click on the second (target) pin. This will create the wire.
+要在两个组件之间创建新的连线，点击一个你想连接的起点管脚，再点击另一个目标管脚，就能在两个管脚之间连线。
 
-If you want the wire to go in a specific way, you can guide it by clicking where you want it to go after selecting the first pin.
+如果你想要让电线走特定的路线，可以在点击第一个管脚之后再点击屏幕上的其他位置来调整电线是如何拐弯的。
 
-To cancel a new wire (delete it without selecting a target pin) click the right mouse button or press Escape.
+如果要取消一个连线（在不选择目标引脚的情况下删除），点击鼠标右键或者按Esc键。
 
-### Changing the color of a wire
+### 改变连线的颜色
 
-The color of new wires is automatically determined by the function of the pin: wires starting from ground pins are black, 5&nbsp;V pins are red, and other wires are green.
+连线的颜色是由引脚的功能自动决定的，从GND管脚起始的是黑色线，从5V管脚起始的是红色线，其他的线则是绿色。
 
-The interactive editor does not support setting the color of wires. You can, however, change the color of any wire by editing [diagram.json](../diagram-format#connections)
+交互式编辑器不支持改变连线颜色，但是你可以通过编辑[diagram.json](../diagram-format#connections)文件来实现。
 
-### Deleting a wire
+### 删除连线
 
-Delete a wire by clicking on it.
+点击一条连线就可以删除它。
 
-## Keyboard shortcuts
+## 键盘快捷键说明
 
-The following table summarizes the keyboard shortcuts:
+键盘快捷键说明表：
 
-| Key    | Function                                    |
-| ------ | ------------------------------------------- |
-| -      | Zoom out                                    |
-| +      | Zoom in                                     |
-| R      | Rotate the selected part                    |
-| Delete | Delete the selected part                    |
-| ?      | Open documentation for the selected part    |
-| Escape | Cancel wire (in wiring mode)                |
-| G      | Toggle the grid                             |
-| Shift  | Toggle coarse grid snapping while dragging  |
-| Alt    | Toggle fine grid snapping while dragging    |
-| Ctrl   | Toggle fine grid snapping while dragging    |
+| 按键   | 功能                        |
+| ------ | ----------------------------|
+| -      | 缩小                        |
+| +      | 放大                        |
+| R      | 旋转选中的组件               |
+| Delete | 删除选中的组件               |
+| ?      | 打开当前选中组件的说明文档    |
+| Escape | 取消连线 (在连线状态下)       |
+| G      | 切换网格                     |
+| Shift  | 切换网格对齐模式             |
+| Alt    | 切换到精细网格对齐模式        |
+| Ctrl   | 切换到精细网格对齐模式        |
 
-Firefox users: if the keyboard shortcuts don't work for you, please make sure that the "Search for text when you start typing" setting is disabled.
+对于火狐浏览器用户：如果键盘快捷键不起作用，请确保“Search for text when you start typing”设置处于关闭状态。
 
 ## 撤销 / 重做
 
-Any change that you make in the interactive editor is also reflected in [diagram.json](../diagram-format).
+你在交互式编辑器中的任何操作都会同步改变 [diagram.json](../diagram-format)。
 
-The interactive editor **does not** have an undo feature at the moment (there's an [open issue for that](https://github.com/wokwi/wokwi-features/issues/77)).
+交互式编辑器当前**没有**撤销功能（这里有一个[关于这个新功能的issue](https://github.com/wokwi/wokwi-features/issues/77)）
 
-You can still get complete Undo history if you select the "diagram.json" tab in the code editor. Any changes made in the interactive diagram editor
-will immediately reflect in the code editor, and you'll be able to undo them by clicking on the code editor and then pressing Ctrl+Z.
+你可以通过切换到"diagram.json"标签页来执行撤销操作，你在交互式编辑器里面的任何操作都会立即反映到代码编辑器中，然后不就可以通过在代码编辑器中执行Ctrl+Z来进行撤销。
 
-Note that this only works if the "diagram.json" tab is active while you make changes. This is a temporary solution until we implement Undo in the interactive diagram editor.
+需要注意的是，只有在切换到"diagram.json"标签页之后进行的操作才会被记录下来能够撤销，这是我们在交互式编辑器里添加撤销操作之前的临时解决方案。
 
-## Grid snapping
+## 网格捕捉
 
-Activate the grid view by pressing "G" or by clicking the grid icon in the menu. This displays a grid and rulers. The coarse grid is 2.54&nbsp;mm or 0.1&nbsp;inches and the fine grid is 1.27&nbsp;mm or 0.05&nbsp;inches. Tick labels on the rulers show measurements in millimetres (the default), but you can switch to inches by clicking on the units in the top right corner.
+按下G键或点击菜单中的网格按钮可以激活网格视图，显示网格和标尺。大颗粒的网格是2.54mm或0.1英寸，精细网格（默认网格大小的一半）是1.27mm或0.05英寸。标尺上的刻度标签以毫米为单位（默认情况下），但可以通过单击右上角的单位切换到英寸。
 
-The Shift key temporarily toggles the grid snapping mode between the coarse grid and free movement. If the grid is on, it toggles to free movement; if the grid is off, it toggles to coarse grid snapping.
+Shift键能够在网格模式和自由模式之间临时切换，如果网格视图是开启的，那么按下shift你可以随意拖动组件并让它定位在任何位置（不依据网格对齐），如果网格视图是关闭的，那么按下shift则可以让组件按照网格对齐（固定在最近的网格点）。
 
-The Alt key or the Ctrl key temporarily toggle to fine grid snapping whether the grid is visible or not.
+Alt键和Ctrl键则无论网格视图是否开启都可以临时切换到精细网格对齐（对齐到半个格子）。
 
-This grid snapping behaviour is the same for both parts and new wires, and the modifier keys allow you to perform grid snapping whether the grid is on or off.
+网格对齐操作对于组件和连线是一样的，Shift，Alt和Ctrl键允许你在任何状态下进行网格对齐操作。
+
