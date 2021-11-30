@@ -44,6 +44,7 @@ Open the [ESP32 custom application project template](https://wokwi.com/arduino/p
 
 - [Blink](https://wokwi.com/arduino/projects/305566932847821378)
 - [Seven segment counter](https://wokwi.com/arduino/projects/305567166302782017)
+- [FastLED NeoPixel Blink](https://wokwi.com/arduino/projects/312460386125218368)
 - [APA102 Color Cycles (TinyPico Board)](https://wokwi.com/arduino/projects/308012505806930496)
 - [WiFi Scanning](https://wokwi.com/arduino/projects/305569599398609473)
 
