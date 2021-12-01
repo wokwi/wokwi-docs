@@ -43,7 +43,8 @@ Abra o [modelo de projeto de aplicativo personalizado ESP32](https://wokwi.com/a
 ### Exemplos Arduino
 
 - [Blink](https://wokwi.com/arduino/projects/305566932847821378)
-- [Contador de sete segmentos](https://wokwi.com/arduino/projects/305567166302782017)
+- [Contador de Sete Segmentos](https://wokwi.com/arduino/projects/305567166302782017)
+- [Blink com FastLED NeoPixel](https://wokwi.com/arduino/projects/312460386125218368)
 - [APA102 Color Cycles (TinyPico Board)](https://wokwi.com/arduino/projects/308012505806930496)
 - [WiFi Scanning](https://wokwi.com/arduino/projects/305569599398609473)
 
@@ -76,12 +77,16 @@ Os exemplos a seguir usam as funções ESP-IDF. Eles são compilados usando o Ar
 | RMT                | 🟡     | Apenas transmissão, use para controlar NeoPixels                           |
 | PWM                | ❌     |                                                                            |
 | DMA                | ❌     |                                                                            |
-| WIFI               | 🟡     | Escaneamento da rede funciona; [Veja as notas](#simula%C3%A7%C3%A3o-wifi)  |
+| WiFi               | 🟡     | Escaneamento da rede funciona; [Veja as notas](#simula%C3%A7%C3%A3o-wifi)  |
 | Bluetooth          | ❌     |                                                                            |
 | Timers             | 🟡     |                                                                            |
 | Watchdog           | ❌     |                                                                            |
 | RTC                | 🟡     | Apenas resistores RTC pull-up / pull-down                                  |
 | ADC                | ✔️     | Nota: analogRead() retorna valores até 4095                                |
+| RNG                | ✔️     | Gerador de números aleatórios                                              |
+| AES Accelerator    | ❌     | Requerido para HTTPS / SSL                                                 |
+| SHA Accelerator    | ❌     |                                                                            |
+| RSA Accelerator    | ❌     |                                                                            |
 | Hall Effect Sensor | ❌     |                                                                            |
 | GDB Debugging      | 🟡     | Apenas atraves [wokwi-gdbserver](https://github.com/wokwi/wokwi-gdbserver) |
 

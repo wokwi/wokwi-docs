@@ -88,3 +88,9 @@ assoc .vcd=vcdfile
 ```
 
 Observe que esses comandos não funcionam no PowerShell. Funciona apenas no Prompt de Comando (cmd) com privilégios de administrador. O comando define o fator de redução da resolução para 50, mas você pode escolher um valor diferente que se adapte às suas necessidades (consulte a tabela acima).
+
+### Visualizando os dados no GTKWave
+
+[GTKWave](http://gtkwave.sourceforge.net/) é um software multiplataforma de visualização de ondas de código aberto. GTKWave pode abrir arquivos VCD gerados pelo Wokwi Logic Analyzer.
+
+O [wokwi2gtkwave Python script](https://github.com/bvandepo/wokwi2gtkwave) é um projeto contribuído por um usuário de automação para usar o GTKWave com Wokwi: ele pode monitorar seu diretório de downloads e abrir automaticamente novos arquivos com GTKWave. O script também configura GTKWave para exibir automaticamente os sinais de seus arquivos VCD e ampliá-los para caber na tela.
