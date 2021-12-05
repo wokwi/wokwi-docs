@@ -3,7 +3,7 @@ title: wokwi-led-bar-graph Reference
 sidebar_label: wokwi-led-bar-graph
 ---
 
-Standard 5mm LED.
+10-segment LED Bar Graph.
 
 <wokwi-led-bar-graph values='[1,1,1,1,1,1,1,1,1,1]' />
 
