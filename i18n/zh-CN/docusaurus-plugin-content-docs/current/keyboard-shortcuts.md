@@ -7,40 +7,40 @@ sidebar_label: 键盘快捷键
 
 | 描述                           | Windows / Linux | Mac     |
 | ------------------------------ | --------------- | ------- |
-| Start simulation               | Ctrl + Enter    | ⌘ Enter |
-| Save project                   | Ctrl + S        | ⌘ S     |
-| Auto format code               | Alt + Shift + F | ⌥ ⇧ F   |
-| Trigger auto complete          | Ctrl + Space    | ⌘ Space |
-| Show list of available commands | F1              | F1      |
+| 启动模拟器               | Ctrl + Enter    | ⌘ Enter |
+| 保存项目                   | Ctrl + S        | ⌘ S     |
+| 代码格式化               | Alt + Shift + F | ⌥ ⇧ F   |
+| 开关代码自动补全          | Ctrl + Space    | ⌘ Space |
+| 显示所有命令列表 | F1              | F1      |
 
-## Basic editing keys
+## 普通编辑快捷键
 
-| Description                | Windows / Linux | Mac |
+| 描述                | Windows / Linux | Mac |
 | -------------------------- | --------------- | --- |
-| Indent line\*              | Ctrl + ]        | ⌘ ] |
-| Outdent line\*             | Ctrl + [        | ⌘ [ |
-| Comment / uncomment line\* | Ctrl + /        | ⌘ / |
-| Find in file               | Ctrl + F        | ⌘ F |
-| Replace                    | Ctrl + H        | ⌘ H |
+| 缩进\*              | Ctrl + ]        | ⌘ ] |
+| 反向缩进\*           | Ctrl + [        | ⌘ [ |
+| 注释 / 取消注释\*    | Ctrl + /        | ⌘ / |
+| 查找                | Ctrl + F        | ⌘ F |
+| 替换                | Ctrl + H        | ⌘ H |
 
-\* if you have selected some text, this will operate on the selection instead of the current line
+\* 如果你选中了一部分代码，这会在选中部分起作用而不是当前行。
 
-## Power editing keys
 
-These keyboard shortcuts enable powerful editing operations, such as managing
-multiple cursors / selections.
+## 高级编辑快捷键
 
-| Description                             | Windows / Linux     | Mac       |
+这些快捷键提供强大的编辑操作，例如控制多行光标和选中部分。
+
+| 描述                             | Windows / Linux     | Mac       |
 | --------------------------------------- | ------------------- | --------- |
-| Select word at cursor / next occurrence | Ctrl + D            | ⌘ D       |
-| Select all occurrences                  | Ctrl + Shift + L    | ⌘ ⇧ L     |
-| Duplicate line\* above                  | Alt + Shift + Up    | ⌥ ⇧ Up    |
-| Duplicate line\* below                  | Alt + Shift + Down  | ⌥ ⇧ Down  |
-| Move current line\* up                  | Alt + Up            | ⌥ Up      |
-| Move current line\* down                | Alt + Down          | ⌥ Down    |
-| Add cursor above                        | Ctrl + Alt + Up     | ⌘ ⌥ Up    |
-| Add cursor below                        | Ctrl + Alt + Down   | ⌘ ⌥ Down  |
-| Expand selection                        | Alt + Shift + Right | ⌥ ⇧ Right |
-| Shrink selection                        | Alt + Shift + Left  | ⌥ ⇧ Left  |
+| 选中当前选中部分文字的下一处 | Ctrl + D            | ⌘ D       |
+| 选中所有和当前选中文字相同的部分           | Ctrl + Shift + L    | ⌘ ⇧ L     |
+| 复制上一行\*                  | Alt + Shift + Up    | ⌥ ⇧ Up    |
+| 复制下一行\*                  | Alt + Shift + Down  | ⌥ ⇧ Down  |
+| 将当前行上移一行\*                  | Alt + Up            | ⌥ Up      |
+| 将当前行下移一行\*                | Alt + Down          | ⌥ Down    |
+| 在上一行增加一个光标               | Ctrl + Alt + Up     | ⌘ ⌥ Up    |
+| 在下一行增加一个光标               | Ctrl + Alt + Down   | ⌘ ⌥ Down  |
+| 扩展选中区域                        | Alt + Shift + Right | ⌥ ⇧ Right |
+| 缩小选中区域                        | Alt + Shift + Left  | ⌥ ⇧ Left  |
 
-\* if you selected some text, this will operate on the selection instead of the current line
+\* 如果你选中了一部分代码，这会在选中部分起作用而不是当前行。
