@@ -1,6 +1,6 @@
 module.exports = {
   main: {
-    'Getting Started': ['welcome'],
+    'Getting Started': ['welcome', 'faq'],
     Guides: [
       'guides/diagram-editor',
       'keyboard-shortcuts',
