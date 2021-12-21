@@ -39,7 +39,7 @@ If you want to chain units in a custom way (e.g. select a different pixel color 
 
 There are several type of matrix layout, based on the commonly available modules. You can set the "layout" property to choose the desired pixel layout:
 
-- "parola" - See the [Parola documentation] for information about the layout of these modules
+- "parola" - See the [Parola documentation](https://majicdesigns.github.io/MD_MAX72XX/page_parola.html) for information about the layout of these modules
 - "fc16" - The FC-16 modules are available from EBay and AliExpress. They usually come in a chain of four 8x8 matrices, so they have 32x8 pixels in total.
 
 Choosing the wrong layout will cause your text / drawing to be rotated and / or mirrored.
