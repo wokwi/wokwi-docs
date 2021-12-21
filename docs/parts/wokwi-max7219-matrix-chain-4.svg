@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 20" height="20mm" width="90mm" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <pattern id="background" width="2.5" height="2.5" patternUnits="userSpaceOnUse">
+      <rect width="2.5" height="2.5" />
+      <circle cx="1.25" cy="1.25" r="0.9" fill="#444" />
+    </pattern>
+    <path
+      id="pinl"
+      fill="#c6bf95"
+      d="m7.02-0.39h-7.02a0.39 0.39 0 0 0-0.37 0.39 0.39 0.39 0 0 0 0.37 0.39v0h7.02z"
+    />
+    <path
+      id="pinr"
+      fill="#c6bf95"
+      d="m-7.02-0.39h7.02a0.39 0.39 0 0 1 0.37 0.39 0.39 0.39 0 0 1-0.37 0.39v0h-7.02z"
+    />
+  </defs>
+  <use xlink:href="#pinl" x="0.53" y="4.92" />
+  <use xlink:href="#pinl" x="0.53" y="7.46" />
+  <use xlink:href="#pinl" x="0.53" y="10" />
+  <use xlink:href="#pinl" x="0.53" y="12.54" />
+  <use xlink:href="#pinl" x="0.53" y="15.08" />
+  <use xlink:href="#pinr" x="89.47" y="4.92" />
+  <use xlink:href="#pinr" x="89.47" y="7.46" />
+  <use xlink:href="#pinr" x="89.47" y="10" />
+  <use xlink:href="#pinr" x="89.47" y="12.54" />
+  <use xlink:href="#pinr" x="89.47" y="15.08" />
+  <rect x="5" width="80" height="20" fill="url(#background)" />
+  <circle cx="8.75" cy="3.75" r="0.9" fill="red" class="led" />
+  <circle cx="28.75" cy="6.25" r="0.9" fill="red" class="led" />
+  <circle cx="48.75" cy="8.75" r="0.9" fill="red" class="led" />
+  <circle cx="68.75" cy="11.25" r="0.9" fill="red" class="led" />
+</svg>

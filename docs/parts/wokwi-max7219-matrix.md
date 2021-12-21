@@ -4,6 +4,7 @@ sidebar_label: wokwi-max7219-matrix
 ---
 
 import DotMatrix from './wokwi-max7219-matrix.svg';
+import DotMatrixChain4 from './wokwi-max7219-matrix-chain-4.svg';
 
 8x8 LED Dot Matrix with MAX7219 Controller
 
@@ -18,9 +19,9 @@ import DotMatrix from './wokwi-max7219-matrix.svg';
 | DIN  | Data input     |
 | CS   | Chip Select    |
 | CLK  | Clock input    |
+| DOUT | Data output    |
 
-Note: the current simulation model does not have a DOUT pin to chain multiple units together. You can chain multiple units using the "chain"
-attribute (see below).
+You can chain multiple units together by connecting the DOUT pin of one unit to the DIN pin of the next unit. You also need to connect the CLK / CS pins of the units together.
 
 ## Attributes
 
@@ -35,10 +36,10 @@ Each dot matrix units is an 8x8 LED matrix. All the LEDs in the matrix have the 
 
 ### Examples
 
-| Result                                                                                             | Attrs                  |
-| -------------------------------------------------------------------------------------------------- | ---------------------- |
-| <DotMatrix style={{'--pixel-color': 'green'}} />                                                   | `{ "color": "green" }` |
-| <DotMatrix /><span style={{'--pixel-color':'none'}}><DotMatrix /><DotMatrix /><DotMatrix /></span> | `{ "chain": "4" }`     |
+| Result                                           | Attrs                  |
+| ------------------------------------------------ | ---------------------- |
+| <DotMatrix style={{'--pixel-color': 'green'}} /> | `{ "color": "green" }` |
+| <DotMatrixChain4/>                               | `{ "chain": "4" }`     |
 
 ## Simulator examples
 
