@@ -21,18 +21,28 @@ import DotMatrixChain4 from './wokwi-max7219-matrix-chain-4.svg';
 | CLK  | Clock input    |
 | DOUT | Data output    |
 
-You can chain multiple units together by connecting the DOUT pin of one unit to the DIN pin of the next unit. You also need to connect the CLK / CS pins of the units together.
-
 ## Attributes
 
-| Name  | Description                      | Default value |
-| ----- | -------------------------------- | ------------- |
-| chain | How many units to chain together | "1"           |
-| color | LED color (when lit)             | "red"         |
+| Name   | Description                                  | Default value |
+| ------ | -------------------------------------------- | ------------- |
+| chain  | How many units to chain together             | "1"           |
+| color  | LED color (when lit)                         | "red"         |
+| layout | Matrix connection layout: "parola" or "fc16" | "parola"      |
 
 ### Chaining
 
-Each dot matrix units is an 8x8 LED matrix. All the LEDs in the matrix have the same color. You can chain multiple units horizontally by setting the "chain" attribute. For example, setting "chain" to 4 will result in 8x32 matrix (four times 8x8 matrix).
+Each dot matrix units is an 8x8 LED matrix. All the LEDs in the matrix have the same color. You can make the display wider by setting the "chain" attribute. For example, setting "chain" to 4 will chain four dot matrix units horizontally, resulting in 32x8 matrix (four times 8x8 matrix).
+
+If you want to chain units in a custom way (e.g. select a different pixel color for each unit, chain them vertically, etc), connect the DOUT pin of one unit to the DIN pin of the next unit. You also need to connect the CLK / CS pins of the units together.
+
+### Matrix layout
+
+There are several type of matrix layout, based on the commonly available modules. You can set the "layout" property to choose the desired pixel layout:
+
+- "parola" - See the [Parola documentation] for information about the layout of these modules
+- "fc16" - The FC-16 modules are available from EBay and AliExpress. They usually come in a chain of four 8x8 matrices, so they have 32x8 pixels in total.
+
+Choosing the wrong layout will cause your text / drawing to be rotated and / or mirrored.
 
 ### Examples
 
