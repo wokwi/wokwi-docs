@@ -3,7 +3,7 @@ title: Referência do wokwi-led-bar-graph
 sidebar_label: wokwi-led-bar-graph
 ---
 
-Barra Gráfica de LEDs.
+Barra Gráfica de LEDs de 10 segmentos.
 
 <wokwi-led-bar-graph values='[1,1,1,1,1,1,1,1,1,1]' />
 
