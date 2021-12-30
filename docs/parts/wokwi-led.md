@@ -22,6 +22,7 @@ Standard 5mm LED.
 | lightColor | The color of the light          | depends on the color |
 | label      | Text that appears below the led |                      |
 | gamma      | Gamma correction factor         | "2.8"                |
+| flip       | Flips the led horizontally      | ""                   | 
 
 ### Examples
 
@@ -32,7 +33,7 @@ Standard 5mm LED.
 | <wokwi-led label="Status" />                              | `{ "label": "Status" }`                       |
 | <wokwi-led color="white" />                               | `{ "color": "white"}`                         |
 | <wokwi-led color="white" lightColor="orange" value="1" /> | `{ "color": "white", "lightColor": "orange"}` |
-
+| <wokwi-led color="red" flip="1"/>                         | `{ "color": "red", "flip": "1"}`              |
 ### Gamma correction
 
 The LED automatically applies gamma correction. This means that even a very short burst of current will result
