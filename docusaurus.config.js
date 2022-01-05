@@ -118,6 +118,7 @@ module.exports = {
     ],
   ],
   plugins: [
+    '@docusaurus/plugin-ideal-image',
     [
       'docusaurus-plugin-plausible',
       {
