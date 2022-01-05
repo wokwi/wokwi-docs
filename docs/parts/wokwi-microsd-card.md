@@ -3,8 +3,6 @@ title: wokwi-microsd-card Reference
 sidebar_label: wokwi-microsd-card
 ---
 
-import Image from '@theme/IdealImage';
-
 microSD card with SPI interface
 
 <wokwi-microsd-card />
