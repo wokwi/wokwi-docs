@@ -16,7 +16,7 @@ module.exports = {
   ],
   themeConfig: {
     image: 'img/wokwi-book.jpg',
-    metadatas: [
+    metadata: [
       { property: 'og:image:width', content: '1200' },
       { property: 'og:image:height', content: '630' },
     ],
