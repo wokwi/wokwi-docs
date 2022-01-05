@@ -56,6 +56,6 @@ Choosing the wrong layout will cause your text / drawing to be rotated and / or 
 - [Dot Matrix Clock](https://wokwi.com/arduino/projects/289186888566178317)
 - [Etch A Sketch game](https://wokwi.com/arduino/projects/296234816685212169)
 - [Electronic Dice (on ATtiny85)](https://wokwi.com/arduino/projects/291779699024069128)
-- [Arduino QR Code Generator](https://wokwi.com/arduino/projects/297148152803230218)
+- [Arduino QR Code Generator](https://wokwi.com/arduino/projects/318641692720759379)
 - [32x32 LED Matrix Tunnel](https://wokwi.com/arduino/projects/318864638990090834)
 - [MD_Parola library examples](https://wokwi.com/arduino/libraries/MD_Parola)
