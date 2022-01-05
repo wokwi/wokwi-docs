@@ -37,7 +37,7 @@ When you start the simulation, Wokwi creates a FAT16 file system and attaches it
 
 You can also upload a complete folder tree (useful if you have a physical SD card attached to your computer and you want to upload all the data from it, as-as). Click on the small arrow next to the "Upload Files" button and select "Upload complete folder". Then select the folder with the files you want to upload.
 
-<Image img={require('./wokwi-microsd-card-upload.png')} width={355} />
+<img src={require('./wokwi-microsd-card-upload.png').default} width={355} />
 
 Wokwi stores the uploaded files for you, alongside with your project. Anyone who opens your project and starts the simulation will have to wait for all the micro SD card files to download before the simulation starts.
 
