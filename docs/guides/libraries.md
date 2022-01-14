@@ -7,9 +7,19 @@ To include a library, go to the code editor and type `#` on an empty line. You'l
 
 By default, Wokwi compiles your code with the standard built-in Arduino libraries, such as Wire.h and SPI.h.
 
+## Adding third party libraries
+
 To add third-party libraries to your project, go to the "Library Manager" tab in the code editor, and press the purple "+" button. Type some text in the search box to search for a library (e.g. "FastLED"), and then click on one of the library names in the list to add it.
 
-You can use this method to install any Arduino library from the Arduino Library Manager. If you need a library that is not available on the Arduino Library Manager, you can either copy the library source files to your project, or [submit it to the Arduino Library Manager](https://github.com/arduino/library-registry/blob/main/FAQ.md#submission).
+You can use this method to install any Arduino library from the Arduino Library Manager. 
+
+### Uploading custom libraries
+
+[Club members](https://wokwi.com/club) can upload any Arduino library by selecting a folder from their computer. To upload a custom library, click on the purple "+" button in the Arduino library manager and then click on "Upload a Library".
+
+The selected folder should contain the source code for the library (.h and .c/.cpp files). After selecting a folder, Wokwi will zip its contents and upload it to the Wokwi build server. You will be able to see the library in the Library Mananger as a .zip file.
+
+Anyone who opens the project will be able to download the library from the Library manager. Any user who creates a copy of the project will be able to use the library in the copied project.
 
 ## The libraries.txt file
 
@@ -27,3 +37,5 @@ FastLED
 # Install a specific version of a library:
 MySensors@2.3.0
 ```
+
+Custom libraries have the following format: the library name, followed by a the text "@wokwi:", and a unique identifier of the library's zip file on Wokwi's servers. You can copy custom libraries to a different project by copying the relevant lines from libraries.txt into the other project.
