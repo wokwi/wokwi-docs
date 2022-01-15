@@ -114,14 +114,10 @@ module.exports = {
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
-      },
-    ],
-  ],
-  plugins: [
-    [
-      'docusaurus-plugin-plausible',
-      {
-        domain: 'docs.wokwi.com',
+        gtag: {
+          trackingID: 'G-PHBY8B943B',
+          anonymizeIP: true,
+        },
       },
     ],
   ],

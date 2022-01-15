@@ -4579,11 +4579,6 @@ dns-txt@^2.0.2:
   dependencies:
     buffer-indexof "^1.0.0"
 
-docusaurus-plugin-plausible@^0.0.5:
-  version "0.0.5"
-  resolved "https://registry.yarnpkg.com/docusaurus-plugin-plausible/-/docusaurus-plugin-plausible-0.0.5.tgz#d113f7d82c09a3945e88227265b599ba1904bfb9"
-  integrity sha512-8wiglvMjkGjhGUnBYgJM87V1Ip0wr8AbIHiC5YHNar3DOfXX+JL0nBoThlnvaX1ib/emraWgimR5QiMDOgMJjA==
-
 dom-converter@^0.2.0:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/dom-converter/-/dom-converter-0.2.0.tgz#6721a9daee2e293682955b6afe416771627bb768"
