@@ -3,7 +3,7 @@ title: Referência do wokwi-microsd-card
 sidebar_label: wokwi-microsd-card
 ---
 
-cartão microSD com interface SPI
+Cartão microSD com interface SPI
 
 <wokwi-microsd-card />
 
@@ -25,9 +25,21 @@ O simulador de cartão microSD ainda está em beta. A interface/comportamento es
 
 \* O pino do CD é conectado ao aterramento quando não há placa no soquete. No simulador, sempre há um cartão no soquete, então esse pino está sempre desconectado.
 
-## Comportamento da Simulação
+## Sistema de arquivo
 
-O cartão microSD é inicializado automaticamente com um sistema de arquivos FAT16 e todos os seus arquivos de projeto são copiados para ele.
+Quando você inicia a simulação, o Wokwi cria um sistema de arquivos FAT16 e o ​​anexa ao cartão microSD. Por padrão, o Wokwi copia todos os seus arquivos de projeto para o cartão microSD.
+
+### Carregando arquivos binários
+
+Os usuários do [Club](https://wokwi.com) podem fazer upload de arquivos binários personalizados (por exemplo, bitmaps, sons, etc.) Depois de adicionar um cartão microSD ao seu projeto, você verá uma nova guia "Cartão SD" ao lado das outras guias no editor de código. Clique nos botões roxos "Fazer upload de arquivos" e selecione os arquivos que deseja enviar.
+
+Você também pode fazer upload de uma árvore de pastas completa (útil se você tiver um cartão SD físico conectado ao seu computador e quiser fazer upload de todos os dados dele, como-as). Clique na pequena seta ao lado do botão "Carregar arquivos" e selecione "Carregar pasta completa". Em seguida, selecione a pasta com os arquivos que deseja enviar.
+
+<img src={require('./wokwi-microsd-card-upload.png').default} width={355} />
+
+Wokwi armazena os arquivos enviados para você, juntamente com seu projeto. Qualquer pessoa que abrir seu projeto e iniciar a simulação terá que esperar o download de todos os arquivos do cartão micro SD antes que a simulação comece.
+
+Exemplo: [Projeto de cartão microSD com um arquivo bitmap personalizado](https://wokwi.com/arduino/projects/319810932695892564)
 
 ## Exemplo de código Arduino
 

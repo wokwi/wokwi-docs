@@ -58,6 +58,6 @@ A escolha do layout incorreto fará com que seu texto / desenho seja girado e / 
 - [Relogio Matrix de LED](https://wokwi.com/arduino/projects/289186888566178317)
 - [Esboço de um jogo Etch](https://wokwi.com/arduino/projects/296234816685212169)
 - [Dados Eletrônicos (no ATtiny85)](https://wokwi.com/arduino/projects/291779699024069128)
-- [Gerador de código QR no Arduino](https://wokwi.com/arduino/projects/297148152803230218)
+- [Gerador de código QR no Arduino](https://wokwi.com/arduino/projects/318641692720759379)
 - [Túnel de matriz de LEDs 32x32](https://wokwi.com/arduino/projects/318864638990090834)
 - [Exemplos da biblioteca MD_Parola](https://wokwi.com/arduino/libraries/MD_Parola)

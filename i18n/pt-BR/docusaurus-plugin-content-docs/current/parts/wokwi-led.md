@@ -20,8 +20,9 @@ LED 5mm padrão.
 | ---------- | ------------------------------- | ---------------------|
 | color      | A cor do invólucro do LED       | "red"                |
 | lightColor | A cor da luz                    | depende da cor       |
-| label      | Texto que aparece abaixo do led |                      |
+| label      | Texto que aparece abaixo do LED |                      |
 | gamma      | Fator de correção gamma         | "2.8"                |
+| flip       | Vira o LED horizontalmente      | ""                   |
 
 ### Exemplos
 
@@ -32,6 +33,7 @@ LED 5mm padrão.
 | <wokwi-led label="Status" />                              | `{ "label": "Status" }`                       |
 | <wokwi-led color="white" />                               | `{ "color": "white"}`                         |
 | <wokwi-led color="white" lightColor="orange" value="1" /> | `{ "color": "white", "lightColor": "orange"}` |
+| <wokwi-led color="red" flip="1"/>                         | `{ "color": "red", "flip": "1"}`              |
 
 ### Correção de Gamma
 
