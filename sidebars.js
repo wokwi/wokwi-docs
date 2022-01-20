@@ -1,6 +1,6 @@
 module.exports = {
   main: {
-    'Getting Started': ['welcome', 'faq'],
+    'Getting Started': ['welcome', 'getting-started/wokwi-club', 'faq'],
     Guides: [
       'guides/diagram-editor',
       'keyboard-shortcuts',
