@@ -52,6 +52,7 @@ Open the [ESP32 custom application project template](https://wokwi.com/arduino/p
 
 - [SSD1306 Example](https://wokwi.com/arduino/projects/305568836183130690)
 - [NeoPixels](https://wokwi.com/arduino/projects/305569065545499202)
+- [AES256 Encryption](https://wokwi.com/arduino/projects/321484545174012499)
 - [WiFi Scanning](https://wokwi.com/arduino/projects/305570169692881473)
 
 ### ESP-IDF Examples
@@ -84,9 +85,9 @@ The following examples use the ESP-IDF functions. They are compiled using Arduin
 | RTC                | 🟡     | Only RTC Pull-up / Pull-down resistors                                   |
 | ADC                | ✔️     | Note: analogRead() returns values up to 4095                             |
 | RNG                | ✔️     | Random Number Generator                                                  |
-| AES Accelerator    | ❌     | Required for HTTPS / SSL                                                 |
-| SHA Accelerator    | ❌     |                                                                          |
-| RSA Accelerator    | ❌     |                                                                          |
+| AES Accelerator    | ✔️     |                                                                          |
+| SHA Accelerator    | ✔️     |                                                                          |
+| RSA Accelerator    | ❌     | Required for HTTPS / SSL                                                 |
 | Hall Effect Sensor | ❌     |                                                                          |
 | GDB Debugging      | 🟡     | Only through [wokwi-gdbserver](https://github.com/wokwi/wokwi-gdbserver) |
 
