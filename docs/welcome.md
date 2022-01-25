@@ -38,7 +38,7 @@ Here are some quick examples of things you can make with Wokwi:
   No need to scavenge parts from old projects. Use as many parts as you need, without worrying about project price and stock.
 </LEDBullet>
 
-<LEDBullet title="Maker-friendly community" color="purple" lightColor="pink">
+<LEDBullet title="Maker-friendly community" color="purple">
   A place for you to share your projects, ask for help, and get inspiration.<br/>
   <a href="https://wokwi.com/discord">Wokwi Discord Community</a>
 </LEDBullet>

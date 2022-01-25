@@ -1,5 +1,6 @@
 import React from 'react';
 import { useEffect, useState } from 'react';
+import { LED } from './LED';
 
 declare global {
   namespace JSX {
@@ -12,11 +13,10 @@ declare global {
 interface ILEDBulletProps {
   title: string;
   color: string;
-  lightColor?: string;
   children: React.ReactNode;
 }
 
-export function LEDBullet({ title, color, lightColor, children }: ILEDBulletProps) {
+export function LEDBullet({ title, color, children }: ILEDBulletProps) {
   const [brightness, setBrightness] = useState(0);
   const [targetBrightness, setTargetBrightness] = useState(0);
 
@@ -45,12 +45,10 @@ export function LEDBullet({ title, color, lightColor, children }: ILEDBulletProp
 
   return (
     <p style={{ display: 'flex' }} onMouseOver={mouseOver} onMouseOut={mouseOut}>
-      <wokwi-led
+      <LED
         color={color}
-        lightColor={lightColor}
-        value={true}
         brightness={brightness}
-        style={{ zoom: 0.8, marginRight: '6px', marginTop: '-6px' }}
+        style={{ marginRight: '6px', marginTop: '-4px', minWidth: '32px', alignSelf: 'baseline' }}
       />
       <span>
         <h3 style={{ display: 'inline' }}>{title}.</h3> <span>{children}</span>
