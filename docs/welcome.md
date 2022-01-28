@@ -9,8 +9,8 @@ Wokwi is an online Electronics simulator. You can use it to simulate Arduino, ES
 
 Here are some quick examples of things you can make with Wokwi:
 
+- [Arduino Uno "Hello World"](https://wokwi.com/arduino/projects/322062421191557714)
 - [Blink an LED on ESP32](https://wokwi.com/arduino/projects/305566932847821378)
-- [Play music with the Arduino Uno](https://wokwi.com/arduino/projects/291958456169005577)
 - [Monitor the weather on ATtiny85](https://wokwi.com/arduino/projects/292900020514980360)
 - [Control 32 Servos with Arduino Mega](https://wokwi.com/arduino/projects/305336312628511297)
 - [Animate an LED Matrix with FastLED](https://wokwi.com/arduino/projects/320579687608746578)
@@ -46,10 +46,10 @@ Here are some quick examples of things you can make with Wokwi:
 ## Unique Features
 
 - [WiFi simulation](guides/esp32#wifi-simulation) - Connect your simulated project to the internet. You can use MQTT, HTTP, NTP, and many other network protocols.
-- [Virtual Logic Analyzer](guides/logic-analyzer) - Analyze the digital signals in your simulation: UART, I2C, SPI and others.
+- [Virtual Logic Analyzer](guides/logic-analyzer) - Capture digital signals in your simulation (e.g. UART, I2C, SPI) and analyze them on your computer.
 - [Advanced debugging with GDB](gdb-debugging) - Powerful Arduino and Raspberry Pi Pico debugger for advanced users.
+- [SD card simulation](parts/wokwi-microsd-card) - Store and retrieve files and directories from your code. [Club](https://wokwi.com/club) members can also upload binary files (such as images)
 
 ## How much does it cost?
 
-Wokwi is free to use. Professional and advanced users can [join the Club](https://wokwi.com/club), influence our [development roadmap](https://wokwi.com/features), and get access to [advanced features](getting-started/wokwi-club).
-
+Wokwi is free to use. Professional and frequent users can [join the Club](https://wokwi.com/club), influence our [development roadmap](https://wokwi.com/features), and get access to [advanced features](getting-started/wokwi-club).
