@@ -21,7 +21,9 @@ Conjunto de 8 interruptores elétricos em um único encapsulamento
 
 ## Operação do teclado
 
-Clique no interruptor DIP para deixá-lo em foco e, em seguida, alterne os interruptores pressionando as teclas "1" a "8".
+Você pode usar o teclado para alternar os interruptores enquanto a simulação está em execução. Clique no interruptor DIP para selecioná-lo e, em seguida, alterne os interruptores pressionando as teclas "1" a "8".
+
+Usuários do Firefox: se os atalhos do teclado não funcionarem para você, certifique-se de que a configuração "Pesquisar texto ao começar a digitar" esteja desativada.
 
 ## Exemplos no simulador
 

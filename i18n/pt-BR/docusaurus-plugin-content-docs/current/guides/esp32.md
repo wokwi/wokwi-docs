@@ -52,6 +52,7 @@ Abra o [modelo de projeto de aplicativo personalizado ESP32](https://wokwi.com/a
 
 - [Exemplo SSD1306](https://wokwi.com/arduino/projects/305568836183130690)
 - [NeoPixels](https://wokwi.com/arduino/projects/305569065545499202)
+- [AES256 Encryption](https://wokwi.com/arduino/projects/321484545174012499)
 - [WiFi Scanning](https://wokwi.com/arduino/projects/305570169692881473)
 
 ### Exemplos ESP-IDF
@@ -84,9 +85,9 @@ Os exemplos a seguir usam as funções ESP-IDF. Eles são compilados usando o Ar
 | RTC                | 🟡     | Apenas resistores RTC pull-up / pull-down                                  |
 | ADC                | ✔️     | Nota: analogRead() retorna valores até 4095                                |
 | RNG                | ✔️     | Gerador de números aleatórios                                              |
-| AES Accelerator    | ❌     | Requerido para HTTPS / SSL                                                 |
-| SHA Accelerator    | ❌     |                                                                            |
-| RSA Accelerator    | ❌     |                                                                            |
+| AES Accelerator    | ✔️     |                                                                            |
+| SHA Accelerator    | ✔️     |                                                                            |
+| RSA Accelerator    | ❌     | Requerido para HTTPS / SSL                                                 |
 | Hall Effect Sensor | ❌     |                                                                            |
 | GDB Debugging      | 🟡     | Apenas atraves [wokwi-gdbserver](https://github.com/wokwi/wokwi-gdbserver) |
 
