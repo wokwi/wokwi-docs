@@ -87,7 +87,7 @@ The following examples use the ESP-IDF functions. They are compiled using Arduin
 | RNG                | ✔️     | Random Number Generator                                                  |
 | AES Accelerator    | ✔️     |                                                                          |
 | SHA Accelerator    | ✔️     |                                                                          |
-| RSA Accelerator    | ❌     | Required for HTTPS / SSL                                                 |
+| RSA Accelerator    | ✔️     |                                                                          |
 | Hall Effect Sensor | ❌     |                                                                          |
 | GDB Debugging      | 🟡     | Only through [wokwi-gdbserver](https://github.com/wokwi/wokwi-gdbserver) |
 
