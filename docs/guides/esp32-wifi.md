@@ -82,7 +82,7 @@ The Private Gateway is a small application that you download and run on your com
 
 - There's no monitoring. Your traffic stays private.
 - Your ESP32 projects can access services running on your computer or your local network (e.g. a local MQTT or HTTP server)
-- You can run a web browser on the ESP32 and connect to it from your browser (explained below)
+- You can run a web server on the ESP32 and connect to it from your browser (explained below)
 
 The Private Gateway is only available for users who join [The Wokwi Club](../getting-started/wokwi-club).
 
