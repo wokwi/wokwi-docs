@@ -11,6 +11,7 @@ module.exports = {
       'guides/micropython',
       'guides/circuitpython',
       'guides/esp32',
+      'guides/esp32-wifi',
       'guides/translating',
       'guides/votepowers',
     ],

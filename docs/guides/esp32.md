@@ -3,7 +3,7 @@ title: ESP32 Simulation
 sidebar_label: ESP32 Simulator
 ---
 
-The ESP32 Simulator is currently in preview. There are two ESP32 boards:
+The ESP32 Simulator is currently in beta. There are two ESP32 boards:
 
 - ESP32 DevKit v1 - Popular ESP32 development board
 - [TinyPico](https://www.tinypico.com/) - an ESP32 board by [UnexpectedMaker](https://unexpectedmaker.com/)
@@ -78,7 +78,7 @@ The following examples use the ESP-IDF functions. They are compiled using Arduin
 | RMT                | 🟡     | Transmit-only, use to control NeoPixels                                  |
 | PWM                | ❌     |                                                                          |
 | DMA                | ❌     |                                                                          |
-| WiFi               | 🟡     | Scanning works; See [notes](#wifi-simulation)                            |
+| WiFi               | ✔️     | See the [ESP32 WiFi Guide](./esp32-wifi)                                 |
 | Bluetooth          | ❌     |                                                                          |
 | Timers             | 🟡     |                                                                          |
 | Watchdog           | ❌     |                                                                          |
@@ -98,14 +98,4 @@ Legend:
 
 ## WiFi Simulation
 
-The WiFi simulation is still very much work-in-progress. You can scan for WiFi networks, and we're now working on the ability to connect to networks (association).
-
-The simulator currently provides two built-in virtual WiFi access points:
-
-| Name (SSID) | BSSID             | Description                                      |
-| ----------- | ----------------- | ------------------------------------------------ |
-| Wokwi-GUEST | 42:13:37:55:aa:01 | Open WiFi network (no password required)         |
-| Wokwi-Club  | 42:13:37:55:aa:02 | [Club](https://wokwi.com/club)-only WiFi network |
-
-The **Wokwi-GUEST** network can be used by anyone, and can access a limited set of internet services.
-The **Wokwi-Club** network is limited for [subscribers](https://wokwi.com/club), and can access all internet servers through a metered proxy.
+See the [ESP32 WiFi Guide](./esp32-wifi).
