@@ -129,7 +129,7 @@ As you can see, the PCAP file contains all sort of packets: 802.11 beacon frames
 In most cases, you'll only want to focus on a specific protocol. You can achieve this by pressing Ctrl+/ in wireshark, and typing a protocol name (http, tcp, ip, dns, dhcp, etc.). The will filter the list and display only the relevant packets.
 
 :::caution
-The Time field in the packet capture uses the simulation clock time. It may be advance slower than wall clock time if the simulation is running slower than full speed (100%).
+The Time field in the packet capture uses the simulation clock time. It may advance slower than wall clock time if the simulation is running slower than full speed (100%).
 :::
 
 ### Limitations
