@@ -13,8 +13,6 @@ Wokwi simulates a WiFi network with full internet access. You can use the [ESP32
 
 The simulator provides a virtual WiFi access point called **Wokwi-GUEST**. It is an open access point - no password is required.
 
-The BSSID of the access point is 42:13:37:55:aa:01.
-
 ### Connecting from Arduino
 
 To connect from Arduino (on an ESP32) device, use the following code:
@@ -104,6 +102,36 @@ Then run any ESP32 project that uses the WiFi. Look at the gateway output, it sh
 
 If your ESP32 project is an HTTP server, you can connect to it from your browser at http://localhost:9080/. The connection will be forwarded by the gateway to the default HTTP port (80) on the simulated ESP32. If you need to forward different ports, please [open an issue on Github](https://github.com/wokwi/wokwigw/issues/new).
 
-## Limitations
+## Advanced Usage
+
+### Network addresses
+
+The ESP32 gets an IP address from a DHCP server running inside the Wokwi IoT gateway. The IP address depends on the type of the gateway that you use:
+
+- Public Gateway: 10.10.0.2
+- Private Gateway: 10.13.37.2
+
+The MAC address of the simulated ESP32 is 24:0a:c4:00:01:10.
+The BSSID of the virtual access point ("Wokwi-GUEST") is 42:13:37:55:aa:01.
+
+### Viewing WiFi traffic with Wireshark
+
+Wokwi simulates a complete network stack: starting at the lowest 802.11 MAC Layer, through the IP and TCP/UDP layers, all the way up to protocols such as DNS, HTTP, MQTT, CoAP, etc. You can view the raw WiFi traffic using a network protocol analyzer such as [Wireshark](https://www.wireshark.org).
+
+First, run an ESP32 project that uses the WiFi in the simulator. Then, go to the code editor, press F1 and choose **Download WiFi Packet Capture (PCAP) file**. Your browser will download a file called _wokwi.pcap_. Use Wireshark to open this file.
+
+The following screen shot shows an example of an HTTP request packet capture:
+
+![ESP32 WiFi Wireshark Packets: DNS, HTTP, and 802.11 MAC](esp32-wifi-wireshark.png)
+
+As you can see, the PCAP file contains all sort of packets: 802.11 beacon frames, DNS query response (the first entry in the list), and HTTP request/response packets (No. 107 and 113).
+
+In most cases, you'll only want to focus on a specific protocol. You can achieve this by pressing Ctrl+/ in wireshark, and typing a protocol name (http, tcp, ip, dns, dhcp, etc.). The will filter the list and display only the relevant packets.
+
+:::caution
+The Time field in the packet capture uses the simulation clock time. It may be advance slower than wall clock time if the simulation is running slower than full speed (100%).
+:::
+
+### Limitations
 
 The Wokwi IoT Gateway supports both TCP and UDP. It does not support the ICMP protocol, so the Ping functionality is not available.
