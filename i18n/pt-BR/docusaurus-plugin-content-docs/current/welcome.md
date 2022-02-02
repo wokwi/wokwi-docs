@@ -45,10 +45,10 @@ Aqui estão alguns exemplos rápidos de coisas que você pode fazer com o Wokwi:
 
 ## Características únicas
 
-- [Simulação de Wi-Fi](guides/esp32#wifi-simulation) - Conecte seu projeto simulado à internet. Você pode usar MQTT, HTTP, NTP e muitos outros protocolos de rede.
+- [Simulação de Wi-Fi](guides/esp32-wifi) - Conecte seu projeto simulado à internet. Você pode usar MQTT, HTTP, NTP e muitos outros protocolos de rede.
 - [Analisador Lógico Virtual](guides/logic-analyzer) - Capture sinais digitais em sua simulação (por exemplo, UART, I2C, SPI) e analise-os em seu computador.
 - [Depuração avançada com GDB](gdb-debugging) - Poderoso depurador Arduino e Raspberry Pi Pico para usuários avançados.
-- [Simulação de cartão SD](parts/wokwi-microsd-card) - Armazene e recupere arquivos e diretórios do seu código. Os membros do [Club](https://wokwi.com/club) também podem fazer upload de arquivos binários (como imagens)
+- [Simulação de cartão SD](parts/wokwi-microsd-card) - Armazene e recupere arquivos e diretórios do seu código. Os membros do [Club](getting-started/wokwi-club) também podem fazer upload de arquivos binários (como imagens)
 
 ## Quanto custa isso?
 

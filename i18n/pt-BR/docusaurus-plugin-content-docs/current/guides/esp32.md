@@ -3,7 +3,7 @@ title: Simulador ESP32
 sidebar_label: Simulador ESP32
 ---
 
-O Simulador ESP32 está atualmente em pré-visualização. Existem duas placas ESP32:
+O Simulador ESP32 está atualmente em versão beta. Existem duas placas ESP32:
 
 - ESP32 DevKit v1 - placa de desenvolvimento ESP32 popular
 - [TinyPico](https://www.tinypico.com/) - uma placa ESP32 por [UnexpectedMaker](https://unexpectedmaker.com/)
@@ -73,13 +73,13 @@ Os exemplos a seguir usam as funções ESP-IDF. Eles são compilados usando o Ar
 | PSRAM              | ✔️     | 4MB de SRAM externa                                                        |
 | UART               | ✔️     | Apenas UART0 por enquanto                                                  |
 | I2C                | ✔️     | Somente Master, endereçamento de 10 bits não suportado.                    |
-| I2S                | ❌     |                                                                            |
+| I2S                | ❌     | [Aberto para votação](https://wokwi.com/features#feature-1031718532)       |
 | SPI                | ❌     |                                                                            |
 | RMT                | 🟡     | Apenas transmissão, use para controlar NeoPixels                           |
-| PWM                | ❌     |                                                                            |
+| PWM                | ❌     | [Aberto para votação](https://wokwi.com/features#feature-1033121859)       |
 | DMA                | ❌     |                                                                            |
-| WiFi               | 🟡     | Escaneamento da rede funciona; [Veja as notas](#simula%C3%A7%C3%A3o-wifi)  |
-| Bluetooth          | ❌     |                                                                            |
+| WiFi               | ✔️     | Veja o [Guia WiFi do ESP32](./esp32-wifi)                                  |
+| Bluetooth          | ❌     | [Aberto para votação](https://wokwi.com/features#feature-1047159691)       |
 | Timers             | 🟡     |                                                                            |
 | Watchdog           | ❌     |                                                                            |
 | RTC                | 🟡     | Apenas resistores RTC pull-up / pull-down                                  |
@@ -87,7 +87,7 @@ Os exemplos a seguir usam as funções ESP-IDF. Eles são compilados usando o Ar
 | RNG                | ✔️     | Gerador de números aleatórios                                              |
 | AES Accelerator    | ✔️     |                                                                            |
 | SHA Accelerator    | ✔️     |                                                                            |
-| RSA Accelerator    | ❌     | Requerido para HTTPS / SSL                                                 |
+| RSA Accelerator    | ✔️     |                                                                            |
 | Hall Effect Sensor | ❌     |                                                                            |
 | GDB Debugging      | 🟡     | Apenas atraves [wokwi-gdbserver](https://github.com/wokwi/wokwi-gdbserver) |
 
@@ -98,14 +98,4 @@ Legenda:
 
 ## Simulação WiFi
 
-A simulação de WiFi ainda está em andamento. Você pode procurar por redes WiFi, e agora estamos trabalhando na capacidade de nos conectar a redes (associação).
-
-O simulador fornece atualmente dois pontos de acesso WiFi virtuais integrados:
-
-| Nome (SSID) | BSSID             | Descrição                                              |
-| ----------- | ----------------- | ------------------------------------------------------ |
-| Wokwi-GUEST | 42:13:37:55:aa:01 | Abra a rede WiFi (sem necessidade de senha)            |
-| Wokwi-Club  | 42:13:37:55:aa:02 | Rede WiFi somente [assinantes](https://wokwi.com/club) |
-
-A rede **Wokwi-GUEST** pode ser usada por qualquer pessoa e pode acessar um conjunto limitado de serviços da Internet.
-A rede **Wokwi-Club** é limitada para [assinantes](https://wokwi.com/club), e pode acessar todos os servidores da Internet através de um proxy.
+Veja o [Guia WiFi do ESP32](./esp32-wifi).
