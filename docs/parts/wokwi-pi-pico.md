@@ -54,7 +54,7 @@ This table summarizes the status of the simulation features:
 | USB               | 🟡     | USB CDC (Serial) supported, see [Serial Monitor](#serial-monitor) below |
 | UART              | ✔️     |                                                                         |
 | I2C               | ✔️     | Master mode only                                                        |
-| SPI               | ❌     |                                                                         |
+| SPI               | ✔️     | Master mode only                                                        |
 | PWM               | ❌     |                                                                         |
 | DMA               | ✔️     | Only for the PIO peripheral                                             |
 | Timer             | ✔️     | Pausing the timer not implemented yet                                   |
