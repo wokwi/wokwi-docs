@@ -73,13 +73,13 @@ The following examples use the ESP-IDF functions. They are compiled using Arduin
 | PSRAM              | ✔️     | 4MB of external SRAM                                                     |
 | UART               | ✔️     | Only UART0 for now                                                       |
 | I2C                | ✔️     | Master only. 10-bit addressing not supported.                            |
-| I2S                | ❌     |                                                                          |
+| I2S                | ❌     | [Open for voting](https://wokwi.com/features#feature-1031718532)         |
 | SPI                | ❌     |                                                                          |
 | RMT                | 🟡     | Transmit-only, use to control NeoPixels                                  |
-| PWM                | ❌     |                                                                          |
+| PWM                | ❌     | [Open for voting](https://wokwi.com/features#feature-1033121859)         |
 | DMA                | ❌     |                                                                          |
 | WiFi               | ✔️     | See the [ESP32 WiFi Guide](./esp32-wifi)                                 |
-| Bluetooth          | ❌     |                                                                          |
+| Bluetooth          | ❌     | [Open for voting](https://wokwi.com/features#feature-1047159691)         |
 | Timers             | 🟡     |                                                                          |
 | Watchdog           | ❌     |                                                                          |
 | RTC                | 🟡     | Only RTC Pull-up / Pull-down resistors                                   |
