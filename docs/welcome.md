@@ -45,7 +45,7 @@ Here are some quick examples of things you can make with Wokwi:
 
 ## Unique Features
 
-- [WiFi simulation](guides/esp32#wifi-simulation) - Connect your simulated project to the internet. You can use MQTT, HTTP, NTP, and many other network protocols.
+- [WiFi simulation](guides/esp32-wifi) - Connect your simulated project to the internet. You can use MQTT, HTTP, NTP, and many other network protocols.
 - [Virtual Logic Analyzer](guides/logic-analyzer) - Capture digital signals in your simulation (e.g. UART, I2C, SPI) and analyze them on your computer.
 - [Advanced debugging with GDB](gdb-debugging) - Powerful Arduino and Raspberry Pi Pico debugger for advanced users.
 - [SD card simulation](parts/wokwi-microsd-card) - Store and retrieve files and directories from your code. [Club](getting-started/wokwi-club) members can also upload binary files (such as images)
