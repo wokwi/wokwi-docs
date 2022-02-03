@@ -100,7 +100,7 @@ After running the gateway, open any project in Wokwi, go to the code editor, pre
 
 Then run any ESP32 project that uses the WiFi. Look at the gateway output, it should say "Client connected". This means you are using the Private Gateway.
 
-If your ESP32 project is an HTTP server, you can connect to it from your browser at http://localhost:9080/. The connection will be forwarded by the gateway to the default HTTP port (80) on the simulated ESP32. If you need to forward different ports, please [open an issue on Github](https://github.com/wokwi/wokwigw/issues/new).
+If your ESP32 project is an HTTP server, you can connect to it from your browser at [http://localhost:9080/](http://localhost:9080). The connection will be forwarded by the gateway to the default HTTP port (80) on the simulated ESP32. If you need to forward different ports, please [open an issue on Github](https://github.com/wokwi/wokwigw/issues/new).
 
 ## Advanced Usage
 
