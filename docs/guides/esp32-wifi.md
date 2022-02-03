@@ -41,6 +41,7 @@ To connect from a [MicroPython project](https://wokwi.com/arduino/new?template=m
 
 ```python
 import network
+import time
 
 print("Connecting to WiFi", end="")
 sta_if = network.WLAN(network.STA_IF)
