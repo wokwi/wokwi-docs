@@ -136,3 +136,9 @@ The Time field in the packet capture uses the simulation clock time. It may adva
 ### Limitations
 
 The Wokwi IoT Gateway supports both TCP and UDP. It does not support the ICMP protocol, so the Ping functionality is not available.
+
+## Project Examples
+
+- [NTP Client](https://wokwi.com/arduino/projects/321525495180034642) - Gets the current date and time from an NTP server and displays them on an LCD screen.
+- [MicroPython MQTT Weather Logger](https://wokwi.com/arduino/projects/322577683855704658) - Reads the current temperature + humidity every second and report changes to an MQTT server.
+- [ESP32 HTTP Server](https://wokwi.com/arduino/projects/320964045035274834) - Serves a web page that controls 2 LEDs. Requires the [Wokwi IoT Gateway](#the-private-gateway).
