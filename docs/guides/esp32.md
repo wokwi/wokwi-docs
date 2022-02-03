@@ -60,7 +60,7 @@ Open the [ESP32 custom application project template](https://wokwi.com/arduino/p
 The following examples use the ESP-IDF functions. They are compiled using Arduino ESP32 Core:
 
 - [Blink using FreeRTOS API](https://wokwi.com/arduino/projects/304209256260829762)
-- [Binary LED counter using FreeRTOS tasks](https://wokwi.com/arduino/projects/304210422302507585)
+- [Binary LED counter using FreeRTOS tasks](https://wokwi.com/arduino/projects/322609470223942226)
 - [GPIO button input + interrupts](https://wokwi.com/arduino/projects/304633599712297536)
 
 ## Simulation Features
