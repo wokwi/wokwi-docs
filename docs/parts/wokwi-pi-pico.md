@@ -70,8 +70,6 @@ Legend:
 🟡 Partial implementation/work in progress  
 ❌ Not implemented
 
-We're adding the missing features in [weekly live streams](https://www.youtube.com/playlist?list=PLLomdjsHtJTxT-vdJHwa3z62dFXZnzYBm). Expect the list above to update every week or two.
-
 ### Arduino core
 
 The Arduino core provides the built-in Arduino functions, such as `pinMode()` and `digitalRead()`, as well as a set of standard Arduino libraries, such as Servo, Wire and SPI.
