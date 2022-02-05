@@ -60,7 +60,7 @@ Abra o [modelo de projeto de aplicativo personalizado ESP32](https://wokwi.com/a
 Os exemplos a seguir usam as funções ESP-IDF. Eles são compilados usando o Arduino ESP32 Core:
 
 - [Blink usando a API FreeRTOS](https://wokwi.com/arduino/projects/304209256260829762)
-- [Contador de LED binário usando tarefas FreeRTOS](https://wokwi.com/arduino/projects/304210422302507585)
+- [Contador de LED binário usando tarefas FreeRTOS](https://wokwi.com/arduino/projects/322609470223942226)
 - [Entrada do botão GPIO + Interrupções](https://wokwi.com/arduino/projects/304633599712297536)
 
 ## Recursos do simulador

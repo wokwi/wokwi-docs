@@ -41,6 +41,7 @@ Para conectar de um [projeto MicroPython](https://wokwi.com/arduino/new?template
 
 ```python
 import network
+import time
 
 print("Conectando-se ao Wi-Fi", end="")
 sta_if = network.WLAN(network.STA_IF)
@@ -63,10 +64,10 @@ Wokwi usa um gateway especial para conectar seu ESP32 simulado à internet. Este
 | Velocidade           | Mais devagar          | Mais rápido                                                 |
 | Estabilidade         | Média                 | Alta                                                        |
 | Localização          | Remoto, na nuvem      | Funciona no seu computador                                  |
-| Privacidade          | Connections monitored | Sem monitoramento                                           |
+| Privacidade          | Conexões monitoradas  | Sem monitoramento                                           |
 | Conexões de saída    | ✅                    | ✅                                                          |
 | Conexões de entrada  | ❌                    | ✅                                                          |
-| Disponibilidade      | All users             | Apenas para membros do [Club](../getting-started/wokwi-club) |
+| Disponibilidade      | Todos os usuários     | Apenas para membros do [Club](../getting-started/wokwi-club) |
 
 ### O Gateway Publico
 
@@ -82,7 +83,7 @@ O Gateway Privado é um pequeno aplicativo que você baixa e executa em seu comp
 - Seus projetos ESP32 podem acessar serviços executados em seu computador ou em sua rede local (por exemplo, um servidor MQTT ou HTTP local)
 - Você pode executar um servidor web no ESP32 e conectar-se a ele a partir do seu navegador (explicado abaixo)
 
-O Gateway Privado está disponível apenas para usuários que ingressam [no Clube Wokwi](../getting-started/wokwi-club).
+O Gateway Privado está disponível apenas para usuários que ingressam [no Wokwi Club](../getting-started/wokwi-club).
 
 #### Instalação
 
@@ -100,7 +101,7 @@ Após executar o gateway, abra qualquer projeto no Wokwi, vá até o editor de c
 
 Em seguida, execute qualquer projeto ESP32 que use o WiFi. Olhe para a saída do gateway, deve dizer "Client connected". Isso significa que você está usando o Gateway Privado.
 
-Se o seu projeto ESP32 for um servidor HTTP, você pode se conectar a ele a partir do seu navegador em http://localhost:9080/. A conexão será encaminhada pelo gateway para a porta HTTP padrão (80) no ESP32 simulado. Se você precisar encaminhar portas diferentes, por favor [abra uma issue no Github](https://github.com/wokwi/wokwigw/issues/new).
+Se o seu projeto ESP32 for um servidor HTTP, você pode se conectar a ele a partir do seu navegador em [http://localhost:9080/](http://localhost:9080). A conexão será encaminhada pelo gateway para a porta HTTP padrão (80) no ESP32 simulado. Se você precisar encaminhar portas diferentes, por favor [abra uma issue no Github](https://github.com/wokwi/wokwigw/issues/new).
 
 ## Uso Avançado
 
@@ -135,3 +136,9 @@ O campo Time na captura de pacotes usa o tempo do relógio de simulação. Pode 
 ### Limitações
 
 O Wokwi IoT Gateway suporta TCP e UDP. Ele não suporta o protocolo ICMP, portanto, a funcionalidade Ping não está disponível.
+
+## Exemplos no simulador
+
+- [Cliente NTP](https://wokwi.com/arduino/projects/321525495180034642) - Obtém a data e hora atuais de um servidor NTP e as exibe em uma tela LCD.
+- [Logger Climático MicroPython MQTT](https://wokwi.com/arduino/projects/322577683855704658) - Lê a temperatura atual + umidade a cada segundo e relata as alterações para um servidor MQTT.
+- [Servidor HTTP ESP32](https://wokwi.com/arduino/projects/320964045035274834) - Servidor de uma página web que controla 2 LEDs. Requer o [Wokwi IoT Gateway](#the-private-gateway).
