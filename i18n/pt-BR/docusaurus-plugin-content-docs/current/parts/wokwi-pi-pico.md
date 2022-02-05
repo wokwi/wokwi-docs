@@ -54,7 +54,7 @@ Esta tabela resume o status dos recursos da simulação:
 | USB                      | ❌     |                                                      |
 | UART                     | ✔️     |                                                      |
 | I2C                      | ✔️     | Modo mestre apenas                                   |
-| SPI                      | ❌     |                                                      |
+| SPI                      | ✔️     | Master mode only                                     |
 | PWM                      | ❌     |                                                      |
 | DMA                      | ✔️     |                                                      |
 | Timer                    | ✔️     | A pausa do cronômetro ainda não foi implementada     |
@@ -69,8 +69,6 @@ Legenda:
 ✔️ Simulado
 🟡 Implementação parcial/trabalho em andamento
 ❌ Não implementado
-
-Estamos adicionando os recursos que faltam em [transmissões ao vivo semanais](https://www.youtube.com/playlist?list=PLLomdjsHtJTxT-vdJHwa3z62dFXZnzYBm). Espere que a lista acima seja atualizada a cada uma ou duas semanas.
 
 ### Arduino core
 
