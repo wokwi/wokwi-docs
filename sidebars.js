@@ -34,6 +34,7 @@ module.exports = {
       'parts/wokwi-ili9341',
       'parts/wokwi-ir-receiver',
       'parts/wokwi-ir-remote',
+      'parts/wokwi-ks2e-m-dc5',
       'parts/wokwi-ky-040',
       'parts/wokwi-lcd1602',
       'parts/wokwi-lcd2004',
