@@ -3,7 +3,7 @@ title: MicroPython on Wokwi
 sidebar_label: MicroPython
 ---
 
-You can create and run MicroPython projects on Wokwi. Start from the [Raspberry Pi Pico MicroPython project template](https://wokwi.com/arduino/new?template=micropython-pi-pico).
+You can create and run MicroPython projects on Wokwi. Start from the [Raspberry Pi Pico MicroPython project template](https://wokwi.com/projects/new/micropython-pi-pico).
 
 ## Project structure
 

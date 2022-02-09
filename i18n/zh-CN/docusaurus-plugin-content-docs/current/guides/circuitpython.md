@@ -3,7 +3,7 @@ title: CircuitPython on Wokwi
 sidebar_label: CircuitPython
 ---
 
-You can simulate CircuitPython on Wokwi using the [Raspberry Pi Pico board](../parts/wokwi-pi-pico). To start a new simulation project, open the [Raspberry Pi Pico CircuitPython project template](https://wokwi.com/arduino/new?template=circuitpython-pi-pico).
+You can simulate CircuitPython on Wokwi using the [Raspberry Pi Pico board](../parts/wokwi-pi-pico). To start a new simulation project, open the [Raspberry Pi Pico CircuitPython project template](https://wokwi.com/projects/new/circuitpython-pi-pico).
 
 ## Project structure
 
