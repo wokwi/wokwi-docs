@@ -11,8 +11,8 @@ A piezoelectric buzzer
 
 | Name | Description |
 | ---- | ----------- |
-| 1    | First pin   |
-| 2    | Second pin  |
+| 1    | Negative(Black) pin   |
+| 2    | Positive(Red) pin  |
 
 ## Attributes
 
