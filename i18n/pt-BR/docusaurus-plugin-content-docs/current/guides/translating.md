@@ -17,6 +17,8 @@ Nem todos os textos estão atualmente disponíveis para tradução, mas estamos 
 
 ### Traduções existentes
 
-- [Chinês](https://wokwi.com/arduino/new?lang=zh)
-- [Português](https://wokwi.com/arduino/new?lang=pt-BR)
-- [Ucraniano](https://wokwi.com/arduino/new?lang=ua)
+- [Chinês](https://wokwi.com/projects/new?lang=zh)
+- [Alemão](https://wokwi.com/projects/new?lang=de)
+- [Húngaro](https://wokwi.com/projects/new?lang=hu)
+- [Português](https://wokwi.com/projects/new?lang=pt-BR)
+- [Ucraniano](https://wokwi.com/projects/new?lang=ua)
