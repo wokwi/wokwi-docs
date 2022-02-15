@@ -3,7 +3,7 @@ title: CircuitPython no Wokwi
 sidebar_label: CircuitPython
 ---
 
-Você pode simular o CircuitPython no Wokwi usando a placa [Raspberry Pi Pico](../parts/wokwi-pi-pico). Para iniciar um novo projeto de simulação, abra o [modelo de projeto Raspberry Pi Pico com CircuitPython](https://wokwi.com/arduino/new?template=circuitpython-pi-pico).
+Você pode simular o CircuitPython no Wokwi usando a placa [Raspberry Pi Pico](../parts/wokwi-pi-pico). Para iniciar um novo projeto de simulação, abra o [modelo de projeto Raspberry Pi Pico com CircuitPython](https://wokwi.com/projects/new/circuitpython-pi-pico).
 
 ## Estrutura do projeto
 

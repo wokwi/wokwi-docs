@@ -37,7 +37,7 @@ void loop() {
 
 ### Conectando do MicroPython
 
-Para conectar de um [projeto MicroPython](https://wokwi.com/arduino/new?template=micropython-esp32), use o seguinte código:
+Para conectar de um [projeto MicroPython](https://wokwi.com/projects/new/micropython-esp32), use o seguinte código:
 
 ```python
 import network

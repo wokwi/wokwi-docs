@@ -9,10 +9,10 @@ Um buzzer piezoelétrico
 
 ## Nome dos Pinos
 
-| Nome | Descrição     |
-| ---- | ------------- |
-| 1    | Primeiro pino |
-| 2    | Segundo pino  |
+| Nome | Descrição                |
+| ---- | ------------------------ |
+| 1    | Pino negativo (preto)    |
+| 2    | Pino positivo (vermelho) |
 
 ## Atributos
 

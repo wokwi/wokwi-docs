@@ -22,14 +22,14 @@ Você pode usar o simulador ESP32 de três maneiras:
 
 ### Arduino Core
 
-Comece a partir do [modelo de projeto Arduino-ESP32](https://wokwi.com/arduino/new?template=esp32), ou do
+Comece a partir do [modelo de projeto Arduino-ESP32](https://wokwi.com/projects/new/esp32), ou do
 [Exemplo de Blink ESP32](https://wokwi.com/arduino/projects/305452382231200320).
 
 Se você quiser usar bibliotecas Arduino de terceiros, adicione um [arquivo libraries.txt](./libraries) com a lista de bibliotecas que você usa.
 
 ### MicroPython
 
-Comece com o [modelo de projeto MicroPython ESP32](https://wokwi.com/arduino/new?template=micropython-esp32), ou com o
+Comece com o [modelo de projeto MicroPython ESP32](https://wokwi.com/projects/new/micropython-esp32), ou com o
 [Exemplo de Blink MicroPython ESP32](https://wokwi.com/arduino/projects/305452627045384768).
 
 Nota: Enquanto a simulação está em execução, pressione Ctrl+C dentro do Terminal Serial para entrar no _MicroPython REPL_. Alternativamente, você pode editar o código de Exemplo Blink e remover o loop while. Para obter mais informações, consulte o [Guia MicroPython](./micropython).
