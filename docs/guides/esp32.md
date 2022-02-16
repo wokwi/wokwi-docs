@@ -76,7 +76,8 @@ The following examples use the ESP-IDF functions. They are compiled using Arduin
 | I2S                | ❌     | [Open for voting](https://wokwi.com/features#feature-1031718532)         |
 | SPI                | ❌     |                                                                          |
 | RMT                | 🟡     | Transmit-only, use to control NeoPixels                                  |
-| PWM                | ❌     | [Open for voting](https://wokwi.com/features#feature-1033121859)         |
+| LEDC PWM           | ✔️     | Used by analogWrite(), Servo, Buzzer, etc.                               |
+| MCPWM              | ❌     |                                                                          |
 | DMA                | ❌     |                                                                          |
 | WiFi               | ✔️     | See the [ESP32 WiFi Guide](./esp32-wifi)                                 |
 | Bluetooth          | ❌     | [Open for voting](https://wokwi.com/features#feature-1047159691)         |
