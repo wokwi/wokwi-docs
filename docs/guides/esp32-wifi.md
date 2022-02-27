@@ -22,7 +22,7 @@ To connect from Arduino (on an ESP32) device, use the following code:
 
 void setup() {
   Serial.print("Connecting to WiFi");
-  WiFi.begin("Wokwi-GUEST", "");
+  WiFi.begin("Wokwi-GUEST", "", 6);
   while (WiFi.status() != WL_CONNECTED) {
     delay(100);
     Serial.print(".");
@@ -34,6 +34,8 @@ void loop() {
   delay(100); // TODO: Build something amazing!
 }
 ```
+
+Note: We specify the WiFi channel number (6) when calling `WiFi.begin()`. The skips the WiFi scanning phase and saves about 4 seconds when connecting to the WiFi.
 
 ### Connecting from MicroPython
 
@@ -113,7 +115,7 @@ The ESP32 gets an IP address from a DHCP server running inside the Wokwi IoT gat
 - Private Gateway: 10.13.37.2
 
 The MAC address of the simulated ESP32 is 24:0a:c4:00:01:10.
-The BSSID of the virtual access point ("Wokwi-GUEST") is 42:13:37:55:aa:01.
+The BSSID of the virtual access point ("Wokwi-GUEST") is 42:13:37:55:aa:01, and it is listening on WiFi channel 6.
 
 ### Viewing WiFi traffic with Wireshark
 
