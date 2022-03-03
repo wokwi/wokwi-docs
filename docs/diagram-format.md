@@ -31,7 +31,7 @@ In addition, you can add a `"serialMonitor"` section to [configure the Serial Mo
 ## Parts
 
 The `"parts"` section defines the list of components in the simulation.
-It's an array of objects with the following keys:
+It's an array of objects with the following properties:
 
 | Name   | Type    | Description                                     |
 | ------ | ------- | ----------------------------------------------- |
