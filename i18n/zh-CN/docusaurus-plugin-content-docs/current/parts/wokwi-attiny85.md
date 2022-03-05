@@ -106,7 +106,7 @@ You can safely run code that uses TinyDebug on a physical ATtiny85 chip. The phy
 have the debug interface, so you obviously won't see the debugging messages, but other than that it
 shouldn't interfere with your code.
 
-For a complete code example, check out the [TinyDebug demo project on Wokwi](https://wokwi.com/arduino/projects/300650387867697672).
+For a complete code example, check out the [TinyDebug demo project on Wokwi](https://wokwi.com/projects/300650387867697672).
 
 ### Serial Output
 
@@ -144,8 +144,8 @@ or [reach out on Discord](https://wokwi.com/discord).
 
 ## Simulator examples
 
-- [ATtiny85 Blink](https://wokwi.com/arduino/projects/283019827166052872)
-- [ATtiny85 Simon Game](https://wokwi.com/arduino/projects/285525640477671948)
-- [ATtiny85 FastLED Matrix](https://wokwi.com/arduino/projects/283910810787381773)
-- [ATtiny85 Charlieplexing](https://wokwi.com/arduino/projects/283912288194265608)
-- [ATtiny85 SSD1306 + DHT](https://wokwi.com/arduino/projects/292900020514980360)
+- [ATtiny85 Blink](https://wokwi.com/projects/283019827166052872)
+- [ATtiny85 Simon Game](https://wokwi.com/projects/285525640477671948)
+- [ATtiny85 FastLED Matrix](https://wokwi.com/projects/283910810787381773)
+- [ATtiny85 Charlieplexing](https://wokwi.com/projects/283912288194265608)
+- [ATtiny85 SSD1306 + DHT](https://wokwi.com/projects/292900020514980360)

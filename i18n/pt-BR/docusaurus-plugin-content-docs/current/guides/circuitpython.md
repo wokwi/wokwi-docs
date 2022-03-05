@@ -30,7 +30,7 @@ adafruit_display_text
 adafruit_dht
 ```
 
-Ao iniciar a simulação, o Wokwi baixa todas as bibliotecas e suas dependências. Ele os copia para a pasta "lib" no sistema de arquivos flash. Você pode chamar `os.listdir ('/ lib')` para obter uma lista de todas as bibliotecas instaladas. Para um exemplo de código completo, consulte a [Lista da Biblioteca CircuitPython](https://wokwi.com/arduino/projects/309475039016649280).
+Ao iniciar a simulação, o Wokwi baixa todas as bibliotecas e suas dependências. Ele os copia para a pasta "lib" no sistema de arquivos flash. Você pode chamar `os.listdir ('/ lib')` para obter uma lista de todas as bibliotecas instaladas. Para um exemplo de código completo, consulte a [Lista da Biblioteca CircuitPython](https://wokwi.com/projects/309475039016649280).
 
 # CircuitPython REPL
 
@@ -38,5 +38,5 @@ Quando o código em `code.py` termina (ou você o interrompe com Ctrl+C), você 
 
 ## Exemplos no simulador
 
-- [Blink com CircuitPython](https://wokwi.com/arduino/projects/309474946192507458)
-- [CircuitPython SSD1306 Exemplo](https://wokwi.com/arduino/projects/309427357921313345)
+- [Blink com CircuitPython](https://wokwi.com/projects/309474946192507458)
+- [CircuitPython SSD1306 Exemplo](https://wokwi.com/projects/309427357921313345)

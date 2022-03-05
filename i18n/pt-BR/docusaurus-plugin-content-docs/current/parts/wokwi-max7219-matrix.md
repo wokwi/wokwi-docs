@@ -35,7 +35,7 @@ Cada unidade matricial é uma matriz de LEDs 8x8. Todos os LEDs da matriz têm a
 
 Se você deseja encadear unidades de uma forma personalizada (por exemplo, selecionar uma cor de pixel diferente para cada unidade, encadear-los verticalmente, etc), conecte o pino DOUT de uma unidade ao pino DIN da próxima unidade. Você também precisa conectar os pinos CLK / CS das unidades.
 
-Veja o [Túnel de matriz de LEDs 32x32](https://wokwi.com/arduino/projects/318864638990090834) para obter um exemplo.
+Veja o [Túnel de matriz de LEDs 32x32](https://wokwi.com/projects/318864638990090834) para obter um exemplo.
 
 ### Layout da matriz
 
@@ -55,9 +55,9 @@ A escolha do layout incorreto fará com que seu texto / desenho seja girado e / 
 
 ## Exemplos no simulador
 
-- [Relogio Matrix de LED](https://wokwi.com/arduino/projects/289186888566178317)
-- [Esboço de um jogo Etch](https://wokwi.com/arduino/projects/296234816685212169)
-- [Dados Eletrônicos (no ATtiny85)](https://wokwi.com/arduino/projects/291779699024069128)
-- [Gerador de código QR no Arduino](https://wokwi.com/arduino/projects/318641692720759379)
-- [Túnel de matriz de LEDs 32x32](https://wokwi.com/arduino/projects/318864638990090834)
+- [Relogio Matrix de LED](https://wokwi.com/projects/289186888566178317)
+- [Esboço de um jogo Etch](https://wokwi.com/projects/296234816685212169)
+- [Dados Eletrônicos (no ATtiny85)](https://wokwi.com/projects/291779699024069128)
+- [Gerador de código QR no Arduino](https://wokwi.com/projects/318641692720759379)
+- [Túnel de matriz de LEDs 32x32](https://wokwi.com/projects/318864638990090834)
 - [Exemplos da biblioteca MD_Parola](https://wokwi.com/arduino/libraries/MD_Parola)

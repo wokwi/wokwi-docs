@@ -34,5 +34,5 @@ O diagrama a seguir resume os estados do relé:
 
 ## Exemplos no simulador
 
-- [Um Relé controlando dois LEDs](https://wokwi.com/arduino/projects/322846360729551444)
-- [Flip-flop com Relé](https://wokwi.com/arduino/projects/322802227591774802) - Elemento de memória de bit único usando três relés
+- [Um Relé controlando dois LEDs](https://wokwi.com/projects/322846360729551444)
+- [Flip-flop com Relé](https://wokwi.com/projects/322802227591774802) - Elemento de memória de bit único usando três relés

@@ -90,7 +90,7 @@ void loop() {
 }
 ```
 
-Você também pode [executar este exemplo no Wokwi](https://wokwi.com/arduino/projects/304184298969236032).
+Você também pode [executar este exemplo no Wokwi](https://wokwi.com/projects/304184298969236032).
 
 Nota: seu código precisará ler o estado dos pinos com frequência para detectar as rotações corretamente.
 Se a sua rotina em `loop()` demorar muito tempo para ler o encoder (por exemplo: com o uso da função `delay()` em seu código), recomendamos usar [attachInterrupt()](https://www.arduino.cc/reference/pt/language/functions/external-interrupts/attachinterrupt/) para receber as alterações no pino CLK. Supondo que CLK esteja conectado ao pino 2 e DT ao pino 3 (como antes):
@@ -161,5 +161,5 @@ Para controlar o encoder com o teclado, clique nele primeiro, e em seguida, use 
 
 ## Exemplos no simulador
 
-- [Exemplo de uso básico](https://wokwi.com/arduino/projects/304184298969236032)
-- [Contador do encoder rotativo](https://wokwi.com/arduino/projects/304184909747978816)
+- [Exemplo de uso básico](https://wokwi.com/projects/304184298969236032)
+- [Contador do encoder rotativo](https://wokwi.com/projects/304184909747978816)

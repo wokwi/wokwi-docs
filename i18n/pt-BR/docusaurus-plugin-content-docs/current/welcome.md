@@ -9,12 +9,12 @@ Wokwi é um simulador de eletrônica online. Você pode usá-lo para simular Ard
 
 Aqui estão alguns exemplos rápidos de coisas que você pode fazer com o Wokwi:
 
-- ["Olá Mundo" no Arduino Uno](https://wokwi.com/arduino/projects/322062421191557714)
-- [Piscar um LED no ESP32](https://wokwi.com/arduino/projects/305566932847821378)
-- [Monitorar o clima no ATtiny85](https://wokwi.com/arduino/projects/292900020514980360)
-- [Controlar 32 Servos com Arduino Mega](https://wokwi.com/arduino/projects/305336312628511297)
-- [Animar uma matriz de LED com FastLED](https://wokwi.com/arduino/projects/320579687608746578)
-- [Contador de 7 segmentos com MicroPython no ESP32](https://wokwi.com/arduino/projects/300210834979684872)
+- ["Olá Mundo" no Arduino Uno](https://wokwi.com/projects/322062421191557714)
+- [Piscar um LED no ESP32](https://wokwi.com/projects/305566932847821378)
+- [Monitorar o clima no ATtiny85](https://wokwi.com/projects/292900020514980360)
+- [Controlar 32 Servos com Arduino Mega](https://wokwi.com/projects/305336312628511297)
+- [Animar uma matriz de LED com FastLED](https://wokwi.com/projects/320579687608746578)
+- [Contador de 7 segmentos com MicroPython no ESP32](https://wokwi.com/projects/300210834979684872)
 
 ## Por que Wokwi?
 

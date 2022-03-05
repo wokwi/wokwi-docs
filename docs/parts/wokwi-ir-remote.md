@@ -41,4 +41,4 @@ for each of the keys:
 
 ## Simulator examples
 
-- [IRRemote + LCD Display](https://wokwi.com/arduino/projects/298934082074575369)
+- [IRRemote + LCD Display](https://wokwi.com/projects/298934082074575369)

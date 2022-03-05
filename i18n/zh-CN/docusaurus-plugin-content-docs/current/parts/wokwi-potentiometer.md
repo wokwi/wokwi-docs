@@ -48,7 +48,7 @@ void loop() {
 }
 ```
 
-You can [run the example on Wokwi](https://wokwi.com/arduino/projects/298685457758159369). Observe how the plotter graph changes as you move the potentiometer's knob.
+You can [run the example on Wokwi](https://wokwi.com/projects/298685457758159369). Observe how the plotter graph changes as you move the potentiometer's knob.
 
 ## Keyboard control
 
@@ -63,5 +63,5 @@ You'll need to click on the potentiometer before using these keyboard shortcuts.
 ## Simulator examples
 
 - [Knob](https://wokwi.com/arduino/libraries/Servo/Knob) - Control a [servo](wokwi-servo) with a potentiometer
-- [Plot](https://wokwi.com/arduino/projects/298685457758159369) - Plot potentiometer values in the Serial Plotter
-- [Block shooter](https://wokwi.com/arduino/projects/291960996581343753) - Breakout style game
+- [Plot](https://wokwi.com/projects/298685457758159369) - Plot potentiometer values in the Serial Plotter
+- [Block shooter](https://wokwi.com/projects/291960996581343753) - Breakout style game

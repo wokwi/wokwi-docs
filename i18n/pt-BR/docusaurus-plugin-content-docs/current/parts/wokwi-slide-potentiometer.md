@@ -26,4 +26,4 @@ A funcionalidade e pinagem do potenciômetro deslizante são as mesmas do potenc
 
 ## Exemplos no simulador
 
-- [Potenciômetro deslizante + Servo](https://wokwi.com/arduino/projects/297604176384360973) - Controle um [servo](wokwi-servo) com um potenciômetro deslizante
+- [Potenciômetro deslizante + Servo](https://wokwi.com/projects/297604176384360973) - Controle um [servo](wokwi-servo) com um potenciômetro deslizante

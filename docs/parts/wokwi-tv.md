@@ -93,7 +93,7 @@ void loop() {
 
 ## Simulator examples
 
-- [TVout demo reel](https://wokwi.com/arduino/projects/301776607665717769)
-- [Flappy Cat game](https://wokwi.com/arduino/projects/286182458416693768) - Use the blue button to jump
-- [Arduino Pong for Wokwi TV](https://wokwi.com/arduino/projects/290059909639176713)
-- [Conway's Game of Life](https://wokwi.com/arduino/projects/299605461742649864)
+- [TVout demo reel](https://wokwi.com/projects/301776607665717769)
+- [Flappy Cat game](https://wokwi.com/projects/286182458416693768) - Use the blue button to jump
+- [Arduino Pong for Wokwi TV](https://wokwi.com/projects/290059909639176713)
+- [Conway's Game of Life](https://wokwi.com/projects/299605461742649864)

@@ -46,6 +46,6 @@ Wokwi simulates switch bouncing by default. You can disable the bouncing simulat
 
 ## Simulator examples
 
-- [Slide Switch and LED](https://wokwi.com/arduino/projects/288276100805558797) - Using a slide switch to toggle an LED
-- [Slide Switch and 2 LEDs](https://wokwi.com/arduino/projects/288278249939665421) - A slide switch toggles between 2 LEDs
-- [Digital Pin Output Switching](https://wokwi.com/arduino/projects/292033853022798344) - A slide switch redirects the output of a digital pin to one of two LEDs
+- [Slide Switch and LED](https://wokwi.com/projects/288276100805558797) - Using a slide switch to toggle an LED
+- [Slide Switch and 2 LEDs](https://wokwi.com/projects/288278249939665421) - A slide switch toggles between 2 LEDs
+- [Digital Pin Output Switching](https://wokwi.com/projects/292033853022798344) - A slide switch redirects the output of a digital pin to one of two LEDs

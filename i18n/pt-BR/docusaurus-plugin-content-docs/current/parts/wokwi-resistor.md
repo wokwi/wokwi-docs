@@ -34,8 +34,8 @@ pull-up/pull-down externos.
 | <wokwi-resistor value="220" />      | `{ "value": "220" }`      |
 | <wokwi-resistor value="10000000" /> | `{ "value": "10000000" }` |
 
-Confira a [demonstração do resistor por Koepel](https://wokwi.com/arduino/projects/300936732038136328) para mais exemplos.
+Confira a [demonstração do resistor por Koepel](https://wokwi.com/projects/300936732038136328) para mais exemplos.
 
 ## Exemplos no simulador
 
-- [Resistor externo pull-down](https://wokwi.com/arduino/projects/302214836102627848) - Como usar um resistor como pull-down para um botão
+- [Resistor externo pull-down](https://wokwi.com/projects/302214836102627848) - Como usar um resistor como pull-down para um botão

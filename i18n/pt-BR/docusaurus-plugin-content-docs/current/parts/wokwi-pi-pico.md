@@ -39,7 +39,7 @@ pinMode(LED_BUILTIN, OUTPUT);
 digitalWrite(LED_BUILTIN, HIGH);
 ```
 
-Veja o [Blink](https://wokwi.com/arduino/projects/297755575592157709) para um exemplo de código completo.
+Veja o [Blink](https://wokwi.com/projects/297755575592157709) para um exemplo de código completo.
 
 ## Recursos do simulador
 
@@ -135,7 +135,7 @@ void loop() { }
 
 Observe o uso de `Serial1`. O `Serial` padrão no Arduino Core usa Serial over USB (CDC), que atualmente não é suportado na simulação. `Serial1`, em contraste, usa o hardware UART (conectado aos pinos GP0/GP1).
 
-Para um exemplo completo, confira o [Exemplo de monitor serial Pi Pico](https://wokwi.com/arduino/projects/297755360074138125).
+Para um exemplo completo, confira o [Exemplo de monitor serial Pi Pico](https://wokwi.com/projects/297755360074138125).
 
 ## Exportando binário UF2
 
@@ -153,7 +153,7 @@ O Raspberry Pi Pico oferece suporte a MicroPython e você pode usá-lo para exec
 
 ## Exemplos no simulador
 
-- [LCD1602 com Pi Pico](https://wokwi.com/arduino/projects/297323005822894602)
-- [Semáforo com Pi Pico](https://wokwi.com/arduino/projects/297322571959894536)
-- [Pi Pico C++ SDK Blink](https://wokwi.com/arduino/projects/298013072042230285)
-- [Pi Pico C++ SDK 7-Segment Example](https://wokwi.com/arduino/projects/298014884249993738)
+- [LCD1602 com Pi Pico](https://wokwi.com/projects/297323005822894602)
+- [Semáforo com Pi Pico](https://wokwi.com/projects/297322571959894536)
+- [Pi Pico C++ SDK Blink](https://wokwi.com/projects/298013072042230285)
+- [Pi Pico C++ SDK 7-Segment Example](https://wokwi.com/projects/298014884249993738)

@@ -77,7 +77,7 @@ A taxa de transmissão deve ser definida como **9600**. Isso é codificado no si
 vai exibir caracteres estranhos no monitor Serial.
 :::
 
-Para um exemplo completo, verifique o [Projeto de exemplo SoftwareSerial com ATtiny85](https://wokwi.com/arduino/projects/290883003139228169).
+Para um exemplo completo, verifique o [Projeto de exemplo SoftwareSerial com ATtiny85](https://wokwi.com/projects/290883003139228169).
 
 Nota: se você quiser apenas usar o monitor serial para imprimir mensagens de depuração, dê uma olhada na [biblioteca TinyDebug](../parts/wokwi-attiny85#depuração-com-tinydebug).
 
@@ -94,7 +94,7 @@ A configuração padrão é a seguinte:
 }
 ```
 
-Ao adicionar uma seção `"serialMonitor"`, adicione-a após o último item em diagram.json ou certifique-se de adicionar uma vírgula após a chave de fechamento. Você pode encontrar um exemplo completo [aqui](https://wokwi.com/arduino/projects/308893120796295745).
+Ao adicionar uma seção `"serialMonitor"`, adicione-a após o último item em diagram.json ou certifique-se de adicionar uma vírgula após a chave de fechamento. Você pode encontrar um exemplo completo [aqui](https://wokwi.com/projects/308893120796295745).
 
 ### Display
 
@@ -108,7 +108,7 @@ A propriedade `display` configura quando exibir o monitor serial. Os valores pos
 | plotter  | Exibe o plotter serial quando a simulação é iniciada              |
 | terminal | Exibe um terminal (usando [XTerm.js](https://xtermjs.org/))       |
 
-Nota: o modo "terminal" suporta cores de texto e de fundo. Você pode verificar [o exemplo de cores ANSI do Arduino](https://wokwi.com/arduino/projects/308893120796295745) para vê-lo em ação.
+Nota: o modo "terminal" suporta cores de texto e de fundo. Você pode verificar [o exemplo de cores ANSI do Arduino](https://wokwi.com/projects/308893120796295745) para vê-lo em ação.
 
 ### Newline
 

@@ -35,5 +35,5 @@ e.g. A1 is the anode of the top LED, and C1 is the cathode of the top LED.
 
 ## Simulator examples
 
-- [Arduino LED Graph Bar](https://wokwi.com/arduino/projects/309829489359061570) - Move the potentiometer knob to control the LEDs
-- [Raspberry Pi Pico Binary Counter](https://wokwi.com/arduino/projects/309828467927548481)
+- [Arduino LED Graph Bar](https://wokwi.com/projects/309829489359061570) - Move the potentiometer knob to control the LEDs
+- [Raspberry Pi Pico Binary Counter](https://wokwi.com/projects/309828467927548481)

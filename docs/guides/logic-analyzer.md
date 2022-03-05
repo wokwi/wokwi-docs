@@ -48,9 +48,9 @@ By default, the logic analyzer records data for the entire duration of the simul
 
 Here are some examples for common use cases:
 
-- [Start recording when a button is pressed](https://wokwi.com/arduino/projects/313698551063380544) - Set the `triggerMode` to "edge", and connect the trigger pin (D7) to ground through a pull-down resistor. Connect the other end of the button to the positive power supply (VCC/5V).
-- [Record only while the button is pressed](https://wokwi.com/arduino/projects/313706149095408193) - Same setup as above, but the `triggerMode` is set to "level".
-- [Start recording after 1.5 seconds](https://wokwi.com/arduino/projects/313706408220557888) - Set `triggerMode` to "edge", connect the trigger pin (D7) and change the pin level to high after 1.5 seconds.
+- [Start recording when a button is pressed](https://wokwi.com/projects/313698551063380544) - Set the `triggerMode` to "edge", and connect the trigger pin (D7) to ground through a pull-down resistor. Connect the other end of the button to the positive power supply (VCC/5V).
+- [Record only while the button is pressed](https://wokwi.com/projects/313706149095408193) - Same setup as above, but the `triggerMode` is set to "level".
+- [Start recording after 1.5 seconds](https://wokwi.com/projects/313706408220557888) - Set `triggerMode` to "edge", connect the trigger pin (D7) and change the pin level to high after 1.5 seconds.
 
 Use the `triggerPin` and `triggerLevel` attributes to configure the trigger pin and set the trigger level ("high" or "low"). Check out the [wokwi-logic-analyzer documentation](../parts/wokwi-logic-analyzer) for more information.
 

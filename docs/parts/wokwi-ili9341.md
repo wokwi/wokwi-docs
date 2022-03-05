@@ -55,13 +55,13 @@ void setup() {
 void loop() { }
 ```
 
-[Run this example on Wokwi](https://wokwi.com/arduino/projects/308024602434470466)
+[Run this example on Wokwi](https://wokwi.com/projects/308024602434470466)
 
 ## Simulator examples
 
-- [Adafruit ILI9341 GFX Example](https://wokwi.com/arduino/projects/307567201804616256)
-- [Fingerprint Pattern](https://wokwi.com/arduino/projects/307567963154678338)
-- [Mandelbrot Set](https://wokwi.com/arduino/projects/307567275170333248)
-- [Neon Ribbons](https://wokwi.com/arduino/projects/307577144545903170)
-- [Wokwi Logo over Plamsa](https://wokwi.com/arduino/projects/307664460274729536)
-- [Lode Runner with lcdgfx](https://wokwi.com/arduino/projects/308022099088245312)
+- [Adafruit ILI9341 GFX Example](https://wokwi.com/projects/307567201804616256)
+- [Fingerprint Pattern](https://wokwi.com/projects/307567963154678338)
+- [Mandelbrot Set](https://wokwi.com/projects/307567275170333248)
+- [Neon Ribbons](https://wokwi.com/projects/307577144545903170)
+- [Wokwi Logo over Plamsa](https://wokwi.com/projects/307664460274729536)
+- [Lode Runner with lcdgfx](https://wokwi.com/projects/308022099088245312)

@@ -44,4 +44,4 @@ da definição do atributo "retrigger" para "0".
 
 ## Exemplos no simulador
 
-- [Exemplo do sensor PIR (da AdaFruit)](https://wokwi.com/arduino/projects/299284655047180808)
+- [Exemplo do sensor PIR (da AdaFruit)](https://wokwi.com/projects/299284655047180808)

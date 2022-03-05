@@ -27,5 +27,5 @@ Firefox users: if the keyboard shortcuts don't work for you, please make sure th
 
 ## Simulator examples
 
-- [DIP Switch + LED Bar example](https://wokwi.com/arduino/projects/314167394611233344)
-- [Arduino PIND register example](https://wokwi.com/arduino/projects/314168546236039745)
+- [DIP Switch + LED Bar example](https://wokwi.com/projects/314167394611233344)
+- [Arduino PIND register example](https://wokwi.com/projects/314168546236039745)

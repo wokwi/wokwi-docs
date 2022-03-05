@@ -34,5 +34,5 @@ The following diagram summarizes the states of the relay:
 
 ## Simulator Examples
 
-- [One relay controlling two LEDs](https://wokwi.com/arduino/projects/322846360729551444)
-- [Relay Flip-Flop](https://wokwi.com/arduino/projects/322802227591774802) - Single bit memory element using three relays
+- [One relay controlling two LEDs](https://wokwi.com/projects/322846360729551444)
+- [Relay Flip-Flop](https://wokwi.com/projects/322802227591774802) - Single bit memory element using three relays

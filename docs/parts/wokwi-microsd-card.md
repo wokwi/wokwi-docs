@@ -39,7 +39,7 @@ You can also upload a complete folder tree (useful if you have a physical SD car
 
 Wokwi stores the uploaded files for you, alongside with your project. Anyone who opens your project and starts the simulation will have to wait for all the micro SD card files to download before the simulation starts.
 
-Example: [microSD Card project with a custom bitmap file](https://wokwi.com/arduino/projects/319810932695892564)
+Example: [microSD Card project with a custom bitmap file](https://wokwi.com/projects/319810932695892564)
 
 ## Arduino code example
 
@@ -83,9 +83,9 @@ void loop() {
 }
 ```
 
-[Run this example on Wokwi](https://wokwi.com/arduino/projects/310692660849410626)
+[Run this example on Wokwi](https://wokwi.com/projects/310692660849410626)
 
 ## Simulator examples
 
-- [SD library example](https://wokwi.com/arduino/projects/310542489623724609)
-- [SdFat library example](https://wokwi.com/arduino/projects/310692660849410626)
+- [SD library example](https://wokwi.com/projects/310542489623724609)
+- [SdFat library example](https://wokwi.com/projects/310692660849410626)

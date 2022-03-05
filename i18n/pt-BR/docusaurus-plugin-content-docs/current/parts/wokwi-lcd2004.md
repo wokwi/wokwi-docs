@@ -21,4 +21,4 @@ Para **informações completas e exemplos de código**, consulte a [Referência 
 
 ## Exemplos no simulador
 
-- [LCD2004 Tiny Pacman on Wokwi](https://wokwi.com/arduino/projects/294590769009787402)
+- [LCD2004 Tiny Pacman on Wokwi](https://wokwi.com/projects/294590769009787402)

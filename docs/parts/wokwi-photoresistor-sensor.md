@@ -77,5 +77,5 @@ The bottom LED ("DO LED") is connected to the digital output, and lights wheneve
 
 ## Simulator examples
 
-- [Photoresistor Digital Example](https://wokwi.com/arduino/projects/305193592908939842)
-- [Photoresistor Analog Example](https://wokwi.com/arduino/projects/305193627138654786)
+- [Photoresistor Digital Example](https://wokwi.com/projects/305193592908939842)
+- [Photoresistor Analog Example](https://wokwi.com/projects/305193627138654786)

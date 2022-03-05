@@ -117,9 +117,9 @@ void loop() {
 }
 ```
 
-[Execute este exemplo no Wokwi](https://wokwi.com/arduino/projects/306031380875182657).
+[Execute este exemplo no Wokwi](https://wokwi.com/projects/306031380875182657).
 
 ## Exemplos no simulador
 
-- [Shift register 74HC165 de uma entrada](https://wokwi.com/arduino/projects/306031380875182657)
-- [Shift register 74HC165 em cascata](https://wokwi.com/arduino/projects/306024460940476993) - four units daisy-chained to read the state of 32 switches
+- [Shift register 74HC165 de uma entrada](https://wokwi.com/projects/306031380875182657)
+- [Shift register 74HC165 em cascata](https://wokwi.com/projects/306024460940476993) - four units daisy-chained to read the state of 32 switches

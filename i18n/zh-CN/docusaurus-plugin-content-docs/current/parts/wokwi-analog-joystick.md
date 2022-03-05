@@ -97,4 +97,4 @@ in centered, and 100 when the joystick is all the way to the left.
 
 ## Simulator examples
 
-- [Etch-a-sketch](https://wokwi.com/arduino/projects/296234816685212169) - A simple drawing game using a MAX7219 LED Dot Matrix
+- [Etch-a-sketch](https://wokwi.com/projects/296234816685212169) - A simple drawing game using a MAX7219 LED Dot Matrix

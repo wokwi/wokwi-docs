@@ -67,12 +67,12 @@ void loop() {
 }
 ```
 
-Experimente [este exemplo no Wokwi](https://wokwi.com/arduino/projects/304444938977804866)
+Experimente [este exemplo no Wokwi](https://wokwi.com/projects/304444938977804866)
 
 ## Exemplos no simulador
 
-- [Sensor de distância com LED](https://wokwi.com/arduino/projects/290056311044833800)
-- [Display de distância com LCD](https://wokwi.com/arduino/projects/290043622233997832)
-- [Display de distância com 7 segmentos](https://wokwi.com/arduino/projects/295030553275532810)
-- [Sensor ultrassônico com Franzininho](https://wokwi.com/arduino/projects/302020345098928648)
-- [Sensor de estacionamento](https://wokwi.com/arduino/projects/290964046833779209)
+- [Sensor de distância com LED](https://wokwi.com/projects/290056311044833800)
+- [Display de distância com LCD](https://wokwi.com/projects/290043622233997832)
+- [Display de distância com 7 segmentos](https://wokwi.com/projects/295030553275532810)
+- [Sensor ultrassônico com Franzininho](https://wokwi.com/projects/302020345098928648)
+- [Sensor de estacionamento](https://wokwi.com/projects/290964046833779209)

@@ -26,5 +26,5 @@ LED 5mm vermelho, verde e azul (RGB).
 
 ## Exemplos no simulador
 
-- [LED RGB com 3 controles deslizantes lineares](https://wokwi.com/arduino/projects/306455554559050306)
-- [LED RGB pulsante suave](https://wokwi.com/arduino/projects/306461175146611264)
+- [LED RGB com 3 controles deslizantes lineares](https://wokwi.com/projects/306455554559050306)
+- [LED RGB pulsante suave](https://wokwi.com/projects/306461175146611264)

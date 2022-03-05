@@ -26,4 +26,4 @@ The function and pin-out of the slide potentiometer are same as [wokwi-potentiom
 
 ## Simulator examples
 
-- [Slide potentiometer + Servo](https://wokwi.com/arduino/projects/297604176384360973) - Control a [servo](wokwi-servo) with a slide potentiometer
+- [Slide potentiometer + Servo](https://wokwi.com/projects/297604176384360973) - Control a [servo](wokwi-servo) with a slide potentiometer

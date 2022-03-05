@@ -72,7 +72,7 @@ The Arduino Uno is simulated using the [AVR8js Library](https://github.com/wokwi
 | GPIO              | ✔️     | Including External/Pin Change Interrupts                               |
 | 8-bit timers      | ✔️     | Timer0, Timer2                                                         |
 | 16-bit timer      | ✔️     | Timer1                                                                 |
-| Watchdog Timer    | ✔️     | [Usage example](https://wokwi.com/arduino/projects/309372800631571009) |
+| Watchdog Timer    | ✔️     | [Usage example](https://wokwi.com/projects/309372800631571009) |
 | USART             | ✔️     |                                                                        |
 | SPI               | 🟡     | Master mode only                                                       |
 | I2C               | 🟡     | Master mode only                                                       |

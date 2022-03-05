@@ -75,7 +75,7 @@ The bouncing simulation follows the behaviour described in "The Art of electroni
 > When the switch is closed, the two contacts actually separate and reconnect, typically 10 to 100
 > times over a period of about 1ms.
 
-For example, [this project shows the difference between bouncing and non bouncing button](https://wokwi.com/arduino/projects/288681423014986248). It has two buttons connected to the same Arduino input pin:
+For example, [this project shows the difference between bouncing and non bouncing button](https://wokwi.com/projects/288681423014986248). It has two buttons connected to the same Arduino input pin:
 
 - The blue button does not simulate bouncing. Pressing on it once will only print a single pair of "pressed" and "released" messages.
 - The red button simulates bouncing. Pressing on it once will print multiple "pressed" and "released" messages.
@@ -96,5 +96,5 @@ This is useful when you need multiple buttons pressed at the same time.
 ## Simulator examples
 
 - [Simon Game](https://wokwi.com/arduino/libraries/demo/simon-game) - A memory game with 4 push buttons
-- [Diatonic Piano](https://wokwi.com/arduino/projects/291958456169005577) - A 8-note piano, use keys 1-8 to press the buttons and play the notes.
-- [Bounce vs non-bounce](https://wokwi.com/arduino/projects/288681423014986248)
+- [Diatonic Piano](https://wokwi.com/projects/291958456169005577) - A 8-note piano, use keys 1-8 to press the buttons and play the notes.
+- [Bounce vs non-bounce](https://wokwi.com/projects/288681423014986248)

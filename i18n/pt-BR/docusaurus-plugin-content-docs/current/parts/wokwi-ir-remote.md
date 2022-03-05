@@ -41,4 +41,4 @@ para cada uma das teclas:
 
 ## Exemplos no simulador
 
-- [IRRemote + Display LCD](https://wokwi.com/arduino/projects/298934082074575369)
+- [IRRemote + Display LCD](https://wokwi.com/projects/298934082074575369)

@@ -36,4 +36,4 @@ The output pins of the shift register, QA through QH, are usually connected to t
 
 ## Simulator examples
 
-- [NLSF595 LED Driver with 2 RGB LEDs](https://wokwi.com/arduino/projects/315085666329297472)
+- [NLSF595 LED Driver with 2 RGB LEDs](https://wokwi.com/projects/315085666329297472)

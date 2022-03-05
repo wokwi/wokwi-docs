@@ -141,6 +141,6 @@ O Wokwi IoT Gateway suporta TCP e UDP. Ele não suporta o protocolo ICMP, portan
 
 ## Exemplos no simulador
 
-- [Cliente NTP](https://wokwi.com/arduino/projects/321525495180034642) - Obtém a data e hora atuais de um servidor NTP e as exibe em uma tela LCD.
-- [Logger Climático MicroPython MQTT](https://wokwi.com/arduino/projects/322577683855704658) - Lê a temperatura atual + umidade a cada segundo e relata as alterações para um servidor MQTT.
-- [Servidor HTTP ESP32](https://wokwi.com/arduino/projects/320964045035274834) - Servidor de uma página web que controla 2 LEDs. Requer o [Wokwi IoT Gateway](#the-private-gateway).
+- [Cliente NTP](https://wokwi.com/projects/321525495180034642) - Obtém a data e hora atuais de um servidor NTP e as exibe em uma tela LCD.
+- [Logger Climático MicroPython MQTT](https://wokwi.com/projects/322577683855704658) - Lê a temperatura atual + umidade a cada segundo e relata as alterações para um servidor MQTT.
+- [Servidor HTTP ESP32](https://wokwi.com/projects/320964045035274834) - Servidor de uma página web que controla 2 LEDs. Requer o [Wokwi IoT Gateway](#the-private-gateway).

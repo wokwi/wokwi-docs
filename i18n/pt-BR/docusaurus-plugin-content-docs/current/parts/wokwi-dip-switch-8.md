@@ -27,5 +27,5 @@ Usuários do Firefox: se os atalhos do teclado não funcionarem para você, cert
 
 ## Exemplos no simulador
 
-- [Exemplo do interruptor DIP + barra de LED](https://wokwi.com/arduino/projects/314167394611233344)
-- [Exemplo do registrador PIND do Arduino](https://wokwi.com/arduino/projects/314168546236039745)
+- [Exemplo do interruptor DIP + barra de LED](https://wokwi.com/projects/314167394611233344)
+- [Exemplo do registrador PIND do Arduino](https://wokwi.com/projects/314168546236039745)

@@ -117,9 +117,9 @@ void loop() {
 }
 ```
 
-[Run this example on Wokwi](https://wokwi.com/arduino/projects/306031380875182657).
+[Run this example on Wokwi](https://wokwi.com/projects/306031380875182657).
 
 ## Simulator examples
 
-- [Single input shift register](https://wokwi.com/arduino/projects/306031380875182657)
-- [74HC165 shift register cascade](https://wokwi.com/arduino/projects/306024460940476993) - four units daisy-chained to read the state of 32 switches
+- [Single input shift register](https://wokwi.com/projects/306031380875182657)
+- [74HC165 shift register cascade](https://wokwi.com/projects/306024460940476993) - four units daisy-chained to read the state of 32 switches

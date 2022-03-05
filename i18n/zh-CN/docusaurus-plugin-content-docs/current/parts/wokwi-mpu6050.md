@@ -79,11 +79,11 @@ void loop() {
 }
 ```
 
-[Run this example on Wokwi](https://wokwi.com/arduino/projects/305937248748044864)
+[Run this example on Wokwi](https://wokwi.com/projects/305937248748044864)
 
 ## Simulator examples
 
-- [MPU6050 X/Y/Z acceleration plotter](https://wokwi.com/arduino/projects/305937156771152449)
-- [Adafruit MPU6050 Demo](https://wokwi.com/arduino/projects/305936654686749250)
-- [3D gyro/acceleration visualization on an OLED display](https://wokwi.com/arduino/projects/306115576172905024)
-- [3D Wokwi "W" controlled by Gyroscope rotation](https://wokwi.com/arduino/projects/306399551789466177)
+- [MPU6050 X/Y/Z acceleration plotter](https://wokwi.com/projects/305937156771152449)
+- [Adafruit MPU6050 Demo](https://wokwi.com/projects/305936654686749250)
+- [3D gyro/acceleration visualization on an OLED display](https://wokwi.com/projects/306115576172905024)
+- [3D Wokwi "W" controlled by Gyroscope rotation](https://wokwi.com/projects/306399551789466177)

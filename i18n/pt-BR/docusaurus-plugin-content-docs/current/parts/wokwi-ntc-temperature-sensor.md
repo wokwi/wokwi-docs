@@ -40,4 +40,4 @@ float celsius = 1 / (log(1 / (1023. / analogValue - 1)) / BETA + 1.0 / 298.15) -
 
 ## Exemplos no simulador
 
-- [Exemplo básico do termistor NTC](https://wokwi.com/arduino/projects/299330254810382858)
+- [Exemplo básico do termistor NTC](https://wokwi.com/projects/299330254810382858)

@@ -75,7 +75,7 @@ A simulação de salto segue o comportamento descrito em "The Art of electronics
 > Quando a chave é fechada, os dois contatos realmente se separam e se reconectam, normalmente 10 a 100
 > vezes durante um período de cerca de 1ms.
 
-Por exemplo, [este projeto mostra a diferença de botão com bouncing e sem bouncing](https://wokwi.com/arduino/projects/288681423014986248).
+Por exemplo, [este projeto mostra a diferença de botão com bouncing e sem bouncing](https://wokwi.com/projects/288681423014986248).
 Ele tem dois botões conectados ao mesmo pino de entrada do Arduino:
 
 - O botão azul simula sem o bouncing. Pressionando uma vez só imprimirá um único par de mensagens "pressionado" e "liberado".
@@ -97,5 +97,5 @@ Isso é útil quando você precisa que vários botões sejam pressionados ao mes
 ## Exemplos no simulador
 
 - [Simon Game](https://wokwi.com/arduino/libraries/demo/simon-game) - Um jogo de memória com 4 botões momentâneo
-- [Diatonic Piano](https://wokwi.com/arduino/projects/291958456169005577) - Um piano de 8 notas, use as teclas 1 a 8 para pressionar os botões e tocar as notas.
-- [Bounce vs non-bounce](https://wokwi.com/arduino/projects/288681423014986248)
+- [Diatonic Piano](https://wokwi.com/projects/291958456169005577) - Um piano de 8 notas, use as teclas 1 a 8 para pressionar os botões e tocar as notas.
+- [Bounce vs non-bounce](https://wokwi.com/projects/288681423014986248)

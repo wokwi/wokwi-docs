@@ -78,7 +78,7 @@ The baud rate must be set to **9600**. This is hard coded in the simulator, and 
 value will get you garbage in the Serial monitor.
 :::
 
-For a complete example, check out the [ATtiny85 SoftwareSerial example project](https://wokwi.com/arduino/projects/290883003139228169).
+For a complete example, check out the [ATtiny85 SoftwareSerial example project](https://wokwi.com/projects/290883003139228169).
 
 Note: if you just want to use the Serial monitor for printing debug messages, take a look at [the TinyDebug library](../parts/wokwi-attiny85#debug-prints-with-tinydebug).
 
@@ -95,7 +95,7 @@ The default configuration is as follows:
 }
 ```
 
-When you add a  `"serialMonitor"` section, either add it after the last item in diagram.json, or make sure to add a comma after the closing curly brace. You can find a complete example [here](https://wokwi.com/arduino/projects/308893120796295745).
+When you add a  `"serialMonitor"` section, either add it after the last item in diagram.json, or make sure to add a comma after the closing curly brace. You can find a complete example [here](https://wokwi.com/projects/308893120796295745).
 
 ### Display
 
@@ -109,7 +109,7 @@ The `display` property configures when/how to display the serial monitor. The po
 | plotter  | Display the Serial Plotter when simulation starts                 |
 | terminal | Display a terminal (using [XTerm.js](https://xtermjs.org/))       |
 
-Note: the "terminal" mode supports text and background colors. You can check out [the Arduino ANSI colors example](https://wokwi.com/arduino/projects/308893120796295745) to see it in action.
+Note: the "terminal" mode supports text and background colors. You can check out [the Arduino ANSI colors example](https://wokwi.com/projects/308893120796295745) to see it in action.
 
 ### Newline
 

@@ -29,5 +29,5 @@ do tempo da atualização.
 
 ## Exemplos no simulador
 
-- [Lendo data/hora usando RTClib](https://wokwi.com/arduino/projects/305979285237137984)
+- [Lendo data/hora usando RTClib](https://wokwi.com/projects/305979285237137984)
 - [Despertador](https://wokwi.com/playground/alarm-clock)

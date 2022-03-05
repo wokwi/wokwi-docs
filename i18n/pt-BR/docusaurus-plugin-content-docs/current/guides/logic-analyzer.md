@@ -47,9 +47,9 @@ Por padrão, o analisador lógico registra dados para toda a duração da simula
 
 Aqui estão alguns exemplos de casos de uso comuns:
 
-- [Inicia a gravação quando um botão for pressionado](https://wokwi.com/arduino/projects/313698551063380544) - Define o `triggerMode` como "edge" e conecta o pino do acionamento (D7) ao aterramento por meio de um resitor pull-down. Conecta a outra extremidade do botão à fonte de alimentação positiva (VCC/5V).
-- [Grava apenas enquanto o botão é pressionado](https://wokwi.com/arduino/projects/313706149095408193) - Mesma configuração que acima, mas o `triggerMode` está definido para "level".
-- [Inicia a gravação após 1,5 segundos](https://wokwi.com/arduino/projects/313706408220557888) - Define `triggerMode` como "edge", conecta o pino de disparo (D7) e altera o nível do pino para alto após 1,5 segundos.
+- [Inicia a gravação quando um botão for pressionado](https://wokwi.com/projects/313698551063380544) - Define o `triggerMode` como "edge" e conecta o pino do acionamento (D7) ao aterramento por meio de um resitor pull-down. Conecta a outra extremidade do botão à fonte de alimentação positiva (VCC/5V).
+- [Grava apenas enquanto o botão é pressionado](https://wokwi.com/projects/313706149095408193) - Mesma configuração que acima, mas o `triggerMode` está definido para "level".
+- [Inicia a gravação após 1,5 segundos](https://wokwi.com/projects/313706408220557888) - Define `triggerMode` como "edge", conecta o pino de disparo (D7) e altera o nível do pino para alto após 1,5 segundos.
 
 Use os atributos `triggerPin` e `triggerLevel` para configurar o pino de acionamento e definir o nível de disparo ("alto" ou "baixo"). Verifique a [documentação do Analisador Lógico Wokwi](../parts/wokwi-logic-analyzer) para obter mais informações.
 

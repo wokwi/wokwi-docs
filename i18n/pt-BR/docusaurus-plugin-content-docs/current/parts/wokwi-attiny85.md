@@ -106,7 +106,7 @@ Você pode executar com segurança o código que usa o TinyDebug em um chip ATti
 tem a interface de depuração, então você obviamente não verá as mensagens de depuração, mas além disso,
 não deve interferir no seu código.
 
-Para um exemplo completo de código, confira o [projeto de demonstração do TinyDebug no Wokwi](https://wokwi.com/arduino/projects/300650387867697672).
+Para um exemplo completo de código, confira o [projeto de demonstração do TinyDebug no Wokwi](https://wokwi.com/projects/300650387867697672).
 
 ### Saída Serial
 
@@ -144,8 +144,8 @@ ou [entre em contato no Discord](https://wokwi.com/discord).
 
 ## Exemplos no simulador
 
-- [ATtiny85 Blink](https://wokwi.com/arduino/projects/283019827166052872)
-- [ATtiny85 Simon Game](https://wokwi.com/arduino/projects/285525640477671948)
-- [ATtiny85 FastLED Matrix](https://wokwi.com/arduino/projects/283910810787381773)
-- [ATtiny85 Charlieplexing](https://wokwi.com/arduino/projects/283912288194265608)
-- [ATtiny85 SSD1306 + DHT](https://wokwi.com/arduino/projects/292900020514980360)
+- [ATtiny85 Blink](https://wokwi.com/projects/283019827166052872)
+- [ATtiny85 Simon Game](https://wokwi.com/projects/285525640477671948)
+- [ATtiny85 FastLED Matrix](https://wokwi.com/projects/283910810787381773)
+- [ATtiny85 Charlieplexing](https://wokwi.com/projects/283912288194265608)
+- [ATtiny85 SSD1306 + DHT](https://wokwi.com/projects/292900020514980360)

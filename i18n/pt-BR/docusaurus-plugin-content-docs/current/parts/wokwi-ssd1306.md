@@ -44,9 +44,9 @@ Todas as bibliotecas acima estão disponíveis no Wokwi.
 
 ## Exemplos no simulador
 
-- [SSD1306 Snake Game](https://wokwi.com/arduino/projects/296135008348799496) (usando Adafruit SSD1306)
-- [ATtiny85 Temperatura Digital + Umidade no SSD1306](https://wokwi.com/arduino/projects/292900020514980360)
-- [U8glib Progress Bar](https://wokwi.com/arduino/projects/300867986768527882)
-- [SSD1306Ascii Fonts](https://wokwi.com/arduino/projects/291197274604700168)
+- [SSD1306 Snake Game](https://wokwi.com/projects/296135008348799496) (usando Adafruit SSD1306)
+- [ATtiny85 Temperatura Digital + Umidade no SSD1306](https://wokwi.com/projects/292900020514980360)
+- [U8glib Progress Bar](https://wokwi.com/projects/300867986768527882)
+- [SSD1306Ascii Fonts](https://wokwi.com/projects/291197274604700168)
 - [Adafruit SSD1306 Showcase](https://wokwi.com/arduino/libraries/Adafruit_SSD1306/ssd1306_128x64_i2c)
-- [U8g2 Menu](https://wokwi.com/arduino/projects/291572875238834696)
+- [U8g2 Menu](https://wokwi.com/projects/291572875238834696)

@@ -35,5 +35,5 @@ ex. A1 é o ânodo do LED superior e C1 é o cátodo do LED superior.
 
 ## Exemplos no simulador
 
-- [Arduino LED Graph Bar](https://wokwi.com/arduino/projects/309829489359061570) - Mova o botão do potenciômetro para controlar os LEDs
-- [Contador Binário com Raspberry Pi Pico](https://wokwi.com/arduino/projects/309828467927548481)
+- [Arduino LED Graph Bar](https://wokwi.com/projects/309829489359061570) - Mova o botão do potenciômetro para controlar os LEDs
+- [Contador Binário com Raspberry Pi Pico](https://wokwi.com/projects/309828467927548481)

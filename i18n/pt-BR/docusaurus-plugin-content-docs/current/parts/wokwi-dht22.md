@@ -31,11 +31,11 @@ Use os controles deslizantes de temperatura e umidade para alterar os valores.
 Clique em "Ocultar" para fechar a janela pop-up.
 
 :::caution::ATENÇÃO
-Se você estiver tentando ler este sensor do ESP32, use a biblioteca "DHT sensor library for ESPx". Outras bibliotecas DHT22 podem não funcionar de forma confiável no ESP32. Você pode usar este [projeto de exemplo](https://wokwi.com/arduino/projects/322410731508073042) como ponto de partida.
+Se você estiver tentando ler este sensor do ESP32, use a biblioteca "DHT sensor library for ESPx". Outras bibliotecas DHT22 podem não funcionar de forma confiável no ESP32. Você pode usar este [projeto de exemplo](https://wokwi.com/projects/322410731508073042) como ponto de partida.
 :::
 
 ## Exemplos no simulador
 
 - [Teste DHTlib DHT22](https://wokwi.com/arduino/libraries/DHTlib/dht22_test)
 - [Exemplos de código da biblioteca DHT](https://wokwi.com/arduino/libraries/DHT-sensor-library)
-- [DHT22 no ESP32](https://wokwi.com/arduino/projects/322410731508073042)
+- [DHT22 no ESP32](https://wokwi.com/projects/322410731508073042)

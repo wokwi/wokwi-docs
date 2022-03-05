@@ -21,4 +21,4 @@ For **complete information and code examples**, please see the [wokwi-lcd1602 re
 
 ## Simulator examples
 
-- [LCD2004 Tiny Pacman on Wokwi](https://wokwi.com/arduino/projects/294590769009787402)
+- [LCD2004 Tiny Pacman on Wokwi](https://wokwi.com/projects/294590769009787402)

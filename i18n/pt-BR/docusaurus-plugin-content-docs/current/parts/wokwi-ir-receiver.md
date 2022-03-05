@@ -26,4 +26,4 @@ Para ler os comandos no seu código Arduino, você pode usar a biblioteca [IRRem
 
 ## Exemplos no simulador
 
-- [IRRemote + Display LCD](https://wokwi.com/arduino/projects/298934082074575369)
+- [IRRemote + Display LCD](https://wokwi.com/projects/298934082074575369)

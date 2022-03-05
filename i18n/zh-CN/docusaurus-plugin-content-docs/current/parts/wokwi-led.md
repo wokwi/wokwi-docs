@@ -44,7 +44,7 @@ in some visible light, similar to how physical LEDs work, so you get more accura
 You can disable the gamma correction by setting the "gamma" attribute to "1.0". You can also choose a different
 gamma factor by setting this attribute to the desired value. The default gamma correction factor is 2.8.
 
-The [Gamma Correction Demo project](https://wokwi.com/arduino/projects/304762988710068800) shows the behavior of different gamma values: the LED on the left has the default gamma factor of 2.8, while the LED on the right has a gamma factor of 1.0. You can see how lower values of `analogWrite()` look much brighter on the left LED.
+The [Gamma Correction Demo project](https://wokwi.com/projects/304762988710068800) shows the behavior of different gamma values: the LED on the left has the default gamma factor of 2.8, while the LED on the right has a gamma factor of 1.0. You can see how lower values of `analogWrite()` look much brighter on the left LED.
 
 ## Simulator examples
 

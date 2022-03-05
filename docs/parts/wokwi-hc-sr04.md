@@ -67,12 +67,12 @@ void loop() {
 }
 ```
 
-Try [this example on Wokwi](https://wokwi.com/arduino/projects/304444938977804866)
+Try [this example on Wokwi](https://wokwi.com/projects/304444938977804866)
 
 ## Simulator examples
 
-- [Distance sensor and LED](https://wokwi.com/arduino/projects/290056311044833800)
-- [Display distance on LCD screen](https://wokwi.com/arduino/projects/290043622233997832)
-- [Seven segment distance display](https://wokwi.com/arduino/projects/295030553275532810)
-- [Franzininho ultrasonic sensor](https://wokwi.com/arduino/projects/302020345098928648)
-- [Parking sensor](https://wokwi.com/arduino/projects/290964046833779209)
+- [Distance sensor and LED](https://wokwi.com/projects/290056311044833800)
+- [Display distance on LCD screen](https://wokwi.com/projects/290043622233997832)
+- [Seven segment distance display](https://wokwi.com/projects/295030553275532810)
+- [Franzininho ultrasonic sensor](https://wokwi.com/projects/302020345098928648)
+- [Parking sensor](https://wokwi.com/projects/290964046833779209)

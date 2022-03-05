@@ -36,4 +36,4 @@ Os pinos de saída do registrador de deslocamento, QA a QH, são conectados gera
 
 ## Exemplos no simulador
 
-- [Driver NLSF595 com 2 LEDs RGB](https://wokwi.com/arduino/projects/315085666329297472)
+- [Driver NLSF595 com 2 LEDs RGB](https://wokwi.com/projects/315085666329297472)

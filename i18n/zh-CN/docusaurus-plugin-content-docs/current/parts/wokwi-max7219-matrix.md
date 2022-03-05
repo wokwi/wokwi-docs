@@ -42,8 +42,8 @@ Each dot matrix units is an 8x8 LED matrix. All the LEDs in the matrix have the 
 
 ## Simulator examples
 
-- [Dot Matrix Clock](https://wokwi.com/arduino/projects/289186888566178317)
-- [Etch A Sketch game](https://wokwi.com/arduino/projects/296234816685212169)
-- [Electronic Dice (on ATtiny85)](https://wokwi.com/arduino/projects/291779699024069128)
-- [Arduino QR Code Generator](https://wokwi.com/arduino/projects/297148152803230218)
+- [Dot Matrix Clock](https://wokwi.com/projects/289186888566178317)
+- [Etch A Sketch game](https://wokwi.com/projects/296234816685212169)
+- [Electronic Dice (on ATtiny85)](https://wokwi.com/projects/291779699024069128)
+- [Arduino QR Code Generator](https://wokwi.com/projects/297148152803230218)
 - [MD_Parola library examples](https://wokwi.com/arduino/libraries/MD_Parola)

@@ -45,5 +45,5 @@ tone(8, 262, 250); // Plays 262Hz tone for 0.250 seconds
 ## Simulator examples
 
 - [Simon game](https://wokwi.com/arduino/libraries/demo/simon-game) - A memory game with 4 push buttons
-- [Diatonic piano](https://wokwi.com/arduino/projects/291958456169005577) - An 8-note piano, use keys 1-8 to press the buttons and play the notes.
+- [Diatonic piano](https://wokwi.com/projects/291958456169005577) - An 8-note piano, use keys 1-8 to press the buttons and play the notes.
 - [Alarm clock](https://wokwi.com/playground/alarm-clock) - Uses the buzzer to play the alarm sound

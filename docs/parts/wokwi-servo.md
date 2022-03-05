@@ -35,5 +35,5 @@ A standard Micro Servo Motor
 
 - [Sweep](https://wokwi.com/arduino/libraries/Servo/Sweep)
 - [Knob](https://wokwi.com/arduino/libraries/Servo/Knob)
-- [Arduino Uno controlling 5 servos](https://wokwi.com/arduino/projects/305087394119418434)
-- [Arduino Mega animating 32 servos](https://wokwi.com/arduino/projects/305336312628511297)
+- [Arduino Uno controlling 5 servos](https://wokwi.com/projects/305087394119418434)
+- [Arduino Mega animating 32 servos](https://wokwi.com/projects/305336312628511297)

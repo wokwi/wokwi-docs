@@ -39,7 +39,7 @@ Você também pode fazer upload de uma árvore de pastas completa (útil se voc�
 
 Wokwi armazena os arquivos enviados para você, juntamente com seu projeto. Qualquer pessoa que abrir seu projeto e iniciar a simulação terá que esperar o download de todos os arquivos do cartão micro SD antes que a simulação comece.
 
-Exemplo: [Projeto de cartão microSD com um arquivo bitmap personalizado](https://wokwi.com/arduino/projects/319810932695892564)
+Exemplo: [Projeto de cartão microSD com um arquivo bitmap personalizado](https://wokwi.com/projects/319810932695892564)
 
 ## Exemplo de código Arduino
 
@@ -83,9 +83,9 @@ void loop() {
 }
 ```
 
-[Execute este exemplo no Wokwi](https://wokwi.com/arduino/projects/310692660849410626)
+[Execute este exemplo no Wokwi](https://wokwi.com/projects/310692660849410626)
 
 ## Exemplos no simulador
 
-- [Exemplo da biblioteca SD](https://wokwi.com/arduino/projects/310542489623724609)
-- [Exemplo da biblioteca SdFat](https://wokwi.com/arduino/projects/310692660849410626)
+- [Exemplo da biblioteca SD](https://wokwi.com/projects/310542489623724609)
+- [Exemplo da biblioteca SdFat](https://wokwi.com/projects/310692660849410626)

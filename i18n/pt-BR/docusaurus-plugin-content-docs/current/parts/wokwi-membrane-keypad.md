@@ -69,7 +69,7 @@ void loop() {
 }
 ```
 
-Você também pode tentar [este exemplo no Wokwi](https://wokwi.com/arduino/projects/294980637632233994).
+Você também pode tentar [este exemplo no Wokwi](https://wokwi.com/projects/294980637632233994).
 
 ### Exemplos
 
@@ -81,6 +81,6 @@ Você também pode tentar [este exemplo no Wokwi](https://wokwi.com/arduino/proj
 
 ## Exemplos no simulador
 
-- [Basic Keypad example](https://wokwi.com/arduino/projects/294980637632233994)
-- [Arduino Calculator](https://wokwi.com/arduino/projects/276825819240727048)
+- [Basic Keypad example](https://wokwi.com/projects/294980637632233994)
+- [Arduino Calculator](https://wokwi.com/projects/276825819240727048)
 - [Electronic Safe](https://wokwi.com/arduino/libraries/demo/electronic-safe)

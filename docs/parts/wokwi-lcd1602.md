@@ -87,7 +87,7 @@ void loop() {
 }
 ```
 
-You can also [try this example on Wokwi](https://wokwi.com/arduino/projects/294342288335700490).
+You can also [try this example on Wokwi](https://wokwi.com/projects/294342288335700490).
 
 ## Attributes
 
@@ -167,7 +167,7 @@ void setup() {
 void loop() { }
 ```
 
-You can also [run this example on Wokwi](https://wokwi.com/arduino/projects/294395602645549578).
+You can also [run this example on Wokwi](https://wokwi.com/projects/294395602645549578).
 
 You can modify any custom character while the program is running. This method is useful for
 creating simple animations. For example, change `loop()` in the code sample above to slowly
@@ -187,8 +187,8 @@ void loop() {
 
 ## Simulator examples
 
-- [LiquidCrystal Hello World](https://wokwi.com/arduino/projects/294342288335700490)
+- [LiquidCrystal Hello World](https://wokwi.com/projects/294342288335700490)
 - [LiquidCrystal I2C Hello World](https://wokwi.com/arduino/libraries/LiquidCrystal_I2C/HelloWorld)
-- [LiquidCystal Custom characters](https://wokwi.com/arduino/projects/294395602645549578)
+- [LiquidCystal Custom characters](https://wokwi.com/projects/294395602645549578)
 - [Electronic Safe](https://wokwi.com/arduino/libraries/demo/electronic-safe)
-- [DS1307 Clock](https://wokwi.com/arduino/projects/298783436806554120)
+- [DS1307 Clock](https://wokwi.com/projects/298783436806554120)

@@ -77,5 +77,5 @@ O LED inferior ("LED DO") está conectado à saída digital e acende sempre que 
 
 ## Exemplos no simulador
 
-- [Exemplo de fotoresistor digital](https://wokwi.com/arduino/projects/305193592908939842)
-- [Exemplo de fotoresistor analógico](https://wokwi.com/arduino/projects/305193627138654786)
+- [Exemplo de fotoresistor digital](https://wokwi.com/projects/305193592908939842)
+- [Exemplo de fotoresistor analógico](https://wokwi.com/projects/305193627138654786)

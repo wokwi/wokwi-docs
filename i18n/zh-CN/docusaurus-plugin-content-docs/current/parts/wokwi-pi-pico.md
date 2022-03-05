@@ -39,7 +39,7 @@ pinMode(LED_BUILTIN, OUTPUT);
 digitalWrite(LED_BUILTIN, HIGH);
 ```
 
-See [Blink](https://wokwi.com/arduino/projects/297755575592157709) for a complete code example.
+See [Blink](https://wokwi.com/projects/297755575592157709) for a complete code example.
 
 ## Simulation features
 
@@ -154,7 +154,7 @@ void setup() {
 void loop() { }
 ```
 
-For a complete example, check out the [Pi Pico Serial Monitor over UART Example](https://wokwi.com/arduino/projects/297755360074138125).
+For a complete example, check out the [Pi Pico Serial Monitor over UART Example](https://wokwi.com/projects/297755360074138125).
 
 ## Exporting UF2 binary
 
@@ -172,7 +172,7 @@ The Raspberry Pi Pico supports MicroPython, and you can use it for running Micro
 
 ## Simulator examples
 
-- [Pi Pico and LCD1602](https://wokwi.com/arduino/projects/297323005822894602)
-- [Pi Pico Traffic Light](https://wokwi.com/arduino/projects/297322571959894536)
-- [Pi Pico C++ SDK Blink](https://wokwi.com/arduino/projects/298013072042230285)
-- [Pi Pico C++ SDK 7-Segment Example](https://wokwi.com/arduino/projects/298014884249993738)
+- [Pi Pico and LCD1602](https://wokwi.com/projects/297323005822894602)
+- [Pi Pico Traffic Light](https://wokwi.com/projects/297322571959894536)
+- [Pi Pico C++ SDK Blink](https://wokwi.com/projects/298013072042230285)
+- [Pi Pico C++ SDK 7-Segment Example](https://wokwi.com/projects/298014884249993738)

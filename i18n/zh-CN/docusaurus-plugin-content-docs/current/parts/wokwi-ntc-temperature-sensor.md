@@ -40,4 +40,4 @@ float celsius = 1 / (log(1 / (1023. / analogValue - 1)) / BETA + 1.0 / 298.15) -
 
 ## Simulator examples
 
-- [NTC Thermistor Basic Example](https://wokwi.com/arduino/projects/299330254810382858)
+- [NTC Thermistor Basic Example](https://wokwi.com/projects/299330254810382858)

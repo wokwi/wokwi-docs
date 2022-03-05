@@ -44,4 +44,4 @@ setting the "retrigger" attribute to "0".
 
 ## Simulator examples
 
-- [PIR sensor example (from AdaFruit)](https://wokwi.com/arduino/projects/299284655047180808)
+- [PIR sensor example (from AdaFruit)](https://wokwi.com/projects/299284655047180808)

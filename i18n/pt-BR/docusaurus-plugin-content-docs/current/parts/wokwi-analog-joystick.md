@@ -97,4 +97,4 @@ estiver centralizado e 100 quando o joystick estiver totalmente à esquerda.
 
 ## Exemplos no simulador
 
-- [Etch-a-sketch](https://wokwi.com/arduino/projects/296234816685212169) - Um jogo de desenho simples usando uma Matriz de LED MAX7219
+- [Etch-a-sketch](https://wokwi.com/projects/296234816685212169) - Um jogo de desenho simples usando uma Matriz de LED MAX7219

@@ -46,7 +46,7 @@ em alguma luz visível, semelhante a como os LEDs físicos funcionam, para que v
 Você pode desativar a correção de gamma definindo o atributo "gamma" para "1.0". Você também pode escolher um
 fator gamma definindo este atributo com o valor desejado. O fator de correção de gamma padrão é "2.8".
 
-O [projeto de demonstração da correção de gamma](https://wokwi.com/arduino/projects/304762988710068800) mostra o comportamento de diferentes valores: o LED à esquerda tem o fator gamma padrão de "2.8", enquanto o LED à direita tem um fator gamma de "1.0". Você pode ver como valores mais baixos em `analogWrite()` parecem muito mais brilhantes no LED esquerdo.
+O [projeto de demonstração da correção de gamma](https://wokwi.com/projects/304762988710068800) mostra o comportamento de diferentes valores: o LED à esquerda tem o fator gamma padrão de "2.8", enquanto o LED à direita tem um fator gamma de "1.0". Você pode ver como valores mais baixos em `analogWrite()` parecem muito mais brilhantes no LED esquerdo.
 
 ## Exemplos no simulador
 

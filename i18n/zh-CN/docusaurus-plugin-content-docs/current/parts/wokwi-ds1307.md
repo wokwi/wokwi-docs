@@ -29,5 +29,5 @@ of the update time.
 
 ## Simulator examples
 
-- [Reading current date/time using RTClib](https://wokwi.com/arduino/projects/305979285237137984)
+- [Reading current date/time using RTClib](https://wokwi.com/projects/305979285237137984)
 - [Alarm clock](https://wokwi.com/playground/alarm-clock)

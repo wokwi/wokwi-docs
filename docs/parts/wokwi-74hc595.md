@@ -58,11 +58,11 @@ void loop() {
 }
 ```
 
-You can also [run this example on Wokwi](https://wokwi.com/arduino/projects/301192672203244042).
+You can also [run this example on Wokwi](https://wokwi.com/projects/301192672203244042).
 
 ## Simulator examples
 
-- [75HC595 shift register with 8 LEDs](https://wokwi.com/arduino/projects/301188813482361352)
-- [Arduino 16-LED shift register blink](https://wokwi.com/arduino/projects/301213976182653448)
-- [ATtiny85 75HC595 clock](https://wokwi.com/arduino/projects/301366580039647753)
-- [8-digit seven-segment hex counter](https://wokwi.com/arduino/projects/301304715310793225)
+- [75HC595 shift register with 8 LEDs](https://wokwi.com/projects/301188813482361352)
+- [Arduino 16-LED shift register blink](https://wokwi.com/projects/301213976182653448)
+- [ATtiny85 75HC595 clock](https://wokwi.com/projects/301366580039647753)
+- [8-digit seven-segment hex counter](https://wokwi.com/projects/301304715310793225)
