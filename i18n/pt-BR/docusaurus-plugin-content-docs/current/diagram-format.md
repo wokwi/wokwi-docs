@@ -29,7 +29,7 @@ Além disso, você pode adicionar uma seção `"serialMonitor"` para [Configuran
 ## Componentes
 
 As seção `"parts"` define a lista de componentes da simulação.
-É uma matriz de objetos com as seguintes chaves:
+É um array de objetos com as seguintes propriedades:
 
 | Nome   | Tipo    | Descrição                                       |
 | ------ | ------- | ----------------------------------------------- |

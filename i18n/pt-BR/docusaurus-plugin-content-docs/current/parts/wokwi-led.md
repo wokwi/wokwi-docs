@@ -24,6 +24,8 @@ LED 5mm padrão.
 | gamma      | Fator de correção gamma         | "2.8"                |
 | flip       | Vira o LED horizontalmente      | ""                   |
 
+Nota: Para girar os LEDs, clique neles e pressione "R", ou defina a propriedade ["rotate"](../diagram-format#parts).
+
 ### Exemplos
 
 | Resultado                                                 | Atributos (attrs)                             |
