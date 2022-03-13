@@ -57,4 +57,4 @@ To learn how to view the data, please visit our [Logic Analyzer Guide](../guides
 
 ## Simulator examples
 
-- [Sketch that makes signals for the Logic Analyzer](https://wokwi.com/projects/325933824665977428)
+- [Logic Analyzer recording I2C protocol signals](https://wokwi.com/projects/325933824665977428)
