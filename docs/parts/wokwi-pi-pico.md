@@ -55,7 +55,7 @@ This table summarizes the status of the simulation features:
 | UART              | ✔️     |                                                                         |
 | I2C               | ✔️     | Master mode only                                                        |
 | SPI               | ✔️     | Master mode only                                                        |
-| PWM               | ❌     |                                                                         |
+| PWM               | ✔️     |                                                                         |
 | DMA               | ✔️     | Only for the PIO peripheral                                             |
 | Timer             | ✔️     | Pausing the timer not implemented yet                                   |
 | ARM SysTick Timer | 🟡     | Partial implementation                                                  |
