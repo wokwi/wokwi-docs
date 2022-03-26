@@ -18,7 +18,9 @@ Not all the texts are currently available for translation, but we're adding new 
 ### Existing translations
 
 - [Chinese](https://wokwi.com/projects/new?lang=zh)
+- [Spanish (spain)](https://wokwi.com/projects/new?lang=es-ES)
 - [German](https://wokwi.com/projects/new?lang=de)
 - [Hungarian](https://wokwi.com/projects/new?lang=hu)
+- [Italian](https://wokwi.com/projects/new?lang=it)
 - [Portuguese](https://wokwi.com/projects/new?lang=pt-BR)
 - [Ukrainian](https://wokwi.com/projects/new?lang=ua)
