@@ -55,7 +55,7 @@ Esta tabela resume o status dos recursos da simulação:
 | UART                     | ✔️     |                                                      |
 | I2C                      | ✔️     | Modo mestre apenas                                   |
 | SPI                      | ✔️     | Master mode only                                     |
-| PWM                      | ❌     |                                                      |
+| PWM                      | ✔️     |                                                      |
 | DMA                      | ✔️     |                                                      |
 | Timer                    | ✔️     | A pausa do cronômetro ainda não foi implementada     |
 | ARM SysTick Timer        | 🟡     | Implementação parcial                                |

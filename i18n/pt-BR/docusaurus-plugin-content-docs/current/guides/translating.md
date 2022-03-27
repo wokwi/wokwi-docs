@@ -18,7 +18,9 @@ Nem todos os textos estão atualmente disponíveis para tradução, mas estamos 
 ### Traduções existentes
 
 - [Chinês](https://wokwi.com/projects/new?lang=zh)
+- [Espanhol (Espanha)](https://wokwi.com/projects/new?lang=es-ES)
 - [Alemão](https://wokwi.com/projects/new?lang=de)
 - [Húngaro](https://wokwi.com/projects/new?lang=hu)
+- [Italiano](https://wokwi.com/projects/new?lang=it)
 - [Português](https://wokwi.com/projects/new?lang=pt-BR)
 - [Ucraniano](https://wokwi.com/projects/new?lang=ua)

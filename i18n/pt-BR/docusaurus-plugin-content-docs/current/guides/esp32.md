@@ -74,11 +74,11 @@ Os exemplos a seguir usam as funções ESP-IDF. Eles são compilados usando o Ar
 | UART               | ✔️     | Apenas UART0 por enquanto                                                  |
 | I2C                | ✔️     | Somente Master, endereçamento de 10 bits não suportado.                    |
 | I2S                | ❌     | [Aberto para votação](https://wokwi.com/features#feature-1031718532)       |
-| SPI                | ❌     |                                                                            |
+| SPI                | ✔️     |                                                                            |
 | RMT                | 🟡     | Apenas transmissão, use para controlar NeoPixels                           |
 | LEDC PWM           | ✔️     | Usado por analogWrite(), Servo, Buzzer, etc.                               |
 | MCPWM              | ❌     |                                                                            |
-| DMA                | ❌     |                                                                            |
+| DMA                | 🟡     |                                                                            |
 | WiFi               | ✔️     | Veja o [Guia WiFi do ESP32](./esp32-wifi)                                  |
 | Bluetooth          | ❌     | [Aberto para votação](https://wokwi.com/features#feature-1047159691)       |
 | Timers             | 🟡     |                                                                            |
