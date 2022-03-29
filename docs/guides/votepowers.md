@@ -44,7 +44,7 @@ If you voted for a feature that has been cancelled for whatever reason, you'll a
 
 ### Seeing your votes
 
-You can see your personal vote history in the [VotePowers Translation Log page](https://wokwi.com/features/history). If you don't see any transactions in this page, it means that you haven't voted for any feature yet.
+You can see your personal vote history in the [VotePowers Transaction Log page](https://wokwi.com/features/history). If you don't see any transactions in this page, it means that you haven't voted for any feature yet.
 
 ## Suggesting new features
 
