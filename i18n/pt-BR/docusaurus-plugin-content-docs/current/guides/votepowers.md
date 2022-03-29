@@ -42,6 +42,10 @@ Podemos cancelar um recurso que não recebeu nenhum voto por 60 dias e fechar o 
 
 Se você votou em um recurso que foi cancelado por qualquer motivo, você receberá automaticamente de volta os votos que gastou nele.
 
+### Vendo seus votos
+
+Você pode ver seu histórico de votos pessoais na página [VotePowers Transaction History](https://wokwi.com/features/history). Se você não ver nenhuma transação nesta página, significa que você ainda não votou em nenhum recurso.
+
 ## Sugestão de novos recursos
 
 Todos podem sugerir recursos abrindo [uma solicitação no GitHub](https://github.com/wokwi/wokwi-features/issues/new?labels=enhancement&template=feature_request.md&title=).Nós revisamos todas as sugestões. Se uma sugestão for adequada para Wokwi, vamos abri-la para votação adicionando o rótulo "aberto para votação" no GitHub e ela aparecerá na página de votação.
