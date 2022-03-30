@@ -57,6 +57,7 @@ module.exports = {
       'parts/wokwi-servo',
       'parts/wokwi-slide-potentiometer',
       'parts/wokwi-slide-switch',
+      'parts/wokwi-stepper-motor',
       'parts/wokwi-ssd1306',
       'parts/wokwi-tv',
     ],
