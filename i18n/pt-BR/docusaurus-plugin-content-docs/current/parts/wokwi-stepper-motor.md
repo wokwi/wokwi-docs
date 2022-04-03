@@ -37,7 +37,7 @@ Um motor de passo bipolar
 
 Ao usar um motor de passo, você precisa de um chip de driver que possa fornecer grandes quantidades de corrente às bobinas do motor. Alguns exemplos de chips de driver de motor de passo comuns são A4988, DRV8825 e o L298N. O Wokwi ainda não suporta nenhum desses chips de driver, mas você pode conectar o motor de passo diretamente ao seu microcontrolador. O Wokwi usa um mecanismo de simulação digital, portanto, a corrente não é levada em consideração.
 
-You can use a variety of Arduino libraries to control the stepper motor: Stepper, AccelStepper, etc.
+Você pode usar uma variedade de bibliotecas do Arduino para controlar o motor de passo: Stepper, AccelStepper, etc.
 
 ### Comportamento da Simulação
 

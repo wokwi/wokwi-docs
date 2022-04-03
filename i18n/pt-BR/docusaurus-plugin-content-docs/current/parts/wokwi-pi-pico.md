@@ -74,7 +74,7 @@ Legenda:
 
 O núcleo do Arduino fornece as funções integradas do Arduino, como `pinMode()` e `digitalRead()`, bem como um conjunto de bibliotecas padrão do Arduino, como Servo, Wire e SPI.
 
-Ao compilar seu código para o Raspberry Pi Pi Pico, você pode escolher entre dois núcleos diferentes:
+Ao compilar seu código para o Raspberry Pi Pico, você pode escolher entre dois núcleos diferentes:
 
 - O [núcleo oficial do Pi Pico](https://github.com/arduino/ArduinoCore-mbed), baseado no sistema operacional Mbed. Este é o padrão.
 - [Mantido pela comunidade Pi Pico Arduino Core](https://github.com/earlephilhower/arduino-pico), construído sobre o [Pi Pico SDK](https://github.com/raspberrypi/pico-sdk).
