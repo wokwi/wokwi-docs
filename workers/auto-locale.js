@@ -62,18 +62,5 @@ async function handleRequest(request) {
     }
   }
 
-  /* Per-page social thumbnails (og:image) */
-  const response = await fetch(request);
-  if (response.headers.get('Content-type').startsWith('text/html')) {
-    const text = await response.text();
-    return new Response(
-      text.replaceAll(
-        'https://docs.wokwi.com/img/wokwi-book.jpg',
-        `https://thumbs.wokwi.com/docs${pathname}/thumbnail.png`,
-      ),
-      response,
-    );
-  }
-
-  return response;
+  return fetch(request);
 }
