@@ -35,13 +35,13 @@ A bipolar stepper motor
 
 ## Using the stepper motor
 
-When using a stepper motor you need a driver chip that can supply large amounts of current to the motor coils. Some example for common stepper motor driver chips are A4988, DRV8825, and the L298N. Wokwi does not yet support any of these driver chips, but you can wire the stepper motor directly to your microcontroller. Wokwi uses a digital simulation engine, so the current is not taken into account.
+When using a stepper motor you need a driver chip that can supply large amounts of current to the motor's coils. Wokwi supports the common [A4988 driver board](wokwi-a4988). You can also wire the stepper motor directly to your microcontroller. Wokwi uses a digital simulation engine, so the coil current is not taken into account.
 
 You can use a variety of Arduino libraries to control the stepper motor: Stepper, AccelStepper, etc.
 
 ### Simulation Behavior
 
-The stepper motor supports half-stepping.
+The stepper motor moves 1.8 degrees per step (200 steps per revolution). The motor also supports half-stepping (0.9 degrees per step / 400 steps per revolution). You can even use smaller microsteps (e.g. 1/4 or 1/8 step), but the simulated motor only displays the angle in half-step resolution. For more information, check out the [A4988 microstepping configuration table](wokwi-a4988#microstepping-configuration).
 
 ## Simulator examples
 
