@@ -20,6 +20,7 @@ module.exports = {
       'parts/wokwi-74hc165',
       'parts/wokwi-74hc595',
       'parts/wokwi-7segment',
+      'parts/wokwi-a4988',
       'parts/wokwi-analog-joystick',
       'parts/wokwi-arduino-mega',
       'parts/wokwi-arduino-nano',
