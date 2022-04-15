@@ -46,24 +46,24 @@ The interactive editor does not support setting the color of wires. You can, how
 
 ### Deleting a wire
 
-Delete a wire by clicking on it.
+Delete a wire by double-clicking on it.
 
 ## Keyboard shortcuts
 
 The following table summarizes the keyboard shortcuts:
 
-| Key    | Function                                    |
-| ------ | ------------------------------------------- |
-| -      | Zoom out                                    |
-| +      | Zoom in                                     |
-| R      | Rotate the selected part                    |
-| Delete | Delete the selected part                    |
-| ?      | Open documentation for the selected part    |
-| Escape | Cancel wire (in wiring mode)                |
-| G      | Toggle the grid                             |
-| Shift  | Toggle coarse grid snapping while dragging  |
-| Alt    | Toggle fine grid snapping while dragging    |
-| Ctrl   | Toggle fine grid snapping while dragging    |
+| Key    | Function                                   |
+| ------ | ------------------------------------------ |
+| -      | Zoom out                                   |
+| +      | Zoom in                                    |
+| R      | Rotate the selected part                   |
+| Delete | Delete the selected part / wire            |
+| ?      | Open documentation for the selected part   |
+| Escape | Cancel wire (in wiring mode)               |
+| G      | Toggle the grid                            |
+| Shift  | Toggle coarse grid snapping while dragging |
+| Alt    | Toggle fine grid snapping while dragging   |
+| Ctrl   | Toggle fine grid snapping while dragging   |
 
 Firefox users: if the keyboard shortcuts don't work for you, please make sure that the "Search for text when you start typing" setting is disabled.
 
