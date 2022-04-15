@@ -17,6 +17,7 @@ module.exports = {
     ],
     'Diagram Reference': [
       'diagram-format',
+      'parts/board-franzininho-wifi',
       'parts/wokwi-74hc165',
       'parts/wokwi-74hc595',
       'parts/wokwi-7segment',
