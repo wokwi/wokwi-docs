@@ -35,13 +35,13 @@ Um motor de passo bipolar
 
 ## Usando o motor de passo
 
-Ao usar um motor de passo, você precisa de um chip de driver que possa fornecer grandes quantidades de corrente às bobinas do motor. Alguns exemplos de chips de driver de motor de passo comuns são A4988, DRV8825 e o L298N. O Wokwi ainda não suporta nenhum desses chips de driver, mas você pode conectar o motor de passo diretamente ao seu microcontrolador. O Wokwi usa um mecanismo de simulação digital, portanto, a corrente não é levada em consideração.
+Ao usar um motor de passo, você precisa de um driver que possa fornecer grandes quantidades de corrente às bobinas do motor. Wokwi suporta a [placa de driver A4988] (wokwi-a4988). Você também pode conectar o motor de passo diretamente ao seu microcontrolador. O Wokwi usa um mecanismo de simulação digital, portanto, a corrente da bobina não é levada em consideração.
 
 Você pode usar uma variedade de bibliotecas do Arduino para controlar o motor de passo: Stepper, AccelStepper, etc.
 
 ### Comportamento da Simulação
 
-O motor de passo suporta meio passo.
+O motor de passo se move 1,8 graus por passo (200 passos por revolução). O motor também suporta meio passo (0,9 graus por passo / 400 passos por revolução). Você pode até usar micropassos menores (por exemplo, 1/4 ou 1/8 de passo), mas o motor simulado exibe apenas o ângulo em resolução de meio passo. Para obter mais informações, consulte a [tabela de configuração de microstepping A4988](wokwi-a4988#microstepping-configuration).
 
 ## Exemplos no simulador
 

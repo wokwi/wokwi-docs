@@ -3,21 +3,28 @@ title: Simulador ESP32
 sidebar_label: Simulador ESP32
 ---
 
-O Simulador ESP32 está atualmente em versão beta. Existem duas placas ESP32:
-
-- ESP32 DevKit v1 - placa de desenvolvimento ESP32 popular
-- [TinyPico](https://www.tinypico.com/) - uma placa ESP32 por [UnexpectedMaker](https://unexpectedmaker.com/)
+O ESP32 é um microcontrolador popular habilitado para WiFi e Bluetooth, amplamente utilizado para projetos de IoT. Wokwi simula o ESP32, ESP32-S2 e ESP32-C3 (beta).
 
 <wokwi-esp32-devkit-v1></wokwi-esp32-devkit-v1>
 
-Você pode contribuir com painéis adicionais, enviando-nos um [pull request](https://github.com/wokwi/wokwi-boards).
+## ESP32 boards
+
+| Nome                                                | Chip     | Descrição                                         |
+| --------------------------------------------------- | -------- | ------------------------------------------------- |
+| ESP32 DevKit v1                                     | ESP32    | Placa de desenvolvimento popular ESP32            |
+| TinyPICO                                            | ESP32    | Placa ESP32 compacta por UnexpectedMaker          |
+| [Franzininho WiFi](../parts/board-franzininho-wifi) | ESP32-S2 | Placa ESP32-S2 da Comunidade Franzininho          |
+| ESP32-C3-DevKitM-1                                  | ESP32-C3 | Placa de desenvolvimento ESP32-C3 de nível básico |
+| Rust Board ESP32-C3                                 | ESP32-C3 | Placa ESP32-C3 para desenvolvimento Rust          |
+
+Você pode contribuir com quadros adicionais enviando um pull request para [wokwi-boards](https://github.com/wokwi/wokwi-boards).
 
 ## Começando
 
 Você pode usar o simulador ESP32 de três maneiras:
 
-1. Crie projetos usando o ESP32 Arduino Core
-2. Execute projetos MicroPython
+1. Crie projetos usando o ESP32 Arduino Core (incluindo projetos ESP-IDF)
+2. Execute projetos MicroPython (também CircuitPython no ESP32-S2)
 3. Simule arquivos de aplicativo bin que você construiu em sua máquina (por exemplo, usando ESP-IDF)
 
 ### Arduino Core
@@ -65,37 +72,41 @@ Os exemplos a seguir usam as funções ESP-IDF. Eles são compilados usando o Ar
 
 ## Recursos do simulador
 
-| Periférico         | Status | Notas                                                                      |
-| ------------------ | ------ | -------------------------------------------------------------------------- |
-| Processor core     | ✔️     | Ambos os núcleos são simulados                                             |
-| GPIO               | ✔️     | Interrupções suportadas                                                    |
-| IOMUX              | 🟡     |                                                                            |
-| PSRAM              | ✔️     | 4MB de SRAM externa                                                        |
-| UART               | ✔️     | Apenas UART0 por enquanto                                                  |
-| I2C                | ✔️     | Somente Master, endereçamento de 10 bits não suportado.                    |
-| I2S                | ❌     | [Aberto para votação](https://wokwi.com/features#feature-1031718532)       |
-| SPI                | ✔️     |                                                                            |
-| RMT                | 🟡     | Apenas transmissão, use para controlar NeoPixels                           |
-| LEDC PWM           | ✔️     | Usado por analogWrite(), Servo, Buzzer, etc.                               |
-| MCPWM              | ❌     |                                                                            |
-| DMA                | 🟡     |                                                                            |
-| WiFi               | ✔️     | Veja o [Guia WiFi do ESP32](./esp32-wifi)                                  |
-| Bluetooth          | ❌     | [Aberto para votação](https://wokwi.com/features#feature-1047159691)       |
-| Timers             | 🟡     |                                                                            |
-| Watchdog           | ❌     |                                                                            |
-| RTC                | 🟡     | Apenas resistores RTC pull-up / pull-down                                  |
-| ADC                | ✔️     | Nota: analogRead() retorna valores até 4095                                |
-| RNG                | ✔️     | Gerador de números aleatórios                                              |
-| AES Accelerator    | ✔️     |                                                                            |
-| SHA Accelerator    | ✔️     |                                                                            |
-| RSA Accelerator    | ✔️     |                                                                            |
-| Hall Effect Sensor | ❌     |                                                                            |
-| GDB Debugging      | 🟡     | Apenas atraves [wokwi-gdbserver](https://github.com/wokwi/wokwi-gdbserver) |
-
+| Periférico           | ESP32 | S2 | C3 | Notas                                                                         |
+| -------------------- | ----- | -- | -- | ----------------------------------------------------------------------------- |
+| Processador core(s)  | ✔️    | ✔️ | ✔️  |                                                                               |
+| GPIO                 | ✔️    | ✔️ | ✔️  | Interrupções suportadas                                                       |
+| IOMUX                | 🟡    | 🟡 | 🟡  |                                                                               |
+| PSRAM                | ✔️    | ✔️ | —  | 4MB de SRAM externa                                                           |
+| UART                 | ✔️    | ✔️ | ✔️  |                                                                               |
+| USB                  | —    | ✔️ | ❌  | Suporte para UART sobre USB (CDC)                                             |
+| I2C                  | ✔️    | ✔️ | ✔️  | Mestre apenas. Endereçamento de 10 bits não suportado.                        |
+| I2S                  | ❌    | ❌ | ❌  | [Aberto para votação](https://wokwi.com/features#feature-1031718532)          |
+| SPI                  | ✔️    | ❌ | ❌  |                                                                               |
+| TWAI                 | ❌    | ❌ | ❌  |                                                                               |
+| RMT                  | 🟡    | ✔️ | ✔️  | Somente transmissão, use para controlar NeoPixels                             |
+| LEDC PWM             | ✔️    | ✔️ | ✔️  | Used by analogWrite(), Servo, Buzzer, etc.                                    |
+| MCPWM                | ❌    | — |  —  |                                                                               |
+| DMA                  | 🟡    | 🟡 | 🟡  |                                                                               |
+| WiFi                 | ✔️    | ✔️ | ✔️  | Veja o [Guia WiFi do ESP32](./esp32-wifi)                                     |
+| Bluetooth            | ❌    | — |  ❌  | [Aberto para votação](https://wokwi.com/features#feature-1047159691)          |
+| Timers               | 🟡    | ✔️ | ✔️  |                                                                               |
+| Watchdog             | ❌    | ❌ | ❌  |                                                                               |
+| RTC                  | 🟡    | 🟡 | 🟡  | Apenas resistores RTC pull-up / pull-down                                     |
+| ADC                  | ✔️    | ✔️ | ❌  | Nota: analogRead() retorna valores até 4095                                   |
+| RNG                  | ✔️    | ✔️ | —  | Gerador de números aleatórios                                                 |
+| AES Accelerator      | ✔️    | ✔️ | ✔️  |                                                                               |
+| SHA Accelerator      | ✔️    | ✔️ | ✔️  |                                                                               |
+| RSA Accelerator      | ✔️    | ✔️ | ✔️  |                                                                               |
+| Hall Effect Sensor   | ❌    | —  |  —  |                                                                               |
+| ULP Processor        | ❌    | ❌  | ❌  |                                                                               |
+| GDB Debugging        | 🟡    | 🟡  | 🟡  | Apenas através do [wokwi-gdbserver](https://github.com/wokwi/wokwi-gdbserver) |
+  
 Legenda:  
 ✔️ - Simulado  
 🟡 - Implementação parcial/trabalho em andamento  
-❌ - Não implementado (mas se você precisar, [abra uma solicitação de recurso](https://github.com/wokwi/wokwi-features/issues/new?labels=enhancement&template=feature_request.md))
+❌ - Não implementado (mas se você precisar, [abra uma solicitação de recurso](https://github.com/wokwi/wokwi-features/issues/new?labels=enhancement&template=feature_request.md))  
+— - Não disponível neste chip
 
 ## Simulação WiFi
 
