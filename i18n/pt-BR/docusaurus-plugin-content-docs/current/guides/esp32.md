@@ -17,7 +17,7 @@ O ESP32 é um microcontrolador popular habilitado para WiFi e Bluetooth, amplame
 | ESP32-C3-DevKitM-1                                  | ESP32-C3 | Placa de desenvolvimento ESP32-C3 de nível básico |
 | Rust Board ESP32-C3                                 | ESP32-C3 | Placa ESP32-C3 para desenvolvimento Rust          |
 
-Você pode contribuir com quadros adicionais enviando um pull request para [wokwi-boards](https://github.com/wokwi/wokwi-boards).
+Você pode contribuir com placas adicionais enviando um pull request para [wokwi-boards](https://github.com/wokwi/wokwi-boards).
 
 ## Começando
 
