@@ -42,7 +42,27 @@ To cancel a new wire (delete it without selecting a target pin) click the right 
 
 The color of new wires is automatically determined by the function of the pin: wires starting from ground pins are black, 5&nbsp;V pins are red, and other wires are green.
 
-The interactive editor does not support setting the color of wires. You can, however, change the color of any wire by editing [diagram.json](../diagram-format#connections)
+You can change the color of a wire by clicking on it, and then pressing one of the following keys:
+
+| Key | Color         |
+| --- | ------------- |
+| A   | Gr**a**y      |
+| B   | **B**lue      |
+| C   | **C**yan      |
+| D   | Gol**d**      |
+| K   | Blac**k**     |
+| L   | **L**imegreen |
+| M   | **M**agenta   |
+| N   | Gree**n**     |
+| O   | **O**range    |
+| P   | **P**urple    |
+| Q   | Brown         |
+| R   | **R**ed       |
+| V   | **V**iolet    |
+| W   | **W**hite     |
+| Y   | **Y**ellow    |
+
+These keyboard shortcuts also work while drawing a new wire. You can also change wire colors by editing [diagram.json](../diagram-format#connections)
 
 ### Deleting a wire
 
