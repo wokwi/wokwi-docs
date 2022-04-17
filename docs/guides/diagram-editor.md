@@ -76,6 +76,7 @@ The following table summarizes the keyboard shortcuts:
 | ------ | ------------------------------------------ |
 | -      | Zoom out                                   |
 | +      | Zoom in                                    |
+| F      | Fit diagram to window (auto zoom)          |
 | R      | Rotate the selected part                   |
 | Delete | Delete the selected part / wire            |
 | ?      | Open documentation for the selected part   |
