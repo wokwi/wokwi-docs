@@ -42,31 +42,31 @@ To cancel a new wire (delete it without selecting a target pin) click the right 
 
 The color of new wires is automatically determined by the function of the pin: wires starting from ground pins are black, 5&nbsp;V pins are red, and other wires are green.
 
-You can change the color of a wire by clicking on it, and then pressing one of the following keys:
+You can change the color of a wire by clicking on it, and then selecting a new color for the wire. You can also use the following keyboard shortcuts to set wire colors:
 
-| Key | Color         |
-| --- | ------------- |
-| A   | Gr**a**y      |
-| B   | **B**lue      |
-| C   | **C**yan      |
-| D   | Gol**d**      |
-| K   | Blac**k**     |
-| L   | **L**imegreen |
-| M   | **M**agenta   |
-| N   | Gree**n**     |
-| O   | **O**range    |
-| P   | **P**urple    |
-| Q   | Brown         |
-| R   | **R**ed       |
-| V   | **V**iolet    |
-| W   | **W**hite     |
-| Y   | **Y**ellow    |
+| Shortcut | Color     |
+| -------- | --------- |
+| 0        | Black     |
+| 1        | Brown     |
+| 2        | Red       |
+| 3        | Orange    |
+| 4        | Gold      |
+| 5        | Green     |
+| 6        | Blue      |
+| 7        | Violet    |
+| 8        | Gray      |
+| 9        | White     |
+| C        | Cyan      |
+| L        | Limegreen |
+| M        | Magenta   |
+| P        | Purple    |
+| Y        | Yellow    |
 
 These keyboard shortcuts also work while drawing a new wire. You can also change wire colors by editing [diagram.json](../diagram-format#connections)
 
 ### Deleting a wire
 
-Delete a wire by double-clicking on it.
+Select a wire by clicking on it, and then click the trash icon on the wire (or press the Delete key). You can also delete a wire by double-clicking on it.
 
 ## Keyboard shortcuts
 
@@ -108,3 +108,5 @@ The Shift key temporarily toggles the grid snapping mode between the coarse grid
 The Alt key or the Ctrl key temporarily toggle to fine grid snapping whether the grid is visible or not.
 
 This grid snapping behaviour is the same for both parts and new wires, and the modifier keys allow you to perform grid snapping whether the grid is on or off.
+
+When you start the simulation, Wokwi hides the grid. Stopping the simulation restores the grid.
