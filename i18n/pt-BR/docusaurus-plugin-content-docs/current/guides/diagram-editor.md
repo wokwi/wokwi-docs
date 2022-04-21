@@ -42,7 +42,27 @@ Para cancelar um novo fio (exclua-o sem selecionar um pino de destino), clique c
 
 A cor dos novos fios é determinada automaticamente pela função do pino: os fios que começam nos pinos de aterramento são pretos, pinos de 5V são vermelhos e os outros fios são verdes.
 
-O editor interativo não oferece suporte para definir a cor dos fios. Você pode, no entanto, alterar a cor de qualquer fio editando [diagram.json](../diagram-format#connections)
+Você pode alterar a cor de um fio clicando nele e selecionando uma nova cor para o fio. Você também pode usar os seguintes atalhos de teclado para definir as cores dos fios:
+
+| Atalho | Cor         |
+| ------ | ----------- |
+| 0      | Preto       |
+| 1      | Marrom      |
+| 2      | Vermelho    |
+| 3      | Laranja     |
+| 4      | Ouro        |
+| 5      | Verde       |
+| 6      | Azul        |
+| 7      | Violeta     |
+| 8      | Cinza       |
+| 9      | Branco      |
+| C      | Ciano       |
+| L      | Verde limão |
+| M      | Magenta     |
+| P      | Roxo        |
+| Y      | Amarelo     |
+
+Esses atalhos de teclado também funcionam ao desenhar um novo fio. Você também pode alterar as cores dos fios editando o [diagram.json](../diagram-format#connections)
 
 ### Excluindo uma ligação
 
@@ -52,18 +72,19 @@ Exclua um fio clicando nele.
 
 A tabela a seguir resume os atalhos do teclado:
 
-| Tecla  | Função                                      |
-| ------ | ------------------------------------------- |
-| -      | Reduz o zoom                                |
-| +      | Aumenta o zoom                              |
-| R      | Gira a peça selecionada                     |
-| Delete | Remove a peça selecionada                   |
-| ?      | Abre a documentação da peça selecionada     |
-| Escape | Cancela o fio (no modo de fiação)           |
-| G      | Alterna a grade                             |
-| Shift  | Alterna ajuste grosso da grade ao arrastar  |
-| Alt    | Alterna ajuste fino da grade ao arrastar    |
-| Ctrl   | Alterna ajuste fino da grade ao arrastar    |
+| Tecla  | Função                                       |
+| ------ | -------------------------------------------- |
+| -      | Reduz o zoom                                 |
+| +      | Aumenta o zoom                               |
+| F      | Ajusta o diagrama à janela (zoom automático) |
+| R      | Gira a peça selecionada                      |
+| Delete | Remove a peça selecionada                    |
+| ?      | Abre a documentação da peça selecionada      |
+| Escape | Cancela o fio (no modo de fiação)            |
+| G      | Alterna a grade                              |
+| Shift  | Alterna ajuste grosso da grade ao arrastar   |
+| Alt    | Alterna ajuste fino da grade ao arrastar     |
+| Ctrl   | Alterna ajuste fino da grade ao arrastar     |
 
 Usuários do Firefox: se os atalhos do teclado não funcionarem, certifique-se de que a configuração "Pesquisar texto ao começar a digitar" esteja desabilitada.
 

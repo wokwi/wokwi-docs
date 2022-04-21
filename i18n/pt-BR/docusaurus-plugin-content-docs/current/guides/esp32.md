@@ -82,12 +82,12 @@ Os exemplos a seguir usam as funções ESP-IDF. Eles são compilados usando o Ar
 | USB                  | —    | ✔️ | ❌  | Suporte para UART sobre USB (CDC)                                             |
 | I2C                  | ✔️    | ✔️ | ✔️  | Mestre apenas. Endereçamento de 10 bits não suportado.                        |
 | I2S                  | ❌    | ❌ | ❌  | [Aberto para votação](https://wokwi.com/features#feature-1031718532)          |
-| SPI                  | ✔️    | ❌ | ❌  |                                                                               |
+| SPI                  | ✔️    | ✔️ | ❌  |                                                                               |
 | TWAI                 | ❌    | ❌ | ❌  |                                                                               |
-| RMT                  | 🟡    | ✔️ | ✔️  | Somente transmissão, use para controlar NeoPixels                             |
+| RMT                  | 🟡    | 🟡 | 🟡  | Somente transmissão, use para controlar NeoPixels                             |
 | LEDC PWM             | ✔️    | ✔️ | ✔️  | Used by analogWrite(), Servo, Buzzer, etc.                                    |
 | MCPWM                | ❌    | — |  —  |                                                                               |
-| DMA                  | 🟡    | 🟡 | 🟡  |                                                                               |
+| DMA                  | 🟡    | 🟡 | ❌  |                                                                               |
 | WiFi                 | ✔️    | ✔️ | ✔️  | Veja o [Guia WiFi do ESP32](./esp32-wifi)                                     |
 | Bluetooth            | ❌    | — |  ❌  | [Aberto para votação](https://wokwi.com/features#feature-1047159691)          |
 | Timers               | 🟡    | ✔️ | ✔️  |                                                                               |
