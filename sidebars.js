@@ -18,6 +18,7 @@ module.exports = {
     'Diagram Reference': [
       'diagram-format',
       'parts/board-franzininho-wifi',
+      'parts/board-ssd1306',
       'parts/wokwi-74hc165',
       'parts/wokwi-74hc595',
       'parts/wokwi-7segment',
@@ -60,7 +61,6 @@ module.exports = {
       'parts/wokwi-slide-potentiometer',
       'parts/wokwi-slide-switch',
       'parts/wokwi-stepper-motor',
-      'parts/wokwi-ssd1306',
       'parts/wokwi-tv',
     ],
   },
