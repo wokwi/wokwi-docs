@@ -73,6 +73,11 @@ Each diagram should include a microcontroller part. The following microcontrolle
 - [`wokwi-arduino-mega`](parts/wokwi-arduino-mega) - Arduino Mega 2560
 - [`wokwi-arduino-uno`](parts/wokwi-arduino-uno) - Arduino Uno R3
 - [`wokwi-pi-pico`](parts/wokwi-pi-pico) - Raspberry Pi Pico
+- `wokwi-esp32-devkit-v1` - ESP32
+- `board-esp32-s2-devkitm-1` - ESP32-S2
+- [`board-franzininho-wifi`](parts/board-franzininho-wifi) - ESP32-S2
+- `board-esp32-c3-devkitm-1` - ESP32-C3
+- `board-esp32-c3-rust-1` - ESP32-C3
 
 :::tip
 Instead of manually specifying the left/top coordinates for each item, you
