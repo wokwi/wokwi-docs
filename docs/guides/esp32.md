@@ -13,6 +13,7 @@ The ESP32 is a popular WiFi and Bluetooth-enabled microcontroller, widely used f
 | --------------------------------------------------- | -------- | -------------------------------------- |
 | ESP32 DevKit v1                                     | ESP32    | Popular ESP32 development board        |
 | TinyPICO                                            | ESP32    | Small ESP32 board by UnexpectedMaker   |
+| ESP32-S2-DevKitM-1                                  | ESP32-S2 | Entry-level ESP32-S2 development board |
 | [Franzininho WiFi](../parts/board-franzininho-wifi) | ESP32-S2 | Board by the Franzininho Community     |
 | ESP32-C3-DevKitM-1                                  | ESP32-C3 | Entry-level ESP32-C3 development board |
 | Rust Board ESP32-C3                                 | ESP32-C3 | ESP32-C3 board for Rust development    |
