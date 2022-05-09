@@ -14,6 +14,7 @@ O ESP32 é um microcontrolador popular habilitado para WiFi e Bluetooth, amplame
 | ESP32 DevKit v1                                     | ESP32    | Placa de desenvolvimento popular ESP32            |
 | TinyPICO                                            | ESP32    | Placa ESP32 compacta por UnexpectedMaker          |
 | [Franzininho WiFi](../parts/board-franzininho-wifi) | ESP32-S2 | Placa ESP32-S2 da Comunidade Franzininho          |
+| ESP32-S2-DevKitM-1                                  | ESP32-S2 | Placa de desenvolvimento ESP32-S2 de nível básico |
 | ESP32-C3-DevKitM-1                                  | ESP32-C3 | Placa de desenvolvimento ESP32-C3 de nível básico |
 | Rust Board ESP32-C3                                 | ESP32-C3 | Placa ESP32-C3 para desenvolvimento Rust          |
 
@@ -82,7 +83,7 @@ Os exemplos a seguir usam as funções ESP-IDF. Eles são compilados usando o Ar
 | USB                  | —    | ✔️ | ❌  | Suporte para UART sobre USB (CDC)                                             |
 | I2C                  | ✔️    | ✔️ | ✔️  | Mestre apenas. Endereçamento de 10 bits não suportado.                        |
 | I2S                  | ❌    | ❌ | ❌  | [Aberto para votação](https://wokwi.com/features#feature-1031718532)          |
-| SPI                  | ✔️    | ✔️ | ❌  |                                                                               |
+| SPI                  | ✔️    | ✔️ | ✔️  |                                                                               |
 | TWAI                 | ❌    | ❌ | ❌  |                                                                               |
 | RMT                  | 🟡    | 🟡 | 🟡  | Somente transmissão, use para controlar NeoPixels                             |
 | LEDC PWM             | ✔️    | ✔️ | ✔️  | Used by analogWrite(), Servo, Buzzer, etc.                                    |
