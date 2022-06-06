@@ -21,6 +21,7 @@ To connect from Arduino (on an ESP32) device, use the following code:
 #include <WiFi.h>
 
 void setup() {
+  Serial.begin(9600);
   Serial.print("Connecting to WiFi");
   WiFi.begin("Wokwi-GUEST", "", 6);
   while (WiFi.status() != WL_CONNECTED) {
