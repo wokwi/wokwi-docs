@@ -25,6 +25,13 @@ Full color 240x320 2.8" LCD-TFT display with SPI interface
 † You connect CS and D/C to any digital Arduino pin. The pin numbers here are just an example.  
 ‡ You can leave MISO disconnected, unless you need to read data back from the LCD.
 
+## Attributes
+
+| Name           | Description                                 | Default value |
+| -------------- | ------------------------------------------- | ------------- |
+| flipHorizontal | Set to "1" to flip the display horizontally | ""            |
+| flipVertical   | Set to "1" to flip the display vertically   | ""            |
+
 ## Using in Arduino
 
 You can use the _Adafruit_ILI9341_ library or the _lcdgfx_ library to interface with the LCD display. The following code example shows basic usage with _Adafruit_ILI9341_. It works with the pin connections from the table above:
