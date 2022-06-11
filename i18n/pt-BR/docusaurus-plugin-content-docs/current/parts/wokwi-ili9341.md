@@ -25,6 +25,13 @@ Display colorido LCD-TFT 240x320 de 2,8" com interface SPI
 † Você pode conectar o CS e D/C a qualquer pino digital do Arduino. Os números dos pinos aqui são apenas um exemplo.  
 ‡ Você pode deixar o MISO desconectado, a menos que precise ler os dados do LCD.
 
+## Atributos
+
+| Nome           | Descrição                                         | Valor padrão  |
+| -------------- | ------------------------------------------------- | ------------- |
+| flipHorizontal | Defina como "1" para virar a tela horizontalmente | ""            |
+| flipVertical   | Defina como "1" para virar a tela verticalmente   | ""            |
+
 ## Uso no Arduino
 
 Você pode usar as bibliotecas _Adafruit_ILI9341_ ou _lcdgfx_ para fazer a interface com o display LCD. O exemplo de código a seguir mostra o uso básico com _Adafruit_ILI9341_. Funciona com as conexões de pino da tabela acima:
