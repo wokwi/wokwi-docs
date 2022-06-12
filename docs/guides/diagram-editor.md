@@ -24,6 +24,10 @@ Move a part by clicking on it and then dragging it with your mouse.
 Rotate a part by clicking on it (to select it) and then pressing "R". The part will rotate 90 degrees clockwise. If you need to rotate a part by
 a different amount (e.g. 45 degrees), you can achieve that by [editing diagram.json](../diagram-format#parts).
 
+### Duplicating a part
+
+Create a new copy of a part by clicking on it (to select it) and the pressing "D". You can press "D" several times to create multiple copies of the part.
+
 ### Deleting a part
 
 Delete a part by clicking on it (to select it) and then pressing the Delete button.
@@ -77,6 +81,7 @@ The following table summarizes the keyboard shortcuts:
 | -      | Zoom out                                   |
 | +      | Zoom in                                    |
 | F      | Fit diagram to window (auto zoom)          |
+| D      | Duplicate (copy) the selected part         |
 | R      | Rotate the selected part                   |
 | Delete | Delete the selected part / wire            |
 | ?      | Open documentation for the selected part   |
