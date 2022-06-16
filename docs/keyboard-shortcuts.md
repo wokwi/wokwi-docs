@@ -5,13 +5,15 @@ sidebar_label: Keyboard Shortcuts
 
 ## General shortcuts
 
-| Description                    | Windows / Linux | Mac     |
-| ------------------------------ | --------------- | ------- |
-| Start simulation               | Ctrl + Enter    | ⌘ Enter |
-| Save project                   | Ctrl + S        | ⌘ S     |
-| Auto format code               | Alt + Shift + F | ⌥ ⇧ F   |
-| Trigger auto complete          | Ctrl + Space    | ⌘ Space |
+| Description                     | Windows / Linux | Mac     |
+| ------------------------------- | --------------- | ------- |
+| Start simulation                | Ctrl + Enter    | ⌘ Enter |
+| Save project                    | Ctrl + S        | ⌘ S     |
+| Auto format code                | Alt + Shift + F | ⌥ ⇧ F   |
+| Trigger auto complete           | Ctrl + Space    | ⌘ Space |
 | Show list of available commands | F1              | F1      |
+| Jump to next error in file      | F8              | F8      |
+| Jump to previous error in file  | Shift + F8      | ⇧ F8    |
 
 ## Basic editing keys
 
