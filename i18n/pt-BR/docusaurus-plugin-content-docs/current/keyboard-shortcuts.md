@@ -5,13 +5,15 @@ sidebar_label: Teclas de Atalho
 
 ## Atalhos Gerais
 
-| Descrição                      | Windows / Linux | Mac     |
-| ------------------------------ | --------------- | ------- |
-| Iniciar simulação              | Ctrl + Enter    | ⌘ Enter |
-| Salvar projeto                 | Ctrl + S        | ⌘ S     |
-| Código de formatação automática| Alt + Shift + F | ⌥ ⇧ F   |
-| Abre o Autocompletar           | Ctrl + Space    | ⌘ Space |
-| Mostra lista de comandos       | F1              | F1      |
+| Descrição                           | Windows / Linux | Mac     |
+| ----------------------------------- | --------------- | ------- |
+| Inicia a simulação                  | Ctrl + Enter    | ⌘ Enter |
+| Salva o projeto                     | Ctrl + S        | ⌘ S     |
+| Código de formatação automática     | Alt + Shift + F | ⌥ ⇧ F   |
+| Abre o Autocompletar                | Ctrl + Space    | ⌘ Space |
+| Mostra lista de comandos            | F1              | F1      |
+| Vai para o próximo erro no arquivo  | F8              | F8      |
+| Vai para o erro anterior no arquivo | Shift + F8      | ⇧ F8    |
 
 ## Teclas básicas de edição
 
