@@ -24,6 +24,10 @@ Mova uma parte clicando nela e arrastando-a com o mouse.
 Gire uma peça clicando nela (para selecioná-la) e pressionando "R". A peça girará 90 graus no sentido horário. Se você precisar girar uma peça
 com um valor diferente (por exemplo, 45 graus), você pode conseguir isso [editando o diagram.json](../diagram-format#parts).
 
+### Duplicando uma peça
+
+Crie uma nova cópia de uma peça clicando nela (para selecioná-la) e pressionando "D". Você pode pressionar "D" várias vezes para criar várias cópias da peça.
+
 ### Removendo uma peça
 
 Exclua uma peça clicando nela (para selecioná-la) e em seguida pressionando a tecla Delete.
@@ -77,6 +81,7 @@ A tabela a seguir resume os atalhos do teclado:
 | -      | Reduz o zoom                                 |
 | +      | Aumenta o zoom                               |
 | F      | Ajusta o diagrama à janela (zoom automático) |
+| D      | Duplicar (copiar) a peça selecionada         |
 | R      | Gira a peça selecionada                      |
 | Delete | Remove a peça selecionada                    |
 | ?      | Abre a documentação da peça selecionada      |
