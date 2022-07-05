@@ -106,6 +106,8 @@ Then run any ESP32 project that uses the WiFi. Look at the gateway output, it sh
 
 If your ESP32 project is an HTTP server, you can connect to it from your browser at [http://localhost:9080/](http://localhost:9080). The connection will be forwarded by the gateway to the default HTTP port (80) on the simulated ESP32. If you need to forward different ports, please [open an issue on Github](https://github.com/wokwi/wokwigw/issues/new).
 
+Note: The Private IoT Gateway is not currently supported in Safari due to [a technical limitation](https://bugs.webkit.org/show_bug.cgi?id=171934#c96). Please use a different browser (e.g. Chrome, Firefox, Edge).
+
 ## Advanced Usage
 
 ### Network addresses
