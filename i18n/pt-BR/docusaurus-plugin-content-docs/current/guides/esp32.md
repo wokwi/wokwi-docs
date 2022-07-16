@@ -95,7 +95,7 @@ Os exemplos a seguir usam as funções ESP-IDF. Eles são compilados usando o Ar
 | Watchdog             | ❌    | ❌ | ❌  |                                                                               |
 | RTC                  | 🟡    | 🟡 | 🟡  | Apenas resistores RTC pull-up / pull-down                                     |
 | ADC                  | ✔️    | ✔️ | ❌  | Nota: analogRead() retorna valores até 4095                                   |
-| RNG                  | ✔️    | ✔️ | —  | Gerador de números aleatórios                                                 |
+| RNG                  | ✔️    | ✔️ | ✔️  | Gerador de números aleatórios                                                 |
 | AES Accelerator      | ✔️    | ✔️ | ✔️  |                                                                               |
 | SHA Accelerator      | ✔️    | ✔️ | ✔️  |                                                                               |
 | RSA Accelerator      | ✔️    | ✔️ | ✔️  |                                                                               |
