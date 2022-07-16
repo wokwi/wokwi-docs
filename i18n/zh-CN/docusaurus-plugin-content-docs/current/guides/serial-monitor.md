@@ -1,17 +1,16 @@
 ---
-title: The Serial Monitor
-sidebar_label: Serial Monitor
+title: 串行监视器
+sidebar_label: 串行监视器
 ---
 
-The Serial Monitor provides a way to send/receive information to/from your Arduino code.
-You can use it to view debug messages printed by your program, or to send commands that control
-your program.
+串行监视器提供了一种向/从您的 Arduino 代码发送/接收信息的方法。
+你可以使用它来查看程序打印的调试消息，或发送命令控制你的程序。
 
 ## Arduino Uno and Mega
 
-Both the Arduino Uno and Mega have hardware support for the Serial protocol (USART). The Serial Monitor will automatically attach to the hardware serial port and detect the baud rate, so it'll work out of the box without any special configuration.
+Arduino Uno和Mega在硬件上都支持串行协议（USART）。串行监视器将自动连接到硬件串行端口并检测波特率，因此它是开箱即用的，无需任何特殊配置。
 
-You can use [Arduino's Serial class](https://www.arduino.cc/reference/en/language/functions/communication/serial/) to interact with the Serial monitor:
+你可以使用 [Arduino's Serial class](https://www.arduino.cc/reference/en/language/functions/communication/serial/) 与串行监视器交互：
 
 ```cpp
 void setup() {
@@ -25,34 +24,38 @@ void loop() {
 ```
 
 :::caution
-The serial monitor will only show once you print some output from your program. To change this behavior, [see below](#display).
+
+只有当您从程序中打印一些输出时，串行监视器才会显示。要更改这种行为，[见下文](#display)。
+
 :::
 
-The Arduino Mega has multiple hardware Serial ports. You can connect the Serial monitor to a different serial port by configuring the pins in diagram.json. For instance, to connect `Serial2` to the serial monitor, add the following lines to the `connections` section in your diagram:
+
+
+Arduino Mega有多个硬件串行端口。您可以通过在 diagram.json 中配置引脚，将串行监视器连接到其他串行端口。例如，要将`Serial2`连接到串行监视器，请在diagram.json中的`connections` 部分添加以下行：
 
 ```json
   [ "mega:17", "$serialMonitor:TX", "" ],
   [ "mega:16", "$serialMonitor:RX", "" ],
 ```
 
-Replace `mega` with the actual id of your `wokwi-arduino-mega` part.  
-Note that you need to connect `$serialMonitor:TX` to the `RX` pin of the serial port, and `$serialMonitor:RX` to the `TX` pin of the serial port. This can be confusing, I know.
+将 `mega` 部分替换为 你的`wokwi-arduino-mega` 板卡使用的实际ID。
+
+请注意：你需要将 `$serialMonitor:TX` 连接到你的串行端口的 `RX` 引脚，并将 `$serialMonitor:RX` 连接到你的串行端口的 `TX` 引脚。我知道，这可能会令人困惑。（交叉相连，互换角色，你发我收，我发你收）。
 
 ## ATtiny85 + SoftwareSerial
 
-The ATtiny85 chip does not have a built-in hardware support for serial communication (USART). You can use a
-software implementation of the USART protocol to interact with the Serial monitor, using the "SoftwareSerial" library.
+ATtiny85芯片硬件上没有内置串口（USART）。但是你可以使用一个USART协议的软件实现，使用`SoftwareSerial`库与串行监视器交互。
 
-First, define the pins that will be used for Serial communication, by adding the following lines to the `connections` section of your [diagram.json](../diagram-format) file:
+首先，通过将以下行添加到[diagram.json](../diagram-format)中的`connections` 部分，来声明将用于串行通信的引脚：
 
 ```json
   [ "tiny:PB0", "$serialMonitor:TX", "" ],
   [ "tiny:PB1", "$serialMonitor:RX", "" ],
 ```
 
-Replace `tiny` with the actual id of your `wokwi-attiny85` part, and `PB1`/`PB0` with the pin names that you would like to use.
+将 `tiny` 部分替换为`wokwi-attiny85`板卡使用的实际ID，将`PB1`/`PB0`替换为您想要使用的引脚名称。
 
-Then, configure the SoftwareSerial library accordingly:
+然后，根据下面来配置SoftwareSerial库：
 
 ```cpp
 #include <SoftwareSerial.h>
@@ -69,24 +72,22 @@ void loop() {
 }
 ```
 
-Make sure the the pin names in your code match the ones in the diagram file. The first parameter
-to the `SoftwareSerial` constructor should match the pin connected to `$serialMonitor:TX`, and
-the second parameter should match the pin connected to `$serialMonitor:RX`.
+要保证在代码中的引脚名称与图表文件中的引脚名称匹配。第一个参数和`SoftwareSerial`的构造函数匹配并连接到`$serialMonitor:TX`的引脚，并且第二个参数应和连接到`$serialMonitor:RX`的引脚相匹配。
 
 :::caution
-The baud rate must be set to **9600**. This is hard coded in the simulator, and using a different
-value will get you garbage in the Serial monitor.
+波特率必须设置为**9600**。这是在模拟器中硬编码的！如果使用不同的值，串行监视器会中出现垃圾信息。
+
 :::
 
-For a complete example, check out the [ATtiny85 SoftwareSerial example project](https://wokwi.com/projects/290883003139228169).
+如果你想参考完整示例，请查看[ATtiny85 SoftwareSerial example project](https://wokwi.com/projects/290883003139228169)。
 
-Note: if you just want to use the Serial monitor for printing debug messages, take a look at [the TinyDebug library](../parts/wokwi-attiny85#debug-prints-with-tinydebug).
+注意：如果你只想使用串行监视器打印调试消息，请查看[the TinyDebug library](../parts/wokwi-attiny85#debug-prints-with-tinydebug)。
 
-## Configuring the Serial Monitor
+## 串行监视器的配置
 
-You can configure the Serial Monitor by adding a `"serialMonitor"` section to your [diagram.json](../diagram-format) file.
+你可以通过在[diagram.json](../diagram-format)文件中添加`"serialMonitor"` 部分来配置串行监视器。
 
-The default configuration is as follows:
+默认配置如下：
 
 ```json
 "serialMonitor": {
@@ -95,33 +96,35 @@ The default configuration is as follows:
 }
 ```
 
-When you add a  `"serialMonitor"` section, either add it after the last item in diagram.json, or make sure to add a comma after the closing curly brace. You can find a complete example [here](https://wokwi.com/projects/308893120796295745).
+当你添加 `"serialMonitor"`部分时，务必在 diagram.json 的最后一个项目之后添加它，或者确保在关闭花括号后添加逗号。您可以在[这里](https://wokwi.com/projects/308893120796295745)查看完整示例。
 
 ### Display
 
-The `display` property configures when/how to display the serial monitor. The possible values are:
+`display` 属性用于配置何时/如何显示串行监视器。有效的值如下：
 
-| Value    | Description                                                       |
-| -------- | ----------------------------------------------------------------- |
-| auto     | Display the Serial Monitor when there's some output (the default) |
-| always   | Always display the Serial Monitor when simulation starts          |
-| never    | Never display the Serial Monitor                                  |
-| plotter  | Display the Serial Plotter when simulation starts                 |
-| terminal | Display a terminal (using [XTerm.js](https://xtermjs.org/))       |
+| Value    | Description                                      |
+| -------- | ------------------------------------------------ |
+| auto     | 当有输出时，串行监视器显示（默认值）             |
+| always   | 当仿真开始时，串行监视器始终显示                 |
+| never    | 串行监视器关闭显示                               |
+| plotter  | 仿真开始时显示串行绘图仪                         |
+| terminal | 显示终端 (使用 [XTerm.js](https://xtermjs.org/)) |
 
-Note: the "terminal" mode supports text and background colors. You can check out [the Arduino ANSI colors example](https://wokwi.com/projects/308893120796295745) to see it in action.
+注意：“终端”模式支持调整文本和背景颜色。你可以查看[the Arduino ANSI colors example](https://wokwi.com/projects/308893120796295745)以查看其输出情况。
 
 ### Newline
 
-When you input a line of text in the Serial Monitor, the simulator sends that text to your program.
-Your program can read it using `Serial.read()` and also some other [Serial methods](https://www.arduino.cc/reference/en/language/functions/communication/serial/).
+当你在串行监视器中输入一行文本时，模拟器会将该文本发送到您的程序。
 
-By default, the simulator also appends a line feed character ("\n", ASCII code 10) to every line
-of text that it sends to your program. You can use the `newline` property to change this behavior and configure a different sequence of characters:
+你的程序可以使用`Serial.read()` ，也可以参看其他[Serial methods](https://www.arduino.cc/reference/en/language/functions/communication/serial/)来读取它。
 
-| Value | Characters | ASCII codes | Description                                |
-| ----- | ---------- | ----------- | ------------------------------------------ |
-| lf    | "\n"       | 10          | Line feed (the default)                    |
-| cr    | "\r"       | 13          | Carriage return                            |
-| crlf  | "\r\n"     | 10 13       | Carraige return + linefeed                 |
-| none  | ""         |             | Don't append any characters to input lines |
+默认情况下，模拟器还会在你输入的文本的每一行附加一个换行符（“\n”，ASCII 码 10）。
+
+你可以使用`newline` 属性来更改此行为，并配置不同的字符序列：
+
+| Value | Characters | ASCII codes | Description                |
+| ----- | ---------- | ----------- | -------------------------- |
+| lf    | "\n"       | 10          | 附加换行(the default)      |
+| cr    | "\r"       | 13          | 附加回车                   |
+| crlf  | "\r\n"     | 10 13       | 附加回车+换行              |
+| none  | ""         |             | 不将任何字符附加到输入行中 |
