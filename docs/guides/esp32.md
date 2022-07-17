@@ -95,7 +95,7 @@ The following examples use the ESP-IDF functions. They are compiled using Arduin
 | Watchdog           | ❌    | ❌  | ❌  |                                                                          |
 | RTC                | 🟡    | 🟡  | 🟡  | Only RTC Pull-up / Pull-down resistors                                   |
 | ADC                | ✔️    | ✔️  | ❌  | Note: analogRead() returns values up to 4095                             |
-| RNG                | ✔️    | ✔️  | ✔️   | Random Number Generator                                                  |
+| RNG                | ✔️    | ✔️  | ✔️  | Random Number Generator                                                  |
 | AES Accelerator    | ✔️    | ✔️  | ✔️  |                                                                          |
 | SHA Accelerator    | ✔️    | ✔️  | ✔️  |                                                                          |
 | RSA Accelerator    | ✔️    | ✔️  | ✔️  |                                                                          |
@@ -112,3 +112,11 @@ Legend:
 ## WiFi Simulation
 
 See the [ESP32 WiFi Guide](./esp32-wifi).
+
+## Advanced Usage
+
+### Custom Partition Table
+
+You can specifiy a custom partititon table by adding a "partitions.csv" file to your project. Check out the [ESP32 Partition Table Guide](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-guides/partition-tables.html) for the exact format of this file.
+
+- [ESP32 Custom partition table code example](https://wokwi.com/projects/337425600260080210)
