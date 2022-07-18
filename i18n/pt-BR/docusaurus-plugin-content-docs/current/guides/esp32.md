@@ -112,3 +112,11 @@ Legenda:
 ## Simulação WiFi
 
 Veja o [Guia WiFi do ESP32](./esp32-wifi).
+
+## Uso Avançado
+
+### Tabela de partição personalizada
+
+Você pode especificar uma tabela de partição personalizada adicionando um arquivo "partitions.csv" ao seu projeto. Confira o [ESP32 Partition Table Guide](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-guides/partition-tables.html) para o formato exato deste arquivo.
+
+- [Exemplo de código de tabela de partição personalizada no ESP32](https://wokwi.com/projects/337425600260080210)
