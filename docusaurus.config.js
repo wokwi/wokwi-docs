@@ -97,7 +97,8 @@ module.exports = {
       copyright: `Copyright © ${new Date().getFullYear()} CodeMagic LTD. Built with Docusaurus.`,
     },
     algolia: {
-      apiKey: '1f2bf1b3e5049e68f0d014abd016cf8f',
+      appId: 'VNOAE1ADJ6',
+      apiKey: 'cf8c02a00fa23ba42725ac0fc3a10a3d',
       indexName: 'wokwi',
     },
   },
