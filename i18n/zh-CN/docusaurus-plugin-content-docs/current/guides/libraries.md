@@ -1,15 +1,32 @@
 ---
-title: Arduino 库
-sidebar_label: Arduino 库
+title: Arduino库
+sidebar_label: Arduino库
+
 ---
-
-
 
 当你想要引用一个库时，请转到代码编辑器，并在空行上键入`#`。你将看到一个自动完成下拉菜单，其中包含针对流行库的`#include`自动补全建议。
 
 在默认情况下，Wokwi使用标准内置Arduino库（如Wire.h和SPI.h）编译你的代码。
 
-要将第三方库添加到项目中，请将“libraries.txt”文件添加到您的项目中。列出您想要包含的库，每行一个库。开头为“#”的行是注释。
+## 添加第三方库
+
+要将第三方库添加到项目中，请转到代码编辑器中的“库管理器”选项卡，然后按紫色的“+”按钮。在搜索框中输入一些文本以搜索库（例如“FastLED”），然后单击列表中的一个库名称来添加它。
+
+你可以使用此方法从Arduino库管理器安装任何Arduino库。
+
+### 上传自定义库
+
+[俱乐部成员](https://wokwi.com/club) 可以通过从他们的计算机中选择一个文件夹来上传任何Arduino库。要上传自定义库，请单击Arduino库管理器中的紫色“+”按钮，然后单击“上传库”。
+
+所选文件夹应包含库的源代码（.h和.c/.cpp文件）。选择文件夹后，Wokwi将压缩其内容并将其上传到Wokwi的构建服务器（build server）。你将会看到这个库以.zip文件出现在库管理器中。
+
+任何打开该项目的人都可以从库管理器那里下载该库。任何创建项目副本的用户都可以在复制的项目中使用该库。
+
+## libraries.txt文件
+
+当你通过内置的“库管理器”添加库时，它将在你的项目中创建一个“libraries.txt”文件。这是一个简单的文本文件，列出了项目中安装的所有库，每行一个库。开头为“#”的行是注释。
+
+通常，你不需要自己编辑此文件——“库管理器”会为你编辑此文件。但是，如果你想安装库的特定版本，你就会发现这个文件的用处了。要选择特定版本，请在库名称后添加“@”，然后添加要安装的版本。
 
 例如，以下文件将安装最新版本的 Servo 库和 FastLED 库，以及 MySensors 库的 2.3.0 版本：
 
@@ -22,19 +39,6 @@ FastLED
 MySensors@2.3.0
 ```
 
-You can find the library names in the Arduino Library Manager. Alternatively, you can find it inside the source code of the library. Look for the `name` field of the `library.properties` file.（这句话不太懂什么意思？？）
+自定义库有以下格式：库名称，后跟文本“@wokwi:”，以及Wokwi服务器上库zip文件的唯一标识符。
 
-您可以在Arduino库管理器中找到库的名称。或者，您可以在库的源代码中找到它。查找`library.properties`文件的`name`字段。
-
-目前，我们仅支持Arduino Library Manager的库。如果你需要Arduino库管理器上不支持的库，你可以将库源文件复制到你的项目中，或[将其提交给Arduino库管理器](https://github.com/arduino/library-registry/blob/main/FAQ.md#submission)。
-
-
-
-------
-
-相关链接：
-
-1. arduino 官方库的汇总外链： https://www.arduino.cc/reference/en/libraries/
-
-2. arduino 内核对Library specification的介绍：https://arduino.github.io/arduino-cli/0.22/library-specification/
-
+通过将相关行从 libraries.txt 复制到另一个项目中，你可以将自定义库拷贝到另一个项目中。

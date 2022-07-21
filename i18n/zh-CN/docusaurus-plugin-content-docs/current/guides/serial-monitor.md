@@ -3,7 +3,7 @@ title: 串行监视器
 sidebar_label: 串行监视器
 ---
 
-串行监视器提供了一种向/从您的 Arduino 代码发送/接收信息的方法。
+串行监视器提供了一种向/从你的 Arduino 代码发送/接收信息的方法。
 你可以使用它来查看程序打印的调试消息，或发送命令控制你的程序。
 
 ## Arduino Uno and Mega
@@ -25,13 +25,13 @@ void loop() {
 
 :::caution
 
-只有当您从程序中打印一些输出时，串行监视器才会显示。要更改这种行为，[见下文](#display)。
+只有当你从程序中打印一些输出时，串行监视器才会显示。要更改这种行为，[见下文](#display)。
 
 :::
 
 
 
-Arduino Mega有多个硬件串行端口。您可以通过在 diagram.json 中配置引脚，将串行监视器连接到其他串行端口。例如，要将`Serial2`连接到串行监视器，请在diagram.json中的`connections` 部分添加以下行：
+Arduino Mega有多个硬件串行端口。你可以通过在 diagram.json 中配置引脚，将串行监视器连接到其他串行端口。例如，要将`Serial2`连接到串行监视器，请在diagram.json中的`connections` 部分添加以下行：
 
 ```json
   [ "mega:17", "$serialMonitor:TX", "" ],
@@ -53,7 +53,7 @@ ATtiny85芯片硬件上没有内置串口（USART）。但是你可以使用一�
   [ "tiny:PB1", "$serialMonitor:RX", "" ],
 ```
 
-将 `tiny` 部分替换为`wokwi-attiny85`板卡使用的实际ID，将`PB1`/`PB0`替换为您想要使用的引脚名称。
+将 `tiny` 部分替换为`wokwi-attiny85`板卡使用的实际ID，将`PB1`/`PB0`替换为你想要使用的引脚名称。
 
 然后，根据下面来配置SoftwareSerial库：
 
@@ -96,7 +96,7 @@ void loop() {
 }
 ```
 
-当你添加 `"serialMonitor"`部分时，务必在 diagram.json 的最后一个项目之后添加它，或者确保在关闭花括号后添加逗号。您可以在[这里](https://wokwi.com/projects/308893120796295745)查看完整示例。
+当你添加 `"serialMonitor"`部分时，务必在 diagram.json 的最后一个项目之后添加它，或者确保在关闭花括号后添加逗号。你可以在[这里](https://wokwi.com/projects/308893120796295745)查看完整示例。
 
 ### Display
 
@@ -114,7 +114,7 @@ void loop() {
 
 ### Newline
 
-当你在串行监视器中输入一行文本时，模拟器会将该文本发送到您的程序。
+当你在串行监视器中输入一行文本时，模拟器会将该文本发送到你的程序。
 
 你的程序可以使用`Serial.read()` ，也可以参看其他[Serial methods](https://www.arduino.cc/reference/en/language/functions/communication/serial/)来读取它。
 
