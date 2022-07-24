@@ -54,8 +54,8 @@ This table summarizes the status of the simulation features:
 | USB               | 🟡     | USB CDC (Serial) supported, see [Serial Monitor](#serial-monitor) below |
 | UART              | ✔️     |                                                                         |
 | I2C               | ✔️     | Master mode only                                                        |
-| SPI               | ❌     |                                                                         |
-| PWM               | ❌     |                                                                         |
+| SPI               | ✔️     | Master mode only                                                        |
+| PWM               | ✔️     |                                                                         |
 | DMA               | ✔️     | Only for the PIO peripheral                                             |
 | Timer             | ✔️     | Pausing the timer not implemented yet                                   |
 | ARM SysTick Timer | 🟡     | Partial implementation                                                  |
@@ -70,13 +70,11 @@ Legend:
 🟡 Partial implementation/work in progress  
 ❌ Not implemented
 
-We're adding the missing features in [weekly live streams](https://www.youtube.com/playlist?list=PLLomdjsHtJTxT-vdJHwa3z62dFXZnzYBm). Expect the list above to update every week or two.
-
 ### Arduino core
 
 The Arduino core provides the built-in Arduino functions, such as `pinMode()` and `digitalRead()`, as well as a set of standard Arduino libraries, such as Servo, Wire and SPI.
 
-When compiling your code for the Raspberry Pi Pi Pico, you can choose between two different cores:
+When compiling your code for the Raspberry Pi Pico, you can choose between two different cores:
 
 - The [official Pi Pico core](https://github.com/arduino/ArduinoCore-mbed), based on Mbed OS. This is the default.
 - [The community maintained Pi Pico Arduino Core](https://github.com/earlephilhower/arduino-pico), built on top of [the Pi Pico SDK](https://github.com/raspberrypi/pico-sdk).

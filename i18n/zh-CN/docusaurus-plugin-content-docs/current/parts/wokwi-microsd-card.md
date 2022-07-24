@@ -25,9 +25,21 @@ The microSD card simulator is still in beta. The interface/behavior are prone to
 
 \* The CD pin is connected to ground when there's no card in the socket. In the simulator, there's always a card in the socket, so this pin is always disconnected.
 
-## Simulation Behavior
+## Filesystem
 
-The microSD card is automatically initialized with a FAT16 file system, and all your project files are copied into it.
+When you start the simulation, Wokwi creates a FAT16 file system and attaches it to the microSD card. By default, Wokwi copies all your project files into the microSD card.
+
+### Uploading binary files
+
+[Club](https://wokwi.com) users can upload custom binary files (e.g. bitmaps, sounds, etc.) to the microSD card's filesystem. After adding a microSD card to your project, you'll see a new "SD Card" tab next to the other tabs in the code editor. Click on the purple "Upload Files" buttons and select any files you wish to upload.
+
+You can also upload a complete folder tree (useful if you have a physical SD card attached to your computer and you want to upload all the data from it, as-as). Click on the small arrow next to the "Upload Files" button and select "Upload complete folder". Then select the folder with the files you want to upload.
+
+<img src={require('./wokwi-microsd-card-upload.png').default} width={355} />
+
+Wokwi stores the uploaded files for you, alongside with your project. Anyone who opens your project and starts the simulation will have to wait for all the micro SD card files to download before the simulation starts.
+
+Example: [microSD Card project with a custom bitmap file](https://wokwi.com/projects/319810932695892564)
 
 ## Arduino code example
 
