@@ -42,6 +42,10 @@ We may cancel a feature that hasn't received any votes for 60 days and close the
 
 If you voted for a feature that has been cancelled for whatever reason, you'll automatically get back the VotePowers that you spent on it.
 
+### Seeing your votes
+
+You can see your personal vote history in the [VotePowers Transaction Log page](https://wokwi.com/features/history). If you don't see any transactions in this page, it means that you haven't voted for any feature yet.
+
 ## Suggesting new features
 
 Everyone can suggest features by opening [a request on GitHub](https://github.com/wokwi/wokwi-features/issues/new?labels=enhancement&template=feature_request.md&title=). We review all suggestions. If a suggestion is a good fit for Wokwi, we'll open it for vote by adding the "open for vote" label on GitHub, and it'll appear in the voting page.
