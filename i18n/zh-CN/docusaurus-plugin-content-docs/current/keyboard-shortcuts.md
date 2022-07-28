@@ -10,8 +10,10 @@ sidebar_label: 键盘快捷键
 | 启动模拟器               | Ctrl + Enter    | ⌘ Enter |
 | 保存项目                   | Ctrl + S        | ⌘ S     |
 | 代码格式化               | Alt + Shift + F | ⌥ ⇧ F   |
-| 开关代码自动补全          | Ctrl + Space    | ⌘ Space |
+| 开/关代码自动补全         | Ctrl + Space    | ⌘ Space |
 | 显示所有命令列表 | F1              | F1      |
+| 跳转到文件中的下个错误 | F8 | F8 |
+| 跳转到文件中的上个错误 | Shift + F8 | ⇧ F8 |
 
 ## 普通编辑快捷键
 
