@@ -81,7 +81,7 @@ PulseView是一个开源逻辑分析仪 GUI。它在Linux、Windows、Mac OS X�
 
 #### 将Windows配置为在PulseView中打开VCD文件
 
-你可以将Windows配置为在自动使用PulseView打开VCD文件。打开命令提示符（cmd）窗口**作为管理员**，然后键入以下命令：
+你可以将Windows配置为在自动使用PulseView打开VCD文件。**以管理员**打开命令提示符（cmd）窗口，然后键入以下命令：
 
 ```
 ftype vcdfile="%ProgramFiles%\sigrok\PulseView\pulseview.exe" "-I" "vcd:downsample=50" "%1"

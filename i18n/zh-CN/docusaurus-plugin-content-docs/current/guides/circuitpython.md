@@ -1,28 +1,28 @@
 ---
-title: CircuitPython on Wokwi
-sidebar_label: CircuitPython
+title: 在Wokwi使用CircuitPython
+sidebar_label: 使用CircuitPython
 ---
 
-You can simulate CircuitPython on Wokwi using the [Raspberry Pi Pico board](../parts/wokwi-pi-pico). To start a new simulation project, open the [Raspberry Pi Pico CircuitPython project template](https://wokwi.com/projects/new/circuitpython-pi-pico).
+你可以使用[Raspberry Pi Pico board](../parts/wokwi-pi-pico)，在Wokwi上进行CircuitPython仿真。要开始新的仿真项目，请打开[Raspberry Pi Pico CircuitPython 项目实例](https://wokwi.com/projects/new/circuitpython-pi-pico)。
 
-## Project structure
+## 项目的工程结构
 
-CircuitPython projects must include a `code.py` file. The code in this file will execute when you start the simulation.
+CircuitPython项目必须包含一个`code.py` 文件。此文件中的代码将在你开始仿真时执行。
 
-Wokwi copies all the project files into the Pico's flash file system. This means your project can include additional Python modules and you can import them from `code.py` or from the interactive REPL. Your project can also include custom data inside text files.
+Wokwi将所有项目文件复制到Pico的falsh文件系统中。这意味着你的项目可以包含额外的Python模块，你可以从`code.py` 或交互式REPL导入它们。你的项目还可以在文本文件中包含自定义数据。
 
-You can get a list of all the files in the flash filesystem by running:
+你可以通过运行以下方式获得falsh文件系统中所有文件的列表：
 
 ```python
 import os
 print(os.listdir('/'))
 ```
 
-## Using libraries
+## 库的使用
 
-You can use any library from the [Adafruit CircuitPython Bundle](https://github.com/adafruit/Adafruit_CircuitPython_Bundle). Create a "requirements.txt" file in your project, and write the names of the libraries that you use, one per line. Lines that start with "#" are comments.
+你可以使用 [Adafruit CircuitPython Bundle](https://github.com/adafruit/Adafruit_CircuitPython_Bundle)中的任何库。在项目中创建一个“requirements.txt”文件，并写下你使用的库的名称，每行一个。开头为“#”的行是注释。
 
-For example, if you want to install both [adafruit_display_text](https://circuitpython.readthedocs.io/projects/display_text/en/latest/) and [adafruit_dht](https://circuitpython.readthedocs.io/projects/dht/en/latest/), create a "requirements.txt" file with the following content:
+例如，如果你想同时安装[adafruit_display_text](https://circuitpython.readthedocs.io/projects/display_text/en/latest/) 和 [adafruit_dht](https://circuitpython.readthedocs.io/projects/dht/en/latest/)，请创建一个包含以下内容的“requirements.txt”文件：
 
 ```
 # requirements.txt example
@@ -30,13 +30,13 @@ adafruit_display_text
 adafruit_dht
 ```
 
-When you start the simulation, Wokwi downloads all the libraries and their dependencies. It copies them into the "lib" folder in the flash filesystem. You can call `os.listdir('/lib')` to get a list of all the libraries installed. For a complete code example, see [CircuitPython Library List](https://wokwi.com/projects/309475039016649280).
+当你开始仿真时，Wokwi会下载所有库及其依赖项。它们会被复制到Flash文件系统中的“lib”文件夹中。你可以调用`os.listdir('/lib')`以获取已安装的所有库的列表。有关完整的代码示例，请参阅[CircuitPython Library List](https://wokwi.com/projects/309475039016649280)。
 
-# CircuitPython REPL
+# CircuitPython REPL介绍
 
-When the code in `code.py` terminates (or you interrupt it with Ctrl+C), you'll get into the CircuitPython REPL. The REPL is an interactive prompt where you can type python commands and see the results immediately. To paste code into the REPL type Ctrl+E and enter paste mode.
+当`code.py` 中的代码终止（或者你用Ctrl+C中断它）时，你将进入CircuitPython REPL。REPL是一个交互式提示符，你可以在其中键入python命令并立即查看结果。要将代码粘贴到REPL，按下Ctrl+E进入粘贴模式。
 
-## Project examples
+## 项目例子
 
 - [Blink with CircuitPython](https://wokwi.com/projects/309474946192507458)
 - [CircuitPython SSD1306 Example](https://wokwi.com/projects/309427357921313345)

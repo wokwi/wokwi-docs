@@ -1,30 +1,28 @@
 ---
-title: MicroPython on Wokwi
-sidebar_label: MicroPython
+title: 在Wokwi使用MicroPython
+sidebar_label: 使用MicroPython
 ---
 
-You can create and run MicroPython projects on Wokwi. Start from the [Raspberry Pi Pico MicroPython project template](https://wokwi.com/projects/new/micropython-pi-pico).
+你可以在Wokwi上创建和运行MicroPython项目。[Raspberry Pi Pico MicroPython 工程样例](https://wokwi.com/projects/new/micropython-pi-pico)帮助你快速开始。
 
-## Project structure
+## 项目的工程结构
 
-All MicroPython projects must include a `main.py` file. MicroPython will automatically load and execute the code from `main.py` when you start the simulation.
+所有的MicroPython项目必须包含一个 `main.py` 文件。当你开始仿真时，MicroPython将自动从 `main.py` 加载和执行代码。
 
-Wokwi copies all the project files into the Pico's flash filesystem. This means your project
-can include additional Python modules and you can import them from `main.py` or from the interactive
-REPL. Your project can also include custom data inside text files.
+Wokwi将所有项目文件复制到Pico的falsh文件系统中。这意味着你的项目可以包括额外的Python模块，你可以从`main.py`或[交互式REPL（交互式命令，开始仿真后，绘图界面出现的黑色的区域）](https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop)导入它们。你的项目还可以在文本文件中包含自定义数据。
 
-You can get a list of all the files in the flash filesystem by running:
+你可以通过运行以下方式获得falsh文件系统中所有文件的列表：
 
 ```python
 import os
 print(os.listdir('/'))
 ```
 
-# MicroPython REPL
+# MicroPython REPL介绍
 
-When the code in `main.py` terminates (or you interrupt it with Ctrl+C), you'll get into the MicroPython REPL. The REPL is an interactive prompt where you can type python commands and see the results immediately. Type `help()` for MicroPython API cheat sheet. To paste code into the REPL type Ctrl+E and enter paste mode.
+当`main.py`中的代码终止（或者你用Ctrl+C中断它）时，你将进入MicroPython REPL。REPL是一个交互式提示符，你可以在其中键入python命令并立即查看结果。输入`help()`可查看MicroPython API备忘表。要将代码粘贴到REPL中，按下Ctrl+E后可进入粘贴模式。
 
-## Project examples
+## 项目例子
 
 - [Blink with MicroPython](https://wokwi.com/projects/300504213470839309)
 - [MicroPython 7-Segment Display](https://wokwi.com/projects/300210834979684872)
