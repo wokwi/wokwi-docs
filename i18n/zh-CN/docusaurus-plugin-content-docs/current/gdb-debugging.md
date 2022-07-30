@@ -37,7 +37,6 @@ Temporary breakpoint 1, setup () at sketch.ino:28
 
 `print`命令用来打印变量的值。例如使用`print ledIndex`来打印名为`ledIndex`的值。
 
-## Learn more
 ## 了解更多
 
 查看[AVR GDB 手册](https://blog.wokwi.com/gdb-avr-arduino-cheatsheet/)，了解更多有用的 GDB 命令。学习所有的 GDB 功能并有效地使用它们需要时间，但即便只使用几个基本命令，它也可以非常强大。
