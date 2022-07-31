@@ -38,3 +38,4 @@ If you are trying to read this sensor from the ESP32, use the "DHT sensor librar
 - [DHTlib DHT22 test](https://wokwi.com/arduino/libraries/DHTlib/dht22_test)
 - [DHT-sensor-library code examples](https://wokwi.com/arduino/libraries/DHT-sensor-library)
 - [DHT22 on the ESP32](https://wokwi.com/projects/322410731508073042)
+- [DHT22 with joystick 2 core](https://wokwi.com/projects/338709604107027027)
