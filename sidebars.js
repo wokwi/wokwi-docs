@@ -61,6 +61,7 @@ module.exports = {
       'parts/wokwi-slide-potentiometer',
       'parts/wokwi-slide-switch',
       'parts/wokwi-stepper-motor',
+      'parts/wokwi-tm1637-7segment',
       'parts/wokwi-tv',
     ],
   },
