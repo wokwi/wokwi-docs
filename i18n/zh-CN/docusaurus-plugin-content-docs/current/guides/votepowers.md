@@ -1,6 +1,6 @@
 ---
-title: VotePowers Guide
-sidebar_label: VotePowers
+title: 投票权利
+sidebar_label: 投票权利
 ---
 
 VotePowers let you vote what features we work on. You can see the current list and get VotePowers on the [Wokwi Feature Roadmap page](https://wokwi.com/features).
