@@ -1,21 +1,21 @@
 ---
-title: Translating Wokwi
-sidebar_label: Translating
+title: 翻译Wokwi交互界面
+sidebar_label: 交互界面的翻译
 ---
 
-This page explains how you can contribute translations to Wokwi.
+本页面将介绍如何为Wokwi贡献翻译。
 
-## Translating the user interface
+## 用户交互界面的翻译
 
-To translate the user interface into a new language, download the current version of the [English strings file](https://wokwi.com/api/i18n/en.json). The translation file is a text file in the standard JSON format. It can be edited by any text editor, as well as many translation tools.
+要将用户界面翻译成新的语言，请下载当前版本的 [英文字符文件](https://wokwi.com/api/i18n/en.json)。翻译文件是标准JSON格式的文本文件。它可以通过任何文本编辑器以及许多翻译工具进行编辑。
 
-If you wish to contribute translations to one of the existing language, you can download the translation file for the specific language from the list on [this issue](https://github.com/wokwi/wokwi-features/issues/221), and work your way from there.
+如果您希望为现有语言之一提供翻译，您可以从[github的这个issue](https://github.com/wokwi/wokwi-features/issues/221)的列表中下载特定语言的翻译文件，并从那里开始工作。
 
-When you are ready to submit your translations, please [open an issue](https://github.com/wokwi/wokwi-features/issues/new?assignees=&labels=enhancement&template=translation.md&title=) and attach the file. GitHub doesn't support directly attaching JSON files, so you can either copy the content of the file into your new issue, or zip it and attach the Zip file.
+当您准备提交翻译时，请[open an issue](https://github.com/wokwi/wokwi-features/issues/new?assignees=&labels=enhancement&template=translation.md&title=)并附加文件。GitHub不支持直接附加JSON文件，因此您可以将文件内容复制到新问题中，也可以压缩并附加Zip文件。
 
-Not all the texts are currently available for translation, but we're adding new texts all the time. You can subscribe to [this issue](https://github.com/wokwi/wokwi-features/issues/221) to get a notification whenever new texts are available for translation.
+目前并非所有文本都可以翻译，但我们一直在添加新文本。您可以订阅[这个issue](https://github.com/wokwi/wokwi-features/issues/221)，以便在有新文本可供翻译时收到通知。
 
-### Existing translations
+### 现有的翻译
 
 - [Chinese](https://wokwi.com/projects/new?lang=zh)
 - [Spanish (spain)](https://wokwi.com/projects/new?lang=es-ES)
