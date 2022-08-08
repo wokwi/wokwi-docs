@@ -32,3 +32,4 @@ The TM1637 communication protocol is non-standard. It resembles the I2C protocol
 
 - [TM1637 Counter](https://wokwi.com/projects/339227323398095442)
 - [TM1637 Clock](https://wokwi.com/projects/339227567530705492)
+- [TM1637 Thermometer (MicroPython on Pi Pico)](https://wokwi.com/projects/339373435833549395)
