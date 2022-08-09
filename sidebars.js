@@ -64,5 +64,9 @@ module.exports = {
       'parts/wokwi-tm1637-7segment',
       'parts/wokwi-tv',
     ],
+    'Custom chips': [
+      'chips/intro',
+      'chips/i2c',
+    ]
   },
 };
