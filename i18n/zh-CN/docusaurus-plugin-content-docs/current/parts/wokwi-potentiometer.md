@@ -1,15 +1,15 @@
 ---
-title: wokwi-potentiometer Reference
-sidebar_label: wokwi-potentiometer
+title: wokwi-potentiometer参考
+sidebar_label: wokwi-potentiometer参考
 ---
 
-Knob-controlled variable resistor (linear potentiometer)
+旋钮控制可变电阻（线性电位器）
 
 <wokwi-potentiometer />
 
-The information below also applies to the [slide potentiometer](wokwi-slide-potentiometer).
+以下信息也适用于[slide potentiometer](wokwi-slide-potentiometer)。
 
-## Pin names
+## 引脚名称
 
 | Name | Description                            |
 | ---- | -------------------------------------- |
@@ -17,23 +17,23 @@ The information below also applies to the [slide potentiometer](wokwi-slide-pote
 | SIG  | Output, connect to an analog input pin |
 | VCC  | Supply voltage                         |
 
-Note: Wokwi does **not** support full analog simulation, so you will get the same
-results even if you don't connect the GND/VCC pins.
+注意：Wokwi**不**支持完整的模拟仿真，因此您将获得相同的结果，即使您没有连接GND/VCC引脚。
 
-This may change in the future, so it's a good idea to connect GND/VCC anyway.
+这在将来可能会改变，所以无论如何，总是连接GND/VCC是个好习惯。
 
-## Attributes
+## 属性
 
-| Name  | Description                                            | Default value |
-| ----- | ------------------------------------------------------ | ------------- |
-| value | Initial value of the potentiometer, between 0 and 1023 | "0"           |
+| Name  | Description                   | Default value |
+| ----- | ----------------------------- | ------------- |
+| value | 电位器的初始值，在0到1023之间 | "0"           |
 
-## Using the Potentiometer in Arduino
+## 在Arduino中使用电位器
 
-Connect the SIG pin to one of Arduino's analog input pins (A0, A1, …). Then use the `analogRead()` function to read the current value of the potentiometer.
+将SIG引脚连接到Arduino的模拟输入引脚之一（A0、A1、...）。然后使用`analogRead()`函数读取电位器的当前值。
 
-The following code example assumes that the potentiometer is connected to A0.
-It will read and print the current value of the potentiometer every 100 milliseconds:
+以下代码示例假设电位器连接到A0。
+
+它将每100毫秒读取和打印电位器的当前值：
 
 ```cpp
 void setup() {
@@ -48,19 +48,21 @@ void loop() {
 }
 ```
 
-You can [run the example on Wokwi](https://wokwi.com/projects/298685457758159369). Observe how the plotter graph changes as you move the potentiometer's knob.
+您可以 [run the example on Wokwi](https://wokwi.com/projects/298685457758159369)。观察绘图仪在移动电位器旋钮时如何变化。
 
-## Keyboard control
+## 键盘控制
 
-You can control the potentiometer with the keyboard:
+您可以使用键盘控制电位器：
 
-- Left / Right - fine movement
-- Page Up / Page Down - coarse movement
-- Home / End - move to the start (0) or the end (1023) of the range
+- 左/右 - 精细运动
 
-You'll need to click on the potentiometer before using these keyboard shortcuts.
+- 上页/下页 - 粗略的移动
 
-## Simulator examples
+- 主页/结束 - 移动到范围的开始（0）或结束（1023）
+
+在使用这些键盘快捷键之前，您需要单击电位器。
+
+## 仿真实例
 
 - [Knob](https://wokwi.com/arduino/libraries/Servo/Knob) - Control a [servo](wokwi-servo) with a potentiometer
 - [Plot](https://wokwi.com/projects/298685457758159369) - Plot potentiometer values in the Serial Plotter

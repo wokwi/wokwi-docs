@@ -1,32 +1,32 @@
 ---
-title: wokwi-lcd1602 Reference
-sidebar_label: wokwi-lcd1602
+title: wokwi-lcd1602显示模块参考
+sidebar_label: wokwi-lcd1602显示模块参考
 ---
 
 import FontA00p1 from './wokwi-lcd1602-fonta00-1.svg';
 import FontA00p2 from './wokwi-lcd1602-fonta00-2.svg';
 
-An LCD with 2 lines, 16 characters per line.
+带有2行的液晶显示器，每行16个字符。
 
 <wokwi-lcd1602 text=" wokwi-lcd1602" />
 
-## Pin names
+## 引脚名称
 
-The LCD1602 comes in 2 possible configurations: I2C configuration and standard configuration. The I2C configuration is usually simpler to use.
+LCD1602有两种可能的配置：I2C配置和标准配置。I2C配置通常使用起来更简单。
 
-The following table summarizes the key differences:
+下表总结了主要差异：
 
 | Property                   | Standard      | I2C               |
 | -------------------------- | ------------- | ----------------- |
 | Number of Arduino I/O pins | 7\*           | 2 (SCL)/SDA       |
-| Backlight control          | Optional      | Yes               |
-| Library name               | LiquidCrystal | LiquidCrystal_I2C |
+| 背光控制                   | Optional      | Yes               |
+| 库名称                     | LiquidCrystal | LiquidCrystal_I2C |
 
-\* Controlling the backlight requires another I/O pin.
+\* 控制背光灯需要另一个I/O引脚。
 
-You can select the desired configuration by setting the `pins` attribute. Set it to "i2c" for the I2C configuration, or "full" for the standard configuration (the default).
+您可以通过设置`pins`属性来选择所需的配置。对于I2C配置，将其设置为“i2c”，对于标准配置（默认配置）将其设置为“full”。
 
-### I2C configuration
+### I2C配置
 
 | Name | Description    |
 | ---- | -------------- |
@@ -35,11 +35,11 @@ You can select the desired configuration by setting the `pins` attribute. Set it
 | SDA  | I2C data line  |
 | SCL  | I2C clock line |
 
-The default I2C address of the LCD1602 module is 0x27.
+LCD1602模块的默认I2C地址为0x27。
 
-Note: The I2C configuration simulates a PCF8574T chip that controls the LCD module. Normally, you wouldn't have to worry about this as the LiquidCrystal_I2C library takes care of the communication with the chip.
+注：I2C 配置模拟了控制 LCD 模块的 PCF8574T 芯片。通常，您不必担心这一点，因为LiquidCrystal_I2C库负责与芯片的通信。
 
-### Standard configuration
+### 标准配置
 
 | Name | Description                         | Arduino Pin\* |
 | ---- | ----------------------------------- | ------------- |
@@ -60,16 +60,15 @@ Note: The I2C configuration simulates a PCF8574T chip that controls the LCD modu
 | A    | Backlight anode                     | 5V / 6‡       |
 | K    | Backlight cathode                   | GND.1         |
 
-\* These are just example pin numbers, they are not mandatory. You need can use any digital/analog pin, but make sure to update the code accordingly!  
-† Normally, you'd configure the chip in 4-bit parallel mode, which means you only need to connect RS, E, D4, D5, D6, and D7 pins to Arduino.  
-‡ If you need to control the backlight, connect the anode to an I/O pin. Otherwise, connect it to the supply voltage. For a real circuit, you'd also
-need a current-limiting resistor, but you may skip it in the simulation environment.
+\* 这些只是示例引脚编号，它们不是强制性的。您需要使用任何其他数字/模拟引脚，但请务必相应地更新代码！  
+† 通常，您将在4位并行模式下配置芯片，这意味着您只需要将RS、E、D4、D5、D6和D7引脚连接到Arduino。 
+‡ 如果您需要控制背光灯，请将阳极连接到I/O引脚。否则，将其连接到电源电压。对于一个真正的电路，你也会需要一个限流电阻，但您可以在模拟环境中不接它。
 
-#### Arduino code example
+#### Arduino代码例子
 
-When you initialize the LiquidCrystal library in your code, you need to pass the pin numbers to the constructor.
+当您在代码中初始化LiquidCrystal库时，您需要将引脚号传递给构造函数。
 
-The following example uses pin numbers that match the table above:
+以下示例使用与上表匹配的引脚编号：
 
 ```cpp
 #include <LiquidCrystal.h>
@@ -87,18 +86,18 @@ void loop() {
 }
 ```
 
-You can also [try this example on Wokwi](https://wokwi.com/projects/294342288335700490).
+你可以 [try this example on Wokwi](https://wokwi.com/projects/294342288335700490).
 
-## Attributes
+## 属性
 
-| Name        | Description                        | Default value |
-| ----------- | ---------------------------------- | ------------- |
-| pins        | Set to "i2c" for I2C configuration | "full"        |
-| i2c-address | I2C address (I2C configuration)    | "0x27"        |
-| color       | The color of the text              | "black"       |
-| background  | The color of the backlight         | "green"       |
+| Name        | Description              | Default value |
+| ----------- | ------------------------ | ------------- |
+| pins        | 对于I2C配置，设置为“i2c” | "full"        |
+| i2c-address | I2C地址（I2C配置）       | "0x27"        |
+| color       | 文本的颜色               | "black"       |
+| background  | 背光颜色                 | "green"       |
 
-### Examples
+### 示例
 
 | Result                                                                | Attrs                                        |
 | --------------------------------------------------------------------- | -------------------------------------------- |
@@ -106,15 +105,13 @@ You can also [try this example on Wokwi](https://wokwi.com/projects/294342288335
 | <wokwi-lcd1602 text="Hello World!" pins="i2c" />                      | `{ "pins": "i2c" }`                          |
 | <wokwi-lcd1602 background="blue" color="white" text="Hello World!" /> | `{ "background": "blue", "color": "white" }` |
 
-## Font
+## 字体
 
-The LCD1602 uses the [Hitachi HD44780 LCD Controller chip](https://en.wikipedia.org/wiki/Hitachi_HD44780_LCD_controller).
-The chip comes with a built-in font, as well as the ability to define up to 8 custom characters.
+LCD1602使用[Hitachi HD44780 LCD Controller chip](https://en.wikipedia.org/wiki/Hitachi_HD44780_LCD_controller)。
 
-There are two versions of the chip's ROM with two different fonts: HD44780UA00, which includes Japanese katakana characters,
-and HD44780UA02, which includes Western European characters.
+该芯片内置字体，并能够定义多达8个自定义字符。芯片的ROM有两个版本，有两种不同的字体：HD44780UA00，其中包括日语片假名字符，和HD44780UA02，包括西欧字符。
 
-Wokwi simulates the HD44780UA00 variant. It has a total of 256 characters:
+Wokwi模拟了HD44780UA00变体。它共有256个字符：
 
 | Range   | Description                                         |
 | ------- | --------------------------------------------------- |
@@ -124,23 +121,21 @@ Wokwi simulates the HD44780UA00 variant. It has a total of 256 characters:
 | 128-160 | Blank characters                                    |
 | 161-255 | Japanese katankana and symbols                      |
 
-ASCII character glyphs:
+ASCII字符字形:
 
 <FontA00p1 className="svg-font-table" />
 
-High characters glyphs:
+其他字符字形:
 
 <FontA00p2 className="svg-font-table"  />
 
-Note: if you need the HD44780UA02 font variant, please [open a feature request](https://github.com/wokwi/wokwi-features/issues/new) or
-reach out on [Discord](https://wokwi.com/discord).
+注意：如果您需要HD44780UA02字体变体，请[open a feature request](https://github.com/wokwi/wokwi-features/issues/new) 或者联系 [Discord](https://wokwi.com/discord).。
 
-### User defined characters
+### 用户定义的字符
 
-You can define custom characters using the [createChar](https://www.arduino.cc/en/Reference/LiquidCrystalCreateChar) method of the LiquidCrsytal (or LiquidCrystal_I2C) library. The custom characters are the first 8 characters in the font, with indexes from 0 to 7. You can print them to the LCD
-display using the `write()` method, or using C string escape sequence, such as `"\x07"`.
+您可以使用LiquidCrsytal（或LiquidCrystal_I2C）库的 [createChar](https://www.arduino.cc/en/Reference/LiquidCrystalCreateChar) 方法定义自定义字符。自定义字符是字体的前8个字符，索引从0到7。你可以把它们打印到LCD上使用`write()`方法或使用C字符串转义序列显示，例如`"\x07"`。
 
-The following code example defines a heart shaped character, stores it at index 3, and then uses it to display the text "I (heart) Arduino":
+以下代码示例定义了一个心形字符，将其存储在索引3，然后使用它来显示文本“I (heart) Arduino”：
 
 ```cpp
 #include <LiquidCrystal.h>
@@ -167,11 +162,9 @@ void setup() {
 void loop() { }
 ```
 
-You can also [run this example on Wokwi](https://wokwi.com/projects/294395602645549578).
+你也可以 [run this example on Wokwi](https://wokwi.com/projects/294395602645549578).
 
-You can modify any custom character while the program is running. This method is useful for
-creating simple animations. For example, change `loop()` in the code sample above to slowly
-reveal the heart icon, line-by-line:
+您可以在程序运行时修改任何自定义字符。这种方法对创建简单的动画。例如，将上面代码示例中`loop()`更改为缓慢逐行显示心形图标：
 
 ```cpp
 void loop() {
@@ -185,7 +178,7 @@ void loop() {
 }
 ```
 
-## Simulator examples
+## 仿真实例
 
 - [LiquidCrystal Hello World](https://wokwi.com/projects/294342288335700490)
 - [LiquidCrystal I2C Hello World](https://wokwi.com/arduino/libraries/LiquidCrystal_I2C/HelloWorld)

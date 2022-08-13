@@ -1,13 +1,13 @@
 ---
-title: wokwi-mpu6050 6-Axis Accel & Gyro Sensor
-sidebar_label: wokwi-mpu6050
+title: wokwi-mpu60506轴加速和陀螺仪传感器
+sidebar_label: wokwi-mpu60506轴加速和陀螺仪传感器
 ---
 
-Integrated sensor with 3-axis accelerometer, 3-axis gyroscope and a temperature sensor with I2C interface.
+ 带3轴加速度计、3轴陀螺仪和带I2C接口的温度传感器的集成传感器。
 
 <wokwi-mpu6050 />
 
-## Pin names
+## 引脚名称
 
 | Name | Description        |
 | ---- | ------------------ |
@@ -20,11 +20,11 @@ Integrated sensor with 3-axis accelerometer, 3-axis gyroscope and a temperature 
 | AD0  | Address select pin |
 | INT  | Interrupt\*        |
 
-\* These pins are not currently implemented in the simulator. If you need them, please [open a request](https://github.com/wokwi/wokwi-features/issues/new).
+\* 这些引脚目前没有在模拟器中实现。如果你需要, 请 [open a request](https://github.com/wokwi/wokwi-features/issues/new).
 
-You normally only need to connect the VCC, GND, SCL, and SDA pins. The I2C address of the device is 0x68. You can change the address of 0x69 by connecting the AD0 pin to VCC.
+您通常只需要连接VCC、GND、SCL和SDA引脚。设备的I2C地址是0x68。您可以通过将AD0引脚连接到VCC来更改0x69的地址。
 
-## Attributes
+## 属性
 
 | Name        | Description                         | Default value |
 | ----------- | ----------------------------------- | ------------- |
@@ -36,13 +36,13 @@ You normally only need to connect the VCC, GND, SCL, and SDA pins. The I2C addre
 | rotationZ   | Initial z rotation value (deg/sec)  | "0"           |
 | temperature | Initial temperature value (celsius) | "24"          |
 
-### Units
+### 单位
 
-All the acceleration values (x/y/z) use g-force units, where 1g = 9.80665 m/s². The gyroscope measures angular rotation and returns the number of degrees per second.
+所有加速度值（x/y/z）都使用g力单位，其中1g = 9.80665 m/s2。陀螺仪测量角旋转，并返回每秒的度数。
 
-#### Arduino code example
+#### Arduino 代码示例
 
-The example below uses the Adafruit MPU6050 library to read and display the acceleration values from the sensor. On Arduino Uno, connect the SDA pin to A4, and the SCL pin to A5.
+下面的示例使用Adafruit MPU6050库读取和显示传感器的加速度值。在Arduino Uno上，将SDA引脚连接到A4，将SCL引脚连接到A5。
 
 ```cpp
 #include <Adafruit_MPU6050.h>
@@ -81,7 +81,7 @@ void loop() {
 
 [Run this example on Wokwi](https://wokwi.com/projects/305937248748044864)
 
-## Simulator examples
+## 仿真示例
 
 - [MPU6050 X/Y/Z acceleration plotter](https://wokwi.com/projects/305937156771152449)
 - [Adafruit MPU6050 Demo](https://wokwi.com/projects/305936654686749250)

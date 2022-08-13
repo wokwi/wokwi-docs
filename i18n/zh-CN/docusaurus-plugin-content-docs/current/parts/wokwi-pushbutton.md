@@ -1,91 +1,85 @@
 ---
-title: wokwi-pushbutton Reference
-sidebar_label: wokwi-pushbutton
+title: wokwi-pushbutton参考
+sidebar_label: wokwi-pushbutton参考
 ---
 
-12mm Tactile Switch Button (momentary push button).
+12毫米触觉开关按钮（初级按钮）。
 
 <wokwi-pushbutton />
 
-## Pin names
+## 引脚名称
 
-| Name      | Description                   |
-| --------- | ----------------------------- |
-| 1.l / 1.r | First contact (left / right)  |
-| 2.l / 2.r | Second contact (left / right) |
+| Name      | Description               |
+| --------- | ------------------------- |
+| 1.l / 1.r | 第一个触点 (left / right) |
+| 2.l / 2.r | 第二个触电 (left / right) |
 
-The push button has two set of pins (contacts), 1 and 2.
-When the push button is pressed, it connects these two contacts, thus closing an electrical circuit.
+按钮有两组引脚（触点），1和2。
 
-Each contact has a pin of the left side of the push button, and another pin on the right side of the push button.
-So pin `1.l` is the left pin for first contact, and `1.r` is the right pin for the first contact. Since both belong
-to the same contact, they are always connected, even when the button is not pressed.
+当按下按钮时，它会连接这两个触点，从而关闭电路。
 
-The following diagram illustrates the connections inside the pushbutton:
+每个触点都有一个按钮左侧的引脚，另一个引脚位于按钮的右侧。
+
+因此，引脚`1.l`是第一次接触的左引脚，`1.r`是第一次接触的右引脚。因为两者都属于即使没有按下按钮，他们也会始终连接到同一个联系人。
+
+下图说明了按钮内部的连接：
 
 ![Pushbutton connection diagram](wokwi-pushbutton-diagram.svg)
 
-When working with Arduino, you'd usually connect one contact (e.g. `1.r` or `1.l`) to a digital pin and configure
-that pin as `INPUT_PULLUP`, and the other contact (e.g. `2.r` or `2.l`) to the ground. The digital pin will read
-`LOW` when you press the button, and `HIGH` when the button is not pressed.
+与Arduino合作时，您通常会连接一个接触点（例如`1.r`或`1.l`)到数字引脚并配置
 
-## Attributes
+那个引脚为`INPUT_PULLUP`，另一个接触点（例如`2.r`或`2.l`）到地面。数字引脚将读取为`LOW`当按下按钮时，不按下按钮时为`HIGH`。
 
-| Name   | Description                        | Default value |
-| ------ | ---------------------------------- | ------------- |
-| color  | The color of the push button       | "red"         |
-| label  | Text that appears below the button | ""            |
-| key    | Keyboard shortcut for button       |               |
-| bounce | Set to "0" to disable bouncing     | ""            |
+## 属性
 
-### Defining a keyboard shortcut
+| Name   | Description          | Default value |
+| ------ | -------------------- | ------------- |
+| color  | 按下按钮的颜色       | "red"         |
+| label  | 显示在按钮下方的文本 | ""            |
+| key    | 按钮的键盘快捷键     |               |
+| bounce | 设置为“0”以禁用反弹  | ""            |
 
-You can use the "key" attribute to define a keyboard key that will control the button.
-The key is only active when the simulation is running and the diagram has focus.
+### 定义键盘快捷键
 
-For example, suppose you defined "key" to "Q". Then, when you run the simulation,
-pressing _Q_ in the keyboard will press the push button. The button will be kept
-in pressed state as long as you keep pressing _Q_, and once you release the key,
-the button will also be released.
+您可以使用“键”属性来定义控制按钮的键盘按键。
 
-You can define any alphanumerical keyboard shortcut (so English letters and numbers), and for letters,
-the value of "key" is case insensitive (so "q" and "Q" mean the same).
+只有当模拟运行并且图表有焦点时，按键才处于活动状态。
 
-You can also target some special keys, such as "Escape", "ArrowUp", "F8", " " (space), or "PageDown", but some keys
-could be blocked by the browser (e.g. "F5" that refreshes the page).
-The full list of key names can be found [here](https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/key/Key_Values).
-Note the the special key names are case sensitive - so "Escape" will work, "escape" won't.
+例如，假设您将“key”定义为“Q”。然后，当您运行模拟时，在键盘中按_Q_将按下按钮。按钮将保留处于按下状态，只要你继续按_Q_，一旦你松开键，该按钮也将被释放。
 
-Firefox users: if the keyboard shortcuts don't work for you, please make sure that the "Search for text when you start typing" setting is disabled.
+您可以定义任何字母数字键盘快捷键（例如英语字母和数字），对于字母，“key”的值不区分大小写（所以“q”和“Q”的意思相同）。
 
-### Bouncing
+您还可以瞄准一些特殊密钥，例如“Escape”、“ArrowUp”、“F8”、“（空格）或“PageDown”，但一些键可能会被浏览器阻止（例如“F5”刷新页面）。按键的完整列表 [here](https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/key/Key_Values)。
 
-When you press physical pushbutton, the circuit opens and closes tens or hundreds of times.
-This phenomenon is called Bouncing. This happens because of the mechanical nature of pushbuttons:
-when the metal contacts come together, there's a brief period when the contact isn't perfect, which
-causes a series of rapid open/close transitions.
+请注意，特殊键名区分大小写-因此“Escape”将起作用，“escape”不会起作用。
 
-Wokwi simulates button bouncing by default. You can disable bouncing simulation by setting the
-"bounce" attr to "0":
+Firefox用户：如果键盘快捷键不能用，请确保禁用“开始键入时搜索文本”设置。
+
+### 弹跳
+
+当您按下物理按钮时，电路会打开和关闭数十次或数百次。这种现象被称为弹跳。发生这种情况是因为按钮的机械性质：金属触点结合在一起时，有一段短暂的过度时间——触点的接触不充分，这导致一系列快速的开放/关闭。
+
+Wokwi默认模拟按钮弹跳。您可以通过以下方式禁用弹跳模拟"Bounce" 至 "0"：
 
 `{ "bounce": "0" }`
 
-The bouncing simulation follows the behaviour described in "The Art of electronics" by Horowitz & Hill:
+弹跳模拟遵循Horowitz & Hill在《电子艺术》中描述的行为：
 
-> When the switch is closed, the two contacts actually separate and reconnect, typically 10 to 100
-> times over a period of about 1ms.
+>当开关关闭时，两个触点实际上分离并重新连接，通常为10到100次，大约1ms的时间。
 
-For example, [this project shows the difference between bouncing and non bouncing button](https://wokwi.com/projects/288681423014986248). It has two buttons connected to the same Arduino input pin:
+例如，[这个项目展示了弹跳和非弹跳的不同](https://wokwi.com/projects/288681423014986248). 。它有两个按钮连接到同一个Arduino输入引脚：
 
-- The blue button does not simulate bouncing. Pressing on it once will only print a single pair of "pressed" and "released" messages.
-- The red button simulates bouncing. Pressing on it once will print multiple "pressed" and "released" messages.
+- 蓝色按钮不会模拟弹跳。按一次只会打印一对“按下”和“释放”的消息。
 
-### Stickiness
+- 红色按钮模拟弹跳。按一次将打印多条“按下”和“释放”的消息。
 
-If you want the button to stay pressed, Ctrl-click it (Cmd-click on Mac). It will cause the button to stay pressed until the next click.
-This is useful when you need multiple buttons pressed at the same time.
+### 保持
 
-### Examples
+如果您希望该按钮保持按下状态，请按住 Ctrl 键单击它（在 Mac 上按住 Cmd 键单击）。它将导致按钮保持按下状态，直到下次单击。
+
+当您需要同时按下多个按钮时，这非常有用。
+
+### 示例
 
 | Result                                | Attrs                     |
 | ------------------------------------- | ------------------------- |
@@ -93,7 +87,7 @@ This is useful when you need multiple buttons pressed at the same time.
 | <wokwi-pushbutton color="#FFFF00" />  | `{ "color": "#FFFF00" }`  |
 | <wokwi-pushbutton label="Push me!" /> | `{ "label": "Push me!" }` |
 
-## Simulator examples
+## 仿真案例
 
 - [Simon Game](https://wokwi.com/arduino/libraries/demo/simon-game) - A memory game with 4 push buttons
 - [Diatonic Piano](https://wokwi.com/projects/291958456169005577) - A 8-note piano, use keys 1-8 to press the buttons and play the notes.

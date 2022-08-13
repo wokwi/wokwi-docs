@@ -1,60 +1,58 @@
 ---
-title: wokwi-logic-analyzer Reference
-sidebar_label: wokwi-logic-analyzer
+title: wokwi-logic-analyzer参考
+sidebar_label: wokwi-logic-analyzer参考
 ---
 
-8-Channel Digital Logic Analyzer
+8通道数字逻辑分析仪
 
 ![Logic Analyzer](wokwi-logic-analyzer.svg)
 
-## Pin names
+## 引脚名称
 
-Pins D0 to D7 are connected to the input channels of the logic analyzer. There's also a GND pin, which should be connected to the digital ground.
+引脚D0到D7连接到逻辑分析仪的输入通道。还有一个GND引脚，应该连接到数字地面。
 
-## Attributes
+## 属性
 
-| Name         | Description                                       | Default value |
-| ------------ | ------------------------------------------------- | ------------- |
-| bufferSize   | Maximum number of samples to collect              | "1000000"     |
-| filename     | Name of the recording file, without the extension | "wokwi-logic" |
-| triggerMode  | Trigger mode: "off", "level" or "edge"            | "off"         |
-| triggerLevel | "high" or "low"                                   | "high"        |
-| triggerPin   | "D0" … "D7"                                       | "D7"          |
+| Name         | Description                        | Default value |
+| ------------ | ---------------------------------- | ------------- |
+| bufferSize   | 要采集的最大样本数量               | "1000000"     |
+| filename     | 录音文件的名称，不带扩展名         | "wokwi-logic" |
+| triggerMode  | 触发模式: "off", "level" or "edge" | "off"         |
+| triggerLevel | "high" or "low"                    | "high"        |
+| triggerPin   | "D0" … "D7"                        | "D7"          |
 
-### Sample buffer
+### 采样缓冲区
 
-The logic analyzer uses a buffer to store the recorded pin data. Each pin level change (e.g. low to high) occupies one slot in the buffer. The simulator allocates
-the memory for the buffer in advance, to ensure fast simulation.
+逻辑分析仪使用缓冲区来存储记录的引脚数据。每个引脚电平变化（例如从低到高）占据缓冲区中的一个插槽。模拟器分配提前为缓冲区提供内存，以确保快速模拟。
 
-You can choose the size of the buffer by setting the `bufferSize` attribute. Each slot in the buffer uses 9 bytes of RAM. Thus, the default buffer size of 1 million
-samples will use about 9 MB of RAM. Allocating a large buffer may strain your browser.
+您可以通过设置`bufferSize`属性来选择缓冲区的大小。缓冲区中的每个插槽使用9字节的RAM。因此，100万的默认缓冲区大小样本将使用约9 MB的RAM。分配一个大缓冲区可能会使您的浏览器紧张。
 
-The logic analyzer displays the number of samples captured while the simulation is running. You can use this number to estimate the required buffer size.
+逻辑分析仪显示模拟运行时捕获的样本数量。您可以使用此数字来估计所需的缓冲区大小。
 
-### Trigger
+### 触发
 
-The trigger controls when the logic analyzer starts recording data. By default, the trigger is off, so the logic analyzer captures all the data. You can configure the trigger using three attributes `triggerMode`, `triggerPin` and `triggerEdge`.
+触发器控制逻辑分析器何时开始记录数据。默认情况下，触发器处于关闭状态，因此逻辑分析器会捕获所有数据。您可以使用三个属性`triggerMode`、`triggerPin`和`triggerEdge`来配置触发器。
 
-The following table summarizes the available trigger modes:
+下表总结了可用的触发模式：
 
-| triggerMode | Description     | Behavior                                                |
-| ----------- | --------------- | ------------------------------------------------------- |
-| "off"       | Disable trigger | All data is recorded                                    |
-| "edge"      | Edge trigger    | Start recording when `triggerPin` equals `triggerLevel` |
-| "level"     | Level trigger   | Record only while `triggerPin` equals `triggerLevel`    |
+| triggerMode | Description     | Behavior                                   |
+| ----------- | --------------- | ------------------------------------------ |
+| "off"       | Disable trigger | 所有数据都已记录                           |
+| "edge"      | Edge trigger    | 当`triggerPin`等于`triggerLevel`时开始记录 |
+| "level"     | Level trigger   | 仅当`triggerPin`等于`riggerLevel`时才记录  |
 
-The "edge" mode starts recording when the `triggerPin` changes to `triggerLevel`, and continues recording until the simulation terminates. For example, if you set `triggerPin` to "D7" and `triggerLevel` to "high" (their default values), the logic analyzer will start recording when pin D7 goes high.
+当`triggerPin`更改为`triggerLevel`时，“边缘”模式开始记录，并持续记录，直到仿真结束。例如，如果您将`triggerPin`设置为“D7”，将`triggerLevel`设置为“高”（其默认值），当引脚D7变高时，逻辑分析器将开始记录。
 
-The "level" mode is more versatile: just like the "edge" mode, it starts recording when the `triggerPin` changes to `triggerLevel`, but it will pause the recording as soon as `triggerPin` changes again.
+“级别”模式更通用：就像“边缘”模式一样，当`triggerPin`更改为`triggerLevel`时，它会开始记录，但一旦`triggerPin`再次更改，它就会暂停记录。
 
-For usage examples, check out the [Using the Trigger section](../guides/logic-analyzer#using-the-trigger) in the Logic Analyzer Guide.
+有关使用示例，请查看Logic Analyzer指南中的[Using the Trigger section](../guides/logic-analyzer#using-the-trigger) 。
 
-## Viewing the data
+## 查看数据
 
-When you stop the simulation, the logic analyzer downloads a file with the recorded samples to your computer. The recording file uses the standard [Value Change Dump (VCD)](https://en.wikipedia.org/wiki/Value_change_dump) format. The file is called "wokwi-logic.vcd" by default, but you can configure the name using the `filename` attribute.
+当您停止仿真时，逻辑分析器会将包含录制样本的文件下载到您的计算机上。录音文件使用标准[Value Change Dump (VCD)](https://en.wikipedia.org/wiki/Value_change_dump) 格式。该文件默认称为“wokwi-logic.vcd”，但您可以使用`filename` 属性配置名称。
 
-To learn how to view the data, please visit our [Logic Analyzer Guide](../guides/logic-analyzer#using-the-logic-analyzer).
+要了解如何查看数据，请访问我们的[Logic Analyzer Guide](../guides/logic-analyzer#using-the-logic-analyzer)。
 
-## Simulator examples
+## 仿真实例
 
 - [Logic Analyzer recording I2C protocol signals](https://wokwi.com/projects/325933824665977428)

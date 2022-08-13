@@ -1,13 +1,13 @@
 ---
-title: wokwi-stepper-motor Reference
-sidebar_label: wokwi-stepper-motor
+title: wokwi-stepper-motor参考
+sidebar_label: wokwi-stepper-motor参考
 ---
 
-A bipolar stepper motor
+双极步进电机
 
 <wokwi-stepper-motor />
 
-## Pin names
+## 引脚名称
 
 | Name | Description            |
 | ---- | ---------------------- |
@@ -16,15 +16,15 @@ A bipolar stepper motor
 | B+   | Coil B positive signal |
 | B-   | Coil B negative signal |
 
-## Attributes
+## 属性
 
-| Name      | Description                                                                                              | Default value |
-| --------- | -------------------------------------------------------------------------------------------------------- | ------------- |
-| arrow     | Displays an arrow to indicate the position of the stepper. Set to the color of the arrow, e.g. "orange"  | ""            |
-| display   | What number to display on the stepper? Valid values "steps", "angle" (in degrees), "none"                | "steps"       |
-| gearRatio | The gear ratio of the motor. set to "1:1" for 200 steps/revolution, "2:1" for 400 steps/revolution, etc. | "1:1"         |
+| Name      | Description                                                  | Default value |
+| --------- | ------------------------------------------------------------ | ------------- |
+| arrow     | 显示一个箭头来指示步进器的位置。设置为箭头的颜色，例如“orange” | ""            |
+| display   | 步进器上显示什么数字？有效值“步steps”、“angle”（以度为单位）、“none” | "steps"       |
+| gearRatio | 电机的齿轮比。200步/转速设置为“1:1”，400步/转速设置为“2:1”等。 | "1:1"         |
 
-### Examples
+### 示例
 
 | Result                                                        | Attrs                    |
 | ------------------------------------------------------------- | ------------------------ |
@@ -33,17 +33,17 @@ A bipolar stepper motor
 | <wokwi-stepper-motor angle="36" />                            | `{ "display": "none" }`  |
 | <wokwi-stepper-motor angle="36" arrow="orange" />             | `{ "arrow": "orange" }`  |
 
-## Using the stepper motor
+## 使用步进电机
 
-When using a stepper motor you need a driver chip that can supply large amounts of current to the motor's coils. Wokwi supports the common [A4988 driver board](wokwi-a4988). You can also wire the stepper motor directly to your microcontroller. Wokwi uses a digital simulation engine, so the coil current is not taken into account.
+使用步进电机时，您需要一个驱动芯片，该芯片可以为电机的线圈提供大量电流。Wokwi支持常见的[A4988 driver board](wokwi-a4988)。您还可以将步进电机直接连接到微控制器。Wokwi使用数字模拟引擎，因此不考虑线圈电流。
 
-You can use a variety of Arduino libraries to control the stepper motor: Stepper, AccelStepper, etc.
+您可以使用各种Arduino库来控制步进电机：步进电机、AccelStepper等。
 
-### Simulation Behavior
+### 仿真行为
 
-The stepper motor moves 1.8 degrees per step (200 steps per revolution). The motor also supports half-stepping (0.9 degrees per step / 400 steps per revolution). You can even use smaller microsteps (e.g. 1/4 or 1/8 step), but the simulated motor only displays the angle in half-step resolution. For more information, check out the [A4988 microstepping configuration table](wokwi-a4988#microstepping-configuration).
+步进电机每步移动1.8度（每转200步）。电机还支持半步（每步0.9度/每转400步）。您甚至可以使用较小的微步（例如1/4或1/8步），但模拟电机仅以半步分辨率显示角度。有关更多信息，请查看[A4988 microstepping configuration table](wokwi-a4988#microstepping-configuration)。
 
-## Simulator examples
+## 仿真案例
 
 - [Stepper motor using the Arduino Stepper library](https://wokwi.com/projects/327324886912467538)
 - [Direct control of the motor (no library)](https://wokwi.com/projects/327360139702043220)

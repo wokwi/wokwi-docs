@@ -1,22 +1,22 @@
 ---
-title: wokwi-slide-potentiometer Reference
-sidebar_label: wokwi-slide-potentiometer
+title: wokwi-slide-potentiometer参考
+sidebar_label: wokwi-slide-potentiometer参考
 ---
 
-Sliding variable resistor (linear potentiometer)
+滑动可变电阻（线性电位器）
 
 <wokwi-slide-potentiometer />
 
-The function and pin-out of the slide potentiometer are same as [wokwi-potentiometer](wokwi-potentiometer). Check out the [wokwi-potentiometer docs](wokwi-potentiometer) for more information.
+滑动电位器的功能和引脚与 [wokwi-potentiometer](wokwi-potentiometer)相同。查看 [wokwi-potentiometer docs](wokwi-potentiometer) 了解更多信息。
 
-## Attributes
+## 属性
 
-| Name         | Description                                                                                                                | Default value |
-| ------------ | -------------------------------------------------------------------------------------------------------------------------- | ------------- |
-| value        | Initial value of the potentiometer, between 0 and 1023                                                                     | "0"           |
-| travelLength | Travel length of the tip (mm). Controls the width of the potentiometer.<br />Common values: "15", "20", "30", "45", "60", "100" | "30"          |
+| Name         | Description                                                  | Default value |
+| ------------ | ------------------------------------------------------------ | ------------- |
+| value        | 电位器的初始值，在0到1023之间                                | "0"           |
+| travelLength | 尖端的行程长度（毫米）。控制电位器的宽度.<br />常用值: "15", "20", "30", "45", "60", "100" | "30"          |
 
-### Examples
+### 示例
 
 | Result                                           | Attrs                       |
 | ------------------------------------------------ | --------------------------- |
@@ -24,6 +24,6 @@ The function and pin-out of the slide potentiometer are same as [wokwi-potentiom
 | <wokwi-slide-potentiometer travelLength="60" />  | `{ "travelLength": "60" }`  |
 | <wokwi-slide-potentiometer travelLength="100" /> | `{ "travelLength": "100" }` |
 
-## Simulator examples
+## 仿真实例
 
 - [Slide potentiometer + Servo](https://wokwi.com/projects/297604176384360973) - Control a [servo](wokwi-servo) with a slide potentiometer
