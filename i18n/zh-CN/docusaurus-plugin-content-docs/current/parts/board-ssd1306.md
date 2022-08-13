@@ -1,32 +1,32 @@
 ---
-title: board-ssd1306 Reference
-sidebar_label: board-ssd1306
+title: board-ssd1306显示模块参考
+sidebar_label: board-ssd1306显示模块
 ---
 
-Monochrome 128x64 OLED display with I2C interface
+具有I2C接口的单色128x64 OLED显示器
 
 ![SSD1306](https://raw.githubusercontent.com/wokwi/wokwi-boards/master/boards/ssd1306/board.svg)
 
-## Pin names
+## 引脚名称
 
-| Name | Description    | Arduino Uno pin |
-| ---- | -------------- | --------------- |
-| GND  | Ground         | GND             |
-| VCC  | Supply voltage | 5V              |
-| SCL  | I2C clock line | A5              |
-| SDA  | I2C data line  | A4              |
+| 名称 | 介绍      | Arduino Uno pin |
+| ---- | --------- | --------------- |
+| GND  | 接地      | GND             |
+| VCC  | 接电源    | 5V              |
+| SCL  | I2C时钟线 | A5              |
+| SDA  | I2C数据线 | A4              |
 
-The default I2C address of the SSD1306 module is 0x3c (60).
+SSD1306模块的默认I2C地址为0x3c（60）。
 
-## Attributes
+## 属性
 
-| Name        | Description                | Default value |
-| ----------- | -------------------------- | ------------- |
-| i2c-address | I2C address of the display | "0x3c"        |
+| Name        | Description     | Default value |
+| ----------- | --------------- | ------------- |
+| i2c-address | 显示器的I2C地址 | "0x3c"        |
 
-## Using in Arduino
+## 在Arduino中使用
 
-You can choose between several SSD1306 Arduino libraries:
+您可以在几个SSD1306 Arduino库之间进行选择：
 
 - [Adafruit SSD1306](https://wokwi.com/arduino/libraries/Adafruit_SSD1306)
 - [ssd1306](https://wokwi.com/arduino/libraries/ssd1306)
@@ -36,9 +36,9 @@ You can choose between several SSD1306 Arduino libraries:
 - [SSD1306Ascii](https://github.com/greiman/SSD1306Ascii)
 - [Tiny4kOLED](https://www.arduino.cc/reference/en/libraries/tiny4koled/) - for ATtiny85 users
 
-All the above libraries are available on Wokwi.
+上述所有库都可以在Wokwi上找到。
 
-## Simulator examples
+## 仿真案例
 
 - [SSD1306 Snake Game](https://wokwi.com/projects/296135008348799496) (using Adafruit SSD1306)
 - [ATtiny85 Digital Temperature + Humidity on SSD1306](https://wokwi.com/projects/292900020514980360)

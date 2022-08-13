@@ -1,41 +1,39 @@
 ---
-title: wokwi-74hc595 Reference
-sidebar_label: wokwi-74hc595
+title: wokwi-74hc595模块参考
+sidebar_label: wokwi-74hc595模块
 ---
 
-8-bit Serial-In Parallel-Out (SIPO) Shift Register
+8位串行并行输出（SIPO）移位寄存器
 
 ![74HC595](wokwi-74hc595.svg)
 
-Use the 74HC595 shift register to expand the number of _output_ pins on your microcontroller. For input shift register (e.g. reading multiple buttons with a single input pin), please see the [wokwi-74hc165](wokwi-74hc165).
+使用74HC595移位寄存器扩展微控制器上的_output_引脚数量。对于输入移位寄存器（例如，使用单个输入引脚读取多个按钮），请参阅[wokwi-74hc165](wokwi-74hc165) 。
 
-## Pin names
+## 引脚名称
 
-| Pin   | Description                                            |
-| ----- | ------------------------------------------------------ |
-| DS    | Serial input                                           |
-| SHCP  | Serial clock                                           |
-| STCP  | Storage (latch) pin                                    |
-| OE    | Output enable, active low. Connect to GND if not used. |
-| Q0…Q7 | Parallel output                                        |
-| Q7S   | Serial output\*                                        |
-| MR    | Reset (clear), active low. Connect to VCC if not used  |
-| GND   | Ground                                                 |
-| VCC   | Supply voltage                                         |
+| Pin   | 描述                                          |
+| ----- | --------------------------------------------- |
+| DS    | 串行输入                                      |
+| SHCP  | 串行时钟                                      |
+| STCP  | 锁存引脚                                      |
+| OE    | 输出使能，低有效。如果不使用，请连接到GND。   |
+| Q0…Q7 | 并行输出                                      |
+| Q7S   | 串行输出*                                     |
+| MR    | 复位（清除），低有效。如果不使用，请连接到VCC |
+| GND   | 接地                                          |
+| VCC   | 接电源                                        |
 
-\* Use the Q7S to chain multiple 74HC595 units together. Connect Q7S to the DS pin of the next 74HC595 chip in chain.
+\* 使用Q7S将多个74HC595单元连接在一起。将Q7S连接到链中的下一个74HC595芯片的DS引脚。
 
-## Connecting to Arduino
+## 在Arduino中使用
 
-You will need to connect at least 3 pins to your microcontroller: DS, SHCP, and STCP.
+您需要将至少3个引脚连接到微控制器：DS、SHCP和STCP。
 
-The OE pin can be used to disable the output of the shift register. If you need that functionality,
-connect it to your microcontroller. Otherwise, connect it to the ground to permanently enable the output.
+OE引脚可用于禁用移位寄存器的输出。如果您需要该功能，请将其连接到您的微控制器。否则，将其连接到地面以永久启用输出。
 
-The output pins of the shift register, Q0 through Q7, are usually connected to [LEDs](wokwi-led) or a 7-segment display.
+移位寄存器的输出引脚Q0到Q7，通常连接到 [LEDs](wokwi-led)或7段显示器。
 
-The following code example assumes that you connected DS to Arduino pin 2, SHCP to Arduino pin 3, and
-STCP to Arduino pin 4. It outputs an 8-bit pattern that inverts two times a second:
+以下代码示例假设您将DS连接到Arduino引脚2，SHCP连接到Arduino引脚3，并且STCP到Arduino的4号引脚。它输出一个8位的数，该数每秒翻转两次：
 
 ```cpp
 const int dataPin = 2;   /* DS */
@@ -58,9 +56,9 @@ void loop() {
 }
 ```
 
-You can also [run this example on Wokwi](https://wokwi.com/projects/301192672203244042).
+你可以 [尝试该项目](https://wokwi.com/projects/301192672203244042).
 
-## Simulator examples
+## 仿真实例
 
 - [75HC595 shift register with 8 LEDs](https://wokwi.com/projects/301188813482361352)
 - [Arduino 16-LED shift register blink](https://wokwi.com/projects/301213976182653448)
