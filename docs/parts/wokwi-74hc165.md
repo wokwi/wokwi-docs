@@ -37,7 +37,7 @@ When PL is low, the shift register is in the sampling state: it reads the inputs
 
 ### Shifting (PL high)
 
-When PL is high, the shift register is in the sampling state. It retains the value it reads from the input, and let you read this value one bit at a time through the Q7 pin. You can read the next bit by pulsing CP (the serial clock) high. Initially, Q7 contains the value read from D7. When you pulse the clock high, you get the value from D6. When you pulse it again, you get the value from D5, etc.
+When PL is high, the shift register is in the shifting state. It retains the value it reads from the input, and let you read this value one bit at a time through the Q7 pin. You can read the next bit by pulsing CP (the serial clock) high. Initially, Q7 contains the value read from D7. When you pulse the clock high, you get the value from D6. When you pulse it again, you get the value from D5, etc.
 
 Changing the input pins while PL is high has no effect.
 
