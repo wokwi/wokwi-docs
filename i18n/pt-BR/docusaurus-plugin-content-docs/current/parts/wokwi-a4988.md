@@ -1,5 +1,5 @@
 ---
-title: wokwi-a4988 Reference
+title: Referência do wokwi-a4988
 sidebar_label: wokwi-a4988
 ---
 
@@ -21,10 +21,10 @@ Driver de motor de passo A4988, para uso com [wokwi-stepper-motor](./wokwi-stepp
 | DIR    | Entrada de direção: 0 = anti-horário, 1 = horário     |                 |
 | GND    | Terra                                                 |                 |
 | VDD    | Tensão de alimentação                                 |                 |
-| 1B     | Conecte ao A- do motor                                |                 |
-| 1A     | Conecte ao A+ do motor                                |                 |
-| 2A     | Conecte ao B+ do motor                                |                 |
-| 2B     | Conecte ao B- do motor                                |                 |
+| 1B     | Conecte ao B- do motor                                |                 |
+| 1A     | Conecte ao B+ do motor                                |                 |
+| 2A     | Conecte ao A+ do motor                                |                 |
+| 2B     | Conecte ao A- do motor                                |                 |
 | VMOT   | Fonte de alimentação do motor, não usada na simulação |                 |
 
 \* Os pinos digitais com um valor padrão de Low (0) são puxados para baixo e os pinos com um valor padrão de High (1) são puxados para cima. Os pinos sem valor padrão são flutuantes.

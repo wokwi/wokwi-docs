@@ -32,6 +32,10 @@ Crie uma nova cópia de uma peça clicando nela (para selecioná-la) e pressiona
 
 Exclua uma peça clicando nela (para selecioná-la) e em seguida pressionando a tecla Delete.
 
+### Selecionando várias peças
+
+Selecione várias peças clicando nas peças com a tecla Shift pressionada. Você pode então mover todas as partes juntas, duplicá-las (usando a tecla "D") ou excluí-las usando a tecla Delete.
+
 ## Editando fios
 
 ### Criação de uma ligação entre as duas peças
