@@ -1,20 +1,19 @@
 ---
-title: wokwi-ir-remote Reference
-sidebar_label: wokwi-ir-remote
+title: wokwi-ir-remote参考
+sidebar_label: wokwi-ir-remote参考
 ---
 
-38KHz infrared remote with 20 function keys. Use together with the [IR Receiver module](wokwi-ir-receiver).
+38KHz红外遥控器，带20个功能键。与[IR Receiver module](wokwi-ir-receiver)一起使用。
 
 <wokwi-ir-remote />
 
-## Function keys
+## 功能键
 
-The keys send infrared messages encoded using the [NEC frame format](https://exploreembedded.com/wiki/NEC_IR_Remote_Control_Interface_with_8051#NEC_Protocol). Each key sends a different command value (see the table below), and the address field is always 0.
+密钥发送使用[NEC frame format](https://exploreembedded.com/wiki/NEC_IR_Remote_Control_Interface_with_8051#NEC_Protocol).编码的红外消息。每个键发送不同的命令值（见下表），地址字段始终为0。
 
-Each key has a keyboard shortcut that actives the key while the remote is in focus.
+每个按键都有一个键盘快捷键，可以在遥控器对焦时激活该键。
 
-The following table lists the NEC command, NEC encoded value and keyboard shortcut
-for each of the keys:
+下表列出了NEC命令、NEC编码值和键盘快捷键，对于每个按键：
 
 | Key      | Command | NEC encoded | Keyboard Shortcut |
 | -------- | ------- | ----------- | ----------------- |
@@ -39,6 +38,6 @@ for each of the keys:
 | 8        | 74      | 0xFF4AB5    | 8                 |
 | 9        | 82      | 0xFF52AD    | 9                 |
 
-## Simulator examples
+## 仿真案例
 
 - [IRRemote + LCD Display](https://wokwi.com/projects/298934082074575369)

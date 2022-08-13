@@ -1,33 +1,31 @@
 ---
-title: wokwi-ds1307 Reference
-sidebar_label: wokwi-ds1307
+title: wokwi-ds1307参考
+sidebar_label: wokwi-ds1307参考
 ---
 
-RTC (Real Time Clock) module with I2C interface and 56 bytes of NV SRAM.
+带有I2C接口和56字节NV SRAM的RTC（实时时钟）模块。
 
 <wokwi-ds1307 />
 
-## Pin names
+## 引脚名称
 
-| Name | Description                                          |
-| ---- | ---------------------------------------------------- |
-| GND  | Ground                                               |
-| 5V   | Positive voltage (5V)                                |
-| SDA  | I2C data line                                        |
-| SCL  | I2C clock line                                       |
-| SQW  | Square wave output. Not available in the simulation. |
+| Name | Description              |
+| ---- | ------------------------ |
+| GND  | Ground                   |
+| 5V   | Positive voltage (5V)    |
+| SDA  | I2C 数据线               |
+| SCL  | I2C 时钟线               |
+| SQW  | 方波输出。模拟中不可用。 |
 
-The I2C address of the DS1307 is 0x68.
+DS1307的I2C地址是0x68。
 
-## Simulation Behavior
+## 仿真工作
 
-The simulated DS1307 is automatically initialized to the current system time when starting the simulation. It
-then keeps counting the time.
+模拟的DS1307在开始模拟时会自动初始化为当前系统时间。然后它继续数时间。
 
-The code running in the simulation can update the date/time of the DS1307, and the DS1307 will keep track
-of the update time.
+仿真中运行的代码可以更新DS1307的日期/时间，DS1307将跟踪更新时间。
 
-## Simulator examples
+## 仿真案例
 
 - [Reading current date/time using RTClib](https://wokwi.com/projects/305979285237137984)
 - [Alarm clock](https://wokwi.com/playground/alarm-clock)
