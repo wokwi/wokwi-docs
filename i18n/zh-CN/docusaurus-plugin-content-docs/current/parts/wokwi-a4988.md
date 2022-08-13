@@ -1,59 +1,59 @@
 ---
-title: wokwi-a4988 Reference
-sidebar_label: wokwi-a4988
+title: wokwi-a4988模块参考
+sidebar_label: wokwi-a4988模块
 ---
 
-A4988 Stepper Motor driver, for use with [wokwi-stepper-motor](./wokwi-stepper-motor)
+A4988步进电机驱动器，用于 [wokwi-stepper-motor](./wokwi-stepper-motor)
 
 ![Wokwi A4988](wokwi-a4988.svg)
 
-## Pin names
+## 引脚名称
 
-| Name   | Description                                      | Default \* |
-| ------ | ------------------------------------------------ | ---------- |
-| ENABLE | Enable pin, active low (pulled down)             | Low (0)    |
-| MS1    | Microstep select pin 1                           | Low (0)    |
-| MS2    | Microstep select pin 2                           | Low (0)    |
-| MS3    | Microstep select pin 3                           | Low (0)    |
-| RESET  | Reset pin, active low (floating)                 |            |
-| SLEEP  | Sleep pin, active low (pulled up)                | High (1)   |
-| STEP   | Step input, connect to microcontroller           |            |
-| DIR    | Direction input: 0=counterclockwise, 1=clockwise |            |
-| GND    | Ground                                           |            |
-| VDD    | Logic power supply                               |            |
-| 1B     | Connect to motor's A-                            |            |
-| 1A     | Connect to motor's A+                            |            |
-| 2A     | Connect to motor's B+                            |            |
-| 2B     | Connect to motor's B-                            |            |
-| VMOT   | Motor power supply, not used in the simulation   |            |
+| 名称   | 描述                         | 默认 \*  |
+| ------ | ---------------------------- | -------- |
+| ENABLE | 使能引脚，低有效（向下拉）   | Low (0)  |
+| MS1    | 步进选择引脚1                | Low (0)  |
+| MS2    | 步进选择引脚2                | Low (0)  |
+| MS3    | 步进选择引脚3                | Low (0)  |
+| RESET  | 复位引脚，低有效（浮空）     |          |
+| SLEEP  | 休眠引脚，低有效（上拉）     | High (1) |
+| STEP   | 步进输入，连接到微控制器     |          |
+| DIR    | 方向输入：0=逆时针，1=顺时针 |          |
+| GND    | 接地                         |          |
+| VDD    | 逻辑电源                     |          |
+| 1A     | 连接到电机的A-               |          |
+| 2A     | 连接到电机的A+               |          |
+| 1B     | 连接到电机的B+               |          |
+| 2B     | 连接到电机的B-               |          |
+| VMOT   | 电机电源，未用于仿真         |          |
 
-\* Digital pins with a default value of Low (0) are pulled-down, and pins with a default value of High (1) are pulled up. Pins without a default value are floating.
+\* 默认值为Low（0）的数字引脚被拉下，默认值为High（1）的数字引脚被拉高。没有默认值的引脚是浮动的。
 
-### Microstepping configuration
+### 微步进值配置
 
-Standard stepper motors have 200 steps per revolution (the steps are spaces 1.8 degrees apart). The stepper driver supports microstepping: turning the motor less than one step for every pulse. Microstepping allows finer control of the motor movement.
+标准步进电机每转有200步（步数相距1.8度）。步进驱动器支持微步进：每个脉冲将电机转动不到一步。微步法可以更精细地控制电机运动。
 
-Use the MS1/MS2/MS3 pins to select the microstepping configuration for the stepper driver:
+使用MS1/MS2/MS3引脚为步进驱动器选择微步进配置：
 
-| MS1 | MS2 | MS3 | Operation mode      | Degrees | Microsteps/revolution |
-| --- | --- | --- | ------------------- | ------- | --------------------- |
-| 0   | 0   | 0   | Full step (default) | 1.8     | 200                   |
-| 1   | 0   | 0   | Half step           | 0.9     | 400                   |
-| 0   | 1   | 0   | 1/4 step\*          | 0.45    | 800                   |
-| 1   | 1   | 0   | 1/8 step\*          | 0.225   | 1600                  |
-| 1   | 1   | 1   | 1/16 step\*         | 0.1125  | 3200                  |
+| MS1  | MS2  | MS3  | 工作模式            | 角度   | 微步进数/每圈 |
+| ---- | ---- | ---- | ------------------- | ------ | ------------- |
+| 0    | 0    | 0    | Full step (default) | 1.8    | 200           |
+| 1    | 0    | 0    | Half step           | 0.9    | 400           |
+| 0    | 1    | 0    | 1/4 step\*          | 0.45   | 800           |
+| 1    | 1    | 0    | 1/8 step\*          | 0.225  | 1600          |
+| 1    | 1    | 1    | 1/16 step\*         | 0.1125 | 3200          |
 
-\* These mode are not fully supported by [wokwi-stepper-motor](./wokwi-stepper-motor). When using these modes, the number of steps per revolution will still be correct, but the motor angle will only update every half step. For instance, if you use 1/8 step mode, the motor will move half a step (0.9 degrees) every four STEP pin pulses.
+\*  [Wokwi-stepper-motor](./wokwi-stepper-motor)还不完全支持这些模式。使用这些模式时，每转的步数仍然正确，但电机角度只会每半步更新一次。例如，如果您使用1/8步模式，电机将每四个步进引脚脉冲移动半步（0.9度）。
 
-## Using the A4988 Stepper Driver
+## 使用A4988步进驱动器
 
-Connect the stepper motor pins to the 1B/1A/2A/2B pins of the driver. The RESET pin has to be HIGH, so you can connect it to the adjacent SLEEP pin (which is pulled HIGH by default). Alternatively, you can enable/disable the stepper motor driver from your code by connecting the RESET/SLEEP pins to your microcontroller.
+将步进电机连接到驱动器的1B/1A/2A/2B引脚。复位引脚必须为高，因此您可以将其连接到相邻的休眠引脚（默认情况下拉高）。或者，您可以通过将RESET/SLEEP引脚连接到微控制器，从代码中启用/禁用步进电机驱动器。
 
-Use the STEP pin to move the stepper motor. Every HIGH pulse on this pin will move the motor one step (or microstep, depending on the MS1/MS2/MS3 pins). When the DIR pin is HIGH, the stepper motor will move clockwise. When the DIR pin is LOW, the motor will move counterclockwise.
+使用步进驱动步进电机。此引脚上的每个高脉冲都将移动电机一步（或微步，具体取决于MS1/MS2/MS3引脚）。当DIR引脚高时，步进电机将顺时针移动。当DIR引脚低时，电机将逆时针移动。
 
-For example, if DIR, MS1 and MS3 are LOW, and MS2 is HIGH (1/4 step mode), then pulsing the STEP pin will move the motor 1/4 step (0.45 degrees) counterclockwise.
+例如，如果DIR、MS1和MS3是LOW，而MS2是HIGH（1/4步模式），那么脉动STEP引脚将逆时针移动电机1/4步（0.45度）。
 
-## Simulator Examples
+## 仿真案例
 
-- [A4988 control using a button + switch](https://wokwi.com/projects/327823888123691604) - press the green button to move the motor one step, and move the switch to change the direction.
-- [4-Motor GCODE controller](https://wokwi.com/projects/327761195587076690) - Type "G00 X10 Y25" to move the first motor 10 steps, and the second one 25 steps.
+- [A4988 control using a button + switch](https://wokwi.com/projects/327823888123691604) - 按绿色按钮移动电机一步，然后移动开关以改变方向。
+- [4-Motor GCODE controller](https://wokwi.com/projects/327761195587076690) - 键入“G00 X10 Y25”以移动第一个电机10步，第二个25步。
