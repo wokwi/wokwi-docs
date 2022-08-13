@@ -1,49 +1,44 @@
 ---
-title: wokwi-buzzer Reference
-sidebar_label: wokwi-buzzer
+title: wokwi-buzze参考
+sidebar_label: wokwi-buzzer参考
 ---
 
-A piezoelectric buzzer
+压电蜂鸣器
 
 <wokwi-buzzer />
 
-## Pin names
+## 引脚名称
 
 | Name | Description |
 | ---- | ----------- |
-| 1    | Negative(Black) pin   |
-| 2    | Positive(Red) pin  |
+| 1    | 负（黑色）引脚 |
+| 2    | 正（红色）引脚 |
 
-## Attributes
+## 属性
 
-| Name   | Description                                              | Default value |
-| ------ | -------------------------------------------------------- | ------------- |
-| mode   | Buzzer operation mode: "smooth" or "accurate"            | "smooth"      |
-| volume | Volume (loudness) of the sound, between "0.01" and "1.0" | "1.0"         |
+| Name   | Description                               | Default value |
+| ------ | ----------------------------------------- | ------------- |
+| mode   | 蜂鸣器操作模式："smooth" or "accurate"    | "smooth"      |
+| volume | 声音的音量（响度），介于“0.01”和“1.0”之间 | "1.0"         |
 
-### Operation modes
+### 工作模式
 
-The buzzer can operate in two modes: "smooth" (the default) and "accurate".
+蜂鸣器可以以两种模式运行：“smooth”（默认）和“accurate”。
 
-"smooth" sounds better and is suitable for simple, single-frequency tones. Use it
-when playing a melody or playing tones with Arduino's `tone()` function. Complex and
-polyphonic sounds may not play correctly (or not play at all) in "smooth mode"
+“smooth”听起来更好，适合简单的单频音调。可以在使用Arduino的`tone()`函数演奏旋律或演奏音调时使用。复杂和复调声音在“平滑模式”下可能无法正常播放（或根本无法播放）。
 
-Use the "accurate" mode when you need to play complex sounds. It will accurately play
-the sound you feed in. However, it'll add audible click noises to your sound. These noises
-are due to fluctuations in the simulation speed - it's not always able to provide the complete
-sound buffer in real time.
+当您需要播放复杂的声音时，请使用“accurate”模式。它将准确地播放你输入的声音。然而，它会为您的声音添加可听到的咔嗒声。这些噪音是由于模拟速度的波动-它并不总是能够提供完整的实时声音缓冲区。
 
-## Arduino example
+## Arduino例子
 
-Connect pin 1 of the buzzer to Arduino GND pin, and pin 2 of the buzzer to Arduino pin 8. Then use the `tone()` function to play a sound:
+将蜂鸣器的引脚1连接到Arduino GND引脚，将蜂鸣器引脚2连接到Arduino引脚8。然后使用`tone()`函数播放声音：
 
 ```cpp
 tone(8, 262, 250); // Plays 262Hz tone for 0.250 seconds
 ```
 
-## Simulator examples
+## 仿真案例
 
-- [Simon game](https://wokwi.com/arduino/libraries/demo/simon-game) - A memory game with 4 push buttons
-- [Diatonic piano](https://wokwi.com/projects/291958456169005577) - An 8-note piano, use keys 1-8 to press the buttons and play the notes.
-- [Alarm clock](https://wokwi.com/playground/alarm-clock) - Uses the buzzer to play the alarm sound
+- [Simon game](https://wokwi.com/arduino/libraries/demo/simon-game) - 一个有4个按钮的记忆游戏
+- [Diatonic piano](https://wokwi.com/projects/291958456169005577) -一架8音符钢琴，使用1-8键按下按钮并播放音符
+- [Alarm clock](https://wokwi.com/playground/alarm-clock) - 使用蜂鸣器播放闹钟声

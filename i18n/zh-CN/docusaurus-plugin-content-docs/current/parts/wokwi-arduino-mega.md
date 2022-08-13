@@ -1,6 +1,6 @@
 ---
 title: wokwi-arduino-mega参考
-sidebar_label: wokwi-arduino-mega
+sidebar_label: wokwi-arduino-mega参考
 ---
 
 Arduino Mega 2560。由ATmega2560芯片提供支持，该芯片拥有256K字节的Flash程序内存、8k字节的SRAM和4K字节的EEPROM。该板具有54个数字引脚、16个模拟输入引脚和4个串行端口。它以16MHz运行。
