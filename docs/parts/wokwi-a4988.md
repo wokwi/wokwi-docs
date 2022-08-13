@@ -21,9 +21,9 @@ A4988 Stepper Motor driver, for use with [wokwi-stepper-motor](./wokwi-stepper-m
 | DIR    | Direction input: 0=counterclockwise, 1=clockwise |            |
 | GND    | Ground                                           |            |
 | VDD    | Logic power supply                               |            |
-| 1B     | Connect to motor's A-                            |            |
-| 1A     | Connect to motor's A+                            |            |
-| 2A     | Connect to motor's B+                            |            |
+| 1A     | Connect to motor's A-                            |            |
+| 2A     | Connect to motor's A+                            |            |
+| 1B     | Connect to motor's B+                            |            |
 | 2B     | Connect to motor's B-                            |            |
 | VMOT   | Motor power supply, not used in the simulation   |            |
 
