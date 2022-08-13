@@ -1,25 +1,25 @@
 ---
-title: wokwi-arduino-uno Reference
-sidebar_label: wokwi-arduino-uno
+title: wokwi-arduino-uno参考
+sidebar_label: wokwi-arduino-uno参考
 ---
 
-Arduino Uno is the most popular board in the Arduino family. It is powered by the ATmega328p chip, which has 32K bytes of Flash program memory, 2k bytes of SRAM and 1K bytes of EEPROM.
+Arduino Uno是Arduino家族中最受欢迎的板卡。它由ATmega328p芯片供电，该芯片具有32K字节的Flash程序内存、2k字节的SRAM和1K字节的EEPROM。
 
 <wokwi-arduino-uno />
 
-## Pin names
+## 引脚名称
 
-Pins 0 to 13 are digital GPIO pins. Pins A0 to A5 double as analog input pins, in addition to being digital GPIO pins.
+引脚0到13是数字GPIO引脚。引脚A0至A5除了是数字GPIO引脚外，还兼作模拟输入引脚。
 
-There are three ground pins: GND.1, which is on top of the board, next to pin 13, and GND.2/GND.3, which are on the bottom.
+有三个接地引脚：GND.1，在板的顶部，在引脚13旁边，GND.2/GND.3在底部。
 
-Pins VIN / 5V are connected to the positive power supply.
+引脚VIN/5V连接到正电源。
 
-Pins 3.3V / IOREF / AREF / RESET are not available in the simulation.
+模拟中没有引脚3.3V / IOREF / AREF / RESET。
 
-Digital pins 3, 5, 6, 9, 10, and 11 have hardware PWM support.
+数字引脚3、5、6、9、10和11支持硬件PWM。
 
-Some of the digital pins also have additional functions:
+一些数字引脚还具有额外的功能：
 
 | Pin | Function           | Signal           |
 | --- | ------------------ | ---------------- |
@@ -34,39 +34,39 @@ Some of the digital pins also have additional functions:
 | A4  | I2C                | SDA (Data)       |
 | A5  | I2C                | SCL (Clock)      |
 
-### On board LEDs
+### 板载LED
 
-The board includes four LEDs:
+主板包括四个LED：
 
-| LED | Function                                             |
-| --- | ---------------------------------------------------- |
-| L   | Connected to digital pin 13                          |
-| RX  | Serial RX Activity                                   |
-| TX  | Serial TX Activity                                   |
-| ON  | Power LED. Always on while the simulation is running |
+| LED  | Function                    |
+| ---- | --------------------------- |
+| L    | 连接至数字脚13              |
+| RX   | 串口RX工作指示灯            |
+| TX   | 串口TX工作指示灯            |
+| ON   | 电源LED。模拟运行时始终打开 |
 
-In general, only the "L" LED can be controlled by the user's code. You can use the `LED_BUILTIN` constant to reference it from your code:
+一般来说，只有“L”LED才能由用户的代码控制。您可以使用 `LED_BUILTIN` 常量从代码中引用它：
 
 ```cpp
 pinMode(LED_BUILTIN, OUTPUT);
 digitalWrite(LED_BUILTIN, HIGH);
 ```
 
-See [Blink](https://wokwi.com/arduino/libraries/demo/blink) for a complete code example.
+有关完整的代码示例，请参阅[Blink](https://wokwi.com/arduino/libraries/demo/blink) 。
 
-## Attributes
+## 属性
 
-| Name      | Description                                                             | Default value |
-| --------- | ----------------------------------------------------------------------- | ------------- |
-| frequency | MCU clock frequency, in hertz. Common values: "8m", "16m", and "20m" \* | "16m"         |
+| Name      | Description                                                  | Default value |
+| --------- | ------------------------------------------------------------ | ------------- |
+| frequency | MCU时钟频率，以赫兹为单位。常见值: "8m", "16m", and "20m" \* | "16m"         |
 
-\* Many Arduino libraries assume 16 MHz clock frequency. Changing the clock frequency will void your warranty!
+\* 许多Arduino库假设16MHz时钟频率。更改时钟频率可能将使您的功能失效！
 
-## Simulation features
+## 仿真功能
 
-The Arduino Uno is simulated using the [AVR8js Library](https://github.com/wokwi/avr8js). The table below summarizes the status of features:
+Arduino Uno使用 [AVR8js Library](https://github.com/wokwi/avr8js)进行仿真。下表总结了现有功能的状态：
 
-| Peripheral        | Status | Notes                                                                  |
+| 外设    | 状态 | 注意                                                                |
 | ----------------- | ------ | ---------------------------------------------------------------------- |
 | Processor         | ✔️     |                                                                        |
 | GPIO              | ✔️     | Including External/Pin Change Interrupts                               |
@@ -82,24 +82,23 @@ The Arduino Uno is simulated using the [AVR8js Library](https://github.com/wokwi
 | Analog Comparator | ❌     |                                                                        |
 | GDB Debugging     | ✔️     | See the [GDB Debugging Guide](../gdb-debugging)                        |
 
-Legend:  
-✔️ Simulated  
-🟡 Simulated, but see notes  
-❌ Not implemented
+说明:
+✔️ 可仿真
+🟡 可以仿真, 但是要看注意
+❌ 不支持
 
-If you need any of the missing features, please [open an issue on the AVR8js repo](https://github.com/wokwi/avr8js/issues/new)
-or [reach out on Discord](https://wokwi.com/discord).
+如果您需要任何缺失的功能，请 [open an issue on the AVR8js repo ](https://github.com/wokwi/avr8js/issues/new)或者 [reach out on Discord](https://wokwi.com/discord).。
 
-### Serial Monitor
+### 串行监视器
 
-You can use the Serial Monitor to receive information from your Arduino code, such as debug print. You can also use it to send information to your code, such as textual commands.
+您可以使用串行监视器从Arduino代码接收信息，例如调试打印。您还可以使用它向代码发送信息，例如文本命令。
 
-For more information and code samples, check out [the Serial Monitor guide](../guides/serial-monitor). It also explains how to configure the Serial monitor, e.g. set the line ending characters.
+有关更多信息和代码示例，请查看[the Serial Monitor guide](../guides/serial-monitor).。它还解释了如何配置串行监视器，例如设置行尾字符。
 
-### Libraries
+### 库
 
-The simulator supports many popular Arduino libraries. For a complete list, see the [Libraries guides](../guides/libraries).
+该模拟器支持许多流行的Arduino库。有关完整列表，请参阅 [Libraries guides](../guides/libraries)。
 
-## Simulator examples
+## 仿真案例
 
 - [Arduino Blink](https://wokwi.com/arduino/libraries/demo/blink)

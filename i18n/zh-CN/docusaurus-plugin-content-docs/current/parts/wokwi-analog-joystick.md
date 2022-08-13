@@ -1,46 +1,41 @@
 ---
-title: wokwi-analog-joystick Reference
-sidebar_label: wokwi-analog-joystick
+title: wokwi-analog-joystick模块参考
+sidebar_label: wokwi-模拟摇杆模块
 ---
 
-Analog Joystick with two axes (horizontal/vertical) and an integrated push button.
+带有两个轴（水平/垂直）和一个集成按钮的模拟操纵杆。
 
 <wokwi-analog-joystick />
 
-## Pin names
+## 引脚名称
 
-| Name | Description                     |
-| ---- | ------------------------------- |
-| VCC  | Positive power supply           |
-| VERT | Vertical axis output (analog)   |
-| HORZ | Horizontal axis output (analog) |
-| SEL  | Push button                     |
-| GND  | Ground                          |
+| Name | 描述         |
+| ---- | ------------ |
+| VCC  | 电源输入     |
+| VERT | 垂直模拟输出 |
+| HORZ | 水平模拟输出 |
+| SEL  | 按键         |
+| GND  | 接地         |
 
-The idle position voltage is VCC/2. Moving the joystick along the vertical axis changes the voltage of the VERT pin from 0 volts (bottom) to VCC (top). Moving the joystick along the horizontal axis changes the voltages of the HORZ pin from 0 volts (right) to VCC (left).
+空闲位置电压为VCC/2。沿着垂直轴移动操纵杆将VERT引脚的电压从0伏特（底部）更改为VCC（顶部）。沿着水平轴移动操纵杆将HORZ引脚的电压从0伏特（右）更改为VCC（左）。
 
-The SEL pin is normally open (floating). Clicking on the center of the joystick shorts the SEL pin to ground. The joystick's button simulates [bouncing](wokwi-pushbutton#bouncing) by default. You can disable bouncing by setting the "bounce" attribute to "0".
+SEL引脚通常打开（浮动）。按下操纵杆的中心，将SEL与地连接。默认情况下，操纵杆的按钮是被模拟 [弹起](wokwi-pushbutton#bouncing) 。您可以通过将 "bounce"属性设置为“0”来禁用反弹。
 
-## Attributes
+## 属性
 
-| Name   | Description                    | Default value |
-| ------ | ------------------------------ | ------------- |
-| bounce | Set to "0" to disable bouncing | ""            |
+| Name   | Description         | Default value |
+| ------ | ------------------- | ------------- |
+| bounce | 设置为“0”以禁用反弹 | ""            |
 
-## Operating the Joystick
+## 操作操纵杆
 
-You can operate the joystick with your mouse by moving cursor over the joystick. You'll see four arrows, corresponding to the four movement directions,
-and a circle in the middle. Click on one of the arrows to move the joystick shaft in that direction, and on the circle in the middle to press the
-joystick's push button (connected to the SEL pin).
+您可以通过在操纵杆上移动光标来操作鼠标操作操纵杆。你会看到四个箭头，对应于四个运动方向，中间有一个圆圈。单击其中一个箭头将操纵杆轴朝这个方向移动，然后单击中间的圆圈按下操纵杆的按钮（连接到SEL引脚）。
 
-To operate the joystick with the keyboard, first focus on it (using the tab key or by clicking on it with the mouse), then use the arrow keys to move
-the shaft of the joystick, and the space key to press the joystick's push button (connected to the SEL pin). It's possible to combine multiple keys
-at once, e.g. left arrow and top arrow, to move the shaft in a diagonal direction. You can also press on the space key while holding down the arrows
-to press the joystick while moving the shaft.
+要使用键盘操作操纵杆，请首先聚焦它（使用选项卡键或用鼠标单击它），然后使用箭头键移动操纵杆的轴，以及按下操纵杆按钮的空间键（连接到SEL引脚）。现在可以组合多个键，例如左箭头和顶部箭头，以对角线方向移动轴。您还可以在按住箭头的同时按下空格键在移动轴时按下操纵杆。
 
-Partial movement and touch control are not currently supported. We'd love to see them supported though - so if you are up to the task, there's [an open issue waiting for your love](https://github.com/wokwi/wokwi-elements/issues/62).
+目前不支持部分移动和触摸控制。不过，我们希望看到它们得到支持-因此，如果您能胜任任务，看这里[an open issue waiting for your love](https://github.com/wokwi/wokwi-elements/issues/62)。
 
-## Using the Joystick in Arduino
+## 在Arduino使用操纵杆
 
 | Joystick Pin | Arduino Pins             | Example code pin |
 | ------------ | ------------------------ | ---------------- |
@@ -50,7 +45,7 @@ Partial movement and touch control are not currently supported. We'd love to see
 | SEL          | any digital pin          | 2                |
 | GND          | GND                      |                  |
 
-To use the Joystick in Arduino, connect the VERT and the HORZ pins to analog pins (A0...A6), and configure these pins as input. Read the joystick position using `analogRead()`.
+要在Arduino中使用操纵杆，请将VERT和HORZ引脚连接到模拟引脚（A0...A6），并将这些引脚配置为输入。使用 `analogRead()`读取操纵杆位置。
 
 ```cpp
 #define VERT_PIN A0
@@ -73,9 +68,9 @@ void loop() {
 }
 ```
 
-### Joystick Position Table
+### 操纵杆位置表
 
-The following table shows the different joystick position and the corresponding HORZ / VERT values, as returned by `analogRead()`:
+下表显示了`analogRead()`返回的不同操纵杆位置和相应的HORZ / VERT值：
 
 | Position     | HORZ | VERT | Joystick                                                   |
 | ------------ | ---- | ---- | ---------------------------------------------------------- |
@@ -89,12 +84,14 @@ The following table shows the different joystick position and the corresponding 
 | Bottom       | 512  | 0    | <wokwi-analog-joystick xValue="0" yValue="-1" disabled />  |
 | Bottom-Right | 0    | 0    | <wokwi-analog-joystick xValue="-1" yValue="-1" disabled /> |
 
-### Using map()
+### 使用map()
 
-You can use the [map() function](https://www.arduino.cc/reference/en/language/functions/math/map/) to re-map the values to a different range.
-For instance, `map(analogRead(HORZ_PIN), 0, 1023, -100, 100)` will return -100 when the joystick is all the way to the right, 0 when the joystick
-in centered, and 100 when the joystick is all the way to the left.
+您可以使用 [map() function](https://www.arduino.cc/reference/en/language/functions/math/map/) 将值重新映射到不同的范围。
 
-## Simulator examples
+例如，当操纵杆一直向右时，`map(analogRead(HORZ_PIN), 0, 1023, -100, 100)`将返回 -100，当操纵杆时返回 -100
+
+居中，当操纵杆一直向左时为100。
+
+## 仿真案例
 
 - [Etch-a-sketch](https://wokwi.com/projects/296234816685212169) - A simple drawing game using a MAX7219 LED Dot Matrix

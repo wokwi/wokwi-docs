@@ -1,14 +1,14 @@
 ---
-title: wokwi-arduino-nano Reference
-sidebar_label: wokwi-arduino-nano
+title: wokwi-arduino-nano参考
+sidebar_label: wokwi-arduino-nano参考
 ---
 
-The Arduino Nano is very similar to the [Arduino Uno](wokwi-arduino-uno), but in a smaller form factor. It carries the same ATmega328p chip, which has 32K bytes of Flash program memory, 2k bytes of SRAM and 1K bytes of EEPROM.
+Arduino Nano与[Arduino Uno](wokwi-arduino-uno)非常相似，但外形较小。它携带相同的ATmega328p芯片，该芯片具有32K字节的Flash程序内存、2k字节的SRAM和1K字节的EEPROM。
 
 <wokwi-arduino-nano />
 
-For more information, see the [wokwi-arduino-uno reference](wokwi-arduino-uno).
+有关更多信息，请参阅 [wokwi-arduino-uno reference](wokwi-arduino-uno)。
 
-## Differences from the Arduino Uno
+## 与Arduino Uno的区别
 
-The Arduino Nano includes two extra analog pins: A6 and A7. These pins can only be used for Analog input. They can't be used as digital GPIO pins.
+Arduino Nano包括两个额外的模拟引脚：A6和A7。这些引脚只能用于模拟输入。它们不能用作数字GPIO引脚。
