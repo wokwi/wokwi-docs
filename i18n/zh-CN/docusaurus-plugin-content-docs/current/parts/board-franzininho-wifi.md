@@ -1,21 +1,21 @@
 ---
-title: board-franzininiho-wifi Reference
-sidebar_label: board-franzininiho-wifi
+title: board-franzininiho-wifi板卡参考
+sidebar_label: board-franzininiho-wifi板卡参考
 ---
 
-Open source ESP32-S2 development board created in Brazil. See the [ESP32 Guide](../guides/esp32) for more information.
+有关更多在巴西创建的开源ESP32-S2开发板信息，请参阅 [ESP32 Guide](../guides/esp32) 。
 
 ![Franzininho WiFi](https://raw.githubusercontent.com/wokwi/wokwi-boards/master/boards/franzininho-wifi/board.svg)
 
-## Board hardware
+## 板卡硬件
 
-The board includes three built-in LEDs:
+这个板卡包括三个内置的LED:
 
-- Green power LED
-- Orange LED connected to pin 33
-- Blue LED connected to pin 21
+- 绿色电源LED
+- 连接在33号脚的橙色LED
+- 连接在21号脚的蓝色LED
 
-## Simulator examples
+## 仿真例子
 
 - [Franzininho WiFi LCD Clock (NTP) client](https://wokwi.com/projects/323796775459619410)
 - [Servo motor control](https://wokwi.com/projects/327061759288410708)
