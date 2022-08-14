@@ -32,6 +32,10 @@ Create a new copy of a part by clicking on it (to select it) and the pressing "D
 
 Delete a part by clicking on it (to select it) and then pressing the Delete button.
 
+### Selecting multiple parts
+
+Select multiple parts by clicking on the parts with the Shift key pressed. You can then move all the parts together, duplicate them (using the "D" key), or delete them using the Delete key.
+
 ## Editing wires
 
 ### Creating a wire between two parts

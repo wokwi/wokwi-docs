@@ -21,10 +21,10 @@ A4988 Stepper Motor driver, for use with [wokwi-stepper-motor](./wokwi-stepper-m
 | DIR    | Direction input: 0=counterclockwise, 1=clockwise |            |
 | GND    | Ground                                           |            |
 | VDD    | Logic power supply                               |            |
-| 1B     | Connect to motor's A-                            |            |
-| 1A     | Connect to motor's A+                            |            |
-| 2A     | Connect to motor's B+                            |            |
-| 2B     | Connect to motor's B-                            |            |
+| 1B     | Connect to motor's B-                            |            |
+| 1A     | Connect to motor's B+                            |            |
+| 2A     | Connect to motor's A+                            |            |
+| 2B     | Connect to motor's A-                            |            |
 | VMOT   | Motor power supply, not used in the simulation   |            |
 
 \* Digital pins with a default value of Low (0) are pulled-down, and pins with a default value of High (1) are pulled up. Pins without a default value are floating.

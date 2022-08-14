@@ -9,4 +9,4 @@ Ao escolher o nome para Wokwi, procurávamos uma palavra curta que fosse fácil 
 
 ## Como encontro um projeto que salvei anteriormente?
 
-Se você não tiver feito login no Wokwi, use o mesmo dispositivo e navegador que salvou o projeto e visite [https://wokwi.com/arduino/projects](https://wokwi.com/arduino/projects). Se você entrar no Wokwi antes de salvar projetos, esse mesmo URL mostrará todos os projetos que você salvou em qualquer dispositivo/navegador. Você também pode navegar para seus projetos salvos clicando na sua foto de perfil e selecionando "My projects" no menu.
+Se você não tiver feito login no Wokwi, use o mesmo dispositivo e navegador que salvou o projeto e visite [https://wokwi.com/dashboard/projects](https://wokwi.com/dashboard/projects). Se você entrar no Wokwi antes de salvar projetos, esse mesmo URL mostrará todos os projetos que você salvou em qualquer dispositivo/navegador. Você também pode navegar para seus projetos salvos clicando na sua foto de perfil e selecionando "My projects" no menu.

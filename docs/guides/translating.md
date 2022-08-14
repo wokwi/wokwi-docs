@@ -23,4 +23,4 @@ Not all the texts are currently available for translation, but we're adding new 
 - [Hungarian](https://wokwi.com/projects/new?lang=hu)
 - [Italian](https://wokwi.com/projects/new?lang=it)
 - [Portuguese](https://wokwi.com/projects/new?lang=pt-BR)
-- [Ukrainian](https://wokwi.com/projects/new?lang=ua)
+- [Ukrainian](https://wokwi.com/projects/new?lang=uk)
