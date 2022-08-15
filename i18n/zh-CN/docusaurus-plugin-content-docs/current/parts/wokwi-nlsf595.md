@@ -1,15 +1,15 @@
 ---
-title: wokwi-nlsf595 Reference
-sidebar_label: wokwi-nlsf595
+title: wokwi-nlsf595参考
+sidebar_label: wokwi-nlsf595参考
 ---
 
-Serial (SPI) Tri-Color LED Driver
+串行（SPI）三色LED驱动器
 
 ![NLSF595](wokwi-nlsf595.svg)
 
-Use the NLSF595 shift register to connect power-hungry RGB LEDs to your microcontroller. A single unit can control two RGB LEDs, and a chain of two units can control up to five RGB LEDs.
+使用NLSF595移位寄存器将耗电的RGB LED连接到微控制器。一个单元可以控制两个RGB LED，一个由两个单元组成的链条最多可以控制五个RGB LED。
 
-## Pin names
+## 引脚名称
 
 | Pin   | Description                                            |
 | ----- | ------------------------------------------------------ |
@@ -23,17 +23,16 @@ Use the NLSF595 shift register to connect power-hungry RGB LEDs to your microcon
 | GND   | Ground                                                 |
 | VCC   | Supply voltage                                         |
 
-\* Use the Q7S to chain multiple NLSF595 units together. Connect SQH to the SI pin of the next NLSF595 chip in chain.
+\* 使用Q7S将多个NLSF595设备链接在一起。将SQH连接到链式下一个NLSF595芯片的SI引脚。
 
-## Using the NLSF595
+## 使用NLSF595
 
-You will need to connect at least 3 pins to your microcontroller: SI, SCK, and RCK.
+您需要将至少3个引脚连接到微控制器：SI、SCK和RCK。
 
-The OE pin can be used to disable the output of the shift register. If you need that functionality,
-connect it to your microcontroller. Otherwise, connect it to the ground to permanently enable the output.
+OE引脚可用于禁用移位寄存器的输出。如果您需要该功能，请将其连接到您的微控制器。否则，将其连接到地面以永久启用输出。
 
-The output pins of the shift register, QA through QH, are usually connected to the input pins of common-anode [RGB LEDs](wokwi-rgb-led).
+移位寄存器的输出引脚QA通过QH，通常连接到共极的[RGB LEDs](wokwi-rgb-led)输入引脚。
 
-## Simulator examples
+## 仿真案例
 
 - [NLSF595 LED Driver with 2 RGB LEDs](https://wokwi.com/projects/315085666329297472)

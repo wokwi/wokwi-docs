@@ -1,13 +1,13 @@
 ---
-title: wokwi-pir-motion-sensor Reference
-sidebar_label: wokwi-pir-motion-sensor
+title: wokwi-pir-motion-sensor参考
+sidebar_label: wokwi-pir-motion-sensor参考
 ---
 
-Passive Infrared (PIR) motion sensor.
+被动红外（PIR）运动传感器。
 
 <wokwi-pir-motion-sensor />
 
-## Pin names
+## 引脚名称
 
 | Name | Description      |
 | ---- | ---------------- |
@@ -15,33 +15,28 @@ Passive Infrared (PIR) motion sensor.
 | OUT  | Output (digital) |
 | VCC  | Supply voltage   |
 
-## Attributes
+## 属性
 
-| Name        | Description                                                                 | Default value |
-| ----------- | --------------------------------------------------------------------------- | ------------- |
-| delayTime   | The number of seconds OUT pin will stay high                                | "5"           |
-| inhibitTime | The number of seconds the sensor will ignore motion when OUT returns to low | "1.2"         |
-| retrigger   | Set to "0" to disable retriggering                                          | ""            |
+| Name        | Description                                 | Default value |
+| ----------- | ------------------------------------------- | ------------- |
+| delayTime   | OUT引脚的保持高电平的时间                   | "5"           |
+| inhibitTime | 当OUT恢复到低电平时，传感器将忽略运动的秒数 | "1.2"         |
+| retrigger   | 设置为“0”以禁用重新触发                     | ""            |
 
-## Using the sensor
+## 使用传感器
 
-To trigger the PIR motion sensor:
+要触发PIR运动传感器：
 
-1. Select the sensor by clicking on it (while the simulation is running).
-2. A small popup window will open. Click on "Simulate Motion".
+1.  通过单击传感器（在模拟运行时）选择传感器。
 
-Triggering the sensor will drive the OUT pin high for 5 seconds (delay time),
-and then go low again. The sensor will ignore any further input for the
-next 1.2 seconds (inhibit time), and then start sensing for motion again.
+2. 将打开一个小弹出窗口。点按“模拟运动”。
 
-You can adjust the high duration of the OUT pin by setting the delayTime
-attribute (on a physical sensor you use a potentiometer to set the delay).
+触发传感器将使OUT引脚高5秒（延迟时间），然后又变低。在接下来1.2秒（抑制时间），传感器将忽略任何进一步的输入，然后再次开始感应运动。
 
-The default setting of the sensor is to retrigger: the sensor keeps checking
-for motion while the OUT pin is high. It will extend the delay time every
-time another motion event is detected. You can disable this behavior by
-setting the "retrigger" attribute to "0".
+您可以通过设置延迟时间来调整OUT引脚的高持续时间属性（在物理传感器上，您使用电位器设置延迟）。
 
-## Simulator examples
+传感器的默认设置是重新触发：传感器不断检查在OUT引脚高时进行运动。它将延长每次的延迟时间检测到另一个运动事件的时间。您可以通过以下方式禁用此行为设置“retrigger”属性为“0”。
+
+## 仿真实例
 
 - [PIR sensor example (from AdaFruit)](https://wokwi.com/projects/299284655047180808)

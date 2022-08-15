@@ -1,44 +1,41 @@
 ---
-title: wokwi-hc-sr04 Reference
-sidebar_label: wokwi-hc-sr04
+title: wokwi-hc-sr04参考
+sidebar_label: wokwi-hc-sr04参考
 ---
 
-HC-SR04 Ultrasonic Distance Sensor
+HC-SR04超声波距离传感器
 
 <wokwi-hc-sr04 />
 
-## Pin names
+## 引脚名称
 
-| Name | Description                                       |
-| ---- | ------------------------------------------------- |
-| VCC  | Voltage supply (5V)                               |
-| TRIG | Pulse to start the measurement                    |
-| ECHO | Measure the high pulse length to get the distance |
-| GND  | Ground                                            |
+| Name | Description              |
+| ---- | ------------------------ |
+| VCC  | Voltage supply (5V)      |
+| TRIG | 脉冲开始测量             |
+| ECHO | 测量高脉冲长度以获得距离 |
+| GND  | Ground                   |
 
-## Attributes
+## 属性
 
-| Name     | Description                            | Default value |
-| -------- | -------------------------------------- | ------------- |
-| distance | Initial distance value, in centimeters | "400"         |
+| Name     | Description            | Default value |
+| -------- | ---------------------- | ------------- |
+| distance | 初始距离值，单位：厘米 | "400"         |
 
-## Operation
+## 工作方式
 
-To start a new distance measurement set the TRIG pin to high for 10uS or more. Then wait until the ECHO pin goes high,
-and count the time it stays high (pulse length). The length of the ECHO high pulse is proportional to the distance. Use
-the following table to convert the ECHO pulse length in microseconds into centimeters / inches:
+要开始新的距离测量，请将TRIG引脚设置为10uS或更高的高度。然后等到ECHO引脚变高，并计算它保持高的时间（脉冲长度）。ECHO高脉冲的长度与距离成正比。下表将ECHO脉冲长度（以微秒为单位）转换为厘米/英寸：
 
-| Unit        | Distance          |
-| ----------- | ----------------- |
-| Centimeters | PulseMicros / 58  |
-| Inches      | PulseMicros / 148 |
+| 单位        | 距离           |
+| ----------- | -------------- |
+| Centimeters | 脉冲长度 / 58  |
+| Inches      | 脉冲长度 / 148 |
 
-### Setting the distance
+### 设置距离
 
-To change the distance while the simulation is running, click on the HC-SR04 drawing in the diagram and use the slider
-to set the distance value. You can choose any value between 2cm and 400cm.
+要在模拟运行时更改距离，请单击图表中的HC-SR04图并使用滑块设置距离值。您可以选择2厘米到400厘米之间的任何值。
 
-## Arduino code example
+## Arduino代码参考
 
 ```cpp
 #define PIN_TRIG 3
@@ -67,9 +64,9 @@ void loop() {
 }
 ```
 
-Try [this example on Wokwi](https://wokwi.com/projects/304444938977804866)
+在这里尝试 [this example on Wokwi](https://wokwi.com/projects/304444938977804866)
 
-## Simulator examples
+## 仿真实例
 
 - [Distance sensor and LED](https://wokwi.com/projects/290056311044833800)
 - [Display distance on LCD screen](https://wokwi.com/projects/290043622233997832)

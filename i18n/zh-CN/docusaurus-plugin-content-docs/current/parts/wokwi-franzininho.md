@@ -1,22 +1,19 @@
 ---
-title: wokwi-franzininho Reference
-sidebar_label: wokwi-franzininho
+title: wokwi-franzininho参考
+sidebar_label: wokwi-franzininho参考
 ---
 
-A small ATtiny85-based development board, popular in Brazil.
+一个基于ATtiny85的小型开发板，在巴西很受欢迎。
 
 <wokwi-franzininho></wokwi-franzininho>
 
-## About the Franzininho
+## 关于Franzininho
 
-The Franzininho DIY in an open-source, Arduino-compatible board designed in Brazil. It's based
-on the ATtiny85 chip, so please consult the [ATtiny85 documentation](wokwi-attiny85) for technical
-information.
+Franzininho DIY在巴西设计的开源Arduino兼容板中。它是基于在ATtiny85芯片上，因此请参阅[ATtiny85 documentation](wokwi-attiny85) 了解技术信息。
 
-The yellow LED (LED1) is connected to pin PB1 of the ATtiny85 chip. You can learn more about
-the board and the people behind it in the [Franzininho homepage](https://franzininho.com.br/) (Portuguese).
+黄色LED（LED1）连接到ATtiny85芯片的引脚PB1。您可以进一步了解 [Franzininho homepage](https://franzininho.com.br/) （葡萄牙语）中的开发板及其背后的人。
 
-## Pin names
+## 引脚名称
 
 | Pin | ATtiny85 Pin | Functions             | Analog Channel | PWM |
 | --- | ------------ | --------------------- | -------------- | --- |
@@ -29,16 +26,16 @@ the board and the people behind it in the [Franzininho homepage](https://franzin
 | VCC | VCC          | Positive voltage (5V) |                | -   |
 | GND | GND          | Ground                |                | -   |
 
-### On board LEDs
+### 板载Led
 
-The board includes two 3mm LEDs:
+主板包括两个3毫米LED：
 
-| LED  | Color  | Function                                             |
-| ---- | ------ | ---------------------------------------------------- |
-| ON   | Green  | Power LED. Always on while the simulation is running |
-| LED1 | Yellow | Connected to pin PB1                                 |
+| LED  | Color  | Function                    |
+| ---- | ------ | --------------------------- |
+| ON   | Green  | 电源LED。模拟运行时始终打开 |
+| LED1 | Yellow | 连接到PB1                   |
 
-## Simulator examples
+## 仿真案例
 
 - [Franzininho Blink](https://wokwi.com/projects/301693553069785610)
 - [Franzininho Clock](https://wokwi.com/projects/301738586036765194), using two [74HC595 shift registers](wokwi-74hc595) and [DS1307 RTC](wokwi-ds1307)

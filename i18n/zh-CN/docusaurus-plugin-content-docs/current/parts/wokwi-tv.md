@@ -1,13 +1,13 @@
 ---
-title: wokwi-tv Reference
-sidebar_label: wokwi-tv
+title: wokwi-tv参考
+sidebar_label: wokwi-tv参考
 ---
 
-Black and White analog PAL TV screen.
+黑白模拟PAL电视屏幕。
 
 ![Wokwi TV](wokwi-tv.svg)
 
-## Pin names
+## 引脚名称
 
 | Name | Description            |
 | ---- | ---------------------- |
@@ -15,50 +15,53 @@ Black and White analog PAL TV screen.
 | SYNC | Synchronization signal |
 | GND  | Ground                 |
 
-## Operation
+## 工作方式
 
-The resolution of the simulated PAL TV is 768x576 pixels, and the aspect ratio is 4:3.
+模拟PAL电视的分辨率为768x576像素，宽高比为4:3。
 
-PAL video uses analog signal. The signal is carried over the air or using a cable. One of the common cabling standard is Composite video, which combines the pixel data together with the synchronization signals and the color data on a single wire.
+PAL视频使用模拟信号。信号通过空气或使用电缆传输。常见的布线标准之一是复合视频，它将像素数据与同步信号和单根电线上的颜色数据相结合。
 
-Wokwi TV does not support color information, and separates the pixel data from the synchronization signals. The separation of the signals makes it easier to generate the image using a digital microcontroller.
+Wokwi TV不支持颜色信息，并将像素数据与同步信号分开。信号的分离使使用数字微控制器生成图像变得更加容易。
 
-Use the _IN_ pin for the pixel data, and the _SYNC_ pin for the synchronization pulses. The Arduino [TVout](https://github.com/pkendall64/arduino-tvout) library can drive these signals for you.
+像素数据使用_IN_引脚，同步脉冲使用_SYNC_引脚。Arduino [TVout](https://github.com/pkendall64/arduino-tvout) 库可以为您驱动这些信号。
 
-### Signal timing
+### 信号计时
 
-The simulator mimics the standard PAL timings for the signals at 25 frames per second. The frame are interlaced: each frame is divided into two parts, called "fields". The first field contains the odd lines, and the second field contains the even lines. Each frame takes 40ms, and each field takes 20ms (half the duration of a frame).
+模拟器以每秒25帧的速度模拟信号的标准PAL定时。框架是交错的：每个框架分为两部分，称为“字段”。第一个字段包含奇数线，第二个字段包含偶数线。每帧需要40ms，每个字段需要20ms（帧持续时间的一半）。
 
-Each frame is divided into 625 time slots of 64uS. Each time slot contains the pixel data for a single line, but some of these lines are empty - their only use is for synchronization.
+每帧分为625个64uS时段。每个时段都包含一条线路的像素数据，但其中一些行是空的-它们的唯一用途是同步。
 
-The simulator expects every field (half-frame) to start with at least one ~30uS synchronization pulse. This means you have to hold the SYNC line low for about 30uS. The PAL standard dictates a specific series of synchronization pulses,
-but the simulator is pretty lax: it's happy even with a single ~30uS pulse.
+模拟器预计每个字段（半帧）至少从一个~30uS的同步脉冲开始。这意味着您必须将SYNC线保持在低30uS左右。PAL标准规定了特定系列的同步脉冲，但对模拟器相当没有压力：即使是1~30uS脉冲，它也可以很容易做到。
 
-Each line should also start with a short, 4uS synchronization pulse. Keep the DATA signal low during these synchronization pulses.
+每条线路还应该从一个短的4uS同步脉冲开始。在这些同步脉冲中保持数据信号低。
 
-The [Logic Analyzer](../guides/logic-analyzer) is very helpful in debugging the PAL TV signals.
+ [Logic Analyzer](../guides/logic-analyzer) 对调试PAL电视信号非常有帮助。
 
-## Physical TV Connection
+## 物理电视连接
 
-The PAL standard uses an analog signal. When running in the simulator, you don't have to worry about this, but if you want to run your game on a physical TV, then you'd need to generate the following voltage levels:
+PAL标准使用模拟信号。在模拟器中运行时，您不必担心这一点，但如果您想在实体电视上运行游戏，那么您需要生成以下电压级别：
 
-- 0V for sync signals (HSYNC/VSYNC)
-- 0.3V for black pixels
-- 1V for white pixels
+- 用于同步信号的0V（HSYNC/VSYNC）
 
-The good news is: you only need a few resistors to convert the digital signal (that works in the simulator) to an analog one.
+- 黑色像素0.3V
 
-Composite video usually uses RCA connectors. You'd need the make the following connections to the central pin of the RCA connector:
+- 白色像素为1V
 
-1. SYNC pin through a 1KΩ\* resistor
-2. DATA pin through a 470Ω\* resistor
-3. Optionally, another 75Ω that goes to the ground (the resistor is usually already built into the TV receiver circuit).
+好消息是：你只需要几个电阻器就可以将数字信号（在模拟器中工作）转换为模拟信号。
 
-\* if you use a 3.3V board (such as the [Raspberry Pi Pico](wokwi-pi-pico)), use 470Ω for SYNC and 270Ω for DATA.
+复合视频通常使用RCA连接器。您需要与RCA连接器的中央引脚进行以下连接：
 
-Also make sure you also connect the ground to the ring of the RCA connector.
+1. 通过1KΩ\*电阻的同步引脚
 
-How does this work? We implement a simple voltage divider to generate the required voltages, based on the two digital pin levels:
+2. 数据引脚穿过470Ω\*电阻器
+
+3. 或者，另一个75Ω进入地面（电阻通常已经内置在电视接收器电路中）。
+
+\*如果您使用3.3V板（如 [Raspberry Pi Pico](wokwi-pi-pico)），SYNC使用470Ω，数据使用270Ω。
+
+此外，请确保还将接地连接到RCA连接器的环上。
+
+这是怎么工作的？我们根据两个数字引脚电平实现一个简单的分压器来产生所需的电压：
 
 | SYNC      | DATA      | Output Voltage | Calculation                                   |
 | --------- | --------- | -------------- | --------------------------------------------- |
@@ -66,13 +69,13 @@ How does this work? We implement a simple voltage divider to generate the requir
 | High (5V) | Low       | 0.304          | (5\*(1/(1/75+1/470)))/(1000+(1/(1/75+1/470))) |
 | Low       | Low       | 0              | 0                                             |
 
-As you can see, driving both SYNC/DATA high results in a about 1V, the white pixel level, driving SYNC high and DATA low results in about 0.3V, the black pixel level, and driving both pins low results in 0 volts, that's the sync level.
+如您所见，驱动SYNC/DATA高分辨率约为1V，白色像素级，驱动SYNC高和DATA低分辨率约为0.3V，黑色像素级，驱动两个引脚低分辨率为0伏特，这就是同步级别。
 
-In theory, using this setup and driving DATA high while SYNC is low, you can also generate a gray pixel level (~0.65V), but this is not currently supported by the simulator.
+理论上，在SYNC低时使用此设置并驱动DATA高，您还可以生成灰色像素级别（~0.65V），但模拟器目前不支持此功能。
 
-## Arduino code example
+## Arduino 代码示例
 
-A simple example that draws a circle using the TVout library:
+使用TVout库绘制圆圈的简单示例：
 
 ```cpp
 // Connect SYNC to Arduino pin 9, IN to Arduino pin 7
@@ -91,9 +94,9 @@ void loop() {
 }
 ```
 
-## Simulator examples
+## 仿真实例
 
 - [TVout demo reel](https://wokwi.com/projects/301776607665717769)
-- [Flappy Cat game](https://wokwi.com/projects/286182458416693768) - Use the blue button to jump
+- [Flappy Cat game](https://wokwi.com/projects/286182458416693768) - 使用蓝色按钮跳转
 - [Arduino Pong for Wokwi TV](https://wokwi.com/projects/290059909639176713)
 - [Conway's Game of Life](https://wokwi.com/projects/299605461742649864)

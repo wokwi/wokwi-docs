@@ -1,16 +1,15 @@
 ---
-title: wokwi-pi-pico Reference
+title: wokwi-pi-pico参考
 sidebar_label: wokwi-pi-pico
 ---
 
-Raspberry Pi Pico, an RP2040 microcontroller board with dual-core ARM Cortex-M0+ processor, 264k of internal RAM, and flexible
-Programmable I/O (PIO) feature.
+Raspberry Pi Pico，RP2040微控制器板，具有双核ARM Cortex-M0+处理器，264k内部RAM，灵活可编程I/O（PIO）功能。
 
 ![Raspberry Pi Pico](wokwi-pi-pico.svg)
 
-## Pin names
+## 引脚名称
 
-Pins GP0 to GP22 are digital GPIO pins. Pins GP26, GP27, and GP28 are digital GPIO pins with analog input function.
+引脚GP0到GP22是数字GPIO引脚。引脚GP26、GP27和GP28是具有模拟输入功能的数字GPIO引脚。
 
 | Name            | Description                 | Analog input channel |
 | --------------- | --------------------------- | -------------------- |
@@ -23,30 +22,29 @@ Pins GP0 to GP22 are digital GPIO pins. Pins GP26, GP27, and GP28 are digital GP
 | TP4 †           | Digital GPIO pin 23         |                      |
 | TP5 †           | Digital GPIO pin 25 + LED   |                      |
 
-\* The physical pin numbers of the ground pins are 3, 8, 13, 18, 23, 28, 33, and 38.  
-† These pins do not appear in the visual diagram editor, but you can use them in your [diagram.json](../diagram-format) file.
+\* 接地引脚的物理引脚编号为3、8、13、18、23、28、33和38。  
+† 这些引脚不会出现在可视化图表编辑器中，但您可以在[diagram.json](../diagram-format)文件中使用它们。
 
-Pins 3V3_EN / RUN / ADC_VREF are not available in the simulation and are therefore omitted from the table.
+引脚3V3_EN / RUN / ADC_VREF在模拟中不可用，因此从表中删除。
 
-### Onboard LED
+### 板载led
 
-The Raspberry Pi Pico has an onboard LED, attached to GPIO PIN 25. The LED is lit when the pin is driven high.
+Raspberry Pi Pico有一个板载LED，连接到GPIO PIN 25。当引脚被推高时，LED会点亮。
 
-You can also use the `LED_BUILTIN` constant to reference the LED in your Arduino code:
+您还可以使用`LED_BUILTIN`常量在Arduino代码中引用LED：
 
 ```cpp
 pinMode(LED_BUILTIN, OUTPUT);
 digitalWrite(LED_BUILTIN, HIGH);
 ```
 
-See [Blink](https://wokwi.com/projects/297755575592157709) for a complete code example.
+有关完整的代码示例，请参阅[Blink](https://wokwi.com/projects/297755575592157709) 。
 
-## Simulation features
+## 仿真功能
 
-The Raspberry Pi Pico is simulated using the [RP2040js Library](https://github.com/wokwi/rp2040js).  
-This table summarizes the status of the simulation features:
+Raspberry Pi Pico使用[RP2040js Library](https://github.com/wokwi/rp2040js) 模拟。本表总结了仿真功能的现状：
 
-| Peripheral        | Status | Notes                                                                   |
+| 外设      | 状态 | 注意                                                                 |
 | ----------------- | ------ | ----------------------------------------------------------------------- |
 | Processor core    | ✔️     | Only a single core is simulated                                         |
 | GPIO              | ✔️     |                                                                         |
@@ -65,23 +63,24 @@ This table summarizes the status of the simulation features:
 | SSI               | 🟡     | Just the minimum to make the bootloader happy                           |
 | GDB Debugging     | ✔️     | See the [GDB Debugging guide](../gdb-debugging)                         |
 
-Legend:  
-✔️ Simulated  
-🟡 Partial implementation/work in progress  
-❌ Not implemented
+说明:
+✔️ 可仿真
+🟡 可以仿真, 但是要看注意
+❌ 不支持
 
-### Arduino core
+### Arduino核心
 
-The Arduino core provides the built-in Arduino functions, such as `pinMode()` and `digitalRead()`, as well as a set of standard Arduino libraries, such as Servo, Wire and SPI.
+Arduino核心提供内置的Arduino函数，如`pinMode()`和`digitalRead()`，以及一组标准Arduino库，如Servo、Wire和SPI。
 
-When compiling your code for the Raspberry Pi Pico, you can choose between two different cores:
+在为Raspberry Pi Pico编译代码时，您可以在两个不同的核心之间进行选择：
 
-- The [official Pi Pico core](https://github.com/arduino/ArduinoCore-mbed), based on Mbed OS. This is the default.
-- [The community maintained Pi Pico Arduino Core](https://github.com/earlephilhower/arduino-pico), built on top of [the Pi Pico SDK](https://github.com/raspberrypi/pico-sdk).
+- 基于Mbed OS的[official Pi Pico core](https://github.com/arduino/ArduinoCore-mbed)。这是默认值。
 
-You can learn about the key differences between these two cores in [this GitHub comment](https://github.com/earlephilhower/arduino-pico/issues/117#issuecomment-830356795).
+- [The community maintained Pi Pico Arduino Core](https://github.com/earlephilhower/arduino-pico)，建立在[the Pi Pico SDK](https://github.com/raspberrypi/pico-sdk)之上。
 
-To select a core, set the "env" attribute of the `wokwi-pi-pico` part. For the official Arduino core, use the value "arduino-core". For the community maintained core, set "env" to "arduino-community". e.g.:
+您可以在 [this GitHub comment](https://github.com/earlephilhower/arduino-pico/issues/117#issuecomment-830356795)中了解这两个核心之间的主要区别。
+
+要选择核心，请设置`wokwi-pi-pico`部分的“env”属性。对于官方Arduino核心，请使用“arduino-core”值。对于社区维护的核心，将“env”设置为“arduino-community”。例如：
 
 ```json
   "parts": [
@@ -97,13 +96,11 @@ To select a core, set the "env" attribute of the `wokwi-pi-pico` part. For the o
   ]
 ```
 
-### Serial Monitor
+### 串行监视器
 
-You can use the Serial Monitor to receive information from the code running on the Pi Pico, such as debug prints. By default, the Serial Monitor communicates with
-the Pi Pico over USB.
+您可以使用串行监视器从Pi Pico上运行的代码接收信息，例如调试打印。默认情况下，串行监视器通过USB与Pi Pico通讯。
 
-Setting up the USB connection can take some time, and any messages printed during
-the USB setup time will be lost. Therefore, it's recommended to tell `setup()` to wait for the Serial Monitor connection before printing anything:
+设置USB连接可能需要一些时间，并且在USB设置时间将丢失打印的消息。因此，建议告诉`setup()`等待串行监视器连接后再打印任何东西：
 
 ```cpp
 void setup() {
@@ -116,9 +113,9 @@ void setup() {
 }
 ```
 
-### Serial Monitor over UART
+### UART上的串行监视器
 
-The Serial Monitor can also communicate with the Pi Pico over the physical UART interface. To configure the UART communication between the Raspberry Pi Pico and the Serial Monitor, add the following connections to your [diagram.json](../diagram-format#connections) file:
+串行监视器还可以通过物理UART接口与Pi Pico通信。要配置Raspberry Pi Pico和串行监视器之间的UART通信，请将以下连接添加到您的[diagram.json](../diagram-format#connections) 文件中：
 
 ```json
   "connections": [
@@ -128,7 +125,7 @@ The Serial Monitor can also communicate with the Pi Pico over the physical UART 
   ]
 ```
 
-The example assumes that the Pi Pico was defined with an id of "pico", e.g.
+该示例假设Pi Pico是用“pico”的ID定义的，例如
 
 ```json
   "parts": [
@@ -141,7 +138,7 @@ The example assumes that the Pi Pico was defined with an id of "pico", e.g.
   ]
 ```
 
-The use the `Serial1` object in your code: initialize the port using `Serial1.begin(115200)`, and then print messages with `Serial1.println()`. For example:
+在代码中使用`Serial1` 对象：使用`Serial1.begin(115200)`初始化端口，然后使用`Serial1.println()`打印消息。例如：
 
 ```cpp
 void setup() {
@@ -152,23 +149,23 @@ void setup() {
 void loop() { }
 ```
 
-For a complete example, check out the [Pi Pico Serial Monitor over UART Example](https://wokwi.com/projects/297755360074138125).
+有关完整示例，请查看[Pi Pico Serial Monitor over UART Example](https://wokwi.com/projects/297755360074138125)。
 
-## Exporting UF2 binary
+## 输出UF2二进制文件
 
-You can upload the program from the emulator directly into a physical Raspberry Pi Pico board. The steps are:
+您可以将程序从模拟器直接上传到物理Raspberry Pi Pico板中。这些步骤是：
 
-1. Press "F1" in the Wokwi code editor and select "Download UF2 Binary".
-   The download should start within a few seconds.
-2. Start your Pi Pico in bootloader mode. You can do this by pressing the boot loader button while
-   plugging the Pi Pico into the USB port of your computer.
-3. You should see a new drive appear on your computer (named "RPI-RP2"). Copy the UF2 file you downloaded into that drive.
+1. 在Wokwi代码编辑器中按“F1”，然后选择“下载UF2二进制文件”。下载应该在几秒钟内开始。
 
-## MicroPython Support
+2. 在引导加载程序模式下启动Pi Pico。您可以通过按下引导加载程序按钮来做到这一点，同时将Pi Pico插入计算机的USB端口。
 
-The Raspberry Pi Pico supports MicroPython, and you can use it for running MicroPython projects in Wokwi. For more information, check out the [MicroPython Guide](../guides/micropython).
+3. 您应该会在电脑上看到一个名为“RPI-RP2”的新驱动器。将您下载的UF2文件复制到该驱动器中。
 
-## Simulator examples
+## MicroPython支持
+
+Raspberry Pi Pico支持MicroPython，您可以在Wokwi中运行MicroPython项目。有关更多信息，请查看[MicroPython Guide](../guides/micropython)。
+
+## 仿真实例
 
 - [Pi Pico and LCD1602](https://wokwi.com/projects/297323005822894602)
 - [Pi Pico Traffic Light](https://wokwi.com/projects/297322571959894536)

@@ -1,16 +1,16 @@
 ---
-title: wokwi-max7219-matrix Dot Matrix Reference
-sidebar_label: wokwi-max7219-matrix
+title: wokwi-max7219-matrix点阵参考
+sidebar_label: wokwi-max7219-matrix参考
 ---
 
 import DotMatrix from './wokwi-max7219-matrix.svg';
 import DotMatrixChain4 from './wokwi-max7219-matrix-chain-4.svg';
 
-8x8 LED Dot Matrix with MAX7219 Controller
+带MAX7219控制器的8x8 LED点阵
 
 ![MAX7219 LED Dot Matrix](wokwi-max7219-matrix.svg)
 
-## Pin names
+## 引脚名称
 
 | Name | Description    |
 | ---- | -------------- |
@@ -21,37 +21,38 @@ import DotMatrixChain4 from './wokwi-max7219-matrix-chain-4.svg';
 | CLK  | Clock input    |
 | DOUT | Data output    |
 
-## Attributes
+## 属性
 
-| Name   | Description                                  | Default value |
-| ------ | -------------------------------------------- | ------------- |
-| chain  | How many units to chain together             | "1"           |
-| color  | LED color (when lit)                         | "red"         |
-| layout | Matrix connection layout: "parola" or "fc16" | "parola"      |
+| Name   | Description                      | Default value |
+| ------ | -------------------------------- | ------------- |
+| chain  | 链在一起需要多少个单元           | "1"           |
+| color  | LED颜色（点亮时）                | "red"         |
+| layout | 矩阵连接布局: "parola" or "fc16" | "parola"      |
 
-### Chaining
+### 链（chain）
 
-Each dot matrix units is an 8x8 LED matrix. All the LEDs in the matrix have the same color. You can make the display wider by setting the "chain" attribute. For example, setting "chain" to 4 will chain four dot matrix units horizontally, resulting in 32x8 matrix (four times 8x8 matrix).
+每个点阵单元都是一个8x8 LED矩阵。矩阵中的所有LED颜色相同。您可以通过设置“链式”属性来扩大显示范围。例如，将“chain”设置为4将水平链导四个点矩阵单元，从而产生32x8矩阵（四次乘以8x8矩阵）。
 
-If you want to chain units in a custom way (e.g. select a different pixel color for each unit, chain them vertically, etc), connect the DOUT pin of one unit to the DIN pin of the next unit. You also need to connect the CLK / CS pins of the units together. See [32x32 LED Matrix Tunnel](https://wokwi.com/projects/318864638990090834) for an example.
+如果您想以自定义方式链接单元（例如为每个单元选择不同的像素颜色，垂直链条等），请将一个单元的DOUT引脚连接到下一个单元的DIN引脚。您还需要将设备的CLK/CS引脚连接在一起。有关示例，请参阅[32x32 LED Matrix Tunnel](https://wokwi.com/projects/318864638990090834) 。
 
-### Matrix layout
+### 矩阵布局（layout）
 
-There are several type of matrix layout, based on the commonly available modules. You can set the "layout" property to choose the desired pixel layout:
+根据常用模块，有几种类型的矩阵布局。您可以设置“layout”属性来选择所需的像素布局：
 
-- "parola" - See the [Parola documentation](https://majicdesigns.github.io/MD_MAX72XX/page_parola.html) for information about the layout of these modules
-- "fc16" - The FC-16 modules are available from EBay and AliExpress. They usually come in a chain of four 8x8 matrices, so they have 32x8 pixels in total.
+- “parola”-有关这些模块布局的信息，请参阅 [Parola documentation](https://majicdesigns.github.io/MD_MAX72XX/page_parola.html) 
 
-Choosing the wrong layout will cause your text / drawing to be rotated and / or mirrored.
+- “fc16”-FC-16模块可从eBay和AliExpress获得。它们通常由四个8x8矩阵组成，因此它们总共有32x8像素。
 
-### Examples
+选择错误的布局将导致您的文本/绘图被旋转和/或镜像。
+
+### 示例
 
 | Result                                           | Attrs                  |
 | ------------------------------------------------ | ---------------------- |
 | <DotMatrix style={{'--pixel-color': 'green'}} /> | `{ "color": "green" }` |
 | <DotMatrixChain4/>                               | `{ "chain": "4" }`     |
 
-## Simulator examples
+## 仿真实例
 
 - [Dot Matrix Clock](https://wokwi.com/projects/289186888566178317)
 - [Etch A Sketch game](https://wokwi.com/projects/296234816685212169)

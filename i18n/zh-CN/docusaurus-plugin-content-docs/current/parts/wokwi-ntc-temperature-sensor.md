@@ -1,13 +1,13 @@
 ---
-title: wokwi-ntc-temperature-sensor Reference
-sidebar_label: wokwi-ntc-temperature-sensor
+title: wokwi-ntc-temperature-sensor参考
+sidebar_label: wokwi-ntc-temperature-sensor参考
 ---
 
-Analog temperature sensor: NTC (negative temperature coefficient) thermistor.
+模拟温度传感器：NTC（负温度系数）热敏电阻。
 
 <wokwi-ntc-temperature-sensor />
 
-## Pin names
+## 引脚名称
 
 | Name | Description            |
 | ---- | ---------------------- |
@@ -15,22 +15,24 @@ Analog temperature sensor: NTC (negative temperature coefficient) thermistor.
 | OUT  | Output signal (analog) |
 | GND  | Ground                 |
 
-## Attributes
+## 属性
 
-| Name        | Description                            | Default value |
-| ----------- | -------------------------------------- | ------------- |
-| temperature | Initial temperature value (celsius)    | "24"          |
-| beta        | The beta coefficient of the thermistor | "3950"        |
+| Name        | Description          | Default value |
+| ----------- | -------------------- | ------------- |
+| temperature | 初始温度值（摄氏度） | "24"          |
+| beta        | 热敏电阻的β系数      | "3950"        |
 
-## Reading the temperature
+## 读取温度
 
-The temperature sensor module includes a 10K NTC thermistor in series with a 10K resistor.
+温度传感器模块包括一个10K NTC热敏电阻和10K电阻串联。
 
-This setup produces a voltage that depends on the temperature. You can read this voltage by
-connecting the OUT pin of the thermistor to an analog input pin and then using the
-`analogRead()` function.
+这种设置产生的电压取决于温度。您可以通过以下方式读取此电压
 
-Use the following code to convert the return value of `analogRead()` into a temperature value (in celsius):
+将热敏电阻的OUT引脚连接到模拟输入引脚，然后使用
+
+`analogRead()`函数。
+
+使用以下代码将`analogRead()` 的返回值转换为温度值（以摄氏度为单位）：
 
 ```cpp
 const float BETA = 3950; // should match the Beta Coefficient of the thermistor
@@ -38,6 +40,6 @@ int analogValue = analogRead(A0);
 float celsius = 1 / (log(1 / (1023. / analogValue - 1)) / BETA + 1.0 / 298.15) - 273.15;
 ```
 
-## Simulator examples
+## 仿真实例
 
 - [NTC Thermistor Basic Example](https://wokwi.com/projects/299330254810382858)

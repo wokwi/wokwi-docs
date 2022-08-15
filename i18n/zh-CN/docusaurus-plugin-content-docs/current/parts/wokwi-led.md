@@ -1,32 +1,32 @@
 ---
-title: wokwi-led Reference
-sidebar_label: wokwi-led
+title: wokwi-led参考
+sidebar_label: wokwi-led参考
 ---
 
-Standard 5mm LED.
+标准5mm的LED。
 
 <wokwi-led />
 
-## Pin names
+## 引脚名称
 
-| Name | Description            |
-| ---- | ---------------------- |
-| A    | Anode (positive pin)   |
-| C    | Cathode (negative pin) |
+| Name | Description    |
+| ---- | -------------- |
+| A    | 阳极（正引脚） |
+| C    | 阴极（负引脚） |
 
-## Attributes
+## 属性
 
-| Name       | Description                     | Default value        |
-| ---------- | ------------------------------- | -------------------- |
-| color      | The color of the LED body       | "red"                |
-| lightColor | The color of the light          | depends on the color |
-| label      | Text that appears below the led |                      |
-| gamma      | Gamma correction factor         | "2.8"                |
-| flip       | Flips the led horizontally      | ""                   |
+| Name       | Description           | Default value        |
+| ---------- | --------------------- | -------------------- |
+| color      | 灯身的颜色            | "red"                |
+| lightColor | 光的颜色              | depends on the color |
+| label      | 显示在 LED 下方的文本 |                      |
+| gamma      | 伽马校正系数          | "2.8"                |
+| flip       | 水平翻转LED           | ""                   |
 
-Note: To rotate LEDs, click on them and press "R", or set the ["rotate" property](../diagram-format#parts).
+注意：要旋转LED，请单击它们并按“R”，或设置 ["rotate" property](../diagram-format#parts)。
 
-### Examples
+### 示例
 
 | Result                                                    | Attrs                                         |
 | --------------------------------------------------------- | --------------------------------------------- |
@@ -37,22 +37,21 @@ Note: To rotate LEDs, click on them and press "R", or set the ["rotate" property
 | <wokwi-led color="white" lightColor="orange" value="1" /> | `{ "color": "white", "lightColor": "orange"}` |
 | <wokwi-led color="red" flip="1"/>                         | `{ "color": "red", "flip": "1"}`              |
 
-### Gamma correction
+### Gamma亮度校正
 
-The LED automatically applies gamma correction. This means that even a very short burst of current will result
-in some visible light, similar to how physical LEDs work, so you get more accurate simulation in the following cases:
+LED会自动应用伽马校正。这意味着即使是非常短的电流爆发也会产生一些可见光，类似于物理LED的工作方式，因此在以下情况下，您可以获得更准确的模拟：
 
-1. Using `analogWrite()` with very small values (short duty cycle),
-2. LED scanning techniques such as [Charlieplexing](https://goodarduinocode.com/guides/charlieplexing).
+1。使用值很小（占空比短）的`analogWrite()`，
 
-You can disable the gamma correction by setting the "gamma" attribute to "1.0". You can also choose a different
-gamma factor by setting this attribute to the desired value. The default gamma correction factor is 2.8.
+2。LED扫描技术，如 [Charlieplexing](https://goodarduinocode.com/guides/charlieplexing)。
 
-The [Gamma Correction Demo project](https://wokwi.com/projects/304762988710068800) shows the behavior of different gamma values: the LED on the left has the default gamma factor of 2.8, while the LED on the right has a gamma factor of 1.0. You can see how lower values of `analogWrite()` look much brighter on the left LED.
+您可以通过将“gamma”属性设置为“1.0”来禁用伽马校正。您还可以选择不同的gamma值：将此属性设置为所需的值来实现伽马因子。默认伽马校正系数为2.8。
 
-For more information about _gamma correction_, including some code examples, check out this [great guide from Adafruit](https://learn.adafruit.com/led-tricks-gamma-correction).
+[Gamma Correction Demo project](https://wokwi.com/projects/304762988710068800) 显示了不同伽马值的行为：左侧的LED默认伽马因子为2.8，而右侧的LED的伽马因子为1.0。你可以看到`analogWrite()`的较低值在左侧LED上看起来要亮得多。
 
-## Simulator examples
+有关_gamma correction_的更多信息，包括一些代码示例，请查看此[great guide from Adafruit](https://learn.adafruit.com/led-tricks-gamma-correction)。
 
-- [Blink](https://wokwi.com/arduino/libraries/demo/blink) - Arduino's standard Blink sketch
-- [Fade](https://wokwi.com/projects/313268562698437186) - Using analogWrite() + gamma correction
+## 仿真实例
+
+- [Blink](https://wokwi.com/arduino/libraries/demo/blink) - Arduino的标准闪烁示例
+- [Fade](https://wokwi.com/projects/313268562698437186) - 使用 analogWrite() + 伽马校正

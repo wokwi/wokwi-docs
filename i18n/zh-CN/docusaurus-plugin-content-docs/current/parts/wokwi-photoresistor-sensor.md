@@ -1,13 +1,13 @@
 ---
-title: wokwi-photoresistor-sensor Reference
-sidebar_label: wokwi-photoresistor-sensor
+title: wokwi-photoresistor-sensor参考
+sidebar_label: wokwi-photoresistor-sensor参考
 ---
 
-Photoresistor (LDR) sensor module
+光电阻（LDR）传感器模块
 
 <wokwi-photoresistor-sensor />
 
-## Pin names
+## 引脚名称
 
 | Name | Description           |
 | ---- | --------------------- |
@@ -16,25 +16,26 @@ Photoresistor (LDR) sensor module
 | DO   | Digital output        |
 | AO   | Analog output         |
 
-## Attributes
+## 属性
 
-| Name      | Description                           | Default value |
-| --------- | ------------------------------------- | ------------- |
-| lux       | Initial light value (lux)             | "500"         |
-| threshold | Digital output threshold voltage      | "2.5"         |
-| rl10      | LDR resistance @ 10lux (in kilo-ohms) | "50"          |
-| gamma     | Slope of the log(R) / log(lux) graph  | "0.7"         |
+| Name      | Description                      | Default value |
+| --------- | -------------------------------- | ------------- |
+| lux       | 初始光值（lux）                  | "500"         |
+| threshold | 数字输出阈值电压                 | "2.5"         |
+| rl10      | LDR电阻@ 10lux（以千欧姆为单位） | "50"          |
+| gamma     | log(R) / log(lux)图的斜率        | "0.7"         |
 
-## Operation
+## 工作方式
 
-The photoresistor sensor module includes a LDR (light-dependant resistor) in series with a 10K resistor. The AO pin is connected between the LDR and the 10K resistor.
+光电阻传感器模块包括一个LDR（光依赖电阻）和一个10K电阻串联。AO引脚连接在LDR和10K电阻之间。
 
-The voltage on the AO pin depends on the illumination - that is the amount of light that falls on the sensor. You can read this voltage by connecting the AO pin of the photoresistor sensor to an analog input pin and then using the `analogRead()` function.
+AO引脚上的电压取决于照明——即落在传感器上的光量。您可以通过将光电阻传感器的AO引脚连接到模拟输入引脚，然后使用`analogRead()`函数来读取此电压。
 
-There are two parameters that control the sensitivity of the LDR: rl10 and gamma. rl10 is the resistance of the LDR at illumination level of 10 lux. The gamma value determines the slope of the log(R) / log(lux) graph. You can usually find these two values in the datasheet of the LDR.
+有两个参数控制LDR的灵敏度：rl10和γ。rl10是LDR在10勒克斯照明水平上的电阻。伽马值决定了log(R) / log(lux)图的斜率。您通常可以在LDR的数据表中找到这两个值。
 
-The following table shows the relationship between the illumination level (lux), resistance (R), and the voltage level
-on the AO pin when gamma = 0.7 and rl10 = 50 (the default values):
+下表显示了照明电平（lux）、电阻（R）和电压电平之间的关系
+
+当gamma = 0.7和rl10 = 50时，在AO引脚上（默认值）：
 
 | Condition            | Illumination (lux) | LDR Resistance | Voltage\* | analogRead() value |
 | -------------------- | ------------------ | -------------- | --------- | ------------------ |
@@ -49,9 +50,9 @@ on the AO pin when gamma = 0.7 and rl10 = 50 (the default values):
 | Direct sunlight      | 100,000            | 79Ω            | 0.04      | 8                  |
 
 \* When VCC = 5V  
-\*\* Measured one meter away from the monitor
+\*\* 在距离显示器一米远的地方测量
 
-The following code to convert the return value of `analogRead()` into a illumination value (in lux):
+以下代码将`analogRead()`的返回值转换为照明值（勒克斯）：
 
 ```cpp
 // These constants should match the photoresistor's "gamma" and "rl10" attributes
@@ -65,17 +66,17 @@ float resistance = 2000 * voltage / (1 - voltage / 5);
 float lux = pow(RL10 * 1e3 * pow(10, GAMMA) / resistance, (1 / GAMMA));
 ```
 
-### Digital output
+### 数字输出
 
-The digital output ("DO") pin goes high when it's dark, and low when there's light. On the physical sensor, you tweak the small on-board potentiometer to set the threshold. In the simulator, use the "threshold" attribute to set the threshold voltage. The default threshold is 2.5 volts, or about 100 lux.
+数字输出（“DO”）引脚在黑暗时会很高，在有光时会变低。在物理传感器上，您可以调整车载小电位器以设置阈值。在模拟器中，使用“阈值”属性来设置阈值电压。默认阈值为2.5伏特，或约100勒克斯。
 
-The bottom LED ("DO LED") is connected to the digital output, and lights whenever the DO pin goes low. In other words, it lights when the sensor is illuminated.
+底部LED（“DO LED”）连接到数字输出，每当DO引脚低时都会亮起。换句话说，当传感器被照亮时，它会发光。
 
-### Schematics
+### 原理图
 
 ![Wokwi Photoresistor (LDR) Sensor Module Schematics](wokwi-photoresistor-sensor.svg)
 
-## Simulator examples
+## 仿真实例
 
 - [Photoresistor Digital Example](https://wokwi.com/projects/305193592908939842)
 - [Photoresistor Analog Example](https://wokwi.com/projects/305193627138654786)

@@ -3,11 +3,11 @@ title: wokwi-ili9341 Reference
 sidebar_label: wokwi-ili9341
 ---
 
-Full color 240x320 2.8" LCD-TFT display with SPI interface
+使用SPI接口的全彩240X320的LCD-TFT显示屏
 
 <wokwi-ili9341 />
 
-## Pin names
+## 引脚名称
 
 | #   | Name | Description           | Arduino Uno pin |
 | --- | ---- | --------------------- | --------------- |
@@ -21,20 +21,20 @@ Full color 240x320 2.8" LCD-TFT display with SPI interface
 | 8   | LED  | Backlight LED\*       | 5V              |
 | 9   | MISO | SPI data (LCD → MCU)‡ | 12              |
 
-\* The RST and backlight (LED) pins are not available in the simulation.  
-† You connect CS and D/C to any digital Arduino pin. The pin numbers here are just an example.  
-‡ You can leave MISO disconnected, unless you need to read data back from the LCD.
+\* RST和背光灯（LED）引脚在模拟中不可用。  
+† 您可以将CS和D/C连接到任何数字Arduino引脚。这里的引脚数字只是一个例子。  
+‡ 您可以断开MISO的连接，除非您需要从LCD读取数据。
 
-## Attributes
+## 属性
 
-| Name           | Description                                 | Default value |
-| -------------- | ------------------------------------------- | ------------- |
-| flipHorizontal | Set to "1" to flip the display horizontally | ""            |
-| flipVertical   | Set to "1" to flip the display vertically   | ""            |
+| Name           | Description               | Default value |
+| -------------- | ------------------------- | ------------- |
+| flipHorizontal | 设置为“1”以水平翻转显示器 | ""            |
+| flipVertical   | 设置为“1”以垂直翻转显示器 | ""            |
 
-## Using in Arduino
+## 在Arduino使用
 
-You can use the _Adafruit_ILI9341_ library or the _lcdgfx_ library to interface with the LCD display. The following code example shows basic usage with _Adafruit_ILI9341_. It works with the pin connections from the table above:
+您可以使用_Adafruit_ILI9341_库或_lcdgfx_库驱动液晶显示器接口。以下代码示例显示了_Adafruit_ILI9341_的基本用法。它适用于上表中的引脚连接：
 
 ```cpp
 #include "SPI.h"
@@ -64,7 +64,7 @@ void loop() { }
 
 [Run this example on Wokwi](https://wokwi.com/projects/308024602434470466)
 
-## Simulator examples
+## 仿真案例
 
 - [Adafruit ILI9341 GFX Example](https://wokwi.com/projects/307567201804616256)
 - [Fingerprint Pattern](https://wokwi.com/projects/307567963154678338)

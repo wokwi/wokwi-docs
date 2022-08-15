@@ -1,13 +1,13 @@
 ---
-title: wokwi-servo Reference
-sidebar_label: wokwi-servo
+title: wokwi-servo参考
+sidebar_label: wokwi-servo参考
 ---
 
-A standard Micro Servo Motor
+标准微伺服电机
 
 <wokwi-servo />
 
-## Pin names
+## 引脚名称
 
 | Name | Description           |
 | ---- | --------------------- |
@@ -15,14 +15,14 @@ A standard Micro Servo Motor
 | V+   | Positive voltage (5V) |
 | GND  | Ground                |
 
-## Attributes
+## 属性
 
-| Name      | Description                              | Default value |
-| --------- | ---------------------------------------- | ------------- |
-| horn      | Horn type: "single", "double" or "cross" | "single"      |
-| hornColor | The color of the servo's horn            | "#ccc"        |
+| Name      | Description                                 | Default value |
+| --------- | ------------------------------------------- | ------------- |
+| horn      | 安装角的类型: "single", "double" or "cross" | "single"      |
+| hornColor | 伺服角的颜色                                | "#ccc"        |
 
-### Examples
+### 示例
 
 | Result                           | Attrs                        |
 | -------------------------------- | ---------------------------- |
@@ -31,7 +31,7 @@ A standard Micro Servo Motor
 | <wokwi-servo horn="double" />    | `{ "horn": "double" }`       |
 | <wokwi-servo horn="cross" />     | `{ "horn": "cross" }`        |
 
-## Simulator examples
+## 仿真实例
 
 - [Sweep](https://wokwi.com/arduino/libraries/Servo/Sweep)
 - [Knob](https://wokwi.com/arduino/libraries/Servo/Knob)

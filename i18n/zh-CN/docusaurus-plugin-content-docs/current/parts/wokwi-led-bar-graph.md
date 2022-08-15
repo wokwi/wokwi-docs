@@ -1,30 +1,30 @@
 ---
-title: wokwi-led-bar-graph Reference
-sidebar_label: wokwi-led-bar-graph
+title: wokwi-led-bar-graph参考
+sidebar_label: wokwi-led-bar-graph参考
 ---
 
-10-segment LED Bar Graph.
+10段LED条形图。
 
 <wokwi-led-bar-graph values='[1,1,1,1,1,1,1,1,1,1]' />
 
-## Pin names
+## 引脚名称
 
-| Name   | Description                                    |
-| ------ | ---------------------------------------------- |
-| A**n** | Anode (positive pin) of LED **n** (n = 1…10)   |
-| C**n** | Cathode (negative pin) of LED **n** (n = 1…10) |
+| Name   | Description                          |
+| ------ | ------------------------------------ |
+| A**n** | LED的阳极（正引脚） **n** (n = 1…10) |
+| C**n** | LED的阴极（负引脚） **n** (n = 1…10) |
 
-e.g. A1 is the anode of the top LED, and C1 is the cathode of the top LED.
+例如，例如A1是顶部LED的阳极，C1是顶部LED的阴极。
 
-## Attributes
+## 属性
 
-| Name  | Description                                                              | Default value |
-| ----- | ------------------------------------------------------------------------ | ------------- |
-| color | The color of the LED body, or one of the special values "GYR" / "BCYR"\* | "red"         |
+| Name  | Description                              | Default value |
+| ----- | ---------------------------------------- | ------------- |
+| color | LED主体的颜色，或特殊值“GYR”/“BCYR”之一* | "red"         |
 
-\* GYR means Green-Yellow-Red. BCYR means Cyan-Blue-Yellow-Red
+\* GYR的意思是绿色-黄色-红色。BCYR的意思是青蓝色-黄色-红色
 
-### Examples
+### 示例
 
 | Result                                                                  | Attrs                    |
 | ----------------------------------------------------------------------- | ------------------------ |
@@ -33,7 +33,7 @@ e.g. A1 is the anode of the top LED, and C1 is the cathode of the top LED.
 | <wokwi-led-bar-graph  values='[1,1,1,1,1,1,1,1,1,1]' color="GYR" />     | `{ "color": "GYR"}`      |
 | <wokwi-led-bar-graph  values='[1,1,1,1,1,1,1,1,1,1]' color="BCYR"  />   | `{ "color": "BCYR"}`     |
 
-## Simulator examples
+## 仿真案例
 
 - [Arduino LED Graph Bar](https://wokwi.com/projects/309829489359061570) - Move the potentiometer knob to control the LEDs
 - [Raspberry Pi Pico Binary Counter](https://wokwi.com/projects/309828467927548481)

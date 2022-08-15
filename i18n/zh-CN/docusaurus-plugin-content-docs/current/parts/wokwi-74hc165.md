@@ -1,73 +1,75 @@
 ---
-title: wokwi-74hc165 Reference
-sidebar_label: wokwi-74hc165
+title: wokwi-74hc165参考
+sidebar_label: wokwi-74hc165模块
 ---
 
-8-bit Parallel-In Serial-Out (PISO) Shift Register (Input)
+8位并行输入-串行输出（PISO）移位寄存器（输入）
 
 ![74HC165](wokwi-74hc165.svg)
 
-Use the 74HC165 shift register to expand the number of _input_ pins on your microcontroller. For output shift register (e.g. controlling multiple LEDs with just a few pins), please see the [wokwi-74hc595](wokwi-74hc595).
+使用74HC165移位寄存器扩展微控制器上的_input_引脚数量。有关输出移位寄存器（例如，只需几个引脚即可控制多个LED），请参阅 [wokwi-74hc595](wokwi-74hc595)。
 
-## Pin names
+## 引脚名称
 
-| Pin   | Description                               |
-| ----- | ----------------------------------------- |
-| D0…D7 | Parallel input                            |
-| PL    | Parallel load (active low)                |
-| CP    | Serial clock                              |
-| CE    | Clock enable (active low)                 |
-| Q7    | Serial output                             |
-| Q7_N  | Inverted serial output (usually not used) |
-| DS    | Serial input\*                            |
-| GND   | Ground                                    |
-| VCC   | Supply voltage                            |
+| Pin   | 介绍                       |
+| ----- | -------------------------- |
+| D0…D7 | 并行输入                   |
+| PL    | 并行装载（低有效）         |
+| CP    | 串行时钟                   |
+| CE    | 时钟使能（低有效）         |
+| Q7    | 串行输出                   |
+| Q7_N  | 翻转串行输出（通常不使用） |
+| DS    | 串行输入*                  |
+| GND   | 接地                       |
+| VCC   | 接电源                     |
 
-\* Use the DS to daisy-chain multiple 74HC165 units together. Connect DS to the Q7 pin of the previous 74HC165 chip in the chain. You can leave DS disconnected if you don't chain or for the first chip in the chain.
+\* 使用DS将多个74HC165单元拼凑在一起。将DS连接到芯片链中的之前74HC165芯片的Q7引脚。如果您不串联连接中的第一个芯片，您可以断开DS的连接。
 
-## Operation
+## 工作方式
 
-The 74HC165 is a shift register with eight parallel inputs: it enables you to simultaneously sample eight input pins, and then read the result one bit at a time. In other words, it is an easy way to expand the number of input pins for your microcontroller.
+74HC165是一个具有八个并行输入的移位寄存器：它使您能够同时采样八个输入引脚，然后一次读取一个结果。换句话说，这是增加微控制器输入引脚数量的简单方法。
 
-The shift register has two states: sampling and shifting. The PL pin selects the active state.
+移位寄存器有两个状态：采样和移位。PL引脚选择活动状态。
 
-### Sampling (PL low)
+### 采样 (PL low)
 
-When PL is low, the shift register is in the sampling state: it reads the inputs from pins D0…D7 and stores them. It also outputs the value of D7 in the Q7 pin (so Q7 == D7).
+当PL低时，移位寄存器处于采样状态：它从引脚D0...D7读取输入并存储它们。它还在Q7引脚中输出D7的值（因此Q7 == D7）。
 
-### Shifting (PL high)
+### 移位 (PL high)
 
-When PL is high, the shift register is in the sampling state. It retains the value it reads from the input, and let you read this value one bit at a time through the Q7 pin. You can read the next bit by pulsing CP (the serial clock) high. Initially, Q7 contains the value read from D7. When you pulse the clock high, you get the value from D6. When you pulse it again, you get the value from D5, etc.
+当PL高时，移位寄存器处于移位状态。它保留从输入中读取的值，并允许您通过Q7引脚一次读取此值。您可以通过将CP（串行时钟）高脉动来读取下一个位。最初，Q7包含从D7读取的值。当您将时钟脉冲高时，您将从D6中获得值。当你再次脉冲它时，你会从D5等中获得值。
 
-Changing the input pins while PL is high has no effect.
+在PL高时更改输入引脚没有效果。
 
-### Using the shift register
+### 移位寄存器的使用
 
-To use the shift register, connect pins D0…D7 to your inputs (e.g. [slide switches](wokwi-slide-switch) or [pushbuttons](wokwi-pushbutton)). You may need to add external pull-up or pull-down [resistors](wokwi-resistor), especially if you go with the buttons.
+要使用移位寄存器，请将引脚D0...D7连接到您的输入（例如[滑动开关](wokwi-slide-switch) or [按键](wokwi-pushbutton)）。您可能需要添加外部上拉或下拉[电阻](wokwi-resistor)，特别是如果您使用按钮。
 
-You also need to connect PL, CP, and Q7 to your microcontroller. Configure PL and CP as digital outputs, and Q7 as a digital input.
+您还需要将PL、CP和Q7连接到微控制器。将PL和CP配置为数字输出，Q7配置为数字输入。
 
-Finally, connect to CE pin to ground. You can use this pin to disable shifting (by driving it high), but it's usually not required. Don't leave the CE pin floating!
+最后，连接到CE引脚接地。您可以使用此引脚禁用移位（通过将其推高），但通常不需要。不要让CE浮空，他必须有确定的状态！
 
-Sample the inputs by setting PL to low.
+通过将PL设置为低来采样输入。
 
-Read the value by setting PL to high. Read the first (most-significant) bit from Q7, then pulse the CP high to get the next bit. Repeat this eight times, until you read all the bits from the shift register.
+通过将PL设置为高来读取值。读取Q7的第一个（最重要的）位，然后脉冲CP高以获得下一个位。重复八次，直到您读取移位寄存器中的所有位。
 
-### Chaining multiple shift registers
+### 链接多个移位寄存器
 
-You can chain several shift registers and still use a single microcontroller input pin. This configuration is also called a cascade. The connections are as follows:
+您可以链接多个移位寄存器，但仍然使用单个微控制器输入引脚。这种配置也被称为级联。连接如下：
 
-1. Connect the Q7 pin of each unit (other than the last) to the DS (serial input) pin of the next unit.
-2. Connect the Q7 pin of the last unit to the microcontroller.
-3. The PL (parallel load) and CP (clock) pins are shared between all the units. So you only need two microcontroller pins to control the entire chain. If you use the CE (clock enable pin), it can also be shared. Otherwise, just connect it to the ground.
+1. 将每个单元（最后一个单元除外）的Q7引脚连接到下一个单元的DS（序列输入）引脚。
 
-The operation is same as above: sampling and then shifting. There is one difference: you read more than 8 bits when shifting. For a chain of n shift registers, you'll shift 8\*n bits by repeatedly reading Q7 and then pulsing CP high. So for two 74hc165 units you'd shift 16 bits, for three units you'd shift 24 bits, etc.
+2. 将最后一个单元的Q7引脚连接到微控制器。
 
-If you don't need all the bits (e.g. you have two shift register units, by only use 10 inputs), then you can shift a smaller number of bits, as many as you are interested in.
+3. PL（并行负载）和CP（时钟）引脚在所有单元之间共享。因此，您只需要两个微控制器引脚来控制整个链条。如果您使用CE（时钟启用引脚），它也可以共享。否则，只需将其连接到地面即可。
 
-## Arduino code example
+操作与上面相同：采样，然后移动。但有一个区别：你移位时读数超过8位。对于n个移位寄存器的链，您将通过重复读取Q7，然后给CP高脉冲来移动8\*n位。因此，对于两个74hc165单元，您将移动16位，对于三个单元，您将移动24位，等等。
 
-This example assumes that you connected the shift register to Arduino as follows:
+如果您不需要所有位（例如，您有两个移位寄存器单元，只需使用10个输入），那么您可以移动更少的位，只移出您需要的就可以。
+
+## Arduino代码示例
+
+此示例假设您将Shift寄存器连接到Arduino，如下所示：
 
 | Arduino pin | 74HC165 pin |
 | ----------- | ----------- |
@@ -78,7 +80,7 @@ This example assumes that you connected the shift register to Arduino as follows
 | GND         | GND         |
 | 5V          | VCC         |
 
-\* If you chain multiple shift registers, connect only the Q7 pin of the last register in the chain to Arduino.
+\* 如果您链接多个移位寄存器，请仅将链中最后一个寄存器的Q7引脚连接到Arduino。
 
 ```cpp
 const int dataPin = 2;   /* Q7 */
@@ -119,7 +121,7 @@ void loop() {
 
 [Run this example on Wokwi](https://wokwi.com/projects/306031380875182657).
 
-## Simulator examples
+## 仿真实例
 
 - [Single input shift register](https://wokwi.com/projects/306031380875182657)
 - [74HC165 shift register cascade](https://wokwi.com/projects/306024460940476993) - four units daisy-chained to read the state of 32 switches

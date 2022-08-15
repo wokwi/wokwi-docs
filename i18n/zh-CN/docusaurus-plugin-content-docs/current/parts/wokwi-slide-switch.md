@@ -1,13 +1,13 @@
 ---
-title: wokwi-slide-switch Reference
-sidebar_label: wokwi-slide-switch
+title: wokwi-slide-switch参考
+sidebar_label: wokwi-slide-switch参考
 ---
 
-Standard Single Pole Double Throw (SPDT) slide switch.
+标准单极双掷（SPDT）滑动开关。
 
 <wokwi-slide-switch />
 
-## Pin names
+## 引脚名称
 
 | Name | Description     |
 | ---- | --------------- |
@@ -15,36 +15,35 @@ Standard Single Pole Double Throw (SPDT) slide switch.
 | 2    | Common terminal |
 | 3    | Right terminal  |
 
-The slide switch has three pins. Pin 2 (in the middle) is the common pin. Depending on the position
-of the switch's handle, it's connected to either pin 1 or 3:
+滑动开关有三个引脚。引脚2（中间）是常见的引脚。根据在不同开关的手柄中的位置，它连接到引脚1或3：
 
 | Handle position | Description           |
 | --------------- | --------------------- |
 | Left            | Shorting pins 1 and 2 |
 | Right           | Shorting pins 3 and 2 |
 
-The following diagram illustrates the connections inside the slide switch. You can see the gray sliding
-contact that moves together with the handle and creates a connection between pin 2 and either pin 1 or 3:
+下图说明了滑动开关内部的连接。你可以看到灰色的滑动与手柄一起移动并在引脚2和引脚1或3之间建立连接的触点：
 
 ![Slide switch connection diagram](wokwi-slide-switch-diagram.svg)
 
-## Attributes
+## 属性
 
 | Name   | Description                                                          | Default value |
 | ------ | -------------------------------------------------------------------- | ------------- |
-| value  | Initial position of the slide switch:<br/>"" for left, "1" for right | ""           |
-| bounce | Set to "0" to disable bouncing                                       | ""            |
+| value  | 滑动开关的初始位置:<br/>"" for left, "1" for right | ""           |
+| bounce | 设置为“0”以禁用反弹                            | ""            |
 
-### Bouncing
+### 弹跳
 
-When you move a physical slide switch, the circuit opens and closes tens or hundreds of times.
-This phenomenon is called [Bouncing](wokwi-pushbutton#bouncing).
+当您移动物理滑动开关时，电路会打开和关闭数十次或数百次。
 
-Wokwi simulates switch bouncing by default. You can disable the bouncing simulation for individual switches by setting their "bounce" attr to "0":
+这种现象被称为 [Bouncing](wokwi-pushbutton#bouncing)。
+
+Wokwi默认模拟开启反弹。您可以通过将单个开关的“bounce”设置为“0”来禁用：
 
 `{ "bounce": "0" }`
 
-## Simulator examples
+## 仿真实例
 
 - [Slide Switch and LED](https://wokwi.com/projects/288276100805558797) - Using a slide switch to toggle an LED
 - [Slide Switch and 2 LEDs](https://wokwi.com/projects/288278249939665421) - A slide switch toggles between 2 LEDs

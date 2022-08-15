@@ -1,15 +1,15 @@
 ---
-title: wokwi-ssd1306 Reference
-sidebar_label: wokwi-ssd1306
+title: wokwi-ssd1306显示模块参考
+sidebar_label: wokwi-ssd1306参考
 ---
 
-Monochrome 128x64 OLED display with I2C interface
+具有I2C接口的单色128x64 OLED显示器
 
 <wokwi-ssd1306 />
 
-Note: this part has been deprecated. Please use [board-ssd1306](./board-ssd1306) instead.
+注：此部件已被弃用。请改用[board-ssd1306](./board-ssd1306)。
 
-## Pin names
+## 引脚名称
 
 | Name        | Description           | Arduino Uno pin |
 | ----------- | --------------------- | --------------- |
@@ -20,16 +20,16 @@ Note: this part has been deprecated. Please use [board-ssd1306](./board-ssd1306)
 | GND         | Ground                | GND             |
 | VIN         | Supply voltage        | 5V              |
 
-\* DC, RST and CS are for SPI mode. The SSD1306 simulation only supports I2C mode, so these pins are not functional.
+\* DC、RST和CS适用于SPI模式。SSD1306模拟仅支持I2C模式，因此这些引脚不起作用。
 
-The default I2C address of the SSD1306 module is 0x3c (60).
+SSD1306模块的默认I2C地址为0x3c（60）。
 
-## Attributes
+## 属性
 
 | Name        | Description                | Default value |
 | ----------- | -------------------------- | ------------- |
 | i2c-address | I2C address of the display | "0x3c"        |
 
-## Simulator examples
+## 仿真实例
 
 See [board-ssd1306](board-ssd1306#simulator-examples).

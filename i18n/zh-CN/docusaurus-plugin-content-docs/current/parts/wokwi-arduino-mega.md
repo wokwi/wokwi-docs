@@ -1,25 +1,25 @@
 ---
-title: wokwi-arduino-mega Reference
-sidebar_label: wokwi-arduino-mega
+title: wokwi-arduino-mega参考
+sidebar_label: wokwi-arduino-mega参考
 ---
 
-Arduino Mega 2560. Powered by the ATmega2560 chip, which has 256K bytes of Flash program memory, 8k bytes of SRAM and 4K bytes of EEPROM. The board features 54 digital pins, 16 analog input pins, and 4 serial ports. It runs at 16MHz.
+Arduino Mega 2560。由ATmega2560芯片提供支持，该芯片拥有256K字节的Flash程序内存、8k字节的SRAM和4K字节的EEPROM。该板具有54个数字引脚、16个模拟输入引脚和4个串行端口。它以16MHz运行。
 
 <wokwi-arduino-mega />
 
-## Pin names
+## 引脚名称
 
-Pins 0 to 53 are digital GPIO pins. Pins A0 to A15 double as analog input pins, in addition to being digital GPIO pins.
+引脚0到53是数字GPIO引脚。引脚A0至A15除了是数字GPIO引脚外，还兼作模拟输入引脚。
 
-There are five ground pins: GND.1 (next to pin 13), GND.2/GND.3 (next to the Vin pin), and GND.4/GND.5 (at the bottom of the dual-row female header connector)
+有五个接地引脚：GND.1（引脚13旁边）、GND.2/GND.3（Vin引脚旁边）和GND.4/GND.5（在双排母头连接器的底部）
 
-Pins VIN / 5V are connected to the positive power supply. There are also two additional power supply pins, 5V.1/5V.2, at the top of the dual-row female header connector.
+引脚VIN/5V连接到正电源。双排母头连接器顶部还有两个额外的电源引脚，5V.1/5V.2。
 
-Pins 3.3V / IOREF / AREF / RESET are not available in the simulation.
+模拟中没有引脚3.3V / IOREF / AREF / RESET。
 
-Digital pins 2 … 13, 44, 45, and 46 have hardware PWM support (total of 15 PWM channels).
+数字引脚2 ... 13、44、45和46支持硬件PWM（共15个PWM通道）。
 
-Some of the digital pins also have additional functions:
+一些数字引脚还具有额外的功能：
 
 | Pin | Function | Signal           | External interrupt |
 | --- | -------- | ---------------- | ------------------ |
@@ -40,37 +40,37 @@ Some of the digital pins also have additional functions:
 | 52  | SPI      | SCK (Clock)      |                    |
 | 53  | SPI      | SS (Chip select) |                    |
 
-### On board LEDs
+### 板载LED
 
-The board includes four LEDs:
+主板包括四个LED：
 
-| LED | Function                                             |
-| --- | ---------------------------------------------------- |
-| L   | Connected to digital pin 13                          |
-| RX  | Serial RX Activity                                   |
-| TX  | Serial TX Activity                                   |
-| ON  | Power LED. Always on while the simulation is running |
+| LED  | Function                    |
+| ---- | --------------------------- |
+| L    | 连接至数字脚13              |
+| RX   | 串口RX工作指示灯            |
+| TX   | 串口TX工作指示灯            |
+| ON   | 电源LED。模拟运行时始终打开 |
 
-In general, only the "L" LED can be controlled by the user's code. You can use the `LED_BUILTIN` constant to reference it from your code:
+一般来说，只有“L”LED才能由用户的代码控制。您可以使用 `LED_BUILTIN` 常量从代码中引用它：
 
 ```cpp
 pinMode(LED_BUILTIN, OUTPUT);
 digitalWrite(LED_BUILTIN, HIGH);
 ```
 
-See [Blink](https://wokwi.com/arduino/libraries/demo/blink-mega) for a complete code example.
+有关完整的代码示例，请参阅[Blink](https://wokwi.com/arduino/libraries/demo/blink-mega) 。
 
-## Simulation features
+## 仿真功能
 
-The Arduino Mega 2560 is simulated using the [AVR8js Library](https://github.com/wokwi/avr8js). The table below summarizes the status of features:
+Arduino Mega 2560使用 [AVR8js Library](https://github.com/wokwi/avr8js)进行仿真。下表总结了现有功能的状态：
 
-| Peripheral               | Status | Notes                                           |
+| 外设             | 状态 | 注意                                         |
 | ------------------------ | ------ | ----------------------------------------------- |
 | Processor                | ✔️     |                                                 |
 | GPIO                     | ✔️     | Including External/Pin Change Interrupts        |
 | 8-bit timers             | ✔️     | Timer0, Timer2                                  |
 | 16-bit timers            | ✔️     | Timer1, Timer3, Timer4, Timer5 \*               |
-| Output Compare Modulator | ❌     |
+| Output Compare Modulator | ❌     ||
 | Watchdog Timer           | ✔️     |                                                 |
 | USART                    | ✔️     | USART0, USART1, USART1, USART3                  |
 | SPI                      | 🟡     | Master mode only                                |
@@ -81,26 +81,25 @@ The Arduino Mega 2560 is simulated using the [AVR8js Library](https://github.com
 | Analog Comparator        | ❌     |                                                 |
 | GDB Debugging            | ✔️     | See the [GDB Debugging Guide](../gdb-debugging) |
 
-Legend:
-✔️ Simulated
-🟡 Simulated, but see notes
-❌ Not implemented
+说明:
+✔️ 可仿真
+🟡 可以仿真, 但是要看注意
+❌ 不支持
 
-\* Input Capture is not implemented in the 16-bit timers.
+\* 16位计时器中没有实现输入捕获。
 
-If you need any of the missing features, please [open an issue on the AVR8js repo](https://github.com/wokwi/avr8js/issues/new)
-or [reach out on Discord](https://wokwi.com/discord).
+如果您需要任何缺失的功能，请 [open an issue on the AVR8js repo ](https://github.com/wokwi/avr8js/issues/new)或者 [reach out on Discord](https://wokwi.com/discord).。
 
-### Serial Monitor
+### 串行监视器
 
-You can use the Serial Monitor to receive information from your Arduino code, such as debug print. You can also use it to send information to your code, such as textual commands.
+您可以使用串行监视器从Arduino代码接收信息，例如调试打印。您还可以使用它向代码发送信息，例如文本命令。
 
-For more information and code samples, check out [the Serial Monitor guide](../guides/serial-monitor). It also explains how to connect the serial monitor to a different pin (e.g. to `Serial2` instead of `Serial`), and how to configure the line ending characters.
+有关更多信息和代码示例，请查看 [the Serial Monitor guide](../guides/serial-monitor)。它还解释了如何将串行监视器连接到其他引脚（例如，连接到`Serial2` 而不是`Serial` ），以及如何配置行尾字符。
 
-### Libraries
+### 库
 
-The simulator supports many popular Arduino libraries. For a complete list, see the [Libraries guides](../guides/libraries).
+该模拟器支持许多流行的Arduino库。有关完整列表，请参阅[Libraries guides](../guides/libraries)。
 
-## Simulator examples
+## 仿真案例
 
 - [Arduino Mega Blink](https://wokwi.com/arduino/libraries/demo/blink-mega)
