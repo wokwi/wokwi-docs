@@ -36,6 +36,14 @@ Delete a part by clicking on it (to select it) and then pressing the Delete butt
 
 Select multiple parts by clicking on the parts with the Shift key pressed. You can then move all the parts together, duplicate them (using the "D" key), or delete them using the Delete key.
 
+### Copying and pasting parts
+
+You can copy the selects part(s) by using the standard Copy keyboard shortcut (Ctrl+C or ⌘+C). If you selected multiple parts, all the wires that connect the selected parts are also copied. The parts you copied are stored in your system clipboard in a JSON format, similar to the [diagram.json format](../diagram-format).
+
+To paste the parts you copied, click on the diagram and press the standard Paste keyboard (Ctrl+V or ⌘+V). In some cases, the parts will be pasted outside of the currently visible diagram area, so you may have to zoom out in order to find them. This will be fixed in the future.
+
+You can use the copy-paste feature between different project, and quickly copy several parts (including all the internal connections) at once.
+
 ## Editing wires
 
 ### Creating a wire between two parts
