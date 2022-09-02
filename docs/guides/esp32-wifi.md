@@ -60,7 +60,7 @@ Once connected, you can use the [urequests library](https://mpython.readthedocs.
 
 ## Internet Access
 
-Wokwi uses a special gateway to connect your simulated ESP32 to the internet. This gateway is required since web browser do not allow direct internet access. There are two ways you can use the Wokwi IoT Gateway: the Public Gateway, and the Private Gateway.
+Wokwi uses a special gateway to connect your simulated ESP32 to the internet. This gateway is required since web browsers do not allow direct internet access. There are two ways you can use the Wokwi IoT Gateway: the Public Gateway, and the Private Gateway.
 
 |                      | Public Gateway        | Private Gateway                                        |
 | -------------------- | --------------------- | ------------------------------------------------------ |

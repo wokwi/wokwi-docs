@@ -22,7 +22,7 @@ When GDB is ready, you'll get the following prompt:
 (gdb)
 ```
 
-At this point you can type GDB command. For instance, suppose you want to run your program
+At this point you can type GDB commands. For instance, suppose you want to run your program
 line-by-line, starting from `setup()`. First, type `tbreak setup` and `c` to start the program
 and run it until the beginning of `setup()`:
 
