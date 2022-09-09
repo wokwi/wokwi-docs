@@ -22,7 +22,7 @@ Quando o GDB estiver pronto, você receberá o seguinte prompt de comando:
 (gdb)
 ```
 
-Neste ponto, você pode digitar um comando GDB. Por exemplo, suponha que você deseja executar seu programa
+Neste ponto, você pode digitar comandos GDB. Por exemplo, suponha que você deseja executar seu programa
 linha por linha, a partir do `setup()`. Primeiro, digite `tbreak setup` e `c` para iniciar o programa
 e executá-lo até o início do `setup()`:
 

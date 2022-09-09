@@ -60,7 +60,7 @@ Uma vez conectado, você pode usar a [urequests library](https://mpython.readthe
 
 ## Acesso à Internet
 
-Wokwi usa um gateway especial para conectar seu ESP32 simulado à internet. Este gateway é necessário, pois o navegador da Web não permite acesso direto à Internet. Há duas maneiras de usar o Wokwi IoT Gateway: o gateway público e o gateway privado.
+Wokwi usa um gateway especial para conectar seu ESP32 simulado à internet. Este gateway é necessário, pois os navegadores da Web não permitem acesso direto à Internet. Há duas maneiras de usar o Wokwi IoT Gateway: o gateway público e o gateway privado.
 
 |                      | Gateway Publico       | Gateway Privado                                             |
 | -------------------- | --------------------- | ----------------------------------------------------------- |
