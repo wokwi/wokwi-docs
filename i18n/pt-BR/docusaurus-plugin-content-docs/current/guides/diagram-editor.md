@@ -36,6 +36,14 @@ Exclua uma peça clicando nela (para selecioná-la) e em seguida pressionando a 
 
 Selecione várias peças clicando nas peças com a tecla Shift pressionada. Você pode então mover todas as partes juntas, duplicá-las (usando a tecla "D") ou excluí-las usando a tecla Delete.
 
+### Copiando e colando peças
+
+Você pode copiar a(s) parte(s) selecionada(s) usando o atalho de teclado padrão Copiar (Ctrl+C ou ⌘+C). Se você selecionou várias peças, todos os fios que conectam as peças selecionadas também são copiados. As partes que você copiou são armazenadas na área de transferência do sistema em um formato JSON, semelhante ao [diagram.json](../diagram-format).
+
+Para colar as partes que você copiou, clique no diagrama e pressione o teclado padrão Colar (Ctrl+V ou ⌘+V). Em alguns casos, as peças serão coladas fora da área do diagrama atualmente visível, portanto, talvez seja necessário diminuir o zoom para encontrá-las. Isso será corrigido no futuro.
+
+Você pode usar o recurso copiar e colar entre diferentes projetos e copiar rapidamente várias partes (incluindo todas as conexões internas) de uma só vez.
+
 ## Editando fios
 
 ### Criação de uma ligação entre as duas peças
