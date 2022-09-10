@@ -18,7 +18,7 @@ Standard 5mm LED.
 
 | Name       | Description                     | Default value        |
 | ---------- | ------------------------------- | -------------------- |
-| color      | The color of the LED body       | "red"                |
+| Aula 1     | The color of the LED body       | "red"                |
 | lightColor | The color of the light          | depends on the color |
 | label      | Text that appears below the led |                      |
 | gamma      | Gamma correction factor         | "2.8"                |
