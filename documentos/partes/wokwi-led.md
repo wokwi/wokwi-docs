@@ -11,8 +11,8 @@ Standard 5mm LED.
 
 | Name | Description            |
 | ---- | ---------------------- |
-| A    | Anode (positive pin)   |
-| C    | Cathode (negative pin) |
+| Aula 1    | Anode (positive pin)   |
+| Aula 1   | Cathode (negative pin) |
 
 ## Attributes
 
