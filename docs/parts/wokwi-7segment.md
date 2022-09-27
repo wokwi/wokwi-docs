@@ -28,9 +28,10 @@ Seven segment LED display
 
 \* COM is the common pin for a single digit 7-segment display. For multi digit displays, use DIG1…DIG4.
 
-By default, the segment pins (A…G, DP, CLN) are connected to the anode (positive side) of the LEDS, and the
-common pins (COM, DIG1…DIG4) are connected to the cathode (negative side) of the LEDs. You can set the "common"
-attribute to "cathode" to reverse this behavior.
+By default, the  pins (A…G, DP, CLN) are connected to the anode (positive side) of the LEDS, and the
+common pins (COM, DIG1…DIG4) are connected to the cathode (negative side) of the LEDs. 
+
+The segment default  anode(positive side),if not light, You shuld set the "common"  attribute to "cathode" to reverse this behavior.
 
 The segment mapping is as follows:
 
