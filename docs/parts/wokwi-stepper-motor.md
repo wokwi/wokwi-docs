@@ -23,15 +23,17 @@ A bipolar stepper motor
 | arrow     | Displays an arrow to indicate the position of the stepper. Set to the color of the arrow, e.g. "orange"  | ""            |
 | display   | What number to display on the stepper? Valid values "steps", "angle" (in degrees), "none"                | "steps"       |
 | gearRatio | The gear ratio of the motor. set to "1:1" for 200 steps/revolution, "2:1" for 400 steps/revolution, etc. | "1:1"         |
+| size      | The NEMA standard size of the motor. Valid values: "8", "11", "14", "17", "23", "34"                     | "23"          |
 
 ### Examples
 
-| Result                                                        | Attrs                    |
-| ------------------------------------------------------------- | ------------------------ |
-| <wokwi-stepper-motor value="20" units="Steps" angle="36" />   | `{ "display": "steps" }` |
-| <wokwi-stepper-motor value="36" units="Degrees" angle="36" /> | `{ "display": "angle" }` |
-| <wokwi-stepper-motor angle="36" />                            | `{ "display": "none" }`  |
-| <wokwi-stepper-motor angle="36" arrow="orange" />             | `{ "arrow": "orange" }`  |
+| Result                                                                | Attrs                    |
+| --------------------------------------------------------------------- | ------------------------ |
+| <wokwi-stepper-motor value="20" units="Steps" size="17" angle="36" /> | `{ "size": "17" }`       |
+| <wokwi-stepper-motor value="20" units="Steps" angle="36" />           | `{ "display": "steps" }` |
+| <wokwi-stepper-motor value="36" units="Degrees" angle="36" />         | `{ "display": "angle" }` |
+| <wokwi-stepper-motor angle="36" />                                    | `{ "display": "none" }`  |
+| <wokwi-stepper-motor angle="36" arrow="orange" />                     | `{ "arrow": "orange" }`  |
 
 ## Using the stepper motor
 
