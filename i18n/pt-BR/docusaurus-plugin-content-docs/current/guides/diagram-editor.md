@@ -102,19 +102,12 @@ A tabela a seguir resume os atalhos do teclado:
 | Shift  | Alterna ajuste grosso da grade ao arrastar   |
 | Alt    | Alterna ajuste fino da grade ao arrastar     |
 | Ctrl   | Alterna ajuste fino da grade ao arrastar     |
+| Ctrl+Z | Desfazer \*                                  |
+| Ctrl+Y | Refazer \*                                   |
 
-Usuários do Firefox: se os atalhos do teclado não funcionarem, certifique-se de que a configuração "Pesquisar texto ao começar a digitar" esteja desabilitada.
+\* No Mac, use ⌘ em vez de Ctrl
 
-## Desfazer / Refazer
-
-Qualquer mudança que você fizer no editor interativo também se refletirá em [diagram.json](../diagram-format).
-
-O editor interativo **não tem** o recurso de desfazer no momento (há uma [solicitação aberta para isso](https://github.com/wokwi/wokwi-features/issues/77)).
-
-Você ainda pode obter o histórico completo de Desfazer se selecionar a guia "diagram.json" no editor de código. Quaisquer alterações feitas no editor de diagramas interativo
-refletirá imediatamente no editor de código e você poderá desfazê-los clicando no editor de código e pressionando Ctrl+Z.
-
-Observe que isso só funciona se a guia "diagram.json" estiver ativa enquanto você faz alterações. Esta é uma solução temporária até implementarmos o Desfazer no editor de diagramas interativo.
+Usuários do Firefox: se os atalhos de teclado não funcionarem para você, certifique-se de que a configuração "Pesquisar texto ao começar a digitar" esteja desativada.
 
 ## Grade de encaixe
 
