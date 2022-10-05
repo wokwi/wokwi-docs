@@ -23,15 +23,17 @@ Um motor de passo bipolar
 | arrow     | Exibe uma seta para indicar a posição do motor de passo. Defina a cor da seta, por ex. "orange"                       | ""            |
 | display   | Qual número exibir no motor de passo? Valores válidos "steps" (em passos), "angle" (em graus), "none" (nenhum)        | "steps"       |
 | gearRatio | A relação de transmissão do motor. defina como "1:1" para 200 passos/revolução, "2:1" para 400 passos/revolução, etc. | "1:1"         |
+| size      | O tamanho padrão do motor NEMA. Valores válidos: "8", "11", "14", "17", "23", "34"                                    | "23"          |
 
 ### Exemplos
 
-| Resultado                                                     | Attrs                    |
-| ------------------------------------------------------------- | ------------------------ |
-| <wokwi-stepper-motor value="20" units="Steps" angle="36" />   | `{ "display": "steps" }` |
-| <wokwi-stepper-motor value="36" units="Degrees" angle="36" /> | `{ "display": "angle" }` |
-| <wokwi-stepper-motor angle="36" />                            | `{ "display": "none" }`  |
-| <wokwi-stepper-motor angle="36" arrow="orange" />             | `{ "arrow": "orange" }`  |
+| Resultado                                                             | Attrs                    |
+| --------------------------------------------------------------------- | ------------------------ |
+| <wokwi-stepper-motor value="20" units="Steps" size="17" angle="36" /> | `{ "size": "17" }`       |
+| <wokwi-stepper-motor value="20" units="Steps" angle="36" />           | `{ "display": "steps" }` |
+| <wokwi-stepper-motor value="36" units="Degrees" angle="36" />         | `{ "display": "angle" }` |
+| <wokwi-stepper-motor angle="36" />                                    | `{ "display": "none" }`  |
+| <wokwi-stepper-motor angle="36" arrow="orange" />                     | `{ "arrow": "orange" }`  |
 
 ## Usando o motor de passo
 
