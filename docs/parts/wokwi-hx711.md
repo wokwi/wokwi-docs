@@ -26,9 +26,17 @@ HX711 Load Cell Amplifier
 | -------- | ------------------------------------------ | ------------- |
 | type     | Either "50kg" (default), "5kg", or "guage" | "50kg"        |
 
+### Examples
+
+| Result                                                        | Attrs                             |
+| ------------------------------------------------------------- | --------------------------------- |
+| <wokwi-hx711 type="5kg" />                                 | `{ "type": "5kg" }`               |
+| <wokwi-hx711 type="50kg" />                                 | `{ "type": "50kg" }`               |
+| <wokwi-hx711 type="guage" />        | `{ "type": "guage" }` |
+
 ## Operation
 
-The HX711 amplifier allows you to easily read load cells and evaluate changes in resistance. A Wheatstone bridge is used to connect load cells to the IC, which is in turn connected to the microcontroller via `VCC`, `DT`, `SCK`, and `GND`. Use `begin()` to initialize the scale and `set_scale()` and `tare()` to calibrate it. `power_down()` and `power_up()` can be used to bring the ADC into and out of low power mode. `get_value()` and `get_units()` are used to read the ADC minus tare and divided, passing an optional integer value to obtain that number of values, averaged.
+The HX711 amplifier allows you to easily read load cells and evaluate changes in resistance. A Wheatstone bridge is used to connect load cells to the IC, which is in turn connected to the microcontroller via `VCC`, `DT`, `SCK`, and `GND`. Use `begin()` to initialize the scale and `set_scale()` and `tare()` to calibrate it. `power_down()` and `power_up()` can be used to bring the ADC into and out of low power mode. `get_value()` and `get_units()` are used to read the ADC minus tare and divided, passing an optional integer value to obtain that number of values, averaged. Refer to the [`HX711` Arduino library](https://github.com/bogde/HX711#features) for more details on features and calibration.
 
 ## Arduino code example
 

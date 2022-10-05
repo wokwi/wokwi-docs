@@ -34,6 +34,7 @@ module.exports = {
       'parts/wokwi-ds1307',
       'parts/wokwi-franzininho',
       'parts/wokwi-hc-sr04',
+      'parts/wokwi-hx711',
       'parts/wokwi-ili9341',
       'parts/wokwi-ir-receiver',
       'parts/wokwi-ir-remote',
