@@ -95,6 +95,6 @@ This is useful when you need multiple buttons pressed at the same time.
 
 ## Simulator examples
 
-- [Simon Game](https://wokwi.com/arduino/libraries/demo/simon-game) - A memory game with 4 push buttons
+- [Simon Game](https://wokwi.com/projects/344891334169985618) - A memory game with 4 push buttons
 - [Diatonic Piano](https://wokwi.com/projects/291958456169005577) - A 8-note piano, use keys 1-8 to press the buttons and play the notes.
 - [Bounce vs non-bounce](https://wokwi.com/projects/288681423014986248)

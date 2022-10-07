@@ -35,6 +35,6 @@ If you are trying to read this sensor from the ESP32, use the "DHT sensor librar
 
 ## Simulator examples
 
-- [DHTlib DHT22 test](https://wokwi.com/arduino/libraries/DHTlib/dht22_test)
-- [DHT-sensor-library code examples](https://wokwi.com/arduino/libraries/DHT-sensor-library)
+- [DHTlib example](https://wokwi.com/projects/344892337559700051)
+- [DHT-sensor-library examples](https://wokwi.com/projects/344892587898831442)
 - [DHT22 on the ESP32](https://wokwi.com/projects/322410731508073042)

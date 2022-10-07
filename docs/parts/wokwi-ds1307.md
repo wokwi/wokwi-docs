@@ -30,4 +30,4 @@ of the update time.
 ## Simulator examples
 
 - [Reading current date/time using RTClib](https://wokwi.com/projects/305979285237137984)
-- [Alarm clock](https://wokwi.com/playground/alarm-clock)
+- [Alarm clock](https://wokwi.com/projects/297787059514376717)

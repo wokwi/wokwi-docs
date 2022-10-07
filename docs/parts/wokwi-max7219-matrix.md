@@ -58,4 +58,4 @@ Choosing the wrong layout will cause your text / drawing to be rotated and / or 
 - [Electronic Dice (on ATtiny85)](https://wokwi.com/projects/291779699024069128)
 - [Arduino QR Code Generator](https://wokwi.com/projects/318641692720759379)
 - [32x32 LED Matrix Tunnel](https://wokwi.com/projects/318864638990090834)
-- [MD_Parola library examples](https://wokwi.com/arduino/libraries/MD_Parola)
+- [MD_Parola Scrolling Message](https://wokwi.com/projects/344893846000239186)

@@ -52,7 +52,7 @@ pinMode(LED_BUILTIN, OUTPUT);
 digitalWrite(LED_BUILTIN, HIGH);
 ```
 
-See [Blink](https://wokwi.com/arduino/libraries/demo/blink) for a complete code example.
+See [Blink](https://wokwi.com/projects/344891652101374548) for a complete code example.
 
 ## Attributes
 
@@ -102,4 +102,4 @@ The simulator supports many popular Arduino libraries. For a complete list, see 
 
 ## Simulator examples
 
-- [Arduino Blink](https://wokwi.com/arduino/libraries/demo/blink)
+- [Arduino Blink](https://wokwi.com/projects/344891652101374548)

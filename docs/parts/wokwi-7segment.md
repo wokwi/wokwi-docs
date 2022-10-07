@@ -68,16 +68,16 @@ For multiple digits, you'll need 8 microcontroller pins for the segments and the
 
 Luckily, there are libraries that can help:
 
-- On Arduino: Use the [SevSeg library](https://wokwi.com/arduino/libraries/SevSeg).
+- On Arduino: Use the [SevSeg library](https://wokwi.com/projects/344891439152366164).
 - On the Raspberry Pi Pico: The PIO peripheral can take care of refreshing the display for you. See the [examples](#simulator-examples) below.
 
 If you are out of microcontroller pins, consider using a [74HC595 Shift Register](wokwi-74hc595) to drive the display.
 
 ## Simulator examples
 
-- [SevSeg example: Counter](https://wokwi.com/arduino/libraries/SevSeg/SevSeg_Counter)
-- [SevSeg example: String with period](https://wokwi.com/arduino/libraries/SevSeg/stringWithPeriod)
-- [Arduino Alarm Clock](https://wokwi.com/playground/alarm-clock)
+- [SevSeg example: Counter](https://wokwi.com/projects/344891439152366164)
+- [SevSeg example: String with period](https://wokwi.com/projects/344893935754150484)
+- [Arduino Alarm Clock](https://wokwi.com/projects/297787059514376717)
 - [ATtiny85 7-Segment clock](https://wokwi.com/projects/301366580039647753)
 - [ATtiny85 8 digit counter](https://wokwi.com/projects/301304715310793225)
 - [7-Segment on the Raspberry Pi Pico (using PIO)](https://wokwi.com/projects/301404853501952521)

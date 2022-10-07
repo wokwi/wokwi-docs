@@ -54,5 +54,5 @@ For more information about _gamma correction_, including some code examples, che
 
 ## Simulator examples
 
-- [Blink](https://wokwi.com/arduino/libraries/demo/blink) - Arduino's standard Blink sketch
+- [Blink](https://wokwi.com/projects/344891652101374548) - Arduino's standard Blink sketch
 - [Fade](https://wokwi.com/projects/313268562698437186) - Using analogWrite() + gamma correction
