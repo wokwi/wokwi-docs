@@ -60,6 +60,6 @@ Você precisará clicar no potenciômetro antes de usar esses atalhos de teclado
 
 ## Exemplos no simulador
 
-- [Knob](https://wokwi.com/arduino/libraries/Servo/Knob) - Controle um [servo](wokwi-servo) com um potenciômetro
+- [Knob](https://wokwi.com/projects/344892191015961170) - Controle um [servo](wokwi-servo) com um potenciômetro
 - [Plot](https://wokwi.com/projects/298685457758159369) - Plotar valores de potenciômetro no Serial Plotter
 - [Block shooter](https://wokwi.com/projects/291960996581343753) - Jogo estilo breakout

@@ -52,4 +52,4 @@ O [projeto de demonstração da correção de gamma](https://wokwi.com/projects/
 
 ## Exemplos no simulador
 
-- [Blink](https://wokwi.com/arduino/libraries/demo/blink) - Esboço Blink padrão do Arduino
+- [Blink](https://wokwi.com/projects/344891652101374548) - Esboço Blink padrão do Arduino

@@ -30,4 +30,4 @@ do tempo da atualização.
 ## Exemplos no simulador
 
 - [Lendo data/hora usando RTClib](https://wokwi.com/projects/305979285237137984)
-- [Despertador](https://wokwi.com/playground/alarm-clock)
+- [Despertador](https://wokwi.com/projects/297787059514376717)

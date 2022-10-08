@@ -33,8 +33,8 @@ Um Motor Micro Servo padrão
 
 ## Exemplos no simulador
 
-- [Sweep](https://wokwi.com/arduino/libraries/Servo/Sweep)
-- [Knob](https://wokwi.com/arduino/libraries/Servo/Knob)
+- [Sweep](https://wokwi.com/projects/344891730528567891)
+- [Knob](https://wokwi.com/projects/344892191015961170)
 - [Controlando 1 servo com dois botões no Arduino Nano](https://wokwi.com/projects/328312829780165204)
 - [Controlando 5 servos com Arduino Uno](https://wokwi.com/projects/305087394119418434)
 - [Animando 32 servos com Arduino Mega](https://wokwi.com/projects/305336312628511297)

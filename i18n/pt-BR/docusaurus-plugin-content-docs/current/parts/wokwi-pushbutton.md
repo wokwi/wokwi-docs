@@ -96,6 +96,6 @@ Isso é útil quando você precisa que vários botões sejam pressionados ao mes
 
 ## Exemplos no simulador
 
-- [Simon Game](https://wokwi.com/arduino/libraries/demo/simon-game) - Um jogo de memória com 4 botões momentâneo
+- [Simon Game](https://wokwi.com/projects/344891334169985618) - Um jogo de memória com 4 botões momentâneo
 - [Diatonic Piano](https://wokwi.com/projects/291958456169005577) - Um piano de 8 notas, use as teclas 1 a 8 para pressionar os botões e tocar as notas.
 - [Bounce vs non-bounce](https://wokwi.com/projects/288681423014986248)

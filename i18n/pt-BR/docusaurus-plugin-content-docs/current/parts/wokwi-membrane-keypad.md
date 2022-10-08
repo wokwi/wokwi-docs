@@ -83,4 +83,4 @@ Você também pode tentar [este exemplo no Wokwi](https://wokwi.com/projects/294
 
 - [Basic Keypad example](https://wokwi.com/projects/294980637632233994)
 - [Arduino Calculator](https://wokwi.com/projects/276825819240727048)
-- [Electronic Safe](https://wokwi.com/arduino/libraries/demo/electronic-safe)
+- [Electronic Safe](https://wokwi.com/projects/344891391763022419)
