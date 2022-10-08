@@ -58,7 +58,7 @@ pinMode(LED_BUILTIN, OUTPUT);
 digitalWrite(LED_BUILTIN, HIGH);
 ```
 
-Veja [Blink](https://wokwi.com/arduino/libraries/demo/blink-mega) para um exemplo de código completo.
+Veja [Blink](https://wokwi.com/projects/344893018695795282) para um exemplo de código completo.
 
 ## Recursos de simulação
 
@@ -103,4 +103,4 @@ O simulador oferece suporte a muitas bibliotecas populares do Arduino. Para obte
 
 ## Exemplos no simulador
 
-- [Arduino Mega Blink](https://wokwi.com/arduino/libraries/demo/blink-mega)
+- [Arduino Mega Blink](https://wokwi.com/projects/344893018695795282)
