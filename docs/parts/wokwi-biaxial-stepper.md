@@ -41,8 +41,8 @@ A concentric biaxial stepper motor comprised of two stepper motors packaged in a
 
 | Result                                                                                                                | Attrs                                                                                                                  |
 |-----------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------|
-| <wokwi-stepper-motor innerHandLength="70" innerHandShape="arrow"/>                                                    | `{ "innerHandLength": "40", "innerHandShape": "arrow"};`                                                               |
-| <wokwi-stepper-motor innerHandShape="black"outerHandShape="black" innerHandShape="ornate", outerHandShape="ornate" /> | `{ "innerHandShape": "black", "outerHandShape": "black", "innerHandShape": "ornate", "outerHandShape": "ornate"  }` |
+| <wokwi-biaxial-stepper innerHandLength="70" innerHandShape="arrow"/>                                                    | `{ "innerHandLength": "40", "innerHandShape": "arrow"};`                                                               |
+| <wokwi-biaxial-stepper innerHandShape="black"outerHandShape="black" innerHandShape="ornate", outerHandShape="ornate" /> | `{ "innerHandShape": "black", "outerHandShape": "black", "innerHandShape": "ornate", "outerHandShape": "ornate"  }` |
 
 ## Using the biaxial stepper motor
 
