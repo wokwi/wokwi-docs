@@ -28,6 +28,7 @@ module.exports = {
       'parts/wokwi-arduino-nano',
       'parts/wokwi-arduino-uno',
       'parts/wokwi-attiny85',
+      'parts/wokwi-biaxial-stepper',
       'parts/wokwi-buzzer',
       'parts/wokwi-dht22',
       'parts/wokwi-dip-switch-8',
