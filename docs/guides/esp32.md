@@ -3,7 +3,7 @@ title: ESP32 Simulation
 sidebar_label: ESP32 Simulator
 ---
 
-The ESP32 is a popular WiFi and Bluetooth-enabled microcontroller, widely used for IoT Projects. Wokwi simulates the ESP32, ESP32-S2 and ESP32-C3 (beta).
+The ESP32 is a popular WiFi and Bluetooth-enabled microcontroller, widely used for IoT Projects. Wokwi simulates the ESP32, ESP32-C3, ESP32-S2, ESP32-S3 (beta).
 
 <wokwi-esp32-devkit-v1></wokwi-esp32-devkit-v1>
 
