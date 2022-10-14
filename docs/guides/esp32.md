@@ -90,7 +90,7 @@ The following examples use the ESP-IDF functions. They are compiled using Arduin
 | LEDC PWM           | ✔️    | ✔️  | ❌  | ✔️  | Used by analogWrite(), Servo, Buzzer, etc.                               |
 | MCPWM              | ❌    | —   | ❌  | —   |                                                                          |
 | DMA                | 🟡    | 🟡  | ❌  | ❌  |                                                                          |
-| WiFi               | ✔️    | ✔️  | ❌  | ✔️  | See the [ESP32 WiFi Guide](./esp32-wifi)                                 |
+| WiFi               | ✔️    | ✔️  | ✔️  | ✔️  | See the [ESP32 WiFi Guide](./esp32-wifi)                                 |
 | Bluetooth          | ❌    | —   | ❌  | ❌  | [Open for voting](https://wokwi.com/features#feature-1047159691)         |
 | Timers             | 🟡    | ✔️  | 🟡  | ✔️  |                                                                          |
 | Watchdog           | ❌    | ❌  | ❌  | ❌  |                                                                          |
