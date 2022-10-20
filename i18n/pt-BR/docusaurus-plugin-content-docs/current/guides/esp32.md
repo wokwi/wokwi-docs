@@ -3,7 +3,7 @@ title: Simulador ESP32
 sidebar_label: Simulador ESP32
 ---
 
-O ESP32 é um microcontrolador popular habilitado para WiFi e Bluetooth, amplamente utilizado para projetos de IoT. Wokwi simula o ESP32, ESP32-S2 e ESP32-C3 (beta).
+O ESP32 é um microcontrolador popular habilitado para WiFi e Bluetooth, amplamente utilizado para projetos de IoT. Wokwi simula o ESP32, ESP32-C3, ESP32-S2 e ESP32-S3 (beta).
 
 <wokwi-esp32-devkit-v1></wokwi-esp32-devkit-v1>
 
@@ -82,7 +82,7 @@ Os exemplos a seguir usam as funções ESP-IDF. Eles são compilados usando o Ar
 | PSRAM                | ✔️    | ✔️  | ✔️  | —  | 4MB de SRAM externa                                                           |
 | UART                 | ✔️    | ✔️  | ✔️  | ✔️  |                                                                               |
 | USB                  | —    | ✔️  | ✔️  | ❌  | Suporte para UART sobre USB (CDC)                                             |
-| I2C                  | ✔️    | ✔️  | ❌  | ✔️  | Mestre apenas. Endereçamento de 10 bits não suportado.                        |
+| I2C                  | ✔️    | ✔️  | ✔️  | ✔️  | Mestre apenas. Endereçamento de 10 bits não suportado.                        |
 | I2S                  | ❌    | ❌  | ❌  | ❌  | [Aberto para votação](https://wokwi.com/features#feature-1031718532)          |
 | SPI                  | ✔️    | ✔️  | ✔️  | ✔️  |                                                                               |
 | TWAI                 | ❌    | ❌  | ❌  | ❌  |                                                                               |
@@ -90,7 +90,7 @@ Os exemplos a seguir usam as funções ESP-IDF. Eles são compilados usando o Ar
 | LEDC PWM             | ✔️    | ✔️  | ❌  | ✔️  | Used by analogWrite(), Servo, Buzzer, etc.                                    |
 | MCPWM                | ❌    | —  | ❌  |  —  |                                                                               |
 | DMA                  | 🟡    | 🟡  | ❌  | ❌  |                                                                               |
-| WiFi                 | ✔️    | ✔️  | ❌  | ✔️  | Veja o [Guia WiFi do ESP32](./esp32-wifi)                                     |
+| WiFi                 | ✔️    | ✔️  | ✔️  | ✔️  | Veja o [Guia WiFi do ESP32](./esp32-wifi)                                     |
 | Bluetooth            | ❌    | —  | ❌  |  ❌  | [Aberto para votação](https://wokwi.com/features#feature-1047159691)          |
 | Timers               | 🟡    | ✔️  | 🟡  | ✔️  |                                                                               |
 | Watchdog             | ❌    | ❌  | ❌  | ❌  |                                                                               |
