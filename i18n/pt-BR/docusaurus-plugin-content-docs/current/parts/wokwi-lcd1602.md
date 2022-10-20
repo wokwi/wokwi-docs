@@ -35,7 +35,7 @@ Você pode selecionar a configuração desejada definindo o atributo `pins`. Def
 | SDA  | Linha de dados I2C    |
 | SCL  | Linha de clock I2C    |
 
-O endereço I2C padrão do módulo LCD1602 é 0x27.
+O endereço I2C padrão do módulo LCD1602 é 0x27. Você pode alterar o endereço definindo o atributo [`i2c-address`](#attributes).
 
 Nota: A configuração I2C simula um chip PCF8574T que controla o módulo LCD. Normalmente, você não teria que se preocupar com isso, pois a biblioteca LiquidCrystal_I2C cuida da comunicação com o chip.
 
