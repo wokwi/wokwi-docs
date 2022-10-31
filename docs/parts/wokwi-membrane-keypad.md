@@ -69,7 +69,9 @@ void loop() {
 }
 ```
 
-You can also [try this example on Wokwi](https://wokwi.com/projects/294980637632233994).
+You can also [try this example on Wokwi](https://wokwi.com/projects/294980637632233994). 
+
+**Tip**: You can use keyboard shortcuts to activate the buttons on the keypad. Click on the keypad once (now the keypad is in focus), and you can press 0...9/A/B/C/D/#/* in the keyboard to activate the corresponding key.
 
 ### Examples
 
