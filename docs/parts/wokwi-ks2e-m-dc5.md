@@ -26,7 +26,7 @@ The relay is an electronic switch with two states: coil unpowered, and coil powe
 
 When the coil is unpowered, P1 is connected to NC1, and P2 is connected to NC2 (NC means for normally closed/connected).
 
-When the coil is powered, P1 is connected to NO1, and P2 is connected to NO2 (NC means for normally open/disconnected).
+When the coil is powered, P1 is connected to NO1, and P2 is connected to NO2 (NO means for normally open/disconnected).
 
 The following diagram summarizes the states of the relay:
 
