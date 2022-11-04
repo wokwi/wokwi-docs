@@ -13,21 +13,21 @@ Pins D0 to D7 are connected to the input channels of the logic analyzer. There's
 
 ## Attributes
 
-| Name         | Description                                       | Default value |
-| ------------ | ------------------------------------------------- | ------------- |
-| bufferSize   | Maximum number of samples to collect              | "1000000"     |
-| filename     | Name of the recording file, without the extension | "wokwi-logic" |
-| triggerMode  | Trigger mode: "off", "level" or "edge"            | "off"         |
-| triggerLevel | "high" or "low"                                   | "high"        |
-| triggerPin   | "D0" … "D7"                                       | "D7"          |
+| Name         | Description                                            | Default value             |
+| ------------ | ------------------------------------------------------ | ------------------------- |
+| bufferSize   | Maximum number of samples to collect                   | "1000000"                 |
+| channelNames | Comma-separated list of channel names for the VCD file | "D0,D1,D2,D3,D4,D5,D6,D7" |
+| filename     | Name of the recording file, without the extension      | "wokwi-logic"             |
+| triggerMode  | Trigger mode: "off", "level" or "edge"                 | "off"                     |
+| triggerLevel | "high" or "low"                                        | "high"                    |
+| triggerPin   | "D0" … "D7"                                            | "D7"                      |
 
 ### Sample buffer
 
 The logic analyzer uses a buffer to store the recorded pin data. Each pin level change (e.g. low to high) occupies one slot in the buffer. The simulator allocates
 the memory for the buffer in advance, to ensure fast simulation.
 
-You can choose the size of the buffer by setting the `bufferSize` attribute. Each slot in the buffer uses 9 bytes of RAM. Thus, the default buffer size of 1 million
-samples will use about 9 MB of RAM. Allocating a large buffer may strain your browser.
+You can choose the size of the buffer by setting the `bufferSize` attribute. Each slot in the buffer uses 9 bytes of RAM. Thus, the default buffer size of 1 million samples will use about 9 MB of RAM. Allocating a large buffer may strain your browser.
 
 The logic analyzer displays the number of samples captured while the simulation is running. You can use this number to estimate the required buffer size.
 
