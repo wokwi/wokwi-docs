@@ -40,8 +40,8 @@ Note that you need to connect `$serialMonitor:TX` to the `RX` pin of the serial 
 
 ## ATtiny85 + SoftwareSerial
 
-The ATtiny85 chip does not have a built-in hardware support for serial communication (USART). You can use a
-software implementation of the USART protocol to interact with the Serial monitor, using the "SoftwareSerial" library.
+The ATtiny85 chip does not have a built-in hardware support for serial communication (UART). You can use a
+software implementation of the UART protocol to interact with the Serial monitor, using the "SoftwareSerial" library.
 
 First, define the pins that will be used for Serial communication, by adding the following lines to the `connections` section of your [diagram.json](../diagram-format) file:
 
