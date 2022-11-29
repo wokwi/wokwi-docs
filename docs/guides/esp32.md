@@ -143,7 +143,7 @@ You can specify the offset manually by adding the following attribute to the chi
 
 | Attribute      | Description                                           | Default |
 | -------------- | ----------------------------------------------------- | ------- |
-| firmwareOffset | Offset of the firmware in the flash memory, in bytes. | "0"     |
+| firmwareOffset | Offset of the firmware in the flash memory, in bytes. | ""      |
 
 ### Skipping the bootloader
 
