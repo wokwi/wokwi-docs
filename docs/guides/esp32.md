@@ -79,7 +79,7 @@ The following examples use the ESP-IDF functions. They are compiled using Arduin
 | Processor core(s)  | ✔️    | ✔️  | ✔️  | ✔️  |                                                                          |
 | GPIO               | ✔️    | ✔️  | 🟡  | ✔️  | Interrupts supported                                                     |
 | IOMUX              | 🟡    | 🟡  | 🟡  | 🟡  |                                                                          |
-| PSRAM              | ✔️    | ✔️  | ✔️  | —   | 4MB of external SRAM                                                     |
+| PSRAM              | ✔️    | ✔️  | ✔️  | —   | 4MB of external SRAM \*                                                  |
 | UART               | ✔️    | ✔️  | ✔️  | ✔️  |                                                                          |
 | USB                | —     | ✔️  | ✔️  | ❌  | Support for UART over USB (CDC)                                          |
 | I2C                | ✔️    | ✔️  | ✔️  | ✔️  | Master only. 10-bit addressing not supported.                            |
@@ -110,14 +110,47 @@ Legend:
 ❌ - Not implemented (but if you need it, please [open a feature request](https://github.com/wokwi/wokwi-features/issues/new?labels=enhancement&template=feature_request.md))  
 — - Not available on this chip
 
+\* The amount of SRAM can be customized using the ["psramSize" attribute](#flash-and-memory-size).
+
 ## WiFi Simulation
 
 See the [ESP32 WiFi Guide](./esp32-wifi).
 
 ## Advanced Usage
 
+### Flash and memory size
+
+You can customize the size of flash and PSRAM by adding the following attributes to the chip:
+
+| Attribute | Description                                                | Default |
+| --------- | ---------------------------------------------------------- | ------- |
+| flashSize | Flash size in MB. Valid values: "2", "4", "8", "16", "32". | "4"     |
+| psramSize | PSRAM size in MB. Valid values: "2", "4", "8".             | "4"     |
+
+- [ESP32 Custom flash size example](https://wokwi.com/projects/349656534768157267)
+
 ### Custom Partition Table
 
 You can specifiy a custom partititon table by adding a "partitions.csv" file to your project. Check out the [ESP32 Partition Table Guide](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-guides/partition-tables.html) for the exact format of this file.
 
 - [ESP32 Custom partition table code example](https://wokwi.com/projects/337425600260080210)
+
+### Custom firmware offset
+
+When loading a custom firmware, you can specify the offset of the firmware in the flash memory. By default, Wokwi will look at the firmware binary and try to figure out the offset automatically, based on the presence of the bootloader and the type of the chip. If Wokwi can't figure out the offset, it will assume that your firmware is an application firmware and load it at offset 0x10000.
+
+You can specify the offset manually by adding the following attribute to the chip:
+
+| Attribute      | Description                                           | Default |
+| -------------- | ----------------------------------------------------- | ------- |
+| firmwareOffset | Offset of the firmware in the flash memory, in bytes. | "0"     |
+
+### Skipping the bootloader
+
+On ESP32 and ESP32-S2 chips, Wokwi skips the boot ROM and the bootloader, so that your firmware starts running immediately. Other chips (ESP32-C3, ESP32-S3, etc.) always run the full boot sequence.
+
+If you want Wokwi to always run the bootloader, you can add the following attribute to the chip:
+
+| Attribute | Description                                                                               | Default |
+| --------- | ----------------------------------------------------------------------------------------- | ------- |
+| fullBoot  | Set to "1" to simulate the complete boot sequence: boot ROM -> bootloader -> application. | ""      |
