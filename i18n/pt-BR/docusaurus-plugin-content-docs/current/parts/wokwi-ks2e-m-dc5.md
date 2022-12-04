@@ -26,7 +26,7 @@ O relé é um interruptor eletrônico com dois estados: bobina sem alimentação
 
 Quando a bobina está desenergizada, P1 é conectado a NC1 e P2 é conectado a NC2 (NC significa normalmente fechado/conectado).
 
-Quando a bobina é alimentada, P1 é conectado a NO1 e P2 é conectado a NO2 (NC significa normalmente aberto/desconectado).
+Quando a bobina é alimentada, P1 é conectado a NO1 e P2 é conectado a NO2 (NO significa normalmente aberto/desconectado).
 
 O diagrama a seguir resume os estados do relé:
 

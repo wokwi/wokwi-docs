@@ -79,7 +79,7 @@ Os exemplos a seguir usam as funções ESP-IDF. Eles são compilados usando o Ar
 | Processador core(s)  | ✔️    | ✔️  | ✔️  | ✔️  |                                                                               |
 | GPIO                 | ✔️    | ✔️  | 🟡  | ✔️  | Interrupções suportadas                                                       |
 | IOMUX                | 🟡    | 🟡  | 🟡  | 🟡  |                                                                               |
-| PSRAM                | ✔️    | ✔️  | ✔️  | —  | 4MB de SRAM externa                                                           |
+| PSRAM                | ✔️    | ✔️  | ✔️  | —  | 4MB de SRAM externa \*                                                        |
 | UART                 | ✔️    | ✔️  | ✔️  | ✔️  |                                                                               |
 | USB                  | —    | ✔️  | ✔️  | ❌  | Suporte para UART sobre USB (CDC)                                             |
 | I2C                  | ✔️    | ✔️  | ✔️  | ✔️  | Mestre apenas. Endereçamento de 10 bits não suportado.                        |
@@ -110,14 +110,47 @@ Legenda:
 ❌ - Não implementado (mas se você precisar, [abra uma solicitação de recurso](https://github.com/wokwi/wokwi-features/issues/new?labels=enhancement&template=feature_request.md))  
 — - Não disponível neste chip
 
+\* A quantidade de SRAM pode ser personalizada usando o atributo ["psramSize"](#flash-and-memory-size).
+
 ## Simulação WiFi
 
 Veja o [Guia WiFi do ESP32](./esp32-wifi).
 
 ## Uso Avançado
 
+### Flash e tamanho da memória
+
+Você pode personalizar o tamanho do flash e PSRAM adicionando os seguintes atributos ao chip:
+
+| Atributo  | Descrição                                                           | Padrão  |
+| --------- | ------------------------------------------------------------------- | ------- |
+| flashSize | Tamanho da flash em MB. Valores válidos: "2", "4", "8", "16", "32". | "4"     |
+| psramSize | Tamanho da PSRAM em MB. Valores válidos: "2", "4", "8".             | "4"     |
+
+- [Exemplo de flash personalizado do ESP32](https://wokwi.com/projects/349656534768157267)
+
 ### Tabela de partição personalizada
 
 Você pode especificar uma tabela de partição personalizada adicionando um arquivo "partitions.csv" ao seu projeto. Confira o [ESP32 Partition Table Guide](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-guides/partition-tables.html) para o formato exato deste arquivo.
 
 - [Exemplo de código de tabela de partição personalizada no ESP32](https://wokwi.com/projects/337425600260080210)
+
+### Offset do firmware personalizado
+
+Ao carregar um firmware personalizado, você pode especificar o deslocamento do firmware na memória flash. Por padrão, o Wokwi examinará o binário do firmware e tentará descobrir o deslocamento automaticamente, com base na presença do bootloader e no tipo do chip. Se o Wokwi não conseguir descobrir o deslocamento, ele assumirá que seu firmware é um firmware de aplicativo e o carregará no deslocamento 0x10000.
+
+Você pode especificar o deslocamento manualmente adicionando o seguinte atributo ao chip:
+
+| Atributo       | Descrição                                             | Padrão  |
+| -------------- | ----------------------------------------------------- | ------- |
+| firmwareOffset | Offset do firmware na memória flash, em bytes.        | ""      |
+
+### Pulando o bootloader
+
+Nos chips ESP32 e ESP32-S2, o Wokwi pula a ROM de boot e o bootloader, para que seu firmware comece a rodar imediatamente. Outros chips (ESP32-C3, ESP32-S3, etc.) sempre executam a sequência de inicialização completa.
+
+Se você deseja que o Wokwi sempre execute o bootloader, você pode adicionar o seguinte atributo ao chip:
+
+| Atributo  | Descrição                                                                                                 | Padrão  |
+| --------- | --------------------------------------------------------------------------------------------------------- | ------- |
+| fullBoot  | Defina como "1" para simular a sequência de inicialização completa: boot ROM -> bootloader -> aplicativo. | ""      |

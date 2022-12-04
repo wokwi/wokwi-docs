@@ -71,6 +71,8 @@ void loop() {
 
 Você também pode tentar [este exemplo no Wokwi](https://wokwi.com/projects/294980637632233994).
 
+**Dica**: Você pode usar atalhos do teclado para ativar os botões. Clique no teclado uma vez (agora o teclado está em foco) e você pode pressionar 0...9/A/B/C/D/#/* no teclado para ativar a tecla de atalho correspondente.
+
 ### Exemplos
 
 | Resultado                                                                                                           | Attrs                                                                           |

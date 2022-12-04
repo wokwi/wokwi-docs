@@ -13,21 +13,21 @@ Os pinos D0 a D7 são conectados aos canais de entrada do analisador lógico. H�
 
 ## Atributos
 
-| Nome         | Descrição                                     | Valor padrão  |
-| ------------ | --------------------------------------------- | ------------- |
-| bufferSize   | Número máximo de amostras para coletar        | "1000000"     |
-| filename     | Nome do arquivo de gravação, sem a extensão   | "wokwi-logic" |
-| triggerMode  | Modo de acionamento: "off", "level" ou "edge" | "off"         |
-| triggerLevel | "high" ou "low"                               | "high"        |
-| triggerPin   | "D0" … "D7"                                   | "D7"          |
+| Nome         | Descrição                                                         | Valor padrão              |
+| ------------ | ----------------------------------------------------------------- | ------------------------- |
+| bufferSize   | Número máximo de amostras para coletar                            | "1000000"                 |
+| channelNames | Lista separada por vírgulas de nomes de canais para o arquivo VCD | "D0,D1,D2,D3,D4,D5,D6,D7" |
+| filename     | Nome do arquivo de gravação, sem a extensão                       | "wokwi-logic"             |
+| triggerMode  | Modo de acionamento: "off", "level" ou "edge"                     | "off"                     |
+| triggerLevel | "high" ou "low"                                                   | "high"                    |
+| triggerPin   | "D0" … "D7"                                                       | "D7"                      |
 
 ### Buffer de Amostras
 
 O analisador lógico usa um buffer para armazenar os dados dos pinos gravados. Cada mudança de nível de pino (por exemplo, baixo para alto) ocupa um slot no buffer. O simulador aloca
 a memória para o buffer com antecedência, para garantir uma simulação rápida.
 
-Você pode escolher o tamanho do buffer configurando o atributo `bufferSize`. Cada slot no buffer usa 9 bytes de RAM. Sendo assim, o tamanho do buffer padrão de 1 milhão
-de amostras usará cerca de 9 MB de RAM. Alocar um buffer grande pode sobrecarregar seu navegador.
+Você pode escolher o tamanho do buffer definindo o atributo `bufferSize`. Cada slot no buffer usa 9 bytes de RAM. Assim, o tamanho do buffer padrão de 1 milhão de amostras usará cerca de 9 MB de RAM. Alocar um buffer grande pode sobrecarregar seu navegador.
 
 O analisador lógico exibe o número de amostras capturadas durante a execução da simulação. Você pode usar esse número para estimar o tamanho do buffer necessário.
 
