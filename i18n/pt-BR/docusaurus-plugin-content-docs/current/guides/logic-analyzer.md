@@ -25,7 +25,7 @@ O Analisador Lógico Wokwi possui 8 canais digitais, chamados D0 a D7. Ele tem u
 
 Cada canal possui um LED de atividade que fica verde sempre que há uma atividade no canal. Os LEDs de atividade fornecem uma maneira fácil de ver se os sinais estão conectados corretamente.
 
-Também possui um pequeno display, onde mostra o número de amostras capturadas desde o inicio da simulação.
+O analisador lógico possui um pequeno display. Mostra o número de amostras capturadas desde o início da simulação.
 
 O [acionamento configurável](#usando-o-acionamento) permite registrar apenas parte dos dados. Por exemplo, você pode iniciar a gravação ao pressionar o botão ou gravar apenas enquanto a comunicação SPI estiver ativa (usando o pino SS como um acionamento).
 
@@ -52,6 +52,22 @@ Aqui estão alguns exemplos de casos de uso comuns:
 - [Inicia a gravação após 1,5 segundos](https://wokwi.com/projects/313706408220557888) - Define `triggerMode` como "edge", conecta o pino de disparo (D7) e altera o nível do pino para alto após 1,5 segundos.
 
 Use os atributos `triggerPin` e `triggerLevel` para configurar o pino de acionamento e definir o nível de disparo ("alto" ou "baixo"). Verifique a [documentação do Analisador Lógico Wokwi](../parts/wokwi-logic-analyzer) para obter mais informações.
+
+### Personalizando os nomes dos canais
+
+Por padrão, os nomes dos canais são D0, D1, D2, etc. Você pode personalizar os nomes dos canais configurando o atributo `channelNames`. Por exemplo, para nomear os canais "SCL", "SDA", "RST", adicione o seguinte atributo ao analisador lógico:
+
+ ```json
+   { 
+     "type": "wokwi-logic-analyzer", 
+     "id": "logic1",
+     "attrs": {
+       "channelNames": "SCL,SDA,RST"
+     }
+   }
+ ```
+
+Os nomes dos canais afetam apenas a saída do arquivo VCD. Os pinos de entrada do analisador lógico são chamados de D0, D1, etc., independentemente do atributo `channelNames`.
 
 ### Visualizando os dados no PulseView
 

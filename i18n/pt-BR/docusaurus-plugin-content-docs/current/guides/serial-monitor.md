@@ -39,8 +39,8 @@ Observe que você precisa conectar `$serialMonitor:TX` ao pino `RX` da porta ser
 
 ## ATtiny85 + SoftwareSerial
 
-O chip ATtiny85 não possui suporte de hardware embutido para comunicação serial (USART). Você pode usar uma
-implementação de software do protocolo USART para interagir com o monitor Serial, utilizando a biblioteca "SoftwareSerial".
+O chip ATtiny85 não possui suporte de hardware embutido para comunicação serial (UART). Você pode usar uma
+implementação de software do protocolo UART para interagir com o monitor Serial, utilizando a biblioteca "SoftwareSerial".
 
 Primeiro, defina os pinos que serão usados ​​para a comunicação Serial, adicionando as seguintes linhas a seção `connections` do seu arquivo [diagram.json](../diagram-format):
 

@@ -7,10 +7,6 @@ Cartão microSD com interface SPI
 
 <wokwi-microsd-card />
 
-:::caution Atenção
-O simulador de cartão microSD ainda está em beta. A interface/comportamento está sujeito a mudanças!
-:::
-
 ## Nome dos Pinos
 
 | Nome | Descrição                   |
