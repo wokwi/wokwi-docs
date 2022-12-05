@@ -1,18 +1,18 @@
 {
   "version.label": {
-    "message": "Next",
-    "description": "The label for version current"
+    "message": "Suivant",
+    "description": "L'étiquette de la version actuelle"
   },
   "sidebar.main.category.Getting Started": {
-    "message": "Getting Started",
-    "description": "The label for category Getting Started in sidebar main"
+    "message": "Commencer",
+    "description": "L'étiquette de la catégorie Mise en route dans la barre latérale principale"
   },
   "sidebar.main.category.Guides": {
     "message": "Guides",
-    "description": "The label for category Guides in sidebar main"
+    "description": "L'étiquette de la catégorie Guides dans la barre latérale principale"
   },
   "sidebar.main.category.Diagram Reference": {
-    "message": "Diagram Reference",
-    "description": "The label for category Diagram Reference in sidebar main"
+    "message": Référence du diagramme",
+    "description": "L'étiquette de la catégorie Référence du diagramme dans la barre latérale principale"
   }
 }
