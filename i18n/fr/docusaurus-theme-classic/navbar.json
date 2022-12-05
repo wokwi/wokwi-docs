@@ -1,18 +1,18 @@
 {
   "title": {
     "message": "Wokwi",
-    "description": "The title in the navbar"
+    "description": "Le titre dans la barre de navigation"
   },
   "item.label.Docs": {
     "message": "Docs",
-    "description": "Navbar item with label Docs"
+    "description": "Élément de barre de navigation avec étiquette Docs"
   },
   "item.label.Blog": {
     "message": "Blog",
-    "description": "Navbar item with label Blog"
+    "description": "Élément de la barre de navigation avec étiquette Blog"
   },
   "item.label.Simulator": {
     "message": "Simulator",
-    "description": "Navbar item with label Simulator"
+    "description": "Élément de la barre de navigation avec étiquette Simulateur"
   }
 }
