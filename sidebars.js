@@ -67,5 +67,16 @@ module.exports = {
       'parts/wokwi-tm1637-7segment',
       'parts/wokwi-tv',
     ],
+    'Chips API': [
+      'chips-api/getting-started',
+      'chips-api/gpio',
+      'chips-api/analog',
+      'chips-api/time',
+      'chips-api/uart',
+      'chips-api/i2c',
+      'chips-api/spi',
+      'chips-api/attributes',
+      'chips-api/framebuffer',
+    ],
   },
 };
