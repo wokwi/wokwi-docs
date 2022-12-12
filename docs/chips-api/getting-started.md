@@ -85,3 +85,4 @@ In addition, you can use the [Wokwi Logic Analyzer](../guides/logic-analyzer) to
 - [I2C Keypad Driver Example](https://wokwi.com/projects/344059749365449300) (by Yewolf)
 - [CD4051B Multiplexer Example](https://wokwi.com/projects/343522915673702994) (by Chris Schmidt)
 - [EEPROM Chip](https://wokwi.com/projects/329482717479567954) (by Benny Meisels)
+- [PCA9685 Chip](https://wokwi.com/projects/348856116302578258) (by Bonny Rais)
