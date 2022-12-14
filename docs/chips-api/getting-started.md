@@ -86,3 +86,4 @@ In addition, you can use the [Wokwi Logic Analyzer](../guides/logic-analyzer) to
 - [CD4051B Multiplexer Example](https://wokwi.com/projects/343522915673702994) (by Chris Schmidt)
 - [EEPROM Chip](https://wokwi.com/projects/329482717479567954) (by Benny Meisels)
 - [PCA9685 Chip](https://wokwi.com/projects/348856116302578258) (by Bonny Rais)
+- [DS18B20 Chip](https://wokwi.com/projects/349898396478210642) (by Bonny Rais) - Dallas Semi DS18B20 Temperature Sensor over OneWire
