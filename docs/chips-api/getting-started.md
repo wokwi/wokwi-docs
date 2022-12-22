@@ -7,7 +7,7 @@ sidebar_label: Getting Started
 
 :::caution
 
-This is a very early stage prototype. Please share your experiments and provide feedback in the `#custom-chips` channel on the [Discord chat](https://wokwi.com/discord).
+The Chips API is currently in beta. Please share your experiments and provide feedback in the `#custom-chips` channel on the [Discord chat](https://wokwi.com/discord).
 
 :::
 
