@@ -24,7 +24,7 @@ pull-up/pull-down resistors.
 
 | Name  | Description         | Default value |
 | ----- | ------------------- | ------------- |
-| value | Resistance, in ohms | "1000"        |
+| value | Resistance, in ohms | "220"        |
 
 ### Examples
 
