@@ -24,13 +24,13 @@ pull-up/pull-down resistors.
 
 | Name  | Description         | Default value |
 | ----- | ------------------- | ------------- |
-| value | Resistance, in ohms | "1000"        |
+| value | Resistance, in ohms | "220"        |
 
 ### Examples
 
 | Result                              | Attrs                     |
 | ----------------------------------- | ------------------------- |
-| <wokwi-resistor value="1" />        | `{ "value": "1" }`        |
+| <wokwi-resistor value="220" />        | `{ "value": "220" }`        |
 | <wokwi-resistor value="220" />      | `{ "value": "220" }`      |
 | <wokwi-resistor value="10000000" /> | `{ "value": "10000000" }` |
 
