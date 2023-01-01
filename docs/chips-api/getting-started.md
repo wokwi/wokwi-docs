@@ -79,8 +79,8 @@ In addition, you can use the [Wokwi Logic Analyzer](../guides/logic-analyzer) to
 - [I2C Chip](https://wokwi.com/projects/344061754973618771) - Simple counter interrupt output
 - [UART Chip](https://wokwi.com/projects/333638144389808723) - Implements a basic ROT13 cipher
 - [Timer Chip](https://wokwi.com/projects/341265875285836370) - Showing how to use the Timer API
-- [LM75A Chip](https://wokwi.com/projects/344037885763125843) – I2C digital temperature sensor
-- [Framebuffer Chip](https://wokwi.com/projects/330503863007183442) – Shows how to implement a custom display driver chip
+- [LM75A Chip](https://wokwi.com/projects/344037885763125843) - I2C digital temperature sensor
+- [Framebuffer Chip](https://wokwi.com/projects/330503863007183442) - Shows how to implement a custom display driver chip
 - [IL9163 Display Driver](https://wokwi.com/projects/333332561949360723) - 128x128 color LCD display chip
 - [I2C Keypad Driver Example](https://wokwi.com/projects/344059749365449300) (by Yewolf)
 - [CD4051B Multiplexer Example](https://wokwi.com/projects/343522915673702994) (by Chris Schmidt)
