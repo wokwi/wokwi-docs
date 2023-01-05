@@ -18,9 +18,15 @@ Nem todos os textos estão atualmente disponíveis para tradução, mas estamos 
 ### Traduções existentes
 
 - [Chinês](https://wokwi.com/projects/new?lang=zh)
+- [Tcheco](https://wokwi.com/projects/new?lang=cs)
 - [Espanhol (Espanha)](https://wokwi.com/projects/new?lang=es-ES)
+- [Francês](https://wokwi.com/projects/new?lang=fr)
 - [Alemão](https://wokwi.com/projects/new?lang=de)
 - [Húngaro](https://wokwi.com/projects/new?lang=hu)
 - [Italiano](https://wokwi.com/projects/new?lang=it)
+- [Polonês](https://wokwi.com/projects/new?lang=pl)
 - [Português](https://wokwi.com/projects/new?lang=pt-BR)
+- [Russo](https://wokwi.com/projects/new?lang=ru)
+- [Esloveno](https://wokwi.com/projects/new?lang=sl)
+- [Turco](https://wokwi.com/projects/new?lang=tr)
 - [Ucraniano](https://wokwi.com/projects/new?lang=ua)
