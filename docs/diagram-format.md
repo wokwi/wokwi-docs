@@ -3,7 +3,7 @@ title: diagram.json File Format
 sidebar_label: diagram.json
 ---
 
-Each simulation project contains a diagram.json file. This files defines the components
+Each simulation project contains a diagram.json file. This file defines the components
 that will be used for the simulation, their properties, and the connections between the
 components.
 
