@@ -67,7 +67,7 @@ You can only have one watch for a pin at any given time. The function returns `t
 
 The `pin_change` callback signature is as follows:
 
-```
+```cpp
 void chip_pin_change(void *user_data, pin_t pin, uint32_t value) {
   // value will either be HIGH or LOW
 }
