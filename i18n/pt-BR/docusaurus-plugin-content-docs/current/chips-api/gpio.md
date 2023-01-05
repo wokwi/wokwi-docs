@@ -27,7 +27,7 @@ Inicializa o pino fornecido e retorna um identificador de pino para uso com os o
 - `OUTPUT` - configura o pino como uma saída digital
 - `OUTPUT_LOW` - configura o pino como uma saída digital, define o valor do pino como LOW
 - `OUTPUT_HIGH` - configura o pino como uma saída digital, define o valor do pino para ALTO
-- `ANALOG` - configura o pino como um pino analógico. Consulte a seção [API analógica](analógica) para obter mais detalhes.
+- `ANALOG` - configura o pino como um pino analógico. Consulte a seção [API analógica](analog) para obter mais detalhes.
 
 :::caution AVISO
 
