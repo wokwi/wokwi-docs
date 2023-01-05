@@ -28,7 +28,7 @@ Display de LED 7 segmentos
 
 \* COM é o pino comum para um display de 7 segmentos de um único dígito. Para um display de vários dígitos, use DIG1…DIG4.
 
-Com a configuração padrão do atributo `common` como `anode`, os pinos de segmento (A…G, DP, CLN) são conectados ao ânodo (lado positivo) dos LEDS, e os pinos comuns (COM, DIG1…DIG4) são conectado ao cátodo (lado negativo) dos LEDs. Os segmentos são iluminados ao direcionar seus pinos para o nível alto. Definir `common` como `cathode` reverte esse comportamento, com os pinos do segmento ligando quando em nível baixo.
+Com a configuração padrão do atributo `common` como `anode`, os pinos de segmento (A…G, DP, CLN) são conectados ao cátodo (lado negativo) dos LEDS, e os pinos comuns (COM, DIG1…DIG4) são conectado ao ânodo (lado positivo) dos LEDs. Os segmentos são iluminados ao direcionar seus pinos para o nível baixo. Definir `common` como `cathode` reverte esse comportamento, com os pinos do segmento ligando quando em nível alto.
 
 O mapeamento do segmento é o seguinte:
 

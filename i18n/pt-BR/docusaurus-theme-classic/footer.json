@@ -36,7 +36,7 @@
     "description": "O rótulo do link do rodapé com rótulo=GitHub com link para https://github.com/wokwi/wokwi-docs"
   },
   "copyright": {
-    "message": "Copyright © 2021 CodeMagic LTD. Construído com Docusaurus.",
-    "description": "O rodapé do copyright"
+    "message": "Copyright © 2021-2023 CodeMagic LTD. Construído com Docusaurus.",
+    "description": "Os direitos autorais do rodapé"
   }
 }
