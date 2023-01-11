@@ -71,7 +71,7 @@ The channel names only affect the VCD file output. The input pins of the logic a
 
 ### Viewing the data in PulseView
 
-PulseView an open source Logic Analyzer GUI. It runs on Linux, Windows, Mac OS X, and there's even an Android version. You can visit their [downloads page](https://sigrok.org/wiki/Downloads) to get the latest version.
+PulseView an open source Logic Analyzer GUI. It runs on Linux, Windows, Mac OS X, and there's even an Android version. You can visit their [downloads page](https://sigrok.org/wiki/Downloads) to get the latest version. For ARM Mac (M1/M2) users, please follow the [PulseView on Mac M1/M2 guide](https://nishtahir.com/running-pulseview-on-an-m1-mac/).
 
 Load the recorded signal (VCD) file by clicking on the small arrow next to the "Open" button, and choosing: "Import Value Change Dump data..."
 
