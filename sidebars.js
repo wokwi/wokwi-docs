@@ -78,5 +78,10 @@ module.exports = {
       'chips-api/attributes',
       'chips-api/framebuffer',
     ],
+    'VSCode Extension': [
+      'vscode/getting-started',
+      'vscode/project-config',
+      'vscode/debugging',
+    ]
   },
 };
