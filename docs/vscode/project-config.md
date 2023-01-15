@@ -37,7 +37,7 @@ Avoid using backslashes (`\`) in your paths. Use forward slash (`/`) instead, as
 
 ### IoT Gateway (ESP32 WiFi)
 
-Wokwi for VSCode includes a bundled version of the [Wokwi Private IoT Gateway](../guides/esp32-wifi#internet-access), which allows you to connect the virtual WiFi of the simulated ESP32 to your local network and the Internet.
+Wokwi for VS Code includes a bundled version of the [Wokwi Private IoT Gateway](../guides/esp32-wifi#internet-access), which allows you to connect the virtual WiFi of the simulated ESP32 to your local network and the Internet.
 
 You can also connect to the simulated ESP from your computer (e.g. you are running a web server on the ESP32). To do so, set up port forwarding in wokwi.toml. For instance, to forward local port 8180 to port 80 on the ESP32, add the following configuration:
 
