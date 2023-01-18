@@ -13,7 +13,7 @@ The Chips API is currently in beta. Please share your experiments and provide fe
 
 ## Getting started
 
-Open the [Custom Chip Playground](https://wokwi.com/projects/327144279206003284), go to the code editor, press `F1` and select _Create a custom C chip (alpha)_.
+Open the [Custom Chip Playground](https://wokwi.com/projects/327144279206003284), go to the code editor, press `F1` and select _Create a custom C chip (beta)_.
 
 This will create a new file called `i2c-counter.chip.c`. This file contains an example of a simple [I2C](i2c) device with an 8-bit counter that increments for every byte that you read. Writing to the device will override the value.
 
