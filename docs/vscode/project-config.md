@@ -60,7 +60,9 @@ name = 'inverter'  # To use the chip in diagram.json, add a part with "chip-inve
 binary = 'chips/inverter.chip.wasm'
 ```
 
-Wokwi also requires a JSON file that describes the chip pins. The JSON file should have the same name as the wasm binary, but with a json extension (e.g. chips/inverter.chip.json in the above example). For a complete example, check out [the inverter-chip repo](https://github.com/wokwi/inverter-chip).
+Wokwi also requires a JSON file that describes the chip pins. The JSON file should have the same name as the wasm binary, but with a json extension (e.g. `chips/inverter.chip.json` in the above example). For a complete example, check out [the inverter-chip repo](https://github.com/wokwi/inverter-chip).
+
+You can add multiple chips to your project by adding multiple `[[chip]]` sections, each with a different `name` and `binary`.
 
 ## diagram.json
 
