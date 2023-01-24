@@ -49,6 +49,8 @@ Here are some quick examples of things you can make with Wokwi:
 - [Virtual Logic Analyzer](guides/logic-analyzer) - Capture digital signals in your simulation (e.g. UART, I2C, SPI) and analyze them on your computer.
 - [Advanced debugging with GDB](gdb-debugging) - Powerful Arduino and Raspberry Pi Pico debugger for advanced users.
 - [SD card simulation](parts/wokwi-microsd-card) - Store and retrieve files and directories from your code. [Club](getting-started/wokwi-club) members can also upload binary files (such as images)
+- [Chips API](chips-api/getting-started) - Create your own custom chips and parts, and share them with the community.
+- [Visual Studio Code integration](vscode/getting-started) - Simulate your embedded projects directly from VS Code.
 
 ## How much does it cost?
 

@@ -60,7 +60,7 @@ The debug messages from your chip will be printed in green color:
 
 In addition, you can use the [Wokwi Logic Analyzer](../guides/logic-analyzer) to debug the communication with your custom chip.
 
-## Chip API reference 📖
+## Chips API reference 📖
 
 - [GPIO pins API](gpio)
 - [Analog API](analog)
