@@ -23,11 +23,11 @@ Replace "path-to-your-firmware" with the location of the compiled firmware, **re
 
 The extension of the firmware file depends on the board you are using:
 
-| Board                      | Firmware file extension |
-| -------------------------- | ----------------------- |
-| Arduino Uno/Mega, ATtiny85 | .hex or .elf            |
-| Raspberry Pi Pico          | .uf2 or .hex            |
-| ESP32 Family               | .bin or .elf            |
+| Board                      | Supported firmware types |
+| -------------------------- | ------------------------ |
+| Arduino Uno/Mega, ATtiny85 | .hex, .elf               |
+| Raspberry Pi Pico          | .hex, .uf2               |
+| ESP32 Family               | .bin, .uf2, .elf         |
 
 You check test your configuration by pressing **F1** and then selecting "**Wokwi: Start Simulator**".
 

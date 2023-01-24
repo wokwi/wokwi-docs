@@ -23,11 +23,12 @@ You can contribute additional boards by sending a pull request to [wokwi-boards]
 
 ## Getting Started
 
-You can use the ESP32 simulator in three ways:
+You can use the ESP32 simulator to run different kinds of applications:
 
-1. Build projects using the ESP32 Arduino Core (including ESP-IDF projects)
-2. Run MicroPython projects (also CircuitPython on the ESP32-S2)
-3. Simulate bin application files you built on your machine (e.g. using ESP-IDF)
+1. ESP32 Arduino Core projects (including ESP-IDF projects)
+2. MicroPython and CircuitPython projects
+3. Rust projects (see https://wokwi.com/rust)
+4. Custom application firmware files (e.g. applications built using the ESP-IDF)
 
 ### Arduino Core
 
@@ -43,9 +44,16 @@ Start from the [MicroPython ESP32 Project Template](https://wokwi.com/projects/n
 
 Note: While the simulation is running, press Ctrl+C inside the Serial Terminal to get into the _MicroPython REPL_. Alternatively, you can edit the Blink Example code and remove the while loop. For more information, check out the [MicroPython Guide](./micropython).
 
-### Custom Application (.bin) File
+### Custom Application Firmware
 
-Open the [ESP32 custom application project template](https://wokwi.com/projects/305457271083631168), and press "F1" in the code editor. Then choose "Load HEX File and Start Simulation…". Choose any .bin file from your computer and the simulation will start.
+Open the [ESP32 custom application project template](https://wokwi.com/projects/305457271083631168), and press "F1" in the code editor. Then choose "Upload Firmware and Start Simulation…". Choose any .bin, .elf or .uf2 file from your computer and the simulation will start.
+
+:::info
+When uploading a custom firmware, it's recommended to create a single .bin file that contains the bootloader, partition table, and 
+application. You can use the [esptool merge_bin command](https://docs.espressif.com/projects/esptool/en/latest/esp32/esptool/basic-commands.html#merge-binaries-for-flashing-merge-bin) to create such file. 
+
+For ESP-IDF projects, you can also build a single UF2 file using the command: `idf.py uf2`. The file will be located in `build/uf2.bin`, and can be uploaded to the simulator.
+:::
 
 ## Simulator Examples
 
