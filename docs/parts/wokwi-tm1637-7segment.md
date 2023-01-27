@@ -9,12 +9,14 @@ Seven segment LED display module with TM1637 4-wire interface
 
 ## Pin names
 
-| Name | Description          |
-| ---- | -------------------- |
-| CLK  | Top segment          |
-| DIO  | Top-right segment    |
-| VCC  | Bottom-right segment |
-| GND  | Bottom segment       |
+| Name | Description    |
+| ---- | -------------- |
+| CLK  | Clock input    |
+| DIO  | Data input \*  |
+| VCC  | Supply voltage |
+| GND  | Ground         |
+
+\* The DIO pin is also used for acknowledging the data received from the microcontroller, by pulling it down at a specific clock cycle.
 
 ## Attributes
 
