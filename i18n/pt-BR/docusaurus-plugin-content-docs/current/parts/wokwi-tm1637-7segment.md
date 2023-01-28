@@ -9,12 +9,14 @@ Módulo display de LED sete segmentos com interface TM1637 de 4 fios
 
 ## Nome dos Pinos
 
-| Nome | Descrição                 |
-| ---- | ------------------------- |
-| CLK  | Segmento superior         |
-| DIO  | Segmento superior direito |
-| VCC  | Segmento inferior direito |
-| GND  | Segmento inferior         |
+| Nome | Descrição             |
+| ---- | --------------------- |
+| CLK  | Entrada de clock      |
+| DIO  | Entrada de dados \*   |
+| VCC  | Tensão de alimentação |
+| GND  | Terra                 |
+
+\* O pino DIO também é usado para reconhecer os dados recebidos do microcontrolador, colocando-o em nível lógico baixo para um ciclo de clock específico.
 
 ## Atributos
 

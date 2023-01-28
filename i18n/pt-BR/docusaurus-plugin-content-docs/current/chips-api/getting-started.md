@@ -29,7 +29,7 @@ Adicione o seguinte snippet ao seu diagram.json:
 
 `{ "type": "chip-i2c-counter", "id": "chip1", "top": 0, "left": 0, "attrs": {} },`
 
-O Wokwi gera automaticamente uma **placa de quebra** para o seu chip. Edite `i2c-counter.chip.json` para definir os pinos para sua peça. O array `pins` deve conter os nomes dos pinos do seu chip, começando pelo pino número `1`. Se você deseja pular alguns pinos (por exemplo, deseja que o quadro de acesso tenha apenas pinos no lado esquerdo), use uma string vazia (`""`) para o nome do pino.
+O Wokwi gera automaticamente uma **placa de expansão (breakout board)** para o seu chip. Edite `i2c-counter.chip.json` para definir os pinos para sua peça. O array `pins` deve conter os nomes dos pinos do seu chip, começando pelo pino número `1`. Se você deseja pular alguns pinos (por exemplo, deseja que o quadro de acesso tenha apenas pinos no lado esquerdo), use uma string vazia (`""`) para o nome do pino.
 
 ## Usando a API
 
@@ -60,7 +60,7 @@ As mensagens de depuração do seu chip serão impressas na cor verde:
 
 Além disso, você pode usar o [Analisador Lógico Wokwi](../guides/logic-analyzer) para depurar a comunicação com seu chip personalizado.
 
-## Referência da API do chip 📖
+## Referência da API dos chips 📖
 
 - [API de pinos GPIO](gpio)
 - [API Analógica](analog)

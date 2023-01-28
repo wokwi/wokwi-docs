@@ -49,6 +49,8 @@ Aqui estão alguns exemplos rápidos de coisas que você pode fazer com o Wokwi:
 - [Analisador Lógico Virtual](guides/logic-analyzer) - Capture sinais digitais em sua simulação (por exemplo, UART, I2C, SPI) e analise-os em seu computador.
 - [Depuração avançada com GDB](gdb-debugging) - Poderoso depurador Arduino e Raspberry Pi Pico para usuários avançados.
 - [Simulação de cartão SD](parts/wokwi-microsd-card) - Armazene e recupere arquivos e diretórios do seu código. Os membros do [Club](getting-started/wokwi-club) também podem fazer upload de arquivos binários (como imagens)
+- [API dos chips](chips-api/getting-started) - Crie seus próprios chips e peças personalizados e compartilhe-os com a comunidade.
+- [Integração no Visual Studio Code](vscode/getting-started) - Simule seus projetos incorporados diretamente no VS Code.
 
 ## Quanto custa isso?
 
