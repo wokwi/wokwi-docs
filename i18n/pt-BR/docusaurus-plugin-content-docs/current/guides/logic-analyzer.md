@@ -71,7 +71,7 @@ Os nomes dos canais afetam apenas a saída do arquivo VCD. Os pinos de entrada d
 
 ### Visualizando os dados no PulseView
 
-PulseView é uma GUI de código aberto que suporta Analisadores Lógicos. Ele roda em Linux, Windows, Mac OS X e há até uma versão para Android. Você pode visitar a [página de downloads](https://sigrok.org/wiki/Downloads) para obter a última versão.
+PulseView é uma GUI de código aberto que suporta Analisadores Lógicos. Ele roda em Linux, Windows, Mac OS X e há até uma versão para Android. Você pode visitar a [página de downloads](https://sigrok.org/wiki/Downloads) para obter a última versão. Para usuários de computadores Mac com a arquitetura ARM (M1/M2), siga o [guia PulseView no Mac M1/M2](https://nishtahir.com/running-pulseview-on-an-m1-mac/).
 
 Carregue o arquivo de sinal gravado (VCD) clicando na pequena seta ao lado do botão "Open" e selecione a opção: "Import Value Change Dump data..."
 

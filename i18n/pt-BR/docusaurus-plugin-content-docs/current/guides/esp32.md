@@ -23,11 +23,12 @@ Você pode contribuir com placas adicionais enviando um pull request para [wokwi
 
 ## Começando
 
-Você pode usar o simulador ESP32 de três maneiras:
+Você pode usar o simulador ESP32 para executar diferentes tipos de aplicativos:
 
-1. Crie projetos usando o ESP32 Arduino Core (incluindo projetos ESP-IDF)
-2. Execute projetos MicroPython (também CircuitPython no ESP32-S2)
-3. Simule arquivos de aplicativo bin que você construiu em sua máquina (por exemplo, usando ESP-IDF)
+1. Projetos ESP32 Arduino Core (incluindo projetos ESP-IDF)
+2. Projetos MicroPython e CircuitPython
+3. Projetos Rust (consulte https://wokwi.com/rust)
+4. Arquivos de firmware de aplicativos personalizados (por exemplo, aplicativos criados usando o ESP-IDF)
 
 ### Arduino Core
 
@@ -43,9 +44,15 @@ Comece com o [modelo de projeto MicroPython ESP32](https://wokwi.com/projects/ne
 
 Nota: Enquanto a simulação está em execução, pressione Ctrl+C dentro do Terminal Serial para entrar no _MicroPython REPL_. Alternativamente, você pode editar o código de Exemplo Blink e remover o loop while. Para obter mais informações, consulte o [Guia MicroPython](./micropython).
 
-### Aplicativo personalizado (.bin)
+### Firmware de aplicativo personalizado
 
-Abra o [modelo de projeto de aplicativo personalizado ESP32](https://wokwi.com/projects/305457271083631168), e pressione "F1" no editor de código. Em seguida, escolha "Carregar Arquivo HEX e Iniciar Simulação...". Escolha qualquer arquivo .bin em seu computador e a simulação será iniciada.
+Abra o [modelo de projeto de aplicativo personalizado do ESP32](https://wokwi.com/projects/305457271083631168) e pressione "F1" no editor de código. Em seguida, escolha "Fazer upload do firmware e iniciar a simulação...". Escolha qualquer arquivo .bin, .elf ou .uf2 do seu computador e a simulação será iniciada.
+
+:::info Informação
+Ao carregar um firmware personalizado, é recomendável criar um único arquivo .bin que contenha o gerenciador de inicialização, a tabela de partições e aplicativo. Você pode usar o [comando esptool merge_bin](https://docs.espressif.com/projects/esptool/en/latest/esp32/esptool/basic-commands.html#merge-binaries-for-flashing-merge-bin) para criar o arquivo.
+
+Para projetos ESP-IDF, você também pode criar um único arquivo UF2 usando o comando: `idf.py uf2`. O arquivo estará localizado em `build/uf2.bin`, que pode ser carregado no simulador.
+:::
 
 ## Exemplos no simulador
 
