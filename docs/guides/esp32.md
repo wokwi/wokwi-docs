@@ -9,15 +9,15 @@ The ESP32 is a popular WiFi and Bluetooth-enabled microcontroller, widely used f
 
 ## ESP32 boards
 
-| Name                                                | Chip     | Description                                   |
-| --------------------------------------------------- | -------- | --------------------------------------------- |
-| ESP32 DevKit v1                                     | ESP32    | Popular ESP32 development board               |
-| TinyPICO                                            | ESP32    | Small ESP32 board by UnexpectedMaker          |
-| ESP32-S2-DevKitM-1                                  | ESP32-S2 | Entry-level ESP32-S2 development board        |
-| [Franzininho WiFi](../parts/board-franzininho-wifi) | ESP32-S2 | Board by the Franzininho Community            |
-| ESP32-C3-DevKitM-1                                  | ESP32-C3 | Entry-level ESP32-C3 development board        |
-| Rust Board ESP32-C3                                 | ESP32-C3 | ESP32-C3 board for Rust development           |
-| ESP32-S3-DevKitC-1                                  | ESP32-S3 | Entry-level ESP32-C3 development board (beta) |
+| Name                                                           | Chip     | Description                                   |
+| -------------------------------------------------------------- | -------- | --------------------------------------------- |
+| ESP32 DevKit v1                                                | ESP32    | Popular ESP32 development board               |
+| ESP32-S2-DevKitM-1                                             | ESP32-S2 | Entry-level ESP32-S2 development board        |
+| [Franzininho WiFi](../parts/board-franzininho-wifi)            | ESP32-S2 | Board by the Franzininho Community            |
+| [Wemos S2 mini](https://wokwi.com/projects/355047217294313473) | ESP32-S2 | Small ESP32-S2 board by Wemos                 |
+| ESP32-C3-DevKitM-1                                             | ESP32-C3 | Entry-level ESP32-C3 development board        |
+| Rust Board ESP32-C3                                            | ESP32-C3 | ESP32-C3 board for Rust development           |
+| ESP32-S3-DevKitC-1                                             | ESP32-S3 | Entry-level ESP32-C3 development board (beta) |
 
 You can contribute additional boards by sending a pull request to [wokwi-boards](https://github.com/wokwi/wokwi-boards).
 
@@ -49,8 +49,8 @@ Note: While the simulation is running, press Ctrl+C inside the Serial Terminal t
 Open the [ESP32 custom application project template](https://wokwi.com/projects/305457271083631168), and press "F1" in the code editor. Then choose "Upload Firmware and Start Simulation…". Choose any .bin, .elf or .uf2 file from your computer and the simulation will start.
 
 :::info
-When uploading a custom firmware, it's recommended to create a single .bin file that contains the bootloader, partition table, and 
-application. You can use the [esptool merge_bin command](https://docs.espressif.com/projects/esptool/en/latest/esp32/esptool/basic-commands.html#merge-binaries-for-flashing-merge-bin) to create such file. 
+When uploading a custom firmware, it's recommended to create a single .bin file that contains the bootloader, partition table, and
+application. You can use the [esptool merge_bin command](https://docs.espressif.com/projects/esptool/en/latest/esp32/esptool/basic-commands.html#merge-binaries-for-flashing-merge-bin) to create such file.
 
 For ESP-IDF projects, you can also build a single UF2 file using the command: `idf.py uf2`. The file will be located in `build/uf2.bin`, and can be uploaded to the simulator.
 :::
