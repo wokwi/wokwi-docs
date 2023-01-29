@@ -39,6 +39,7 @@ Before simulating any of the following projects, you need to compile the code an
 - [Arduino Simon Game](https://github.com/wokwi/arduino-simon-game) - Memory game with 4 LEDs, 4 buttons, a buzzer, and a 7-segment display
 - [ESP32 Network Clock](https://github.com/wokwi/esp32-ntp-clock) - Syncs time from the internet (NTP) and displays it on an LCD display
 - [ESP32 Web Server](https://github.com/wokwi/esp32-http-server) - HTTP server that controls 2 LEDs
+- [ESP32 Async Web Server](https://github.com/wokwi/esp32-async-web-server-example) - HTTP server that controls 2 LEDs, using the ESPAsyncWebServer library
 
 ### ESP-IDF Examples
 
