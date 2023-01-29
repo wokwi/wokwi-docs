@@ -26,7 +26,7 @@ The browser will ask for a confirmation to send the license to VS Code. Confirm 
 
 ## Example Projects
 
-To configure wokwi for your own project, do this.
+To configure Wokwi for your own project, see the [Project Configuration](./project-config) page.
 
 If you just want to get started quickly and play around with Wokwi for VS Code, here are some example projects, preconfigured with [diagram.json](../diagram-format) and [wokwi.toml](./project-config) files.
 
