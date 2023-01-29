@@ -26,7 +26,7 @@ O navegador pedirá uma confirmação para enviar a licença para o VS Code. Con
 
 ## Exemplos de Projetos
 
-Para configurar o wokwi para seu próprio projeto, faça isso.
+Para configurar o Wokwi para seu próprio projeto, consulte a página [Configurando seu projeto](./project-config).
 
 Se você quiser começar rapidamente e brincar com o Wokwi para VS Code, aqui estão alguns projetos de exemplo, pré-configurados com os arquivos [diagram.json](../diagram-format) e [wokwi.toml](./project-config).
 
@@ -39,6 +39,7 @@ Antes de simular qualquer um dos projetos a seguir, você precisa compilar o có
 - [Arduino Simon Game](https://github.com/wokwi/arduino-simon-game) - Jogo da memória com 4 LEDs, 4 botões, buzzer e display de 7 segmentos
 - [ESP32 Network Clock](https://github.com/wokwi/esp32-ntp-clock) - Sincroniza a hora da internet (NTP) e a exibe em um display LCD
 - [ESP32 Web Server](https://github.com/wokwi/esp32-http-server) - Servidor HTTP que controla 2 LEDs
+- [ESP32 Async Web Server](https://github.com/wokwi/esp32-async-web-server-example) - Servidor HTTP que controla 2 LEDs, usando a biblioteca ESPAsyncWebServer
 
 ### Exemplos do ESP-IDF
 
