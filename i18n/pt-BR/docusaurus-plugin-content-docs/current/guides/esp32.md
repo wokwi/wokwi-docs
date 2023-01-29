@@ -3,21 +3,23 @@ title: Simulador ESP32
 sidebar_label: Simulador ESP32
 ---
 
-O ESP32 é um microcontrolador popular habilitado para WiFi e Bluetooth, amplamente utilizado para projetos de IoT. Wokwi simula o ESP32, ESP32-C3, ESP32-S2 e ESP32-S3 (beta).
+O ESP32 é um microcontrolador popular habilitado para WiFi e Bluetooth, amplamente utilizado para projetos de IoT. Wokwi simula o ESP32, ESP32-C3, ESP32-S2 e ESP32-S3 (beta) e ESP32-C6 (alpha).
 
 <wokwi-esp32-devkit-v1></wokwi-esp32-devkit-v1>
 
 ## ESP32 boards
 
-| Nome                                                | Chip     | Descrição                                                |
-| --------------------------------------------------- | -------- | -------------------------------------------------------- |
-| ESP32 DevKit v1                                     | ESP32    | Placa de desenvolvimento popular ESP32                   |
-| TinyPICO                                            | ESP32    | Placa ESP32 compacta por UnexpectedMaker                 |
-| [Franzininho WiFi](../parts/board-franzininho-wifi) | ESP32-S2 | Placa ESP32-S2 da Comunidade Franzininho                 |
-| ESP32-S2-DevKitM-1                                  | ESP32-S2 | Placa de desenvolvimento ESP32-S2 de nível básico        |
-| ESP32-C3-DevKitM-1                                  | ESP32-C3 | Placa de desenvolvimento ESP32-C3 de nível básico        |
-| Rust Board ESP32-C3                                 | ESP32-C3 | Placa ESP32-C3 para desenvolvimento Rust                 |
-| ESP32-S3-DevKitC-1                                  | ESP32-S3 | Placa de desenvolvimento ESP32-C3 de nível básico (beta) |
+| Nome                                                           | Chip     | Descrição                                                |
+| -------------------------------------------------------------- | -------- | -------------------------------------------------------- |
+| ESP32 DevKit v1                                                | ESP32    | Placa de desenvolvimento popular ESP32                   |
+| TinyPICO                                                       | ESP32    | Placa ESP32 compacta por UnexpectedMaker                 |
+| [Franzininho WiFi](../parts/board-franzininho-wifi)            | ESP32-S2 | Placa ESP32-S2 da Comunidade Franzininho                 |
+| [Wemos S2 mini](https://wokwi.com/projects/355047217294313473) | ESP32-S2 | Pequena placa ESP32-S2 da Wemos                          |
+| ESP32-S2-DevKitM-1                                             | ESP32-S2 | Placa de desenvolvimento ESP32-S2 de nível básico        |
+| ESP32-C3-DevKitM-1                                             | ESP32-C3 | Placa de desenvolvimento ESP32-C3 de nível básico        |
+| Rust Board ESP32-C3                                            | ESP32-C3 | Placa ESP32-C3 para desenvolvimento Rust                 |
+| ESP32-S3-DevKitC-1                                             | ESP32-S3 | Placa de desenvolvimento ESP32-C3 de nível básico (beta) |
+| ESP32-C6-DevKitC-1                                             | ESP32-S6 | Placa oficial de desenvolvimento ESP32-S6 (alpha)        |
 
 Você pode contribuir com placas adicionais enviando um pull request para [wokwi-boards](https://github.com/wokwi/wokwi-boards).
 
