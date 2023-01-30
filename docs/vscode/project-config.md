@@ -45,7 +45,7 @@ You can also connect to the simulated ESP from your computer (e.g. you are runni
 # Forward http://localhost:8180 to port 80 on the simulated ESP32:
 [[net.forward]]
 from = "localhost:8180"
-to = "device:80"
+to = "target:80"
 ```
 
 For a complete example, see the [ESP32 Web Server](https://github.com/wokwi/esp32-http-server) project.
