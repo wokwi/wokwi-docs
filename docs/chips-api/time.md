@@ -9,6 +9,10 @@ sidebar_label: Time API
 
 Returns the current simulator (virtual) time in nanoseconds.
 
+:::tip
+You can get the current time in microseconds by calling `get_sim_nanos() / 1000`, or in milliseconds by calling `get_sim_nanos() / 1000000`.
+:::
+
 ### timer_t timer_init(timer_config_t \*config)
 
 Initializes a new timer. Returns the identifier of the timer. Call `timer_start()` to start the timer, and define the `chip_timer_event()` callback to response to timer events.
