@@ -44,85 +44,85 @@
     "description": "The ARIA label for the blog posts pagination"
   },
   "theme.blog.post.paginator.newerPost": {
-    "message": "Newer Post",
-    "description": "The blog post button label to navigate to the newer/previous post"
-  },
-  "theme.blog.post.paginator.olderPost": {
-    "message": "Older Post",
-    "description": "The blog post button label to navigate to the older/next post"
-  },
-  "theme.tags.tagsPageTitle": {
-    "message": "Tags",
-    "description": "The title of the tag list page"
-  },
-  "theme.blog.post.plurals": {
-    "message": "One post|{count} posts",
-    "description": "Pluralized label for \"{count} posts\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
-  },
-  "theme.blog.tagTitle": {
-    "message": "{nPosts} tagged with \"{tagName}\"",
-    "description": "The title of the page for a blog tag"
-  },
-  "theme.tags.tagsPageLink": {
-    "message": "View All Tags",
-    "description": "The label of the link targeting the tag list page"
-  },
-  "theme.CodeBlock.copyButtonAriaLabel": {
-    "message": "Copy code to clipboard",
-    "description": "The ARIA label for copy code blocks button"
-  },
-  "theme.CodeBlock.copied": {
-    "message": "Copied",
-    "description": "The copied button label on code blocks"
-  },
-  "theme.CodeBlock.copy": {
-    "message": "Copy",
-    "description": "The copy button label on code blocks"
-  },
-  "theme.docs.sidebar.expandButtonTitle": {
-    "message": "Expand sidebar",
-    "description": "The ARIA label and title attribute for expand button of doc sidebar"
-  },
-  "theme.docs.sidebar.expandButtonAriaLabel": {
-    "message": "Expand sidebar",
-    "description": "The ARIA label and title attribute for expand button of doc sidebar"
-  },
-  "theme.docs.paginator.navAriaLabel": {
-    "message": "Docs pages navigation",
-    "description": "The ARIA label for the docs pagination"
-  },
-  "theme.docs.paginator.previous": {
-    "message": "Previous",
-    "description": "The label used to navigate to the previous doc"
-  },
-  "theme.docs.paginator.next": {
-    "message": "Next",
-    "description": "The label used to navigate to the next doc"
-  },
-  "theme.docs.sidebar.responsiveCloseButtonLabel": {
-    "message": "Close menu",
-    "description": "The ARIA label for close button of mobile doc sidebar"
-  },
-  "theme.docs.sidebar.responsiveOpenButtonLabel": {
-    "message": "Open menu",
-    "description": "The ARIA label for open button of mobile doc sidebar"
-  },
-  "theme.docs.sidebar.collapseButtonTitle": {
-    "message": "Collapse sidebar",
-    "description": "The title attribute for collapse button of doc sidebar"
-  },
-  "theme.docs.sidebar.collapseButtonAriaLabel": {
-    "message": "Collapse sidebar",
-    "description": "The title attribute for collapse button of doc sidebar"
-  },
-  "theme.docs.versions.unreleasedVersionLabel": {
-    "message": "This is unreleased documentation for {siteTitle} {versionLabel} version.",
-    "description": "The label used to tell the user that he's browsing an unreleased doc version"
-  },
-  "theme.docs.versions.unmaintainedVersionLabel": {
-    "message": "This is documentation for {siteTitle} {versionLabel}, which is no longer actively maintained.",
-    "description": "The label used to tell the user that he's browsing an unmaintained doc version"
-  },
+"message": "Article plus récent",
+"description": "L'étiquette du bouton de publication de blog pour naviguer vers le nouvel article / précédent"
+},
+"theme.blog.post.paginator.olderPost": {
+"message": "Article plus ancien",
+"description": "L'étiquette du bouton de publication de blog pour naviguer vers l'article plus ancien / suivant"
+},
+"theme.tags.tagsPageTitle": {
+"message": "Tags",
+"description": "Le titre de la page de liste de tags"
+},
+"theme.blog.post.plurals": {
+"message": "Un article|{count} articles",
+"description": "Étiquette plurielle pour "{count} articles". Utilisez autant de formes plurielles (séparées par "|") que votre langue prend en charge (voir https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+},
+"theme.blog.tagTitle": {
+"message": "{nPosts} taggés avec "{tagName}"",
+"description": "Le titre de la page pour un tag de blog"
+},
+"theme.tags.tagsPageLink": {
+"message": "Voir tous les tags",
+"description": "L'étiquette du lien ciblant la page de liste de tags"
+},
+"theme.CodeBlock.copyButtonAriaLabel": {
+"message": "Copier le code dans le presse-papier",
+"description": "Le label ARIA pour le bouton de copie des blocs de code"
+},
+"theme.CodeBlock.copied": {
+"message": "Copié",
+"description": "L'étiquette du bouton copié sur les blocs de code"
+},
+"theme.CodeBlock.copy": {
+"message": "Copier",
+"description": "L'étiquette du bouton de copie sur les blocs de code"
+},
+"theme.docs.sidebar.expandButtonTitle": {
+"message": "Agrandir la barre latérale",
+"description": "Le libellé ARIA et l'attribut de titre pour le bouton d'expansion de la barre latérale de la documentation"
+},
+"theme.docs.sidebar.expandButtonAriaLabel": {
+"message": "Agrandir la barre latérale",
+"description": "Le libellé ARIA et l'attribut de titre pour le bouton d'expansion de la barre latérale de la documentation"
+},
+"theme.docs.paginator.navAriaLabel": {
+"message": "Navigation des pages de documentation",
+"description": "Le libellé ARIA pour la pagination de la documentation"
+},
+"theme.docs.paginator.previous": {
+"message": "Précédent",
+"description": "Le libellé utilisé pour naviguer vers la documentation précédente"
+},
+"theme.docs.paginator.next": {
+"message": "Suivant",
+"description": "Le libellé utilisé pour naviguer vers la documentation suivante"
+},
+"theme.docs.sidebar.responsiveCloseButtonLabel": {
+"message": "Fermer le menu",
+"description": "Le libellé ARIA pour le bouton de fermeture de la barre latérale mobile de la documentation"
+},
+"theme.docs.sidebar.responsiveOpenButtonLabel": {
+"message": "Ouvrir le menu",
+"description": "Le libellé ARIA pour le bouton d'ouverture de la barre latérale mobile de la documentation"
+},
+"theme.docs.sidebar.collapseButtonTitle": {
+"message": "Réduire la barre latérale",
+"description": "L'attribut de titre pour le bouton de réduction de la barre latérale de la documentation"
+},
+"theme.docs.sidebar.collapseButtonAriaLabel": {
+"message": "Réduire la barre latérale",
+"description": "L'attribut de titre pour le bouton de réduction de la barre latérale de la documentation"
+},
+"theme.docs.versions.unreleasedVersionLabel": {
+"message": "Ceci est une documentation non publiée pour la version {versionLabel} de {siteTitle}.",
+"description": "Le libellé utilisé pour informer l'utilisateur qu'il consulte une version non publiée de la documentation"
+},
+"theme.docs.versions.unmaintainedVersionLabel": {
+"message": "Ceci est une documentation pour la version {versionLabel} de {siteTitle}, qui n'est plus activement maintenue.",
+"description": "Le libellé utilisé pour informer l'utilisateur qu'il consulte une version de documentation qui n'est plus activement maintenue"
+},
   "theme.docs.versions.latestVersionSuggestionLabel": {
     "message": "For up-to-date documentation, see the {latestVersionLink} ({versionLabel}).",
     "description": "The label userd to tell the user that he's browsing an unmaintained doc version"
