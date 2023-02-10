@@ -12,7 +12,7 @@
     "description": "L'étiquette de la catégorie Guides dans la barre latérale principale"
   },
   "sidebar.main.category.Diagram Reference": {
-    "message": Référence du diagramme",
+    "message": "Référence du diagramme",
     "description": "L'étiquette de la catégorie Référence du diagramme dans la barre latérale principale"
   }
 }
