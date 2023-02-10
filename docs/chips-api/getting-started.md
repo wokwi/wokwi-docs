@@ -60,6 +60,10 @@ The debug messages from your chip will be printed in green color:
 
 In addition, you can use the [Wokwi Logic Analyzer](../guides/logic-analyzer) to debug the communication with your custom chip.
 
+:::tip
+Make sure to include a newline ("\n") at the end of your `printf()` messages. The simulator shows the messages only when it reaches a newline character.
+:::
+
 ## Chips API reference 📖
 
 - [GPIO pins API](gpio)
