@@ -123,72 +123,72 @@
 "message": "Ceci est une documentation pour la version {versionLabel} de {siteTitle}, qui n'est plus activement maintenue.",
 "description": "Le libellé utilisé pour informer l'utilisateur qu'il consulte une version de documentation qui n'est plus activement maintenue"
 },
-  "theme.docs.versions.latestVersionSuggestionLabel": {
-    "message": "For up-to-date documentation, see the {latestVersionLink} ({versionLabel}).",
-    "description": "The label userd to tell the user that he's browsing an unmaintained doc version"
+"theme.docs.versions.latestVersionSuggestionLabel": {
+    "message": "Pour la documentation à jour, voir la {latestVersionLink} ({versionLabel}).",
+    "description": "L'étiquette utilisée pour dire à l'utilisateur qu'il parcourt une version de documentation non maintenue"
   },
   "theme.docs.versions.latestVersionLinkLabel": {
-    "message": "latest version",
-    "description": "The label used for the latest version suggestion link label"
+    "message": "dernière version",
+    "description": "L'étiquette utilisée pour l'étiquette de lien de suggestion de dernière version"
   },
   "theme.common.editThisPage": {
-    "message": "Edit this page",
-    "description": "The link label to edit the current page"
+    "message": "Modifier cette page",
+    "description": "L'étiquette de lien pour modifier la page actuelle"
   },
   "theme.common.headingLinkTitle": {
-    "message": "Direct link to heading",
-    "description": "Title for link to heading"
+    "message": "Lien direct vers l'en-tête",
+    "description": "Titre pour le lien vers l'en-tête"
   },
   "theme.lastUpdated.atDate": {
-    "message": " on {date}",
-    "description": "The words used to describe on which date a page has been last updated"
+    "message": " le {date}",
+    "description": "Les mots utilisés pour décrire à quelle date une page a été mise à jour pour la dernière fois"
   },
   "theme.lastUpdated.byUser": {
-    "message": " by {user}",
-    "description": "The words used to describe by who the page has been last updated"
+    "message": " par {user}",
+    "description": "Les mots utilisés pour décrire par qui la page a été mise à jour pour la dernière fois"
   },
   "theme.lastUpdated.lastUpdatedAtBy": {
-    "message": "Last updated{atDate}{byUser}",
-    "description": "The sentence used to display when a page has been last updated, and by who"
+    "message": "Dernière mise à jour{atDate}{byUser}",
+    "description": "La phrase utilisée pour afficher quand une page a été mise à jour pour la dernière fois, et par qui"
   },
   "theme.common.skipToMainContent": {
-    "message": "Skip to main content",
-    "description": "The skip to content label used for accessibility, allowing to rapidly navigate to main content with keyboard tab/enter navigation"
-  },
-  "theme.SearchPage.documentsFound.plurals": {
-    "message": "One document found|{count} documents found",
-    "description": "Pluralized label for \"{count} documents found\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
-  },
-  "theme.SearchPage.existingResultsTitle": {
-    "message": "Search results for \"{query}\"",
-    "description": "The search page title for non-empty query"
-  },
-  "theme.SearchPage.emptyResultsTitle": {
-    "message": "Search the documentation",
-    "description": "The search page title for empty query"
-  },
-  "theme.SearchPage.inputPlaceholder": {
-    "message": "Type your search here",
-    "description": "The placeholder for search page input"
-  },
-  "theme.SearchPage.inputLabel": {
-    "message": "Search",
-    "description": "The ARIA label for search page input"
-  },
-  "theme.SearchPage.algoliaLabel": {
-    "message": "Search by Algolia",
-    "description": "The ARIA label for Algolia mention"
-  },
-  "theme.SearchPage.noResultsText": {
-    "message": "No results were found",
-    "description": "The paragraph for empty search result"
-  },
-  "theme.SearchPage.fetchingNewResults": {
-    "message": "Fetching new results...",
-    "description": "The paragraph for fetching new search results"
-  },
-  "theme.SearchBar.label": {
-    "message": "Search",
-    "description": "The ARIA label and placeholder for search button"
-  }
+"message": "Aller au contenu principal",
+"description": "Le label de saut de contenu utilisé pour l'accessibilité, permettant de naviguer rapidement vers le contenu principal avec la navigation clavier tab/enter"
+},
+"theme.SearchPage.documentsFound.plurals": {
+"message": "Un document trouvé | {count} documents trouvés",
+"description": "Label pluralisé pour "{count} documents trouvés". Utilisez autant de formes plurielles (séparées par "|") que votre langue supporte (voir https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+},
+"theme.SearchPage.existingResultsTitle": {
+"message": "Résultats de la recherche pour "{query}"",
+"description": "Le titre de la page de recherche pour une requête non vide"
+},
+"theme.SearchPage.emptyResultsTitle": {
+"message": "Rechercher dans la documentation",
+"description": "Le titre de la page de recherche pour une requête vide"
+},
+"theme.SearchPage.inputPlaceholder": {
+"message": "Tapez votre recherche ici",
+"description": "Le placeholder pour la page de recherche en entrée"
+},
+"theme.SearchPage.inputLabel": {
+"message": "Rechercher",
+"description": "Le label ARIA pour la page de recherche en entrée"
+},
+"theme.SearchPage.algoliaLabel": {
+"message": "Rechercher avec Algolia",
+"description": "Le label ARIA pour la mention d'Algolia"
+},
+"theme.SearchPage.noResultsText": {
+"message": "Aucun résultat n'a été trouvé",
+"description": "Le paragraphe pour les résultats de recherche vides"
+},
+"theme.SearchPage.fetchingNewResults": {
+"message": "Récupération de nouveaux résultats...",
+"description": "Le paragraphe pour la récupération de nouveaux résultats de recherche"
+},
+"theme.SearchBar.label": {
+"message": "Rechercher",
+"description": "Le label ARIA et le placeholder pour le bouton de recherche"
+}
 }
