@@ -1,11 +1,11 @@
 {
   "theme.NotFound.title": {
-    "message": "Page Not Found",
-    "description": "The title of the 404 page"
+    "message": "Page non trouvée",
+    "description": "Le titre de la page 404"
   },
   "theme.NotFound.p1": {
-    "message": "We could not find what you were looking for.",
-    "description": "The first paragraph of the 404 page"
+    "message": "Nous n'avons pas pu trouver ce que vous cherchiez.",
+    "description": "Le premier paragraphe de la page 404"
   },
   "theme.NotFound.p2": {
     "message": "Please contact the owner of the site that linked you to the original URL and let them know their link is broken.",
