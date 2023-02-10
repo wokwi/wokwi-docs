@@ -57,10 +57,10 @@
 },
 "theme.blog.post.plurals": {
 "message": "Un article|{count} articles",
-"description": "Étiquette plurielle pour "{count} articles". Utilisez autant de formes plurielles (séparées par "|") que votre langue prend en charge (voir https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+"description": "Étiquette plurielle pour {count} articles. Utilisez autant de formes plurielles (séparées par "|") que votre langue prend en charge (voir https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
 },
 "theme.blog.tagTitle": {
-"message": "{nPosts} taggés avec "{tagName}"",
+"message": "{nPosts} taggés avec {tagName}",
 "description": "Le titre de la page pour un tag de blog"
 },
 "theme.tags.tagsPageLink": {
