@@ -1,42 +1,42 @@
 {
   "link.title.Docs": {
     "message": "Docs",
-    "description": "The title of the footer links column with title=Docs in the footer"
+    "description": "Le titre de la colonne des liens de pied de page avec titre=Docs dans le pied de page"
   },
   "link.title.Community": {
-    "message": "Community",
-    "description": "The title of the footer links column with title=Community in the footer"
+    "message": "Communauté",
+    "description": "Le titre de la colonne des liens du pied de page avec titre=Communauté dans le pied de page"
   },
   "link.title.More": {
-    "message": "More",
-    "description": "The title of the footer links column with title=More in the footer"
+    "message": "Plus",
+    "description": "Le titre de la colonne des liens du pied de page avec titre=Communauté dans le pied de pager"
   },
   "link.item.label.Welcome": {
-    "message": "Welcome",
-    "description": "The label of footer link with label=Welcome linking to /"
+    "message": "Bienvenue",
+    "description": "L'étiquette du lien de pied de page avec L'étiquette=Bienvenue liant à/"
   },
   "link.item.label.diagram.json": {
     "message": "diagram.json",
-    "description": "The label of footer link with label=diagram.json linking to /diagram-format"
+    "description": "L'étiquette du lien de pied de page avec L'étiquette=diagram.json lié à /diagram-format"
   },
   "link.item.label.Discord": {
     "message": "Discord",
-    "description": "The label of footer link with label=Discord linking to https://wokwi.com/discord"
+    "description": "L'étiquette du lien de pied de page avec L'étiquette=Discord lié à https://wokwi.com/discord"
   },
   "link.item.label.Twitter": {
     "message": "Twitter",
-    "description": "The label of footer link with label=Twitter linking to https://twitter.com/WokwiMakes"
+    "description": "L'étiquette du lien de pied de page avec L'étiquette=Twitter lié à https://twitter.com/WokwiMakes"
   },
   "link.item.label.Blog": {
     "message": "Blog",
-    "description": "The label of footer link with label=Blog linking to https://blog.wokwi.com"
+    "description": "L'étiquette du lien de pied de page avec L'étiquette=Blog lié à https://blog.wokwi.com"
   },
   "link.item.label.GitHub": {
     "message": "GitHub",
-    "description": "The label of footer link with label=GitHub linking to https://github.com/wokwi/wokwi-docs"
+    "description": "L'étiquette du lien de pied de page avec L'étiquette=GitHub Blog lié https://github.com/wokwi/wokwi-docs"
   },
   "copyright": {
-    "message": "Copyright © 2021 CodeMagic LTD. Built with Docusaurus.",
-    "description": "The footer copyright"
+    "message": "Copyright © 2021 CodeMagic LTD. Construit avec Docusaurus.",
+    "description": "Le droit d'auteur du pied de page"
   }
 }
