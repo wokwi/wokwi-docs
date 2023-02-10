@@ -1,194 +1,194 @@
 {
-  "theme.NotFound.title": {
-    "message": "Page non trouvée",
-    "description": "Le titre de la page 404"
-  },
-  "theme.NotFound.p1": {
-    "message": "Nous n'avons pas pu trouver ce que vous cherchiez.",
-    "description": "Le premier paragraphe de la page 404"
-  },
-  "theme.NotFound.p2": {
-    "message": "Veuillez contacter le propriétaire du site qui vous a lié à l'URL d'origine et lui faire savoir que son lien est rompu..",
-    "description": "Le 2ème paragraphe de la page 404"
-  },
-  "theme.AnnouncementBar.closeButtonAriaLabel": {
-    "message": "Fermer",
-    "description": "Le libellé ARIA du bouton de fermeture de la barre d'annoncer"
-  },
-  "theme.blog.post.readingTime.plurals": {
-    "message": "Une minute de lecture|{readingTime} minutes de lecture",
-    "description": "Étiquette au pluriel pourr \"{readingTime} minutes de lecture\". Utilisez autant de formes plurielles (séparé par \"|\") comme support linguistique (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
-  },
-  "theme.tags.tagsListLabel": {
-    "message": "Tags:",
-    "description": "L'étiquette à côté d'une liste de Tags"
-  },
-  "theme.blog.post.readMore": {
-    "message": "Voir Plus",
-    "description": "L'étiquette utilisée dans les extraits d'articles de blog pour créer un lien vers des articles de blog complets"
-  },
-  "theme.blog.paginator.navAriaLabel": {
-    "message": "Blog list page navigation",
-    "description": "The ARIA label for the blog pagination"
-  },
-  "theme.blog.paginator.newerEntries": {
-    "message": "Newer Entries",
-    "description": "The label used to navigate to the newer blog posts page (previous page)"
-  },
-  "theme.blog.paginator.olderEntries": {
-    "message": "Older Entries",
-    "description": "The label used to navigate to the older blog posts page (next page)"
-  },
-  "theme.blog.post.paginator.navAriaLabel": {
-    "message": "Blog post page navigation",
-    "description": "The ARIA label for the blog posts pagination"
-  },
-  "theme.blog.post.paginator.newerPost": {
-"message": "Article plus récent",
-"description": "L'étiquette du bouton de publication de blog pour naviguer vers le nouvel article / précédent"
-},
-"theme.blog.post.paginator.olderPost": {
-"message": "Article plus ancien",
-"description": "L'étiquette du bouton de publication de blog pour naviguer vers l'article plus ancien / suivant"
-},
-"theme.tags.tagsPageTitle": {
-"message": "Tags",
-"description": "Le titre de la page de liste de tags"
-},
-"theme.blog.post.plurals": {
-"message": "Un article|{count} articles",
-"description": "Étiquette plurielle pour {count} articles. Utilisez autant de formes plurielles (séparées par '|') que votre langue prend en charge (voir https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
-},
-"theme.blog.tagTitle": {
-"message": "{nPosts} taggés avec {tagName}",
-"description": "Le titre de la page pour un tag de blog"
-},
-"theme.tags.tagsPageLink": {
-"message": "Voir tous les tags",
-"description": "L'étiquette du lien ciblant la page de liste de tags"
-},
-"theme.CodeBlock.copyButtonAriaLabel": {
-"message": "Copier le code dans le presse-papier",
-"description": "Le label ARIA pour le bouton de copie des blocs de code"
-},
-"theme.CodeBlock.copied": {
-"message": "Copié",
-"description": "L'étiquette du bouton copié sur les blocs de code"
-},
-"theme.CodeBlock.copy": {
-"message": "Copier",
-"description": "L'étiquette du bouton de copie sur les blocs de code"
-},
-"theme.docs.sidebar.expandButtonTitle": {
-"message": "Agrandir la barre latérale",
-"description": "Le libellé ARIA et l'attribut de titre pour le bouton d'expansion de la barre latérale de la documentation"
-},
-"theme.docs.sidebar.expandButtonAriaLabel": {
-"message": "Agrandir la barre latérale",
-"description": "Le libellé ARIA et l'attribut de titre pour le bouton d'expansion de la barre latérale de la documentation"
-},
-"theme.docs.paginator.navAriaLabel": {
-"message": "Navigation des pages de documentation",
-"description": "Le libellé ARIA pour la pagination de la documentation"
-},
-"theme.docs.paginator.previous": {
-"message": "Précédent",
-"description": "Le libellé utilisé pour naviguer vers la documentation précédente"
-},
-"theme.docs.paginator.next": {
-"message": "Suivant",
-"description": "Le libellé utilisé pour naviguer vers la documentation suivante"
-},
-"theme.docs.sidebar.responsiveCloseButtonLabel": {
-"message": "Fermer le menu",
-"description": "Le libellé ARIA pour le bouton de fermeture de la barre latérale mobile de la documentation"
-},
-"theme.docs.sidebar.responsiveOpenButtonLabel": {
-"message": "Ouvrir le menu",
-"description": "Le libellé ARIA pour le bouton d'ouverture de la barre latérale mobile de la documentation"
-},
-"theme.docs.sidebar.collapseButtonTitle": {
-"message": "Réduire la barre latérale",
-"description": "L'attribut de titre pour le bouton de réduction de la barre latérale de la documentation"
-},
-"theme.docs.sidebar.collapseButtonAriaLabel": {
-"message": "Réduire la barre latérale",
-"description": "L'attribut de titre pour le bouton de réduction de la barre latérale de la documentation"
-},
-"theme.docs.versions.unreleasedVersionLabel": {
-"message": "Ceci est une documentation non publiée pour la version {versionLabel} de {siteTitle}.",
-"description": "Le libellé utilisé pour informer l'utilisateur qu'il consulte une version non publiée de la documentation"
-},
-"theme.docs.versions.unmaintainedVersionLabel": {
-"message": "Ceci est une documentation pour la version {versionLabel} de {siteTitle}, qui n'est plus activement maintenue.",
-"description": "Le libellé utilisé pour informer l'utilisateur qu'il consulte une version de documentation qui n'est plus activement maintenue"
-},
-"theme.docs.versions.latestVersionSuggestionLabel": {
-    "message": "Pour la documentation à jour, voir la {latestVersionLink} ({versionLabel}).",
-    "description": "L'étiquette utilisée pour dire à l'utilisateur qu'il parcourt une version de documentation non maintenue"
-  },
-  "theme.docs.versions.latestVersionLinkLabel": {
-    "message": "dernière version",
-    "description": "L'étiquette utilisée pour l'étiquette de lien de suggestion de dernière version"
-  },
-  "theme.common.editThisPage": {
-    "message": "Modifier cette page",
-    "description": "L'étiquette de lien pour modifier la page actuelle"
-  },
-  "theme.common.headingLinkTitle": {
-    "message": "Lien direct vers l'en-tête",
-    "description": "Titre pour le lien vers l'en-tête"
-  },
-  "theme.lastUpdated.atDate": {
-    "message": " le {date}",
-    "description": "Les mots utilisés pour décrire à quelle date une page a été mise à jour pour la dernière fois"
-  },
-  "theme.lastUpdated.byUser": {
-    "message": " par {user}",
-    "description": "Les mots utilisés pour décrire par qui la page a été mise à jour pour la dernière fois"
-  },
-  "theme.lastUpdated.lastUpdatedAtBy": {
-    "message": "Dernière mise à jour{atDate}{byUser}",
-    "description": "La phrase utilisée pour afficher quand une page a été mise à jour pour la dernière fois, et par qui"
-  },
-  "theme.common.skipToMainContent": {
-"message": "Aller au contenu principal",
-"description": "Le label de saut de contenu utilisé pour l'accessibilité, permettant de naviguer rapidement vers le contenu principal avec la navigation clavier tab/enter"
-},
-"theme.SearchPage.documentsFound.plurals": {
-"message": "Un document trouvé | {count} documents trouvés",
-"description": "Label pluralisé pour '{count} documents trouvés'. Utilisez autant de formes plurielles (séparées par "|") que votre langue supporte (voir https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
-},
-"theme.SearchPage.existingResultsTitle": {
-"message": "Résultats de la recherche pour '{query}'",
-"description": "Le titre de la page de recherche pour une requête non vide"
-},
-"theme.SearchPage.emptyResultsTitle": {
-"message": "Rechercher dans la documentation",
-"description": "Le titre de la page de recherche pour une requête vide"
-},
-"theme.SearchPage.inputPlaceholder": {
-"message": "Tapez votre recherche ici",
-"description": "Le placeholder pour la page de recherche en entrée"
-},
-"theme.SearchPage.inputLabel": {
-"message": "Rechercher",
-"description": "Le label ARIA pour la page de recherche en entrée"
-},
-"theme.SearchPage.algoliaLabel": {
-"message": "Rechercher avec Algolia",
-"description": "Le label ARIA pour la mention d'Algolia"
-},
-"theme.SearchPage.noResultsText": {
-"message": "Aucun résultat n'a été trouvé",
-"description": "Le paragraphe pour les résultats de recherche vides"
-},
-"theme.SearchPage.fetchingNewResults": {
-"message": "Récupération de nouveaux résultats...",
-"description": "Le paragraphe pour la récupération de nouveaux résultats de recherche"
-},
-"theme.SearchBar.label": {
-"message": "Rechercher",
-"description": "Le label ARIA et le placeholder pour le bouton de recherche"
-}
+   "theme.NotFound.title":{
+      "message":"Page non trouvée",
+      "description":"Le titre de la page 404"
+   },
+   "theme.NotFound.p1":{
+      "message":"Nous n'avons pas pu trouver ce que vous cherchiez.",
+      "description":"Le premier paragraphe de la page 404"
+   },
+   "theme.NotFound.p2":{
+      "message":"Veuillez contacter le propriétaire du site qui vous a lié à l'URL d'origine et lui faire savoir que son lien est rompu..",
+      "description":"Le 2ème paragraphe de la page 404"
+   },
+   "theme.AnnouncementBar.closeButtonAriaLabel":{
+      "message":"Fermer",
+      "description":"Le libellé ARIA du bouton de fermeture de la barre d'annoncer"
+   },
+   "theme.blog.post.readingTime.plurals":{
+      "message":"Une minute de lecture|{readingTime} minutes de lecture",
+      "description":"Étiquette au pluriel pourr \"{readingTime} minutes de lecture\". Utilisez autant de formes plurielles (séparé par \"|\") comme support linguistique (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+   },
+   "theme.tags.tagsListLabel":{
+      "message":"Tags:",
+      "description":"L'étiquette à côté d'une liste de Tags"
+   },
+   "theme.blog.post.readMore":{
+      "message":"Voir Plus",
+      "description":"L'étiquette utilisée dans les extraits d'articles de blog pour créer un lien vers des articles de blog complets"
+   },
+   "theme.blog.paginator.navAriaLabel":{
+      "message":"Blog list page navigation",
+      "description":"The ARIA label for the blog pagination"
+   },
+   "theme.blog.paginator.newerEntries":{
+      "message":"Newer Entries",
+      "description":"The label used to navigate to the newer blog posts page (previous page)"
+   },
+   "theme.blog.paginator.olderEntries":{
+      "message":"Older Entries",
+      "description":"The label used to navigate to the older blog posts page (next page)"
+   },
+   "theme.blog.post.paginator.navAriaLabel":{
+      "message":"Blog post page navigation",
+      "description":"The ARIA label for the blog posts pagination"
+   },
+   "theme.blog.post.paginator.newerPost":{
+      "message":"Article plus récent",
+      "description":"L'étiquette du bouton de publication de blog pour naviguer vers le nouvel article / précédent"
+   },
+   "theme.blog.post.paginator.olderPost":{
+      "message":"Article plus ancien",
+      "description":"L'étiquette du bouton de publication de blog pour naviguer vers l'article plus ancien / suivant"
+   },
+   "theme.tags.tagsPageTitle":{
+      "message":"Tags",
+      "description":"Le titre de la page de liste de tags"
+   },
+   "theme.blog.post.plurals":{
+      "message":"Un article|{count} articles",
+      "description":"Étiquette plurielle pour {count} articles. Utilisez autant de formes plurielles (séparées par '|') que votre langue prend en charge (voir https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+   },
+   "theme.blog.tagTitle":{
+      "message":"{nPosts} taggés avec {tagName}",
+      "description":"Le titre de la page pour un tag de blog"
+   },
+   "theme.tags.tagsPageLink":{
+      "message":"Voir tous les tags",
+      "description":"L'étiquette du lien ciblant la page de liste de tags"
+   },
+   "theme.CodeBlock.copyButtonAriaLabel":{
+      "message":"Copier le code dans le presse-papier",
+      "description":"Le label ARIA pour le bouton de copie des blocs de code"
+   },
+   "theme.CodeBlock.copied":{
+      "message":"Copié",
+      "description":"L'étiquette du bouton copié sur les blocs de code"
+   },
+   "theme.CodeBlock.copy":{
+      "message":"Copier",
+      "description":"L'étiquette du bouton de copie sur les blocs de code"
+   },
+   "theme.docs.sidebar.expandButtonTitle":{
+      "message":"Agrandir la barre latérale",
+      "description":"Le libellé ARIA et l'attribut de titre pour le bouton d'expansion de la barre latérale de la documentation"
+   },
+   "theme.docs.sidebar.expandButtonAriaLabel":{
+      "message":"Agrandir la barre latérale",
+      "description":"Le libellé ARIA et l'attribut de titre pour le bouton d'expansion de la barre latérale de la documentation"
+   },
+   "theme.docs.paginator.navAriaLabel":{
+      "message":"Navigation des pages de documentation",
+      "description":"Le libellé ARIA pour la pagination de la documentation"
+   },
+   "theme.docs.paginator.previous":{
+      "message":"Précédent",
+      "description":"Le libellé utilisé pour naviguer vers la documentation précédente"
+   },
+   "theme.docs.paginator.next":{
+      "message":"Suivant",
+      "description":"Le libellé utilisé pour naviguer vers la documentation suivante"
+   },
+   "theme.docs.sidebar.responsiveCloseButtonLabel":{
+      "message":"Fermer le menu",
+      "description":"Le libellé ARIA pour le bouton de fermeture de la barre latérale mobile de la documentation"
+   },
+   "theme.docs.sidebar.responsiveOpenButtonLabel":{
+      "message":"Ouvrir le menu",
+      "description":"Le libellé ARIA pour le bouton d'ouverture de la barre latérale mobile de la documentation"
+   },
+   "theme.docs.sidebar.collapseButtonTitle":{
+      "message":"Réduire la barre latérale",
+      "description":"L'attribut de titre pour le bouton de réduction de la barre latérale de la documentation"
+   },
+   "theme.docs.sidebar.collapseButtonAriaLabel":{
+      "message":"Réduire la barre latérale",
+      "description":"L'attribut de titre pour le bouton de réduction de la barre latérale de la documentation"
+   },
+   "theme.docs.versions.unreleasedVersionLabel":{
+      "message":"Ceci est une documentation non publiée pour la version {versionLabel} de {siteTitle}.",
+      "description":"Le libellé utilisé pour informer l'utilisateur qu'il consulte une version non publiée de la documentation"
+   },
+   "theme.docs.versions.unmaintainedVersionLabel":{
+      "message":"Ceci est une documentation pour la version {versionLabel} de {siteTitle}, qui n'est plus activement maintenue.",
+      "description":"Le libellé utilisé pour informer l'utilisateur qu'il consulte une version de documentation qui n'est plus activement maintenue"
+   },
+   "theme.docs.versions.latestVersionSuggestionLabel":{
+      "message":"Pour la documentation à jour, voir la {latestVersionLink} ({versionLabel}).",
+      "description":"L'étiquette utilisée pour dire à l'utilisateur qu'il parcourt une version de documentation non maintenue"
+   },
+   "theme.docs.versions.latestVersionLinkLabel":{
+      "message":"dernière version",
+      "description":"L'étiquette utilisée pour l'étiquette de lien de suggestion de dernière version"
+   },
+   "theme.common.editThisPage":{
+      "message":"Modifier cette page",
+      "description":"L'étiquette de lien pour modifier la page actuelle"
+   },
+   "theme.common.headingLinkTitle":{
+      "message":"Lien direct vers l'en-tête",
+      "description":"Titre pour le lien vers l'en-tête"
+   },
+   "theme.lastUpdated.atDate":{
+      "message":" le {date}",
+      "description":"Les mots utilisés pour décrire à quelle date une page a été mise à jour pour la dernière fois"
+   },
+   "theme.lastUpdated.byUser":{
+      "message":" par {user}",
+      "description":"Les mots utilisés pour décrire par qui la page a été mise à jour pour la dernière fois"
+   },
+   "theme.lastUpdated.lastUpdatedAtBy":{
+      "message":"Dernière mise à jour{atDate}{byUser}",
+      "description":"La phrase utilisée pour afficher quand une page a été mise à jour pour la dernière fois, et par qui"
+   },
+   "theme.common.skipToMainContent":{
+      "message":"Aller au contenu principal",
+      "description":"Le label de saut de contenu utilisé pour l'accessibilité, permettant de naviguer rapidement vers le contenu principal avec la navigation clavier tab/enter"
+   },
+   "theme.SearchPage.documentsFound.plurals":{
+      "message":"Un document trouvé | {count} documents trouvés",
+      "description":"Label pluralisé pour '{count} documents trouvés'. Utilisez autant de formes plurielles (séparées par ""|"") que votre langue supporte (voir https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+   },
+   "theme.SearchPage.existingResultsTitle":{
+      "message":"Résultats de la recherche pour '{query}'",
+      "description":"Le titre de la page de recherche pour une requête non vide"
+   },
+   "theme.SearchPage.emptyResultsTitle":{
+      "message":"Rechercher dans la documentation",
+      "description":"Le titre de la page de recherche pour une requête vide"
+   },
+   "theme.SearchPage.inputPlaceholder":{
+      "message":"Tapez votre recherche ici",
+      "description":"Le placeholder pour la page de recherche en entrée"
+   },
+   "theme.SearchPage.inputLabel":{
+      "message":"Rechercher",
+      "description":"Le label ARIA pour la page de recherche en entrée"
+   },
+   "theme.SearchPage.algoliaLabel":{
+      "message":"Rechercher avec Algolia",
+      "description":"Le label ARIA pour la mention d'Algolia"
+   },
+   "theme.SearchPage.noResultsText":{
+      "message":"Aucun résultat n'a été trouvé",
+      "description":"Le paragraphe pour les résultats de recherche vides"
+   },
+   "theme.SearchPage.fetchingNewResults":{
+      "message":"Récupération de nouveaux résultats...",
+      "description":"Le paragraphe pour la récupération de nouveaux résultats de recherche"
+   },
+   "theme.SearchBar.label":{
+      "message":"Rechercher",
+      "description":"Le label ARIA et le placeholder pour le bouton de recherche"
+   }
 }
