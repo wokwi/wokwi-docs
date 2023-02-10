@@ -157,10 +157,10 @@
 },
 "theme.SearchPage.documentsFound.plurals": {
 "message": "Un document trouvé | {count} documents trouvés",
-"description": "Label pluralisé pour "{count} documents trouvés". Utilisez autant de formes plurielles (séparées par "|") que votre langue supporte (voir https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+"description": "Label pluralisé pour '{count} documents trouvés'. Utilisez autant de formes plurielles (séparées par "|") que votre langue supporte (voir https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
 },
 "theme.SearchPage.existingResultsTitle": {
-"message": "Résultats de la recherche pour "{query}"",
+"message": "Résultats de la recherche pour '{query}'",
 "description": "Le titre de la page de recherche pour une requête non vide"
 },
 "theme.SearchPage.emptyResultsTitle": {
