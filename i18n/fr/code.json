@@ -16,16 +16,16 @@
     "description": "Le libellé ARIA du bouton de fermeture de la barre d'annoncer"
   },
   "theme.blog.post.readingTime.plurals": {
-    "message": "One min read|{readingTime} min read",
-    "description": "Pluralized label for \"{readingTime} min read\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+    "message": "Une minute de lecture|{readingTime} minutes de lecture",
+    "description": "Étiquette au pluriel pourr \"{readingTime} minutes de lecture\". Utilisez autant de formes plurielles (séparé par \"|\") comme support linguistique (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
   },
   "theme.tags.tagsListLabel": {
     "message": "Tags:",
-    "description": "The label alongside a tag list"
+    "description": "L'étiquette à côté d'une liste de Tags"
   },
   "theme.blog.post.readMore": {
-    "message": "Read More",
-    "description": "The label used in blog post item excerpts to link to full blog posts"
+    "message": "Voir Plus",
+    "description": "L'étiquette utilisée dans les extraits d'articles de blog pour créer un lien vers des articles de blog complets"
   },
   "theme.blog.paginator.navAriaLabel": {
     "message": "Blog list page navigation",
