@@ -60,6 +60,10 @@ As mensagens de depuração do seu chip serão impressas na cor verde:
 
 Além disso, você pode usar o [Analisador Lógico Wokwi](../guides/logic-analyzer) para depurar a comunicação com seu chip personalizado.
 
+:::tip Dica
+Certifique-se de incluir uma nova linha ("\n") no final de suas mensagens `printf()`. O simulador mostra as mensagens somente quando possuí um caractere de nova linha.
+:::
+
 ## Referência da API dos chips 📖
 
 - [API de pinos GPIO](gpio)
