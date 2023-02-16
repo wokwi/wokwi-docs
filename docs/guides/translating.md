@@ -19,11 +19,13 @@ Not all the texts are currently available for translation, but we're adding new 
 
 - [Chinese](https://wokwi.com/projects/new?lang=zh)
 - [Czech](https://wokwi.com/projects/new?lang=cs)
+- [Dutch](https://wokwi.com/projects/new?lang=nl)
 - [Spanish (spain)](https://wokwi.com/projects/new?lang=es-ES)
 - [French](https://wokwi.com/projects/new?lang=fr)
 - [German](https://wokwi.com/projects/new?lang=de)
 - [Hungarian](https://wokwi.com/projects/new?lang=hu)
 - [Italian](https://wokwi.com/projects/new?lang=it)
+- [Norwegian](https://wokwi.com/projects/new?lang=nb-NO)
 - [Polish](https://wokwi.com/projects/new?lang=pl)
 - [Portuguese](https://wokwi.com/projects/new?lang=pt-BR)
 - [Russian](https://wokwi.com/projects/new?lang=ru)
