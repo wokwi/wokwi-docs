@@ -9,6 +9,10 @@ sidebar_label: API Time
 
 Retorna o tempo atual (virtual) do simulador em nanossegundos.
 
+:::tip Dica
+Você pode obter a hora atual em microssegundos chamando `get_sim_nanos() / 1000`, ou em milissegundos chamando `get_sim_nanos() / 1000000`.
+:::
+
 ### timer_t timer_init(timer_config_t \*config)
 
 Inicializa um novo temporizador. Retorna o identificador do temporizador. Chame `timer_start()` para iniciar o cronômetro e defina o retorno de chamada `chip_timer_event()` para responder aos eventos do cronômetro.
