@@ -35,6 +35,25 @@ You check test your configuration by pressing **F1** and then selecting "**Wokwi
 Avoid using backslashes (`\`) in your paths. Use forward slash (`/`) instead, as it makes it possible to open your project on any platform (Windows, Mac and Linux).
 :::
 
+### Serial port forwarding
+
+Wokwi for VS Code allows you to connect to the serial port of the simulated microcontroller using an RFC2217 TCP server. To enable this feature, add the following configuration to your wokwi.toml file, inside the `[wokwi]` section:
+
+```toml
+rfc2217ServerPort = 4000
+```
+
+This will start an RFC2217 server on port 4000. You can then use any telnet client (e.g. [PuTTY](https://www.putty.org/)) to connect to the serial port. In addition, you can use PySerial's [RFC2217 support](https://pyserial.readthedocs.io/en/latest/url_handlers.html#rfc2217) to connect to the serial port from your Python code:
+
+```python
+import serial
+
+ser = serial.serial_for_url('rfc2217://localhost:4000', baudrate=115200)
+ser.write(b'hello')
+```
+
+Note: make sure the simulator tab is visible in VS Code, otherwise the simulation may pause and you won't get any serial output from the microcontroller.
+
 ### IoT Gateway (ESP32 WiFi)
 
 Wokwi for VS Code includes a bundled version of the [Wokwi Private IoT Gateway](../guides/esp32-wifi#internet-access), which allows you to connect the virtual WiFi of the simulated ESP32 to your local network and the Internet.
