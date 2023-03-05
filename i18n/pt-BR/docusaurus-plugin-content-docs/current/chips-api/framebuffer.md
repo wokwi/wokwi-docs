@@ -5,7 +5,7 @@ sidebar_label: API Framebuffer
 
 # API Framebuffer
 
-Use a API Framebuffer para implementar displays (LCD, OLED, e-paper, etc.). O tamanho de exibição é definido no arquivo `.chip.json`. O framebuffer usa 32 bits por pixel. Os pixels são armazenados no formato RGBA. O tamanho total do buffer é `pixel_width * pixel_height * 4`.
+Use a API Framebuffer para implementar displays (LCD, OLED, e-paper, etc.). O tamanho de exibição é definido no arquivo `.chip.json`. O framebuffer usa 32 bits por pixel. Os pixels são armazenados no formato RGBA. O tamanho total do buffer é `pixel_width * pixel_height * 4` bytes.
 
 ### buffer_t framebuffer_init(uint32_t *pixel_width, uint32_t *pixel_height)
 
@@ -17,11 +17,11 @@ Nota: `framebuffer_init` só pode ser chamado de `chip_init()`. Não chame isso 
 
 :::
 
-### void buffer_write(buffer_t buffer, uint32_t offset, uint8_t \*data, uint8_t data_len)
+### void buffer_write(buffer_t buffer, uint32_t offset, void \*data, uint32_t data_len)
 
 Copia os bytes `data_len` de `data` para o frame buffer, no `offset` fornecido.
 
-### void buffer_read(buffer_t buffer, uint32_t offset, uint8_t \*data, uint8_t data_len)
+### void buffer_read(buffer_t buffer, uint32_t offset, void \*data, uint32_t data_len)
 
 Copia os bytes `data_len` no `offset` fornecido do frame buffer em `data`.
 
