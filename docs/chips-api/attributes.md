@@ -7,6 +7,13 @@ sidebar_label: Attributes
 
 Attributes are input parameters that the user can set in `diagram.json`. You can also define a `controls` section in the `.chip.json` file to let the user edit these parameters interactively during the simulation. This is particularly useful for sensor inputs (e.g. temperature, humidity, etc.).
 
+### Naming
+
+When naming your attributes, please follow the following conventions:
+
+- Use `camelCase` for attribute names
+- Use American English spelling (e.g. `color` and not `colour`)
+
 ### uint32_t attr_init(const char \*name, uint32_t default_value)
 
 Defines a new integer attribute with the given name. The `default_value` will be used when the user does not define a value for the attribute in `diagram.json` (under the `attrs` section of the custom chip `part`).
