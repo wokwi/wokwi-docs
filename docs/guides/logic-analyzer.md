@@ -31,7 +31,7 @@ The [configurable trigger](#using-the-trigger) lets you record just part of the 
 
 ## Using the Logic Analyzer
 
-First, add the Logic Analyzer to your project. You can do this by clicking the purple Plus button, then selecting "Logic Analyzer (8 channels)".
+First, add the Logic Analyzer to your project. You can do this by clicking the blue Plus button, then selecting "Logic Analyzer (8 channels)".
 
 Next, connect the signals you want to record to the Logic Analyzer pins. For instance, if you want to record the I2C communication between an Arduino Uno and some peripheral (such as the [DS1307 RTC](../parts/wokwi-ds1307)), you can connect pins A4/A5 (which carry the SDA/SCL signals) to pins D0/D1 of the Logic Analyzer.
 

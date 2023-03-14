@@ -9,13 +9,13 @@ By default, Wokwi compiles your code with the standard built-in Arduino librarie
 
 ## Adding third party libraries
 
-To add third-party libraries to your project, go to the "Library Manager" tab in the code editor, and press the purple "+" button. Type some text in the search box to search for a library (e.g. "FastLED"), and then click on one of the library names in the list to add it.
+To add third-party libraries to your project, go to the "Library Manager" tab in the code editor, and press the blue "+" button. Type some text in the search box to search for a library (e.g. "FastLED"), and then click on one of the library names in the list to add it.
 
 You can use this method to install any Arduino library from the Arduino Library Manager. 
 
 ### Uploading custom libraries
 
-[Club members](https://wokwi.com/club) can upload any Arduino library by selecting a folder from their computer. To upload a custom library, click on the purple "+" button in the Arduino library manager and then click on "Upload a Library".
+[Club members](https://wokwi.com/club) can upload any Arduino library by selecting a folder from their computer. To upload a custom library, click on the blue "+" button in the Arduino library manager and then click on "Upload a Library".
 
 The selected folder should contain the source code for the library (.h and .c/.cpp files). After selecting a folder, Wokwi will zip its contents and upload it to the Wokwi build server. You will be able to see the library in the Library Mananger as a .zip file.
 

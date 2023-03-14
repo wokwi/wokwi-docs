@@ -9,7 +9,7 @@ The diagram editor provides an interactive way to edit your diagram: add compone
 
 ### Adding a part
 
-To add a new part, click on the purple "+" button at the top of the diagram editor.
+To add a new part, click on the blue "+" button at the top of the diagram editor.
 
 You'll see a menu with a list of parts you can add. Choose a part to add it. The part will be added at position (0, 0), and then you can drag it to the desired position.
 

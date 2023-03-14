@@ -27,7 +27,7 @@ When you start the simulation, Wokwi creates a FAT16 file system and attaches it
 
 ### Uploading binary files
 
-[Club](https://wokwi.com) users can upload custom binary files (e.g. bitmaps, sounds, etc.) to the microSD card's filesystem. After adding a microSD card to your project, you'll see a new "SD Card" tab next to the other tabs in the code editor. Click on the purple "Upload Files" buttons and select any files you wish to upload.
+[Club](https://wokwi.com) users can upload custom binary files (e.g. bitmaps, sounds, etc.) to the microSD card's filesystem. After adding a microSD card to your project, you'll see a new "SD Card" tab next to the other tabs in the code editor. Click on the "Upload Files" buttons and select any files you wish to upload.
 
 You can also upload a complete folder tree (useful if you have a physical SD card attached to your computer and you want to upload all the data from it, as-as). Click on the small arrow next to the "Upload Files" button and select "Upload complete folder". Then select the folder with the files you want to upload.
 
