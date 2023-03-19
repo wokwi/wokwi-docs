@@ -7,6 +7,13 @@ sidebar_label: Atributos
 
 Atributos são parâmetros de entrada que o usuário pode definir em `diagram.json`. Você também pode definir uma seção `controls` no arquivo `.chip.json` para permitir que o usuário edite esses parâmetros interativamente durante a simulação. Isso é particularmente útil para entradas de sensores (por exemplo, temperatura, umidade, etc.).
 
+### Nomenclatura
+
+Ao nomear seus atributos, siga as seguintes convenções:
+
+- Use `camelCase` para nomes de atributos
+- Use a ortografia do Inglês Americano (por exemplo, `color` e não `colour`)
+
 ### uint32_t attr_init(const char \*name, uint32_t default_value)
 
 Define um novo atributo inteiro com o nome fornecido. O `default_value` será usado quando o usuário não definir um valor para o atributo em `diagram.json` (na seção `attrs` da `parte` do chip personalizado).

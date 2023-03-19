@@ -9,13 +9,13 @@ Por padrão, o Wokwi compila seu código com as bibliotecas padrão integradas d
 
 ## Adicionando bibliotecas de terceiros
 
-Para adicionar bibliotecas de terceiros ao seu projeto, vá para a guia "Library Manager" no editor de código e pressione o botão roxo "+". Digite algum texto na caixa de pesquisa para procurar uma biblioteca (por exemplo, "FastLED") e clique em um dos nomes de biblioteca na lista para adicioná-la.
+Para adicionar bibliotecas de terceiros ao seu projeto, vá para a guia "Library Manager" no editor de código e pressione o botão azul "+". Digite algum texto na caixa de pesquisa para procurar uma biblioteca (por exemplo, "FastLED") e clique em um dos nomes de biblioteca na lista para adicioná-la.
 
 Você pode usar este método para instalar qualquer biblioteca do Arduino a partir do Arduino Library Manager.
 
 ### Carregando bibliotecas personalizadas
 
-[Membros do clube](https://wokwi.com/club) podem fazer upload de qualquer biblioteca do Arduino selecionando uma pasta em seu computador. Para fazer upload de uma biblioteca personalizada, clique no botão roxo "+" no gerenciador de bibliotecas do Arduino e clique em "Upload a Library".
+[Membros do clube](https://wokwi.com/club) podem fazer upload de qualquer biblioteca do Arduino selecionando uma pasta em seu computador. Para fazer upload de uma biblioteca personalizada, clique no botão azul "+" no gerenciador de bibliotecas do Arduino e clique em "Upload a Library".
 
 A pasta selecionada deve conter o código-fonte da biblioteca (arquivos .h e .c/.cpp). Depois de selecionar uma pasta, o Wokwi compactará seu conteúdo e fará o upload para o servidor de compilação do Wokwi. Você poderá ver a biblioteca no Library Manager como um arquivo .zip.
 
