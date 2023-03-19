@@ -27,7 +27,7 @@ Quando você inicia a simulação, o Wokwi cria um sistema de arquivos FAT16 e o
 
 ### Carregando arquivos binários
 
-Os usuários do [Club](https://wokwi.com) podem fazer upload de arquivos binários personalizados (por exemplo, bitmaps, sons, etc.) Depois de adicionar um cartão microSD ao seu projeto, você verá uma nova guia "Cartão SD" ao lado das outras guias no editor de código. Clique nos botões roxos "Fazer upload de arquivos" e selecione os arquivos que deseja enviar.
+Os usuários do [Club](https://wokwi.com) podem fazer upload de arquivos binários personalizados (por exemplo, bitmaps, sons, etc.) Depois de adicionar um cartão microSD ao seu projeto, você verá uma nova guia "Cartão SD" ao lado das outras guias no editor de código. Clique no botão azul "Fazer upload de arquivos" e selecione os arquivos que deseja enviar.
 
 Você também pode fazer upload de uma árvore de pastas completa (útil se você tiver um cartão SD físico conectado ao seu computador e quiser fazer upload de todos os dados dele, como-as). Clique na pequena seta ao lado do botão "Carregar arquivos" e selecione "Carregar pasta completa". Em seguida, selecione a pasta com os arquivos que deseja enviar.
 

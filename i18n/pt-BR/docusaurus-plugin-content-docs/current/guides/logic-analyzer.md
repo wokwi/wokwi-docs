@@ -31,7 +31,7 @@ O [acionamento configurável](#usando-o-acionamento) permite registrar apenas pa
 
 ## Usando o Analisador Lógico
 
-Primeiro, adicione o Analisador Lógico ao seu projeto. Você pode fazer isso clicando no botão de adição roxo e selecionando "Logic Analyzer (8 channels)".
+Primeiro, adicione o Analisador Lógico ao seu projeto. Você pode fazer isso clicando no botão de adição azul e selecionando "Logic Analyzer (8 channels)".
 
 Em seguida, conecte os sinais que deseja gravar aos pinos do Analisador Lógico. Por exemplo, se você deseja gravar a comunicação I2C entre um Arduino Uno e alguns periférico (como o [DS1307 RTC](../parts/wokwi-ds1307)), você pode conectar os pinos A4/A5 (que transportam os sinais SDA/SCL) aos pinos D0/D1 do Analisador Lógico.
 

@@ -13,7 +13,7 @@ Existem três maneiras de obter poderes de voto:
 2. Junte-se ao [clube Wokwi](https://wokwi.com/club) para uma contribuição mensal. Você receberá dois VotePowers para cada USD que gastar todos os meses.
 3. Ocasionalmente, oferecemos VotePowers para usuários que contribuem com o Wokwi ou criam projetos excepcionais no Wokwi. Para manter as coisas justas para os usuários que apoiam financeiramente o Wokwi, distribuiremos no máximo 100 VotePowers em um único mês.
 
-Você pode ver o seu saldo VotePower no topo da [página de recursos](https://wokwi.com/features). Caso você não tenha VotePowers, verá um botão roxo dizendo _Get VotePowers_.
+Você pode ver o seu saldo VotePower no topo da [página de recursos](https://wokwi.com/features). Caso você não tenha VotePowers, verá um botão azul dizendo _Get VotePowers_.
 
 ## Votação de recursos
 

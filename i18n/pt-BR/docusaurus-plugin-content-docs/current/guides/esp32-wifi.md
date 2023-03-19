@@ -104,9 +104,13 @@ Após executar o gateway, abra qualquer projeto no Wokwi, vá até o editor de c
 
 Em seguida, execute qualquer projeto ESP32 que use o WiFi. Olhe para a saída do gateway, deve dizer "Client connected". Isso significa que você está usando o Gateway Privado.
 
-Se o seu projeto ESP32 for um servidor HTTP, você pode se conectar a ele a partir do seu navegador em [http://localhost:9080/](http://localhost:9080). A conexão será encaminhada pelo gateway para a porta HTTP padrão (80) no ESP32 simulado. Se você precisar encaminhar portas diferentes, por favor [abra uma issue no Github](https://github.com/wokwi/wokwigw/issues/new).
+Se o seu projeto ESP32 for um servidor HTTP, você pode se conectar a ele pelo navegador em [http://localhost:9080/](http://localhost:9080). A conexão será encaminhada pelo gateway para a porta HTTP padrão (80) no ESP32 simulado.
 
-Nota: O gateway de IoT privado não tem suporte no momento ao Safari devido a [uma limitação técnica](https://bugs.webkit.org/show_bug.cgi?id=171934#c96). Use um navegador diferente (por exemplo, Chrome, Firefox, Edge).
+Você pode encaminhar uma porta diferente executando o gateway IoT com a opção `--forward`, por exemplo `--forward 1234:10.13.37.2:8080`. Isso encaminhará todas as conexões TCP da porta 1234 em seu computador para a porta 8080 no ESP32 simulado.
+
+:::caution Aviso
+O gateway de IoT privado não tem suporte no momento ao Safari devido a [uma limitação técnica](https://bugs.webkit.org/show_bug.cgi?id=171934#c96). Use um navegador diferente (por exemplo, Chrome, Firefox, Edge).
+:::
 
 ## Uso Avançado
 

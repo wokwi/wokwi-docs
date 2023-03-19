@@ -20,7 +20,7 @@ Wokwi for VS Code está atualmente em beta público. Após a versão beta, algun
 
 Primeiro, instale a extensão [Wokwi for VS Code](https://marketplace.visualstudio.com/items?itemName=wokwi.wokwi-vscode). Em seguida, pressione `F1` e selecione "Wokwi: Solicitar uma nova licença". O VS Code solicitará que você confirme a abertura do site Wokwi em seu navegador. Confirme clicando em "Abrir".
 
-Em seguida, clique no botão roxo que diz "GET YOUR LICENSE". Você pode ser solicitado a entrar em sua conta Wokwi. Se você não tiver uma conta, poderá criar uma gratuitamente.
+Em seguida, clique no botão azul que diz "GET YOUR LICENSE". Você pode ser solicitado a entrar em sua conta Wokwi. Se você não tiver uma conta, poderá criar uma gratuitamente.
 
 O navegador pedirá uma confirmação para enviar a licença para o VS Code. Confirme (talvez seja necessário confirmar duas vezes, uma vez no navegador e outra no VS Code). Você verá uma mensagem no VS Code que diz "License activated for [seu nome]". Parabéns!
 
