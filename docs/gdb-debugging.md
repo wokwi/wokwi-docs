@@ -1,9 +1,9 @@
 ---
-title: GDB Debugging
-sidebar_label: Debugging
+title: GDB Debugging (Advanced)
+sidebar_label: GDB Debugging
 ---
 
-GDB is a powerful source code debugger. You can use it to debug your Arduino code in Wokwi.
+GDB is a powerful source code debugger. You can use it to debug your Arduino and Raspberry Pi Pico code in Wokwi.
 
 ## Running GDB in Wokwi
 

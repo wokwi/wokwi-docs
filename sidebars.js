@@ -4,6 +4,7 @@ module.exports = {
     Guides: [
       'guides/diagram-editor',
       'keyboard-shortcuts',
+      'guides/debugger',
       'gdb-debugging',
       'guides/serial-monitor',
       'guides/logic-analyzer',
