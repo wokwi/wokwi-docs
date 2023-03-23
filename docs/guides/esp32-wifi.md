@@ -36,7 +36,7 @@ void loop() {
 }
 ```
 
-Note: We specify the WiFi channel number (6) when calling `WiFi.begin()`. The skips the WiFi scanning phase and saves about 4 seconds when connecting to the WiFi.
+Note: We specify the WiFi channel number (6) when calling `WiFi.begin()`. This skips the WiFi scanning phase and saves about 4 seconds when connecting to the WiFi.
 
 ### Connecting from MicroPython
 
