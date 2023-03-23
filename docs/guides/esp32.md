@@ -83,35 +83,35 @@ The following examples use the ESP-IDF functions. They are compiled using Arduin
 
 ## Simulation Features
 
-| Peripheral         | ESP32 | S2  | S3  | C3  | Notes                                                                    |
-| ------------------ | ----- | --- | --- | --- | ------------------------------------------------------------------------ |
-| Processor core(s)  | ✔️    | ✔️  | ✔️  | ✔️  |                                                                          |
-| GPIO               | ✔️    | ✔️  | 🟡  | ✔️  | Interrupts supported                                                     |
-| IOMUX              | 🟡    | 🟡  | 🟡  | 🟡  |                                                                          |
-| PSRAM              | ✔️    | ✔️  | ✔️  | —   | 4MB of external SRAM \*                                                  |
-| UART               | ✔️    | ✔️  | ✔️  | ✔️  |                                                                          |
-| USB                | —     | ✔️  | ✔️  | ❌  | Support for UART over USB (CDC)                                          |
-| I2C                | ✔️    | ✔️  | ✔️  | ✔️  | Master only. 10-bit addressing not supported.                            |
-| I2S                | ❌    | ❌  | ❌  | ❌  | [Open for voting](https://wokwi.com/features#feature-1031718532)         |
-| SPI                | ✔️    | ✔️  | ✔️  | ✔️  |                                                                          |
-| TWAI               | ❌    | ❌  | ❌  | ❌  |                                                                          |
-| RMT                | 🟡    | 🟡  | ❌  | 🟡  | Transmit-only, use to control NeoPixels                                  |
-| LEDC PWM           | ✔️    | ✔️  | ❌  | ✔️  | Used by analogWrite(), Servo, Buzzer, etc.                               |
-| MCPWM              | ❌    | —   | ❌  | —   |                                                                          |
-| DMA                | 🟡    | 🟡  | ❌  | ❌  |                                                                          |
-| WiFi               | ✔️    | ✔️  | ✔️  | ✔️  | See the [ESP32 WiFi Guide](./esp32-wifi)                                 |
-| Bluetooth          | ❌    | —   | ❌  | ❌  | [Open for voting](https://wokwi.com/features#feature-1047159691)         |
-| Timers             | 🟡    | ✔️  | 🟡  | ✔️  |                                                                          |
-| Watchdog           | ❌    | ❌  | ❌  | ❌  |                                                                          |
-| RTC                | 🟡    | 🟡  | 🟡  | 🟡  | Only RTC Pull-up / Pull-down resistors                                   |
-| ADC                | ✔️    | ✔️  | ❌  | ✔️  | Note: analogRead() returns values up to 4095                             |
-| RNG                | ✔️    | ✔️  | ✔️  | ✔️  | Random Number Generator                                                  |
-| AES Accelerator    | ✔️    | ✔️  | ❌  | ✔️  |                                                                          |
-| SHA Accelerator    | ✔️    | ✔️  | ❌  | ✔️  |                                                                          |
-| RSA Accelerator    | ✔️    | ✔️  | ❌  | ✔️  |                                                                          |
-| Hall Effect Sensor | ❌    | —   | ❌  | —   |                                                                          |
-| ULP Processor      | ❌    | ❌  | ❌  | ❌  |                                                                          |
-| GDB Debugging      | 🟡    | 🟡  | 🟡  | 🟡  | Only through [wokwi-gdbserver](https://github.com/wokwi/wokwi-gdbserver) |
+| Peripheral         | ESP32 | S2  | S3  | C3  | Notes                                                            |
+| ------------------ | ----- | --- | --- | --- | ---------------------------------------------------------------- |
+| Processor core(s)  | ✔️    | ✔️  | ✔️  | ✔️  |                                                                  |
+| GPIO               | ✔️    | ✔️  | 🟡  | ✔️  | Interrupts supported                                             |
+| IOMUX              | ✔️    | ✔️  | ✔️  | ✔️  |                                                                  |
+| PSRAM              | ✔️    | ✔️  | ✔️  | —   | 4MB of external SRAM \*                                          |
+| UART               | ✔️    | ✔️  | ✔️  | ✔️  |                                                                  |
+| USB                | —     | ✔️  | ✔️  | ❌  | Support for UART over USB (CDC)                                  |
+| I2C                | ✔️    | ✔️  | ✔️  | ✔️  | Master only. 10-bit addressing not supported.                    |
+| I2S                | ❌    | ❌  | ❌  | ❌  | [Open for voting](https://wokwi.com/features#feature-1031718532) |
+| SPI                | ✔️    | ✔️  | ✔️  | ✔️  |                                                                  |
+| TWAI               | ❌    | ❌  | ❌  | ❌  |                                                                  |
+| RMT                | 🟡    | 🟡  | ❌  | 🟡  | Transmit-only, use to control NeoPixels                          |
+| LEDC PWM           | ✔️    | ✔️  | ❌  | ✔️  | Used by analogWrite(), Servo, Buzzer, etc.                       |
+| MCPWM              | ❌    | —   | ❌  | —   |                                                                  |
+| DMA                | 🟡    | 🟡  | ❌  | ❌  |                                                                  |
+| WiFi               | ✔️    | ✔️  | ✔️  | ✔️  | See the [ESP32 WiFi Guide](./esp32-wifi)                         |
+| Bluetooth          | ❌    | —   | ❌  | ❌  | [Open for voting](https://wokwi.com/features#feature-1047159691) |
+| Timers             | 🟡    | ✔️  | 🟡  | ✔️  |                                                                  |
+| Watchdog           | ❌    | ❌  | ❌  | ❌  |                                                                  |
+| RTC                | 🟡    | 🟡  | 🟡  | 🟡  | Only RTC Pull-up / Pull-down resistors                           |
+| ADC                | ✔️    | ✔️  | ❌  | ✔️  | Note: analogRead() returns values up to 4095                     |
+| RNG                | ✔️    | ✔️  | ✔️  | ✔️  | Random Number Generator                                          |
+| AES Accelerator    | ✔️    | ✔️  | ❌  | ✔️  |                                                                  |
+| SHA Accelerator    | ✔️    | ✔️  | ❌  | ✔️  |                                                                  |
+| RSA Accelerator    | ✔️    | ✔️  | ❌  | ✔️  |                                                                  |
+| Hall Effect Sensor | ❌    | —   | ❌  | —   |                                                                  |
+| ULP Processor      | ❌    | ❌  | ❌  | ❌  |                                                                  |
+| GDB Debugging      | ✔️    | ✔️  | ✔️  | ✔️  | Works with [Wokwi for VS Code](../vscode/debugging)              |
 
 Legend:  
 ✔️ - Simulated  
