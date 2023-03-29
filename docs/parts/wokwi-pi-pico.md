@@ -58,7 +58,7 @@ This table summarizes the status of the simulation features:
 | PWM               | ✔️     |                                                                         |
 | DMA               | ✔️     | Only for the PIO peripheral                                             |
 | Timer             | ✔️     | Pausing the timer not implemented yet                                   |
-| ARM SysTick Timer | 🟡     | Partial implementation                                                  |
+| ARM SysTick Timer | ✔️     |                                                                         |
 | Watchdog          | ❌     |                                                                         |
 | RTC               | ❌     |                                                                         |
 | ADC + Temp sensor | ✔️     | Temperature sensor always reads 0                                       |
