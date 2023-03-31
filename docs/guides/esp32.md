@@ -9,16 +9,16 @@ The ESP32 is a popular WiFi and Bluetooth-enabled microcontroller, widely used f
 
 ## ESP32 boards
 
-| Name                                                           | Chip     | Description                                   |
-| -------------------------------------------------------------- | -------- | --------------------------------------------- |
-| ESP32 DevKit v1                                                | ESP32    | Popular ESP32 development board               |
-| ESP32-S2-DevKitM-1                                             | ESP32-S2 | Entry-level ESP32-S2 development board        |
-| [Franzininho WiFi](../parts/board-franzininho-wifi)            | ESP32-S2 | Board by the Franzininho Community            |
-| [Wemos S2 mini](https://wokwi.com/projects/355047217294313473) | ESP32-S2 | Small ESP32-S2 board by Wemos                 |
-| ESP32-C3-DevKitM-1                                             | ESP32-C3 | Entry-level ESP32-C3 development board        |
-| Rust Board ESP32-C3                                            | ESP32-C3 | ESP32-C3 board for Rust development           |
-| ESP32-S3-DevKitC-1                                             | ESP32-S3 | Entry-level ESP32-C3 development board (beta) |
-| ESP32-C6-DevKitC-1                                             | ESP32-C6 | Entry-level ESP32-C6 (alpha)                  |
+| Name                                                           | Chip     | Description                                                                                 |
+| -------------------------------------------------------------- | -------- | ------------------------------------------------------------------------------------------- |
+| ESP32 DevKit v1                                                | ESP32    | Popular ESP32 development board                                                             |
+| ESP32-S2-DevKitM-1                                             | ESP32-S2 | Entry-level ESP32-S2 development board                                                      |
+| [Franzininho WiFi](../parts/board-franzininho-wifi)            | ESP32-S2 | Board by the Franzininho Community                                                          |
+| [Wemos S2 mini](https://wokwi.com/projects/355047217294313473) | ESP32-S2 | Small ESP32-S2 board by Wemos                                                               |
+| ESP32-C3-DevKitM-1                                             | ESP32-C3 | Entry-level ESP32-C3 development board                                                      |
+| Rust Board ESP32-C3                                            | ESP32-C3 | ESP32-C3 board designed for [Rust trainings](https://github.com/esp-rs/espressif-trainings) |
+| ESP32-S3-DevKitC-1                                             | ESP32-S3 | Entry-level ESP32-C3 development board (beta)                                               |
+| ESP32-C6-DevKitC-1                                             | ESP32-C6 | Entry-level ESP32-C6 (alpha)                                                                |
 
 You can contribute additional boards by sending a pull request to [wokwi-boards](https://github.com/wokwi/wokwi-boards).
 
