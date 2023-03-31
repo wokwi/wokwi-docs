@@ -18,7 +18,7 @@ The ESP32 is a popular WiFi and Bluetooth-enabled microcontroller, widely used f
 | ESP32-C3-DevKitM-1                                             | ESP32-C3 | Entry-level ESP32-C3 development board        |
 | Rust Board ESP32-C3                                            | ESP32-C3 | ESP32-C3 board for Rust development           |
 | ESP32-S3-DevKitC-1                                             | ESP32-S3 | Entry-level ESP32-C3 development board (beta) |
-| ESP32-C6-DevKitC-1                                             | ESP32-S6 | Official ESP32-S6 development board (alpha)   |
+| ESP32-C6-DevKitC-1                                             | ESP32-C6 | Entry-level ESP32-C6 (alpha)                  |
 
 You can contribute additional boards by sending a pull request to [wokwi-boards](https://github.com/wokwi/wokwi-boards).
 
@@ -27,7 +27,7 @@ You can contribute additional boards by sending a pull request to [wokwi-boards]
 You can use the ESP32 simulator to run different kinds of applications:
 
 1. ESP32 Arduino Core projects (including ESP-IDF projects)
-2. MicroPython and CircuitPython projects
+2. MicroPython and CircuitPython projects (examples at https://wokwi.com/micropython)
 3. Rust projects (see https://wokwi.com/rust)
 4. Custom application firmware files (e.g. applications built using the ESP-IDF)
 
