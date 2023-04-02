@@ -34,6 +34,7 @@ Create a launch configuration file for VS Code at `.vscode/launch.json`. Here's 
   ]
 }
 ```
+The `type` describes the VS Code extension used here. In this case `cppdbg`. Therefore the following extension must be installed: https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools
 
 Replace the `program` path with the path to your firmware's ELF file, and the `miDebuggerPath` with the path to a GDB executable that supports your project's architecture (e.g. for AVR projects, use `avr-gdb`).
 
