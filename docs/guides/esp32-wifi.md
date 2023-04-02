@@ -58,6 +58,46 @@ print(" Connected!")
 
 Once connected, you can use the [urequests library](https://mpython.readthedocs.io/en/master/library/mPython/urequests.html) to send HTTP and HTTPS requests, and the [umqtt library](https://mpython.readthedocs.io/en/master/library/mPython/umqtt.simple.html) to establish MQTT connections.
 
+### Connecting from Rust (std)
+
+To connect from Rust with esp-idf-svc (on an ESP32) device, use the following code:
+
+```rust
+use embedded_svc::wifi::{AuthMethod, ClientConfiguration, Configuration};
+use esp_idf_hal::peripherals::Peripherals;
+use esp_idf_svc::eventloop::EspSystemEventLoop;
+use esp_idf_svc::nvs::EspDefaultNvsPartition;
+use esp_idf_svc::wifi::EspWifi;
+use esp_idf_sys::EspError;
+fn main() -> Result<(), EspError> {
+    esp_idf_sys::link_patches();
+
+    let peripherals = Peripherals::take().unwrap();
+    let sysloop = EspSystemEventLoop::take()?;
+    let nvs_default_partition = EspDefaultNvsPartition::take()?;
+
+    let mut wifi = EspWifi::new(
+        peripherals.modem,
+        sysloop.clone(),
+        Some(nvs_default_partition.clone()),
+    )?;
+
+    wifi.set_configuration(&Configuration::Client(ClientConfiguration {
+        ssid: "Wokwi-GUEST".into(),
+        password: "".into(),
+        auth_method: AuthMethod::None,
+        ..Default::default()
+    }))?;
+
+    wifi.start()?;
+    wifi.connect()?;
+
+    Ok(())
+}
+
+```
+Note: We need to specify the auth_method to `None` in the ClientConfiguration.
+
 ## Internet Access
 
 Wokwi uses a special gateway to connect your simulated ESP32 to the internet. This gateway is required since web browsers do not allow direct internet access. There are two ways you can use the Wokwi IoT Gateway: the Public Gateway, and the Private Gateway.
