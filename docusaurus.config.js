@@ -100,6 +100,9 @@ module.exports = {
       appId: 'VNOAE1ADJ6',
       apiKey: 'cf8c02a00fa23ba42725ac0fc3a10a3d',
       indexName: 'wokwi',
+    },    
+    prism: {
+      additionalLanguages: ['rust'],
     },
   },
   presets: [
