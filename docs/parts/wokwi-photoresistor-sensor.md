@@ -65,6 +65,8 @@ float resistance = 2000 * voltage / (1 - voltage / 5);
 float lux = pow(RL10 * 1e3 * pow(10, GAMMA) / resistance, (1 / GAMMA));
 ```
 
+The `lux` variable will contain the illumination level in lux. The value of `lux` may be infinite (`inf`) when the sensor is in a very bright environment. You can use `isfinite(lux)` to check if the value is finite before using it, like in [this example](https://wokwi.com/projects/361196415746754561).
+
 ### Digital output
 
 The digital output ("DO") pin goes high when it's dark, and low when there's light. On the physical sensor, you tweak the small on-board potentiometer to set the threshold. In the simulator, use the "threshold" attribute to set the threshold voltage. The default threshold is 2.5 volts, or about 100 lux.
