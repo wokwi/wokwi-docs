@@ -5,6 +5,8 @@ sidebar_label: wokwi-lcd1602
 
 import FontA00p1 from './wokwi-lcd1602-fonta00-1.svg';
 import FontA00p2 from './wokwi-lcd1602-fonta00-2.svg';
+import FontA02p1 from './wokwi-lcd1602-fonta02-1.svg';
+import FontA02p2 from './wokwi-lcd1602-fonta02-2.svg';
 
 An LCD with 2 lines, 16 characters per line.
 
@@ -91,12 +93,13 @@ You can also [try this example on Wokwi](https://wokwi.com/projects/294342288335
 
 ## Attributes
 
-| Name        | Description                        | Default value |
-| ----------- | ---------------------------------- | ------------- |
-| pins        | Set to "i2c" for I2C configuration | "full"        |
-| i2c-address | I2C address (I2C configuration)    | "0x27"        |
-| color       | The color of the text              | "black"       |
-| background  | The color of the backlight         | "green"       |
+| Name        | Description                                       | Default value |
+| ----------- | ------------------------------------------------- | ------------- |
+| pins        | Set to "i2c" for I2C configuration                | "full"        |
+| i2c-address | I2C address (I2C configuration)                   | "0x27"        |
+| color       | The color of the text                             | "black"       |
+| background  | The color of the backlight                        | "green"       |
+| variant     | Font variant: "A00" or "A02" (see [below](#font)) | "A00"         |
 
 ### Examples
 
@@ -114,7 +117,11 @@ The chip comes with a built-in font, as well as the ability to define up to 8 cu
 There are two versions of the chip's ROM with two different fonts: HD44780UA00, which includes Japanese katakana characters,
 and HD44780UA02, which includes Western European characters.
 
-Wokwi simulates the HD44780UA00 variant. It has a total of 256 characters:
+Wokwi simulates the HD44780UA00 variant by default, but you can switch to the HD44780UA02 variant by setting the `variant` attribute to "A02".
+
+### A00 variant
+
+The HD44780UA00 font has 256 characters, with the following ranges:
 
 | Range   | Description                                         |
 | ------- | --------------------------------------------------- |
@@ -132,8 +139,24 @@ High characters glyphs:
 
 <FontA00p2 className="svg-font-table"  />
 
-Note: if you need the HD44780UA02 font variant, please [open a feature request](https://github.com/wokwi/wokwi-features/issues/new) or
-reach out on [Discord](https://wokwi.com/discord).
+### A02 variant
+
+The HD44780UA02 font has 256 characters, with the following ranges:
+
+| Range   | Description                                                         |
+| ------- | ------------------------------------------------------------------- |
+| 0-7     | [User defined characters](#user-defined-characters)                 |
+| 8-31    | Blank characters                                                    |
+| 32-127  | Standard ASCII characters (characters 92, 126, 127 differ from A00) |
+| 128-255 | Western european and Cyrillic characters, symbols                   |
+
+ASCII character glyphs:
+
+<FontA02p1 className="svg-font-table" />
+
+High characters glyphs:
+
+<FontA02p2 className="svg-font-table"  />
 
 ### User defined characters
 

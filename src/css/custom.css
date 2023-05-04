@@ -47,6 +47,8 @@ figcaption {
 
 html .svg-font-table {
   fill: currentColor;
+  max-width: 100%;
+  height: auto; 
 }
 
 html[data-theme='dark'] .svg-font-table path {
