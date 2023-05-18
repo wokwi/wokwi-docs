@@ -14,5 +14,9 @@
   "sidebar.main.category.Diagram Reference": {
     "message": "Diagram指南",
     "description": "The label for category Diagram Reference in sidebar main"
+  },
+  "sidebar.main.category.VS Code Extension": {
+    "message": "VS Code 扩展",
+    "description": "The label for category VS Code Extension in sidebar main"
   }
 }
