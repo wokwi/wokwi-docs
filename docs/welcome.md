@@ -5,7 +5,7 @@ title: Welcome to Wokwi!
 
 import { LEDBullet } from '@site/src/components/LEDBullet'
 
-Wokwi is an online Electronics simulator. You can use it to simulate Arduino, ESP32, and many other popular boards, parts and sensors.
+Wokwi is an online Electronics simulator. You can use it to simulate Arduino, ESP32, STM32, and many other popular boards, parts and sensors.
 
 Here are some quick examples of things you can make with Wokwi:
 

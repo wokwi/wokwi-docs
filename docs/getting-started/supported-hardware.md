@@ -12,6 +12,7 @@ The following microcontrollers are currently supported:
 | --------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
 | AVR                               | ATmega328P ([Arduino Uno](../parts/wokwi-arduino-uno)), ATmega2560 ([Arduino Mega](../parts/wokwi-arduino-mega)), [ATtiny85](../parts/wokwi-attiny85) |
 | [ESP32](../guides/esp32)          | **Xtensa**: ESP32, ESP32-S2, ESP32-S3<br /> **RISC-V**: ESP32-C3, ESP32-C6\*<br/>                                                                     |
+| STM32                             | STM32C031                                                                                                                                             |
 | [Pi Pico](../parts/wokwi-pi-pico) | RP2040 (Raspberry Pi Pico), an dual-core ARM Cortex-M0+ microcontroller                                                                               |
 
 \* ESP32-C6 support is still in alpha.

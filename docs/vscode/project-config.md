@@ -28,6 +28,7 @@ The extension of the firmware file depends on the board you are using:
 | Arduino Uno/Mega, ATtiny85 | .hex, .elf               |
 | Raspberry Pi Pico          | .hex, .uf2               |
 | ESP32 Family               | .bin, .uf2, .elf         |
+| STM32 Family               | .hex                     |
 
 You check test your configuration by pressing **F1** and then selecting "**Wokwi: Start Simulator**".
 
