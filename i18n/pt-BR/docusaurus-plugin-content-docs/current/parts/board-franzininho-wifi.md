@@ -5,7 +5,7 @@ sidebar_label: board-franzininiho-wifi
 
 Placa de desenvolvimento open source ESP32-S2 criada no Brasil. Consulte o [Guia ESP32](../guides/esp32) para maiores informações.
 
-![Franzininho WiFi](https://raw.githubusercontent.com/wokwi/wokwi-boards/master/boards/franzininho-wifi/board.svg)
+![Franzininho WiFi](https://raw.githubusercontent.com/wokwi/wokwi-boards/main/boards/franzininho-wifi/board.svg)
 
 ## Hardware da placa
 

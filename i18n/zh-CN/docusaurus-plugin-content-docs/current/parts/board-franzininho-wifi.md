@@ -5,7 +5,7 @@ sidebar_label: board-franzininiho-wifi板卡参考
 
 有关更多在巴西创建的开源ESP32-S2开发板信息，请参阅 [ESP32 Guide](../guides/esp32) 。
 
-![Franzininho WiFi](https://raw.githubusercontent.com/wokwi/wokwi-boards/master/boards/franzininho-wifi/board.svg)
+![Franzininho WiFi](https://raw.githubusercontent.com/wokwi/wokwi-boards/main/boards/franzininho-wifi/board.svg)
 
 ## 板卡硬件
 

@@ -5,7 +5,7 @@ sidebar_label: board-franzininho-wifi
 
 Open source ESP32-S2 development board created in Brazil. See the [ESP32 Guide](../guides/esp32) for more information.
 
-![Franzininho WiFi](https://raw.githubusercontent.com/wokwi/wokwi-boards/master/boards/franzininho-wifi/board.svg)
+![Franzininho WiFi](https://raw.githubusercontent.com/wokwi/wokwi-boards/main/boards/franzininho-wifi/board.svg)
 
 ## Board hardware
 

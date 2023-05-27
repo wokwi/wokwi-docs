@@ -5,7 +5,7 @@ sidebar_label: board-ssd1306显示模块
 
 具有I2C接口的单色128x64 OLED显示器
 
-![SSD1306](https://raw.githubusercontent.com/wokwi/wokwi-boards/master/boards/ssd1306/board.svg)
+![SSD1306](https://raw.githubusercontent.com/wokwi/wokwi-boards/main/boards/ssd1306/board.svg)
 
 ## 引脚名称
 

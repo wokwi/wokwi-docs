@@ -5,7 +5,7 @@ sidebar_label: board-ssd1306
 
 Tela OLED monocromática 128x64 com interface I2C
 
-![SSD1306](https://raw.githubusercontent.com/wokwi/wokwi-boards/master/boards/ssd1306/board.svg)
+![SSD1306](https://raw.githubusercontent.com/wokwi/wokwi-boards/main/boards/ssd1306/board.svg)
 
 ## Nome dos Pinos
 
