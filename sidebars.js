@@ -20,6 +20,7 @@ module.exports = {
       'diagram-format',
       'parts/board-franzininho-wifi',
       'parts/board-ssd1306',
+      'parts/board-st-nucleo-c031c6',
       'parts/wokwi-74hc165',
       'parts/wokwi-74hc595',
       'parts/wokwi-7segment',
