@@ -45,6 +45,10 @@ Before simulating any of the following projects, you need to compile the code an
 
 - [WiFi + FreeRTOS Tasks](https://github.com/wokwi/esp32-idf-hello-wifi)
 
+### STM32 Hal Examples
+
+- [STM32 Nucleo64 C031C6 with STM32 HAL](https://github.com/wokwi/stm32-hello-wokwi)
+
 ### ESP32 + Rust
 
 - [Hello Display](https://github.com/playfulFence/esp-hello-display/tree/feature/vscode-wokwi) - Using ESP32-C3 and ILI9341 Display
