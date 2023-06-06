@@ -9,7 +9,7 @@ A Nucleo-64 development board with STM32C031C6 MCU: ARM Cortex-M0+ processor, 32
 
 ### Onboard LED
 
-The Raspberry Pi Pico has an onboard user LED (LD4), attached to GPIO pin PA5 (D13). The LED is lit when the pin is driven high.
+The Nucleo-C031C6 has an onboard user LED (LD4), attached to GPIO pin PA5 (D13). The LED is lit when the pin is driven high.
 
 You can also use the `LED_BUILTIN` constant to reference the LED in your Arduino code:
 
