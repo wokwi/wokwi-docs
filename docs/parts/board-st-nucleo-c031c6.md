@@ -3,7 +3,7 @@ title: STM32 Nucleo64 C031C6
 sidebar_label: board-st-nucleo-c031c6
 ---
 
-A Nucleo-64 development board with STM32C031C6 MCU: ARM Cortex-M0+ processor, 32 kb Flash, 12 kb RAM running at 48 MHz.
+A Nucleo-64 development board with STM32C031C6 MCU: ARM Cortex-M0+ processor, 32 kB Flash, 12 kB RAM running at 48 MHz.
 
 ![board-st-nucleo-c031c6](https://raw.githubusercontent.com/wokwi/wokwi-boards/main/boards/st-nucleo-c031c6/board.svg)
 
