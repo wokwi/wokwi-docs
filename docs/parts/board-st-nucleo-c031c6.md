@@ -28,7 +28,7 @@ This table summarizes the current status of the STM32C031C6 MCU simulation featu
 | -------------- | ------ | ----------------------------------------------- |
 | Processor core | ✔️     | Cortex M0+ core                                 |
 | SysTick timer  | ✔️     |                                                 |
-| GPIO           | 🟡     | Interrupts not supported yet                    |
+| GPIO           | ✔️     |                                                 |
 | USART          | ✔️     |                                                 |
 | I2C            | ✔️     | Master mode only                                |
 | SPI            | ✔️     | Master mode only                                |
@@ -37,13 +37,13 @@ This table summarizes the current status of the STM32C031C6 MCU simulation featu
 | CRC            | ✔️     | 32, 16, and 8 bits (7 bits not supported)       |
 | DBG            | ❌     |                                                 |
 | DMA            | ❌     |                                                 |
-| EXTI           | ❌     |                                                 |
+| EXTI           | ✔️     |                                                 |
 | IWDG           | ❌     |                                                 |
 | PWR            | ❌     |                                                 |
 | RCC            | 🟡     |                                                 |
 | RTC            | ❌     |                                                 |
 | SYSCFG         | ❌     |                                                 |
-| WWDG           | ❌     |                                                 |
+| WWDG           | 🟡     | Implemented, not tested yet                     |
 | GDB Debugging  | ✔️     | See the [GDB Debugging guide](../gdb-debugging) |
 
 Legend:  
