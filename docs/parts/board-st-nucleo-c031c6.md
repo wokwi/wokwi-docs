@@ -56,3 +56,4 @@ Legend:
 - [Nucleo-C031C6 STM32 HAL Example](https://wokwi.com/projects/365551778332549121)
 - [Nucleo-C031C6 and I2C LCD1602](https://wokwi.com/projects/365421666018061313)
 - [Nucleo-C031C6 and ILI9341 SPI LCD Display](https://wokwi.com/projects/365549388158011393)
+- [GPIO Interrupts on Nucleo-C031C6](https://wokwi.com/projects/367083026043051009)
