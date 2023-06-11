@@ -90,12 +90,12 @@ void loop() {
 
 ## 属性
 
-| Name        | Description              | Default value |
-| ----------- | ------------------------ | ------------- |
-| pins        | 对于I2C配置，设置为“i2c” | "full"        |
-| i2c-address | I2C地址（I2C配置）       | "0x27"        |
-| color       | 文本的颜色               | "black"       |
-| background  | 背光颜色                 | "green"       |
+| Name       | Description              | Default value |
+| ---------- | ------------------------ | ------------- |
+| pins       | 对于I2C配置，设置为“i2c” | "full"        |
+| i2cAddress | I2C地址（I2C配置）       | "0x27"        |
+| color      | 文本的颜色               | "black"       |
+| background | 背光颜色                 | "green"       |
 
 ### 示例
 

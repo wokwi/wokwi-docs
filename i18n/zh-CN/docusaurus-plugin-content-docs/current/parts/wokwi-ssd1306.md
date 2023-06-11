@@ -26,9 +26,9 @@ SSD1306模块的默认I2C地址为0x3c（60）。
 
 ## 属性
 
-| Name        | Description                | Default value |
-| ----------- | -------------------------- | ------------- |
-| i2c-address | I2C address of the display | "0x3c"        |
+| Name       | Description                | Default value |
+| ---------- | -------------------------- | ------------- |
+| i2cAddress | I2C address of the display | "0x3c"        |
 
 ## 仿真实例
 

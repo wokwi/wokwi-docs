@@ -37,7 +37,7 @@ You can select the desired configuration by setting the `pins` attribute. Set it
 | SDA  | I2C data line  |
 | SCL  | I2C clock line |
 
-The default I2C address of the LCD1602 module is 0x27. You can change the address by setting the [`i2c-address` attribute](#attributes).
+The default I2C address of the LCD1602 module is 0x27. You can change the address by setting the [`i2cAddress` attribute](#attributes).
 
 Note: The I2C configuration simulates a PCF8574T chip that controls the LCD module. Normally, you wouldn't have to worry about this as the LiquidCrystal_I2C library takes care of the communication with the chip.
 
@@ -93,13 +93,13 @@ You can also [try this example on Wokwi](https://wokwi.com/projects/294342288335
 
 ## Attributes
 
-| Name        | Description                                       | Default value |
-| ----------- | ------------------------------------------------- | ------------- |
-| pins        | Set to "i2c" for I2C configuration                | "full"        |
-| i2c-address | I2C address (I2C configuration)                   | "0x27"        |
-| color       | The color of the text                             | "black"       |
-| background  | The color of the backlight                        | "green"       |
-| variant     | Font variant: "A00" or "A02" (see [below](#font)) | "A00"         |
+| Name       | Description                                       | Default value |
+| ---------- | ------------------------------------------------- | ------------- |
+| pins       | Set to "i2c" for I2C configuration                | "full"        |
+| i2cAddress | I2C address (I2C configuration)                   | "0x27"        |
+| color      | The color of the text                             | "black"       |
+| background | The color of the backlight                        | "green"       |
+| variant    | Font variant: "A00" or "A02" (see [below](#font)) | "A00"         |
 
 ### Examples
 

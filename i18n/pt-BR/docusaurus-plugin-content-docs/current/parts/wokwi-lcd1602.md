@@ -35,30 +35,30 @@ Você pode selecionar a configuração desejada definindo o atributo `pins`. Def
 | SDA  | Linha de dados I2C    |
 | SCL  | Linha de clock I2C    |
 
-O endereço I2C padrão do módulo LCD1602 é 0x27. Você pode alterar o endereço definindo o atributo [`i2c-address`](#attributes).
+O endereço I2C padrão do módulo LCD1602 é 0x27. Você pode alterar o endereço definindo o atributo [`i2cAddress`](#attributes).
 
 Nota: A configuração I2C simula um chip PCF8574T que controla o módulo LCD. Normalmente, você não teria que se preocupar com isso, pois a biblioteca LiquidCrystal_I2C cuida da comunicação com o chip.
 
 ### Configuração padrão
 
-| Nome | Descrição                           | Pino Arduino\* |
-| ---- | ----------------------------------- | -------------- |
-| VSS  | Terra                               | GND.1          |
-| VDD  | Tensão de alimentação               | 5V             |
-| V0   | Ajuste de contraste (não simulado)  |                |
-| RS   | Seleção de comando/dados            | 12             |
-| RW   | Leitura/Escrita. Conectar ao terra  | GND.1          |
-| E    | Enable                              | 11             |
-| D0   | Dados paralelos 0 (opcional) †      |                |
-| D1   | Dados paralelos 1 (opcional) †      |                |
-| D2   | Dados paralelos 2 (opcional) †      |                |
-| D3   | Dados paralelos 3 (opcional) †      |                |
-| D4   | Dados paralelos 4                   | 10             |
-| D5   | Dados paralelos 5                   | 9              |
-| D6   | Dados paralelos 6                   | 8              |
-| D7   | Dados paralelos 7                   | 7              |
-| A    | Luz de fundo ânodo                  | 5V / 6‡        |
-| K    | Luz de fundo cátodo                 | GND.1          |
+| Nome | Descrição                          | Pino Arduino\* |
+| ---- | ---------------------------------- | -------------- |
+| VSS  | Terra                              | GND.1          |
+| VDD  | Tensão de alimentação              | 5V             |
+| V0   | Ajuste de contraste (não simulado) |                |
+| RS   | Seleção de comando/dados           | 12             |
+| RW   | Leitura/Escrita. Conectar ao terra | GND.1          |
+| E    | Enable                             | 11             |
+| D0   | Dados paralelos 0 (opcional) †     |                |
+| D1   | Dados paralelos 1 (opcional) †     |                |
+| D2   | Dados paralelos 2 (opcional) †     |                |
+| D3   | Dados paralelos 3 (opcional) †     |                |
+| D4   | Dados paralelos 4                  | 10             |
+| D5   | Dados paralelos 5                  | 9              |
+| D6   | Dados paralelos 6                  | 8              |
+| D7   | Dados paralelos 7                  | 7              |
+| A    | Luz de fundo ânodo                 | 5V / 6‡        |
+| K    | Luz de fundo cátodo                | GND.1          |
 
 \* Estes são apenas exemplos de número de pinos, eles não são obrigatórios. Você pode usar qualquer pino digital/analógico, mas certifique-se de atualizar o código de acordo!
 † Normalmente, você configuraria o chip no modo paralelo de 4 bits, o que significa que você só precisa conectar os pinos RS, E, D4, D5, D6 e D7 ao Arduino.
@@ -91,12 +91,12 @@ Você também pode [tentar este exemplo no Wokwi](https://wokwi.com/projects/294
 
 ## Atributos
 
-| Nome        | Descrição                                 | Valor padrão |
-| ----------- | ----------------------------------------- | ------------ |
-| pins        | Defina como "i2c" para a configuração I2C | "full"       |
-| i2c-address | Endereço I2C (configuração I2C)           | "0x27"       |
-| color       | A cor do texto                            | "black"      |
-| background  | A cor da luz de fundo                     | "green"      |
+| Nome       | Descrição                                 | Valor padrão |
+| ---------- | ----------------------------------------- | ------------ |
+| pins       | Defina como "i2c" para a configuração I2C | "full"       |
+| i2cAddress | Endereço I2C (configuração I2C)           | "0x27"       |
+| color      | A cor do texto                            | "black"      |
+| background | A cor da luz de fundo                     | "green"      |
 
 ### Exemplos
 

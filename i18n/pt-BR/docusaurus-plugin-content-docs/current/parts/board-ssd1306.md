@@ -20,9 +20,9 @@ O endereço I2C padrão do módulo SSD1306 é 0x3c (60).
 
 ## Atributos
 
-| Nome        | Descrição            | Valor padrão  |
-| ----------- | -------------------- | ------------- |
-| i2c-address | Endereço I2C da tela | "0x3c"        |
+| Nome       | Descrição            | Valor padrão |
+| ---------- | -------------------- | ------------ |
+| i2cAddress | Endereço I2C da tela | "0x3c"       |
 
 ## Usando no Arduino
 

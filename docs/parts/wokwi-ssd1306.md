@@ -26,9 +26,9 @@ The default I2C address of the SSD1306 module is 0x3c (60).
 
 ## Attributes
 
-| Name        | Description                | Default value |
-| ----------- | -------------------------- | ------------- |
-| i2c-address | I2C address of the display | "0x3c"        |
+| Name       | Description                | Default value |
+| ---------- | -------------------------- | ------------- |
+| i2cAddress | I2C address of the display | "0x3c"        |
 
 ## Simulator examples
 
