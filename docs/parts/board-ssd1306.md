@@ -7,6 +7,8 @@ Monochrome 128x64 OLED display with I2C interface
 
 ![SSD1306](https://raw.githubusercontent.com/wokwi/wokwi-boards/main/boards/ssd1306/board.svg)
 
+The default I2C address of the SSD1306 module is 0x3c (60). Some modules have a different address (0x3d), you can change the address by editing diagram.json and setting the `i2cAddress` attribute to "0x3d".
+
 ## Pin names
 
 | Name | Description    | Arduino Uno pin |
@@ -15,8 +17,6 @@ Monochrome 128x64 OLED display with I2C interface
 | VCC  | Supply voltage | 5V              |
 | SCL  | I2C clock line | A5              |
 | SDA  | I2C data line  | A4              |
-
-The default I2C address of the SSD1306 module is 0x3c (60).
 
 ## Attributes
 
