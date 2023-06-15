@@ -1,5 +1,5 @@
 ---
-title: STM32 Nucleo64 L031K6
+title: STM32 Nucleo32 L031K6
 sidebar_label: board-st-nucleo-l031k6
 ---
 
