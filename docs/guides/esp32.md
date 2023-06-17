@@ -9,16 +9,16 @@ The ESP32 is a popular WiFi and Bluetooth-enabled microcontroller, widely used f
 
 ## ESP32 boards
 
-| Name                                                           | Chip     | Description                                                                                 |
-| -------------------------------------------------------------- | -------- | ------------------------------------------------------------------------------------------- |
-| ESP32 DevKit v1                                                | ESP32    | Popular ESP32 development board                                                             |
-| ESP32-S2-DevKitM-1                                             | ESP32-S2 | Entry-level ESP32-S2 development board                                                      |
-| [Franzininho WiFi](../parts/board-franzininho-wifi)            | ESP32-S2 | Board by the Franzininho Community                                                          |
-| [Wemos S2 mini](https://wokwi.com/projects/355047217294313473) | ESP32-S2 | Small ESP32-S2 board by Wemos                                                               |
-| ESP32-C3-DevKitM-1                                             | ESP32-C3 | Entry-level ESP32-C3 development board                                                      |
+| Name                                                           | Chip     | Description                                                                          |
+| -------------------------------------------------------------- | -------- | ------------------------------------------------------------------------------------ |
+| ESP32 DevKit v1                                                | ESP32    | Popular ESP32 development board                                                      |
+| ESP32-S2-DevKitM-1                                             | ESP32-S2 | Entry-level ESP32-S2 development board                                               |
+| [Franzininho WiFi](../parts/board-franzininho-wifi)            | ESP32-S2 | Board by the Franzininho Community                                                   |
+| [Wemos S2 mini](https://wokwi.com/projects/355047217294313473) | ESP32-S2 | Small ESP32-S2 board by Wemos                                                        |
+| ESP32-C3-DevKitM-1                                             | ESP32-C3 | Entry-level ESP32-C3 development board                                               |
 | Rust Board ESP32-C3                                            | ESP32-C3 | ESP32-C3 board designed for [Rust trainings](https://github.com/esp-rs/std-training) |
-| ESP32-S3-DevKitC-1                                             | ESP32-S3 | Entry-level ESP32-C3 development board (beta)                                               |
-| ESP32-C6-DevKitC-1                                             | ESP32-C6 | Entry-level ESP32-C6 (alpha)                                                                |
+| ESP32-S3-DevKitC-1                                             | ESP32-S3 | Entry-level ESP32-C3 development board (beta)                                        |
+| ESP32-C6-DevKitC-1                                             | ESP32-C6 | Entry-level ESP32-C6 (alpha)                                                         |
 
 You can contribute additional boards by sending a pull request to [wokwi-boards](https://github.com/wokwi/wokwi-boards).
 
@@ -163,3 +163,11 @@ If you want Wokwi to always run the bootloader, you can add the following attrib
 | Attribute | Description                                                                               | Default |
 | --------- | ----------------------------------------------------------------------------------------- | ------- |
 | fullBoot  | Set to "1" to simulate the complete boot sequence: boot ROM -> bootloader -> application. | ""      |
+
+### Changing the MAC address
+
+You can change the MAC address of the WiFi interface by adding the following attribute to the chip:
+
+| Attribute  | Description                                                 | Default             |
+| ---------- | ----------------------------------------------------------- | ------------------- |
+| macAddress | MAC address of the WiFi interface, e.g. "24:0a:c4:12:45:56" | "24:0a:c4:00:01:10" |

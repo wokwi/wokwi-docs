@@ -96,6 +96,7 @@ fn main() -> Result<(), EspError> {
 }
 
 ```
+
 Note: We need to specify the auth_method to `None` in the ClientConfiguration.
 
 ## Internet Access
@@ -161,7 +162,7 @@ The ESP32 gets an IP address from a DHCP server running inside the Wokwi IoT gat
 - Public Gateway: 10.10.0.2
 - Private Gateway: 10.13.37.2
 
-The MAC address of the simulated ESP32 is 24:0a:c4:00:01:10.
+The MAC address of the simulated ESP32 is 24:0a:c4:00:01:10. You can specify a different MAC address using the [macAddress](./esp32#changing-the-mac-address) attribute.
 The BSSID of the virtual access point ("Wokwi-GUEST") is 42:13:37:55:aa:01, and it is listening on WiFi channel 6.
 
 ### Viewing WiFi traffic with Wireshark
