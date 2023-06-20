@@ -55,7 +55,7 @@ Listens for changes in the digital value of the given pin. The config structure 
 | ------------ | ---------- | -------------------------------------------------------------------- |
 | `edge`       | `uint32_t` | What pin value changes we listen for (`RISING`, `FALLING` or `BOTH`) |
 | `pin_change` | callback   | Called when the pin value changes (see below)                        |
-| `user_data`  | `void \*`  | Data that will be passed in the first argument to `pin_change`       |
+| `user_data`  | `void *`   | Data that will be passed in the first argument to `pin_change`       |
 
 The valid values for edge are:
 
@@ -71,6 +71,17 @@ The `pin_change` callback signature is as follows:
 void chip_pin_change(void *user_data, pin_t pin, uint32_t value) {
   // value will either be HIGH or LOW
 }
+```
+
+Usage example:
+
+```cpp
+const pin_watch_config_t watch_config = {
+  .edge = FALLING,
+  .pin_change = chip_pin_change,
+  .user_data = chip,
+};
+pin_watch(pin, &watch_config);
 ```
 
 ### void pin_watch_stop(pin_t pin)
