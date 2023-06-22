@@ -154,16 +154,6 @@ You can specify the offset manually by adding the following attribute to the chi
 | -------------- | ----------------------------------------------------- | ------- |
 | firmwareOffset | Offset of the firmware in the flash memory, in bytes. | ""      |
 
-### Skipping the bootloader
-
-On ESP32 and ESP32-S2 chips, Wokwi skips the boot ROM and the bootloader, so that your firmware starts running immediately. Other chips (ESP32-C3, ESP32-S3, etc.) always run the full boot sequence.
-
-If you want Wokwi to always run the bootloader, you can add the following attribute to the chip:
-
-| Attribute | Description                                                                               | Default |
-| --------- | ----------------------------------------------------------------------------------------- | ------- |
-| fullBoot  | Set to "1" to simulate the complete boot sequence: boot ROM -> bootloader -> application. | ""      |
-
 ### Changing the MAC address
 
 You can change the MAC address of the WiFi interface by adding the following attribute to the chip:
