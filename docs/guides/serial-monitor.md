@@ -91,11 +91,12 @@ The default configuration is as follows:
 ```json
 "serialMonitor": {
   "display": "auto",
-  "newline": "lf"
+  "newline": "lf",
+  "convertEol": false
 }
 ```
 
-When you add a  `"serialMonitor"` section, either add it after the last item in diagram.json, or make sure to add a comma after the closing curly brace. You can find a complete example [here](https://wokwi.com/projects/308893120796295745).
+When you add a `"serialMonitor"` section, either add it after the last item in diagram.json, or make sure to add a comma after the closing curly brace. You can find a complete example [here](https://wokwi.com/projects/308893120796295745).
 
 ### Display
 
@@ -125,3 +126,7 @@ of text that it sends to your program. You can use the `newline` property to cha
 | cr    | "\r"       | 13          | Carriage return                            |
 | crlf  | "\r\n"     | 10 13       | Carraige return + linefeed                 |
 | none  | ""         |             | Don't append any characters to input lines |
+
+### Convert EOL
+
+The `convertEol` property only applies to the "terminal" display mode. When set to `true`, the simulator will convert all line feed characters ("\n") to carriage return + line feed ("\r\n") before sending them to the terminal. This is useful when your code does not print a carriage return character after each line, and the serial terminal displays the output in a staggered way.
