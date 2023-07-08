@@ -11,6 +11,12 @@ The Chips API is currently in beta. Please share your experiments and provide fe
 
 :::
 
+## Introduction
+
+The Custom Chips API allows you to create new simulation models and extend the functionality of Wokwi. You can create new sensors, displays, memories, testing instruments, and even simulate your own custom hardware.
+
+Custom Chips are usually written in C, but you can use any language that compiles to WebAssembly (e.g. Rust, AssemblyScript, etc.). There is also an experimental support for writing custom chips in Verilog.
+
 ## Getting started
 
 Open the [Custom Chip Playground](https://wokwi.com/projects/327144279206003284), go to the code editor, press `F1` and select _Create a custom C chip (beta)_.
