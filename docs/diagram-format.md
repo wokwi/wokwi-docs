@@ -66,7 +66,7 @@ the simulation may not function correctly.
 
 A partial list of part types (e.g. [wokwi-led](parts/wokwi-led)) can be found under the "Diagram Reference" section of this guide. We're currently working to expand this list. Meanwhile, some of the parts are also documented at [Wokwi Elements](https://elements.wokwi.com).
 
-Each diagram should include a microcontroller part. The following microcontrollers are currently supported:
+If your simulation project contains code, the diagram should include a microcontroller part that will execute your code. The following microcontrollers are currently supported:
 
 - [`wokwi-attiny85`](parts/wokwi-attiny85) - ATtiny85
 - [`wokwi-arduino-nano`](parts/wokwi-arduino-nano) - Arduino Nano
