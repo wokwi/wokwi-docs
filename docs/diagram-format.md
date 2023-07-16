@@ -79,6 +79,7 @@ Each diagram should include a microcontroller part. The following microcontrolle
 - `board-esp32-c3-devkitm-1` - ESP32-C3
 - `board-esp32-c3-rust-1` - ESP32-C3
 - `esp32-c6-devkitc-1` - ESP32-C6
+- `esp32-h2-devkitm-1` - ESP32-H2
 - `st-nucleo-c031c6` - STM32 Nucleo-64 with STM32C031C6 MCU
 
 :::tip

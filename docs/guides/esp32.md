@@ -3,7 +3,7 @@ title: ESP32 Simulation
 sidebar_label: ESP32 Simulator
 ---
 
-The ESP32 is a popular WiFi and Bluetooth-enabled microcontroller, widely used for IoT Projects. Wokwi simulates the ESP32, ESP32-C3, ESP32-S2, ESP32-S3 (beta) and ESP32-C6 (alpha).
+The ESP32 is a popular WiFi and Bluetooth-enabled microcontroller, widely used for IoT Projects. Wokwi simulates the ESP32, ESP32-C3, ESP32-S2, ESP32-S3, ESP32-C6 (beta), and ESP32-H2 (alpha).
 
 <wokwi-esp32-devkit-v1></wokwi-esp32-devkit-v1>
 
@@ -15,10 +15,11 @@ The ESP32 is a popular WiFi and Bluetooth-enabled microcontroller, widely used f
 | ESP32-S2-DevKitM-1                                             | ESP32-S2 | Entry-level ESP32-S2 development board                                               |
 | [Franzininho WiFi](../parts/board-franzininho-wifi)            | ESP32-S2 | Board by the Franzininho Community                                                   |
 | [Wemos S2 mini](https://wokwi.com/projects/355047217294313473) | ESP32-S2 | Small ESP32-S2 board by Wemos                                                        |
+| ESP32-S3-DevKitC-1                                             | ESP32-S3 | Entry-level ESP32-S3 development board                                               |
 | ESP32-C3-DevKitM-1                                             | ESP32-C3 | Entry-level ESP32-C3 development board                                               |
 | Rust Board ESP32-C3                                            | ESP32-C3 | ESP32-C3 board designed for [Rust trainings](https://github.com/esp-rs/std-training) |
-| ESP32-S3-DevKitC-1                                             | ESP32-S3 | Entry-level ESP32-C3 development board (beta)                                        |
-| ESP32-C6-DevKitC-1                                             | ESP32-C6 | Entry-level ESP32-C6 (alpha)                                                         |
+| ESP32-C6-DevKitC-1                                             | ESP32-C6 | Entry-level ESP32-C6 development board (beta)                                        |
+| ESP32-H2-DevKitM-1                                             | ESP32-H2 | Entry-level ESP32-H2 development board (alpha)                                       |
 
 You can contribute additional boards by sending a pull request to [wokwi-boards](https://github.com/wokwi/wokwi-boards).
 
