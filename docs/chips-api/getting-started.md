@@ -83,17 +83,32 @@ Make sure to include a newline ("\n") at the end of your `printf()` messages. Th
 
 ## Chip examples
 
-- [Digital Inverter](https://wokwi.com/projects/327458636089524820)
-- [XOR gate](https://wokwi.com/projects/329456176677782100)
-- [SPI Chip](https://wokwi.com/projects/330669951756010068) - Implements a basic ROT13 cipher
-- [I2C Chip](https://wokwi.com/projects/344061754973618771) - Simple counter interrupt output
-- [UART Chip](https://wokwi.com/projects/333638144389808723) - Implements a basic ROT13 cipher
-- [Timer Chip](https://wokwi.com/projects/341265875285836370) - Showing how to use the Timer API
-- [LM75A Chip](https://wokwi.com/projects/344037885763125843) - I2C digital temperature sensor
+### Basics
+
+- [Digital Inverter](https://wokwi.com/projects/327458636089524820) - Inverts the input signal
+- [XOR gate](https://wokwi.com/projects/329456176677782100) - Implements a XOR gate
+- [Timer Chip](https://wokwi.com/projects/341265875285836370) - Showing how to use the Time API and create timers
+
+### Communication
+
+- [SPI Chip](https://wokwi.com/projects/330669951756010068) - A basic ROT13 cipher over SPI
+- [UART Chip](https://wokwi.com/projects/333638144389808723) - A basic ROT13 cipher over UART
+- [I2C Chip](https://wokwi.com/projects/344061754973618771) - Simple counter with interrupt output
+- [EEPROM Chip](https://wokwi.com/projects/329482717479567954) - Simple I2C memory with 256 kbits by Benny Meisels
+
+### Displays and sensors
+
 - [Framebuffer Chip](https://wokwi.com/projects/330503863007183442) - Shows how to implement a custom display driver chip
-- [IL9163 Display Driver](https://wokwi.com/projects/333332561949360723) - 128x128 color LCD display chip
-- [I2C Keypad Driver Example](https://wokwi.com/projects/344059749365449300) (by Yewolf)
-- [CD4051B Multiplexer Example](https://wokwi.com/projects/343522915673702994) (by Chris Schmidt)
-- [EEPROM Chip](https://wokwi.com/projects/329482717479567954) (by Benny Meisels)
-- [PCA9685 Chip](https://wokwi.com/projects/348856116302578258) (by Bonny Rais)
-- [DS18B20 Chip](https://wokwi.com/projects/349898396478210642) (by Bonny Rais) - Dallas Semi DS18B20 Temperature Sensor over OneWire
+- [SSD1306 Display](https://wokwi.com/projects/371050937178768385) - 128x64 monochrome OLED display chip (using I2C)
+- [IL9163 Display](https://wokwi.com/projects/333332561949360723) - 128x128 color LCD display chip (using SPI)
+
+### Sensors
+
+- [LM75A Chip](https://wokwi.com/projects/344037885763125843) - I2C digital temperature sensor
+- [I2C Keypad Driver Example](https://wokwi.com/projects/344059749365449300) by Yewolf
+- [DS18B20 Chip](https://wokwi.com/projects/349898396478210642) - Dallas Semi DS18B20 Temperature Sensor over OneWire by Bonny Rais
+
+### Complex chips
+
+- [CD4051B Multiplexer Example](https://wokwi.com/projects/343522915673702994) - Analog Multiplexer by Chris Schmidt
+- [PCA9685 Chip](https://wokwi.com/projects/348856116302578258) - 16-channel PWM driver over I2C by Bonny Rais
