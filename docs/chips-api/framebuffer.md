@@ -28,4 +28,5 @@ Copies `data_len` bytes at the given `offset` of the frame buffer into `data`.
 ## Simulator examples
 
 - [Basic Framebuffer Chip Example](https://wokwi.com/projects/330503863007183442)
+- [SSD1306 I2C OLED Display](https://wokwi.com/projects/371050937178768385)
 - [IL9163 128x128 Color LCD Display Driver](https://wokwi.com/projects/333332561949360723)
