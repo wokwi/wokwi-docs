@@ -3,6 +3,8 @@ title: Getting Started with Wokwi for VS Code
 sidebar_label: Getting Started
 ---
 
+# Wokwi for VS Code
+
 Wokwi for Visual Studio Code provides a simulation solution for embedded and IoT system engineers. The extension integrates with your existing development environment, allowing you to simulate your projects directly from your code editor.
 
 You can use Wokwi for VS Code with Zehpyr Project, PlatformIO, ESP-IDF, Pi Pico SDK, NuttX, Rust, Arduino CLI, and other embedded development frameworks and toolchains.
