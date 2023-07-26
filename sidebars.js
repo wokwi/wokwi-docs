@@ -72,6 +72,7 @@ module.exports = {
     ],
     'Chips API': [
       'chips-api/getting-started',
+      'chips-api/chip-json',
       'chips-api/gpio',
       'chips-api/analog',
       'chips-api/time',

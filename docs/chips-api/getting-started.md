@@ -3,6 +3,8 @@ title: Getting Started with the Wokwi Custom Chips C API
 sidebar_label: Getting Started
 ---
 
+import ChipsConsoleImage from './chips-console.png';
+
 # Getting Started with the Wokwi Custom Chips C API
 
 :::caution
@@ -19,50 +21,26 @@ Custom Chips are usually written in C, but you can use any language that compile
 
 ## Getting started
 
-Open the [Custom Chip Playground](https://wokwi.com/projects/327144279206003284), go to the code editor, press `F1` and select _Create a custom C chip (beta)_.
+Open any Wokwi project (or [create a new one](https://wokwi.com/projects/new)) and click on the blue "+" button in the diagram editor. Select "Custom Chip" from the list of options.
 
-This will create a new file called `i2c-counter.chip.c`. This file contains an example of a simple [I2C](i2c) device with an 8-bit counter that increments for every byte that you read. Writing to the device will override the value.
+You'll see a dialog where you can enter the chip name, as well as the language you wish to use. We recommend using C for now. After typing a name for your chip, click on the "Create Chip" button.
 
-The device also provides an `INT` pin that goes low when the counter is greater than `127`. Otherwise, the `INT` pin is in input (high impedance) state.
+This will add a copy of the chip to your diagram and create two files in your project:
 
-Start the simulation to observe the behavior of the custom chip: the Arduino code should read the counter value, and the LED will light up when the counter goes over `127`.
+- a [JSON file](./chip-json) with the chip pinout and settings (name, author, etc.)
+- a C file with the chip code (or a rust/verilog file, depending on the language you selected).
 
-## Adding your custom chip to the simulation
+The [JSON file](./chip-json) file defines a minimal set of pins ("VCC", "GND", "IN", "OUT"). Change the pin names and add more pins as needed.
 
-The [Custom Chip Playground](https://wokwi.com/projects/327144279206003284) already has the chip wired in, but you can follow the instructions below to connect a custom chip to a different project.
+The C file contains a minimal chip implementation. Add your code to the `chip_init()` function. This function is called for every instance of the chip in the diagram. You can use it to initialize the chip state, configure timers, and set up pin watches.
 
-Add the following snippet to your diagram.json:
-
-`{ "type": "chip-i2c-counter", "id": "chip1", "top": 0, "left": 0, "attrs": {} },`
-
-Wokwi automatically generates a **breakout board** for your chip. Edit `i2c-counter.chip.json` to define the pins for your part. The `pins` array should contain the names of your chip's pins, starting from pin number `1`. If you wish to skip some pins (e.g. you want the breakout board to only have pins on its left side), use an empty string (`""`) for the pin name.
-
-## Using the API
-
-First, make sure to `#include "wokwi-api.h"`.
-The chip should declare a `chip_init` method. This method will be called for every new instance of the chip. If the chip has some internal state, `chip_init` should allocate memory for the internal state, and save a pointer to this memory in the `void *user_data` field of the device configuration structures (e.g. `i2c_config_t`, `timer_config_t`, etc.).
-
-Here's an example of a minimal chip file:
-
-```cpp
-#include "wokwi-api.h"
-
-void chip_init() {
-  /*
-    This method runs when the simulation starts. It's called once for each instance of the chip.
-    You'd usually allocate some memory to store the chip state, initialize a bunch of pins with pin_init(),
-    and configure pin watches, timers, and protocols such as UART, I2C, and SPI.
-  */
-}
-```
+The example code also includes a `chip_state_t` struct, where you can store any state that your chip needs. You can use the `user_data` field of the `i2c_config_t`, `timer_config_t`, etc. to store a pointer to this struct.
 
 ### Debugging your custom chip
 
-You can print debugging messages using the standard C `printf()` function. Make sure to also `#include <stdio.h>` in your program. The debugging messages will appear in the browser's developer console (to view it in Chrome: `Ctrl`+`Shift`+`J` or `Option`+`⌘`+`J`).
+You can print debugging messages using the standard C `printf()` function. Make sure to also `#include <stdio.h>` in your program. The debug messages will appear in a new "Chips Console" tab below the diagram view:
 
-The debug messages from your chip will be printed in green color:
-
-<img src={require('./chip-debug.png').default} alt="Chip debug messages displayed in green" />
+<img src={ChipsConsoleImage} alt="Chips Console" width="543" height="109" />
 
 In addition, you can use the [Wokwi Logic Analyzer](../guides/logic-analyzer) to debug the communication with your custom chip.
 

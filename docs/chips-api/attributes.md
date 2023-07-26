@@ -5,7 +5,7 @@ sidebar_label: Attributes
 
 # Attributes
 
-Attributes are input parameters that the user can set in `diagram.json`. You can also define a `controls` section in the `.chip.json` file to let the user edit these parameters interactively during the simulation. This is particularly useful for sensor inputs (e.g. temperature, humidity, etc.).
+Attributes are input parameters that the user can set in `diagram.json`. You can also define a [`controls` section](./chip-json#controls) in the `.chip.json` file to let the user edit these parameters interactively during the simulation. This is particularly useful for sensor inputs (e.g. temperature, humidity, etc.).
 
 ### Naming
 
