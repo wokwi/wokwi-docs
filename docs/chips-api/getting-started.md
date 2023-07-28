@@ -74,7 +74,7 @@ Make sure to include a newline ("\n") at the end of your `printf()` messages. Th
 - [I2C Chip](https://wokwi.com/projects/344061754973618771) - Simple counter with interrupt output
 - [EEPROM Chip](https://wokwi.com/projects/329482717479567954) - Simple I2C memory with 256 kbits by Benny Meisels
 
-### Displays and sensors
+### Displays
 
 - [Framebuffer Chip](https://wokwi.com/projects/330503863007183442) - Shows how to implement a custom display driver chip
 - [SSD1306 Display](https://wokwi.com/projects/371050937178768385) - 128x64 monochrome OLED display chip (using I2C)
