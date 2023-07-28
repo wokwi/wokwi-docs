@@ -19,13 +19,24 @@ RTC (Real Time Clock) module with I2C interface and 56 bytes of NV SRAM.
 
 The I2C address of the DS1307 is 0x68.
 
+## Attributes
+
+| Name       | Description                                                          | Default value |
+| ---------- | -------------------------------------------------------------------- | ------------- |
+| `initTime` | Initial time of the RTC: "0", "now", or a valid ISO 8601 date string | "now"         |
+
 ## Simulation Behavior
 
 The simulated DS1307 is automatically initialized to the current system time when starting the simulation. It
-then keeps counting the time.
+then keeps counting the time. You can override the initial time by setting the `initTime` attribute to a different
+value. The value can be either a valid ISO 8601 date string (e.g. "2019-11-19T11:41:56Z"), or one of the following
+special values:
+
+- "0" - Set the initial time to "2000-01-01T00:00:00Z"
+- "now" - Set the initial time to the current system time
 
 The code running in the simulation can update the date/time of the DS1307, and the DS1307 will keep track
-of the update time.
+of the updated time.
 
 ## Simulator examples
 
