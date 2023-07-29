@@ -16,3 +16,7 @@ As a Wokwi club member, you also get new [VotePowers](../guides/votepowers) ever
 ### How to join?
 
 https://wokwi.com/club
+
+### How to cancel?
+
+You can cancel your subscription at any time (or change your payment method) from your [Wokwi Subscriptions page](https://wokwi.com/dashboard/subscriptions).
