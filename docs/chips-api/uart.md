@@ -26,7 +26,7 @@ Example:
 
 ```cpp
 static void on_uart_rx_data(void *user_data, uint8_t byte) {
-  // `byte` is the byte received on the TX pin
+  // `byte` is the byte received on the "RX" pin
 }
 
 static uint8_t on_uart_write_done(void *user_data) {
@@ -35,7 +35,7 @@ static uint8_t on_uart_write_done(void *user_data) {
 
 // ...
 
-const uart_config_t uart1 {
+const uart_config_t uart1 = {
   .tx = pin_init("TX", INPUT_PULLUP),
   .rx = pin_init("RX", INPUT),
   .baud_rate = 115200,
