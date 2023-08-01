@@ -31,12 +31,12 @@ Note: `spi_init` can only be called from `chip_init()`. Do not call it at a late
 Example:
 
 ```cpp
-const spi_config_t spi1 {
+const spi_config_t spi1 = {
   .sck = pin_init("SCK", INPUT),
   .mosi = pin_init("MOSI", INPUT),
   .miso = pin_init("MISO", INPUT),
   .mode = 0,
-  .write_done = chip_spi_done, // See the example below
+  .done = chip_spi_done, // See the example below
   .user_data = chip,
 };
 ```
