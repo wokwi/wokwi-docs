@@ -61,10 +61,6 @@ Before simulating any of the following projects, you need to compile the code an
 
 ### Arduino Extension Examples
 
-:::caution
-VS Code's Arduino Extension requires Arduino IDE 1.8 or [Arduino CLI](https://github.com/microsoft/vscode-arduino/issues/1477#issuecomment-1278699661) installed. It doesn't work (yet) with Arduino IDE 2.0.
-:::
-
 - [Arduino LCD-1602 "Hello World"](https://github.com/wokwi/arduino-lcd-helloworld)
 
 ### Other Examples
