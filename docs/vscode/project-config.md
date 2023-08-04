@@ -30,7 +30,7 @@ The extension of the firmware file depends on the board you are using:
 | ESP32 Family               | .bin, .uf2, .elf         |
 | STM32 Family               | .hex, .bin, .elf         |
 
-You check test your configuration by pressing **F1** and then selecting "**Wokwi: Start Simulator**".
+You check test your configuration by pressing **F1** and then selecting "**Wokwi: Start Simulator**". Make sure you compile your program before starting the simulation.
 
 :::caution
 Avoid using backslashes (`\`) in your paths. Use forward slash (`/`) instead, as it makes it possible to open your project on any platform (Windows, Mac and Linux).
