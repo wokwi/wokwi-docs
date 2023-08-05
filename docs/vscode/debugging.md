@@ -34,9 +34,12 @@ Create a launch configuration file for VS Code at `.vscode/launch.json`. Here's 
   ]
 }
 ```
+
 The `type` describes the VS Code extension used here. In this case `cppdbg`. Therefore the following extension must be installed: https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools
 
 Replace the `program` path with the path to your firmware's ELF file, and the `miDebuggerPath` with the path to a GDB executable that supports your project's architecture (e.g. for AVR projects, use `avr-gdb`).
+
+For ESP-IDF projects, you can set the `miDebuggerPath` to `"${command:espIdf.getXtensaGdb}"`, and the debugger will automatically use the correct GDB executable (this requires the [ESP-IDF extension](https://marketplace.visualstudio.com/items?itemName=espressif.esp-idf-extension) to be installed). For a complete example, check out the [ESP32 Hello WiFi debug configuration](https://github.com/wokwi/esp32-idf-hello-wifi/blob/main/.vscode/launch.json).
 
 ## Start the debugger
 
