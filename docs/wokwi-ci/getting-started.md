@@ -7,6 +7,12 @@ sidebar_label: Getting Started
 
 Wokwi for CI and GitHub Actions provides a simulation solution for automated testing of embedded and IoT projects. You can use Wokwi to run your tests on every commit, and get instant feedback on your code changes.
 
+The simulation runs in the cloud, so you don't need to install any software on your CI server. You can use Wokwi CI with any CI system that supports running shell commands, including GitHub Actions, GitLab CI, CircleCI, Travis CI, and more.
+
+A copy of your firmware binary is uploaded to the Wokwi Cloud for every test run. The firmware is then simulated in the cloud, and the serial output is streamed back to your CI system. Wokwi does not store your firmware, and it is deleted from the cloud after the simulation is finished.
+
+If you do not want to upload your firmware to the cloud, please contact us to discuss options for on-premise deployment of Wokwi CI.
+
 :::caution
 Wokwi CI is free while in beta. After the beta, we will charge based on the number of minutes your tests run on Wokwi CI. We plan to offer a free tier with a limited number of minutes per month.
 :::
