@@ -86,6 +86,9 @@ module.exports = {
       'vscode/getting-started',
       'vscode/project-config',
       'vscode/debugging',
-    ]
+    ],
+    'Wokwi CI': [
+      'wokwi-ci/getting-started',
+    ],
   },
 };
