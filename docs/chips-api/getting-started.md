@@ -19,6 +19,11 @@ The Custom Chips API allows you to create new simulation models and extend the f
 
 Custom Chips are usually written in C, but you can use any language that compiles to WebAssembly (e.g. Rust, AssemblyScript, etc.). There is also an experimental support for writing custom chips in Verilog.
 
+## Tutorials
+
+- [Video Tutorial](https://youtu.be/yzdCS3A4DvU) - Three chip examples in 15 Minutes
+- [Step-by-step blog tutorial](https://link.wokwi.com/chips-api-tutorial) - Create a 7-segment driver chip from scratch
+
 ## Getting started
 
 Open any Wokwi project (or [create a new one](https://wokwi.com/projects/new)) and click on the blue "+" button in the diagram editor. Select "Custom Chip" from the list of options.
