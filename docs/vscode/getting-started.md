@@ -47,9 +47,10 @@ Before simulating any of the following projects, you need to compile the code an
 
 - [WiFi + FreeRTOS Tasks](https://github.com/wokwi/esp32-idf-hello-wifi)
 
-### STM32 Hal Examples
+### STM32 Examples
 
 - [STM32 Nucleo64 C031C6 with STM32 HAL](https://github.com/wokwi/stm32-hello-wokwi)
+- [CMSIS on STM32C031C6](https://github.com/WelsTheory/stm32_hello_cmsis_wokwi)
 
 ### ESP32 + Rust
 
