@@ -138,6 +138,9 @@ module.exports = {
       'zh-CN': {
         label: 'Chinese',
       },
+      'de-DE': {
+        label: 'Deutsch (German)',
+      },
     },
   },
 };
