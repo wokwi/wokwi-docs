@@ -83,6 +83,7 @@ Make sure to include a newline ("\n") at the end of your `printf()` messages. Th
 
 - [Framebuffer Chip](https://wokwi.com/projects/330503863007183442) - Shows how to implement a custom display driver chip
 - [SSD1306 Display](https://wokwi.com/projects/371050937178768385) - 128x64 monochrome OLED display chip (using I2C)
+- [SH1107 Display](https://wokwi.com/projects/376496004605220865) - 128x128 monochrome OLED display chip (using I2C)
 - [IL9163 Display](https://wokwi.com/projects/333332561949360723) - 128x128 color LCD display chip (using SPI)
 
 ### Sensors
