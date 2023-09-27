@@ -23,14 +23,19 @@ The CLI allows you to run Wokwi simulations from your terminal, and integrate th
 
 Both the CLI and the VS Code extension use the same project configuration files ([wokwi.toml](../vscode/project-config) and [diagram.json](../diagram-format)), so you can use the VS Code extension to create and test your project, and then use the CLI to run it on CI.
 
-First, download and install the [Wokwi CLI](https://github.com/wokwi/wokwi-cli/releases/latest). Rename the file to `wokwi-cli` (or `wokwi-cli.exe` on Windows), make it executable (`chmod +x wokwi-cli` on Linux/Mac), and move it to a directory in your PATH (e.g. `/usr/local/bin` on Linux/Mac).
-
-On Linux (x64), you can use the following commands to download and install the CLI:
+To install the Wokwi CLI, run the following command:
 
 ```bash
-sudo wget -O /usr/local/bin/wokwi-cli https://github.com/wokwi/wokwi-cli/releases/latest/download/wokwi-cli-linuxstatic-x64
-sudo chmod +x /usr/local/bin/wokwi-cli
+curl -L https://wokwi.com/ci/install.sh | sh
 ```
+
+On Windows, you can use the following command in PowerShell:
+
+```powershell
+iwr https://wokwi.com/ci/install.ps1 -useb | iex
+```
+
+Alternatively, you can download the CLI directly from the [GitHub Releases page](https://github.com/wokwi/wokwi-cli/releases/latest). Rename the file to `wokwi-cli` (or `wokwi-cli.exe` on Windows), make it executable (`chmod +x wokwi-cli` on Linux/Mac), and move it to a directory in your PATH (e.g. `/usr/local/bin` on Linux/Mac).
 
 ## CLI Usage
 
