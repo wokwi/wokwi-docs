@@ -88,23 +88,23 @@ Select a wire by clicking on it, and then click the trash icon on the wire (or p
 
 The following table summarizes the keyboard shortcuts:
 
-| Key    | Function                                   |
-| ------ | ------------------------------------------ |
-| -      | Zoom out                                   |
-| +      | Zoom in                                    |
-| F      | Fit diagram to window (auto zoom)          |
-| A      | Add a part                                 |
-| D      | Duplicate (copy) the selected part         |
-| R      | Rotate the selected part                   |
-| Delete | Delete the selected part / wire            |
-| ?      | Open documentation for the selected part   |
-| Escape | Cancel wire (in wiring mode)               |
-| G      | Toggle the grid                            |
-| Shift  | Toggle coarse grid snapping while dragging |
-| Alt    | Toggle fine grid snapping while dragging   |
-| Ctrl   | Toggle fine grid snapping while dragging   |
-| Ctrl+Z | Undo \*                                    |
-| Ctrl+Y | Redo \*                                    |
+| Key    | Function                                 |
+| ------ | ---------------------------------------- |
+| -      | Zoom out                                 |
+| +      | Zoom in                                  |
+| F      | Fit diagram to window (auto zoom)        |
+| A      | Add a part                               |
+| D      | Duplicate (copy) the selected part       |
+| R      | Rotate the selected part                 |
+| Delete | Delete the selected part / wire          |
+| ?      | Open documentation for the selected part |
+| Escape | Cancel wire (in wiring mode)             |
+| G      | Toggle grid and ruler display            |
+| Shift  | Disable grid snapping while dragging     |
+| Alt    | Fine grid snapping while dragging        |
+| Ctrl   | Fine grid snapping while dragging        |
+| Ctrl+Z | Undo \*                                  |
+| Ctrl+Y | Redo \*                                  |
 
 \* On Mac, use ⌘ instead of Ctrl
 
@@ -112,12 +112,12 @@ Firefox users: if the keyboard shortcuts don't work for you, please make sure th
 
 ## Grid snapping
 
-Activate the grid view by pressing "G" or by clicking the grid icon in the menu. This displays a grid and rulers. The coarse grid is 2.54&nbsp;mm or 0.1&nbsp;inches and the fine grid is 1.27&nbsp;mm or 0.05&nbsp;inches. Tick labels on the rulers show measurements in millimetres (the default), but you can switch to inches by clicking on the units in the top right corner.
+Parts and wires automatically snap to a 2.54&nbsp;mm (0.1 inches) grid. The grid is invisible by default.
 
-The Shift key temporarily toggles the grid snapping mode between the coarse grid and free movement. If the grid is on, it toggles to free movement; if the grid is off, it toggles to coarse grid snapping.
+The Shift key temporarily disables the grid snapping and allows free movement of parts and wires.
 
-The Alt key or the Ctrl key temporarily toggle to fine grid snapping whether the grid is visible or not.
+The Alt key or the Ctrl key temporarily toggle to fine grid snapping. The fine grid is 1.27&nbsp;mm (0.05 inches) wide.
 
-This grid snapping behaviour is the same for both parts and new wires, and the modifier keys allow you to perform grid snapping whether the grid is on or off.
+Press "G" to toggle the display of the grid and rulers. Tick labels on the rulers show measurements in millimetres (the default), but you can switch to inches by clicking on the units in the top right corner.
 
 When you start the simulation, Wokwi hides the grid. Stopping the simulation restores the grid.
