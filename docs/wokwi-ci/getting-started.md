@@ -57,6 +57,7 @@ You can use the following options to customize the CLI behavior:
 
 - `--fail-text <text>` - fail if the serial output contains the specified text
 - `--expect-text <text>` - fail if the serial output does not contain the specified text
+- `--serial-log-file <filename>` - save the serial output to the specified file
 - `--scenario <path>` - path to a scenario file (see below)
 - `--timeout <milliseconds>` - how long to wait for the simulation to finish (default: 30000)
 - `--timeout-exit-code <code>` - exit code to use when the simulation times out (default: 42)
