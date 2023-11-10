@@ -100,3 +100,7 @@ The following projects are set up to run on Wokwi CI. You can use them as a refe
 - [PlatformIO Pushbutton Counter](https://github.com/wokwi/platform-io-esp32-counter-ci) - Includes an [automation scenario](https://github.com/wokwi/platform-io-esp32-counter-ci/blob/main/button.test.yaml) that pushes the button and checks the serial output.
 - [ESP32-C6 LP I2C (Low Power)](https://github.com/wokwi/esp32c6-i2c-lp) - Includes an [automation scenario](https://github.com/wokwi/esp32c6-i2c-lp/blob/main/lp.test.yaml) that interacts with an I2C device.
 - [Embedded Wizard Breakout Game](https://github.com/wokwi/esp-wrover-kit-embedded-wizard-wokwi) - Example of taking a screenshot of the simulated LCD display.
+
+## Additional resources
+
+- [Using PlatformIO CI and Wokwi in GitHub Actions](https://blog.leon0399.ru/wokwi-platformio-github-actions?showSharer=true) - Blog post by Leonid Meleshin
