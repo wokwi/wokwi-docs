@@ -99,7 +99,7 @@ The following examples use the ESP-IDF functions. They are compiled using Arduin
 | RMT                | 🟡    | 🟡  | 🟡  | 🟡  | 🟡  | Transmit-only, use to control NeoPixels                          |
 | LEDC PWM           | ✔️    | ✔️  | ✔️  | ✔️  | ✔️  | Used by analogWrite(), Servo, Buzzer, etc.                       |
 | MCPWM              | ❌    | —   | ❌  | —   | ❌  |                                                                  |
-| DMA                | 🟡    | 🟡  | ❌  | ❌  | ❌  |                                                                  |
+| DMA                | 🟡    | 🟡  | 🟡  | 🟡  | 🟡  | SPI over DMA supported                                           |
 | WiFi               | ✔️    | ✔️  | ✔️  | ✔️  | ✔️  | See the [ESP32 WiFi Guide](./esp32-wifi)                         |
 | Bluetooth          | ❌    | —   | ❌  | ❌  | ❌  | [Open for voting](https://wokwi.com/features#feature-1047159691) |
 | Timers             | 🟡    | ✔️  | ✔️  | ✔️  | ✔️  |                                                                  |
@@ -107,8 +107,8 @@ The following examples use the ESP-IDF functions. They are compiled using Arduin
 | RTC                | 🟡    | 🟡  | 🟡  | 🟡  | 🟡  | Only RTC Pull-up / Pull-down resistors                           |
 | ADC                | ✔️    | ✔️  | ✔️  | ✔️  | ✔️  | Note: analogRead() returns values up to 4095                     |
 | RNG                | ✔️    | ✔️  | ✔️  | ✔️  | ✔️  | Random Number Generator                                          |
-| AES Accelerator    | ✔️    | ✔️  | ✔️  | ✔️  | ✔️  |                                                                  |
-| SHA Accelerator    | ✔️    | ✔️  | ✔️  | ✔️  | ✔️  |                                                                  |
+| AES Accelerator    | ✔️    | ✔️  | ✔️  | ✔️  | ✔️  | S3/C3/C6 - No DMA support yet                                    |
+| SHA Accelerator    | ✔️    | ✔️  | ✔️  | ✔️  | ✔️  | S3/C3/C6 - No DMA support yet                                    |
 | RSA Accelerator    | ✔️    | ✔️  | ✔️  | ✔️  | ✔️  |                                                                  |
 | Hall Effect Sensor | ❌    | —   | ❌  | —   | —   |                                                                  |
 | ULP Processor      | ❌    | ❌  | ❌  | —   | ✔️  |                                                                  |
