@@ -26,7 +26,7 @@ This may change in the future, so it's a good idea to connect GND/VCC anyway.
 
 | Name  | Description                                            | Default value |
 | ----- | ------------------------------------------------------ | ------------- |
-| value | Initial value of the potentiometer, between 0 and 1023 | "0"           |
+| value | Initial value of the potentiometer, between 0 and 1023 | "1023"           |
 
 ## Using the Potentiometer in Arduino
 
