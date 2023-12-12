@@ -149,7 +149,7 @@ void loop() {
 
 ## Keyboard control
 
-To control the rotary encoder with the keyboard, first on on it, then use the following keys:
+To control the rotary encoder with the keyboard, first click on it, then use the following keys:
 
 | Key         | Function                           |
 | ----------- | ---------------------------------- |
