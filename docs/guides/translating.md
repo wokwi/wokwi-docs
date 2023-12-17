@@ -17,6 +17,7 @@ Not all the texts are currently available for translation, but we're adding new 
 
 ### Existing translations
 
+- [Arabic](https://wokwi.com/projects/new?lang=ar)
 - [Chinese](https://wokwi.com/projects/new?lang=zh)
 - [Czech](https://wokwi.com/projects/new?lang=cs)
 - [Dutch](https://wokwi.com/projects/new?lang=nl)
