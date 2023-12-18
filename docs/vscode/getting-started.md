@@ -60,6 +60,10 @@ Before simulating any of the following projects, you need to compile the code an
 - [Scrolling text](https://github.com/playfulFence/esp-rolling-stone) - Using LED Dot Matrix Display
 - [Etch-A-Sketch](https://github.com/playfulFence/esp-etch-a-sketch) - Draw on an LED Dot Matrix using an analog joystick
 
+### Sming Framework
+
+- [Using Wokwi with the Sming Framework](https://sming.readthedocs.io/en/latest/experimental/wokwi.htm)
+
 ### Arduino Extension Examples
 
 - [Arduino LCD-1602 "Hello World"](https://github.com/wokwi/arduino-lcd-helloworld)

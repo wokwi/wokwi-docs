@@ -82,6 +82,10 @@ The following examples use the ESP-IDF functions. They are compiled using Arduin
 - [GPIO button input + interrupts](https://wokwi.com/projects/342634722692694610)
 - [WiFi Example](https://wokwi.com/projects/343629632022512211)
 
+### Sming Framework
+
+Follow [this guide](https://sming.readthedocs.io/en/latest/experimental/wokwi.htm) to simulate Sming Framework projects.
+
 ## Simulation Features
 
 | Peripheral         | ESP32 | S2  | S3  | C3  | C6  | Notes                                                            |
