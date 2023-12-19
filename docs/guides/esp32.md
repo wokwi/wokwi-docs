@@ -84,7 +84,7 @@ The following examples use the ESP-IDF functions. They are compiled using Arduin
 
 ### Sming Framework
 
-Follow [this guide](https://sming.readthedocs.io/en/latest/experimental/wokwi.htm) to simulate Sming Framework projects.
+Follow [this guide](https://sming.readthedocs.io/en/latest/experimental/wokwi.html) to simulate Sming Framework projects.
 
 ## Simulation Features
 
