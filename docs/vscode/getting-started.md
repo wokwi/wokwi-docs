@@ -62,7 +62,7 @@ Before simulating any of the following projects, you need to compile the code an
 
 ### Sming Framework
 
-- [Using Wokwi with the Sming Framework](https://sming.readthedocs.io/en/latest/experimental/wokwi.htm)
+- [Using Wokwi with the Sming Framework](https://sming.readthedocs.io/en/latest/experimental/wokwi.html)
 
 ### Arduino Extension Examples
 
