@@ -60,6 +60,10 @@ Before simulating any of the following projects, you need to compile the code an
 - [Scrolling text](https://github.com/playfulFence/esp-rolling-stone) - Using LED Dot Matrix Display
 - [Etch-A-Sketch](https://github.com/playfulFence/esp-etch-a-sketch) - Draw on an LED Dot Matrix using an analog joystick
 
+### MicroPython
+
+Check out the [MicroPython on Wokwi for VS Code repo](https://github.com/wokwi/wokwi-vscode-micropython) for examples and instructions.
+
 ### Sming Framework
 
 - [Using Wokwi with the Sming Framework](https://sming.readthedocs.io/en/latest/experimental/wokwi.html)
