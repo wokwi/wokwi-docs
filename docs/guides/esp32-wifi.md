@@ -124,7 +124,7 @@ The Public Gateway is a great choice for playing around and learning about WiFi 
 The Private Gateway is a small application that you download and run on your computer. It allows faster and more robust ESP32 internet access: the data goes directly from the simulator (running in your browser) to you computer's network, without having to go through the cloud. This means:
 
 - There's no monitoring. Your traffic stays private.
-- Your ESP32 projects can access services running on your computer or your local network (e.g. a local MQTT or HTTP server)
+- Your ESP32 projects can access services [running on your computer](#connecting-to-your-local-machine) or your local network (e.g. a local MQTT or HTTP server)
 - You can run a web server on the ESP32 and connect to it from your browser (explained below)
 
 The Private Gateway is only available for users who join [The Wokwi Club](../getting-started/wokwi-club).
@@ -152,6 +152,10 @@ You can forward a different port by running the IoT gateway with the `--forward`
 :::caution
 Note: The Private IoT Gateway is not currently supported in Safari due to [a technical limitation](https://bugs.webkit.org/show_bug.cgi?id=171934#c96). Please use a different browser (e.g. Chrome, Firefox, Edge).
 :::
+
+#### Connecting to your local machine
+
+To connect to your local machine ("localhost") from the code running in the simulator, use the hostname `host.wokwi.internal`. For example, if you are running an HTTP server on port 1234 on your computer, you can connect to it from within the simulator using the URL `http://host.wokwi.internal:1234/`.
 
 ## Advanced Usage
 
