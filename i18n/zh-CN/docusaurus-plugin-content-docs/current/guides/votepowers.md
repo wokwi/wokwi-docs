@@ -10,7 +10,7 @@ sidebar_label: 投票权利
 这里有三个方式获得投票权：
 
 1. 从 [Wokwi Features page](https://wokwi.com/features) 购买投票权。一个投票权1美元。
-2. 加入 [Wokwi club](https://wokwi.com/club)，每月订阅。你每个月每花的一美元，就会得到两个投票权。
+2. 加入 [Wokwi club](https://wokwi.com/club?ref=docs_votepowers)，每月订阅。你每个月每花的一美元，就会得到两个投票权。
 3. 特殊情况下，我们会向为Wokwi做出贡献或在Wokwi上创建优秀项目的用户赠送VotePowers。为了公平，考虑到使用资金支持Wokwi的用户的权利，我们将在一个月内赠送最多100个投票权。
 
 您可以在 [features page](https://wokwi.com/features) 的顶部查看您的投票权余额。如果您没有投票权，您将看到一个紫色按钮，上面写着_Get VotePowers_。

@@ -16,7 +16,7 @@ sidebar_label: Arduino库
 
 ### 上传自定义库
 
-[俱乐部成员](https://wokwi.com/club) 可以通过从他们的计算机中选择一个文件夹来上传任何Arduino库。要上传自定义库，请单击Arduino库管理器中的紫色“+”按钮，然后单击“上传库”。
+[俱乐部成员](https://wokwi.com/club?ref=docs_libman) 可以通过从他们的计算机中选择一个文件夹来上传任何Arduino库。要上传自定义库，请单击Arduino库管理器中的紫色“+”按钮，然后单击“上传库”。
 
 所选文件夹应包含库的源代码（.h和.c/.cpp文件）。选择文件夹后，Wokwi将压缩其内容并将其上传到Wokwi的构建服务器（build server）。你将会看到这个库以.zip文件出现在库管理器中。
 

@@ -53,4 +53,4 @@ Hier sind ein paar Beispiele, was du mit Wokwi machen kannst:
 
 ## Wie viel kosted das ganze?
 
-Wokwi ist kostenlos. Du kannst natürlich auch dem [Wokwi-Club beitreten](https://wokwi.com/club), um unsere [Roadmap](https://wokwi.com/features) zu beeinflussen, und bekommst Zugriff auf einige [fortgeschrittene Funktionen](getting-started/wokwi-club).
+Wokwi ist kostenlos. Du kannst natürlich auch dem [Wokwi-Club beitreten](https://wokwi.com/club?ref=docs_welcome), um unsere [Roadmap](https://wokwi.com/features) zu beeinflussen, und bekommst Zugriff auf einige [fortgeschrittene Funktionen](getting-started/wokwi-club).

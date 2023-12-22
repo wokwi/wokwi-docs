@@ -54,4 +54,4 @@ Aqui estão alguns exemplos rápidos de coisas que você pode fazer com o Wokwi:
 
 ## Quanto custa isso?
 
-Wokwi é de uso gratuito. Usuários profissionais e frequentes podem [entrar no Clube](https://wokwi.com/club), influenciar nosso [roadmap de desenvolvimento](https://wokwi.com/features), e obter acesso a [recursos avançados](getting-started/wokwi-club).
+Wokwi é de uso gratuito. Usuários profissionais e frequentes podem [entrar no Clube](https://wokwi.com/club?ref=docs_welcome), influenciar nosso [roadmap de desenvolvimento](https://wokwi.com/features), e obter acesso a [recursos avançados](getting-started/wokwi-club).

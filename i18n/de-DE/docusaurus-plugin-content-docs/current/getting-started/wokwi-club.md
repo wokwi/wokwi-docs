@@ -14,7 +14,7 @@ Zusätzlich bekommst du monatlich [VotePowers](../guides/votepowers). VotePowers
 
 ### Wie trete ich bei?
 
-https://wokwi.com/club
+[https://wokwi.com/club](https://wokwi.com/club?ref=docs_club)
 
 ### Wie kündige ich?
 

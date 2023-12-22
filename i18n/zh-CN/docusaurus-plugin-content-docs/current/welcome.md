@@ -65,4 +65,4 @@ Wokwi是一个在线的电子电路仿真器。你可以使用它来仿真Arduin
 
 使用是免费的！ 
 
-有一定经验或者经常使用的用户可以加入[我们的俱乐部](https://wokwi.com/club)，可以和我们一起[制定开发计划](https://wokwi.com/features)，并且可以使用[高级功能](getting-started/wokwi-club)。
+有一定经验或者经常使用的用户可以加入[我们的俱乐部](https://wokwi.com/club?refs=docs_welcome)，可以和我们一起[制定开发计划](https://wokwi.com/features)，并且可以使用[高级功能](getting-started/wokwi-club)。

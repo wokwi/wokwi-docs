@@ -15,7 +15,7 @@ Você pode usar este método para instalar qualquer biblioteca do Arduino a part
 
 ### Carregando bibliotecas personalizadas
 
-[Membros do clube](https://wokwi.com/club) podem fazer upload de qualquer biblioteca do Arduino selecionando uma pasta em seu computador. Para fazer upload de uma biblioteca personalizada, clique no botão azul "+" no gerenciador de bibliotecas do Arduino e clique em "Upload a Library".
+[Membros do clube](https://wokwi.com/club?ref=docs_libman) podem fazer upload de qualquer biblioteca do Arduino selecionando uma pasta em seu computador. Para fazer upload de uma biblioteca personalizada, clique no botão azul "+" no gerenciador de bibliotecas do Arduino e clique em "Upload a Library".
 
 A pasta selecionada deve conter o código-fonte da biblioteca (arquivos .h e .c/.cpp). Depois de selecionar uma pasta, o Wokwi compactará seu conteúdo e fará o upload para o servidor de compilação do Wokwi. Você poderá ver a biblioteca no Library Manager como um arquivo .zip.
 

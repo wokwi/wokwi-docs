@@ -15,7 +15,7 @@ As a Wokwi club member, you also get new [VotePowers](../guides/votepowers) ever
 
 ### How to join?
 
-https://wokwi.com/club
+[https://wokwi.com/club](https://wokwi.com/club?ref=docs_club)
 
 ### How to cancel?
 

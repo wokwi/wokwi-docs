@@ -15,5 +15,5 @@ Wokwi俱乐部是我们的高级会员计划。加入俱乐部后，你可以使
 
 ### 如何加入呢?
 
-https://wokwi.com/club
+[https://wokwi.com/club](https://wokwi.com/club?ref=docs_club)
 

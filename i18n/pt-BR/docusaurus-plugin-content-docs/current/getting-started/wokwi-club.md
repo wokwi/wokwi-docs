@@ -15,4 +15,4 @@ Como membro do Wokwi Club, você também recebe novos [VotePowers](../guides/vot
 
 ### Como entrar?
 
-https://wokwi.com/club
+[https://wokwi.com/club](https://wokwi.com/club?ref=docs_club)

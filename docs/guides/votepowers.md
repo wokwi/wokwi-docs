@@ -10,7 +10,7 @@ VotePowers let you vote what features we work on. You can see the current list a
 There are three ways to get VotePowers:
 
 1. Purchase VotePowers from the [Wokwi Features page](https://wokwi.com/features). The price is $1 USD for one VotePower.
-2. Join the [Wokwi club](https://wokwi.com/club) for a monthly contribution. You'll get two VotePowers for every USD that you spend every month.
+2. Join the [Wokwi club](https://wokwi.com/club?ref=docs_votepowers) for a monthly contribution. You'll get two VotePowers for every USD that you spend every month.
 3. Occasionally, we'll give away VotePowers for users who contribute to Wokwi or create outstanding projects on Wokwi. To keep things fair for the users who financially support Wokwi, we will give away at most 100 VotePowers in a single calendar month.
 
 You can see your VotePower balance at the top of the [features page](https://wokwi.com/features). In case you don't have VotePowers, you'll see a blue button saying _Get VotePowers_.
