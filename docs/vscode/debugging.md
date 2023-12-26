@@ -39,7 +39,15 @@ The `type` describes the VS Code extension used here. In this case `cppdbg`. The
 
 Replace the `program` path with the path to your firmware's ELF file, and the `miDebuggerPath` with the path to a GDB executable that supports your project's architecture (e.g. for AVR projects, use `avr-gdb`).
 
+### ESP-IDF projects
+
 For ESP-IDF projects, you can set the `miDebuggerPath` to `"${command:espIdf.getXtensaGdb}"`, and the debugger will automatically use the correct GDB executable (this requires the [ESP-IDF extension](https://marketplace.visualstudio.com/items?itemName=espressif.esp-idf-extension) to be installed). For a complete example, check out the [ESP32 Hello WiFi debug configuration](https://github.com/wokwi/esp32-idf-hello-wifi/blob/main/.vscode/launch.json).
+
+### Arduino (AVR) projects
+
+For Arduino projects, you need to use a recent version of GDB. The version that comes with the Arduino IDE (7.8) is too old, and will fail with an error: "ERROR: Unable to start debugging. Failed to find thread 1 for break event".
+
+You can download a recent version of avr-gdb from [here](https://blog.zakkemble.net/avr-gcc-builds/) (Windows/Linux) or [here](https://github.com/osx-cross/homebrew-avr) (macOS, using Homebrew).
 
 ## Start the debugger
 
