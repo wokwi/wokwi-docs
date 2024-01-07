@@ -32,7 +32,7 @@ void chip_timer_callback(void *user_data) {
 }
 ```
 
-:::caution
+:::warning
 
 Info: `timer_init()` kann nur von `chip_init()` aufgerufen werden. Bitte nicht zu einem späteren Zeitpunkt aufrufen.
 

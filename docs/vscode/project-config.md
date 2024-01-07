@@ -32,7 +32,7 @@ The extension of the firmware file depends on the board you are using:
 
 You check test your configuration by pressing **F1** and then selecting "**Wokwi: Start Simulator**". Make sure you compile your program before starting the simulation.
 
-:::caution
+:::warning
 Avoid using backslashes (`\`) in your paths. Use forward slash (`/`) instead, as it makes it possible to open your project on any platform (Windows, Mac and Linux).
 :::
 

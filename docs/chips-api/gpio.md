@@ -29,7 +29,7 @@ Initializes the given pin, and returns a pin identifier for use with the other p
 - `OUTPUT_HIGH` - configures the pin as a digital output, sets the value of the pin to HIGH
 - `ANALOG` - configures the pin as an analog pin. See the [Analog API](analog) section for more detail.
 
-:::caution
+:::warning
 
 Note: `pin_init()` can only be called from `chip_init()`. Do not call it at a later time. You can use `pin_mode()` to change the mode of a pin at any time.
 

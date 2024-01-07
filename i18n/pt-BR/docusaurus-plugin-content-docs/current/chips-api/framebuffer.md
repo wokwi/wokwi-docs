@@ -11,7 +11,7 @@ Use a API Framebuffer para implementar displays (LCD, OLED, e-paper, etc.). O ta
 
 Retorna o framebuffer para o chip atual e as dimensões em pixel (largura/altura) do frame buffer.
 
-:::caution AVISO
+:::warning AVISO
 
 Nota: `framebuffer_init` só pode ser chamado de `chip_init()`. Não chame isso mais tarde.
 

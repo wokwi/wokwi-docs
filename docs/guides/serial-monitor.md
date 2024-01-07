@@ -24,7 +24,7 @@ void loop() {
 }
 ```
 
-:::caution
+:::warning
 The serial monitor will only show once you print some output from your program. To change this behavior, [see below](#display).
 :::
 
@@ -73,7 +73,7 @@ Make sure the the pin names in your code match the ones in the diagram file. The
 to the `SoftwareSerial` constructor should match the pin connected to `$serialMonitor:TX`, and
 the second parameter should match the pin connected to `$serialMonitor:RX`.
 
-:::caution
+:::warning
 The baud rate must be set to **9600**. This is hard coded in the simulator, and using a different
 value will get you garbage in the Serial monitor.
 :::

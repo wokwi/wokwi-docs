@@ -22,7 +22,7 @@ Initialisiert eine SPI-Geräteschnittstelle. Das Argument `config` definiert Pin
 
 Die API unterstützt keine CS/SS Pins: die SPI-Schnittstelle durch das Aufrufen von `spi_start()` und `spi_stop()` zu aktivieren/deaktivieren ist dem Nutzer selbst überlassen.
 
-:::caution
+:::warning
 
 Info: `spi_init` kann nur von `chip_init()` aufgerufen werden. Bitte nicht zu einem späteren Zeitpunkt aufrufen.
 

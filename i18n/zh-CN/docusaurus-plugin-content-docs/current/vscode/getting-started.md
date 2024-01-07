@@ -7,7 +7,7 @@ Wokwi for Visual Studio Code 为嵌入式和物联网系统工程师提供了一
 
 您可以将 Wokwi for VS Code 与 Zehpyr Project、PlatformIO、ESP-IDF、Pi Pico SDK、NuttX、Rust、Arduino CLI 和其他嵌入式开发框架和工具链一起使用。
 
-:::caution
+:::warning
 Wokwi for VS Code 目前处于公开测试阶段。测试结束后，一些功能将只对付费用户开放。
 :::
 
@@ -55,7 +55,7 @@ Wokwi for VS Code 目前处于公开测试阶段。测试结束后，一些功�
 
 ### Arduino 扩展示例
 
-:::caution
+:::warning
 VS Code 的 Arduino 扩展需要安装 Arduino IDE 1.8 或 [Arduino CLI](https://github.com/microsoft/vscode-arduino/issues/1477#issuecomment-1278699661)。它不适用于 Arduino IDE 2.0（目前）。
 :::
 

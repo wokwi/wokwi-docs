@@ -20,7 +20,7 @@ Define um novo atributo inteiro com o nome fornecido. O `default_value` será us
 
 A função retorna um identificador para o atributo, que pode ser acessado usando `attr_read()`.
 
-:::caution AVISO
+:::warning AVISO
 
 Nota: `attr_init` só pode ser chamado através de `chip_init()`. Não chame isso mais tarde.
 
@@ -30,7 +30,7 @@ Nota: `attr_init` só pode ser chamado através de `chip_init()`. Não chame iss
 
 Define um novo atributo de ponto flutuante com o nome fornecido. Veja `attr_init()` para mais informações.
 
-:::caution AVISO
+:::warning AVISO
 
 Nota: `attr_init_float` só pode ser chamado de `chip_init()`. Não chame isso mais tarde.
 

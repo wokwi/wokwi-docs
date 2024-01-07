@@ -31,7 +31,7 @@ elf = 'path-to-your-firmware.elf'
 
 你可以通过按 **F1** 键然后选择 “Wokwi: Start Simulator” 来检查测试你的配置。
 
-:::caution
+:::warning
 避免在路径中使用反斜杠（`\`）。改用正斜杠（`/`）代替，它会使你的项目能够在任何平台上打开（包括Windows、Mac和Linux）。
 :::
 

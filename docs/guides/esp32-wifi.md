@@ -149,7 +149,7 @@ If your ESP32 project is an HTTP server, you can connect to it from your browser
 
 You can forward a different port by running the IoT gateway with the `--forward` option, e.g. `--forward 1234:10.13.37.2:8080`. This will forward all TCP connections to port 1234 on your computer to port 8080 on the simulated ESP32.
 
-:::caution
+:::warning
 Note: The Private IoT Gateway is not currently supported in Safari due to [a technical limitation](https://bugs.webkit.org/show_bug.cgi?id=171934#c96). Please use a different browser (e.g. Chrome, Firefox, Edge).
 :::
 
@@ -183,7 +183,7 @@ As you can see, the PCAP file contains all sort of packets: 802.11 beacon frames
 
 In most cases, you'll only want to focus on a specific protocol. You can achieve this by pressing Ctrl+/ in wireshark, and typing a protocol name (http, tcp, ip, dns, dhcp, etc.). The will filter the list and display only the relevant packets.
 
-:::caution
+:::warning
 The Time field in the packet capture uses the simulation clock time. It may advance slower than wall clock time if the simulation is running slower than full speed (100%).
 :::
 

@@ -7,7 +7,7 @@ Wokwi for Visual Studio Code fornece uma solução de simulação para engenheir
 
 Você pode usar Wokwi para VS Code com Zehpyr Project, PlatformIO, ESP-IDF, Pi Pico SDK, NuttX, Rust, Arduino CLI e outras estruturas e cadeias de ferramentas de desenvolvimento incorporadas.
 
-:::caution Aviso
+:::warning Aviso
 Wokwi for VS Code está atualmente em beta público. Após a versão beta, alguns recursos estarão disponíveis apenas para usuários pagos.
 :::
 
@@ -55,7 +55,7 @@ Antes de simular qualquer um dos projetos a seguir, você precisa compilar o có
 
 ### Exemplos de extensões do Arduino
 
-:::caution Aviso
+:::warning Aviso
 A extensão Arduino do VS Code requer Arduino IDE 1.8 ou [Arduino CLI](https://github.com/microsoft/vscode-arduino/issues/1477#issuecomment-1278699661) instalado. Não funciona (ainda) com o Arduino IDE 2.0.
 :::
 

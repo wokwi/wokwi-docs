@@ -44,14 +44,14 @@ export function LEDBullet({ title, color, children }: ILEDBulletProps) {
   };
 
   return (
-    <p style={{ display: 'flex' }} onMouseOver={mouseOver} onMouseOut={mouseOut}>
+    <p className="led-bullet" onMouseOver={mouseOver} onMouseOut={mouseOut}>
       <LED
         color={color}
         brightness={brightness}
         style={{ marginRight: '6px', marginTop: '-4px', minWidth: '32px', alignSelf: 'baseline' }}
       />
       <span>
-        <h3 style={{ display: 'inline' }}>{title}.</h3> <span>{children}</span>
+        <h3 style={{ display: 'inline' }}>{title}.</h3> {children}
       </span>
     </p>
   );

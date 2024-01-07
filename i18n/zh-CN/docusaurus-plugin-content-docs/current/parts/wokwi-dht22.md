@@ -27,7 +27,7 @@ sidebar_label: wokwi-dht22参考
 
 您可以在模拟运行期间更改温度和湿度值。单击DHT22传感器，将打开一个小弹出窗口。使用温度和湿度滑块来改变值。点按“隐藏”以关闭弹出窗口。
 
-:::caution
+:::warning
 
 如果您尝试从ESP32读取此传感器，请使用“DHT sensor library for ESPx”库。其他DHT22库可能无法在ESP32上可靠地工作。您可以使用此 [example project](https://wokwi.com/projects/322410731508073042) 作为开始的点。
 

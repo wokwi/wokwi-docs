@@ -11,7 +11,7 @@ Use the framebuffer API to implement displays (LCD, OLED, e-paper, etc.). The di
 
 Returns the framebuffer for the current chip, and the pixel dimensions (width/height) of the frame buffer.
 
-:::caution
+:::warning
 
 Note: `framebuffer_init` can only be called from `chip_init()`. Do not call it at a later time.
 

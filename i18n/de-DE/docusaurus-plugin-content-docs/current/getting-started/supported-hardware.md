@@ -4,7 +4,7 @@ title: Unterstützte Hardware
 
 Wokwi unterstützt eine Vielzahl an Hardwarekomponenten, z.B. Mikrocontroller, Sensoren, Displays und viele weitere Komponenten. Folgende Architekturen werden unterstützt: ARM, AVR, RISC-V und Xtensa.
 
-:::caution
+:::warning
 
 Einige Bauteile wurden nicht übersetzt, da es keine gute Übersetzung gibt oder nur Teile der Beschreibung wurden übersetzt.
 

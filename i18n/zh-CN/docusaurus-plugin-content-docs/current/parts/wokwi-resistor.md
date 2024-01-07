@@ -7,7 +7,7 @@ sidebar_label: wokwi-resistor参考
 
 <wokwi-resistor value="470"></wokwi-resistor>
 
-:::caution
+:::warning
 
 Wokwi只有一个非常基本的模拟电路仿真。您将无法同时使用电阻器和模拟组件（例如电位器或NTC温度传感器）。您仍然可以将电阻用作外部上拉/下拉电阻。
 

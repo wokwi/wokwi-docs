@@ -31,7 +31,7 @@ A extensão do arquivo de firmware depende da placa que você está usando:
 
 Verifique sua configuração pressionando **F1** e selecionando "**Wokwi: Start Simulator**".
 
-:::caution Aviso
+:::warning Aviso
 Evite usar barras invertidas (`\`) em seus caminhos. Em vez disso, use a barra (`/`), pois permite abrir seu projeto em qualquer plataforma (Windows, Mac e Linux).
 :::
 

@@ -7,7 +7,7 @@ sidebar_label: wokwi-microsd-card参考
 
 <wokwi-microsd-card />
 
-:::caution
+:::warning
 microSD卡模拟器仍处于测试阶段。界面/行为容易改变！
 :::
 

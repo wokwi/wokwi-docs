@@ -24,7 +24,7 @@ Initializes an I2C device. The `config` argument defines the pins, address, and 
 
 All the callbacks (`connect`, `read`, `write`, `disconnect`) are optional. They all use the `user_data` pointer as their first argument.
 
-:::caution
+:::warning
 
 Note: `i2c_init` can only be called from `chip_init()`. Do not call it at a later time.
 

@@ -29,7 +29,7 @@ Inicializa o pino fornecido e retorna um identificador de pino para uso com os o
 - `OUTPUT_HIGH` - configura o pino como uma saída digital, define o valor do pino para ALTO
 - `ANALOG` - configura o pino como um pino analógico. Consulte a seção [API analógica](analog) para obter mais detalhes.
 
-:::caution AVISO
+:::warning AVISO
 
 Nota: `pin_init()` só pode ser chamado de `chip_init()`. Não ligue mais tarde. Você pode usar `pin_mode()` para alterar o modo de um pino a qualquer momento.
 

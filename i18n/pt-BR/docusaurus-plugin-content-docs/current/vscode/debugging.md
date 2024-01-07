@@ -41,6 +41,6 @@ Substitua o caminho `program` pelo caminho para o arquivo ELF do seu firmware e 
 
 Inicie o simulador Wokwi pressionando **F1** e selecionando a opção "**Wokwi: Start Simulator and Wait for Debugger**". O simulador será carregado, mas o programa ficará em pausa, aguardando a conexão do depurador. Em seguida, pressione **F5** para iniciar o depurador.
 
-:::caution Aviso
+:::warning Aviso
 Você precisa iniciar o Wokwi antes de iniciar o depurador. Se você iniciar o depurador primeiro, ele não conseguirá se conectar ao simulador.
 :::

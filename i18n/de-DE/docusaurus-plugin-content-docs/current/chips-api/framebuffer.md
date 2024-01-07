@@ -11,7 +11,7 @@ Die Framebuffer API wird genutzt, um Displays zu implementieren (z.B. LCD, OLED,
 
 Gibt den Framebuffer für den Chip und die Maße des Displays zurück.
 
-:::caution
+:::warning
 
 Info: `framebuffer_init` kann nur von der `chip_init()` Methonde aufgerufen werden. Bitte rufe es nicht zu einem späteren Zeitpunk auf.
 

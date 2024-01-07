@@ -29,7 +29,7 @@ Initialisiert den angegebenen Pin und gibt den Pin Identifier, welcher für ande
 - `OUTPUT_HIGH` - konfiguriert den Pin als digitalen Ausgang und setzt den Wert auf `HIGH`
 - `ANALOG` - konfiguriert den Pin als analogen Pin. Mehr Details gibt es unter "[Analoge API](analog)".
 
-:::caution
+:::warning
 
 Info: `pin_init()` kann nur von `chip_init()` aufgerufen werden. Rufe die Methode nicht zu einem späteren Zeitpunkt auf. Du kannst jederzeit `pin_mode()` nutzen, um den Modus zu ändern.
 

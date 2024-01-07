@@ -108,7 +108,7 @@ Se o seu projeto ESP32 for um servidor HTTP, você pode se conectar a ele pelo n
 
 Você pode encaminhar uma porta diferente executando o gateway IoT com a opção `--forward`, por exemplo `--forward 1234:10.13.37.2:8080`. Isso encaminhará todas as conexões TCP da porta 1234 em seu computador para a porta 8080 no ESP32 simulado.
 
-:::caution Aviso
+:::warning Aviso
 O gateway de IoT privado não tem suporte no momento ao Safari devido a [uma limitação técnica](https://bugs.webkit.org/show_bug.cgi?id=171934#c96). Use um navegador diferente (por exemplo, Chrome, Firefox, Edge).
 :::
 
@@ -138,7 +138,7 @@ Como você pode ver, o arquivo PCAP contém todos os tipos de pacotes: quadros d
 
 Na maioria dos casos, você desejará se concentrar apenas em um protocolo específico. Você pode conseguir isso pressionando Ctrl+/ no wireshark e digitando um nome de protocolo (http, tcp, ip, dns, dhcp, etc.). Isso irá filtrar a lista e exibir apenas os pacotes relevantes.
 
-:::caution::atenção
+:::warning::atenção
 O campo Time na captura de pacotes usa o tempo do relógio de simulação. Pode avançar mais devagar que o relógio de parede se a simulação estiver rodando mais devagar que a velocidade máxima (100%).
 :::
 

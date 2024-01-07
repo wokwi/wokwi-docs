@@ -7,7 +7,7 @@ import ChipsConsoleImage from './chips-console.png';
 
 # Getting Started with the Wokwi Custom Chips C API
 
-:::caution
+:::warning
 
 The Chips API is currently in beta. Please share your experiments and provide feedback in the `#custom-chips` channel on the [Discord chat](https://wokwi.com/discord).
 

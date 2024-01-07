@@ -20,7 +20,7 @@ Defines a new integer attribute with the given name. The `default_value` will be
 
 The function returns a handle to the attribute, which can be accessed using `attr_read()`.
 
-:::caution
+:::warning
 
 Note: `attr_init` can only be called from `chip_init()`. Do not call it at a later time.
 
@@ -30,7 +30,7 @@ Note: `attr_init` can only be called from `chip_init()`. Do not call it at a lat
 
 Defines a new floating point attribute with the given name. See `attr_init()` for more info.
 
-:::caution
+:::warning
 
 Note: `attr_init_float` can only be called from `chip_init()`. Do not call it at a later time.
 

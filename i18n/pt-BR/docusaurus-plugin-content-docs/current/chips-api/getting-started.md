@@ -5,7 +5,7 @@ sidebar_label: Começando
 
 # Introdução à API Wokwi Custom Chips C
 
-:::caution AVISO
+:::warning AVISO
 
 A API de chips está atualmente em versão beta. Por favor, compartilhe suas experiências e forneça feedback no canal `#custom-chips` no [chat do Discord](https://wokwi.com/discord).
 

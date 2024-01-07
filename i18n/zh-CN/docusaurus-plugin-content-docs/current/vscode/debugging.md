@@ -41,6 +41,6 @@ gdbServerPort=3333
 
 按 **F1** 启动 Wokwi 模拟器，然后选择“**Wokwi: Start Simulator and Wait for Debugger**”。模拟器将加载，但程序将暂停，等待调试器连接。然后按 **F5** 启动调试器。
 
-:::caution
+:::warning
 您需要在启动调试器之前启动 Wokwi。如果先启动调试器，它将无法连接到模拟器。
 :::

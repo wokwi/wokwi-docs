@@ -20,7 +20,7 @@ Definiert ein Interger Attribut mit dem angegebenen Namen. Der Standardwert (`de
 
 Die Funktion gibt ein Handle auf das Attribut zurück, auf das mit `attr_read()` zugegriffen werden kann.
 
-:::caution
+:::warning
 
 Info: `attr_init` kann nur von `chip_init()` aufgerufen werden. Bitte nicht zu einem späteren Zeitpunkt aufrufen.
 
@@ -30,7 +30,7 @@ Info: `attr_init` kann nur von `chip_init()` aufgerufen werden. Bitte nicht zu e
 
 Definiert einen Float mit dem angegebenen Namen. Siehe `attr_init()` für mehr Informationen.
 
-:::caution
+:::warning
 
 Info: `attr_init_float` kann nur von `chip_init()` aufgerufen werden. Bitte nicht zu einem späteren Zeitpunkt aufrufen.
 

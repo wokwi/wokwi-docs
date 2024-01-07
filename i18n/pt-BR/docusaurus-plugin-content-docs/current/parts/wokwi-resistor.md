@@ -7,7 +7,7 @@ Um resistor.
 
 <wokwi-resistor value="470"></wokwi-resistor>
 
-:::caution ALERTA
+:::warning ALERTA
 Wokwi tem apenas uma simulação de circuito analógico muito básica. Você não será capaz de usar resistores junto com
 componentes analógicos (por exemplo, potenciômetro ou sensor de temperatura NTC). Você ainda pode usar os resistores como
 pull-up/pull-down externos.

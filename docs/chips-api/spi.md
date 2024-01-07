@@ -22,7 +22,7 @@ Initializes an SPI device interface. The `config` argument defines the pins, mod
 
 The API does not support a CS/SS pin: it is up to the user to select/deselect the SPI interface by calling `spi_start()` and `spi_stop()`.
 
-:::caution
+:::warning
 
 Note: `spi_init` can only be called from `chip_init()`. Do not call it at a later time.
 

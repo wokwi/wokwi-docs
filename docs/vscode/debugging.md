@@ -53,6 +53,6 @@ You can download a recent version of avr-gdb from [here](https://blog.zakkemble.
 
 Start the Wokwi simulator by pressing **F1** and then selecting "**Wokwi: Start Simulator and Wait for Debugger**". The simulator will load, but the program will be paused, waiting for the debugger to connect. Then press **F5** to start the debugger.
 
-:::caution
+:::warning
 You need to start Wokwi before starting the debugger. If you start the debugger first, it will fail to connect to the simulator.
 :::

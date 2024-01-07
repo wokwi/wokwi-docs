@@ -48,7 +48,7 @@ figcaption {
 html .svg-font-table {
   fill: currentColor;
   max-width: 100%;
-  height: auto; 
+  height: auto;
 }
 
 html[data-theme='dark'] .svg-font-table path {
@@ -67,4 +67,13 @@ wokwi-analog-joystick[disabled]:before {
   right: 0;
   left: 0;
   bottom: 0;
+}
+
+.led-bullet {
+  display: flex;
+}
+
+.led-bullet span p {
+  display: inline;
+  margin: 0;
 }

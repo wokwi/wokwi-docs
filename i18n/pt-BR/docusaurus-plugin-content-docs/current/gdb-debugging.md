@@ -126,13 +126,13 @@ Lista de comandos GDB mais comuns para depuração de código AVR.
 
 ### Modificando dados
 
-| Comando                | Forma curta  | Descrição                                                             |
-| ---------------------- | ------------ | --------------------------------------------------------------------- |
-| set i = 0              | s i=0        | Altera o valor da variável `i` para 0                                 |
-| set $pc = 0            | s $pc=0      | Salta para o início do programa                                       |
-| set $r12 = 0x55        | s $r12=0x55  | Define r12 como 0x55                                                  |
-| set PORTB = 0xff       | s PORTB=0xff | Define o (registro de I/O) do PORTB para 0xff                         |
-| set {int}0x800200 = 50 | s …          | Define um número inteiro no endereço do espaço de dados 0x200 para 50 |
+| Comando                 | Forma curta  | Descrição                                                             |
+| ----------------------- | ------------ | --------------------------------------------------------------------- |
+| set i = 0               | s i=0        | Altera o valor da variável `i` para 0                                 |
+| set $pc = 0             | s $pc=0      | Salta para o início do programa                                       |
+| set $r12 = 0x55         | s $r12=0x55  | Define r12 como 0x55                                                  |
+| set PORTB = 0xff        | s PORTB=0xff | Define o (registro de I/O) do PORTB para 0xff                         |
+| set \{int}0x800200 = 50 | s …          | Define um número inteiro no endereço do espaço de dados 0x200 para 50 |
 
 ### Interface de usuário de texto (TUI)
 

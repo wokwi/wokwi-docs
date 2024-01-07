@@ -22,7 +22,7 @@ Inicializa uma interface de dispositivo SPI. O argumento `config` define os pino
 
 A API não suporta um pino CS/SS: cabe ao usuário selecionar/desmarcar a interface SPI chamando `spi_start()` e `spi_stop()`.
 
-:::caution AVISO
+:::warning AVISO
 
 Nota: `spi_init` só pode ser chamado de `chip_init()`. Não ligue mais tarde.
 

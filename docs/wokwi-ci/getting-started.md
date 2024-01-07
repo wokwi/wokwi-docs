@@ -13,7 +13,7 @@ A copy of your firmware binary is uploaded to the Wokwi Cloud for every test run
 
 If you do not want to upload your firmware to the cloud, please contact us to discuss options for on-premise deployment of Wokwi CI.
 
-:::caution
+:::warning
 Wokwi CI is free while in beta. After the beta, we will charge based on the number of minutes your tests run on Wokwi CI. We plan to offer a free tier with a limited number of minutes per month.
 :::
 
@@ -86,7 +86,7 @@ For a complete example, check out the [Example Projects](#example-projects) sect
 
 You can use the `--scenario` option to load a YAML file that describes the simulation scenario. The scenario file can be used to automate the simulation, by pushing buttons, changing the state of the sensors, and checking the serial output.
 
-:::caution
+:::warning
 Automation scenarios are currently in alpha. The API is not documented yet, and may change in the future. You can use the [example projects](#example-projects) below as a reference.
 :::
 
