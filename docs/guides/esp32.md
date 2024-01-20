@@ -111,8 +111,8 @@ Follow [this guide](https://sming.readthedocs.io/en/latest/experimental/wokwi.ht
 | RTC                | 🟡    | 🟡  | 🟡  | 🟡  | 🟡  | Only RTC Pull-up / Pull-down resistors                           |
 | ADC                | ✔️    | ✔️  | ✔️  | ✔️  | ✔️  | Note: analogRead() returns values up to 4095                     |
 | RNG                | ✔️    | ✔️  | ✔️  | ✔️  | ✔️  | Random Number Generator                                          |
-| AES Accelerator    | ✔️    | ✔️  | ✔️  | ✔️  | ✔️  | S3/C3/C6 - No DMA support yet                                    |
-| SHA Accelerator    | ✔️    | ✔️  | ✔️  | ✔️  | ✔️  | S3/C3/C6 - No DMA support yet                                    |
+| AES Accelerator    | ✔️    | ✔️  | ✔️  | ✔️  | ✔️  |                                                                  |
+| SHA Accelerator    | ✔️    | ✔️  | ✔️  | ✔️  | ✔️  |                                                                  |
 | RSA Accelerator    | ✔️    | ✔️  | ✔️  | ✔️  | ✔️  |                                                                  |
 | Hall Effect Sensor | ❌    | —   | ❌  | —   | —   |                                                                  |
 | ULP Processor      | ❌    | ❌  | ❌  | —   | ✔️  |                                                                  |
