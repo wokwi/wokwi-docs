@@ -114,6 +114,7 @@ Follow [this guide](https://sming.readthedocs.io/en/latest/experimental/wokwi.ht
 | AES Accelerator    | ✔️    | ✔️  | ✔️  | ✔️  | ✔️  |                                                                  |
 | SHA Accelerator    | ✔️    | ✔️  | ✔️  | ✔️  | ✔️  |                                                                  |
 | RSA Accelerator    | ✔️    | ✔️  | ✔️  | ✔️  | ✔️  |                                                                  |
+| ECC Accelerator    | —    | —  | —  | —  | ✔️  |                                                                  |
 | Hall Effect Sensor | ❌    | —   | ❌  | —   | —   |                                                                  |
 | ULP Processor      | ❌    | ❌  | ❌  | —   | ✔️  |                                                                  |
 | GDB Debugging      | ✔️    | ✔️  | ✔️  | ✔️  | ✔️  | Works with [Wokwi for VS Code](../vscode/debugging)              |
