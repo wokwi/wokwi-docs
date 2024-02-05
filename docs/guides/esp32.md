@@ -93,7 +93,7 @@ Follow [this guide](https://sming.readthedocs.io/en/latest/experimental/wokwi.ht
 | Processor core(s)  | ✔️    | ✔️  | ✔️  | ✔️  | ✔️  |                                                                  |
 | GPIO               | ✔️    | ✔️  | ✔️  | ✔️  | ✔️  | Interrupts supported                                             |
 | IOMUX              | ✔️    | ✔️  | ✔️  | ✔️  | ✔️  |                                                                  |
-| PSRAM              | ✔️    | ✔️  | ✔️  | —   | ❌  | 4MB of external SRAM \*                                          |
+| PSRAM              | ✔️    | ✔️  | ✔️  | —   | —  | 4MB of external SRAM \*                                          |
 | UART               | ✔️    | ✔️  | ✔️  | ✔️  | ✔️  |                                                                  |
 | USB                | —     | ✔️  | ✔️  | ❌  | ❌  | Support for UART over USB (CDC)                                  |
 | I2C                | ✔️    | ✔️  | ✔️  | ✔️  | ✔️  | Master only. 10-bit addressing not supported.                    |
