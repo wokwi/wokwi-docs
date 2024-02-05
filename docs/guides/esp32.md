@@ -106,7 +106,7 @@ Follow [this guide](https://sming.readthedocs.io/en/latest/experimental/wokwi.ht
 | DMA                | 🟡    | 🟡  | 🟡  | 🟡  | 🟡  | SPI over DMA supported                                           |
 | WiFi               | ✔️    | ✔️  | ✔️  | ✔️  | ✔️  | See the [ESP32 WiFi Guide](./esp32-wifi)                         |
 | Bluetooth          | ❌    | —   | ❌  | ❌  | ❌  | [Open for voting](https://wokwi.com/features#feature-1047159691) |
-| Timers             | 🟡    | ✔️  | ✔️  | ✔️  | ✔️  |                                                                  |
+| Timers             | ✔️    | ✔️  | ✔️  | ✔️  | ✔️  |                                                                  |
 | Watchdog           | ❌    | ❌  | ❌  | ❌  | ❌  |                                                                  |
 | RTC                | 🟡    | 🟡  | 🟡  | 🟡  | 🟡  | Only RTC Pull-up / Pull-down resistors                           |
 | ADC                | ✔️    | ✔️  | ✔️  | ✔️  | ✔️  | Note: analogRead() returns values up to 4095                     |
