@@ -1,0 +1,18 @@
+{
+  "version.label": {
+    "message": "Suivant",
+    "description": "L'étiquette de la version actuelle"
+  },
+  "sidebar.main.category.Getting Started": {
+    "message": "Commencer",
+    "description": "L'étiquette de la catégorie Mise en route dans la barre latérale principale"
+  },
+  "sidebar.main.category.Guides": {
+    "message": "Guides",
+    "description": "L'étiquette de la catégorie Guides dans la barre latérale principale"
+  },
+  "sidebar.main.category.Diagram Reference": {
+    "message": "Référence du diagramme",
+    "description": "L'étiquette de la catégorie Référence du diagramme dans la barre latérale principale"
+  }
+}
