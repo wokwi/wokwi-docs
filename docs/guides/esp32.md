@@ -95,7 +95,8 @@ Follow [this guide](https://sming.readthedocs.io/en/latest/experimental/wokwi.ht
 | IOMUX              | ✔️    | ✔️  | ✔️  | ✔️  | ✔️  |                                                                  |
 | PSRAM              | ✔️    | ✔️  | ✔️  | —   | —  | 4MB of external SRAM \*                                          |
 | UART               | ✔️    | ✔️  | ✔️  | ✔️  | ✔️  |                                                                  |
-| USB                | —     | ✔️  | ✔️  | ❌  | ❌  | Support for UART over USB (CDC)                                  |
+| USB                | —     | ✔️  | ✔️  | —  | —  | Support for UART over USB (CDC)                                  |
+| USB Serial + JTAG  | —     |  —  | ✔️  | ✔️  | ✔️  | Serial supported, JTAG not.                                      |
 | I2C                | ✔️    | ✔️  | ✔️  | ✔️  | ✔️  | Master only. 10-bit addressing not supported.                    |
 | I2S                | ❌    | ❌  | ❌  | ❌  | ❌  | [Open for voting](https://wokwi.com/features#feature-1031718532) |
 | SPI                | ✔️    | ✔️  | ✔️  | ✔️  | ✔️  |                                                                  |
