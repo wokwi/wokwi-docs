@@ -61,6 +61,7 @@ module.exports = {
       'parts/wokwi-pir-motion-sensor',
       'parts/wokwi-potentiometer',
       'parts/wokwi-pushbutton',
+      'parts/wokwi-pushbutton-6mm',
       'parts/wokwi-rgb-led',
       'parts/wokwi-resistor',
       'parts/wokwi-servo',
