@@ -56,3 +56,7 @@ Start the Wokwi simulator by pressing **F1** and then selecting "**Wokwi: Start 
 :::warning
 You need to start Wokwi before starting the debugger. If you start the debugger first, it will fail to connect to the simulator.
 :::
+
+## Troubleshooting
+
+If you get an error message saying "Remote 'g' packet reply is too long", you are probably using a GDB version that is incompatible with the microcontroller architecture (e.g. using avr-gdb with an ESP32 project). Make sure you are using the correct GDB version for your project's microcontroller.
