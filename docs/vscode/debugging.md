@@ -43,6 +43,10 @@ Replace the `program` path with the path to your firmware's ELF file, and the `m
 
 For ESP-IDF projects, you can set the `miDebuggerPath` to `"${command:espIdf.getXtensaGdb}"`, and the debugger will automatically use the correct GDB executable (this requires the [ESP-IDF extension](https://marketplace.visualstudio.com/items?itemName=espressif.esp-idf-extension) to be installed). For a complete example, check out the [ESP32 Hello WiFi debug configuration](https://github.com/wokwi/esp32-idf-hello-wifi/blob/main/.vscode/launch.json).
 
+### PlatformIO projects
+
+PlatformIO provides a precompiled version of GDB that you can use. For example, the debug an ESP32 project, you can set the `miDebuggerPath` to `"${userHome}/.platformio/packages/toolchain-xtensa-esp32/bin/xtensa-esp32-elf-gdb.exe"` on Windows, or `"${userHome}/.platformio/packages/toolchain-xtensa-esp32/bin/xtensa-esp32-elf-gdb"` on macOS and Linux.
+
 ### Arduino (AVR) projects
 
 For Arduino projects, you need to use a recent version of GDB. The version that comes with the Arduino IDE (7.8) is too old, and will fail with an error: "ERROR: Unable to start debugging. Failed to find thread 1 for break event".
