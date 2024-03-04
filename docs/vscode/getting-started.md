@@ -42,6 +42,7 @@ Before simulating any of the following projects, you need to compile the code an
 ### ESP-IDF Examples
 
 - [WiFi + FreeRTOS Tasks](https://github.com/wokwi/esp32-idf-hello-wifi)
+- [SSD1306 OLED with LVGL Graphics](https://github.com/wokwi/esp-idf-oled-ssd1306)
 
 ### STM32 Examples
 
