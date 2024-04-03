@@ -9,18 +9,18 @@ Wokwi simulates a wide variety of hardware components, including microcontroller
 The following microcontrollers are currently supported:
 
 | Family                            | Microcontrollers                                                                                                                                      |
-| --------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
+|-----------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|
 | AVR                               | ATmega328P ([Arduino Uno](../parts/wokwi-arduino-uno)), ATmega2560 ([Arduino Mega](../parts/wokwi-arduino-mega)), [ATtiny85](../parts/wokwi-attiny85) |
-| [ESP32](../guides/esp32)          | **Xtensa**: ESP32, ESP32-S2, ESP32-S3<br /> **RISC-V**: ESP32-C3, ESP32-C6, ESP32-H2\*<br/>                                                           |
+| [ESP32](../guides/esp32)          | **Xtensa**: ESP32, ESP32-S2, ESP32-S3<br /> **RISC-V**: ESP32-C3, ESP32-C6, ESP32-H2, ESP32-P4\*<br/>                                                 |
 | STM32                             | [STM32C031](../parts/board-st-nucleo-c031c6), [STM32L031](../parts/board-st-nucleo-l031k6)                                                            |
 | [Pi Pico](../parts/wokwi-pi-pico) | RP2040 (Raspberry Pi Pico), an dual-core ARM Cortex-M0+ microcontroller                                                                               |
 
-\* ESP32-C6 support is in beta, ESP32-H2 support is in alpha.
+\* ESP32-H2 support is in beta, ESP32-P4 support is in alpha.
 
 ## Sensors
 
 | Part                                                                     | Description                                                                                               |
-| ------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------- |
+|--------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | [HC-SR04](../parts/wokwi-hc-sr04)                                        | HC-SR04 Ultrasonic Distance Sensor                                                                        |
 | [DHT22](../parts/wokwi-dht22)                                            | Digital Humidity and Temperature sensor                                                                   |
 | [DS1307 RTC](../parts/wokwi-ds1307)                                      | RTC (Real Time Clock) module with I2C interface and 56 bytes of NV SRAM                                   |
@@ -34,7 +34,7 @@ The following microcontrollers are currently supported:
 ## Input devices
 
 | Part                                                      | Description                                                                       |
-| --------------------------------------------------------- | --------------------------------------------------------------------------------- |
+|-----------------------------------------------------------|-----------------------------------------------------------------------------------|
 | [Pushbutton](../parts/wokwi-pushbutton)                   | 12mm Tactile Switch Button (momentary push button)                                |
 | [Slide switch](../parts/wokwi-slide-switch)               | Standard Single Pole Double Throw (SPDT) slide switch                             |
 | [DIP Switch 8](../parts/wokwi-dip-switch-8)               | Set of 8 electrical switches in a single package                                  |
@@ -47,7 +47,7 @@ The following microcontrollers are currently supported:
 ## LEDs
 
 | Part                                          | Description                                        |
-| --------------------------------------------- | -------------------------------------------------- |
+|-----------------------------------------------|----------------------------------------------------|
 | [LED](../parts/wokwi-led)                     | Standard 5mm LED (Light Emitting Diode)            |
 | [RGB LED](../parts/wokwi-rgb-led)             | 5mm Red, Green and Blue (RGB) LED                  |
 | [LED Bar Graph](../parts/wokwi-led-bar-graph) | 10-segment LED Bar Graph                           |
@@ -61,7 +61,7 @@ The following microcontrollers are currently supported:
 ## Display
 
 | Part                                                           | Description                                                |
-| -------------------------------------------------------------- | ---------------------------------------------------------- |
+|----------------------------------------------------------------|------------------------------------------------------------|
 | [LCD 1602](../parts/wokwi-lcd1602)                             | An LCD with 2 lines, 16 characters per line                |
 | [LCD 2004](../parts/wokwi-lcd2004)                             | An LCD with 4 lines, 20 characters per line                |
 | [ILI9341 2.8" TFT-LCD display](../parts/wokwi-ili9341)         | Full color 240x320 2.8" LCD-TFT display with SPI interface |
@@ -76,7 +76,7 @@ The following microcontrollers are currently supported:
 ## Motors
 
 | Part                                                    | Description                                                                                      |
-| ------------------------------------------------------- | ------------------------------------------------------------------------------------------------ |
+|---------------------------------------------------------|--------------------------------------------------------------------------------------------------|
 | [Servo](../parts/wokwi-servo)                           | A standard Micro Servo Motor                                                                     |
 | [Bipolar Stepper Motor](../parts/wokwi-stepper-motor)   | A bipolar Stepper Motor                                                                          |
 | [A4988](../parts/wokwi-a4988)                           | A4988 Stepper Motor Driver                                                                       |
@@ -85,14 +85,14 @@ The following microcontrollers are currently supported:
 ## Communications
 
 | Part                                      | Description                                 |
-| ----------------------------------------- | ------------------------------------------- |
+|-------------------------------------------|---------------------------------------------|
 | [IR Receiver](../parts/wokwi-ir-receiver) | 38KHz infrared receiver                     |
 | [IR Remote](../parts/wokwi-ir-remote)     | 38KHz infrared remote with 20 function keys |
 
 ## Logic
 
 | Part                                                   | Description                                                |
-| ------------------------------------------------------ | ---------------------------------------------------------- |
+|--------------------------------------------------------|------------------------------------------------------------|
 | NOT gate                                               | NOT gate                                                   |
 | AND gate                                               | AND gate                                                   |
 | OR gate                                                | OR gate                                                    |
@@ -107,7 +107,7 @@ The following microcontrollers are currently supported:
 ## Other parts
 
 | Part                                            | Description                             |
-| ----------------------------------------------- | --------------------------------------- |
+|-------------------------------------------------|-----------------------------------------|
 | [Resistor](../parts/wokwi-resistor)             | Resistor                                |
 | [Buzzer](../parts/wokwi-buzzer)                 | A piezoelectric buzzer                  |
 | [Relay Module](../parts/wokwi-relay-module)     | Relay Module                            |

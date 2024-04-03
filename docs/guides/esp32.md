@@ -3,14 +3,15 @@ title: ESP32 Simulation
 sidebar_label: ESP32 Simulator
 ---
 
-The ESP32 is a popular WiFi and Bluetooth-enabled microcontroller, widely used for IoT Projects. Wokwi simulates the ESP32, ESP32-C3, ESP32-S2, ESP32-S3, ESP32-C6 (beta), and ESP32-H2 (alpha).
+The ESP32 is a popular WiFi and Bluetooth-enabled microcontroller, widely used for IoT Projects. Wokwi simulates the ESP32, ESP32-C3, ESP32-S2, ESP32-S3, ESP32-C6, ESP32-H2 (beta), and ESP32-P4 (alpha).
 
 <wokwi-esp32-devkit-v1></wokwi-esp32-devkit-v1>
 
 ## ESP32 boards
 
 | Name                                                           | Chip     | Description                                                                          |
-| -------------------------------------------------------------- | -------- | ------------------------------------------------------------------------------------ |
+|----------------------------------------------------------------|----------|--------------------------------------------------------------------------------------|
+| ESP32-DevKitC V4                                               | ESP32    | Entry-level ESP32 development board                                                  |
 | ESP32 DevKit v1                                                | ESP32    | Popular ESP32 development board                                                      |
 | ESP32-S2-DevKitM-1                                             | ESP32-S2 | Entry-level ESP32-S2 development board                                               |
 | [Franzininho WiFi](../parts/board-franzininho-wifi)            | ESP32-S2 | Board by the Franzininho Community                                                   |
@@ -18,8 +19,9 @@ The ESP32 is a popular WiFi and Bluetooth-enabled microcontroller, widely used f
 | ESP32-S3-DevKitC-1                                             | ESP32-S3 | Entry-level ESP32-S3 development board                                               |
 | ESP32-C3-DevKitM-1                                             | ESP32-C3 | Entry-level ESP32-C3 development board                                               |
 | Rust Board ESP32-C3                                            | ESP32-C3 | ESP32-C3 board designed for [Rust trainings](https://github.com/esp-rs/std-training) |
-| ESP32-C6-DevKitC-1                                             | ESP32-C6 | Entry-level ESP32-C6 development board (beta)                                        |
-| ESP32-H2-DevKitM-1                                             | ESP32-H2 | Entry-level ESP32-H2 development board (alpha)                                       |
+| ESP32-C6-DevKitC-1                                             | ESP32-C6 | Entry-level ESP32-C6 development board                                               |
+| ESP32-H2-DevKitM-1                                             | ESP32-H2 | Entry-level ESP32-H2 development board (beta)                                        |
+| ESP32-P4-Preview-DevKitC-1                                     | ESP32-P4 | ESP32-P4 pre-release virtual evaluation board (alpha)                                |
 
 You can contribute additional boards by sending a pull request to [wokwi-boards](https://github.com/wokwi/wokwi-boards).
 
@@ -88,37 +90,37 @@ Follow [this guide](https://sming.readthedocs.io/en/latest/experimental/wokwi.ht
 
 ## Simulation Features
 
-| Peripheral         | ESP32 | S2  | S3  | C3  | C6  | Notes                                                            |
-| ------------------ | ----- | --- | --- | --- | --- | ---------------------------------------------------------------- |
-| Processor core(s)  | ✔️    | ✔️  | ✔️  | ✔️  | ✔️  |                                                                  |
-| GPIO               | ✔️    | ✔️  | ✔️  | ✔️  | ✔️  | Interrupts supported                                             |
-| IOMUX              | ✔️    | ✔️  | ✔️  | ✔️  | ✔️  |                                                                  |
-| PSRAM              | ✔️    | ✔️  | ✔️  | —   | —  | 4MB of external SRAM \*                                          |
-| UART               | ✔️    | ✔️  | ✔️  | ✔️  | ✔️  |                                                                  |
-| USB                | —     | ✔️  | ✔️  | —  | —  | Support for UART over USB (CDC)                                  |
-| USB Serial + JTAG  | —     |  —  | ✔️  | ✔️  | ✔️  | Serial supported, JTAG not.                                      |
-| I2C                | ✔️    | ✔️  | ✔️  | ✔️  | ✔️  | Master only. 10-bit addressing not supported.                    |
-| I2S                | ❌    | ❌  | ❌  | ❌  | ❌  | [Open for voting](https://wokwi.com/features#feature-1031718532) |
-| SPI                | ✔️    | ✔️  | ✔️  | ✔️  | ✔️  |                                                                  |
-| TWAI               | ❌    | ❌  | ❌  | ❌  | ❌  |                                                                  |
-| RMT                | 🟡    | 🟡  | 🟡  | 🟡  | 🟡  | Transmit-only, use to control NeoPixels                          |
-| LEDC PWM           | ✔️    | ✔️  | ✔️  | ✔️  | ✔️  | Used by analogWrite(), Servo, Buzzer, etc.                       |
-| MCPWM              | ❌    | —   | ❌  | —   | ❌  |                                                                  |
-| DMA                | ✔️    | ✔️  | ✔️  | ✔️  | ✔️  |                                                                  |
-| WiFi               | ✔️    | ✔️  | ✔️  | ✔️  | ✔️  | See the [ESP32 WiFi Guide](./esp32-wifi)                         |
-| Bluetooth          | ❌    | —   | ❌  | ❌  | ❌  | [Open for voting](https://wokwi.com/features#feature-1047159691) |
-| Timers             | ✔️    | ✔️  | ✔️  | ✔️  | ✔️  |                                                                  |
-| Watchdog           | ❌    | ❌  | ❌  | ❌  | ❌  |                                                                  |
-| RTC                | 🟡    | 🟡  | 🟡  | 🟡  | 🟡  | Only RTC Pull-up / Pull-down resistors                           |
-| ADC                | ✔️    | ✔️  | ✔️  | ✔️  | ✔️  | Note: analogRead() returns values up to 4095                     |
-| RNG                | ✔️    | ✔️  | ✔️  | ✔️  | ✔️  | Random Number Generator                                          |
-| AES Accelerator    | ✔️    | ✔️  | ✔️  | ✔️  | ✔️  |                                                                  |
-| SHA Accelerator    | ✔️    | ✔️  | ✔️  | ✔️  | ✔️  |                                                                  |
-| RSA Accelerator    | ✔️    | ✔️  | ✔️  | ✔️  | ✔️  |                                                                  |
-| ECC Accelerator    | —    | —  | —  | —  | ✔️  |                                                                  |
-| Hall Effect Sensor | ❌    | —   | ❌  | —   | —   |                                                                  |
-| ULP Processor      | ❌    | ❌  | ❌  | —   | ✔️  |                                                                  |
-| GDB Debugging      | ✔️    | ✔️  | ✔️  | ✔️  | ✔️  | Works with [Wokwi for VS Code](../vscode/debugging)              |
+| Peripheral         | ESP32 | S2 | S3 | C3 | C6 | Notes                                                            |
+|--------------------|-------|----|----|----|----|------------------------------------------------------------------|
+| Processor core(s)  | ✔️    | ✔️ | ✔️ | ✔️ | ✔️ |                                                                  |
+| GPIO               | ✔️    | ✔️ | ✔️ | ✔️ | ✔️ | Interrupts supported                                             |
+| IOMUX              | ✔️    | ✔️ | ✔️ | ✔️ | ✔️ |                                                                  |
+| PSRAM              | ✔️    | ✔️ | ✔️ | —  | —  | 4MB of external SRAM \*                                          |
+| UART               | ✔️    | ✔️ | ✔️ | ✔️ | ✔️ |                                                                  |
+| USB                | —     | ✔️ | ✔️ | —  | —  | Support for UART over USB (CDC)                                  |
+| USB Serial + JTAG  | —     | —  | ✔️ | ✔️ | ✔️ | Serial supported, JTAG not.                                      |
+| I2C                | ✔️    | ✔️ | ✔️ | ✔️ | ✔️ | Master only. 10-bit addressing not supported.                    |
+| I2S                | ❌     | ❌  | ❌  | ❌  | ❌  | [Open for voting](https://wokwi.com/features#feature-1031718532) |
+| SPI                | ✔️    | ✔️ | ✔️ | ✔️ | ✔️ |                                                                  |
+| TWAI               | ❌     | ❌  | ❌  | ❌  | ❌  |                                                                  |
+| RMT                | 🟡    | 🟡 | 🟡 | 🟡 | 🟡 | Transmit-only, use to control NeoPixels                          |
+| LEDC PWM           | ✔️    | ✔️ | ✔️ | ✔️ | ✔️ | Used by analogWrite(), Servo, Buzzer, etc.                       |
+| MCPWM              | ❌     | —  | ❌  | —  | ❌  |                                                                  |
+| DMA                | ✔️    | ✔️ | ✔️ | ✔️ | ✔️ |                                                                  |
+| WiFi               | ✔️    | ✔️ | ✔️ | ✔️ | ✔️ | See the [ESP32 WiFi Guide](./esp32-wifi)                         |
+| Bluetooth          | ❌     | —  | ❌  | ❌  | ❌  | [Open for voting](https://wokwi.com/features#feature-1047159691) |
+| Timers             | ✔️    | ✔️ | ✔️ | ✔️ | ✔️ |                                                                  |
+| Watchdog           | ❌     | ❌  | ❌  | ❌  | ❌  |                                                                  |
+| RTC                | 🟡    | 🟡 | 🟡 | 🟡 | 🟡 | Only RTC Pull-up / Pull-down resistors                           |
+| ADC                | ✔️    | ✔️ | ✔️ | ✔️ | ✔️ | Note: analogRead() returns values up to 4095                     |
+| RNG                | ✔️    | ✔️ | ✔️ | ✔️ | ✔️ | Random Number Generator                                          |
+| AES Accelerator    | ✔️    | ✔️ | ✔️ | ✔️ | ✔️ |                                                                  |
+| SHA Accelerator    | ✔️    | ✔️ | ✔️ | ✔️ | ✔️ |                                                                  |
+| RSA Accelerator    | ✔️    | ✔️ | ✔️ | ✔️ | ✔️ |                                                                  |
+| ECC Accelerator    | —     | —  | —  | —  | ✔️ |                                                                  |
+| Hall Effect Sensor | ❌     | —  | ❌  | —  | —  |                                                                  |
+| ULP Processor      | ❌     | ❌  | ❌  | —  | ✔️ |                                                                  |
+| GDB Debugging      | ✔️    | ✔️ | ✔️ | ✔️ | ✔️ | Works with [Wokwi for VS Code](../vscode/debugging)              |
 
 Legend:  
 ✔️ - Simulated  
@@ -139,7 +141,7 @@ See the [ESP32 WiFi Guide](./esp32-wifi).
 You can customize the size of flash and PSRAM by adding the following attributes to the chip:
 
 | Attribute | Description                                                | Default |
-| --------- | ---------------------------------------------------------- | ------- |
+|-----------|------------------------------------------------------------|---------|
 | flashSize | Flash size in MB. Valid values: "2", "4", "8", "16", "32". | "4"     |
 | psramSize | PSRAM size in MB. Valid values: "2", "4", "8".             | "4"     |
 
@@ -158,7 +160,7 @@ When loading a custom firmware, you can specify the offset of the firmware in th
 You can specify the offset manually by adding the following attribute to the chip:
 
 | Attribute      | Description                                           | Default |
-| -------------- | ----------------------------------------------------- | ------- |
+|----------------|-------------------------------------------------------|---------|
 | firmwareOffset | Offset of the firmware in the flash memory, in bytes. | ""      |
 
 ### Changing the MAC address
@@ -166,5 +168,5 @@ You can specify the offset manually by adding the following attribute to the chi
 You can change the MAC address of the WiFi interface by adding the following attribute to the chip:
 
 | Attribute  | Description                                                 | Default             |
-| ---------- | ----------------------------------------------------------- | ------------------- |
+|------------|-------------------------------------------------------------|---------------------|
 | macAddress | MAC address of the WiFi interface, e.g. "24:0a:c4:12:45:56" | "24:0a:c4:00:01:10" |
