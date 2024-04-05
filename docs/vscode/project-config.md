@@ -24,7 +24,7 @@ Replace "path-to-your-firmware" with the location of the compiled firmware, **re
 The extension of the firmware file depends on the board you are using:
 
 | Board                      | Supported firmware types            |
-| -------------------------- | ----------------------------------- |
+|----------------------------|-------------------------------------|
 | Arduino Uno/Mega, ATtiny85 | .hex, .elf                          |
 | Raspberry Pi Pico          | .hex, .uf2                          |
 | ESP32 Family               | .bin, .uf2, .elf, flasher_args.json |
@@ -78,6 +78,8 @@ You can also connect to the simulated ESP from your computer (e.g. you are runni
 from = "localhost:8180"
 to = "target:80"
 ```
+
+To forward multiple ports, add multiple `[[net.forward]]` sections.
 
 For a complete example, see the [ESP32 Web Server](https://github.com/wokwi/esp32-http-server) project.
 
