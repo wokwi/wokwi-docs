@@ -14,7 +14,7 @@ Here are some quick examples of things you can make with Wokwi:
 - [Monitor the weather on ATtiny85](https://wokwi.com/projects/292900020514980360)
 - [Control 32 Servos with Arduino Mega](https://wokwi.com/projects/305336312628511297)
 - [Animate an LED Matrix with FastLED](https://wokwi.com/projects/320579687608746578)
-- [7 Segment Counter with MicroPython on ESP32](https://wokwi.com/projects/300210834979684872)
+- [7 Segment Counter with MicroPython on Pi Pico](https://wokwi.com/projects/300210834979684872)
 
 ## Why Wokwi?
 
