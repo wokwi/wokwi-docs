@@ -87,3 +87,4 @@ void loop() {
 - [Adafruit MPU6050 Demo](https://wokwi.com/projects/305936654686749250)
 - [3D gyro/acceleration visualization on an OLED display](https://wokwi.com/projects/306115576172905024)
 - [3D Wokwi "W" controlled by Gyroscope rotation](https://wokwi.com/projects/306399551789466177)
+- [ESP32 with many MPU6050 sensors](https://wokwi.com/projects/394777263927329793)
