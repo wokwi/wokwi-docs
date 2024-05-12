@@ -76,6 +76,7 @@ If you are out of microcontroller pins, consider using a [74HC595 Shift Register
 - [SevSeg example: Counter](https://wokwi.com/projects/344891439152366164)
 - [SevSeg example: String with period](https://wokwi.com/projects/344893935754150484)
 - [Arduino Alarm Clock](https://wokwi.com/projects/297787059514376717)
+- [7-Segment without a library on Arduino Mega](https://wokwi.com/projects/397598198000164865)
 - [ATtiny85 7-Segment clock](https://wokwi.com/projects/301366580039647753)
 - [ATtiny85 8 digit counter](https://wokwi.com/projects/301304715310793225)
 - [7-Segment on the Raspberry Pi Pico (using PIO)](https://wokwi.com/projects/301404853501952521)
