@@ -212,6 +212,6 @@ void loop() {
 
 - [LiquidCrystal Hello World](https://wokwi.com/projects/294342288335700490)
 - [LiquidCrystal I2C Hello World](https://wokwi.com/projects/344891772964438612)
-- [LiquidCystal Custom characters](https://wokwi.com/projects/294395602645549578)
+- [LiquidCrystal Custom characters](https://wokwi.com/projects/294395602645549578)
 - [Electronic Safe](https://wokwi.com/projects/344891391763022419)
 - [DS1307 Clock](https://wokwi.com/projects/298783436806554120)
