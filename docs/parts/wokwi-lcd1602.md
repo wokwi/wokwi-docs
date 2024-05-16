@@ -160,7 +160,7 @@ High characters glyphs:
 
 ### User defined characters
 
-You can define custom characters using the [createChar](https://www.arduino.cc/en/Reference/LiquidCrystalCreateChar) method of the LiquidCrsytal (or LiquidCrystal_I2C) library. The custom characters are the first 8 characters in the font, with indexes from 0 to 7. You can print them to the LCD
+You can define custom characters using the [createChar](https://www.arduino.cc/en/Reference/LiquidCrystalCreateChar) method of the LiquidCrystal (or LiquidCrystal_I2C) library. The custom characters are the first 8 characters in the font, with indexes from 0 to 7. You can print them to the LCD
 display using the `write()` method, or using C string escape sequence, such as `"\x07"`.
 
 The following code example defines a heart shaped character, stores it at index 3, and then uses it to display the text "I (heart) Arduino":
@@ -212,6 +212,6 @@ void loop() {
 
 - [LiquidCrystal Hello World](https://wokwi.com/projects/294342288335700490)
 - [LiquidCrystal I2C Hello World](https://wokwi.com/projects/344891772964438612)
-- [LiquidCystal Custom characters](https://wokwi.com/projects/294395602645549578)
+- [LiquidCrystal Custom characters](https://wokwi.com/projects/294395602645549578)
 - [Electronic Safe](https://wokwi.com/projects/344891391763022419)
 - [DS1307 Clock](https://wokwi.com/projects/298783436806554120)
