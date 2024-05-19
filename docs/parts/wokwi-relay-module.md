@@ -37,3 +37,4 @@ Setting the "transistor" attribute to "pnp" inverts the logic: when `IN` is high
 ## Simulator Examples
 
 - [One relay module controlling two LEDs](https://wokwi.com/projects/347308007359513172)
+- [Arduino Uno controlling four relay modules](https://wokwi.com/projects/398166790321189889)
