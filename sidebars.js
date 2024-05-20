@@ -19,6 +19,7 @@ module.exports = {
     'Diagram Reference': [
       'diagram-format',
       'parts/board-franzininho-wifi',
+      'parts/board-grove-oled-sh1107',
       'parts/board-ssd1306',
       'parts/board-st-nucleo-c031c6',
       'parts/board-st-nucleo-l031k6',
