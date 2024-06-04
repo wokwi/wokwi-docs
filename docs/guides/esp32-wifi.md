@@ -173,7 +173,7 @@ The BSSID of the virtual access point ("Wokwi-GUEST") is 42:13:37:55:aa:01, and 
 
 Wokwi simulates a complete network stack: starting at the lowest 802.11 MAC Layer, through the IP and TCP/UDP layers, all the way up to protocols such as DNS, HTTP, MQTT, CoAP, etc. You can view the raw WiFi traffic using a network protocol analyzer such as [Wireshark](https://www.wireshark.org).
 
-First, run an ESP32 project that uses the WiFi in the simulator. Then, go to the code editor, press F1 and choose **Download WiFi Packet Capture (PCAP) file**. Your browser will download a file called _wokwi.pcap_. Use Wireshark to open this file.
+First, run an ESP32 project that uses the WiFi in the simulator. Then, click on the WiFi icon, and choose **Download PCAP file**. Your browser will download a file called _wokwi.pcap_. Use Wireshark to open this file.
 
 The following screen shot shows an example of an HTTP request packet capture:
 
