@@ -106,6 +106,7 @@ Follow [this guide](https://sming.readthedocs.io/en/latest/experimental/wokwi.ht
 | RMT                | 🟡    | 🟡 | 🟡 | 🟡 | 🟡 | Transmit-only, use to control NeoPixels                          |
 | LEDC PWM           | ✔️    | ✔️ | ✔️ | ✔️ | ✔️ | Used by analogWrite(), Servo, Buzzer, etc.                       |
 | MCPWM              | ❌     | —  | ❌  | —  | ❌  |                                                                  |
+| PCNT              | ✔️     | ✔️  | ✔️  | —  | ✔️  |                                                                  | 
 | DMA                | ✔️    | ✔️ | ✔️ | ✔️ | ✔️ |                                                                  |
 | WiFi               | ✔️    | ✔️ | ✔️ | ✔️ | ✔️ | See the [ESP32 WiFi Guide](./esp32-wifi)                         |
 | Bluetooth          | ❌     | —  | ❌  | ❌  | ❌  | [Open for voting](https://wokwi.com/features#feature-1047159691) |
