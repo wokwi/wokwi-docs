@@ -38,7 +38,6 @@ Some of the digital pins also have additional functions:
 | 50  | SPI      | MISO             |                    |
 | 51  | SPI      | MOSI             |                    |
 | 52  | SPI      | SCK (Clock)      |                    |
-| 53  | SPI      | SS (Chip select) |                    |
 
 ### On board LEDs
 
