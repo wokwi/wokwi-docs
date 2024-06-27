@@ -11,8 +11,6 @@ Wokwi俱乐部是我们的高级会员计划。加入俱乐部后，你可以使
 - 可以连接 [ESP32 WiFi](../guides/esp32-wifi) 到你本地网络
 - 在我们官方唯一认定的Discord频道中认识志同道合的俱乐部成员: _#club_
 
-作为Wokwi俱乐部会员，你每月还可以获得新的[表决权](../guides/votepowers)。使用你的表决权帮助我们决定 [接下来要做什么](https://wokwi.com/features).
-
 ### 如何加入呢?
 
 [https://wokwi.com/club](https://wokwi.com/club?ref=docs_club)

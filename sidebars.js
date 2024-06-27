@@ -14,7 +14,6 @@ module.exports = {
       'guides/esp32',
       'guides/esp32-wifi',
       'guides/translating',
-      'guides/votepowers',
     ],
     'Diagram Reference': [
       'diagram-format',

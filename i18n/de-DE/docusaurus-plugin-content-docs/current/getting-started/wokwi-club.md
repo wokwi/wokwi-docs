@@ -10,8 +10,6 @@ Der Wokwi Club ist unser Premium Programm. Du erhältst Zugang zu erweiterten Fu
 - [ESP32 WiFi](../guides/esp32-wifi) mit deinem lokalen Netzwerk verbinden
 - Projekte auf ungelistet stellen
 
-Zusätzlich bekommst du monatlich [VotePowers](../guides/votepowers). VotePowers können für Abstimmungen, [was als nächstes gemacht wird](https://wokwi.com/features) verwendet werden.
-
 ### Wie trete ich bei?
 
 [https://wokwi.com/club](https://wokwi.com/club?ref=docs_club)

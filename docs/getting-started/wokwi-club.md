@@ -11,8 +11,6 @@ The Wokwi Club is our premium membership program. You get access to advanced fea
 - Connect the [ESP32 WiFi](../guides/esp32-wifi) to your local network
 - Keep your private projects unlisted
 
-As a Wokwi club member, you also get new [VotePowers](../guides/votepowers) every month. Use your VotePowers to help us decide [what to work on next](https://wokwi.com/features).
-
 ### How to join?
 
 [https://wokwi.com/club](https://wokwi.com/club?ref=docs_club)
