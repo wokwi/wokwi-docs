@@ -102,11 +102,11 @@ Follow [this guide](https://sming.readthedocs.io/en/latest/experimental/wokwi.ht
 | I2C                | ✔️    | ✔️ | ✔️ | ✔️ | ✔️ | Master only. 10-bit addressing not supported.                    |
 | I2S                | ❌     | ❌  | ❌  | ❌  | ❌  | [Open for voting](https://wokwi.com/features#feature-1031718532) |
 | SPI                | ✔️    | ✔️ | ✔️ | ✔️ | ✔️ |                                                                  |
-| TWAI               | 🟡     | 🟡  | 🟡  | 🟡  | 🟡  |                                                                  |
+| TWAI               | 🟡    | 🟡 | 🟡 | 🟡 | 🟡 |                                                                  |
 | RMT                | 🟡    | 🟡 | 🟡 | 🟡 | 🟡 | Transmit-only, use to control NeoPixels                          |
 | LEDC PWM           | ✔️    | ✔️ | ✔️ | ✔️ | ✔️ | Used by analogWrite(), Servo, Buzzer, etc.                       |
 | MCPWM              | ❌     | —  | ❌  | —  | ❌  |                                                                  |
-| PCNT              | ✔️     | ✔️  | ✔️  | —  | ✔️  |                                                                  | 
+| PCNT               | ✔️    | ✔️ | ✔️ | —  | ✔️ |                                                                  |
 | DMA                | ✔️    | ✔️ | ✔️ | ✔️ | ✔️ |                                                                  |
 | WiFi               | ✔️    | ✔️ | ✔️ | ✔️ | ✔️ | See the [ESP32 WiFi Guide](./esp32-wifi)                         |
 | Bluetooth          | ❌     | —  | ❌  | ❌  | ❌  | [Open for voting](https://wokwi.com/features#feature-1047159691) |
@@ -171,3 +171,13 @@ You can change the MAC address of the WiFi interface by adding the following att
 | Attribute  | Description                                                 | Default             |
 |------------|-------------------------------------------------------------|---------------------|
 | macAddress | MAC address of the WiFi interface, e.g. "24:0a:c4:12:45:56" | "24:0a:c4:00:01:10" |
+
+### CPU frequency limit
+
+In order to achieve a higher simulation speed, Wokwi automatically limits the maximum simulated CPU frequency. In most cases, this doesn't affect the behavior of the simulated program and allows you to run the simulation considerably faster. The CPU frequency limit does not affect the timing of the peripherals, only the speed instructions are executed.
+
+To override the maximum CPU frequency, you can set the "cpuFrequency" attribute to a specific frequency (e.g. "16" for 16 MHz) or "max" to run the CPU at the maximum frequency (not recommended - it will make the simulation much slower). The default value is "auto", which means that Wokwi will automatically cap the CPU frequency to about 8 MHz.
+
+| Attribute    | Description                                         | Default |
+|--------------|-----------------------------------------------------|---------|
+| cpuFrequency | Maximum simulated CPU frequency, e.g. "16" or "max" | "auto"  |
