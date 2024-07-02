@@ -102,7 +102,7 @@ Follow [this guide](https://sming.readthedocs.io/en/latest/experimental/wokwi.ht
 | I2C                | ✔️    | ✔️ | ✔️ | ✔️ | ✔️ | Master only. 10-bit addressing not supported.                    |
 | I2S                | ❌     | ❌  | ❌  | ❌  | ❌  | [Open for voting](https://wokwi.com/features#feature-1031718532) |
 | SPI                | ✔️    | ✔️ | ✔️ | ✔️ | ✔️ |                                                                  |
-| TWAI               | ❌     | ❌  | ❌  | ❌  | ❌  |                                                                  |
+| TWAI               | 🟡     | 🟡  | 🟡  | 🟡  | 🟡  |                                                                  |
 | RMT                | 🟡    | 🟡 | 🟡 | 🟡 | 🟡 | Transmit-only, use to control NeoPixels                          |
 | LEDC PWM           | ✔️    | ✔️ | ✔️ | ✔️ | ✔️ | Used by analogWrite(), Servo, Buzzer, etc.                       |
 | MCPWM              | ❌     | —  | ❌  | —  | ❌  |                                                                  |
