@@ -1,107 +1,34 @@
 ---
-title: Getting Started with Wokwi for CI and GitHub Actions
-sidebar_label: Getting Started
+title: Wokwi for CI and GitHub Actions
+sidebar_label: Introduction
 ---
 
-# Wokwi CI
+Wokwi provides a robust simulation solution for automated testing of your embedded firmware on CI systems like [GitHub Actions](./github-actions), GitLab CI, and others. You can use Wokwi to run your tests on every commit, and get instant feedback on your code changes.
 
-Wokwi for CI and GitHub Actions provides a simulation solution for automated testing of embedded and IoT projects. You can use Wokwi to run your tests on every commit, and get instant feedback on your code changes.
+Behind the scenes, Wokwi CI uses the same simulation engine that powers the [Wokwi Simulator](https://wokwi.com). The simulation runs in the cloud, and you can stream the serial output back to your CI system to verify that your firmware behaves as expected.
 
-The simulation runs in the cloud, so you don't need to install any software on your CI server. You can use Wokwi CI with any CI system that supports running shell commands, including GitHub Actions, GitLab CI, CircleCI, Travis CI, and more.
+## Wokwi in the Loop (WITL)
 
-A copy of your firmware binary is uploaded to the Wokwi Cloud for every test run. The firmware is then simulated in the cloud, and the serial output is streamed back to your CI system. Wokwi does not store your firmware, and it is deleted from the cloud after the simulation is finished.
+Wokwi in the Loop (WITL) is a testing methodology that combines the best of both worlds: the speed and convenience of unit testing with the realism of hardware testing. With WITL, you can run your firmware on a simulated hardware platform, interact with the firmware using virtual buttons and sensors, and verify the firmware's behavior by checking the serial output.
 
-If you do not want to upload your firmware to the cloud, please contact us to discuss options for on-premise deployment of Wokwi CI.
+For basic testing scenarios, you can use the [Wokwi CLI](./cli-installation) to run your firmware on your local machine or CI system. The CLI allows you to start the simulation, check the serial output, and fail the test if the output does not match the expected value.
+
+For more advanced testing scenarios, you can write [automation scenarios](./automation-scenarios) that automate the simulation, push buttons, change the state of the sensors, and check the serial output.
 
 :::warning
 Wokwi CI is free while in beta. After the beta, we will charge based on the number of minutes your tests run on Wokwi CI. We plan to offer a free tier with a limited number of minutes per month.
 :::
 
-## CLI Installation
+## CI Architecture
 
-The CLI allows you to run Wokwi simulations from your terminal, and integrate them with your CI system. We recommend using the [Wokwi for VS Code](../vscode/getting-started) extension for local development, and the CLI for running your tests on CI.
+Wokwi CI is powered a simulation server that runs in the cloud. The server receives your firmware binary, simulates it, and streams the serial output back to your CI system. The server is stateless and can run multiple simulations in parallel.
 
-Both the CLI and the VS Code extension use the same project configuration files ([wokwi.toml](../vscode/project-config) and [diagram.json](../diagram-format)), so you can use the VS Code extension to create and test your project, and then use the CLI to run it on CI.
+Wokwi does not store your firmware, and it is deleted from the cloud server after the simulation is finished. If you do not want to upload your firmware to the cloud, please contact us to discuss options for on-premise deployment of Wokwi CI.
 
-To install the Wokwi CLI, run the following command:
+## Next Steps
 
-```bash
-curl -L https://wokwi.com/ci/install.sh | sh
-```
-
-On Windows, you can use the following command in PowerShell:
-
-```powershell
-iwr https://wokwi.com/ci/install.ps1 -useb | iex
-```
-
-Alternatively, you can download the CLI directly from the [GitHub Releases page](https://github.com/wokwi/wokwi-cli/releases/latest). Rename the file to `wokwi-cli` (or `wokwi-cli.exe` on Windows), make it executable (`chmod +x wokwi-cli` on Linux/Mac), and move it to a directory in your PATH (e.g. `/usr/local/bin` on Linux/Mac).
-
-## CLI Usage
-
-Create an API token on the [Wokwi CI Dashboard](https://wokwi.com/dashboard/ci). Set the `WOKWI_CLI_TOKEN` environment variable to the token value.
-
-Create a `wokwi.toml` file in your project's root directory. See the [Project Configuration](../vscode/project-config) page for details.
-
-Then, run the following command:
-
-```bash
-wokwi-cli <your-project-directory>
-```
-
-The CLI will start the simulation and display the serial output. It will automatically exit after 30 seconds.
-
-### CLI Options
-
-You can use the following options to customize the CLI behavior:
-
-- `--fail-text <text>` - fail if the serial output contains the specified text
-- `--expect-text <text>` - fail if the serial output does not contain the specified text
-' `--interactive` - Redirect stdin to the simulated serial port
-- `--serial-log-file <filename>` - save the serial output to the specified file
-- `--scenario <path>` - path to a scenario file (see below)
-- `--timeout <milliseconds>` - how long to wait for the simulation to finish (default: 30000)
-- `--timeout-exit-code <code>` - exit code to use when the simulation times out (default: 42)
-- `--quiet` - do not print version information and status messages
-- `--help` - print help message
-
-## GitHub Actions
-
-You can use Wokwi CI with GitHub Actions to run your tests on every commit. You need to have a workflow that builds your project's firmware. Add the following step to your workflow:
-
-```yaml
-- name: Test with Wokwi
-  uses: wokwi/wokwi-ci-action@v1
-  with:
-    token: ${{ secrets.WOKWI_CLI_TOKEN }}
-    path: / # directory with wokwi.toml, relative to repo's root
-    timeout: 10000
-    expect_text: 'Hello, world!' # optional
-    fail_text: 'Error' # optional
-    scenario: 'test-hello-world.yaml' # optional, see below
-```
-
-For a complete example, check out the [Example Projects](#example-projects) section below.
-
-## Automation Scenarios
-
-You can use the `--scenario` option to load a YAML file that describes the simulation scenario. The scenario file can be used to automate the simulation, by pushing buttons, changing the state of the sensors, and checking the serial output.
-
-:::warning
-Automation scenarios are currently in alpha. The API is not documented yet, and may change in the future. You can use the [example projects](#example-projects) below as a reference.
-:::
-
-## Example Projects
-
-The following projects are set up to run on Wokwi CI. You can use them as a reference for your own projects. Check out the `.github/workflows` directory for the complete GitHub Action configuration in each example.
-
-- [ESP32 WiFi + FreeRTOS Tasks](https://github.com/wokwi/esp32-idf-hello-wifi)
-- [STM32 Nucleo64 C031C6 with STM32 HAL](https://github.com/wokwi/stm32-hello-wokwi)
-- [Raspberry Pi Pico SDK](https://github.com/wokwi/pico-sdk-blink) - Includes an [automation scenario](https://github.com/wokwi/pico-sdk-blink/blob/main/blink.test.yaml) that verifies the LED blinking pattern.
-- [PlatformIO Pushbutton Counter](https://github.com/wokwi/platform-io-esp32-counter-ci) - Includes an [automation scenario](https://github.com/wokwi/platform-io-esp32-counter-ci/blob/main/button.test.yaml) that pushes the button and checks the serial output.
-- [ESP32-C6 LP I2C (Low Power)](https://github.com/wokwi/esp32c6-i2c-lp) - Includes an [automation scenario](https://github.com/wokwi/esp32c6-i2c-lp/blob/main/lp.test.yaml) that interacts with an I2C device.
-- [Embedded Wizard Breakout Game](https://github.com/wokwi/esp-wrover-kit-embedded-wizard-wokwi) - Example of taking a screenshot of the simulated LCD display.
-
-## Additional resources
-
-- [Using PlatformIO CI and Wokwi in GitHub Actions](https://blog.leon0399.ru/wokwi-platformio-github-actions?showSharer=true) - Blog post by Leonid Meleshin
+- [Install the Wokwi CLI](./cli-installation) to run your firmware on your local machine or CI system.
+- [Write automation scenarios](./automation-scenarios) to automate the simulation and test your firmware.
+- [Use Wokwi with GitHub Actions](./github-actions) to run your tests on every commit.
+- [Check out the example projects](./github-actions#examples) that are set up to run on Wokwi CI.
+- [Join the Wokwi Discord server](https://wokwi.com/discord) to get help and share your projects with the community.

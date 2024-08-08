@@ -91,6 +91,10 @@ module.exports = {
     ],
     'Wokwi CI': [
       'wokwi-ci/getting-started',
+      'wokwi-ci/cli-installation',
+      'wokwi-ci/cli-usage',
+      'wokwi-ci/github-actions',
+      'wokwi-ci/automation-scenarios',
     ],
   },
 };
