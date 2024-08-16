@@ -12,7 +12,7 @@ The information below also applies to the [slide potentiometer](wokwi-slide-pote
 ## Pin names
 
 | Name | Description                            |
-| ---- | -------------------------------------- |
+|------|----------------------------------------|
 | GND  | Ground                                 |
 | SIG  | Output, connect to an analog input pin |
 | VCC  | Supply voltage                         |
@@ -25,7 +25,7 @@ This may change in the future, so it's a good idea to connect GND/VCC anyway.
 ## Attributes
 
 | Name  | Description                                            | Default value |
-| ----- | ------------------------------------------------------ | ------------- |
+|-------|--------------------------------------------------------|---------------|
 | value | Initial value of the potentiometer, between 0 and 1023 | "0"           |
 
 ## Using the Potentiometer in Arduino
@@ -59,6 +59,23 @@ You can control the potentiometer with the keyboard:
 - Home / End - move to the start (0) or the end (1023) of the range
 
 You'll need to click on the potentiometer before using these keyboard shortcuts.
+
+## Automation controls
+
+The potentiometer can be controlled using [Automation Scenarios](../wokwi-ci/automation-scenarios). It exposes the following controls:
+
+| Control  | Type  | Description                                                        |
+|----------|-------|--------------------------------------------------------------------|
+| position | float | Moves the potentiometer to the given position, between 0.0 and 1.0 |
+
+The following example set the potentiometer to the middle position:
+
+```yaml
+  - set-control:
+      part-id: pot1
+      control: position
+      value: 0.5
+```
 
 ## Simulator examples
 
