@@ -10,7 +10,7 @@ Integrated sensor with 3-axis accelerometer, 3-axis gyroscope and a temperature 
 ## Pin names
 
 | Name | Description        |
-| ---- | ------------------ |
+|------|--------------------|
 | VCC  | Voltage supply     |
 | GND  | Ground             |
 | SCL  | I2C clock line     |
@@ -27,7 +27,7 @@ You normally only need to connect the VCC, GND, SCL, and SDA pins. The I2C addre
 ## Attributes
 
 | Name        | Description                         | Default value |
-| ----------- | ----------------------------------- | ------------- |
+|-------------|-------------------------------------|---------------|
 | accelX      | Initial x acceleration value (g)    | "0"           |
 | accelY      | Initial y acceleration value (g)    | "0"           |
 | accelZ      | Initial z acceleration value (g)    | "1"           |
@@ -80,6 +80,29 @@ void loop() {
 ```
 
 [Run this example on Wokwi](https://wokwi.com/projects/305937248748044864)
+
+## Automation controls
+
+The mpu6050 sensor can be controlled using [Automation Scenarios](../wokwi-ci/automation-scenarios). The names of the controls match the names of the attributes defined above:
+
+| Control     | Type  | Description                         |
+|-------------|-------|-------------------------------------|
+| accelX      | float | Set the x acceleration value (g)    |
+| accelY      | float | Set the y acceleration value (g)    |
+| accelZ      | float | Set the z acceleration value (g)    |
+| rotationX   | float | Set the x rotation value (deg/sec)  |
+| rotationY   | float | Set the y rotation value (deg/sec)  |
+| rotationZ   | float | Set the z rotation value (deg/sec)  |
+| temperature | float | Set the temperature value (celsius) |
+
+The following example set the temperature to 25°C:
+
+```yaml
+  - set-control:
+      part-id: imu1
+      control: temperature
+      value: 25
+```
 
 ## Simulator examples
 
