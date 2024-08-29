@@ -38,6 +38,9 @@ _note that `E+`/`E-`/`A+`/`A-`/`B+`/`B-` pins are non-interactive and rendered b
 
 The HX711 amplifier allows you to easily read load cells and evaluate changes in resistance. A Wheatstone bridge is used to connect load cells to the IC, which is in turn connected to the microcontroller via `VCC`, `DT`, `SCK`, and `GND`. Use `begin()` to initialize the scale and `set_scale()` and `tare()` to calibrate it. `power_down()` and `power_up()` can be used to bring the ADC into and out of low power mode. `get_value()` and `get_units()` are used to read the ADC minus tare and divided, passing an optional integer value to obtain that number of values, averaged. Refer to the [`HX711` Arduino library](https://github.com/bogde/HX711#features) for more details on features and calibration.
 
+Note that this chip does not implement channel B or gain settings of 32/64/128.  The raw readings are from `0-2100` for the `"type":"5kg"` type, 
+and `0-21000` for the `"type":"50kg"`.
+
 ## Arduino code example
 
 ```cpp
