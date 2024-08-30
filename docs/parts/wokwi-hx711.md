@@ -66,3 +66,4 @@ Try [this example on Wokwi](https://wokwi.com/projects/345134808605655636)
 
 - [HX711 demo](https://wokwi.com/projects/344192176616374868)
 - [Digital scale](https://wokwi.com/projects/336613701830312531)
+- [HX711_ADC Calibration demo](https://wokwi.com/projects/407626388355231745)
