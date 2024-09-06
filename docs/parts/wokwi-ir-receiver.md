@@ -27,3 +27,4 @@ To read the commands from your Arduino Code, you can use the [IRRemote](https://
 ## Simulator examples
 
 - [IRRemote + LCD Display](https://wokwi.com/projects/298934082074575369)
+- [IRRemote + LCD Display with updated IRRemote API](https://wokwi.com/projects/408236279940409345)
