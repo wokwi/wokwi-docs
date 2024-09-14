@@ -2,7 +2,7 @@
 title: board-ssd1306 Reference
 sidebar_label: board-ssd1306
 ---
-
+Udish
 Monochrome 128x64 OLED display with I2C interface
 
 ![SSD1306](https://raw.githubusercontent.com/wokwi/wokwi-boards/main/boards/ssd1306/board.svg)
