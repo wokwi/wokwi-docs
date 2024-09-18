@@ -17,4 +17,5 @@ This method can be called before setting the pin to `ANALOG` mode, but the volta
 
 ## Simulator examples
 
-- [Analog API chip example](https://wokwi.com/projects/330112801381024338)
+- [Analog API chip example](https://wokwi.com/projects/330112801381024338) -- Simulates a 0-5V/0-ADC_MAX voltage source. One float attribute and one analog output.
+- [Dual Op-Amp chip example](https://wokwi.com/projects/409320061010147329) -- Simulates a dual Op-Amp with 4 analog inputs, 2 analog outputs, 2 float attributes.
