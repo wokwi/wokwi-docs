@@ -145,6 +145,7 @@ You can customize the size of flash and PSRAM by adding the following attributes
 |-----------|------------------------------------------------------------|---------|
 | flashSize | Flash size in MB. Valid values: "2", "4", "8", "16", "32". | "4"     |
 | psramSize | PSRAM size in MB. Valid values: "2", "4", "8".             | "4"     |
+| psramType | PSRAM type. Valid values: "quad", "octal".                 | "quad"  |
 
 - [ESP32 Custom flash size example](https://wokwi.com/projects/349656534768157267)
 
