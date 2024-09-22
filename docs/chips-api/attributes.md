@@ -47,3 +47,5 @@ Returns the current value of the attribute. `attr` should be a valid attribute h
 ### Simulator Examples
 
 - [Analog API chip example](https://wokwi.com/projects/330112801381024338) -- Simulates a 0-5V/0-ADC_MAX voltage source. One float attribute and one analog output.
+- [PWM with Scope](https://wokwi.com/projects/354488725362438145) ([github](https://github.com/Dlloydev/Wokwi-Chip-PWM)) -- simulates a PWM input with 1 digital output and three attributes
+- [Scope with PWM](https://wokwi.com/projects/354488725362438145) ([Scope with muliple inputs](https://wokwi.com/projects/359330496025635841)) ([github](https://github.com/Dlloydev/Wokwi-Chip-Scope)) -- Simulates a 4-channel oscilloscope with 4 digital inputs, 4 analog inputs and 4 attributes
