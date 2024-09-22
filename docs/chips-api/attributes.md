@@ -43,3 +43,7 @@ Returns the current value of the attribute. `attr` should be a valid attribute h
 ### float attr_read_float(uint32_t attr)
 
 Returns the current value of the attribute. `attr` should be a valid attribute handle, previously returned by `attr_init_float()`.
+
+### Simulator Examples
+
+- [Analog API chip example](https://wokwi.com/projects/330112801381024338) -- Simulates a 0-5V/0-ADC_MAX voltage source. One float attribute and one analog output.
