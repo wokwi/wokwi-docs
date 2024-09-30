@@ -30,7 +30,7 @@ Você pode escolher entre várias bibliotecas SSD1306 do Arduino:
 
 - [Adafruit SSD1306](https://wokwi.com/projects/344892392214626898)
 - [ssd1306](https://wokwi.com/projects/344894074741850707)
-- [lcdgfx](https://wokwi.com/lexus2k/lcdgfx)
+- [lcdgfx](https://github.com/lexus2k/lcdgfx)
 - [U8glib](https://github.com/olikraus/u8glib)
 - [U8g2](https://github.com/olikraus/u8g2) (também U8x8)
 - [SSD1306Ascii](https://github.com/greiman/SSD1306Ascii)
