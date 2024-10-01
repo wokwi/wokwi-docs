@@ -149,6 +149,18 @@ You can customize the size of flash and PSRAM by adding the following attributes
 
 - [ESP32 Custom flash size example](https://wokwi.com/projects/349656534768157267)
 
+### USB CDC (Serial over USB) support
+
+Some chips have a built-in USB CDC (Serial over USB) + JTAG peripheral. These chips include the ESP32-S3, ESP32-C3, ESP32-C6, and ESP32-H2. You can configure USB CDC support in Wokwi by adding the following attribute to the chip:
+
+```json
+{ 
+  "serialInterface": "USB_SERIAL_JTAG" 
+}
+```
+
+Note that you also need to remove any connections to the `$serialMonitor` pins from the `connections` section in your diagram.json file.
+
 ### Custom Partition Table
 
 You can specifiy a custom partititon table by adding a "partitions.csv" file to your project. Check out the [ESP32 Partition Table Guide](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-guides/partition-tables.html) for the exact format of this file.
