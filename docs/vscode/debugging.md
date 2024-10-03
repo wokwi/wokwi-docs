@@ -55,6 +55,12 @@ You can download a recent version of avr-gdb from [here](https://blog.zakkemble.
 
 ## Start the debugger
 
+Before starting the simulator, build your software for the target to simulate.
+
+:::info
+[Building the "debug" configuration](https://docs.platformio.org/en/latest/projectconf/build_configurations.html#build-configurations) can simplify the analysis of the program execution while debugging.
+:::
+
 Start the Wokwi simulator by pressing **F1** and then selecting "**Wokwi: Start Simulator and Wait for Debugger**". The simulator will load, but the program will be paused, waiting for the debugger to connect. Then press **F5** to start the debugger.
 
 :::warning
