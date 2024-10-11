@@ -1,3 +1,13 @@
+import { execSync } from 'child_process';
+
+function getCommitSha() {
+  try {
+    return execSync('git rev-parse --short HEAD').toString().trim();
+  } catch (e) {
+    return 'unknown';
+  }
+}
+
 module.exports = {
   title: 'Wokwi Docs',
   tagline: 'Online Arduino & Electronics Simulator',
@@ -94,13 +104,16 @@ module.exports = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} CodeMagic LTD. Built with Docusaurus.`,
+      copyright: `
+        Copyright © 2021-${new Date().getFullYear()} CodeMagic LTD.
+        <small>Built with Docusaurus at ${new Date().toISOString()}, commit sha ${getCommitSha()}.</small>
+      `,
     },
     algolia: {
       appId: 'VNOAE1ADJ6',
       apiKey: 'cf8c02a00fa23ba42725ac0fc3a10a3d',
       indexName: 'wokwi',
-    },    
+    },
     prism: {
       additionalLanguages: ['rust'],
     },
