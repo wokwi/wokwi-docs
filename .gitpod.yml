@@ -1,6 +1,6 @@
 tasks:
-  - init: yarn
-    command: yarn start
+  - init: npm install
+    command: npm start
 
 vscode:
   extensions:

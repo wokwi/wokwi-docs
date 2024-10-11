@@ -11,17 +11,17 @@ You can open a development environment in your browser, without having to instal
 
 ## Local Development
 
-You'll need [node.js](https://nodejs.org/) and [yarn](https://classic.yarnpkg.com/en/docs/install).
+You'll need [node.js](https://nodejs.org/) and npm.
 Clone this repo to your computer, then install the dependencies:
 
 ```console
-yarn install
+npm install
 ```
 
 Start the local development server:
 
 ```console
-yarn start
+npm start
 ```
 
 This will also open up a browser window with the docs site. Most changes are reflected live without having to restart the server.
