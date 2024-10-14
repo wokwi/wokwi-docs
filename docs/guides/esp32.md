@@ -82,10 +82,10 @@ For ESP-IDF projects, you can also build a single UF2 file using the command: `i
 
 The following examples use the ESP-IDF functions. They are compiled using Arduino ESP32 Core:
 
-- [Blink using FreeRTOS API](https://wokwi.com/projects/304209256260829762)
+- [Blink using FreeRTOS API](https://wokwi.com/projects/411723444725332993)
 - [Binary LED counter using FreeRTOS tasks](https://wokwi.com/projects/322609470223942226)
 - [GPIO button input + interrupts](https://wokwi.com/projects/342634722692694610)
-- [WiFi Example](https://wokwi.com/projects/343629632022512211)
+- [WiFi Example](https://wokwi.com/projects/411725624945943553)
 
 ### Sming Framework
 
