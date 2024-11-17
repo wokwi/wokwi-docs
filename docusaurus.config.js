@@ -13,6 +13,7 @@ module.exports = {
   tagline: 'Online Arduino & Electronics Simulator',
   url: 'https://docs.wokwi.com',
   baseUrl: '/',
+  trailingSlash: false,
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
