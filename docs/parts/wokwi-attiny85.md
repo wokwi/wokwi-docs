@@ -10,7 +10,7 @@ The ATtiny85 is a small 8-bit AVR microcontroller. It has 8KB of Flash program m
 ## Pin names
 
 | Pin | Name | Functions         | Analog Channel |
-| --- | ---- | ----------------- | -------------- |
+|-----|------|-------------------|----------------|
 | 1   | PB5  | Reset             | 0              |
 | 2   | PB3  |                   | 3              |
 | 3   | PB4  |                   | 2              |
@@ -23,12 +23,12 @@ The ATtiny85 is a small 8-bit AVR microcontroller. It has 8KB of Flash program m
 ## Attributes
 
 | Name      | Description                                                                | Default value |
-| --------- | -------------------------------------------------------------------------- | ------------- |
+|-----------|----------------------------------------------------------------------------|---------------|
 | frequency | MCU clock frequency, in hertz. Common values: "1m", "8m", "16m", and "20m" | "8m"          |
 
 ### Debug prints with TinyDebug
 
-You can use the [TinyDebug library](https://github.com/wokwi/TinyDebug) to print debug messages from your code. These messages appear in Wokwi's Serial Monitor. To use the library, include "TinyDebug.h" in your project and create a [libraries.txt](../../guides/libraries) file with the text "TinyDebug" in it. 
+You can use the [TinyDebug library](https://github.com/wokwi/TinyDebug) to print debug messages from your code. These messages appear in Wokwi's Serial Monitor. To use the library, include "TinyDebug.h" in your project and create a [libraries.txt](../guides/libraries) file with the text "TinyDebug" in it. 
 
 Call `Debug.begin()` and then print your debug messages using `Debug.println()`:
 
@@ -83,7 +83,7 @@ For a complete code example, check out the [TinyDebug demo project on Wokwi](htt
 ### Serial Output
 
 The ATtiny85 doesn't have a dedicated UART peripheral, but it it still possible to get Serial Output using the Software Serial library.
-For more information and demo code, please see the [Serial Monitor Guide](../../guides/serial-monitor#attiny85--softwareserial).
+For more information and demo code, please see the [Serial Monitor Guide](../guides/serial-monitor#attiny85--softwareserial).
 
 ### I2C
 
@@ -93,18 +93,18 @@ For I2C communication use the [TinyWireM](https://github.com/adafruit/TinyWireM)
 
 The ATtiny85 is simulated using the [AVR8js Library](https://github.com/wokwi/avr8js). The table below summarizes the status of features:
 
-| Peripheral        | Status | Notes                                              |
-| ----------------- | ------ | -------------------------------------------------- |
-| Processor         | ✔️     |                                                    |
-| GPIO              | ✔️     | 6 GPIO pins (PB0...PB6), INT0 / PCINT support      |
-| USI               | 🟡     | Only works in I2C mode                             |
-| Timer0            | ✔️     | PWM support for PB0/PB1                            |
-| Timer1            | ❌     |                                                    |
-| Watchdog Timer    | ✔️     |                                                    |
-| EEPROM            | ✔️     |                                                    |
-| ADC               | ✔️     | Used by analogRead()                               |
-| Analog Comparator | ❌     |                                                    |
-| GDB Debugging     | ✔️     | See the [GDB Debugging Guide](../../gdb-debugging) |
+| Peripheral        | Status | Notes                                           |
+|-------------------|--------|-------------------------------------------------|
+| Processor         | ✔️     |                                                 |
+| GPIO              | ✔️     | 6 GPIO pins (PB0...PB6), INT0 / PCINT support   |
+| USI               | 🟡     | Only works in I2C mode                          |
+| Timer0            | ✔️     | PWM support for PB0/PB1                         |
+| Timer1            | ❌      |                                                 |
+| Watchdog Timer    | ✔️     |                                                 |
+| EEPROM            | ✔️     |                                                 |
+| ADC               | ✔️     | Used by analogRead()                            |
+| Analog Comparator | ❌      |                                                 |
+| GDB Debugging     | ✔️     | See the [GDB Debugging Guide](../gdb-debugging) |
 
 Legend:  
 ✔️ Simulated  
