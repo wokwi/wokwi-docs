@@ -103,15 +103,15 @@ Note: We need to specify the auth_method to `None` in the ClientConfiguration.
 
 Wokwi uses a special gateway to connect your simulated ESP32 to the internet. This gateway is required since web browsers do not allow direct internet access. There are two ways you can use the Wokwi IoT Gateway: the Public Gateway, and the Private Gateway.
 
-|                      | Public Gateway        | Private Gateway                                        |
-| -------------------- | --------------------- | ------------------------------------------------------ |
-| Speed                | Slower                | Faster                                                 |
-| Stability            | Medium                | High                                                   |
-| Location             | Remote, in the cloud  | Runs on your computer                                  |
-| Privacy              | Connections monitored | No monitoring                                          |
-| Outgoing connections | ✅                    | ✅                                                     |
-| Incoming connections | ❌                    | ✅                                                     |
-| Availability         | All users             | Only for [Club](../getting-started/wokwi-club) members |
+|                      | Public Gateway        | Private Gateway                                               |
+|----------------------|-----------------------|---------------------------------------------------------------|
+| Speed                | Slower                | Faster                                                        |
+| Stability            | Medium                | High                                                          |
+| Location             | Remote, in the cloud  | Runs on your computer                                         |
+| Privacy              | Connections monitored | No monitoring                                                 |
+| Outgoing connections | ✅                     | ✅                                                             |
+| Incoming connections | ❌                     | ✅                                                             |
+| Availability         | All users             | [Paying users](https://wokwi.com/pricing?ref=docs_esp32_wifi) |
 
 ### The Public Gateway
 
@@ -127,7 +127,7 @@ The Private Gateway is a small application that you download and run on your com
 - Your ESP32 projects can access services [running on your computer](#connecting-to-your-local-machine) or your local network (e.g. a local MQTT or HTTP server)
 - You can run a web server on the ESP32 and connect to it from your browser (explained below)
 
-The Private Gateway is only available for users who join [The Wokwi Club](../getting-started/wokwi-club).
+The Private Gateway is only available for [paying users](https://wokwi.com/pricing?ref=docs_esp32_wifi).
 
 #### Installation
 

@@ -70,7 +70,7 @@ Wokwi usa um gateway especial para conectar seu ESP32 simulado à internet. Este
 | Privacidade          | Conexões monitoradas  | Sem monitoramento                                           |
 | Conexões de saída    | ✅                    | ✅                                                          |
 | Conexões de entrada  | ❌                    | ✅                                                          |
-| Disponibilidade      | Todos os usuários     | Apenas para membros do [Club](../getting-started/wokwi-club) |
+| Disponibilidade      | Todos os usuários     | [Usuários pagantes](https://wokwi.com/pricing?ref=docs_esp32_wifi) |
 
 ### O Gateway Publico
 
@@ -86,7 +86,7 @@ O Gateway Privado é um pequeno aplicativo que você baixa e executa em seu comp
 - Seus projetos ESP32 podem acessar serviços executados em seu computador ou em sua rede local (por exemplo, um servidor MQTT ou HTTP local)
 - Você pode executar um servidor web no ESP32 e conectar-se a ele a partir do seu navegador (explicado abaixo)
 
-O Gateway Privado está disponível apenas para usuários que ingressam [no Wokwi Club](../getting-started/wokwi-club).
+O Gateway Privado está disponível apenas para [usuários pagantes](https://wokwi.com/pricing?ref=docs_esp32_wifi).
 
 #### Instalação
 

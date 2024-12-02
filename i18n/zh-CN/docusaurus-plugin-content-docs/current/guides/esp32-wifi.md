@@ -70,7 +70,7 @@ Wokwi使用特殊的网关将您的模拟ESP32连接到互联网。由于网络�
 | 隐私性     | 受监控的连接 | 不受监控                                   |
 | 外网连接 | ✅                    | ✅                                                     |
 | 内网连接 | ❌                    | ✅                                                     |
-| 可用性      | 所有人          | 仅供 [Club](../getting-started/wokwi-club) 会员 |
+| 可用性      | 所有人          | [付费用户](https://wokwi.com/pricing?ref=docs_esp32_wifi) |
 
 ### 公共网关
 
@@ -86,7 +86,7 @@ Wokwi使用特殊的网关将您的模拟ESP32连接到互联网。由于网络�
 - 您的ESP32项目可以访问在您的计算机或本地网络上运行的服务（例如本地MQTT或HTTP服务器）
 - 您可以在ESP32上运行Web服务器，并从浏览器连接到它（下面会有解释）
 
-私人网关仅为加入[The Wokwi Club](../getting-started/wokwi-club)的用户提供。
+私有网关仅适用于[付费用户](https://wokwi.com/pricing?ref=docs_esp32_wifi)。
 
 #### 安装
 

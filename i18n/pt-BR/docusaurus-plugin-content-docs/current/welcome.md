@@ -48,10 +48,10 @@ Aqui estão alguns exemplos rápidos de coisas que você pode fazer com o Wokwi:
 - [Simulação de Wi-Fi](guides/esp32-wifi) - Conecte seu projeto simulado à internet. Você pode usar MQTT, HTTP, NTP e muitos outros protocolos de rede.
 - [Analisador Lógico Virtual](guides/logic-analyzer) - Capture sinais digitais em sua simulação (por exemplo, UART, I2C, SPI) e analise-os em seu computador.
 - [Depuração avançada com GDB](gdb-debugging) - Poderoso depurador Arduino e Raspberry Pi Pico para usuários avançados.
-- [Simulação de cartão SD](parts/wokwi-microsd-card) - Armazene e recupere arquivos e diretórios do seu código. Os membros do [Club](getting-started/wokwi-club) também podem fazer upload de arquivos binários (como imagens)
+- [Simulação de cartão SD](parts/wokwi-microsd-card) - Armazene e recupere arquivos e diretórios do seu código. Os membros do [Club](https://wokwi.com/pricing?ref=docs_sdcard) também podem fazer upload de arquivos binários (como imagens)
 - [API dos chips](chips-api/getting-started) - Crie seus próprios chips e peças personalizados e compartilhe-os com a comunidade.
 - [Integração no Visual Studio Code](vscode/getting-started) - Simule seus projetos incorporados diretamente no VS Code.
 
 ## Quanto custa isso?
 
-Wokwi é de uso gratuito. Usuários profissionais e frequentes podem [entrar no Clube](https://wokwi.com/club?ref=docs_welcome), influenciar nosso [roadmap de desenvolvimento](https://wokwi.com/features), e obter acesso a [recursos avançados](getting-started/wokwi-club).
+O Wokwi é gratuito para uso pessoal. Para usuários comerciais e profissionais, confira nossos planos pagos na [página de preços](https://wokwi.com/pricing?ref=docs_welcome).

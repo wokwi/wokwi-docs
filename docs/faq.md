@@ -11,6 +11,10 @@ When choosing the name for Wokwi, we were looking for a short word that would be
 
 If you haven't signed in to Wokwi, use the same device & browser that saved the project and visit [https://wokwi.com/dashboard/projects](https://wokwi.com/dashboard/projects). If you sign in to Wokwi before saving projects, that same URL will show all projects that you have saved on any device/browser. You can also navigate to your saved projects by clicking on your profile picture and selecting "My Projects" from the menu.
 
+## How do I change or cancel my subscription?
+
+You can manage your subscription, including updating or canceling it, by visiting the [Subscriptions page](https://wokwi.com/dashboard/subscriptions).
+
 ## The simulation is slow, how can I make it faster?
 
 There are many factors that can affect the simulation speed. Here are some tips that can help you get better performance:

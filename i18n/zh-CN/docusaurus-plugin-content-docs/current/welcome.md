@@ -59,10 +59,8 @@ Wokwi是一个在线的电子电路仿真器。你可以使用它来仿真Arduin
 - [WiFi 仿真](guides/esp32-wifi) - 仿真项目可以连接到互联网。您可以使用MQTT、HTTP、NTP和许多其他网络协议。
 - [虚拟逻辑分析仪](guides/logic-analyzer) - 在仿真中可以捕获数字信号（例如UART、I2C、SPI）并在你的计算机上进行分析。
 - [强力的GDB仿真](gdb-debugging) - 为高级用户提供了强大的Arduino和Raspberry Pi Pico调试器。
-- [SD卡仿真](parts/wokwi-microsd-card) - 可以使用代码来存储和检索文件和目录。[Club](getting-started/wokwi-club) 会员也可以上传二进制文件（例如图像）。
+- [SD卡仿真](parts/wokwi-microsd-card) - 可以使用代码来存储和检索文件和目录。[Club](https://wokwi.com/pricing?ref=docs_sdcard) 会员也可以上传二进制文件（例如图像）。
 
 ## 要付多少钱才能用wokwi?
 
-使用是免费的！ 
-
-有一定经验或者经常使用的用户可以加入[我们的俱乐部](https://wokwi.com/club?refs=docs_welcome)，可以和我们一起[制定开发计划](https://wokwi.com/features)，并且可以使用[高级功能](getting-started/wokwi-club)。
+Wokwi个人使用是免费的。对于商业用户和专业人士，请查看我们的[定价页面](https://wokwi.com/pricing?ref=docs_welcome)了解付费计划。

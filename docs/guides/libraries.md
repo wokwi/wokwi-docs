@@ -15,7 +15,7 @@ You can use this method to install any Arduino library from the Arduino Library 
 
 ### Uploading custom libraries
 
-[Club members](https://wokwi.com/club?refs=docs_libman) can upload any Arduino library by selecting a folder from their computer. To upload a custom library, click on the blue "+" button in the Arduino library manager and then click on "Upload a Library".
+[Paying users](https://wokwi.com/pricing?refs=docs_libman) can upload any Arduino library by selecting a folder from their computer. To upload a custom library, click on the blue "+" button in the Arduino library manager and then click on "Upload a Library".
 
 The selected folder should contain the source code for the library (.h and .c/.cpp files). After selecting a folder, Wokwi will zip its contents and upload it to the Wokwi build server. You will be able to see the library in the Library Mananger as a .zip file.
 
