@@ -18,6 +18,7 @@ follows:
   "author": "Uri Shaked",
   "editor": "wokwi",
   "parts": [],
+  "dependencies": [],
   "connections": []
 }
 ```
@@ -112,6 +113,10 @@ to pin 13 of the `uno` part:
 ```
 
 You can find the name of a component pin by moving the mouse over it.
+
+### Dependencies
+
+The `"dependencies"` section currently defines custom chips that are not yet included into the WokWi itself but that are available as separate Github repositories. For more details, see [Packaged Chips](./packaged-chip).
 
 ### Wire placement mini-language
 
