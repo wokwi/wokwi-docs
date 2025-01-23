@@ -38,14 +38,14 @@ Note: `timer_init()` can only be called from `chip_init()`. Do not call it at a 
 
 :::
 
-### void timer_start(uint32_t timer_id, uint32_t micros, bool repeat)
+### void timer_start(timer_t timer_id, uint32_t micros, bool repeat)
 
 Schedules the timer given by `timer_id`. The `micros` argument determines how many microseconds will pass until the timer will call `chip_timer_event()`. If `repeat` is `false`, the timer event will be called once (one-shot timer). If repeat is `true`, the timer event will keep getting called every `micros` microseconds, until you call `timer_stop()` or reconfigure the timer with `timer_start`.
 
-### void timer_start_ns(uint32_t timer_id, uint64_t nanos, bool repeat)
+### void timer_start_ns(timer_t timer_id, uint64_t nanos, bool repeat)
 
 Similar to `timer_start`, but specifies the duration of the timer in nanoseconds instead of microseconds. Prefer `timer_start()` when possible, in order to improve performance.
 
-### void timer_stop(uint32_t timer_id)
+### void timer_stop(timer_t timer_id)
 
 Stops the given timer. If the timer hasn't fired yet, it won't fire until you call `timer_start()` again.
