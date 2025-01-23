@@ -19,10 +19,10 @@ Initializes a new timer. Returns the identifier of the timer. Call `timer_start(
 
 The `timer_config_t` struct contains the following fields:
 
-| Field       | Type      | Description                                                    |
-| ----------- | --------- | -------------------------------------------------------------- |
-| `callback`  | callback  | Called when the timer fires                                    |
-| `user_data` | `void \*` | Data that will be passed in the first argument to the callback |
+| Field       | Type     | Description                                                    |
+| ----------- | -------- | -------------------------------------------------------------- |
+| `callback`  | callback | Called when the timer fires                                    |
+| `user_data` | `void *` | Data that will be passed in the first argument to the callback |
 
 The signature for the callback function is as follows:
 

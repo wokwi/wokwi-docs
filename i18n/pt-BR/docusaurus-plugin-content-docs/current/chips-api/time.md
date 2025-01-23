@@ -19,10 +19,10 @@ Inicializa um novo temporizador. Retorna o identificador do temporizador. Chame 
 
 A estrutura `timer_config_t` contém os seguintes campos:
 
-| Campo       | Tipo      | Descrição                                                      |
-| ----------- | --------- | -------------------------------------------------------------- |
-| `callback`  | callback  | Chamado quando o timer dispara                                 |
-| `user_data` | `void \*` | Dados que serão passados no primeiro argumento para o callback |
+| Campo       | Tipo     | Descrição                                                      |
+| ----------- | -------- | -------------------------------------------------------------- |
+| `callback`  | callback | Chamado quando o timer dispara                                 |
+| `user_data` | `void *` | Dados que serão passados no primeiro argumento para o callback |
 
 A assinatura para a função callback é a seguinte:
 

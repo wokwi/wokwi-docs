@@ -18,7 +18,7 @@ Inicializa o dispositivo UART. O argumento `config` define os pinos, configuraç
 | `baud_rate`  | `uint32_t` | A taxa de transmissão (por exemplo, 115200)                  |
 | `rx_data`    | callback   | Chamado para cada byte recebido no pino RX                   |
 | `write_done` | callback   | Chamado quando a transmissão de dados no pino TX finalizar   |
-| `user_data`  | `void \*`  | Dados que serão passados no primeiro argumento dos callbacks |
+| `user_data`  | `void *`   | Dados que serão passados no primeiro argumento dos callbacks |
 
 Ambos os retornos de chamada (`rx_data`, `write_done`) são opcionais. Todos eles usam o ponteiro `user_data` como seu primeiro argumento.
 

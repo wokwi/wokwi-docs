@@ -55,7 +55,7 @@ Escuta as mudanças no valor digital do pino fornecido. A estrutura de configura
 | ------------ | ---------- | -------------------------------------------------------------------------- |
 | `edge`       | `uint32_t` | Quais mudanças de valor de pinos escutamos (`RISING`, `FALLING` ou `BOTH`) |
 | `pin_change` | callback   | Chamado quando o valor do pino muda (Veja abaixo)                          |
-| `user_data`  | `void \*`  | Dados que serão passados no primeiro argumento para `pin_change`           |
+| `user_data`  | `void *`   | Dados que serão passados no primeiro argumento para `pin_change`           |
 
 Os valores válidos para borda são:
 

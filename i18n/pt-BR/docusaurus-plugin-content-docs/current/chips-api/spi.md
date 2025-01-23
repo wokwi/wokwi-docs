@@ -11,14 +11,14 @@ Para criar um dispositivo SPI, primeiro chame `spi_init`, passando uma estrutura
 
 Inicializa uma interface de dispositivo SPI. O argumento `config` define os pinos, modo e callbacks para o dispositivo SPI. Contém os seguintes campos:
 
-| Campo       | Tipo       | Descrição                                                             |
-| ----------- | ---------- | --------------------------------------------------------------------- |
-| `sck`       | `pin_t`    | O pino de clock                                                       |
-| `mosi`      | `pin_t`    | O pino de dados MOSI (ou `NO_PIN` para desabilitar o MOSI)            |
-| `miso`      | `pin_t`    | O pino de dados MISO (ou `NO_PIN` para desabilitar o MISO)            |
-| `mode`      | `uint32_t` | Modo SPI: `0`, `1`, `2` ou `3` (padrão: `0`)                          |
-| `done`      | `callback` | Chamado quando uma transação SPI termina (veja abaixo)                |
-| `user_data` | `void \*`  | Dados que serão passados no primeiro argumento do callback `done`     |
+| Campo       | Tipo       | Descrição                                                         |
+| ----------- | ---------- | ----------------------------------------------------------------- |
+| `sck`       | `pin_t`    | O pino de clock                                                   |
+| `mosi`      | `pin_t`    | O pino de dados MOSI (ou `NO_PIN` para desabilitar o MOSI)        |
+| `miso`      | `pin_t`    | O pino de dados MISO (ou `NO_PIN` para desabilitar o MISO)        |
+| `mode`      | `uint32_t` | Modo SPI: `0`, `1`, `2` ou `3` (padrão: `0`)                      |
+| `done`      | `callback` | Chamado quando uma transação SPI termina (veja abaixo)            |
+| `user_data` | `void *`   | Dados que serão passados no primeiro argumento do callback `done` |
 
 A API não suporta um pino CS/SS: cabe ao usuário selecionar/desmarcar a interface SPI chamando `spi_start()` e `spi_stop()`.
 

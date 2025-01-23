@@ -11,14 +11,14 @@ Um ein SPI-Gerät zu erstellen, rufe zuerst `spi_init` auf und übergib die Stru
 
 Initialisiert eine SPI-Geräteschnittstelle. Das Argument `config` definiert Pins, Modi und Callbacks für das SPI-Gerät. Es enthält folgende Felder:
 
-| Field       | Type       | Description                                                           |
-| ----------- | ---------- | --------------------------------------------------------------------- |
-| `sck`       | `pin_t`    | Der Clock Pin                                                         |
-| `mosi`      | `pin_t`    | Der MOSI data Pin (oder `NO_PIN` um MOSI zu deaktivieren)             |
-| `miso`      | `pin_t`    | Der MISO data Pin (oder `NO_PIN` um MISO zu deaktivieren)             |
-| `mode`      | `uint32_t` | SPI Modus: `0`, `1`, `2`, oder `3` (Standard: `0`)                    |
-| `done`      | `callback` | Wird aufgerufen, wenn die SPI Übertragung fertig ist (siehe unten)    |
-| `user_data` | `void \*`  | Daten werden an das erste Argument vom `done` Callback übergeben      |
+| Field       | Type       | Description                                                        |
+| ----------- | ---------- | ------------------------------------------------------------------ |
+| `sck`       | `pin_t`    | Der Clock Pin                                                      |
+| `mosi`      | `pin_t`    | Der MOSI data Pin (oder `NO_PIN` um MOSI zu deaktivieren)          |
+| `miso`      | `pin_t`    | Der MISO data Pin (oder `NO_PIN` um MISO zu deaktivieren)          |
+| `mode`      | `uint32_t` | SPI Modus: `0`, `1`, `2`, oder `3` (Standard: `0`)                 |
+| `done`      | `callback` | Wird aufgerufen, wenn die SPI Übertragung fertig ist (siehe unten) |
+| `user_data` | `void *`   | Daten werden an das erste Argument vom `done` Callback übergeben   |
 
 Die API unterstützt keine CS/SS Pins: die SPI-Schnittstelle durch das Aufrufen von `spi_start()` und `spi_stop()` zu aktivieren/deaktivieren ist dem Nutzer selbst überlassen.
 

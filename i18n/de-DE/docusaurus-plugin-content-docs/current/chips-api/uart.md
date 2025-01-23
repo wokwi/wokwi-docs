@@ -18,7 +18,7 @@ Initialisiert ein UART-Gerät. Das Argument `config` definiert die Pins, Konfigu
 | `baud_rate`  | `uint32_t` | Die Baudrate (z.B. 115200)                                      |
 | `rx_data`    | callback   | Wird für jeden empfangenen Byte am RX-Pin aufgerufen            |
 | `write_done` | callback   | Wird aufgerufen, wenn die Übertragung am TX-Pin fertig ist      |
-| `user_data`  | `void \*`  | Daten, die in das erste Argument der Callbacks übergeben werden |
+| `user_data`  | `void *`   | Daten, die in das erste Argument der Callbacks übergeben werden |
 
 Die beiden Callbacks (`rx_data` und `write_done`) sind optional. Sie nutzen einen Pointer auf `user_data` als erstes Argument.
 

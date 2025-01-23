@@ -18,7 +18,7 @@ Initializes an SPI device interface. The `config` argument defines the pins, mod
 | `miso`      | `pin_t`    | The MISO data pin (or `NO_PIN` to disable MISO)                       |
 | `mode`      | `uint32_t` | SPI mode: `0`, `1`, `2`, or `3` (default: `0`)                        |
 | `done`      | `callback` | Called when an SPI transaction finishes (see below)                   |
-| `user_data` | `void \*`  | Data that will be passed in the first argument of the `done` callback |
+| `user_data` | `void *`   | Data that will be passed in the first argument of the `done` callback |
 
 The API does not support a CS/SS pin: it is up to the user to select/deselect the SPI interface by calling `spi_start()` and `spi_stop()`.
 

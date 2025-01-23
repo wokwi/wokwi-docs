@@ -10,7 +10,7 @@ sidebar_label: Time API
 Gibt die Zeit vom aktuellen Simulator (virtuell) in Nanosekunden zurück.
 
 :::tip
-Du kannst die aktuelle Zeit in Millisekunden durch das Aufrufen von `get_sim_nanos() / 1000000` bekommen. 
+Du kannst die aktuelle Zeit in Millisekunden durch das Aufrufen von `get_sim_nanos() / 1000000` bekommen.
 :::
 
 ### timer_t timer_init(timer_config_t \*config)
@@ -19,10 +19,10 @@ Initialisiert einen neuen Timer. Gibt die ID vom Timer zurück. Rufe `timer_star
 
 Die Struct `timer_config_t` enthält folgende Felder:
 
-| Feld        | Typ       | Beschreibung                                                   |
-| ----------- | --------- | -------------------------------------------------------------- |
-| `callback`  | callback  | Wird aufgerufen, wenn der Timer ausgelöst wird                 |
-| `user_data` | `void \*` | Daten, die in das erste Argument vom Callback übergeben werden |
+| Feld        | Typ      | Beschreibung                                                   |
+| ----------- | -------- | -------------------------------------------------------------- |
+| `callback`  | callback | Wird aufgerufen, wenn der Timer ausgelöst wird                 |
+| `user_data` | `void *` | Daten, die in das erste Argument vom Callback übergeben werden |
 
 Die Signatur der Callbackfunktion sieht folgendermaßen aus:
 

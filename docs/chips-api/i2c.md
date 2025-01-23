@@ -20,7 +20,7 @@ Initializes an I2C device. The `config` argument defines the pins, address, and 
 | `read`       | callback   | Called when the microcontroller wants to read a byte of data from your chip                        |
 | `write`      | callback   | Called when the microcontroller writes a byte to your chip                                         |
 | `disconnect` | callback   | Called when the microcontroller disconnects from your chip                                         |
-| `user_data`  | `void \*`  | Data that will be passed in the first argument of the callbacks                                    |
+| `user_data`  | `void *`   | Data that will be passed in the first argument of the callbacks                                    |
 
 All the callbacks (`connect`, `read`, `write`, `disconnect`) are optional. They all use the `user_data` pointer as their first argument.
 

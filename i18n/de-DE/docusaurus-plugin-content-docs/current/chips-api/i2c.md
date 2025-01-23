@@ -11,16 +11,16 @@ Um ein I2C-Gerät zu erstellen rufe als erstes `i2c_init` und übergib die Struc
 
 Initialisiert ein I2C-Gerät. Das Argument `config` definiert die Pins, Adressen, und Callbacks für das I2C-Gerät. Es enthält folgende Felder:
 
-| Feld         | Typ        | Beschreibung                                                                                       |
-| ------------ | ---------- | -------------------------------------------------------------------------------------------------- |
+| Feld         | Typ        | Beschreibung                                                                                            |
+| ------------ | ---------- | ------------------------------------------------------------------------------------------------------- |
 | `address`    | `uint32_t` | Warten auf Anfragen, die der angegebenen I2C-Adresse entsprechen. (7-bit). `0` bedeutet "alle Anfragen" |
-| `sda`        | `pin_t`    | Der SDA-Pin                                                                                        |
-| `scl`        | `pin_t`    | Der SCL-Pin                                                                                        |
-| `connect`    | callback   | Wird aufgerufen, wenn der Chip auf dem I2C-Bus angesteuert wird                                    |
-| `read`       | callback   | Wird aufgerufen, wenn der Microcontroller einen Byte vom Chip lesen will                           |
-| `write`      | callback   | Wird aufgerufen, wenn der Microcontroller einen Byte auf den Chip schreibt                         |
-| `disconnect` | callback   | Wird aufgerufen, wenn der Microcontroller die Verbindung zum Chip trennt                           |
-| `user_data`  | `void \*`  | Data that will be passed in the first argument of the callbacks                                    |
+| `sda`        | `pin_t`    | Der SDA-Pin                                                                                             |
+| `scl`        | `pin_t`    | Der SCL-Pin                                                                                             |
+| `connect`    | callback   | Wird aufgerufen, wenn der Chip auf dem I2C-Bus angesteuert wird                                         |
+| `read`       | callback   | Wird aufgerufen, wenn der Microcontroller einen Byte vom Chip lesen will                                |
+| `write`      | callback   | Wird aufgerufen, wenn der Microcontroller einen Byte auf den Chip schreibt                              |
+| `disconnect` | callback   | Wird aufgerufen, wenn der Microcontroller die Verbindung zum Chip trennt                                |
+| `user_data`  | `void *`   | Data that will be passed in the first argument of the callbacks                                         |
 
 Die Callbacks (`connect`, `read`, `write`, `disconnect`) sind optional. Alle Callbacks nutzen den `user_data` Pointer als erstes Argument.
 

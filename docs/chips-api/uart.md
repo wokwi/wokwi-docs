@@ -18,7 +18,7 @@ Initializes UART device. The `config` argument defines the pins, configuration, 
 | `baud_rate`  | `uint32_t` | The baud rate (e.g. 115200)                                     |
 | `rx_data`    | callback   | Called for each byte received on the RX pin                     |
 | `write_done` | callback   | Called when data transmission on the TX pin has finished        |
-| `user_data`  | `void \*`  | Data that will be passed in the first argument of the callbacks |
+| `user_data`  | `void *`   | Data that will be passed in the first argument of the callbacks |
 
 Both of the callbacks (`rx_data`, `write_done`) are optional. They all use the `user_data` pointer as their first argument.
 
