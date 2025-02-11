@@ -55,6 +55,7 @@ module.exports = {
       'parts/wokwi-microsd-card',
       'parts/wokwi-mpu6050',
       'parts/wokwi-nlsf595',
+      'parts/wokwi-nokia-5110-screen',
       'parts/wokwi-ntc-temperature-sensor',
       'parts/wokwi-photoresistor-sensor',
       'parts/wokwi-pi-pico',
