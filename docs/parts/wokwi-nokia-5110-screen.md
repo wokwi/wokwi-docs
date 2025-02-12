@@ -26,4 +26,4 @@ The monochrome display has an 84 x 48 pixel resolution.
 ## Simulator examples
 The example below uses the Adafruit PCD8544 library to control the display. The library provides a simple interface for drawing text, shapes and bitmaps on the screen:
 
-- [Nokia 5011 example: Hello World](https://wokwi.com/projects/422590948073922561)
+- [Nokia 5110 example: Hello World](https://wokwi.com/projects/422590948073922561)
