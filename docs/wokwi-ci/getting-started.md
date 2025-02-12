@@ -15,15 +15,33 @@ For basic testing scenarios, you can use the [Wokwi CLI](./cli-installation) to 
 
 For more advanced testing scenarios, you can write [automation scenarios](./automation-scenarios) that automate the simulation, push buttons, change the state of the sensors, and check the serial output.
 
-:::warning
-Wokwi CI is free while in beta. After the beta, we will charge based on the number of minutes your tests run on Wokwi CI. We plan to offer a free tier with a limited number of minutes per month.
-:::
-
 ## CI Architecture
 
 Wokwi CI is powered a simulation server that runs in the cloud. The server receives your firmware binary, simulates it, and streams the serial output back to your CI system. The server is stateless and can run multiple simulations in parallel.
 
 Wokwi does not store your firmware, and it is deleted from the cloud server after the simulation is finished. If you do not want to upload your firmware to the cloud, please contact us to discuss options for on-premise deployment of Wokwi CI.
+
+## Simulation Time and Limits
+
+The simulation time is calculated as the sum of the simulation time of all the tests in your CI workflow.
+
+Each user has a limit of simulation time per month, according to their Wokwi plan:
+
+- Free users: 50 minutes
+- Hobby and Hobby+ users: 200 minutes
+- Pro users: 2000 minutes
+
+For more information about the paid plans, please see the [Pricing page](https://wokwi.com/pricing).
+
+If you need more simulation time, please contact us to discuss options for a custom plan.
+
+### Limiting Individual Test Time
+
+You can limit the simulation time for each test in your CI workflow using the `--timeout` option of the [CLI](./cli-usage). For example, to limit the simulation time to 10 seconds, use:
+
+```bash
+wokwi-cli --timeout 10000
+```
 
 ## Next Steps
 
