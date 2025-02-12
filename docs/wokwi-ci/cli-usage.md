@@ -25,12 +25,25 @@ The CLI will start the simulation and display the serial output. It will automat
 
 You can use the following options to customize the CLI behavior:
 
-- `--fail-text <text>` - fail if the serial output contains the specified text
-- `--expect-text <text>` - fail if the serial output does not contain the specified text
-  ' `--interactive` - Redirect stdin to the simulated serial port
-- `--serial-log-file <filename>` - save the serial output to the specified file
-- `--scenario <path>` - path to an [automation scenario](./automation-scenarios) file
-- `--timeout <milliseconds>` - how long to wait for the simulation to finish (default: 30000)
-- `--timeout-exit-code <code>` - exit code to use when the simulation times out (default: 42)
-- `--quiet` - do not print version information and status messages
-- `--help` - print help message
+### Configuration
+
+- `--elf <path>` - ELF file to simulate (default: read from wokwi.toml)
+- `--diagram-file <path>` - Path to the diagram.json file, relative to project root (default: diagram.json)
+- `--interactive` - Redirect stdin to the simulated serial port
+- `--serial-log-file <path>` - Save the serial monitor output to the given file
+- `--timeout <number>` - Timeout in simulation milliseconds (default: 30000)
+- `--timeout-exit-code <number>` - Process exit code when timeout is reached (default: 42)
+
+### Automation
+
+- `--expect-text <string>` - Expect the given text in the output
+- `--fail-text <string>` - Fail if the given text is found in the output
+- `--scenario <path>` - Path to an [automation scenario](./automation-scenarios) file, relative to project root
+- `--screenshot-part <string>` - Take a screenshot of the given part id (from diagram.json)
+- `--screenshot-time <number>` - Time in simulation milliseconds to take the screenshot
+- `--screenshot-file <string>` - File name to save the screenshot to (default: screenshot.png)
+
+### General
+
+- `--help`, `-h` - Prints help information and exit
+- `--quiet`, `-q` - Quiet: do not print version or status messages
