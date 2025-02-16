@@ -10,7 +10,7 @@ sidebar_label: wokwi-pushbutton
 ## Pin names
 
 | Name      | Description                   |
-|-----------|-------------------------------|
+| --------- | ----------------------------- |
 | 1.l / 1.r | First contact (left / right)  |
 | 2.l / 2.r | Second contact (left / right) |
 
@@ -32,8 +32,9 @@ that pin as `INPUT_PULLUP`, and the other contact (e.g. `2.r` or `2.l`) to the g
 ## Attributes
 
 | Name   | Description                        | Default value |
-|--------|------------------------------------|---------------|
+| ------ | ---------------------------------- | ------------- |
 | color  | The color of the push button       | "red"         |
+| xray   | Show internal wiring: "1" or ""    | ""            |
 | label  | Text that appears below the button | ""            |
 | key    | Keyboard shortcut for button       |               |
 | bounce | Set to "0" to disable bouncing     | ""            |
@@ -88,31 +89,32 @@ This is useful when you need multiple buttons pressed at the same time.
 ### Examples
 
 | Result                                | Attrs                     |
-|---------------------------------------|---------------------------|
+| ------------------------------------- | ------------------------- |
 | <wokwi-pushbutton color="green" />    | `{ "color": "green" }`    |
 | <wokwi-pushbutton color="#FFFF00" />  | `{ "color": "#FFFF00" }`  |
 | <wokwi-pushbutton label="Push me!" /> | `{ "label": "Push me!" }` |
+| <wokwi-pushbutton xray="1" />         | `{ "xray": "1" }`         |
 
 ## Automation controls
 
 The pushbutton can be controlled using [Automation Scenarios](../wokwi-ci/automation-scenarios). It exposes the following controls:
 
 | Control | Type | Description                                    |
-|---------|------|------------------------------------------------|
+| ------- | ---- | ---------------------------------------------- |
 | pressed | int  | Set to 1 to press the button, 0 to release it. |
 
 The following example simulates a button press on "btn1" for 200ms:
 
 ```yaml
-  - set-control:
-      part-id: btn1
-      control: pressed
-      value: 1
-  - delay: 200ms
-  - set-control:
-      part-id: btn1
-      control: pressed
-      value: 0
+- set-control:
+    part-id: btn1
+    control: pressed
+    value: 1
+- delay: 200ms
+- set-control:
+    part-id: btn1
+    control: pressed
+    value: 0
 ```
 
 ## Simulator examples
