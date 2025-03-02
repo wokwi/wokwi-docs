@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="160mm"
+   height="72.978622mm"
+   fill-rule="evenodd"
+   version="1.1"
+   viewBox="0 0 604.99008 261.31238"
+   id="svg16"
+   sodipodi:docname="wokwi-mq2-gas-sensor.svg"
+   inkscape:version="1.3 (0e150ed, 2023-07-21)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"><sodipodi:namedview
+   id="namedview16"
+   pagecolor="#ffffff"
+   bordercolor="#666666"
+   borderopacity="1.0"
+   inkscape:showpageshadow="2"
+   inkscape:pageopacity="0.0"
+   inkscape:pagecheckerboard="0"
+   inkscape:deskcolor="#d1d1d1"
+   inkscape:document-units="mm"
+   showgrid="false"
+   inkscape:zoom="1.524562"
+   inkscape:cx="235.80543"
+   inkscape:cy="158.07819"
+   inkscape:window-width="1920"
+   inkscape:window-height="1045"
+   inkscape:window-x="1352"
+   inkscape:window-y="25"
+   inkscape:window-maximized="0"
+   inkscape:current-layer="svg16" />
+<defs
+   id="defs2">
+  <pattern
+     inkscape:collect="always"
+     xlink:href="#a"
+     id="pattern1"
+     patternTransform="matrix(4.401785,0,0,4.401785,0,2.121194)" />
+  <pattern
+     id="a"
+     width="4.1"
+     height="4.1"
+     patternUnits="userSpaceOnUse">
+    <path
+       d="m0 0v4.09h0.4v-0.85l0.42 0.381v0.469h0.4v-0.0996l0.109 0.0996h0.711v-0.799l0.42 0.379v0.42h0.398v-0.0488l0.0547 0.0488h0.766v-0.75l0.42 0.381v0.369h0.4v-4.09h-0.4v0.311l-0.334-0.311h-0.598l0.111 0.0996v0.9l-0.42-0.379v-0.621h-0.398v0.25l-0.277-0.25h-0.6l0.0566 0.0508v0.9l-0.42-0.381v-0.57h-0.4v0.201l-0.223-0.201zm0.4 0.359 0.42 0.381v0.9l-0.42-0.381zm1.64 0.0508 0.42 0.391v0.889l-0.42-0.379zm1.64 0.0605 0.42 0.379v0.891l-0.42-0.381zm-2.46 0.639 0.42 0.381v0.9l-0.42-0.381zm1.64 0.0508 0.42 0.381v0.898l-0.42-0.379zm-2.46 0.641 0.42 0.379v0.9l-0.42-0.379zm1.64 0.0488 0.42 0.381v0.9l-0.42-0.381zm1.64 0.0508 0.42 0.379v0.9l-0.42-0.379zm-2.46 0.65 0.42 0.379v0.9l-0.42-0.379zm1.64 0.0488 0.42 0.381v0.9l-0.42-0.381z"
+       fill="#949392"
+       id="path1" />
+  </pattern>
+  <g
+     id="pin">
+    <path
+       fill="#c6bf95"
+       d="m 29,4.6 c 0.382,0 0.748,-0.152 1.02,-0.422 0.272,-0.27 0.422,-0.636 0.422,-1.02 V 3.157 C 30.442,2.775 30.29,2.409 30.02,2.137 29.75,1.865 29.384,1.715 29,1.715 H 2.9 c -0.234,0 -0.423,0.189 -0.423,0.423 v 2.04 c 0,0.234 0.189,0.423 0.423,0.423 H 29 Z"
+       id="path2" />
+    <rect
+       x="0"
+       y="0"
+       width="6.9000001"
+       height="6.9000001"
+       id="rect2" />
+  </g>
+</defs>
+<!-- Board -->
+<path
+   d="M 497.40166,2.1211938 H 0 V 264.02739 H 497.40166 Z M 490.35882,236.29613 c 0,11.53268 -9.33178,20.86446 -20.86446,20.86446 -11.53268,0 -20.86447,-9.33178 -20.86447,-20.86446 0,-11.53266 9.33179,-20.86445 20.86447,-20.86445 11.53268,0 20.86446,9.33179 20.86446,20.86445 z m -484.1963213,0 c 0,11.53268 9.3317833,20.86446 20.8644603,20.86446 11.532674,0 20.864458,-9.33178 20.864458,-20.86446 0,-11.53266 -9.331784,-20.86445 -20.864458,-20.86445 -11.532677,0 -20.8644603,9.33179 -20.8644603,20.86445 z M 468.34989,9.1640488 c 11.53268,0 20.86446,9.3317842 20.86446,20.8644612 0,11.532676 -9.33178,20.864461 -20.86446,20.864461 -11.53268,0 -20.86447,-9.331785 -20.86447,-20.864461 0,-11.532677 9.33179,-20.8644612 20.86447,-20.8644612 z m -444.580252,0 c -11.532677,0 -20.86446,9.3317842 -20.86446,20.8644612 0,11.532676 9.331783,20.864461 20.86446,20.864461 11.532678,0 20.864459,-9.331785 20.864459,-20.864461 0,-11.532677 -9.331781,-20.8644612 -20.864459,-20.8644612 z"
+   fill="#0664af"
+   id="path3"
+   style="stroke-width:4.40181" />
+<!-- Pins -->
+<use
+   xlink:href="#pin"
+   x="107"
+   y="12"
+   id="use3"
+   transform="matrix(4.4017847,0,0,4.4017847,0,2.1211938)" />
+<use
+   xlink:href="#pin"
+   x="107"
+   y="21.299999"
+   id="use4"
+   transform="matrix(4.4017847,0,0,4.4017847,0,2.1211938)" />
+<use
+   xlink:href="#pin"
+   x="107"
+   y="31.1"
+   id="use5"
+   transform="matrix(4.4017847,0,0,4.4017847,0,2.1211938)" />
+<use
+   xlink:href="#pin"
+   x="107"
+   y="40.900002"
+   id="use6"
+   transform="matrix(4.4017847,0,0,4.4017847,0,2.1211938)" />
+<!-- Sensor -->
+<circle
+   cx="209.96513"
+   cy="133.29439"
+   r="137.33569"
+   fill="none"
+   stroke="#ffffff"
+   stroke-width="1.2745px"
+   id="circle6" />
+<circle
+   cx="209.96513"
+   cy="133.29439"
+   r="126.77139"
+   fill="#dedede"
+   id="circle7"
+   style="stroke-width:4.40181" />
+<circle
+   cx="209.96513"
+   cy="133.29439"
+   r="113.56604"
+   fill="#d0ccc4"
+   id="circle8"
+   style="stroke-width:4.40181" />
+<circle
+   cx="209.96513"
+   cy="133.29439"
+   r="94.198189"
+   fill="#bab3ad"
+   id="circle9"
+   style="stroke-width:4.40181" />
+<circle
+   cx="209.96513"
+   cy="133.29439"
+   r="94.198189"
+   fill="url(#a)"
+   id="circle10"
+   style="fill:url(#pattern1);stroke-width:4.40181" />
+<!-- LEDs -->
+<text
+   fill="#ffffff"
+   font-family="sans-serif"
+   font-size="16.3746px"
+   id="text15"
+   y="2.1211917"
+   style="stroke-width:4.40181"><tspan
+     x="416.65533"
+     y="75.758659"
+     id="tspan12"
+     style="stroke-width:4.40181">AOUT</tspan><tspan
+     x="416.65533"
+     y="116.99898"
+     id="tspan13"
+     style="stroke-width:4.40181">DOUT</tspan><tspan
+     x="416.65533"
+     y="160.1937"
+     id="tspan14"
+     style="stroke-width:4.40181">GND</tspan><tspan
+     x="416.65533"
+     y="203.26515"
+     id="tspan15"
+     style="stroke-width:4.40181">VCC</tspan></text>
+<text
+   fill="#ffffff"
+   font-family="sans-serif"
+   font-size="3.72px"
+   id="text16"
+   y="110.64603" />
+&#10;&#10;&#10;&#10;&#10;x=&quot;80&quot; y=&quot;8&quot;&gt;PWR<text
+   xml:space="preserve"
+   style="font-style:normal;font-weight:normal;font-size:40.0176px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.00044"
+   x="91.178665"
+   y="160.83354"
+   id="text17"><tspan
+     sodipodi:role="line"
+     id="tspan16"
+     style="stroke-width:1.00044"
+     x="91.178665"
+     y="160.83354" /></text>
+<rect
+   style="opacity:1;fill:#999999;stroke-width:6.93149;paint-order:stroke markers fill"
+   id="rect17"
+   width="37.530716"
+   height="16.850525"
+   x="357.961"
+   y="27.730433" />
+<rect
+   style="opacity:1;fill:#e6e6e6;stroke-width:9.04958;paint-order:stroke markers fill"
+   id="rect18"
+   width="21.32427"
+   height="16.850525"
+   x="366.06427"
+   y="27.730433" />
+<rect
+   style="fill:#999999;stroke-width:6.93149;paint-order:stroke markers fill"
+   id="rect17-9"
+   width="37.530716"
+   height="16.850525"
+   x="356.62396"
+   y="216.48895" />
+<rect
+   style="fill:#e6e6e6;stroke-width:9.04958;paint-order:stroke markers fill"
+   id="rect18-0"
+   width="21.32427"
+   height="16.850525"
+   x="364.7272"
+   y="216.48895" />
+<text
+   xml:space="preserve"
+   style="font-style:normal;font-weight:normal;font-size:13.0974px;line-height:1.25;font-family:sans-serif;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.327435"
+   x="370.68942"
+   y="22.786428"
+   id="text18"
+   transform="scale(0.93405847,1.0705968)"><tspan
+     sodipodi:role="line"
+     id="tspan18"
+     style="fill:#ffffff;stroke-width:0.327435"
+     x="370.68942"
+     y="22.786428">PWR LED</tspan></text>
+<text
+   xml:space="preserve"
+   style="font-style:normal;font-weight:normal;font-size:13.0974px;line-height:1.25;font-family:sans-serif;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.327435"
+   x="376.19336"
+   y="230.22446"
+   id="text18-0"
+   transform="scale(0.93405847,1.0705968)"><tspan
+     sodipodi:role="line"
+     id="tspan18-3"
+     style="fill:#ffffff;stroke-width:0.327435"
+     x="376.19336"
+     y="230.22446">D0 LED</tspan></text>
+</svg>
