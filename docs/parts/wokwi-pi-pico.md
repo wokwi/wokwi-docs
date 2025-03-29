@@ -59,8 +59,8 @@ This table summarizes the status of the simulation features:
 | DMA               | ✔️     | Only for the PIO peripheral                                             |
 | Timer             | ✔️     | Pausing the timer not implemented yet                                   |
 | ARM SysTick Timer | ✔️     |                                                                         |
-| Watchdog          | ❌     |                                                                         |
-| RTC               | ❌     |                                                                         |
+| Watchdog          | ✔️     |                                                                         |
+| RTC               | ✔️     |                                                                         |
 | ADC + Temp sensor | ✔️     | Temperature sensor always reads 0                                       |
 | SSI               | 🟡     | Just the minimum to make the bootloader happy                           |
 | GDB Debugging     | ✔️     | See the [GDB Debugging guide](../gdb-debugging)                         |
