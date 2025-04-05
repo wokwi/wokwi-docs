@@ -73,6 +73,8 @@ If you are out of microcontroller pins, consider using a [74HC595 Shift Register
 
 ## Simulator examples
 
+
+- [SevSeg example: 1 digit count] (https://wokwi.com/projects/427305506084700161)
 - [SevSeg example: Counter](https://wokwi.com/projects/344891439152366164)
 - [SevSeg example: String with period](https://wokwi.com/projects/344893935754150484)
 - [Arduino alarm clock](https://wokwi.com/projects/297787059514376717)
