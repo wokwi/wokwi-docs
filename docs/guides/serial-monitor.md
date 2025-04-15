@@ -90,7 +90,7 @@ The default configuration is as follows:
 
 ```json
 "serialMonitor": {
-  "display": "auto",
+  "display": "always",
   "newline": "lf",
   "convertEol": false
 }
