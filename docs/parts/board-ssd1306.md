@@ -3,28 +3,25 @@ title: board-ssd1306 Reference
 sidebar_label: board-ssd1306
 ---
 
-Monochrome 128x64 OLED display with I2C interface
+import machine
+import ssd1306
+import time
 
-![SSD1306](https://raw.githubusercontent.com/wokwi/wokwi-boards/main/boards/ssd1306/board.svg)
+# Set up I2C communication (SDA = GPIO21, SCL = GPIO22)
+i2c = machine.I2C(scl=machine.Pin(22), sda=machine.Pin(21), freq=20000)
 
-The default I2C address of the SSD1306 module is 0x3c (60). Some modules have a different address (0x3d), you can change the address by editing diagram.json and setting the `i2cAddress` attribute to "0x3d".
+# Initialize the OLED display (128x64 resolution)
+oled = ssd1306.SSD1306_I2C(128, 64, i2c)
 
-## Pin names
+# Draw Happy Face
+def draw_happy_face():
+    oled.fill(0)  # Clear the screen
+    oled.fill_circle(64, 32, 20, 1)  # Face
+    oled.fill_circle(54, 26, 3, 0)  # Left Eye
+    oled.fill_circle(74, 26, 3, 0)  # Right Eye
+    oled.arc(64, 38, 10, 0, 180, 1)  # Smile
+    oled.show()
 
-| Name | Description    | Arduino Uno pin |
-| ---- | -------------- | --------------- |
-| GND  | Ground         | GND             |
-| VCC  | Supply voltage | 5V              |
-| SCL  | I2C clock line | A5              |
-| SDA  | I2C data line  | A4              |
-
-## Attributes
-
-| Name       | Description                | Default value |
-| ---------- | -------------------------- | ------------- |
-| i2cAddress | I2C address of the display | "0x3c"        |
-
-## Using in Arduino
 
 You can choose between several SSD1306 Arduino libraries:
 
