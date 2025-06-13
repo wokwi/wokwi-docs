@@ -27,3 +27,15 @@ steps:
 :::warning
 Automation scenarios are currently in alpha. The API is not fully documented yet, and may change in the future. You can use the [example projects](github-actions#examples) as a reference.
 :::
+
+## Supported Parts with Automation Controls
+
+Several Wokwi parts support automation controls that can be controlled using automation scenarios. These controls allow you to programmatically change the state of sensors, press buttons, and modify component values during simulation.
+
+### Parts with Automation Controls
+
+- **[Push Button](../parts/wokwi-pushbutton#automation-controls)** - Control button presses and releases
+- **[Potentiometer](../parts/wokwi-potentiometer#automation-controls)** - Adjust the potentiometer position
+- **[MPU6050 Sensor](../parts/wokwi-mpu6050#automation-controls)** - Set acceleration, rotation, and temperature values
+
+Each part's documentation page contains detailed information about the specific automation controls available, including control names, types, and example usage.
