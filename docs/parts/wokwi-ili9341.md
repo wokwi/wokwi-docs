@@ -27,10 +27,11 @@ Full color 240x320 2.8" LCD-TFT display with SPI interface
 
 ## Attributes
 
-| Name           | Description                                 | Default value |
-| -------------- | ------------------------------------------- | ------------- |
-| flipHorizontal | Set to "1" to flip the display horizontally | ""            |
-| flipVertical   | Set to "1" to flip the display vertically   | ""            |
+| Name           | Description                                                                                     | Default value |
+|----------------|-------------------------------------------------------------------------------------------------|---------------|
+| flipHorizontal | Set to "1" to flip the display horizontally                                                     | ""            |
+| flipVertical   | Set to "1" to flip the display vertically                                                       | ""            |
+| swapXY         | Set to "1" to change the orientation of the display (some LCD panels have the X/Y axes swapped) | ""            |
 
 ## Using in Arduino
 
