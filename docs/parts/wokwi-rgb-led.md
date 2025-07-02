@@ -26,5 +26,6 @@ sidebar_label: wokwi-rgb-led
 
 ## Simulator examples
 
-- [RGB LED with 3 linear sliders](https://wokwi.com/projects/306455554559050306)
+- [RGB LED with 3 linear sliders - common cathode](https://wokwi.com/projects/306455554559050306)
+- [RGB LED with 3 linear sliders - common anode](https://wokwi.com/projects/435392523281372161)
 - [Soft pulsating RGB LED](https://wokwi.com/projects/306461175146611264)
