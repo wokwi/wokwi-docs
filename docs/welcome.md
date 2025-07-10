@@ -4,6 +4,7 @@ title: Welcome to Wokwi!
 ---
 
 import { LEDBullet } from '@site/src/components/LEDBullet'
+import Admonition from '@theme/Admonition';
 
 Wokwi is an online Electronics simulator. You can use it to simulate Arduino, ESP32, STM32, and many other popular boards, parts and sensors.
 
@@ -15,6 +16,14 @@ Here are some quick examples of things you can make with Wokwi:
 - [Control 32 Servos with Arduino Mega](https://wokwi.com/projects/305336312628511297)
 - [Animate an LED Matrix with FastLED](https://wokwi.com/projects/320579687608746578)
 - [7 Segment Counter with MicroPython on Pi Pico](https://wokwi.com/projects/300210834979684872)
+
+<Admonition type="tip" icon="💡" title="We're hiring a Technical Documentation Lead">
+
+  Think you can help improve our documentation? Take charge of Wokwi's docs and make a real impact on how users learn and build.
+
+  [Apply here](https://docs.google.com/forms/d/e/1FAIpQLSebt166EkqsOtduU9hRurA65r6OjCftN9ECm4NFnmj0uQuOHw/viewform?usp=dialog)
+
+</Admonition>
 
 ## Why Wokwi?
 
