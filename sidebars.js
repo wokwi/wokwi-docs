@@ -99,6 +99,7 @@ module.exports = {
       'wokwi-ci/cli-usage',
       'wokwi-ci/github-actions',
       'wokwi-ci/automation-scenarios',
+      'wokwi-ci/mcp-support',
     ],
   },
 };

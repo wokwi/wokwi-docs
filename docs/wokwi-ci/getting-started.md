@@ -43,10 +43,15 @@ You can limit the simulation time for each test in your CI workflow using the `-
 wokwi-cli --timeout 10000
 ```
 
+## AI Agent Integration
+
+The Wokwi CLI includes experimental support for the [Model Context Protocol (MCP)](./mcp-support), enabling AI agents to interact with Wokwi's simulation capabilities. This allows AI assistants to run automated tests, simulate hardware behavior, and integrate Wokwi into AI-powered development workflows.
+
 ## Next Steps
 
 - [Install the Wokwi CLI](./cli-installation) to run your firmware on your local machine or CI system.
 - [Write automation scenarios](./automation-scenarios) to automate the simulation and test your firmware.
 - [Use Wokwi with GitHub Actions](./github-actions) to run your tests on every commit.
 - [Check out the example projects](./github-actions#examples) that are set up to run on Wokwi CI.
+- [Set up MCP support](./mcp-support) to integrate Wokwi with AI agents.
 - [Join the Wokwi Discord server](https://wokwi.com/discord) to get help and share your projects with the community.
