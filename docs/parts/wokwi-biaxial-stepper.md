@@ -40,7 +40,7 @@ A concentric biaxial stepper motor, containing two stepper motors packaged in a 
 
 ## Using the biaxial stepper motor
 
-The biaxial stepper motor is made of two individual stepper motor. Check out the [wokwi-stepper-motor](./wokwi-stepper-motor#using-the-stepper-motor) and [wokwi-a4988](./wokwi-a4988) documentation for more information about using stepper motors and their simulation behavior.
+The biaxial stepper motor is made of two individual stepper motors. Check out the [wokwi-stepper-motor](./wokwi-stepper-motor#using-the-stepper-motor) and [wokwi-a4988](./wokwi-a4988) documentation for more information about using stepper motors and their simulation behavior.
 
 ## Simulator examples
 
