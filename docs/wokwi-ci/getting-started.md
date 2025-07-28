@@ -17,7 +17,7 @@ For more advanced testing scenarios, you can write [automation scenarios](./auto
 
 ## CI Architecture
 
-Wokwi CI is powered a simulation server that runs in the cloud. The server receives your firmware binary, simulates it, and streams the serial output back to your CI system. The server is stateless and can run multiple simulations in parallel.
+Wokwi CI is powered by a simulation server that runs in the cloud. The server receives your firmware binary, simulates it, and streams the serial output back to your CI system. The server is stateless and can run multiple simulations in parallel.
 
 Wokwi does not store your firmware, and it is deleted from the cloud server after the simulation is finished. If you do not want to upload your firmware to the cloud, please contact us to discuss options for on-premise deployment of Wokwi CI.
 
