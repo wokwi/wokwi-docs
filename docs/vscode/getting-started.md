@@ -1,6 +1,8 @@
 ---
 title: Getting Started with Wokwi for VS Code
 sidebar_label: Getting Started
+description:  Simulate embedded and IoT projects directly inside Visual Studio Code using the Wokwi extension. Supports PlatformIO, ESP-IDF, Arduino, MicroPython, Rust, Zephyr and more.
+keywords: [Visual Studio Code, VS Code, embedded simulation, IoT simulation, PlatformIO, ESP-IDF, Arduino, MicroPython, Rust, Zephyr]
 ---
 
 # Wokwi for VS Code

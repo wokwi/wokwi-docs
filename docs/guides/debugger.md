@@ -1,10 +1,18 @@
-# Interactive Debugger
+---
+title: Interactive debugger
+sidebar_label: Interactive debugger
+description: Use Wokwi's built-in interactive debugger to step through code, set breakpoints, inspect variables, and explore call stacks.
+keywords: [Wokwi debugger, interactive debugger, Arduino debug, step through, breakpoints]
+---
+
+
+# Interactive debugger
 
 Wokwi has a built-in debugger that allows you to step through your code, inspect variables, and set breakpoints. The debugger is currently in beta, and is available for AVR microcontrollers: Arduino Uno, Arduino Nano, Arduino Mega, and the ATtiny85.
 
-If you wish to debug other microcontrollers, such as the ESP32 or the Raspberry Pi Pico, you can use [Wokwi for VSCode](../vscode/getting-started), which has an [integrated debugger support](../vscode/debugging).
+If you wish to debug other microcontrollers, such as the ESP32 or the Raspberry Pi Pico, you can use [Wokwi for VSCode](../vscode/getting-started), which has [integrated debugger support](../vscode/debugging).
 
-## Using the Debugger
+## Using the debugger
 
 To start debugging your code, click the menu button in the simulator toolbar, and select **Debug**:
 
@@ -22,11 +30,11 @@ When running in debug mode, you will see the debug toolbar above the code editor
 
 - **Step out** - Step out of the current function.
 
-## Debugging Panes
+## Debugging panes
 
 The debugging panes appear when you pause the program (either manually, or at a breakpoint). You'll find the panes below the diagram, next to the [Serial Monitor](./serial-monitor) pane.
 
-### Call Stack
+### Call stack
 
 The call stack shows the current function call stack. The top of the stack is the currently executing function. The bottom of the stack is the main function.
 

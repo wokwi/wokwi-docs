@@ -1,6 +1,8 @@
 ---
 title: Debugging your code
 sidebar_label: Debugging
+description: Configure and use the VS Code debugger to debug code running in the Wokwi simulator, with support for AVR, ESP32, ESP-IDF, and PlatformIO projects.
+keywords: [debugger, GDB, VS Code, ESP32, ESP-IDF, AVR, PlatformIO, launch.json,  Visual Studio Code]
 ---
 
 You can debug your code while it is running in the simulation using the VS Code debugger. To set up the debugger, follow these steps:

@@ -1,6 +1,8 @@
 ---
 title: Logic Analyzer Guide
 sidebar_label: Logic Analyzer
+description: Use the Wokwi Logic Analyzer to debug and visualize digital signals, record VCD files, and analyze protocols using PulseView or GTKWave.
+keywords: [Logic Analyzer, Wokwi, VCD file, PulseView, GTKWave, I2C debugging, PWM, PIO, Raspberry Pi Pico, downsampling]
 ---
 
 import LogicAnalyzerI2CImage from './logic-analyzer-i2c-decoder.png';

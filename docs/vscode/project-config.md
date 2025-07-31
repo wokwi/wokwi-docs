@@ -1,6 +1,8 @@
 ---
 title: Configuring Your Project (wokwi.toml)
 sidebar_label: Project Config
+description: Configure your project using wokwi.toml and diagram.json files, including firmware paths, serial forwarding, custom chips, and network settings.
+keywords: [wokwi.toml, diagram.json, Wokwi project setup, serial forwarding, custom chips, ESP32 WiFi forwarding]
 ---
 
 To simulate your project on Wokwi, you need to create two files in your project's root directory:

@@ -1,6 +1,8 @@
 ---
 title: CircuitPython on Wokwi
 sidebar_label: CircuitPython
+description: Simulate CircuitPython on Wokwi using the Raspberry Pi Pico. This guide covers project setup, using Adafruit libraries, and exploring the CircuitPython REPL.
+keywords: [CircuitPython, Wokwi, Raspberry Pi Pico, CircuitPython simulation, CircuitPython REPL, Adafruit CircuitPython, embedded Python, Wokwi tutorial]
 ---
 
 You can simulate CircuitPython on Wokwi using the [Raspberry Pi Pico board](../parts/wokwi-pi-pico). To start a new simulation project, open the [Raspberry Pi Pico CircuitPython project template](https://wokwi.com/projects/new/circuitpython-pi-pico).

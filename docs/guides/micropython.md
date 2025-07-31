@@ -1,6 +1,8 @@
 ---
 title: MicroPython on Wokwi
 sidebar_label: MicroPython
+description: Create and run MicroPython projects in Wokwi using the Raspberry Pi Pico simulator.
+keywords: [MicroPython, Wokwi, Raspberry Pi Pico, main.py, REPL, flash filesystem, MicroPython simulation]
 ---
 
 You can create and run MicroPython projects on Wokwi. Start from the [Raspberry Pi Pico MicroPython project template](https://wokwi.com/projects/new/micropython-pi-pico).

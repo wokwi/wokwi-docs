@@ -1,6 +1,8 @@
 ---
 title: ESP32 WiFi Networking
 sidebar_label: ESP32 WiFi
+description: Simulate WiFi and internet access for ESP32 projects using Wokwi, including public/private gateways, HTTP/MQTT, and local networking.
+keywords: [ ESP32, WiFi, IoT, MQTT, Private Gateway, MicroPython, Arduino]
 ---
 
 Wokwi simulates a WiFi network with full internet access. You can use the [ESP32](./esp32) together with the virtual WiFi to prototype IoT projects. Common use cases include:

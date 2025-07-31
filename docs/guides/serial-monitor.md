@@ -1,6 +1,8 @@
 ---
 title: The Serial Monitor
 sidebar_label: Serial Monitor
+description: Interact with the serial interface of the Wokwi simulation to view output or send data.
+keywords: [Serial, USART, TX, RX, Arduino]
 ---
 
 The Serial Monitor provides a way to send/receive information to/from your Arduino code.

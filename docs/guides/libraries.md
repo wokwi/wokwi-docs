@@ -1,6 +1,8 @@
 ---
 title: Arduino Libraries
 sidebar_label: Libraries
+description: Add built-in, third-party, and custom Arduino libraries to your Wokwi projects using the Library Manager and the libraries.txt file.
+keywords: [Arduino libraries, Library Manager, libraries.txt, custom libraries, upload library, Arduino Library Manager, Arduino includes]
 ---
 
 To include a library, go to the code editor and type `#` on an empty line. You'll see a autocomplete dropdown with `#include` suggestions for popular libraries.
