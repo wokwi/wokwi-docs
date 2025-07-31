@@ -1,6 +1,8 @@
 ---
 title: Wokwi CLI Installation
 sidebar_label: CLI Installation
+description: Install the CLI to run and automate Wokwi simulations from your terminal.
+keywords: [CLI, terminal, CI, Powershell, wokwi-cli]
 ---
 
 The CLI allows you to run Wokwi simulations from your terminal, and integrate them with your CI system. We recommend using the [Wokwi for VS Code](../vscode/getting-started) extension for local development, and the CLI for running your tests on CI.

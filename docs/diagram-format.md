@@ -1,6 +1,8 @@
 ---
 title: diagram.json File Format
 sidebar_label: diagram.json
+description: Reference guide for the `diagram.json` file for Wokwi simulation projects. This file defines components, their attributes, layout positions, and the connections between them.
+keywords: [diagram.json, connections, wiring, component layout, virtual hardware, ESP32, STM32, Arduino, wire placement, simulation diagram, simulation editor]
 ---
 
 Each simulation project contains a diagram.json file. This file defines the components

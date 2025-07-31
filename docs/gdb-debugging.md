@@ -1,6 +1,8 @@
 ---
 title: GDB Debugging (Advanced)
 sidebar_label: GDB Debugging
+description: Use GDB to debug Arduino and Raspberry Pi Pico code directly in the Wokwi simulator. This guide describes how to launch a web-based GDB session, step through code, set breakpoints and inspect variables.
+keywords: [GDB, debugging, Arduino, Raspberry Pi Pico, web gdb, gdb commands, breakpoint, gdb cheatsheet, sketch.ino, step-through debugging, avr debugging]
 ---
 
 GDB is a powerful source code debugger. You can use it to debug your Arduino and Raspberry Pi Pico code in Wokwi.

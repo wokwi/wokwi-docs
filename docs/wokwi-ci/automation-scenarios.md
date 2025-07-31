@@ -1,6 +1,8 @@
 ---
 title: Wokwi Automation Scenarios
 sidebar_label: Automation Scenarios
+description: Automate simulations in Wokwi using YAML-based automation scenarios. Simulate button presses, sensor input, and verify serial output to test firmware programmatically.
+keywords: [automation, simulation testing, YAML automation scenarios, embedded simulation, automated firmware testing, sensor state simulation]
 ---
 
 Automation scenarios allow you to automate the simulation, push buttons, change the state of the sensors, and check the serial output. You can use automation scenarios to test your firmware in a realistic environment, and verify that it behaves as expected.
