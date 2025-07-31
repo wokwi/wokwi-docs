@@ -1,6 +1,8 @@
 ---
 title: ESP32 Simulation
 sidebar_label: ESP32 Simulator
+description: Simulate espressif ESP32 boards in Wokwi
+keywords: [ESP32, ESP32 Simulation, ESP32, ESP32-C3, ESP32-S2, ESP32-S3, ESP32-C6, ESP32-H2, MicroPython, Arduino, Rust, IoT, VSCode, ESP-IDF]
 ---
 
 The ESP32 is a popular WiFi and Bluetooth-enabled microcontroller, widely used for IoT Projects. Wokwi simulates the ESP32, ESP32-C3, ESP32-S2, ESP32-S3, ESP32-C6, ESP32-H2, and ESP32-P4 (beta).

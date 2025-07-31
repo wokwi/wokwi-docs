@@ -1,6 +1,8 @@
 ---
 title: Running Wokwi Offline
 sidebar_label: Offline Mode
+description: Running the simulation offline or in restricted network environments.
+keywords: [ internet, network, offline]
 ---
 
 Wokwi for VS Code requires an internet connection to run. If you need to use Wokwi for VS Code in an environment without internet access, you can subscribe to the [Pro plan](https://wokwi.com/pricing).

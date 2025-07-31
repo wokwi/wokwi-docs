@@ -1,6 +1,7 @@
 ---
 title: Translating Wokwi
 sidebar_label: Translating
+description: Help to translate this documentation into the languages of the world.
 ---
 
 This page explains how you can contribute translations to Wokwi.

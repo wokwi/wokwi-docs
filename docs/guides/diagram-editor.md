@@ -1,9 +1,12 @@
 ---
 title: Interactive Diagram Editor
 sidebar_label: Diagram Editor
+description: Use the Wokwi Diagram Editor to visually build and edit circuit simulations. Add components, wire connections, rotate, duplicate, and manage parts with the help of intuitive keyboard shortcuts and grid snapping.
+keywords: [Wokwi diagram editor, diagram.json, visual circuit builder]
+
 ---
 
-The diagram editor provides an interactive way to edit your diagram: add components to the simulation and define the connections between them. It's a convenient alternative for editing the [diagram.json](../diagram-format) file directly.
+The diagram editor provides an interactive way to edit your circuit diagram: add components to the simulation and define the connections between them. It's a convenient alternative for editing the [diagram.json](../diagram-format) file directly.
 
 ## Editing parts
 

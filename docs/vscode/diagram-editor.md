@@ -1,6 +1,8 @@
 ---
 title: Diagram Editor in VS Code
 sidebar_label: Diagram Editor
+description: Use the visual diagram editor in Wokwi for VS Code to open and edit diagrams, and run the simulation.
+keywords: [VS Code, diagram editor, visual editor, diagram.json, simulation]
 ---
 
 # Diagram Editor in VS Code
