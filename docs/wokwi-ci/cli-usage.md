@@ -1,6 +1,8 @@
 ---
 title: Wokwi CLI Usage
 sidebar_label: CLI Usage
+description: Wokwi CLI command reference
+keywords: [ reference, Wokwi, CLI, API, CI Dashboard, serial monitor]
 ---
 
 Create an API token on the [Wokwi CI Dashboard](https://wokwi.com/dashboard/ci). Set the `WOKWI_CLI_TOKEN` environment variable to the token value.

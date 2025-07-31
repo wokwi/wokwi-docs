@@ -1,6 +1,9 @@
 ---
 title: Wokwi for CI and GitHub Actions
 sidebar_label: Introduction
+description: Use Wokwi CI to automate embedded firmware testing in continuous integration workflows like GitHub Actions and GitLab CI. Learn about WITL (Wokwi in the Loop), automation scenarios, simulation limits, and integrating with AI agents using MCP.
+
+keywords: [Wokwi CI, embedded testing, continuous integration, GitHub Actions, GitLab CI, firmware simulation, automation scenarios, Wokwi CLI, WITL, Model Context Protocol, MCP, AI-assisted development, simulation limits, embedded workflows]
 ---
 
 Wokwi provides a robust simulation solution for automated testing of your embedded firmware on CI systems like [GitHub Actions](./github-actions), GitLab CI, and others. You can use Wokwi to run your tests on every commit, and get instant feedback on your code changes.

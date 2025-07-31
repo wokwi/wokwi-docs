@@ -1,6 +1,8 @@
 ---
 title: Using Wokwi in GitHub Actions
 sidebar_label: Github Actions
+description: Integrate Wokwi CI with GitHub Actions to automatically test your embedded firmware on every commit. 
+keywords: [GitHub Actions, embedded testing, firmware automation, CI/CD, automation scenarios, CI workflows, embedded projects, continuous integration]
 ---
 
 You can use Wokwi CI with GitHub Actions to run your tests on every commit. You need to have a workflow that builds your project's firmware. Add the following step to your workflow:
@@ -16,7 +18,7 @@ You can use Wokwi CI with GitHub Actions to run your tests on every commit. You 
 
 For a complete list of options, check out the [action's README](https://github.com/wokwi/wokwi-ci-action?tab=readme-ov-file#usage).
 
-## CLI Tokens
+## CLI tokens
 
 You also need to set up the `WOKWI_CLI_TOKEN` secret in your repository settings. You can create an API token on the [Wokwi CI Dashboard](https://wokwi.com/dashboard/ci).
 
