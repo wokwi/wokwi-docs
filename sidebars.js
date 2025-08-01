@@ -101,5 +101,9 @@ module.exports = {
       'wokwi-ci/automation-scenarios',
       'wokwi-ci/mcp-support',
     ],
+    'Contributing': [
+      'contributing/docs',
+      'contributing/translating',
+    ]
   },
 };
