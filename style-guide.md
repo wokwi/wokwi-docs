@@ -1,26 +1,45 @@
 # Documentation style guide
 
-This is a work-in-progress style guide for documentation. There are many things not currently covered here, and it is not intended to be a complete manual for writing documentation, just a set of pointers to help us achieve a comfortable level of consistency.
+This is a work-in-progress style guide for documentation. There are many things
+not currently covered here, and it is not intended to be a complete manual for
+writing documentation, just a set of pointers to help us achieve a comfortable
+level of consistency.
 
 ## Docusaurus
 
-The documentation is written in Markdown and the site is built using Docusaurus. In practical terms, if you are familiar with markdown, there isn't really anything complicated you need to learn in order to contribute. Docusaurus does add some extra element though, and also may use a slightly different set of rules than you are used to. The [Docusaurus documentation](https://docusaurus.io/docs/markdown-features) contains a lot of useful information on how to use Markdown to create the output you want.
+The documentation is written in Markdown and the site is built using Docusaurus.
+In practical terms, if you are familiar with markdown, there isn't really
+anything complicated you need to learn in order to contribute. Docusaurus does
+add some extra elements though, and also may use a slightly different set of
+rules than you are used to. The [Docusaurus
+documentation](https://docusaurus.io/docs/markdown-features) contains a lot of
+useful information on how to use Markdown to create the output you want.
 
 ## Branding
 
-Consistency in branding is important for a number of reasons, including the protection of trademarks where they apply.
-For our own products, and those of others we mention frequently, the following guidance applies.
+Consistency in branding is important for a number of reasons, including the
+protection of trademarks where they apply. For our own products, and those of
+others we mention frequently, the following guidance applies.
 
-**Wokwi**: Use capitals except where using as part of a command. For example, we may write abot the Wokwi CLI, the command is `wokwi-cli`however.
-**Wokwi Classroom**: Used when referring to the particular academic license scheme.  Note the capitalization.
+**Wokwi**: Use capitals except where using as part of a command. For example, we
+may write about the Wokwi CLI, the command is `wokwi-cli`however. **Wokwi
+Classroom**: Used when referring to the particular academic license scheme.
+Note the capitalization.
 
 ### Boards and platforms
 
-Please try to respect other brands also. For example, the chip powering the Arduino uno is an "ATmega328p". You have probably seen it so often that it would look wrong if someone wrote "Atmega328P".
+Please try to respect other brands also. For example, the chip powering the
+Arduino uno is an "ATmega328p". You have probably seen it so often that it would
+look wrong if someone wrote "Atmega328P".
 
-For the Espressif ESP32 family of microcontrollers, be specific where possible: for example, when referring to something particular to a C6 variant of the chip, use the full designation, "ESP32-C6".
+For the Espressif ESP32 family of microcontrollers, be specific where possible:
+for example, when referring to something particular to a C6 variant of the chip,
+use the full designation, "ESP32-C6".
 
-For supported platforms and componments, a useful place to check the correct naming is on the [supported hardware page](https://docs.wokwi.com/getting-started/supported-hardware) of our own docs.
+For supported platforms and components, a useful place to check the correct
+naming is on the [supported hardware
+page](https://docs.wokwi.com/getting-started/supported-hardware) of our own
+docs.
 
 ## Contractions
 
@@ -34,8 +53,8 @@ Don't use: "ain't", "gonna" ...
 
 ## Headings
 
-Headings are important for navigation, for setting tone and for search indexing. Please bear
-in mind the following:
+Headings are important for navigation, for setting tone and for search indexing.
+Please bear in mind the following:
 
 ### Sentence case
 
@@ -49,8 +68,8 @@ outlined below:
 - brands
 - places
 
-**USE:** Build your dreams with Wokwi
-**DON'T USE:** Build Your Dreams With Wokwi
+**Use:** Build your dreams with Wokwi
+**Don't use:** Build Your Dreams With Wokwi
 
 ### Other considerations
 
@@ -68,21 +87,27 @@ connotations.
 
 ## Code examples in documentation
 
-**DO NOT** use prompt marks (e.g. `$` or `#`) in code samples. These cause problems for users who sometimes mistakenly type them in, or who want to copy and paste sections of code. They also encourage poor explanation of the code.
+**Don't** use prompt marks (e.g. `$` or `#`) in code samples. These cause
+problems for users who sometimes mistakenly type them in, or who want to copy
+and paste sections of code. They also encourage poor explanation of the code.
 
-**DO** separate commands and output where appropriate.
+**Do** separate commands and output where appropriate.
 
 ## Admonitions
 
-Admonitions (also referred to as "admonishments", "callouts" or "notifications") are a device used in documentation to draw attention to a
-particular statement or paragraph of text. Typically their use is to highlight:
+Admonitions (also referred to as "admonishments", "callouts" or "notifications")
+are a device used in documentation to draw attention to a particular statement
+or paragraph of text. Typically their use is to highlight:
 
 - A consequence of performing a particular action
 - An additional source of information which is useful but not required
 - A helpful tip that will save effort/time
 - A reminder of some pre-requisite or restriction
 
-Docusaurus has some built-in styles to make these themed admonitions stand out in a consistent way. Check the Docussaurus [documentation for admonitions](https://docusaurus.io/docs/markdown-features/admonitions) for more details.
+Docusaurus has some built-in styles to make these themed admonitions stand out
+in a consistent way. Check the [Docusaurus documentation about
+admonitions](https://docusaurus.io/docs/markdown-features/admonitions) for more
+details.
 
 ## Hyperlinks
 
