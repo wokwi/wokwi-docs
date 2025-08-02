@@ -13,7 +13,6 @@ module.exports = {
       'guides/circuitpython',
       'guides/esp32',
       'guides/esp32-wifi',
-      'guides/translating',
     ],
     'Diagram Reference': [
       'diagram-format',
