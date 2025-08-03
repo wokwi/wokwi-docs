@@ -1,6 +1,7 @@
 ---
 title: Translating Wokwi
 sidebar_label: Translating
+description: Contribute translations for Wokwi so even more people can enjoy using it!
 ---
 
 This page explains how you can contribute translations to Wokwi.
