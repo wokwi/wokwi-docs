@@ -24,6 +24,6 @@ Consistency in documentation is important for many reasons, but mostly for ensur
 
 ## Translations
 
-We want as many people as possible to be able to access Wokwi and its documentation in a language they are comfortable with. As part of this ambition, we've already implemented some localizations for the user interface and have begun work on translating the documentation too. If you want to help, check out the [translations page](./translations).
+We want as many people as possible to be able to access Wokwi and its documentation in a language they are comfortable with. As part of this ambition, we've already implemented some localizations for the user interface and have begun work on translating the documentation too. If you want to help, check out the [translations page](/contributing/translating).
 
 We’re excited to see what you’ll contribute. Thanks for helping make Wokwi better for everyone!
