@@ -3,7 +3,7 @@ const glob = require('glob');
 const path = require('path');
 
 const buildDir = path.join(__dirname, '../build');
-const files = glob.sync(path.join(buildDir, '**/index.html'));
+const files = glob.sync(path.join(buildDir, '**/*.html'));
 
 for (const file of files) {
   const urlPathname = path
