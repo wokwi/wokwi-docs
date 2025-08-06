@@ -91,6 +91,7 @@ module.exports = {
       'vscode/diagram-editor',
       'vscode/debugging',
       'vscode/offline-mode',
+      'vscode/migrating',
     ],
     'Wokwi CI': [
       'wokwi-ci/getting-started',
