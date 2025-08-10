@@ -95,6 +95,16 @@ You can use the [map() function](https://www.arduino.cc/reference/en/language/fu
 For instance, `map(analogRead(HORZ_PIN), 0, 1023, -100, 100)` will return -100 when the joystick is all the way to the right, 0 when the joystick
 in centered, and 100 when the joystick is all the way to the left.
 
+## Automation controls
+
+The joystick can be controlled using [Automation Scenarios](../wokwi-ci/automation-scenarios). It exposes the following controls:
+
+| Control | Type  | Description                                              |
+|---------|-------|----------------------------------------------------------|
+| x       | float | Set the x value of the joystick (-1 to 1, 0 is centered) |
+| y       | float | Set the y value of the joystick (-1 to 1, 0 is centered) |
+| pressed | int   | Set to 1 to press the button, 0 to release it.           |
+
 ## Simulator examples
 
 - [Etch-a-sketch](https://wokwi.com/projects/296234816685212169) - A simple drawing game using a MAX7219 LED Dot Matrix
