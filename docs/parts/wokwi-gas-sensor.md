@@ -18,16 +18,16 @@ MQ2 Gas Sensor module
 
 ## Attributes
 
-| Name      | Description                           | Default value |
-| --------- | ------------------------------------- | ------------- |
-| ppm       |       part per million       | "400"         |
-| threshold | Digital output threshold voltage      | "4.4"         |
+| Name      | Description                                      | Default value |
+| --------- | ------------------------------------------------ | ------------- |
+| ppm       | Initial gas concentration (in parts per million) | "400"         |
+| threshold | Digital output threshold voltage                 | "4.4"         |
 
 ## Operation
 
 The MQ2 Gas Sensor is a semiconductor sensor that can detect the presence of various combustible gases including LPG, Propane, Hydrogen, Methane, and Carbon Monoxide. The sensor has both analog and digital outputs:
 
-- The analog output (AO) provides a continuous voltage reading that corresponds to the gas concentration(ppm). Higher gas concentration results in higher voltage output.
+- The analog output (AO) provides a continuous voltage reading that corresponds to the gas concentration (ppm). Higher gas concentration results in higher voltage output.
 - The digital output (DO) acts as a threshold detector - it goes LOW when gas concentration exceeds the threshold set by the potentiometer.
 
 To use the MQ2 sensor:
