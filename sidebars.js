@@ -53,7 +53,7 @@ module.exports = {
       'parts/wokwi-membrane-keypad',
       'parts/wokwi-microsd-card',
       'parts/wokwi-mpu6050',
-      'parts/wokwi-mq2-gas-sensor',
+      'parts/wokwi-gas-sensor',
       'parts/wokwi-nlsf595',
       'parts/wokwi-nokia-5110-screen',
       'parts/wokwi-ntc-temperature-sensor',

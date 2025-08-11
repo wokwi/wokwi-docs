@@ -1,6 +1,6 @@
 ---
-title: wokwi-mq2-gas-sensor Reference
-sidebar_label: wokwi-mq2-gas-sensor
+title: wokwi-gas-sensor Reference
+sidebar_label: wokwi-gas-sensor
 ---
 
 MQ2 Gas Sensor module
