@@ -45,8 +45,17 @@ Depending on the complexity of your project, adding the source should be quite s
 
 ```
 
-In this case you would replace the contents of  `/src/main.cpp`  with the contents of the '.ino' file from the project you downloaded (it's often easier to delete the `main.cpp` file, copy in your `.ino` file and then rename it to `main.cpp`).
+In this case you would delete the `/src/main.cpp`  and replace it with the '.ino' file from the project you downloaded.
 
+:::tip
+
+PlatformIO encourages the use of standard C++ files (`.cpp`). To convert your `.ino` file, you can rename it and change the extension to '.cpp', but you will also need to add a line to include the standard Arduino headers at the beginning of the file:
+```
+#include <Arduino.h>
+```
+Any user functions should also be declared before they are called. There is a more detailed example of this in the [PlatformIO documentation FAQ](https://docs.platformio.org/en/latest/faq/ino-to-cpp.html).
+
+:::
 
 ## Verify/add libraries
 
