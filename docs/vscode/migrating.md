@@ -24,38 +24,82 @@ This step will create a boilerplate project in a working state, ready to add you
 
 ## Add the source
 
-Depending on the complexity of your project, adding the source should be quite straightforward. For a new PlatformIO Arduino project, the directory tree should look like this:
+Depending on the complexity of your project, adding the source should be quite straightforward. 
 
-```text
-├── .gitignore
-├── include
-│   └── README
-├── lib
-│   └── README
-├── .pio
-│   └── build
-│       ├── project.checksum
-│       └── uno
-│           └── idedata.json
-├── platformio.ini
-├── src
-│   └── main.cpp
-├── test
-│   └── README
+<Tabs>
+  <TabItem value="pio" label="PlatformIO" default>
 
-```
+    For a new PlatformIO Arduino project, the directory tree should look like this:
 
-In this case you would delete the `/src/main.cpp`  and replace it with the '.ino' file from the project you downloaded.
+    ```text
+    ├── .gitignore
+    ├── include
+    │   └── README
+    ├── lib
+    │   └── README
+    ├── .pio
+    │   └── build
+    │       ├── project.checksum
+    │       └── uno
+    │           └── idedata.json
+    ├── platformio.ini
+    ├── src
+    │   └── main.cpp
+    ├── test
+    │   └── README
 
-:::tip
+    ```
 
-PlatformIO encourages the use of standard C++ files (`.cpp`). To convert your `.ino` file, you can rename it and change the extension to '.cpp', but you will also need to add a line to include the standard Arduino headers at the beginning of the file:
-```
-#include <Arduino.h>
-```
-Any user functions should also be declared before they are called. There is a more detailed example of this in the [PlatformIO documentation FAQ](https://docs.platformio.org/en/latest/faq/ino-to-cpp.html).
+    In this case you would delete the `/src/main.cpp`  and replace it with the '.ino' file from the project you downloaded.
 
-:::
+    :::tip
+
+    PlatformIO encourages the use of standard C++ files (`.cpp`). To convert your `.ino` file, you can rename it and change the extension to '.cpp', but you will also need to add a line to include the standard Arduino headers at the beginning of the file:
+    ```
+    #include <Arduino.h>
+    ```
+    Any user functions should also be declared before they are called. There is a more detailed example of this in the [PlatformIO documentation FAQ](https://docs.platformio.org/en/latest/faq/ino-to-cpp.html).
+
+    :::
+  </TabItem>
+  <TabItem value="ESP-IDF" label="ESP-IDF">
+    For ESP-IDF the default project directory tree looks like this:
+
+    ```text
+    ├── build
+    │   ├── app-flash_args
+    │   ├── bootloader
+    │   ├── bootloader-flash_args
+    │   ├── bootloader-prefix
+    |   ...
+    │   ├── cmake_install.cmake
+    │   ├── compile_commands.json
+    │   ├── config
+    │   │   ├── kconfig_menus.json
+    │   │   ├── sdkconfig.cmake
+    │   │   ├── sdkconfig.h
+    │   │   └── sdkconfig.json
+    │   ├── config.env
+    │   ├── esp-idf
+    │   ...
+    ├── CMakeLists.txt
+    ├── main
+    │   ├── CMakeLists.txt
+    │   └── main.c
+    ├── README.md
+    └── sdkconfig
+    ```
+    :::note
+    This is not the entire tree, as it is very large!
+    :::
+
+    The `build` directory is where the built artifacts will be created, which you will need to refer to in a later step.
+
+    All of the source files should go in `main.c`. If you have multiple source files, you should also update the `CMakelists.txt` file in the same directory to include any other files which need to be built.
+    
+  </TabItem>
+</Tabs>  
+
 
 ## Verify/add libraries
 
@@ -101,6 +145,16 @@ The online simulator controls its own build environment. To work locally in VS C
 
 The structure and contents of the `wokwi.toml` file are covered in the [VS Code project configuration page](/vscode/project-config). In the previous step you already built the firmware files needed.
 
+:::tip
+
+You can also generate the `wokwi.toml` file using the Wokwi CLI if it is installed (see [install instructions here](/wokwi-ci/cli-installation)), by running the command:
+
+```shell
+wokwi-cli init
+```
+:::
+
+
 At this point you should also add the `diagram.json` file from your downloaded project. This must be in the same directory as the `wokwi.toml` file.
 
 ## Test the simulator
@@ -112,4 +166,3 @@ When you select the `diagram.json` file in the VS Code editor, it will automatic
 Use the start button in this window to start the simulation. The simulation should run exactly as it did in the online Wokwi simulator.
 
 Note: You will need a license to edit the diagram in this view ([see the Wokwi pricing page](https://wokwi.com/pricing?ref=docs_migrating)).
-
