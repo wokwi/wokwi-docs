@@ -77,6 +77,23 @@ The bottom LED ("DO LED") is connected to the digital output, and lights wheneve
 
 ![Wokwi Photoresistor (LDR) Sensor Module Schematics](wokwi-photoresistor-sensor.svg)
 
+## Automation controls
+
+The photoresistor sensor can be controlled using [Automation Scenarios](../wokwi-ci/automation-scenarios). The names of the controls match the names of the attributes defined above:
+
+| Control     | Type  | Description                         |
+|-------------|-------|-------------------------------------|
+| lux         | float | Set the lux value (lux)             |
+
+The following example sets the illumination to 100 lux:
+
+```yaml
+  - set-control:
+      part-id: photoresistor1
+      control: lux
+      value: 100
+```
+
 ## Simulator examples
 
 - [Photoresistor Digital Example](https://wokwi.com/projects/305193592908939842)
