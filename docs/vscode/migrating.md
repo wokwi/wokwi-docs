@@ -11,6 +11,12 @@ The web-based Wokwi simulator is a powerful and well-integrated way to try out y
 
 This checklist of steps should help you overcome the most common issues. It is assumed that you have already installed the VS Code extension for Wokwi (see the [Getting started guide](./getting-started)).
 
+:::tip
+
+Using **MicroPython**? The setup for MicroPython projects is quite different - please see the [Vs Code for MicroPython page](vscode-micropython.md).
+:::
+
+
 ## Download the project source
 
 To start, the first step is to save your online project. From the same menu, under the save button, you can then select to download a `.zip` archive of the project. This will contain useful files such as any source code and the `diagram.json` file used by Wokwi.
@@ -24,7 +30,7 @@ This step will create a boilerplate project in a working state, ready to add you
 
 ## Add the source
 
-Depending on the complexity of your project, adding the source should be quite straightforward. 
+Depending on the complexity of your project, adding the source should be quite straightforward.
 
 <Tabs>
   <TabItem value="pio" label="PlatformIO" default>
@@ -97,6 +103,9 @@ Depending on the complexity of your project, adding the source should be quite s
 
     All of the source files should go in `main.c`. If you have multiple source files, you should also update the `CMakelists.txt` file in the same directory to include any other files which need to be built.
     
+  </TabItem>
+  <TabItem value="Zephyr" label="Zephyr">
+
   </TabItem>
 </Tabs>  
 
