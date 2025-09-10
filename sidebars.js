@@ -93,6 +93,7 @@ module.exports = {
       'vscode/debugging',
       'vscode/offline-mode',
       'vscode/migrating',
+      'vscode/vscode-micropython',
     ],
     'Wokwi CI': [
       'wokwi-ci/getting-started',

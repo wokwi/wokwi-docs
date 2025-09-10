@@ -16,7 +16,6 @@ This checklist of steps should help you overcome the most common issues. It is a
 Using **MicroPython**? The setup for MicroPython projects is quite different - please see the [Vs Code for MicroPython page](vscode-micropython.md).
 :::
 
-
 ## Download the project source
 
 To start, the first step is to save your online project. From the same menu, under the save button, you can then select to download a `.zip` archive of the project. This will contain useful files such as any source code and the `diagram.json` file used by Wokwi.
