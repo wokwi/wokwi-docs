@@ -17,6 +17,7 @@
     "@docusaurus/preset-classic": "^3.6.1",
     "@mdx-js/react": "^3.0.0",
     "clsx": "^1.1.1",
+    "glob": "^11.0.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
