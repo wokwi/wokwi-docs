@@ -24,9 +24,9 @@ HC-SR04 Ultrasonic Distance Sensor
 
 ## Operation
 
-To start a new distance measurement set the TRIG pin to high for 10uS or more. Then wait until the ECHO pin goes high,
+To start a new distance measurement, set the TRIG pin to high for 10uS or more. Then wait until the ECHO pin goes high,
 and count the time it stays high (pulse length). The length of the ECHO high pulse is proportional to the distance. Use
-the following table to convert the ECHO pulse length in microseconds into centimeters / inches:
+the following table to convert the ECHO pulse length in microseconds into centimeters/inches:
 
 | Unit        | Distance          |
 | ----------- | ----------------- |
