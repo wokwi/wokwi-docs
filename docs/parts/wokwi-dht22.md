@@ -20,8 +20,8 @@ Digital Humidity and Temperature sensor.
 
 | Name        | Description                                  | Default value |
 | ----------- | -------------------------------------------- | ------------- |
-| temperature | Initial temperature value (celsius)          | "24"          |
-| humidity    | Initial relative humidity value (percentage) | "40"          |
+| temperature | Initial temperature value (celsius)          | "25"          |
+| humidity    | Initial relative humidity value (percentage) | "65"          |
 
 ## Controlling the temperature
 
