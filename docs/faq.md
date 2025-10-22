@@ -22,6 +22,10 @@ There are many factors that can affect the simulation speed. Here are some tips 
 - Chrome is usually faster than Firefox.
 - For ESP32 / Pi Pico code, adding a `delay(10);` call at the beginning of `loop()` can help, as the simulator will have less work to do while the microcontroller is sleeping.
 
+## How can I use Wokwi offline?
+
+Wokwi offers an offline mode through the Wokwi for VS Code extension. To set it up and learn more, visit the official guide here: [Wokwi Offline Mode Documentation](https://docs.wokwi.com/vscode/offline-mode).
+
 ## How does Wokwi work?
 
 Wokwi compiles your code into a binary firmware, and then executes the binary firmware one instruction at a time, as a real microcontroller would. If you want to learn about the internals, check out the following resources:
