@@ -103,3 +103,4 @@ The simulator supports many popular Arduino libraries. For a complete list, see 
 ## Simulator examples
 
 - [Arduino Blink](https://wokwi.com/projects/344891652101374548)
+- [DHT22 Temperature & Humidity Display on I2C LCD](https://wokwi.com/projects/446328083962449921)
