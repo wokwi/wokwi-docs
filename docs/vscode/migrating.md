@@ -94,7 +94,7 @@ Depending on the complexity of your project, adding the source should be quite s
 
     The `build` directory is where the built artifacts will be created, which you will need to refer to in a later step.
 
-    All of the source files should go in `main.c`. If you have multiple source files, you should also update the `CMakelists.txt` file in the same directory to include any other files which need to be built.
+    All of the source files should go in `main`. If you have multiple source files, you should also update the `CMakelists.txt` file in the same directory to include any other files which need to be built.
     
   </TabItem>
   <TabItem value="Zephyr" label="Zephyr">
