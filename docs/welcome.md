@@ -1,58 +1,64 @@
----
-slug: /
-title: Welcome to Wokwi!
----
+// Çocuk-Alarm: Basit prototip
+#include <Wire.h>
+#include "RTClib.h"       // Adafruit RTClib veya uygun kütüphane
+#include <Adafruit_SSD1306.h> // Opsiyonel - ekran için
 
-import { LEDBullet } from '@site/src/components/LEDBullet'
-import Admonition from '@theme/Admonition';
+RTC_DS3231 rtc;
 
-Wokwi is an online Electronics simulator. You can use it to simulate Arduino, ESP32, STM32, and many other popular boards, parts and sensors.
+const int piezoPin = 9;   // PWM çıkışı / tone()
+const int potPin = A0;    // Frekans ayarı (opsiyonel)
+const int setBtn = 2;     // alarm set butonu (basit)
+const int upBtn = 3;
+const int downBtn = 4;
 
-Here are some quick examples of things you can make with Wokwi:
+int alarmHour = 7; // örnek alarm: 07:00
+int alarmMinute = 0;
+bool alarmArmed = true;
 
-- [Arduino Uno "Hello World"](https://wokwi.com/projects/322062421191557714)
-- [Blink an LED on ESP32](https://wokwi.com/projects/305566932847821378)
-- [Monitor the weather on ATtiny85](https://wokwi.com/projects/292900020514980360)
-- [Control 32 Servos with Arduino Mega](https://wokwi.com/projects/305336312628511297)
-- [Animate an LED Matrix with FastLED](https://wokwi.com/projects/320579687608746578)
-- [7 Segment Counter with MicroPython on Pi Pico](https://wokwi.com/projects/300210834979684872)
+void setup() {
+  Serial.begin(115200);
+  Wire.begin();
+  rtc.begin();
+  pinMode(piezoPin, OUTPUT);
+  pinMode(setBtn, INPUT_PULLUP);
+  pinMode(upBtn, INPUT_PULLUP);
+  pinMode(downBtn, INPUT_PULLUP);
 
-## Why Wokwi?
+  // Eğer RTC zamanı ayarlı değilse zaman ayarla (sadece ilk kurulumda)
+  // rtc.adjust(DateTime(F(__DATE__), F(__TIME__)));
+}
 
-<LEDBullet title="Start right now">
-  No waiting for components, or downloading large software. Your browser has everything you need to start coding your next IoT project in seconds.
-</LEDBullet>
+void loop() {
+  DateTime now = rtc.now();
+  // Basit arayüz: set butonuna basınca alarm toggle
+  if (digitalRead(setBtn) == LOW) {
+    delay(150);
+    alarmArmed = !alarmArmed;
+    while(digitalRead(setBtn)==LOW) delay(10);
+  }
+  // Saat ayarı (örnek)
+  if (digitalRead(upBtn) == LOW) { alarmHour = (alarmHour+1)%24; delay(200); }
+  if (digitalRead(downBtn) == LOW) { alarmHour = (alarmHour+23)%24; delay(200); }
 
-<LEDBullet title="Mistakes are okay" color="green">
-  You can't destroy the virtual hardware. Trust us, we tried. So don't worry about frying your precious components. And unlike real  hardware, you can always undo.
-</LEDBullet>
+  // Saat karşılaştırma
+  if (alarmArmed && now.hour() == alarmHour && now.minute() == alarmMinute && now.second() == 0) {
+    playChildTone();
+    delay(1000); // tekrarları önlemek için kısa bekle
+  }
 
-<LEDBullet title="Easy to get help and feedback" color="yellow">
-  Sharing a link to your Wokwi project is all you need.
-</LEDBullet>
+  delay(200);
+}
 
-<LEDBullet title="Gain confidence in your code" color="blue">
-  Separate hardware and software issues. 
-</LEDBullet>
-
-<LEDBullet title="Unlimited hardware" color="orange">
-  No need to scavenge parts from old projects. Use as many parts as you need, without worrying about project price and stock.
-</LEDBullet>
-
-<LEDBullet title="Maker-friendly community" color="purple">
-  A place for you to share your projects, ask for help, and get inspiration.<br/>
-  <a href="https://wokwi.com/discord">Wokwi Discord Community</a>
-</LEDBullet>
-
-## Unique Features
-
-- [WiFi simulation](guides/esp32-wifi) - Connect your simulated project to the internet. You can use MQTT, HTTP, NTP, and many other network protocols.
-- [Virtual Logic Analyzer](guides/logic-analyzer) - Capture digital signals in your simulation (e.g. UART, I2C, SPI) and analyze them on your computer.
-- [Advanced debugging with GDB](gdb-debugging) - Powerful Arduino and Raspberry Pi Pico debugger for advanced users.
-- [SD card simulation](parts/wokwi-microsd-card) - Store and retrieve files and directories from your code. [Paying users](https://wokwi.com/pricing?ref=docs_sdcard) can also upload binary files (such as images)
-- [Chips API](chips-api/getting-started) - Create your own custom chips and parts, and share them with the community.
-- [Visual Studio Code integration](vscode/getting-started) - Simulate your embedded projects directly from VS Code.
-
-## How much does it cost?
-
-Wokwi is free for personal use. For commercial users and professionals, please check out our paid plans in the [pricing page](https://wokwi.com/pricing?ref=docs_welcome).
+void playChildTone() {
+  // Pot ile frekans ayarı: pot 0..1023 => 16000..20000 Hz
+  int pot = analogRead(potPin);
+  int freq = map(pot, 0, 1023, 16000, 20000); // 16-20 kHz arası
+  int repeats = 3;
+  int duration_ms = 5000; // 5 saniye
+  for (int r = 0; r < repeats; r++) {
+    tone(piezoPin, freq);
+    delay(duration_ms);
+    noTone(piezoPin);
+    delay(1000); // 1 saniye aralık
+  }
+}
