@@ -102,14 +102,18 @@ You can confirm what files have been uploaded with the `ls` command:
  mpremote connect port:rfc2217://localhost:4000 ls
 ```
 
-Once the required files are uploaded, activate the Wokwi REPL again and enter the following:
-
+Once the required files are uploaded, you can either perform a hard reset of the device by accessing the REPL and entering:
 ```python
 import machine
 machine.reset()
 ```
 
-This will perform a hard reboot of the simulation and automatically run the `main.py` file.
+Or issue <kbd>Ctrl</kbd> + <kbd>D</kbd> in the REPL, which will perform a soft reset.
+
+In both instances, `main.py` will begin running automatically after the device finishes booting.
+
+If using the `soft-reboot` command provided by `mpremote`, `main.py` will not begin running automatically - you will have to connect
+to the device and specify for it to run the file.
 
 ![Automatically running the main.py code on reset](./images/vs-micropython-03.png)
 
