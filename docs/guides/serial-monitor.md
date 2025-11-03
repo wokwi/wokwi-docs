@@ -92,9 +92,10 @@ The default configuration is as follows:
 
 ```json
 "serialMonitor": {
+  "collapse": false,
+  "convertEol": false,
   "display": "auto",
-  "newline": "lf",
-  "convertEol": false
+  "newline": "lf"
 }
 ```
 
@@ -113,6 +114,16 @@ The `display` property configures when/how to display the serial monitor. The po
 | terminal | Display a terminal (using [XTerm.js](https://xtermjs.org/))       |
 
 Note: the "terminal" mode supports text and background colors. You can check out [the Arduino ANSI colors example](https://wokwi.com/projects/308893120796295745) to see it in action.
+
+### Collapse
+
+You can set the Serial Monitor to be collapsed by default when it opens, by adding the `"collapse": true` property to the `"serialMonitor"` section:
+
+```json
+"serialMonitor": {
+  "collapse": true
+}
+```
 
 ### Newline
 
