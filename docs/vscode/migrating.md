@@ -42,17 +42,11 @@ Depending on the complexity of your project, adding the source should be quite s
     │   └── README
     ├── lib
     │   └── README
-    ├── .pio
-    │   └── build
-    │       ├── project.checksum
-    │       └── uno
-    │           └── idedata.json
     ├── platformio.ini
     ├── src
     │   └── main.cpp
-    ├── test
-    │   └── README
-
+    └── test
+        └── README
     ```
 
     In this case you would delete the `/src/main.cpp`  and replace it with the '.ino' file from the project you downloaded.
