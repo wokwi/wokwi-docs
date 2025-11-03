@@ -98,7 +98,38 @@ Depending on the complexity of your project, adding the source should be quite s
     
   </TabItem>
   <TabItem value="Zephyr" label="Zephyr">
+    For Zephyr, the default workspace tree looks like this:
+    ```text
+    ├── bootloader
+    │   └── mcuboot
+    ├── modules
+    │   ├── bsim_hw_models
+    │   ├── crypto
+    │   ├── debug
+    │   ├── fs
+    │   ├── hal
+    │   ├── lib
+    │   └── tee
+    ├── tools
+    │   ├── edtt
+    │   └── net-tools
+    ├── .west
+    │   └── config
+    └── zephyr
+        ├── arch
+        ├── boards
+        ...
+        ├── zephyr-env.cmd
+        └── zephyr-env.sh
+    ```
 
+    :::note
+    This is not the entire tree, as it is very large!
+    :::
+
+    You are encouraged to follow the [Zephyr getting started guide](https://docs.zephyrproject.org/latest/develop/getting_started/index.html), and to prepare your project following the
+    [application development documentation for Zephyr](https://docs.zephyrproject.org/latest/develop/application/index.html) (in particular, see the different 
+    [application types](https://docs.zephyrproject.org/latest/develop/application/index.html#application-types)).
   </TabItem>
 </Tabs>  
 
