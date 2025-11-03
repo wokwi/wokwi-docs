@@ -13,7 +13,7 @@ This checklist of steps should help you overcome the most common issues. It is a
 
 :::tip
 
-Using **MicroPython**? The setup for MicroPython projects is quite different - please see the [Vs Code for MicroPython page](vscode-micropython.md).
+Using **MicroPython**? The setup for MicroPython projects is quite different - please see the [VS Code for MicroPython page](vscode-micropython.md).
 :::
 
 ## Download the project source
