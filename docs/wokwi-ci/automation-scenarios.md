@@ -215,5 +215,8 @@ Several Wokwi parts support automation controls that can be controlled using aut
 - **[Push Button](../parts/wokwi-pushbutton#automation-controls)** - Control button presses and releases
 - **[Potentiometer](../parts/wokwi-potentiometer#automation-controls)** - Adjust the potentiometer position
 - **[MPU6050 Sensor](../parts/wokwi-mpu6050#automation-controls)** - Set acceleration, rotation, and temperature values
+- **[Analog Joystick](../parts/wokwi-analog-joystick#automation-controls)** - Set direction and pressed state
+- **[HX711 Load Cell Amplifier](../parts/wokwi-hx711#automation-controls)** - Set load value of scale
+- **[Photoresistor Sensor](../parts/wokwi-photoresistor-sensor#automation-controls)** - Set lux
 
 Each part's documentation page contains detailed information about the specific automation controls available, including control names, types, and example usage.
