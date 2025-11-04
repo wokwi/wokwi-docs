@@ -1,203 +1,722 @@
-
-<svg xmlns="http://www.w3.org/2000/svg" width="160mm" height="110mm" viewBox="0 0 160 110">
-  <style>
-    path {
-      fill:#00f;
-    }
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="160mm"
+   height="110mm"
+   viewBox="0 0 160 110"
+   version="1.1"
+   id="svg3721"
+   sodipodi:docname="wokwi-lcd1602-fonta02-1.svg"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs3725" />
+  <sodipodi:namedview
+     id="namedview3723"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#505050"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="1.0222538"
+     inkscape:cx="119.34414"
+     inkscape:cy="265.10051"
+     inkscape:window-width="1920"
+     inkscape:window-height="1020"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg3721" />
+  <style
+     id="style3337">
+path { 
+}
     text {
       font-size:5px;
       text-anchor:end;
     }
   </style>
-  <text x="7" y="5">32</text>
-  <text x="7" y="13">33</text>
-  <path d="M11.2 8.7h.55v.65h-.55Zm0 .7h.55v.65h-.55Zm0 .7h.55v.65h-.55Zm0 .7h.55v.65h-.55Zm0 2.1h.55v.65h-.55Z"/>
-  <text x="7" y="21">34</text>
-  <path d="M10.6 16.7h.55v.65h-.55Zm1.2 0h.55v.65h-.55Zm-1.2.7h.55v.65h-.55Zm1.2 0h.55v.65h-.55Zm-1.2.7h.55v.65h-.55Zm1.2 0h.55v.65h-.55Z"/>
-  <text x="7" y="29">35</text>
-  <path d="M10.6 24.7h.55v.65h-.55Zm1.2 0h.55v.65h-.55Zm-1.2.7h.55v.65h-.55Zm1.2 0h.55v.65h-.55Zm-1.8.7h.55v.65H10Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm-1.8.7h.55v.65h-.55Zm1.2 0h.55v.65h-.55Zm-1.8.7h.55v.65H10Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm-1.8.7h.55v.65h-.55Zm1.2 0h.55v.65h-.55Zm-1.2.7h.55v.65h-.55Zm1.2 0h.55v.65h-.55Z"/>
-  <text x="7" y="37">36</text>
-  <path d="M11.2 32.7h.55v.65h-.55Zm-.6.7h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm-2.4.7h.55v.65H10Zm1.2 0h.55v.65h-.55Zm-.6.7h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm-.6.7h.55v.65h-.55Zm1.2 0h.55v.65h-.55Zm-2.4.7h.55v.65H10Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm-.6.7h.55v.65h-.55Z"/>
-  <text x="7" y="45">37</text>
-  <path d="M10 40.7h.55v.65H10Zm.6 0h.55v.65h-.55Zm-.6.7h.55v.65H10Zm.6 0h.55v.65h-.55Zm1.8 0h.55v.65h-.55Zm-.6.7h.55v.65h-.55Zm-.6.7h.55v.65h-.55Zm-.6.7h.55v.65h-.55Zm-.6.7h.55v.65H10Zm1.8 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm-.6.7h.55v.65h-.55Zm.6 0h.55v.65h-.55Z"/>
-  <text x="7" y="53">38</text>
-  <path d="M10.6 48.7h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm-1.2.7h.55v.65H10Zm1.8 0h.55v.65h-.55Zm-1.8.7h.55v.65H10Zm1.2 0h.55v.65h-.55Zm-.6.7h.55v.65h-.55Zm-.6.7h.55v.65H10Zm1.2 0h.55v.65h-.55Zm1.2 0h.55v.65h-.55Zm-2.4.7h.55v.65H10Zm1.8 0h.55v.65h-.55Zm-1.2.7h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm1.2 0h.55v.65h-.55Z"/>
-  <text x="7" y="61">39</text>
-  <path d="M10.6 56.7h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm0 .7h.55v.65h-.55Zm-.6.7h.55v.65h-.55Z"/>
-  <text x="7" y="69">40</text>
-  <path d="M11.8 64.7h.55v.65h-.55Zm-.6.7h.55v.65h-.55Zm-.6.7h.55v.65h-.55Zm0 .7h.55v.65h-.55Zm0 .7h.55v.65h-.55Zm.6.7h.55v.65h-.55Zm.6.7h.55v.65h-.55Z"/>
-  <text x="7" y="77">41</text>
-  <path d="M10.6 72.7h.55v.65h-.55Zm.6.7h.55v.65h-.55Zm.6.7h.55v.65h-.55Zm0 .7h.55v.65h-.55Zm0 .7h.55v.65h-.55Zm-.6.7h.55v.65h-.55Zm-.6.7h.55v.65h-.55Z"/>
-  <text x="7" y="85">42</text>
-  <path d="M11.2 81.4h.55v.65h-.55Zm-1.2.7h.55v.65H10Zm1.2 0h.55v.65h-.55Zm1.2 0h.55v.65h-.55Zm-1.8.7h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm-1.8.7h.55v.65H10Zm1.2 0h.55v.65h-.55Zm1.2 0h.55v.65h-.55Zm-1.2.7h.55v.65h-.55Z"/>
-  <text x="7" y="93">43</text>
-  <path d="M11.2 89.4h.55v.65h-.55Zm0 .7h.55v.65h-.55Zm-1.2.7h.55v.65H10Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm-1.2.7h.55v.65h-.55Zm0 .7h.55v.65h-.55Z"/>
-  <text x="7" y="101">44</text>
-  <path d="M10.6 99.5h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm0 .7h.55v.65h-.55Zm-.6.7h.55v.65h-.55Z"/>
-  <text x="7" y="109">45</text>
-  <path d="M10 106.8h.55v.65H10Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Z"/>
-  <text x="31" y="5">46</text>
-  <path d="M34.6 4.2h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm-.6.7h.55v.65h-.55Zm.6 0h.55v.65h-.55Z"/>
-  <text x="31" y="13">47</text>
-  <path d="M36.4 9.4h.55v.65h-.55Zm-.6.7h.55v.65h-.55Zm-.6.7h.55v.65h-.55Zm-.6.7h.55v.65h-.55Zm-.6.7h.55v.65H34Z"/>
-  <text x="31" y="21">48</text>
-  <path d="M34.6 16.7h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm-1.8.7h.55v.65H34Zm2.4 0h.55v.65h-.55Zm-2.4.7h.55v.65H34Zm1.8 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm-2.4.7h.55v.65H34Zm1.2 0h.55v.65h-.55Zm1.2 0h.55v.65h-.55Zm-2.4.7h.55v.65H34Zm.6 0h.55v.65h-.55Zm1.8 0h.55v.65h-.55Zm-2.4.7h.55v.65H34Zm2.4 0h.55v.65h-.55Zm-1.8.7h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Z"/>
-  <text x="31" y="29">49</text>
-  <path d="M35.2 24.7h.55v.65h-.55Zm-.6.7h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm0 .7h.55v.65h-.55Zm0 .7h.55v.65h-.55Zm0 .7h.55v.65h-.55Zm0 .7h.55v.65h-.55Zm-.6.7h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Z"/>
-  <text x="31" y="37">50</text>
-  <path d="M34.6 32.7h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm-1.8.7h.55v.65H34Zm2.4 0h.55v.65h-.55Zm0 .7h.55v.65h-.55Zm-.6.7h.55v.65h-.55Zm-.6.7h.55v.65h-.55Zm-.6.7h.55v.65h-.55Zm-.6.7h.55v.65H34Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Z"/>
-  <text x="31" y="45">51</text>
-  <path d="M34 40.7h.55v.65H34Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm-.6.7h.55v.65h-.55Zm-.6.7h.55v.65h-.55Zm.6.7h.55v.65h-.55Zm.6.7h.55v.65h-.55Zm-2.4.7h.55v.65H34Zm2.4 0h.55v.65h-.55Zm-1.8.7h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Z"/>
-  <text x="31" y="53">52</text>
-  <path d="M35.8 48.7h.55v.65h-.55Zm-.6.7h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm-1.2.7h.55v.65h-.55Zm1.2 0h.55v.65h-.55Zm-1.8.7h.55v.65H34Zm1.8 0h.55v.65h-.55Zm-1.8.7h.55v.65H34Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm-.6.7h.55v.65h-.55Zm0 .7h.55v.65h-.55Z"/>
-  <text x="31" y="61">53</text>
-  <path d="M34 56.7h.55v.65H34Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm-2.4.7h.55v.65H34Zm0 .7h.55v.65H34Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6.7h.55v.65h-.55Zm0 .7h.55v.65h-.55Zm-2.4.7h.55v.65H34Zm2.4 0h.55v.65h-.55Zm-1.8.7h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Z"/>
-  <text x="31" y="69">54</text>
-  <path d="M35.2 64.7h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm-1.2.7h.55v.65h-.55Zm-.6.7h.55v.65H34Zm0 .7h.55v.65H34Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm-1.8.7h.55v.65H34Zm2.4 0h.55v.65h-.55Zm-2.4.7h.55v.65H34Zm2.4 0h.55v.65h-.55Zm-1.8.7h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Z"/>
-  <text x="31" y="77">55</text>
-  <path d="M34 72.7h.55v.65H34Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm-2.4.7h.55v.65H34Zm2.4 0h.55v.65h-.55Zm0 .7h.55v.65h-.55Zm-.6.7h.55v.65h-.55Zm-.6.7h.55v.65h-.55Zm0 .7h.55v.65h-.55Zm0 .7h.55v.65h-.55Z"/>
-  <text x="31" y="85">56</text>
-  <path d="M34.6 80.7h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm-1.8.7h.55v.65H34Zm2.4 0h.55v.65h-.55Zm-2.4.7h.55v.65H34Zm2.4 0h.55v.65h-.55Zm-1.8.7h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm-1.8.7h.55v.65H34Zm2.4 0h.55v.65h-.55Zm-2.4.7h.55v.65H34Zm2.4 0h.55v.65h-.55Zm-1.8.7h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Z"/>
-  <text x="31" y="93">57</text>
-  <path d="M34.6 88.7h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm-1.8.7h.55v.65H34Zm2.4 0h.55v.65h-.55Zm-2.4.7h.55v.65H34Zm2.4 0h.55v.65h-.55Zm-1.8.7h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm0 .7h.55v.65h-.55Zm-.6.7h.55v.65h-.55Zm-1.2.7h.55v.65h-.55Zm.6 0h.55v.65h-.55Z"/>
-  <text x="31" y="101">58</text>
-  <path d="M34.6 97.4h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm-.6.7h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm-.6 1.4h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm-.6.7h.55v.65h-.55Zm.6 0h.55v.65h-.55Z"/>
-  <text x="31" y="109">59</text>
-  <path d="M34.6 105.4h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm-.6.7h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm-.6 1.4h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm0 .7h.55v.65h-.55Zm-.6.7h.55v.65h-.55Z"/>
-  <text x="55" y="5">60</text>
-  <path d="M59.8.7h.55v.65h-.55Zm-.6.7h.55v.65h-.55Zm-.6.7h.55v.65h-.55Zm-.6.7h.55v.65H58Zm.6.7h.55v.65h-.55Zm.6.7h.55v.65h-.55Zm.6.7h.55v.65h-.55Z"/>
-  <text x="55" y="13">61</text>
-  <path d="M58 10.1h.55v.65H58Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55ZM58 11.5h.55v.65H58Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Z"/>
-  <text x="55" y="21">62</text>
-  <path d="M58.6 16.7h.55v.65h-.55Zm.6.7h.55v.65h-.55Zm.6.7h.55v.65h-.55Zm.6.7h.55v.65h-.55Zm-.6.7h.55v.65h-.55Zm-.6.7h.55v.65h-.55Zm-.6.7h.55v.65h-.55Z"/>
-  <text x="55" y="29">63</text>
-  <path d="M58.6 24.7h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm-1.8.7h.55v.65H58Zm2.4 0h.55v.65h-.55Zm0 .7h.55v.65h-.55Zm-.6.7h.55v.65h-.55Zm-.6.7h.55v.65h-.55Zm0 1.4h.55v.65h-.55Z"/>
-  <text x="55" y="37">64</text>
-  <path d="M58.6 32.7h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm-1.8.7h.55v.65H58Zm2.4 0h.55v.65h-.55Zm0 .7h.55v.65h-.55Zm-1.8.7h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm1.2 0h.55v.65h-.55Zm-2.4.7h.55v.65H58Zm1.2 0h.55v.65h-.55Zm1.2 0h.55v.65h-.55Zm-2.4.7h.55v.65H58Zm1.2 0h.55v.65h-.55Zm1.2 0h.55v.65h-.55Zm-1.8.7h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Z"/>
-  <text x="55" y="45">65</text>
-  <path d="M59.2 40.7h.55v.65h-.55Zm-.6.7h.55v.65h-.55Zm1.2 0h.55v.65h-.55Zm-1.8.7h.55v.65H58Zm2.4 0h.55v.65h-.55Zm-2.4.7h.55v.65H58Zm2.4 0h.55v.65h-.55Zm-2.4.7h.55v.65H58Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm-2.4.7h.55v.65H58Zm2.4 0h.55v.65h-.55Zm-2.4.7h.55v.65H58Zm2.4 0h.55v.65h-.55Z"/>
-  <text x="55" y="53">66</text>
-  <path d="M58 48.7h.55v.65H58Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm-1.8.7h.55v.65H58Zm2.4 0h.55v.65h-.55Zm-2.4.7h.55v.65H58Zm2.4 0h.55v.65h-.55Zm-2.4.7h.55v.65H58Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm-1.8.7h.55v.65H58Zm2.4 0h.55v.65h-.55Zm-2.4.7h.55v.65H58Zm2.4 0h.55v.65h-.55Zm-2.4.7h.55v.65H58Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Z"/>
-  <text x="55" y="61">67</text>
-  <path d="M58.6 56.7h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm-1.8.7h.55v.65H58Zm2.4 0h.55v.65h-.55Zm-2.4.7h.55v.65H58Zm0 .7h.55v.65H58Zm0 .7h.55v.65H58Zm0 .7h.55v.65H58Zm2.4 0h.55v.65h-.55Zm-1.8.7h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Z"/>
-  <text x="55" y="69">68</text>
-  <path d="M58 64.7h.55v.65H58Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm-1.2.7h.55v.65H58Zm1.8 0h.55v.65h-.55Zm-1.8.7h.55v.65H58Zm2.4 0h.55v.65h-.55Zm-2.4.7h.55v.65H58Zm2.4 0h.55v.65h-.55Zm-2.4.7h.55v.65H58Zm2.4 0h.55v.65h-.55Zm-2.4.7h.55v.65H58Zm1.8 0h.55v.65h-.55Zm-1.8.7h.55v.65H58Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Z"/>
-  <text x="55" y="77">69</text>
-  <path d="M58 72.7h.55v.65H58Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm-2.4.7h.55v.65H58Zm0 .7h.55v.65H58Zm0 .7h.55v.65H58Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm-1.8.7h.55v.65H58Zm0 .7h.55v.65H58Zm0 .7h.55v.65H58Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Z"/>
-  <text x="55" y="85">70</text>
-  <path d="M58 80.7h.55v.65H58Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm-2.4.7h.55v.65H58Zm0 .7h.55v.65H58Zm0 .7h.55v.65H58Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm-1.8.7h.55v.65H58Zm0 .7h.55v.65H58Zm0 .7h.55v.65H58Z"/>
-  <text x="55" y="93">71</text>
-  <path d="M58.6 88.7h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm-1.8.7h.55v.65H58Zm2.4 0h.55v.65h-.55Zm-2.4.7h.55v.65H58Zm0 .7h.55v.65H58Zm1.2 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm-2.4.7h.55v.65H58Zm2.4 0h.55v.65h-.55Zm-2.4.7h.55v.65H58Zm2.4 0h.55v.65h-.55Zm-1.8.7h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Z"/>
-  <text x="55" y="101">72</text>
-  <path d="M58 96.7h.55v.65H58Zm2.4 0h.55v.65h-.55Zm-2.4.7h.55v.65H58Zm2.4 0h.55v.65h-.55Zm-2.4.7h.55v.65H58Zm2.4 0h.55v.65h-.55Zm-2.4.7h.55v.65H58Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm-2.4.7h.55v.65H58Zm2.4 0h.55v.65h-.55Zm-2.4.7h.55v.65H58Zm2.4 0h.55v.65h-.55Zm-2.4.7h.55v.65H58Zm2.4 0h.55v.65h-.55Z"/>
-  <text x="55" y="109">73</text>
-  <path d="M58.6 104.7h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm-.6.7h.55v.65h-.55Zm0 .7h.55v.65h-.55Zm0 .7h.55v.65h-.55Zm0 .7h.55v.65h-.55Zm0 .7h.55v.65h-.55Zm-.6.7h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Z"/>
-  <text x="79" y="5">74</text>
-  <path d="M83.2.7h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm-.6.7h.55v.65h-.55Zm0 .7h.55v.65h-.55Zm0 .7h.55v.65h-.55Zm0 .7h.55v.65h-.55Zm-1.8.7h.55v.65H82Zm1.8 0h.55v.65h-.55Zm-1.2.7h.55v.65h-.55Zm.6 0h.55v.65h-.55Z"/>
-  <text x="79" y="13">75</text>
-  <path d="M82 8.7h.55v.65H82Zm2.4 0h.55v.65h-.55Zm-2.4.7h.55v.65H82Zm1.8 0h.55v.65h-.55Zm-1.8.7h.55v.65H82Zm1.2 0h.55v.65h-.55Zm-1.2.7h.55v.65H82Zm.6 0h.55v.65h-.55Zm-.6.7h.55v.65H82Zm1.2 0h.55v.65h-.55Zm-1.2.7h.55v.65H82Zm1.8 0h.55v.65h-.55Zm-1.8.7h.55v.65H82Zm2.4 0h.55v.65h-.55Z"/>
-  <text x="79" y="21">76</text>
-  <path d="M82 16.7h.55v.65H82Zm0 .7h.55v.65H82Zm0 .7h.55v.65H82Zm0 .7h.55v.65H82Zm0 .7h.55v.65H82Zm0 .7h.55v.65H82Zm0 .7h.55v.65H82Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Z"/>
-  <text x="79" y="29">77</text>
-  <path d="M82 24.7h.55v.65H82Zm2.4 0h.55v.65h-.55Zm-2.4.7h.55v.65H82Zm.6 0h.55v.65h-.55Zm1.2 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm-2.4.7h.55v.65H82Zm1.2 0h.55v.65h-.55Zm1.2 0h.55v.65h-.55Zm-2.4.7h.55v.65H82Zm1.2 0h.55v.65h-.55Zm1.2 0h.55v.65h-.55Zm-2.4.7h.55v.65H82Zm2.4 0h.55v.65h-.55Zm-2.4.7h.55v.65H82Zm2.4 0h.55v.65h-.55Zm-2.4.7h.55v.65H82Zm2.4 0h.55v.65h-.55Z"/>
-  <text x="79" y="37">78</text>
-  <path d="M82 32.7h.55v.65H82Zm2.4 0h.55v.65h-.55Zm-2.4.7h.55v.65H82Zm2.4 0h.55v.65h-.55Zm-2.4.7h.55v.65H82Zm.6 0h.55v.65h-.55Zm1.8 0h.55v.65h-.55Zm-2.4.7h.55v.65H82Zm1.2 0h.55v.65h-.55Zm1.2 0h.55v.65h-.55Zm-2.4.7h.55v.65H82Zm1.8 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm-2.4.7h.55v.65H82Zm2.4 0h.55v.65h-.55Zm-2.4.7h.55v.65H82Zm2.4 0h.55v.65h-.55Z"/>
-  <text x="79" y="45">79</text>
-  <path d="M82.6 40.7h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm-1.8.7h.55v.65H82Zm2.4 0h.55v.65h-.55Zm-2.4.7h.55v.65H82Zm2.4 0h.55v.65h-.55Zm-2.4.7h.55v.65H82Zm2.4 0h.55v.65h-.55Zm-2.4.7h.55v.65H82Zm2.4 0h.55v.65h-.55Zm-2.4.7h.55v.65H82Zm2.4 0h.55v.65h-.55Zm-1.8.7h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Z"/>
-  <text x="79" y="53">80</text>
-  <path d="M82 48.7h.55v.65H82Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm-1.8.7h.55v.65H82Zm2.4 0h.55v.65h-.55Zm-2.4.7h.55v.65H82Zm2.4 0h.55v.65h-.55Zm-2.4.7h.55v.65H82Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm-1.8.7h.55v.65H82Zm0 .7h.55v.65H82Zm0 .7h.55v.65H82Z"/>
-  <text x="79" y="61">81</text>
-  <path d="M82.6 56.7h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm-1.8.7h.55v.65H82Zm2.4 0h.55v.65h-.55Zm-2.4.7h.55v.65H82Zm2.4 0h.55v.65h-.55Zm-2.4.7h.55v.65H82Zm2.4 0h.55v.65h-.55Zm-2.4.7h.55v.65H82Zm1.2 0h.55v.65h-.55Zm1.2 0h.55v.65h-.55Zm-2.4.7h.55v.65H82Zm1.8 0h.55v.65h-.55Zm-1.2.7h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm1.2 0h.55v.65h-.55Z"/>
-  <text x="79" y="69">82</text>
-  <path d="M82 64.7h.55v.65H82Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm-1.8.7h.55v.65H82Zm2.4 0h.55v.65h-.55Zm-2.4.7h.55v.65H82Zm2.4 0h.55v.65h-.55Zm-2.4.7h.55v.65H82Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm-1.8.7h.55v.65H82Zm1.2 0h.55v.65h-.55Zm-1.2.7h.55v.65H82Zm1.8 0h.55v.65h-.55Zm-1.8.7h.55v.65H82Zm2.4 0h.55v.65h-.55Z"/>
-  <text x="79" y="77">83</text>
-  <path d="M82.6 72.7h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm-1.8.7h.55v.65H82Zm2.4 0h.55v.65h-.55Zm-2.4.7h.55v.65H82Zm.6.7h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6.7h.55v.65h-.55Zm-2.4.7h.55v.65H82Zm2.4 0h.55v.65h-.55Zm-1.8.7h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Z"/>
-  <text x="79" y="85">84</text>
-  <path d="M82 80.7h.55v.65H82Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm-1.2.7h.55v.65h-.55Zm0 .7h.55v.65h-.55Zm0 .7h.55v.65h-.55Zm0 .7h.55v.65h-.55Zm0 .7h.55v.65h-.55Zm0 .7h.55v.65h-.55Z"/>
-  <text x="79" y="93">85</text>
-  <path d="M82 88.7h.55v.65H82Zm2.4 0h.55v.65h-.55Zm-2.4.7h.55v.65H82Zm2.4 0h.55v.65h-.55Zm-2.4.7h.55v.65H82Zm2.4 0h.55v.65h-.55Zm-2.4.7h.55v.65H82Zm2.4 0h.55v.65h-.55Zm-2.4.7h.55v.65H82Zm2.4 0h.55v.65h-.55Zm-2.4.7h.55v.65H82Zm2.4 0h.55v.65h-.55Zm-1.8.7h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Z"/>
-  <text x="79" y="101">86</text>
-  <path d="M82 96.7h.55v.65H82Zm2.4 0h.55v.65h-.55Zm-2.4.7h.55v.65H82Zm2.4 0h.55v.65h-.55Zm-2.4.7h.55v.65H82Zm2.4 0h.55v.65h-.55Zm-2.4.7h.55v.65H82Zm2.4 0h.55v.65h-.55Zm-2.4.7h.55v.65H82Zm2.4 0h.55v.65h-.55Zm-1.8.7h.55v.65h-.55Zm1.2 0h.55v.65h-.55Zm-.6.7h.55v.65h-.55Z"/>
-  <text x="79" y="109">87</text>
-  <path d="M82 104.7h.55v.65H82Zm2.4 0h.55v.65h-.55Zm-2.4.7h.55v.65H82Zm2.4 0h.55v.65h-.55Zm-2.4.7h.55v.65H82Zm2.4 0h.55v.65h-.55Zm-2.4.7h.55v.65H82Zm1.2 0h.55v.65h-.55Zm1.2 0h.55v.65h-.55Zm-2.4.7h.55v.65H82Zm1.2 0h.55v.65h-.55Zm1.2 0h.55v.65h-.55Zm-2.4.7h.55v.65H82Zm1.2 0h.55v.65h-.55Zm1.2 0h.55v.65h-.55Zm-1.8.7h.55v.65h-.55Zm1.2 0h.55v.65h-.55Z"/>
-  <text x="103" y="5">88</text>
-  <path d="M106 .7h.55v.65H106Zm2.4 0h.55v.65h-.55Zm-2.4.7h.55v.65H106Zm2.4 0h.55v.65h-.55Zm-1.8.7h.55v.65h-.55Zm1.2 0h.55v.65h-.55Zm-.6.7h.55v.65h-.55Zm-.6.7h.55v.65h-.55Zm1.2 0h.55v.65h-.55Zm-1.8.7h.55v.65H106Zm2.4 0h.55v.65h-.55Zm-2.4.7h.55v.65H106Zm2.4 0h.55v.65h-.55Z"/>
-  <text x="103" y="13">89</text>
-  <path d="M106 8.7h.55v.65H106Zm2.4 0h.55v.65h-.55Zm-2.4.7h.55v.65H106Zm2.4 0h.55v.65h-.55Zm-2.4.7h.55v.65H106Zm2.4 0h.55v.65h-.55Zm-1.8.7h.55v.65h-.55Zm1.2 0h.55v.65h-.55Zm-.6.7h.55v.65h-.55Zm0 .7h.55v.65h-.55Zm0 .7h.55v.65h-.55Z"/>
-  <text x="103" y="21">90</text>
-  <path d="M106 16.7h.55v.65H106Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm0 .7h.55v.65h-.55Zm-.6.7h.55v.65h-.55Zm-.6.7h.55v.65h-.55Zm-.6.7h.55v.65h-.55Zm-.6.7h.55v.65H106Zm0 .7h.55v.65H106Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Z"/>
-  <text x="103" y="29">91</text>
-  <path d="M106.6 24.7h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm-1.2.7h.55v.65h-.55Zm0 .7h.55v.65h-.55Zm0 .7h.55v.65h-.55Zm0 .7h.55v.65h-.55Zm0 .7h.55v.65h-.55Zm0 .7h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Z"/>
-  <text x="103" y="37">92</text>
-  <path d="M106 33.4h.55v.65H106Zm.6.7h.55v.65h-.55Zm.6.7h.55v.65h-.55Zm.6.7h.55v.65h-.55Zm.6.7h.55v.65h-.55Z"/>
-  <text x="103" y="45">93</text>
-  <path d="M106.6 40.7h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm0 .7h.55v.65h-.55Zm0 .7h.55v.65h-.55Zm0 .7h.55v.65h-.55Zm0 .7h.55v.65h-.55Zm0 .7h.55v.65h-.55Zm-1.2.7h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Z"/>
-  <text x="103" y="53">94</text>
-  <path d="M107.2 48.7h.55v.65h-.55Zm-.6.7h.55v.65h-.55Zm1.2 0h.55v.65h-.55Zm-1.8.7h.55v.65H106Zm2.4 0h.55v.65h-.55Z"/>
-  <text x="103" y="61">95</text>
-  <path d="M106 60.9h.55v.65H106Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Z"/>
-  <text x="103" y="69">96</text>
-  <path d="M106.6 64.7h.55v.65h-.55Zm.6.7h.55v.65h-.55Zm.6.7h.55v.65h-.55Z"/>
-  <text x="103" y="77">97</text>
-  <path d="M106.6 74.1h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6.7h.55v.65h-.55Zm-1.8.7h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm-2.4.7h.55v.65H106Zm2.4 0h.55v.65h-.55Zm-1.8.7h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Z"/>
-  <text x="103" y="85">98</text>
-  <path d="M106 80.7h.55v.65H106Zm0 .7h.55v.65H106Zm0 .7h.55v.65H106Zm1.2 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm-1.8.7h.55v.65H106Zm.6 0h.55v.65h-.55Zm1.8 0h.55v.65h-.55Zm-2.4.7h.55v.65H106Zm2.4 0h.55v.65h-.55Zm-2.4.7h.55v.65H106Zm2.4 0h.55v.65h-.55Zm-2.4.7h.55v.65H106Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Z"/>
-  <text x="103" y="93">99</text>
-  <path d="M106.6 90.1h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm-1.8.7h.55v.65H106Zm0 .7h.55v.65H106Zm0 .7h.55v.65H106Zm2.4 0h.55v.65h-.55Zm-1.8.7h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Z"/>
-  <text x="103" y="101">100</text>
-  <path d="M108.4 96.7h.55v.65h-.55Zm0 .7h.55v.65h-.55Zm-1.8.7h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm1.2 0h.55v.65h-.55Zm-2.4.7h.55v.65H106Zm1.8 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm-2.4.7h.55v.65H106Zm2.4 0h.55v.65h-.55Zm-2.4.7h.55v.65H106Zm2.4 0h.55v.65h-.55Zm-1.8.7h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Z"/>
-  <text x="103" y="109">101</text>
-  <path d="M106.6 106.1h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm-1.8.7h.55v.65H106Zm2.4 0h.55v.65h-.55Zm-2.4.7h.55v.65H106Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm-2.4.7h.55v.65H106Zm.6.7h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Z"/>
-  <text x="127" y="5">102</text>
-  <path d="M131.2.7h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm-1.2.7h.55v.65h-.55Zm1.8 0h.55v.65h-.55Zm-1.8.7h.55v.65h-.55Zm-.6.7h.55v.65H130Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm-.6.7h.55v.65h-.55Zm0 .7h.55v.65h-.55Zm0 .7h.55v.65h-.55Z"/>
-  <text x="127" y="13">103</text>
-  <path d="M130.6 10.1h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm-2.4.7h.55v.65H130Zm2.4 0h.55v.65h-.55Zm-1.8.7h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm0 .7h.55v.65h-.55Zm-1.8.7h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Z"/>
-  <text x="127" y="21">104</text>
-  <path d="M130 16.7h.55v.65H130Zm0 .7h.55v.65H130Zm0 .7h.55v.65H130Zm1.2 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm-1.8.7h.55v.65H130Zm.6 0h.55v.65h-.55Zm1.8 0h.55v.65h-.55Zm-2.4.7h.55v.65H130Zm2.4 0h.55v.65h-.55Zm-2.4.7h.55v.65H130Zm2.4 0h.55v.65h-.55Zm-2.4.7h.55v.65H130Zm2.4 0h.55v.65h-.55Z"/>
-  <text x="127" y="29">105</text>
-  <path d="M131.2 24.7h.55v.65h-.55Zm0 1.4h.55v.65h-.55Zm-.6.7h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm0 .7h.55v.65h-.55Zm0 .7h.55v.65h-.55Zm-.6.7h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Z"/>
-  <text x="127" y="37">106</text>
-  <path d="M131.8 32.7h.55v.65h-.55Zm-.6 1.4h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm0 .7h.55v.65h-.55Zm0 .7h.55v.65h-.55Zm-1.8.7h.55v.65H130Zm1.8 0h.55v.65h-.55Zm-1.2.7h.55v.65h-.55Zm.6 0h.55v.65h-.55Z"/>
-  <text x="127" y="45">107</text>
-  <path d="M130 40.7h.55v.65H130Zm0 .7h.55v.65H130Zm0 .7h.55v.65H130Zm1.8 0h.55v.65h-.55Zm-1.8.7h.55v.65H130Zm1.2 0h.55v.65h-.55Zm-1.2.7h.55v.65H130Zm.6 0h.55v.65h-.55Zm-.6.7h.55v.65H130Zm1.2 0h.55v.65h-.55Zm-1.2.7h.55v.65H130Zm1.8 0h.55v.65h-.55Z"/>
-  <text x="127" y="53">108</text>
-  <path d="M130.6 48.7h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm0 .7h.55v.65h-.55Zm0 .7h.55v.65h-.55Zm0 .7h.55v.65h-.55Zm0 .7h.55v.65h-.55Zm0 .7h.55v.65h-.55Zm-.6.7h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Z"/>
-  <text x="127" y="61">109</text>
-  <path d="M130 58.1h.55v.65H130Zm.6 0h.55v.65h-.55Zm1.2 0h.55v.65h-.55Zm-1.8.7h.55v.65H130Zm1.2 0h.55v.65h-.55Zm1.2 0h.55v.65h-.55Zm-2.4.7h.55v.65H130Zm1.2 0h.55v.65h-.55Zm1.2 0h.55v.65h-.55Zm-2.4.7h.55v.65H130Zm1.2 0h.55v.65h-.55Zm1.2 0h.55v.65h-.55Zm-2.4.7h.55v.65H130Zm1.2 0h.55v.65h-.55Zm1.2 0h.55v.65h-.55Z"/>
-  <text x="127" y="69">110</text>
-  <path d="M130 66.1h.55v.65H130Zm1.2 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm-1.8.7h.55v.65H130Zm.6 0h.55v.65h-.55Zm1.8 0h.55v.65h-.55Zm-2.4.7h.55v.65H130Zm2.4 0h.55v.65h-.55Zm-2.4.7h.55v.65H130Zm2.4 0h.55v.65h-.55Zm-2.4.7h.55v.65H130Zm2.4 0h.55v.65h-.55Z"/>
-  <text x="127" y="77">111</text>
-  <path d="M130.6 74.1h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm-1.8.7h.55v.65H130Zm2.4 0h.55v.65h-.55Zm-2.4.7h.55v.65H130Zm2.4 0h.55v.65h-.55Zm-2.4.7h.55v.65H130Zm2.4 0h.55v.65h-.55Zm-1.8.7h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Z"/>
-  <text x="127" y="85">112</text>
-  <path d="M130 82.1h.55v.65H130Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm-1.8.7h.55v.65H130Zm2.4 0h.55v.65h-.55Zm-2.4.7h.55v.65H130Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm-1.8.7h.55v.65H130Zm0 .7h.55v.65H130Z"/>
-  <text x="127" y="93">113</text>
-  <path d="M130.6 90.1h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm1.2 0h.55v.65h-.55Zm-2.4.7h.55v.65H130Zm1.8 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm-1.8.7h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm0 .7h.55v.65h-.55Zm0 .7h.55v.65h-.55Z"/>
-  <text x="127" y="101">114</text>
-  <path d="M130 98.1h.55v.65H130Zm1.2 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm-1.8.7h.55v.65H130Zm.6 0h.55v.65h-.55Zm1.8 0h.55v.65h-.55Zm-2.4.7h.55v.65H130Zm0 .7h.55v.65H130Zm0 .7h.55v.65H130Z"/>
-  <text x="127" y="109">115</text>
-  <path d="M130.6 106.1h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm-1.8.7h.55v.65H130Zm.6.7h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6.7h.55v.65h-.55Zm-2.4.7h.55v.65H130Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Z"/>
-  <text x="151" y="5">116</text>
-  <path d="M154.6.7h.55v.65h-.55Zm0 .7h.55v.65h-.55Zm-.6.7h.55v.65H154Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm-.6.7h.55v.65h-.55Zm0 .7h.55v.65h-.55Zm0 .7h.55v.65h-.55Zm1.8 0h.55v.65h-.55Zm-1.2.7h.55v.65h-.55Zm.6 0h.55v.65h-.55Z"/>
-  <text x="151" y="13">117</text>
-  <path d="M154 10.1h.55v.65H154Zm2.4 0h.55v.65h-.55Zm-2.4.7h.55v.65H154Zm2.4 0h.55v.65h-.55Zm-2.4.7h.55v.65H154Zm2.4 0h.55v.65h-.55Zm-2.4.7h.55v.65H154Zm1.8 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm-1.8.7h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm1.2 0h.55v.65h-.55Z"/>
-  <text x="151" y="21">118</text>
-  <path d="M154 18.1h.55v.65H154Zm2.4 0h.55v.65h-.55Zm-2.4.7h.55v.65H154Zm2.4 0h.55v.65h-.55Zm-2.4.7h.55v.65H154Zm2.4 0h.55v.65h-.55Zm-1.8.7h.55v.65h-.55Zm1.2 0h.55v.65h-.55Zm-.6.7h.55v.65h-.55Z"/>
-  <text x="151" y="29">119</text>
-  <path d="M154 26.1h.55v.65H154Zm2.4 0h.55v.65h-.55Zm-2.4.7h.55v.65H154Zm2.4 0h.55v.65h-.55Zm-2.4.7h.55v.65H154Zm1.2 0h.55v.65h-.55Zm1.2 0h.55v.65h-.55Zm-2.4.7h.55v.65H154Zm1.2 0h.55v.65h-.55Zm1.2 0h.55v.65h-.55Zm-1.8.7h.55v.65h-.55Zm1.2 0h.55v.65h-.55Z"/>
-  <text x="151" y="37">120</text>
-  <path d="M154 34.1h.55v.65H154Zm2.4 0h.55v.65h-.55Zm-1.8.7h.55v.65h-.55Zm1.2 0h.55v.65h-.55Zm-.6.7h.55v.65h-.55Zm-.6.7h.55v.65h-.55Zm1.2 0h.55v.65h-.55Zm-1.8.7h.55v.65H154Zm2.4 0h.55v.65h-.55Z"/>
-  <text x="151" y="45">121</text>
-  <path d="M154 42.1h.55v.65H154Zm2.4 0h.55v.65h-.55Zm-2.4.7h.55v.65H154Zm2.4 0h.55v.65h-.55Zm-1.8.7h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm0 .7h.55v.65h-.55Zm-1.8.7h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Z"/>
-  <text x="151" y="53">122</text>
-  <path d="M154 50.1h.55v.65H154Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm-.6.7h.55v.65h-.55Zm-.6.7h.55v.65h-.55Zm-.6.7h.55v.65h-.55Zm-.6.7h.55v.65H154Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Z"/>
-  <text x="151" y="61">123</text>
-  <path d="M155.8 56.7h.55v.65h-.55Zm-.6.7h.55v.65h-.55Zm0 .7h.55v.65h-.55Zm-.6.7h.55v.65h-.55Zm.6.7h.55v.65h-.55Zm0 .7h.55v.65h-.55Zm.6.7h.55v.65h-.55Z"/>
-  <text x="151" y="69">124</text>
-  <path d="M155.2 64.7h.55v.65h-.55Zm0 .7h.55v.65h-.55Zm0 .7h.55v.65h-.55Zm0 .7h.55v.65h-.55Zm0 .7h.55v.65h-.55Zm0 .7h.55v.65h-.55Zm0 .7h.55v.65h-.55Z"/>
-  <text x="151" y="77">125</text>
-  <path d="M154.6 72.7h.55v.65h-.55Zm.6.7h.55v.65h-.55Zm0 .7h.55v.65h-.55Zm.6.7h.55v.65h-.55Zm-.6.7h.55v.65h-.55Zm0 .7h.55v.65h-.55Zm-.6.7h.55v.65h-.55Z"/>
-  <text x="151" y="85">126</text>
-  <path d="M154.6 82.8h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm1.2 0h.55v.65h-.55Zm-2.4.7h.55v.65H154Zm1.8 0h.55v.65h-.55Z"/>
-  <text x="151" y="93">127</text>
-  <path d="M155.2 88.7h.55v.65h-.55Zm-.6.7h.55v.65h-.55Zm1.2 0h.55v.65h-.55Zm-1.8.7h.55v.65H154Zm2.4 0h.55v.65h-.55Zm-2.4.7h.55v.65H154Zm2.4 0h.55v.65h-.55Zm-2.4.7h.55v.65H154Zm2.4 0h.55v.65h-.55Zm-2.4.7h.55v.65H154Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Z"/>
+  <g
+     id="index"
+     inkscape:label="index">
+    <text
+       x="7"
+       y="5"
+       id="text3339">32</text>
+    <text
+       x="7"
+       y="13"
+       id="text3341">33</text>
+    <text
+       x="7"
+       y="21"
+       id="text3345">34</text>
+    <text
+       x="7"
+       y="29"
+       id="text3349">35</text>
+    <text
+       x="7"
+       y="37"
+       id="text3353">36</text>
+    <text
+       x="7"
+       y="45"
+       id="text3357">37</text>
+    <text
+       x="7"
+       y="53"
+       id="text3361">38</text>
+    <text
+       x="7"
+       y="61"
+       id="text3365">39</text>
+    <text
+       x="7"
+       y="69"
+       id="text3369">40</text>
+    <text
+       x="7"
+       y="77"
+       id="text3373">41</text>
+    <text
+       x="7"
+       y="85"
+       id="text3377">42</text>
+    <text
+       x="7"
+       y="93"
+       id="text3381">43</text>
+    <text
+       x="7"
+       y="101"
+       id="text3385">44</text>
+    <text
+       x="7"
+       y="109"
+       id="text3389">45</text>
+    <text
+       x="31"
+       y="5"
+       id="text3393">46</text>
+    <text
+       x="31"
+       y="13"
+       id="text3397">47</text>
+    <text
+       x="31"
+       y="21"
+       id="text3401">48</text>
+    <text
+       x="31"
+       y="29"
+       id="text3405">49</text>
+    <text
+       x="31"
+       y="37"
+       id="text3409">50</text>
+    <text
+       x="31"
+       y="45"
+       id="text3413">51</text>
+    <text
+       x="31"
+       y="53"
+       id="text3417">52</text>
+    <text
+       x="31"
+       y="61"
+       id="text3421">53</text>
+    <text
+       x="31"
+       y="69"
+       id="text3425">54</text>
+    <text
+       x="31"
+       y="77"
+       id="text3429">55</text>
+    <text
+       x="31"
+       y="85"
+       id="text3433">56</text>
+    <text
+       x="31"
+       y="93"
+       id="text3437">57</text>
+    <text
+       x="31"
+       y="101"
+       id="text3441">58</text>
+    <text
+       x="31"
+       y="109"
+       id="text3445">59</text>
+    <text
+       x="55"
+       y="5"
+       id="text3449">60</text>
+    <text
+       x="55"
+       y="13"
+       id="text3453">61</text>
+    <text
+       x="55"
+       y="21"
+       id="text3457">62</text>
+    <text
+       x="55"
+       y="29"
+       id="text3461">63</text>
+    <text
+       x="55"
+       y="37"
+       id="text3465">64</text>
+    <text
+       x="55"
+       y="45"
+       id="text3469">65</text>
+    <text
+       x="55"
+       y="53"
+       id="text3473">66</text>
+    <text
+       x="55"
+       y="61"
+       id="text3477">67</text>
+    <text
+       x="55"
+       y="69"
+       id="text3481">68</text>
+    <text
+       x="55"
+       y="77"
+       id="text3485">69</text>
+    <text
+       x="55"
+       y="85"
+       id="text3489">70</text>
+    <text
+       x="55"
+       y="93"
+       id="text3493">71</text>
+    <text
+       x="55"
+       y="101"
+       id="text3497">72</text>
+    <text
+       x="55"
+       y="109"
+       id="text3501">73</text>
+    <text
+       x="79"
+       y="5"
+       id="text3505">74</text>
+    <text
+       x="79"
+       y="13"
+       id="text3509">75</text>
+    <text
+       x="79"
+       y="21"
+       id="text3513">76</text>
+    <text
+       x="79"
+       y="29"
+       id="text3517">77</text>
+    <text
+       x="79"
+       y="37"
+       id="text3521">78</text>
+    <text
+       x="79"
+       y="45"
+       id="text3525">79</text>
+    <text
+       x="79"
+       y="53"
+       id="text3529">80</text>
+    <text
+       x="79"
+       y="61"
+       id="text3533">81</text>
+    <text
+       x="79"
+       y="69"
+       id="text3537">82</text>
+    <text
+       x="79"
+       y="77"
+       id="text3541">83</text>
+    <text
+       x="79"
+       y="85"
+       id="text3545">84</text>
+    <text
+       x="79"
+       y="93"
+       id="text3549">85</text>
+    <text
+       x="79"
+       y="101"
+       id="text3553">86</text>
+    <text
+       x="79"
+       y="109"
+       id="text3557">87</text>
+    <text
+       x="103"
+       y="5"
+       id="text3561">88</text>
+    <text
+       x="103"
+       y="13"
+       id="text3565">89</text>
+    <text
+       x="103"
+       y="21"
+       id="text3569">90</text>
+    <text
+       x="103"
+       y="29"
+       id="text3573">91</text>
+    <text
+       x="103"
+       y="37"
+       id="text3577">92</text>
+    <text
+       x="103"
+       y="45"
+       id="text3581">93</text>
+    <text
+       x="103"
+       y="53"
+       id="text3585">94</text>
+    <text
+       x="103"
+       y="61"
+       id="text3589">95</text>
+    <text
+       x="103"
+       y="69"
+       id="text3593">96</text>
+    <text
+       x="103"
+       y="77"
+       id="text3597">97</text>
+    <text
+       x="103"
+       y="85"
+       id="text3601">98</text>
+    <text
+       x="103"
+       y="93"
+       id="text3605">99</text>
+    <text
+       x="103"
+       y="101"
+       id="text3609">100</text>
+    <text
+       x="103"
+       y="109"
+       id="text3613">101</text>
+    <text
+       x="127"
+       y="5"
+       id="text3617">102</text>
+    <text
+       x="127"
+       y="13"
+       id="text3621">103</text>
+    <text
+       x="127"
+       y="21"
+       id="text3625">104</text>
+    <text
+       x="127"
+       y="29"
+       id="text3629">105</text>
+    <text
+       x="127"
+       y="37"
+       id="text3633">106</text>
+    <text
+       x="127"
+       y="45"
+       id="text3637">107</text>
+    <text
+       x="127"
+       y="53"
+       id="text3641">108</text>
+    <text
+       x="127"
+       y="61"
+       id="text3645">109</text>
+    <text
+       x="127"
+       y="69"
+       id="text3649">110</text>
+    <text
+       x="127"
+       y="77"
+       id="text3653">111</text>
+    <text
+       x="127"
+       y="85"
+       id="text3657">112</text>
+    <text
+       x="127"
+       y="93"
+       id="text3661">113</text>
+    <text
+       x="127"
+       y="101"
+       id="text3665">114</text>
+    <text
+       x="127"
+       y="109"
+       id="text3669">115</text>
+    <text
+       x="151"
+       y="5"
+       id="text3673">116</text>
+    <text
+       x="151"
+       y="13"
+       id="text3677">117</text>
+    <text
+       x="151"
+       y="21"
+       id="text3681">118</text>
+    <text
+       x="151"
+       y="29"
+       id="text3685">119</text>
+    <text
+       x="151"
+       y="37"
+       id="text3689">120</text>
+    <text
+       x="151"
+       y="45"
+       id="text3693">121</text>
+    <text
+       x="151"
+       y="53"
+       id="text3697">122</text>
+    <text
+       x="151"
+       y="61"
+       id="text3701">123</text>
+    <text
+       x="151"
+       y="69"
+       id="text3705">124</text>
+    <text
+       x="151"
+       y="77"
+       id="text3709">125</text>
+    <text
+       x="151"
+       y="85"
+       id="text3713">126</text>
+    <text
+       x="151"
+       y="93"
+       id="text3717">127</text>
+  </g>
+  <g
+     id="symbols"
+     inkscape:label="symbols">
+    <path
+       d="M11.2 8.7h.55v.65h-.55Zm0 .7h.55v.65h-.55Zm0 .7h.55v.65h-.55Zm0 .7h.55v.65h-.55Zm0 2.1h.55v.65h-.55Z"
+       id="path3343" />
+    <path
+       d="M10.6 16.7h.55v.65h-.55Zm1.2 0h.55v.65h-.55Zm-1.2.7h.55v.65h-.55Zm1.2 0h.55v.65h-.55Zm-1.2.7h.55v.65h-.55Zm1.2 0h.55v.65h-.55Z"
+       id="path3347" />
+    <path
+       d="M10.6 24.7h.55v.65h-.55Zm1.2 0h.55v.65h-.55Zm-1.2.7h.55v.65h-.55Zm1.2 0h.55v.65h-.55Zm-1.8.7h.55v.65H10Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm-1.8.7h.55v.65h-.55Zm1.2 0h.55v.65h-.55Zm-1.8.7h.55v.65H10Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm-1.8.7h.55v.65h-.55Zm1.2 0h.55v.65h-.55Zm-1.2.7h.55v.65h-.55Zm1.2 0h.55v.65h-.55Z"
+       id="path3351" />
+    <path
+       d="M11.2 32.7h.55v.65h-.55Zm-.6.7h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm-2.4.7h.55v.65H10Zm1.2 0h.55v.65h-.55Zm-.6.7h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm-.6.7h.55v.65h-.55Zm1.2 0h.55v.65h-.55Zm-2.4.7h.55v.65H10Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm-.6.7h.55v.65h-.55Z"
+       id="path3355" />
+    <path
+       d="M10 40.7h.55v.65H10Zm.6 0h.55v.65h-.55Zm-.6.7h.55v.65H10Zm.6 0h.55v.65h-.55Zm1.8 0h.55v.65h-.55Zm-.6.7h.55v.65h-.55Zm-.6.7h.55v.65h-.55Zm-.6.7h.55v.65h-.55Zm-.6.7h.55v.65H10Zm1.8 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm-.6.7h.55v.65h-.55Zm.6 0h.55v.65h-.55Z"
+       id="path3359" />
+    <path
+       d="M10.6 48.7h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm-1.2.7h.55v.65H10Zm1.8 0h.55v.65h-.55Zm-1.8.7h.55v.65H10Zm1.2 0h.55v.65h-.55Zm-.6.7h.55v.65h-.55Zm-.6.7h.55v.65H10Zm1.2 0h.55v.65h-.55Zm1.2 0h.55v.65h-.55Zm-2.4.7h.55v.65H10Zm1.8 0h.55v.65h-.55Zm-1.2.7h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm1.2 0h.55v.65h-.55Z"
+       id="path3363" />
+    <path
+       d="M10.6 56.7h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm0 .7h.55v.65h-.55Zm-.6.7h.55v.65h-.55Z"
+       id="path3367" />
+    <path
+       d="M11.8 64.7h.55v.65h-.55Zm-.6.7h.55v.65h-.55Zm-.6.7h.55v.65h-.55Zm0 .7h.55v.65h-.55Zm0 .7h.55v.65h-.55Zm.6.7h.55v.65h-.55Zm.6.7h.55v.65h-.55Z"
+       id="path3371" />
+    <path
+       d="M10.6 72.7h.55v.65h-.55Zm.6.7h.55v.65h-.55Zm.6.7h.55v.65h-.55Zm0 .7h.55v.65h-.55Zm0 .7h.55v.65h-.55Zm-.6.7h.55v.65h-.55Zm-.6.7h.55v.65h-.55Z"
+       id="path3375" />
+    <path
+       d="M11.2 81.4h.55v.65h-.55Zm-1.2.7h.55v.65H10Zm1.2 0h.55v.65h-.55Zm1.2 0h.55v.65h-.55Zm-1.8.7h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm-1.8.7h.55v.65H10Zm1.2 0h.55v.65h-.55Zm1.2 0h.55v.65h-.55Zm-1.2.7h.55v.65h-.55Z"
+       id="path3379" />
+    <path
+       d="M11.2 89.4h.55v.65h-.55Zm0 .7h.55v.65h-.55Zm-1.2.7h.55v.65H10Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm-1.2.7h.55v.65h-.55Zm0 .7h.55v.65h-.55Z"
+       id="path3383" />
+    <path
+       d="M10.6 99.5h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm0 .7h.55v.65h-.55Zm-.6.7h.55v.65h-.55Z"
+       id="path3387" />
+    <path
+       d="M10 106.8h.55v.65H10Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Z"
+       id="path3391" />
+    <path
+       d="M34.6 4.2h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm-.6.7h.55v.65h-.55Zm.6 0h.55v.65h-.55Z"
+       id="path3395" />
+    <path
+       d="M36.4 9.4h.55v.65h-.55Zm-.6.7h.55v.65h-.55Zm-.6.7h.55v.65h-.55Zm-.6.7h.55v.65h-.55Zm-.6.7h.55v.65H34Z"
+       id="path3399" />
+    <path
+       d="M34.6 16.7h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm-1.8.7h.55v.65H34Zm2.4 0h.55v.65h-.55Zm-2.4.7h.55v.65H34Zm1.8 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm-2.4.7h.55v.65H34Zm1.2 0h.55v.65h-.55Zm1.2 0h.55v.65h-.55Zm-2.4.7h.55v.65H34Zm.6 0h.55v.65h-.55Zm1.8 0h.55v.65h-.55Zm-2.4.7h.55v.65H34Zm2.4 0h.55v.65h-.55Zm-1.8.7h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Z"
+       id="path3403" />
+    <path
+       d="M35.2 24.7h.55v.65h-.55Zm-.6.7h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm0 .7h.55v.65h-.55Zm0 .7h.55v.65h-.55Zm0 .7h.55v.65h-.55Zm0 .7h.55v.65h-.55Zm-.6.7h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Z"
+       id="path3407" />
+    <path
+       d="M34.6 32.7h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm-1.8.7h.55v.65H34Zm2.4 0h.55v.65h-.55Zm0 .7h.55v.65h-.55Zm-.6.7h.55v.65h-.55Zm-.6.7h.55v.65h-.55Zm-.6.7h.55v.65h-.55Zm-.6.7h.55v.65H34Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Z"
+       id="path3411" />
+    <path
+       d="M34 40.7h.55v.65H34Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm-.6.7h.55v.65h-.55Zm-.6.7h.55v.65h-.55Zm.6.7h.55v.65h-.55Zm.6.7h.55v.65h-.55Zm-2.4.7h.55v.65H34Zm2.4 0h.55v.65h-.55Zm-1.8.7h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Z"
+       id="path3415" />
+    <path
+       d="M35.8 48.7h.55v.65h-.55Zm-.6.7h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm-1.2.7h.55v.65h-.55Zm1.2 0h.55v.65h-.55Zm-1.8.7h.55v.65H34Zm1.8 0h.55v.65h-.55Zm-1.8.7h.55v.65H34Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm-.6.7h.55v.65h-.55Zm0 .7h.55v.65h-.55Z"
+       id="path3419" />
+    <path
+       d="M34 56.7h.55v.65H34Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm-2.4.7h.55v.65H34Zm0 .7h.55v.65H34Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6.7h.55v.65h-.55Zm0 .7h.55v.65h-.55Zm-2.4.7h.55v.65H34Zm2.4 0h.55v.65h-.55Zm-1.8.7h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Z"
+       id="path3423" />
+    <path
+       d="M35.2 64.7h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm-1.2.7h.55v.65h-.55Zm-.6.7h.55v.65H34Zm0 .7h.55v.65H34Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm-1.8.7h.55v.65H34Zm2.4 0h.55v.65h-.55Zm-2.4.7h.55v.65H34Zm2.4 0h.55v.65h-.55Zm-1.8.7h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Z"
+       id="path3427" />
+    <path
+       d="M34 72.7h.55v.65H34Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm-2.4.7h.55v.65H34Zm2.4 0h.55v.65h-.55Zm0 .7h.55v.65h-.55Zm-.6.7h.55v.65h-.55Zm-.6.7h.55v.65h-.55Zm0 .7h.55v.65h-.55Zm0 .7h.55v.65h-.55Z"
+       id="path3431" />
+    <path
+       d="M34.6 80.7h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm-1.8.7h.55v.65H34Zm2.4 0h.55v.65h-.55Zm-2.4.7h.55v.65H34Zm2.4 0h.55v.65h-.55Zm-1.8.7h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm-1.8.7h.55v.65H34Zm2.4 0h.55v.65h-.55Zm-2.4.7h.55v.65H34Zm2.4 0h.55v.65h-.55Zm-1.8.7h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Z"
+       id="path3435" />
+    <path
+       d="M34.6 88.7h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm-1.8.7h.55v.65H34Zm2.4 0h.55v.65h-.55Zm-2.4.7h.55v.65H34Zm2.4 0h.55v.65h-.55Zm-1.8.7h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm0 .7h.55v.65h-.55Zm-.6.7h.55v.65h-.55Zm-1.2.7h.55v.65h-.55Zm.6 0h.55v.65h-.55Z"
+       id="path3439" />
+    <path
+       d="M34.6 97.4h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm-.6.7h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm-.6 1.4h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm-.6.7h.55v.65h-.55Zm.6 0h.55v.65h-.55Z"
+       id="path3443" />
+    <path
+       d="M34.6 105.4h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm-.6.7h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm-.6 1.4h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm0 .7h.55v.65h-.55Zm-.6.7h.55v.65h-.55Z"
+       id="path3447" />
+    <path
+       d="M59.8.7h.55v.65h-.55Zm-.6.7h.55v.65h-.55Zm-.6.7h.55v.65h-.55Zm-.6.7h.55v.65H58Zm.6.7h.55v.65h-.55Zm.6.7h.55v.65h-.55Zm.6.7h.55v.65h-.55Z"
+       id="path3451" />
+    <path
+       d="M58 10.1h.55v.65H58Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55ZM58 11.5h.55v.65H58Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Z"
+       id="path3455" />
+    <path
+       d="M58.6 16.7h.55v.65h-.55Zm.6.7h.55v.65h-.55Zm.6.7h.55v.65h-.55Zm.6.7h.55v.65h-.55Zm-.6.7h.55v.65h-.55Zm-.6.7h.55v.65h-.55Zm-.6.7h.55v.65h-.55Z"
+       id="path3459" />
+    <path
+       d="M58.6 24.7h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm-1.8.7h.55v.65H58Zm2.4 0h.55v.65h-.55Zm0 .7h.55v.65h-.55Zm-.6.7h.55v.65h-.55Zm-.6.7h.55v.65h-.55Zm0 1.4h.55v.65h-.55Z"
+       id="path3463" />
+    <path
+       d="M58.6 32.7h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm-1.8.7h.55v.65H58Zm2.4 0h.55v.65h-.55Zm0 .7h.55v.65h-.55Zm-1.8.7h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm1.2 0h.55v.65h-.55Zm-2.4.7h.55v.65H58Zm1.2 0h.55v.65h-.55Zm1.2 0h.55v.65h-.55Zm-2.4.7h.55v.65H58Zm1.2 0h.55v.65h-.55Zm1.2 0h.55v.65h-.55Zm-1.8.7h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Z"
+       id="path3467" />
+    <path
+       d="M59.2 40.7h.55v.65h-.55Zm-.6.7h.55v.65h-.55Zm1.2 0h.55v.65h-.55Zm-1.8.7h.55v.65H58Zm2.4 0h.55v.65h-.55Zm-2.4.7h.55v.65H58Zm2.4 0h.55v.65h-.55Zm-2.4.7h.55v.65H58Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm-2.4.7h.55v.65H58Zm2.4 0h.55v.65h-.55Zm-2.4.7h.55v.65H58Zm2.4 0h.55v.65h-.55Z"
+       id="path3471" />
+    <path
+       d="M58 48.7h.55v.65H58Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm-1.8.7h.55v.65H58Zm2.4 0h.55v.65h-.55Zm-2.4.7h.55v.65H58Zm2.4 0h.55v.65h-.55Zm-2.4.7h.55v.65H58Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm-1.8.7h.55v.65H58Zm2.4 0h.55v.65h-.55Zm-2.4.7h.55v.65H58Zm2.4 0h.55v.65h-.55Zm-2.4.7h.55v.65H58Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Z"
+       id="path3475" />
+    <path
+       d="M58.6 56.7h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm-1.8.7h.55v.65H58Zm2.4 0h.55v.65h-.55Zm-2.4.7h.55v.65H58Zm0 .7h.55v.65H58Zm0 .7h.55v.65H58Zm0 .7h.55v.65H58Zm2.4 0h.55v.65h-.55Zm-1.8.7h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Z"
+       id="path3479" />
+    <path
+       d="M58 64.7h.55v.65H58Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm-1.2.7h.55v.65H58Zm1.8 0h.55v.65h-.55Zm-1.8.7h.55v.65H58Zm2.4 0h.55v.65h-.55Zm-2.4.7h.55v.65H58Zm2.4 0h.55v.65h-.55Zm-2.4.7h.55v.65H58Zm2.4 0h.55v.65h-.55Zm-2.4.7h.55v.65H58Zm1.8 0h.55v.65h-.55Zm-1.8.7h.55v.65H58Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Z"
+       id="path3483" />
+    <path
+       d="M58 72.7h.55v.65H58Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm-2.4.7h.55v.65H58Zm0 .7h.55v.65H58Zm0 .7h.55v.65H58Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm-1.8.7h.55v.65H58Zm0 .7h.55v.65H58Zm0 .7h.55v.65H58Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Z"
+       id="path3487" />
+    <path
+       d="M58 80.7h.55v.65H58Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm-2.4.7h.55v.65H58Zm0 .7h.55v.65H58Zm0 .7h.55v.65H58Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm-1.8.7h.55v.65H58Zm0 .7h.55v.65H58Zm0 .7h.55v.65H58Z"
+       id="path3491" />
+    <path
+       d="M58.6 88.7h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm-1.8.7h.55v.65H58Zm2.4 0h.55v.65h-.55Zm-2.4.7h.55v.65H58Zm0 .7h.55v.65H58Zm1.2 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm-2.4.7h.55v.65H58Zm2.4 0h.55v.65h-.55Zm-2.4.7h.55v.65H58Zm2.4 0h.55v.65h-.55Zm-1.8.7h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Z"
+       id="path3495" />
+    <path
+       d="M58 96.7h.55v.65H58Zm2.4 0h.55v.65h-.55Zm-2.4.7h.55v.65H58Zm2.4 0h.55v.65h-.55Zm-2.4.7h.55v.65H58Zm2.4 0h.55v.65h-.55Zm-2.4.7h.55v.65H58Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm-2.4.7h.55v.65H58Zm2.4 0h.55v.65h-.55Zm-2.4.7h.55v.65H58Zm2.4 0h.55v.65h-.55Zm-2.4.7h.55v.65H58Zm2.4 0h.55v.65h-.55Z"
+       id="path3499" />
+    <path
+       d="M58.6 104.7h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm-.6.7h.55v.65h-.55Zm0 .7h.55v.65h-.55Zm0 .7h.55v.65h-.55Zm0 .7h.55v.65h-.55Zm0 .7h.55v.65h-.55Zm-.6.7h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Z"
+       id="path3503" />
+    <path
+       d="M83.2.7h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm-.6.7h.55v.65h-.55Zm0 .7h.55v.65h-.55Zm0 .7h.55v.65h-.55Zm0 .7h.55v.65h-.55Zm-1.8.7h.55v.65H82Zm1.8 0h.55v.65h-.55Zm-1.2.7h.55v.65h-.55Zm.6 0h.55v.65h-.55Z"
+       id="path3507" />
+    <path
+       d="M82 8.7h.55v.65H82Zm2.4 0h.55v.65h-.55Zm-2.4.7h.55v.65H82Zm1.8 0h.55v.65h-.55Zm-1.8.7h.55v.65H82Zm1.2 0h.55v.65h-.55Zm-1.2.7h.55v.65H82Zm.6 0h.55v.65h-.55Zm-.6.7h.55v.65H82Zm1.2 0h.55v.65h-.55Zm-1.2.7h.55v.65H82Zm1.8 0h.55v.65h-.55Zm-1.8.7h.55v.65H82Zm2.4 0h.55v.65h-.55Z"
+       id="path3511" />
+    <path
+       d="M82 16.7h.55v.65H82Zm0 .7h.55v.65H82Zm0 .7h.55v.65H82Zm0 .7h.55v.65H82Zm0 .7h.55v.65H82Zm0 .7h.55v.65H82Zm0 .7h.55v.65H82Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Z"
+       id="path3515" />
+    <path
+       d="M82 24.7h.55v.65H82Zm2.4 0h.55v.65h-.55Zm-2.4.7h.55v.65H82Zm.6 0h.55v.65h-.55Zm1.2 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm-2.4.7h.55v.65H82Zm1.2 0h.55v.65h-.55Zm1.2 0h.55v.65h-.55Zm-2.4.7h.55v.65H82Zm1.2 0h.55v.65h-.55Zm1.2 0h.55v.65h-.55Zm-2.4.7h.55v.65H82Zm2.4 0h.55v.65h-.55Zm-2.4.7h.55v.65H82Zm2.4 0h.55v.65h-.55Zm-2.4.7h.55v.65H82Zm2.4 0h.55v.65h-.55Z"
+       id="path3519" />
+    <path
+       d="M82 32.7h.55v.65H82Zm2.4 0h.55v.65h-.55Zm-2.4.7h.55v.65H82Zm2.4 0h.55v.65h-.55Zm-2.4.7h.55v.65H82Zm.6 0h.55v.65h-.55Zm1.8 0h.55v.65h-.55Zm-2.4.7h.55v.65H82Zm1.2 0h.55v.65h-.55Zm1.2 0h.55v.65h-.55Zm-2.4.7h.55v.65H82Zm1.8 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm-2.4.7h.55v.65H82Zm2.4 0h.55v.65h-.55Zm-2.4.7h.55v.65H82Zm2.4 0h.55v.65h-.55Z"
+       id="path3523" />
+    <path
+       d="M82.6 40.7h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm-1.8.7h.55v.65H82Zm2.4 0h.55v.65h-.55Zm-2.4.7h.55v.65H82Zm2.4 0h.55v.65h-.55Zm-2.4.7h.55v.65H82Zm2.4 0h.55v.65h-.55Zm-2.4.7h.55v.65H82Zm2.4 0h.55v.65h-.55Zm-2.4.7h.55v.65H82Zm2.4 0h.55v.65h-.55Zm-1.8.7h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Z"
+       id="path3527" />
+    <path
+       d="M82 48.7h.55v.65H82Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm-1.8.7h.55v.65H82Zm2.4 0h.55v.65h-.55Zm-2.4.7h.55v.65H82Zm2.4 0h.55v.65h-.55Zm-2.4.7h.55v.65H82Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm-1.8.7h.55v.65H82Zm0 .7h.55v.65H82Zm0 .7h.55v.65H82Z"
+       id="path3531" />
+    <path
+       d="M82.6 56.7h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm-1.8.7h.55v.65H82Zm2.4 0h.55v.65h-.55Zm-2.4.7h.55v.65H82Zm2.4 0h.55v.65h-.55Zm-2.4.7h.55v.65H82Zm2.4 0h.55v.65h-.55Zm-2.4.7h.55v.65H82Zm1.2 0h.55v.65h-.55Zm1.2 0h.55v.65h-.55Zm-2.4.7h.55v.65H82Zm1.8 0h.55v.65h-.55Zm-1.2.7h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm1.2 0h.55v.65h-.55Z"
+       id="path3535" />
+    <path
+       d="M82 64.7h.55v.65H82Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm-1.8.7h.55v.65H82Zm2.4 0h.55v.65h-.55Zm-2.4.7h.55v.65H82Zm2.4 0h.55v.65h-.55Zm-2.4.7h.55v.65H82Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm-1.8.7h.55v.65H82Zm1.2 0h.55v.65h-.55Zm-1.2.7h.55v.65H82Zm1.8 0h.55v.65h-.55Zm-1.8.7h.55v.65H82Zm2.4 0h.55v.65h-.55Z"
+       id="path3539" />
+    <path
+       d="M82.6 72.7h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm-1.8.7h.55v.65H82Zm2.4 0h.55v.65h-.55Zm-2.4.7h.55v.65H82Zm.6.7h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6.7h.55v.65h-.55Zm-2.4.7h.55v.65H82Zm2.4 0h.55v.65h-.55Zm-1.8.7h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Z"
+       id="path3543" />
+    <path
+       d="M82 80.7h.55v.65H82Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm-1.2.7h.55v.65h-.55Zm0 .7h.55v.65h-.55Zm0 .7h.55v.65h-.55Zm0 .7h.55v.65h-.55Zm0 .7h.55v.65h-.55Zm0 .7h.55v.65h-.55Z"
+       id="path3547" />
+    <path
+       d="M82 88.7h.55v.65H82Zm2.4 0h.55v.65h-.55Zm-2.4.7h.55v.65H82Zm2.4 0h.55v.65h-.55Zm-2.4.7h.55v.65H82Zm2.4 0h.55v.65h-.55Zm-2.4.7h.55v.65H82Zm2.4 0h.55v.65h-.55Zm-2.4.7h.55v.65H82Zm2.4 0h.55v.65h-.55Zm-2.4.7h.55v.65H82Zm2.4 0h.55v.65h-.55Zm-1.8.7h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Z"
+       id="path3551" />
+    <path
+       d="M82 96.7h.55v.65H82Zm2.4 0h.55v.65h-.55Zm-2.4.7h.55v.65H82Zm2.4 0h.55v.65h-.55Zm-2.4.7h.55v.65H82Zm2.4 0h.55v.65h-.55Zm-2.4.7h.55v.65H82Zm2.4 0h.55v.65h-.55Zm-2.4.7h.55v.65H82Zm2.4 0h.55v.65h-.55Zm-1.8.7h.55v.65h-.55Zm1.2 0h.55v.65h-.55Zm-.6.7h.55v.65h-.55Z"
+       id="path3555" />
+    <path
+       d="M82 104.7h.55v.65H82Zm2.4 0h.55v.65h-.55Zm-2.4.7h.55v.65H82Zm2.4 0h.55v.65h-.55Zm-2.4.7h.55v.65H82Zm2.4 0h.55v.65h-.55Zm-2.4.7h.55v.65H82Zm1.2 0h.55v.65h-.55Zm1.2 0h.55v.65h-.55Zm-2.4.7h.55v.65H82Zm1.2 0h.55v.65h-.55Zm1.2 0h.55v.65h-.55Zm-2.4.7h.55v.65H82Zm1.2 0h.55v.65h-.55Zm1.2 0h.55v.65h-.55Zm-1.8.7h.55v.65h-.55Zm1.2 0h.55v.65h-.55Z"
+       id="path3559" />
+    <path
+       d="M106 .7h.55v.65H106Zm2.4 0h.55v.65h-.55Zm-2.4.7h.55v.65H106Zm2.4 0h.55v.65h-.55Zm-1.8.7h.55v.65h-.55Zm1.2 0h.55v.65h-.55Zm-.6.7h.55v.65h-.55Zm-.6.7h.55v.65h-.55Zm1.2 0h.55v.65h-.55Zm-1.8.7h.55v.65H106Zm2.4 0h.55v.65h-.55Zm-2.4.7h.55v.65H106Zm2.4 0h.55v.65h-.55Z"
+       id="path3563" />
+    <path
+       d="M106 8.7h.55v.65H106Zm2.4 0h.55v.65h-.55Zm-2.4.7h.55v.65H106Zm2.4 0h.55v.65h-.55Zm-2.4.7h.55v.65H106Zm2.4 0h.55v.65h-.55Zm-1.8.7h.55v.65h-.55Zm1.2 0h.55v.65h-.55Zm-.6.7h.55v.65h-.55Zm0 .7h.55v.65h-.55Zm0 .7h.55v.65h-.55Z"
+       id="path3567" />
+    <path
+       d="M106 16.7h.55v.65H106Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm0 .7h.55v.65h-.55Zm-.6.7h.55v.65h-.55Zm-.6.7h.55v.65h-.55Zm-.6.7h.55v.65h-.55Zm-.6.7h.55v.65H106Zm0 .7h.55v.65H106Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Z"
+       id="path3571" />
+    <path
+       d="M106.6 24.7h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm-1.2.7h.55v.65h-.55Zm0 .7h.55v.65h-.55Zm0 .7h.55v.65h-.55Zm0 .7h.55v.65h-.55Zm0 .7h.55v.65h-.55Zm0 .7h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Z"
+       id="path3575" />
+    <path
+       d="M106 33.4h.55v.65H106Zm.6.7h.55v.65h-.55Zm.6.7h.55v.65h-.55Zm.6.7h.55v.65h-.55Zm.6.7h.55v.65h-.55Z"
+       id="path3579" />
+    <path
+       d="M106.6 40.7h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm0 .7h.55v.65h-.55Zm0 .7h.55v.65h-.55Zm0 .7h.55v.65h-.55Zm0 .7h.55v.65h-.55Zm0 .7h.55v.65h-.55Zm-1.2.7h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Z"
+       id="path3583" />
+    <path
+       d="M107.2 48.7h.55v.65h-.55Zm-.6.7h.55v.65h-.55Zm1.2 0h.55v.65h-.55Zm-1.8.7h.55v.65H106Zm2.4 0h.55v.65h-.55Z"
+       id="path3587" />
+    <path
+       d="M106 60.9h.55v.65H106Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Z"
+       id="path3591" />
+    <path
+       d="M106.6 64.7h.55v.65h-.55Zm.6.7h.55v.65h-.55Zm.6.7h.55v.65h-.55Z"
+       id="path3595" />
+    <path
+       d="M106.6 74.1h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6.7h.55v.65h-.55Zm-1.8.7h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm-2.4.7h.55v.65H106Zm2.4 0h.55v.65h-.55Zm-1.8.7h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Z"
+       id="path3599" />
+    <path
+       d="M106 80.7h.55v.65H106Zm0 .7h.55v.65H106Zm0 .7h.55v.65H106Zm1.2 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm-1.8.7h.55v.65H106Zm.6 0h.55v.65h-.55Zm1.8 0h.55v.65h-.55Zm-2.4.7h.55v.65H106Zm2.4 0h.55v.65h-.55Zm-2.4.7h.55v.65H106Zm2.4 0h.55v.65h-.55Zm-2.4.7h.55v.65H106Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Z"
+       id="path3603" />
+    <path
+       d="M106.6 90.1h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm-1.8.7h.55v.65H106Zm0 .7h.55v.65H106Zm0 .7h.55v.65H106Zm2.4 0h.55v.65h-.55Zm-1.8.7h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Z"
+       id="path3607" />
+    <path
+       d="M108.4 96.7h.55v.65h-.55Zm0 .7h.55v.65h-.55Zm-1.8.7h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm1.2 0h.55v.65h-.55Zm-2.4.7h.55v.65H106Zm1.8 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm-2.4.7h.55v.65H106Zm2.4 0h.55v.65h-.55Zm-2.4.7h.55v.65H106Zm2.4 0h.55v.65h-.55Zm-1.8.7h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Z"
+       id="path3611" />
+    <path
+       d="M106.6 106.1h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm-1.8.7h.55v.65H106Zm2.4 0h.55v.65h-.55Zm-2.4.7h.55v.65H106Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm-2.4.7h.55v.65H106Zm.6.7h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Z"
+       id="path3615" />
+    <path
+       d="M131.2.7h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm-1.2.7h.55v.65h-.55Zm1.8 0h.55v.65h-.55Zm-1.8.7h.55v.65h-.55Zm-.6.7h.55v.65H130Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm-.6.7h.55v.65h-.55Zm0 .7h.55v.65h-.55Zm0 .7h.55v.65h-.55Z"
+       id="path3619" />
+    <path
+       d="M130.6 10.1h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm-2.4.7h.55v.65H130Zm2.4 0h.55v.65h-.55Zm-1.8.7h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm0 .7h.55v.65h-.55Zm-1.8.7h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Z"
+       id="path3623" />
+    <path
+       d="M130 16.7h.55v.65H130Zm0 .7h.55v.65H130Zm0 .7h.55v.65H130Zm1.2 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm-1.8.7h.55v.65H130Zm.6 0h.55v.65h-.55Zm1.8 0h.55v.65h-.55Zm-2.4.7h.55v.65H130Zm2.4 0h.55v.65h-.55Zm-2.4.7h.55v.65H130Zm2.4 0h.55v.65h-.55Zm-2.4.7h.55v.65H130Zm2.4 0h.55v.65h-.55Z"
+       id="path3627" />
+    <path
+       d="M131.2 24.7h.55v.65h-.55Zm0 1.4h.55v.65h-.55Zm-.6.7h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm0 .7h.55v.65h-.55Zm0 .7h.55v.65h-.55Zm-.6.7h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Z"
+       id="path3631" />
+    <path
+       d="M131.8 32.7h.55v.65h-.55Zm-.6 1.4h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm0 .7h.55v.65h-.55Zm0 .7h.55v.65h-.55Zm-1.8.7h.55v.65H130Zm1.8 0h.55v.65h-.55Zm-1.2.7h.55v.65h-.55Zm.6 0h.55v.65h-.55Z"
+       id="path3635" />
+    <path
+       d="M130 40.7h.55v.65H130Zm0 .7h.55v.65H130Zm0 .7h.55v.65H130Zm1.8 0h.55v.65h-.55Zm-1.8.7h.55v.65H130Zm1.2 0h.55v.65h-.55Zm-1.2.7h.55v.65H130Zm.6 0h.55v.65h-.55Zm-.6.7h.55v.65H130Zm1.2 0h.55v.65h-.55Zm-1.2.7h.55v.65H130Zm1.8 0h.55v.65h-.55Z"
+       id="path3639" />
+    <path
+       d="M130.6 48.7h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm0 .7h.55v.65h-.55Zm0 .7h.55v.65h-.55Zm0 .7h.55v.65h-.55Zm0 .7h.55v.65h-.55Zm0 .7h.55v.65h-.55Zm-.6.7h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Z"
+       id="path3643" />
+    <path
+       d="M130 58.1h.55v.65H130Zm.6 0h.55v.65h-.55Zm1.2 0h.55v.65h-.55Zm-1.8.7h.55v.65H130Zm1.2 0h.55v.65h-.55Zm1.2 0h.55v.65h-.55Zm-2.4.7h.55v.65H130Zm1.2 0h.55v.65h-.55Zm1.2 0h.55v.65h-.55Zm-2.4.7h.55v.65H130Zm1.2 0h.55v.65h-.55Zm1.2 0h.55v.65h-.55Zm-2.4.7h.55v.65H130Zm1.2 0h.55v.65h-.55Zm1.2 0h.55v.65h-.55Z"
+       id="path3647" />
+    <path
+       d="M130 66.1h.55v.65H130Zm1.2 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm-1.8.7h.55v.65H130Zm.6 0h.55v.65h-.55Zm1.8 0h.55v.65h-.55Zm-2.4.7h.55v.65H130Zm2.4 0h.55v.65h-.55Zm-2.4.7h.55v.65H130Zm2.4 0h.55v.65h-.55Zm-2.4.7h.55v.65H130Zm2.4 0h.55v.65h-.55Z"
+       id="path3651" />
+    <path
+       d="M130.6 74.1h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm-1.8.7h.55v.65H130Zm2.4 0h.55v.65h-.55Zm-2.4.7h.55v.65H130Zm2.4 0h.55v.65h-.55Zm-2.4.7h.55v.65H130Zm2.4 0h.55v.65h-.55Zm-1.8.7h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Z"
+       id="path3655" />
+    <path
+       d="M130 82.1h.55v.65H130Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm-1.8.7h.55v.65H130Zm2.4 0h.55v.65h-.55Zm-2.4.7h.55v.65H130Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm-1.8.7h.55v.65H130Zm0 .7h.55v.65H130Z"
+       id="path3659" />
+    <path
+       d="M130.6 90.1h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm1.2 0h.55v.65h-.55Zm-2.4.7h.55v.65H130Zm1.8 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm-1.8.7h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm0 .7h.55v.65h-.55Zm0 .7h.55v.65h-.55Z"
+       id="path3663" />
+    <path
+       d="M130 98.1h.55v.65H130Zm1.2 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm-1.8.7h.55v.65H130Zm.6 0h.55v.65h-.55Zm1.8 0h.55v.65h-.55Zm-2.4.7h.55v.65H130Zm0 .7h.55v.65H130Zm0 .7h.55v.65H130Z"
+       id="path3667" />
+    <path
+       d="M130.6 106.1h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm-1.8.7h.55v.65H130Zm.6.7h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6.7h.55v.65h-.55Zm-2.4.7h.55v.65H130Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Z"
+       id="path3671" />
+    <path
+       d="M154.6.7h.55v.65h-.55Zm0 .7h.55v.65h-.55Zm-.6.7h.55v.65H154Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm-.6.7h.55v.65h-.55Zm0 .7h.55v.65h-.55Zm0 .7h.55v.65h-.55Zm1.8 0h.55v.65h-.55Zm-1.2.7h.55v.65h-.55Zm.6 0h.55v.65h-.55Z"
+       id="path3675" />
+    <path
+       d="M154 10.1h.55v.65H154Zm2.4 0h.55v.65h-.55Zm-2.4.7h.55v.65H154Zm2.4 0h.55v.65h-.55Zm-2.4.7h.55v.65H154Zm2.4 0h.55v.65h-.55Zm-2.4.7h.55v.65H154Zm1.8 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm-1.8.7h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm1.2 0h.55v.65h-.55Z"
+       id="path3679" />
+    <path
+       d="M154 18.1h.55v.65H154Zm2.4 0h.55v.65h-.55Zm-2.4.7h.55v.65H154Zm2.4 0h.55v.65h-.55Zm-2.4.7h.55v.65H154Zm2.4 0h.55v.65h-.55Zm-1.8.7h.55v.65h-.55Zm1.2 0h.55v.65h-.55Zm-.6.7h.55v.65h-.55Z"
+       id="path3683" />
+    <path
+       d="M154 26.1h.55v.65H154Zm2.4 0h.55v.65h-.55Zm-2.4.7h.55v.65H154Zm2.4 0h.55v.65h-.55Zm-2.4.7h.55v.65H154Zm1.2 0h.55v.65h-.55Zm1.2 0h.55v.65h-.55Zm-2.4.7h.55v.65H154Zm1.2 0h.55v.65h-.55Zm1.2 0h.55v.65h-.55Zm-1.8.7h.55v.65h-.55Zm1.2 0h.55v.65h-.55Z"
+       id="path3687" />
+    <path
+       d="M154 34.1h.55v.65H154Zm2.4 0h.55v.65h-.55Zm-1.8.7h.55v.65h-.55Zm1.2 0h.55v.65h-.55Zm-.6.7h.55v.65h-.55Zm-.6.7h.55v.65h-.55Zm1.2 0h.55v.65h-.55Zm-1.8.7h.55v.65H154Zm2.4 0h.55v.65h-.55Z"
+       id="path3691" />
+    <path
+       d="M154 42.1h.55v.65H154Zm2.4 0h.55v.65h-.55Zm-2.4.7h.55v.65H154Zm2.4 0h.55v.65h-.55Zm-1.8.7h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm0 .7h.55v.65h-.55Zm-1.8.7h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Z"
+       id="path3695" />
+    <path
+       d="M154 50.1h.55v.65H154Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm-.6.7h.55v.65h-.55Zm-.6.7h.55v.65h-.55Zm-.6.7h.55v.65h-.55Zm-.6.7h.55v.65H154Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Z"
+       id="path3699" />
+    <path
+       d="M155.8 56.7h.55v.65h-.55Zm-.6.7h.55v.65h-.55Zm0 .7h.55v.65h-.55Zm-.6.7h.55v.65h-.55Zm.6.7h.55v.65h-.55Zm0 .7h.55v.65h-.55Zm.6.7h.55v.65h-.55Z"
+       id="path3703" />
+    <path
+       d="M155.2 64.7h.55v.65h-.55Zm0 .7h.55v.65h-.55Zm0 .7h.55v.65h-.55Zm0 .7h.55v.65h-.55Zm0 .7h.55v.65h-.55Zm0 .7h.55v.65h-.55Zm0 .7h.55v.65h-.55Z"
+       id="path3707" />
+    <path
+       d="M154.6 72.7h.55v.65h-.55Zm.6.7h.55v.65h-.55Zm0 .7h.55v.65h-.55Zm.6.7h.55v.65h-.55Zm-.6.7h.55v.65h-.55Zm0 .7h.55v.65h-.55Zm-.6.7h.55v.65h-.55Z"
+       id="path3711" />
+    <path
+       d="M154.6 82.8h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm1.2 0h.55v.65h-.55Zm-2.4.7h.55v.65H154Zm1.8 0h.55v.65h-.55Z"
+       id="path3715" />
+    <path
+       d="M155.2 88.7h.55v.65h-.55Zm-.6.7h.55v.65h-.55Zm1.2 0h.55v.65h-.55Zm-1.8.7h.55v.65H154Zm2.4 0h.55v.65h-.55Zm-2.4.7h.55v.65H154Zm2.4 0h.55v.65h-.55Zm-2.4.7h.55v.65H154Zm2.4 0h.55v.65h-.55Zm-2.4.7h.55v.65H154Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Zm.6 0h.55v.65h-.55Z"
+       id="path3719" />
+  </g>
 </svg>

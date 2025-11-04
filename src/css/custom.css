@@ -51,7 +51,11 @@ html .svg-font-table {
   height: auto;
 }
 
-html[data-theme='dark'] .svg-font-table path {
+html[data-theme='light'] .svg-font-table #symbols {
+  fill: rgb(0, 0, 255);
+}
+
+html[data-theme='dark'] .svg-font-table #symbols {
   fill: seagreen;
 }
 
