@@ -35,3 +35,7 @@ Wokwi compiles your code into a binary firmware, and then executes the binary fi
 - [AVR8js: Simulate Arduino in JavaScript](https://blog.wokwi.com/avr8js-simulate-arduino-in-javascript/) - Blog post covering the basics of the Arduino simulation engine.
 - [Let's Code Arduino Simulator from Scratch](https://www.youtube.com/watch?v=fArqj-USmjA) - Create a simple Arduino simulator app using Wokwi's [AVR8js](https://github.com/wokwi/avr8js) open-source AVR simulation engine (16 minutes).
 - [Reversing the ESP32 WiFi](https://www.youtube.com/watch?v=XmaT8bMssyQ) - Learn how we prepared the ground for the ESP32 WiFi simulation by reverse engineering the WiFi hardware (32 minutes).
+
+## How can I update the payment method for my subscription?
+
+Go to [https://wokwi.com/dashboard/subscriptions](https://wokwi.com/dashboard/subscriptions) and click on "Change" next to the payment method.
