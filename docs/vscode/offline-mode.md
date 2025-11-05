@@ -9,7 +9,7 @@ Wokwi for VS Code requires an internet connection to run. If you need to use Wok
 
 When running in offline mode, the title of the simulator tab will be "Wokwi Simulator (Offline)", and the simulator will display the date when the simulation engine was last updated:
 
-![Wokwi Simulator (Offline)](./offline-mode.png)
+![Wokwi Simulator (Offline)](./images/offline-mode.png)
 
 To update the simulator engine, go online and start the simulator. The simulator will automatically update the engine to the latest version, and will use it the next time you run the simulator in offline mode.
 

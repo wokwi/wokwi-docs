@@ -9,7 +9,7 @@ keywords: [Visual Studio Code, VS Code, embedded simulation, IoT simulation, Pla
 
 Wokwi for Visual Studio Code provides a simulation solution for embedded and IoT system engineers. The extension integrates with your existing development environment, allowing you to simulate your projects directly from your code editor.
 
-You can use Wokwi for VS Code with Zehpyr Project, PlatformIO, ESP-IDF, Pi Pico SDK, NuttX, Rust, Arduino CLI, MicroPython, and other embedded development frameworks and toolchains.
+You can use Wokwi for VS Code with Zephyr Project, PlatformIO, ESP-IDF, Pi Pico SDK, NuttX, Rust, Arduino CLI, MicroPython, and other embedded development frameworks and toolchains.
 
 <figure>
   <video src="https://wokwi.github.io/video-assets/vscode/wokwi-vscode-1s.mp4" autoPlay muted loop style={{width:'100%'}}></video>
