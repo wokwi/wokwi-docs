@@ -3,9 +3,17 @@ title: wokwi-servo Reference
 sidebar_label: wokwi-servo
 ---
 
-A standard Micro Servo Motor
+A standard Micro Servo Motor.
 
 <wokwi-servo />
+
+## Range of motion
+
+The servo is able to sweep from 0 degrees to 180 degrees, with hard stops at both ends.
+
+| <wokwi-servo /> | <wokwi-servo angle="90" /> | <wokwi-servo angle="180" /> |
+| :-------------: | :------------------------: | :-------------------------: |
+| 0 degrees       | 90 degrees                 | 180 degrees                 |
 
 ## Pin names
 
