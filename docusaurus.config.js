@@ -15,7 +15,6 @@ module.exports = {
   baseUrl: '/',
   trailingSlash: false,
   onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
   organizationName: 'wokwi',
   projectName: 'wokwi-docs',
