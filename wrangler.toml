@@ -3,3 +3,4 @@ compatibility_date = "2025-05-05"
 
 [assets]
 directory = "./build"
+not_found_handling = "404-page"
