@@ -2,6 +2,10 @@ import React from 'react';
 import clsx from 'clsx';
 import Translate from '@docusaurus/Translate';
 import Heading from '@theme/Heading';
+import Link from '@docusaurus/Link';
+
+import WokwiCat from '/static/img/wokwi-cat.svg';
+
 export default function NotFoundContent({className}) {
   return (
     <main className={clsx('container margin-vert--xl', className)}>
@@ -11,24 +15,39 @@ export default function NotFoundContent({className}) {
             <Translate
               id="theme.NotFound.title"
               description="The title of the 404 page">
-              Page Not Found
+              404 :(
             </Translate>
           </Heading>
           <p>
             <Translate
               id="theme.NotFound.p1"
-              description="The first paragraph of the 404 page">
-              We could not find what you were looking for.
+              description="The 1st paragraph of the 404 page">
+              Sorry, the page doesn't exist or has moved.
             </Translate>
           </p>
           <p>
             <Translate
               id="theme.NotFound.p2"
-              description="The 2nd paragraph of the 404 page">
-              Please contact the owner of the site that linked you to the
-              original URL and let them know their link is broken.
+              description="The 2nd paragraph of the 404 page"
+              values={{
+                homepage: (
+                  <Link to="/">
+                    <Translate
+                      id="theme.NotFound.homepageLink"
+                      description="Label for the link to the homepage">
+                      homepage
+                    </Translate>
+                  </Link>
+                )
+              }}>
+              Let's go back to the homepage.
             </Translate>
           </p>
+
+          <div style={{display: 'flex', justifyContent: 'center'}}>
+            <WokwiCat style={{fill: 'currentColor'}}/>
+          </div>
+
         </div>
       </div>
     </main>
