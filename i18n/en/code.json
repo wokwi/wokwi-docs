@@ -15,6 +15,10 @@
     "message": "homepage",
     "description": "Label for the link to the homepage"
   },
+  "theme.NotFound.p3": {
+    "message": "Wokwi is an online electronics simulator, which can be used to simulate {Arduino}, {ESP32}, {STM32} & {Pico} projects, with support for many other popular boards and components. Get started for free at {wokwiWebsite}.",
+    "description": "A paragraph describing what Wokwi offers"
+  },
   "theme.AnnouncementBar.closeButtonAriaLabel": {
     "message": "Close",
     "description": "The ARIA label for close button of announcement bar"

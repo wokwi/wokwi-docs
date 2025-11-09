@@ -43,6 +43,19 @@ export default function NotFoundContent({className}) {
               Let's go back to the homepage.
             </Translate>
           </p>
+          <p>
+            <Translate
+              id="theme.NotFound.p3"
+              description="A paragraph describing what Wokwi offers"
+              values={{
+                Arduino: <Link to="https://wokwi.com/arduino">Arduino</Link>,
+                ESP32: <Link to="https://wokwi.com/esp32">ESP32</Link>,
+                STM32: <Link to="https://wokwi.com/stm32">STM32</Link>,
+                Pico: <Link to="https://wokwi.com/pi-pico">Pico</Link>,
+                wokwiWebsite: <Link to="https://wokwi.com">wokwi.com</Link>
+              }}>
+            </Translate>
+          </p>
 
           <div style={{display: 'flex', justifyContent: 'center'}}>
             <WokwiCat style={{fill: 'currentColor'}}/>
