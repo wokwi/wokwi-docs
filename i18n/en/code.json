@@ -1,15 +1,23 @@
 {
   "theme.NotFound.title": {
-    "message": "Page Not Found",
+    "message": "404 :(",
     "description": "The title of the 404 page"
   },
   "theme.NotFound.p1": {
-    "message": "We could not find what you were looking for.",
-    "description": "The first paragraph of the 404 page"
+    "message": "Sorry, the page doesn't exist or has moved.",
+    "description": "The 1st paragraph of the 404 page"
   },
   "theme.NotFound.p2": {
-    "message": "Please contact the owner of the site that linked you to the original URL and let them know their link is broken.",
+    "message": "Let's go back to the {homepage}.",
     "description": "The 2nd paragraph of the 404 page"
+  },
+  "theme.NotFound.homepageLink": {
+    "message": "homepage",
+    "description": "Label for the link to the homepage"
+  },
+  "theme.NotFound.p3": {
+    "message": "Wokwi is an online electronics simulator, which can be used to simulate {Arduino}, {ESP32}, {STM32} & {Pico} projects, with support for many other popular boards and components. Get started for free at {wokwiWebsite}.",
+    "description": "A paragraph describing what Wokwi offers"
   },
   "theme.AnnouncementBar.closeButtonAriaLabel": {
     "message": "Close",
