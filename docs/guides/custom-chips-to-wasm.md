@@ -24,7 +24,7 @@ Wokwi.
 A custom chip requires a `[[chip]]` key in `wokwi.toml`. This key specifies the name and binary used by the custom chip.
 Wokwi also requires a JSON file that describes the pinout of the chip. This JSON file should have the same name as the
 WASM binary, but its extension changed to `.json` instead of `.wasm`, e.g. `inverter.chip.wasm` is paired with
-`inverter.chip.json`. To configure the chip JSON file properly, see the docs on [custom chip definitions](/docs/chips-api/chip-json.md).
+`inverter.chip.json`. To configure the chip JSON file properly, see the docs on [custom chip definitions](../chips-api/chip-json).
 
 An example excerpt from `wokwi.toml`:
 ```toml
