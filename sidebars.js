@@ -13,6 +13,7 @@ module.exports = {
       'guides/circuitpython',
       'guides/esp32',
       'guides/esp32-wifi',
+      'guides/custom-chips-to-wasm'
     ],
     'Diagram Reference': [
       'diagram-format',
