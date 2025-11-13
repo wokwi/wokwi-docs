@@ -78,7 +78,7 @@ docker run --rm -u 1000:1000 -v ${PWD}:/src wokwi/builder-clang-wasm:latest make
 ```
 
 After fetching the image, this will command automatically execute the `Makefile` in the project. In the case of the
-inverter example, will create the `dist/` directory, compile the binary into `dist/chip.wasm` and copy `chip.json` to 
+inverter example, it will create the `dist/` directory, compile the binary into `dist/chip.wasm` and copy `chip.json` to 
 `dist/`.
 
 You can enter an interactive session with the following:
