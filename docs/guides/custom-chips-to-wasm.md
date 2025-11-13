@@ -69,22 +69,29 @@ Once done, you should be presented with a terminal window where you can now run 
 the repository, and your generated WASM files should appear in `dist/`.
 
 ### Docker
-You will have to build the [wokwi-chip-clang-action](https://github.com/wokwi/wokwi-chip-clang-action) container to make
-use of it, as there currently is no image available online.
+You can use the prebuilt [wokwi/builder-clang-wasm](https://hub.docker.com/r/wokwi/builder-clang-wasm) image to compile
+your project in a Docker environment.
 
-#### Create the image
-1. Clone the [wokwi-chip-clang-action](https://github.com/wokwi/wokwi-chip-clang-action) repository
-2. Navigate to it
-3. Run `docker build --tag "local/wokwi-chip-clang-action"`
+To get started, simply navigate to the root of your project and run:
+```bash
+docker run --rm -u 1000:1000 -v ${PWD}:/src wokwi/builder-clang-wasm:latest make
+```
 
-Once the `docker build` command finishes, you will be able to reference the newly created image with
-`local/wokwi-chip-clang-action`.
+After fetching the image, this will command automatically execute the `Makefile` in the project. In the case of the
+inverter example, will create the `dist/` directory, compile the binary into `dist/chip.wasm` and copy `chip.json` to 
+`dist/`.
 
-#### Use the image
-1. Navigate to your project directory which contains the C source code to compile
-2. Create and enter a container with `docker run --rm -it -v $(pwd):/usr/src/project --entrypoint=/bin/sh local/wokwi-chip-clang-action`
-3. Your prompt should now have changed - navigate to `/usr/src/project`
-4. Compile the project with `make`
+You can enter an interactive session with the following:
+```bash
+docker run --rm -it -u 1000:1000 -v ${PWD}:/src wokwi/builder-clang-wasm:latest
+```
+
+:::info
+The argument `-u 1000:1000` is required since otherwise you may run into issues with permissions (such as the container
+being unable to open files or create directories). If your computer has multiple users, you may have to update
+the value to something other than `1000` - check the output of the `id` command on the host to get the proper value.
+:::
+
 
 ### Building locally
 
