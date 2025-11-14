@@ -5,6 +5,9 @@ description: Compile your custom chips to WASM for use with VS Code or the Wokwi
 keywords: [Visual Studio Code, VS Code, custom chip, compiling, WASM, web assembly, API, chips, chip, docker]
 ---
 
+import VsCodeDevContainerImage from './custom-chips-as-wasm-vscode-dev-container.png';
+import VsCodeRemoteContainerImage from './custom-chips-as-wasm-vscode-remote-container-button.png';
+
 Custom components written with the [Chips API](/chips-api/getting-started) can be compiled into WebAssembly (WASM) for
 use with the Wokwi VS Code extension or the Wokwi CLI.
 
@@ -62,8 +65,19 @@ If you do not want to use this action, then see the steps for compiling locally.
 ### VS Code dev container
 The inverter chip repository comes with a dev container configuration file that will automatically handle setting up a
 Docker container for you to build your binaries in. To make use of this, simply open the custom chip folder in a
-container by pressing <kbd>F1</kbd> and searching for "Dev Containers: Open Folder in Container...". Alternatively, you
-can click the icon bottom left of the VS Code window, and click on "Reopen in Container".
+container by pressing <kbd>F1</kbd> and searching for "Dev Containers: Open Folder in Container...". 
+
+<figure>
+  <img src={VsCodeDevContainerImage} alt="Opening a dev container in VS Code via the command palette" />
+  <figcaption>Opening a dev container in VS Code via the command palette</figcaption>
+</figure>
+
+Alternatively, you can click the icon bottom left of the VS Code window, and click on "Reopen in Container".
+
+<figure>
+    <img src={VsCodeRemoteContainerImage}  style={{margin: "auto"}} alt="Opening a dev container in VS Code via a dedicated button"/>
+  <figcaption>Opening a dev container in VS Code via a dedicated button</figcaption>
+</figure>
 
 Once done, you should be presented with a terminal window where you can now run `make`. This will run the `Makefile` in
 the repository, and your generated WASM files should appear in `dist/`.
