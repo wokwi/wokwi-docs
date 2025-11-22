@@ -15,7 +15,7 @@ module.exports = {
   baseUrl: '/',
   trailingSlash: false,
   onBrokenLinks: 'throw',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/favicon-auto.svg',
   organizationName: 'wokwi',
   projectName: 'wokwi-docs',
   scripts: [
@@ -35,6 +35,7 @@ module.exports = {
       logo: {
         alt: 'Wokwi Logo',
         src: 'img/logo.svg',
+        srcDark: 'img/logo-white.svg',
         href: 'https://wokwi.com',
       },
       items: [
