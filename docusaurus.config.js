@@ -35,6 +35,7 @@ module.exports = {
       logo: {
         alt: 'Wokwi Logo',
         src: 'img/logo.svg',
+        srcDark: 'img/logo-white.svg',
         href: 'https://wokwi.com',
       },
       items: [
