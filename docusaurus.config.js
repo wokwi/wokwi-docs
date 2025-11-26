@@ -141,7 +141,7 @@ module.exports = {
   ],
   i18n: {
     defaultLocale: 'en',
-    locales: ['en', 'pt-BR', 'zh-CN', 'de-DE'],
+    locales: ['en', 'pt-BR', 'zh-CN'],
     localeConfigs: {
       en: {
         label: 'English',
@@ -151,9 +151,6 @@ module.exports = {
       },
       'zh-CN': {
         label: 'Chinese',
-      },
-      'de-DE': {
-        label: 'Deutsch (German)',
       },
     },
   },
