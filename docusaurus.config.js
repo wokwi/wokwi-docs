@@ -46,10 +46,6 @@ module.exports = {
           position: 'left',
         },
         {
-          type: 'localeDropdown',
-          position: 'left',
-        },
-        {
           href: 'https://blog.wokwi.com',
           label: 'Blog',
           position: 'right',
