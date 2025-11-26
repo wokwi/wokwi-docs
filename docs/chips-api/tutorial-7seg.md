@@ -100,7 +100,7 @@ chip->segment_pins[0] = pin_init("SEG_G", OUTPUT_HIGH);
 
 The code initializes each of the segment pins as an output, and sets the initial value to digital high. The 7-segment
 display has a common annode, so setting a segment pin high will turn that segment off. You can learn more about the
-`pin_init` function in the [GPIO API reference](gpio.md).
+`pin_init` function in the [GPIO API reference](../chips-api/gpio.md).
 
 ### Listening to UART data
 Add the following code to `chip_init`, right after the code that initializes the segment pins:
@@ -126,7 +126,7 @@ In our case, we are only interested in receiving data, so we set `.tx` to the sp
 
 :::tip
 
-To learn more about using UART in Wokwi, check out the [UART API reference](uart.md).
+To learn more about using UART in Wokwi, check out the [UART API reference](../chips-api/uart.md).
 
 :::
 
@@ -237,18 +237,18 @@ tutorial:
   it a 'b'). Some bound checking can help!
 
 - **Add support for common cathode 7-segment displays** <br/>
-  You can use an additional input pin to select between common anode/cathode, or use the [Attributes API](attributes.md)
+  You can use an additional input pin to select between common anode/cathode, or use the [Attributes API](../chips-api/attributes.md)
   to allow the user to define the type of display by editing the chip attributes in `diagram.json`.
 
 - **Add another communication protocol** <br/>
-  You can turn our 7-segment display into an [I2C](i2c.md) or an [SPI](spi.md) device.
+  You can turn our 7-segment display into an [I2C](../chips-api/i2c.md) or an [SPI](../chips-api/spi.md) device.
 
 - **Support multiple digits** <br/>
-  Control a two or four digital 7-segment display! Use the [Time API](time.md) to create a timer that will quickly
+  Control a two or four digital 7-segment display! Use the [Time API](../chips-api/time.md) to create a timer that will quickly
   alternate between the digits.
 
 - **Add analog input** <br/>
-  Use the [Analog API](analog.md) to read and display an analog input value. This makes the 7-segment controller chips
+  Use the [Analog API](../chips-api/analog.md) to read and display an analog input value. This makes the 7-segment controller chips
   useful even without a microcontroller - you can connect it directly to a potentiometer or an analog sensor, and
   display the reading directly.
 
