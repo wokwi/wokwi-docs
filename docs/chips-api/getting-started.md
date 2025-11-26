@@ -22,7 +22,7 @@ Custom Chips are usually written in C, but you can use any language that compile
 ## Tutorials
 
 - [Video Tutorial](https://youtu.be/yzdCS3A4DvU) - Three chip examples in 15 Minutes
-- [Step-by-step blog tutorial](https://link.wokwi.com/chips-api-tutorial) - Create a 7-segment driver chip from scratch
+- [Step-by-step blog tutorial](tutorial-7seg.md) - Create a 7-segment driver chip from scratch
 - [I2C chip tutorial](https://youtu.be/BS_uTqz3zik) - Coding a PCF8575 I/O expander from scratch
 
 ## Getting started
