@@ -90,12 +90,12 @@ typedef struct {
 Next, add the following code to `chip_init` (after the line that defines `chip`):
 ```C
 chip->segment_pins[0] = pin_init("SEG_A", OUTPUT_HIGH);
-chip->segment_pins[0] = pin_init("SEG_B", OUTPUT_HIGH);
-chip->segment_pins[0] = pin_init("SEG_C", OUTPUT_HIGH);
-chip->segment_pins[0] = pin_init("SEG_D", OUTPUT_HIGH);
-chip->segment_pins[0] = pin_init("SEG_E", OUTPUT_HIGH);
-chip->segment_pins[0] = pin_init("SEG_F", OUTPUT_HIGH);
-chip->segment_pins[0] = pin_init("SEG_G", OUTPUT_HIGH);
+chip->segment_pins[1] = pin_init("SEG_B", OUTPUT_HIGH);
+chip->segment_pins[2] = pin_init("SEG_C", OUTPUT_HIGH);
+chip->segment_pins[3] = pin_init("SEG_D", OUTPUT_HIGH);
+chip->segment_pins[4] = pin_init("SEG_E", OUTPUT_HIGH);
+chip->segment_pins[5] = pin_init("SEG_F", OUTPUT_HIGH);
+chip->segment_pins[6] = pin_init("SEG_G", OUTPUT_HIGH);
 ```
 
 The code initializes each of the segment pins as an output, and sets the initial value to digital high. The 7-segment
