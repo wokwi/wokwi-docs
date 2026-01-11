@@ -116,7 +116,7 @@ Follow [this guide](https://sming.readthedocs.io/en/latest/experimental/wokwi.ht
 | WiFi               | ✔️    | ✔️ | ✔️ | ✔️ | ✔️ | —  | See the [ESP32 WiFi Guide](./esp32-wifi)                         |
 | Bluetooth          | ❌     | —  | ❌  | ❌  | ❌  | ❌  |                                                                  |
 | Timers             | ✔️    | ✔️ | ✔️ | ✔️ | ✔️ | ✔️ |                                                                  |
-| Watchdog           | ❌     | ❌  | ❌  | ❌  | ❌  | ❌  |                                                                  |
+| Watchdog           | ✔️    | ✔️ | ✔️ | ✔️ | ✔️ | ✔️ |                                                                  |
 | RTC                | 🟡    | 🟡 | 🟡 | 🟡 | 🟡 | 🟡 | Only RTC Pull-up / Pull-down resistors                           |
 | ADC                | ✔️    | ✔️ | ✔️ | ✔️ | ✔️ | ✔️ |                                                                  |
 | RNG                | ✔️    | ✔️ | ✔️ | ✔️ | ✔️ | ✔️ | Random Number Generator                                          |
