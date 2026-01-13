@@ -7,11 +7,12 @@ keywords: [Visual Studio Code, VS Code, custom chip, compiling, WASM, web assemb
 
 import VsCodeDevContainerImage from './custom-chips-as-wasm-vscode-dev-container.png';
 import VsCodeRemoteContainerImage from './custom-chips-as-wasm-vscode-remote-container-button.png';
+import WokwiCliCompileFirstRunImage from './custom-chips-as-wasm-wokwi-cli-compile-first-run.png';
 
 Custom components written with the [Chips API](/chips-api/getting-started) can be compiled into WebAssembly (WASM) for
 use with the Wokwi VS Code extension or the Wokwi CLI.
 
-The WASM binary can be compiled by GitHub Actions, a container, or locally. This guide will cover all three
+The WASM binary can be compiled by the Wokwi CLI, GitHub Actions, a container, or locally. This guide will cover all four
 approaches.
 
 The simplest way to get started is by cloning/forking the [inverter-chip](https://github.com/wokwi/inverter-chip)
@@ -44,12 +45,32 @@ Multiple chips can be added to the same project by adding multiple `[[chip]]` ke
 If you are cloning/forking the inverter chip repository, then you can skip this section.
 :::
 
-If you are setting up your project from scratch, you need to ensure that the Wokwi C API is present within your source
-files. It is available from [wokwi.com/api/chips/wokwi-api.h](https://wokwi.com/api/chips/wokwi-api.h).
+If you are setting up your project from scratch, you will need to ensure that the Wokwi C API is present within your
+source files. The easiest way to ensure this is to use the Wokwi CLI to compile your chip, as it will fetch the required
+files. It is also available from [wokwi.com/api/chips/wokwi-api.h](https://wokwi.com/api/chips/wokwi-api.h).
 
 You need to ensure that it is included in your project, otherwise you will not be able to make use of the Chips API.
 
 ## Compilation methods
+
+### Wokwi CLI
+As of v0.20.0, the [wokwi-cli](https://github.com/wokwi/wokwi-cli) provides you the ability to easily compile chips from
+the terminal. To get started, download the wokwi-cli from [github.com/wokwi/wokwi-cli](https://github.com/wokwi/wokwi-cli),
+navigate to your project folder and run `wokwi-cli chip compile main.c` (replacing `main.c` with the relevant source
+file name). The wokwi-cli will automatically fetch the required toolchain + SDK, and will output a WASM binary which
+is ready to use with Wokwi.
+
+<figure>
+  <img src={WokwiCliCompileFirstRunImage} alt="Running wokwi-cli for the first time to compile a chip" />
+  <figcaption>Running wokwi-cli for the first time to compile a chip</figcaption>
+</figure>
+
+You can also:
+- pass multiple source files, `wokwi-cli chip compile main.c utils.c`
+- specify output file name, `wokwi-cli chip compile main.c -o my_chip.wasm`
+- generate a Makefile for more advanced projects, `wokwi-cli chip makefile -n my_chip [source_files ...]`
+
+Additional examples are available via the `-h`/`--help` flag in wokwi-cli.
 
 ### GitHub Actions
 
