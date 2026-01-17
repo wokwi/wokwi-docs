@@ -18,29 +18,29 @@ This table summarizes the current status of the STM32F103C8 simulation features:
 | Feature        | Status | Notes                                           |
 | -------------- | ------ | ----------------------------------------------- |
 | Processor Core | ✔️     | Cortex-M3 core                                  |
-| SysTick timer  | ❌     |                                                 |
+| SysTick timer  | ✔️     |                                                 |
 | GPIO           | ✔️     |                                                 |
-| USART          | 🟡     | Implemented, but pin mapping is incomplete      |
-| I2C            | ❌     |                                                 |
+| USART          | ✔️     |                                                 |
+| I2C            | ✔️     |                                                 |
 | SPI            | ✔️     |                                                 |
 | ADC            | 🟡     | Dual ADC/ADC2 are missing                       |
-| STM32 timers   | ❌     |                                                 |
-| CRC            | ❌     |                                                 |
-| DBG            | ❌     |                                                 |
+| STM32 timers   | ❌     | TIM1/2/3/4                                      |
+| CRC            | ✔️     |                                                 |
+| DBG            | 🟡     | DWT implemented, DBGMCU missing                 |
 | DMA            | ❌     |                                                 |
-| EXTI           | ❌     |                                                 |
+| EXTI           | ✔️     |                                                 |
 | IWDG           | ❌     |                                                 |
 | PWR            | ❌     |                                                 |
 | RCC            | ✔️     |                                                 |
 | RTC            | ❌     |                                                 |
-| SYSCFG         | ❌     |                                                 |
-| WWDG           | ❌     |                                                 |
-| GDB Debugging  | ✔️      | See the [GDB Debugging guide](../gdb-debugging) |
+| AFIO           | ✔️     |                                                 |
+| WWDG           | ✔️     |                                                 |
+| GDB Debugging  | ✔️     | See the [GDB Debugging guide](../gdb-debugging) |
 
 Legend:  
 ✔️ Simulated  
 🟡 Partial implementation/work in progress  
-❌ Not implemented 
+❌ Not implemented
 
 ## Simulator examples
 
