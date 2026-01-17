@@ -22,7 +22,7 @@ This table summarizes the current status of the STM32F103C8 simulation features:
 | GPIO           | ✔️     |                                                 |
 | USART          | 🟡     | Implemented, but pin mapping is incomplete      |
 | I2C            | ❌     |                                                 |
-| SPI            | ❌     |                                                 |
+| SPI            | ✔️     |                                                 |
 | ADC            | 🟡     | Dual ADC/ADC2 are missing                       |
 | STM32 timers   | ❌     |                                                 |
 | CRC            | ❌     |                                                 |
@@ -45,3 +45,4 @@ Legend:
 ## Simulator examples
 
 - [STM32 Blue Pill `analogRead()` example](https://wokwi.com/projects/374772127111874561)
+- [STM32 Blue Pill SPI LCD](https://wokwi.com/projects/374780854731040769)
