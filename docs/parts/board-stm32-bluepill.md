@@ -35,7 +35,7 @@ This table summarizes the current status of the STM32F103C8 simulation features:
 | RTC            | ❌     |                                                 |
 | SYSCFG         | ❌     |                                                 |
 | WWDG           | ❌     |                                                 |
-| GDB Debugging  | ?      | See the [GDB Debugging guide](../gdb-debugging) |
+| GDB Debugging  | ✔️      | See the [GDB Debugging guide](../gdb-debugging) |
 
 Legend:  
 ✔️ Simulated  
