@@ -2,7 +2,7 @@
 title: ESP32 Simulation
 sidebar_label: ESP32 Simulator
 description: Simulate espressif ESP32 boards in Wokwi
-keywords: [ESP32, ESP32 Simulation, ESP32, ESP32-C3, ESP32-S2, ESP32-S3, ESP32-C6, ESP32-H2, MicroPython, Arduino, Rust, IoT, VSCode, ESP-IDF]
+keywords: [ESP32, ESP32 Simulation, ESP32, ESP32-C3, ESP32-S2, ESP32-S3, ESP32-C5, ESP32-C6, ESP32-H2, MicroPython, Arduino, Rust, IoT, VSCode, ESP-IDF]
 ---
 
 The ESP32 is a popular WiFi and Bluetooth-enabled microcontroller, widely used for IoT Projects. Wokwi simulates the ESP32, ESP32-C3, ESP32-S2, ESP32-S3, ESP32-C6, ESP32-H2, and ESP32-P4 (beta).
@@ -21,6 +21,7 @@ The ESP32 is a popular WiFi and Bluetooth-enabled microcontroller, widely used f
 | ESP32-S3-DevKitC-1                                             | ESP32-S3 | Entry-level ESP32-S3 development board                                               |
 | ESP32-C3-DevKitM-1                                             | ESP32-C3 | Entry-level ESP32-C3 development board                                               |
 | Rust Board ESP32-C3                                            | ESP32-C3 | ESP32-C3 board designed for [Rust trainings](https://github.com/esp-rs/std-training) |
+| ESP32-C5-DevKitC-1                                             | ESP32-C5 | Entry-level ESP32-C5 development board                                               |
 | ESP32-C6-DevKitC-1                                             | ESP32-C6 | Entry-level ESP32-C6 development board                                               |
 | ESP32-H2-DevKitM-1                                             | ESP32-H2 | Entry-level ESP32-H2 development board                                               |
 | ESP32-P4-Preview-DevKitC-1                                     | ESP32-P4 | ESP32-P4 pre-release virtual evaluation board (beta)                                 |
@@ -156,7 +157,7 @@ You can customize the size of flash and PSRAM by adding the following attributes
 
 ### USB CDC (Serial over USB) support
 
-Some chips have a built-in USB CDC (Serial over USB) + JTAG peripheral. These chips include the ESP32-S3, ESP32-C3, ESP32-C6, and ESP32-H2. You can configure USB CDC support in Wokwi by adding the following attribute to the chip:
+Some chips have a built-in USB CDC (Serial over USB) + JTAG peripheral. These chips include the ESP32-S3, ESP32-C3/C5/C6, and ESP32-H2. You can configure USB CDC support in Wokwi by adding the following attribute to the chip:
 
 ```json
 { 
