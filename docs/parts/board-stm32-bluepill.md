@@ -15,27 +15,27 @@ A user-controllable LED is attached to GPIO pin PC13.
 
 This table summarizes the current status of the STM32F103C8 simulation features:
 
-| Feature        | Status | Notes                                           |
-| -------------- | ------ | ----------------------------------------------- |
-| Processor Core | ✔️     | Cortex-M3 core                                  |
-| SysTick timer  | ✔️     |                                                 |
-| GPIO           | ✔️     |                                                 |
-| USART          | ✔️     |                                                 |
-| I2C            | ✔️     |                                                 |
-| SPI            | ✔️     |                                                 |
-| ADC            | 🟡     | Dual ADC/ADC2 are missing                       |
-| STM32 timers   | ❌     | TIM1/2/3/4                                      |
-| CRC            | ✔️     |                                                 |
-| DBG            | 🟡     | DWT implemented, DBGMCU missing                 |
-| DMA            | ❌     |                                                 |
-| EXTI           | ✔️     |                                                 |
-| IWDG           | ❌     |                                                 |
-| PWR            | ❌     |                                                 |
-| RCC            | ✔️     |                                                 |
-| RTC            | ❌     |                                                 |
-| AFIO           | ✔️     |                                                 |
-| WWDG           | ✔️     |                                                 |
-| GDB Debugging  | ✔️     | See the [GDB Debugging guide](../gdb-debugging) |
+| Feature        | Status | Notes                                            |
+| -------------- | ------ | ------------------------------------------------ |
+| Processor Core | ✔️     | Cortex-M3 core                                   |
+| SysTick timer  | ✔️     |                                                  |
+| GPIO           | ✔️     |                                                  |
+| USART          | ✔️     |                                                  |
+| I2C            | ✔️     |                                                  |
+| SPI            | ✔️     |                                                  |
+| ADC            | 🟡     | ADC1 basic conversion only; ADC2 not implemented |
+| STM32 timers   | ❌     | TIM1/2/3/4                                       |
+| CRC            | ✔️     |                                                  |
+| DBG            | 🟡     | DWT implemented, DBGMCU missing                  |
+| DMA            | ❌     |                                                  |
+| EXTI           | ✔️     |                                                  |
+| IWDG           | ❌     |                                                  |
+| PWR            | ❌     |                                                  |
+| RCC            | ✔️     |                                                  |
+| RTC            | ❌     |                                                  |
+| AFIO           | ✔️     |                                                  |
+| WWDG           | ✔️     |                                                  |
+| GDB Debugging  | ✔️     | See the [GDB Debugging guide](../gdb-debugging)  |
 
 Legend:  
 ✔️ Simulated  
