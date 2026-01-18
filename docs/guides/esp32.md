@@ -106,7 +106,7 @@ Follow [this guide](https://sming.readthedocs.io/en/latest/experimental/wokwi.ht
 | USB                | —     | ✔️ | ✔️ | —  | —  | —  | Support for UART over USB (CDC)                                  |
 | USB Serial + JTAG  | —     | —  | ✔️ | ✔️ | ✔️ | ✔️ | Serial supported, JTAG not.                                      |
 | I2C                | ✔️    | ✔️ | ✔️ | ✔️ | ✔️ | ✔️ | Master only. 10-bit addressing not supported.                    |
-| I2S                | ❌     | ❌  | ❌  | ❌  | ❌  | ❌  | [Implementation in progress](https://github.com/wokwi/wokwi-features/issues/213) |
+| I2S                | 🟡    | 🟡 | ❌  | ❌  | ❌  | ❌  | [Implementation in progress](https://github.com/wokwi/wokwi-features/issues/213) |
 | SPI                | ✔️    | ✔️ | ✔️ | ✔️ | ✔️ | ✔️ |                                                                  |
 | TWAI               | 🟡    | 🟡 | 🟡 | 🟡 | 🟡 | ✔️ |                                                                  |
 | RMT                | 🟡    | 🟡 | 🟡 | 🟡 | 🟡 | ✔️ | Transmit-only, use to control WS2812 LED strips                  |
