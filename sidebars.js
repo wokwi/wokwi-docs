@@ -37,6 +37,7 @@ module.exports = {
       'parts/wokwi-dht22',
       'parts/wokwi-dip-switch-8',
       'parts/wokwi-ds1307',
+      'parts/wokwi-ds18b20',
       'parts/wokwi-franzininho',
       'parts/wokwi-gas-sensor',
       'parts/wokwi-hc-sr04',
