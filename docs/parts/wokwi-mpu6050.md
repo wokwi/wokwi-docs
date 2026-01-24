@@ -10,7 +10,7 @@ Integrated sensor with 3-axis accelerometer, 3-axis gyroscope and a temperature 
 ## Pin names
 
 | Name | Description        |
-|------|--------------------|
+| ---- | ------------------ |
 | VCC  | Voltage supply     |
 | GND  | Ground             |
 | SCL  | I2C clock line     |
@@ -18,16 +18,16 @@ Integrated sensor with 3-axis accelerometer, 3-axis gyroscope and a temperature 
 | XDA  | Unused\*           |
 | XCL  | Unused\*           |
 | AD0  | Address select pin |
-| INT  | Interrupt\*        |
+| INT  | Interrupt          |
 
-\* These pins are not currently implemented in the simulator. If you need them, please [open a request](https://github.com/wokwi/wokwi-features/issues/new).
+\* These pins are not currently implemented in the simulator. If you need them, please [open a request](https://github.com/wokwi/wokwi-features/issues/new), and describe your use case.
 
 You normally only need to connect the VCC, GND, SCL, and SDA pins. The I2C address of the device is 0x68. You can change the address of 0x69 by connecting the AD0 pin to VCC.
 
 ## Attributes
 
 | Name        | Description                         | Default value |
-|-------------|-------------------------------------|---------------|
+| ----------- | ----------------------------------- | ------------- |
 | accelX      | Initial x acceleration value (g)    | "0"           |
 | accelY      | Initial y acceleration value (g)    | "0"           |
 | accelZ      | Initial z acceleration value (g)    | "1"           |
@@ -86,7 +86,7 @@ void loop() {
 The mpu6050 sensor can be controlled using [Automation Scenarios](../wokwi-ci/automation-scenarios). The names of the controls match the names of the attributes defined above:
 
 | Control     | Type  | Description                         |
-|-------------|-------|-------------------------------------|
+| ----------- | ----- | ----------------------------------- |
 | accelX      | float | Set the x acceleration value (g)    |
 | accelY      | float | Set the y acceleration value (g)    |
 | accelZ      | float | Set the z acceleration value (g)    |
@@ -98,10 +98,10 @@ The mpu6050 sensor can be controlled using [Automation Scenarios](../wokwi-ci/au
 The following example set the temperature to 25°C:
 
 ```yaml
-  - set-control:
-      part-id: imu1
-      control: temperature
-      value: 25
+- set-control:
+    part-id: imu1
+    control: temperature
+    value: 25
 ```
 
 ## Simulator examples
