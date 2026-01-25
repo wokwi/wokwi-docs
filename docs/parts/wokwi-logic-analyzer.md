@@ -17,10 +17,12 @@ Pins D0 to D7 are connected to the input channels of the logic analyzer. There's
 | ------------ | ------------------------------------------------------ | ------------------------- |
 | bufferSize   | Maximum number of samples to collect                   | "1000000"                 |
 | channelNames | Comma-separated list of channel names for the VCD file | "D0,D1,D2,D3,D4,D5,D6,D7" |
-| filename     | Name of the recording file, without the extension      | "wokwi-logic"             |
+| filename     | Name of the recording file, without the extension \*   | "wokwi-logic"             |
 | triggerMode  | Trigger mode: "off", "level" or "edge"                 | "off"                     |
 | triggerLevel | "high" or "low"                                        | "high"                    |
 | triggerPin   | "D0" … "D7"                                            | "D7"                      |
+
+\* The `filename` attribute only applies to the web version. For VS Code, see [vcdFile configuration](../vscode/project-config#logic-analyzer-vcd-export).
 
 ### Sample buffer
 
@@ -51,7 +53,9 @@ For usage examples, check out the [Using the Trigger section](../guides/logic-an
 
 ## Viewing the data
 
-When you stop the simulation, the logic analyzer downloads a file with the recorded samples to your computer. The recording file uses the standard [Value Change Dump (VCD)](https://en.wikipedia.org/wiki/Value_change_dump) format. The file is called "wokwi-logic.vcd" by default, but you can configure the name using the `filename` attribute.
+When you stop the simulation, the logic analyzer saves the recorded samples to a file. The recording file uses the standard [Value Change Dump (VCD)](https://en.wikipedia.org/wiki/Value_change_dump) format.
+
+In the web version, the file is downloaded to your computer as "wokwi-logic.vcd" by default (configurable via the `filename` attribute). In VS Code, the file is saved as "wokwi.vcd" in your project root (configurable via [vcdFile](../vscode/project-config#logic-analyzer-vcd-export)).
 
 To learn how to view the data, please visit our [Logic Analyzer Guide](../guides/logic-analyzer#using-the-logic-analyzer).
 
