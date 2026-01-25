@@ -51,6 +51,20 @@ firmware = 'build/flasher_args.json'
 elf = 'build/example_app.elf'
 ```
 
+### Logic Analyzer VCD Export
+
+If your diagram includes a [Logic Analyzer](../parts/wokwi-logic-analyzer), Wokwi automatically saves the captured signals to a VCD file when the simulation stops. By default, the file is saved as `wokwi.vcd` in your project root.
+
+You can customize the output path by adding the following to your wokwi.toml file:
+
+```toml
+[wokwi]
+...
+vcdFile = 'logic-capture.vcd'
+```
+
+You can then open the VCD file with [Surfer](https://marketplace.visualstudio.com/items?itemName=surfer-project.surfer), [PulseView or GTKWave](../guides/logic-analyzer#viewing-the-data-in-pulseview) to analyze the captured signals.
+
 ### Serial port forwarding
 
 Wokwi for VS Code allows you to connect to the serial port of the simulated microcontroller using an RFC2217 TCP server. To enable this feature, add the following configuration to your wokwi.toml file, inside the `[wokwi]` section:

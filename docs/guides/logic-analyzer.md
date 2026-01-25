@@ -42,6 +42,18 @@ Start the simulation. You should see the green activity LEDs blink as the signal
 To view the capture, stop the simulation. This will download a file called "wokwi-logic.vcd" to your computer. The file contains the recorded signals in [Value Change Dump](https://en.wikipedia.org/wiki/Value_change_dump) format.
 
 You can use software such as PulseView or GTKWave to open and view the capture files. These software also include powerful protocol analyzers that can decode many common protocols such as UART, I2C, WS2812, and many others.
+### Exporting VCD in VS Code
+
+When using [Wokwi for VS Code](../vscode/getting-started), the VCD file is automatically saved when the simulation stops, provided your diagram includes a Logic Analyzer. By default, the file is saved as `wokwi.vcd` in your project root.
+
+You can customize the output path by adding the `vcdFile` option to your [wokwi.toml](../vscode/project-config) file:
+
+```toml
+[wokwi]
+version = 1
+firmware = 'your-firmware.hex'
+vcdFile = 'logic-capture.vcd'
+```
 
 ### Using the Trigger
 
