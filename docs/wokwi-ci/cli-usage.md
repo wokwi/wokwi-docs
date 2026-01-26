@@ -44,6 +44,7 @@ You can use the following options to customize the CLI behavior:
 - `--screenshot-part <string>` - Take a screenshot of the given part id (from diagram.json)
 - `--screenshot-time <number>` - Time in simulation milliseconds to take the screenshot
 - `--screenshot-file <string>` - File name to save the screenshot to (default: screenshot.png)
+- `--vcd-file <path>` - Export [Logic Analyzer](../parts/wokwi-logic-analyzer) data to a VCD file
 
 ### General
 
