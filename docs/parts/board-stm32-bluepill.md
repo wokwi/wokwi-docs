@@ -24,7 +24,7 @@ This table summarizes the current status of the STM32F103C8 simulation features:
 | I2C            | ✔️     |                                                  |
 | SPI            | ✔️     |                                                  |
 | ADC            | 🟡     | ADC1 basic conversion only; ADC2 not implemented |
-| STM32 timers   | ❌     | TIM1/2/3/4                                       |
+| STM32 timers   | ✔️     | TIM1/2/3/4, used by analogWrite()                |
 | CRC            | ✔️     |                                                  |
 | DBG            | 🟡     | DWT implemented, DBGMCU missing                  |
 | DMA            | ❌     |                                                  |

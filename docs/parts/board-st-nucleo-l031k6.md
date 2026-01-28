@@ -34,7 +34,7 @@ This table summarizes the current status of the STM32L031K6 MCU simulation featu
 | I2C            | ✔️     | Master mode only                                |
 | SPI            | ✔️     | Master mode only                                |
 | ADC            | ✔️     | Used by analogRead()                            |
-| STM32 timers   | ❌     | TIM2/21/22                                      |
+| STM32 timers   | ✔️     | TIM2/21/22, used by analogWrite()               |
 | Comparator     | ❌     |                                                 |
 | CRC            | ✔️     | 32, 16, and 8 bits (7 bits not supported)       |
 | DBG            | ❌     |                                                 |
