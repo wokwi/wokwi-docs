@@ -34,6 +34,7 @@ module.exports = {
       'parts/wokwi-attiny85',
       'parts/wokwi-biaxial-stepper',
       'parts/wokwi-buzzer',
+      'parts/wokwi-clock-generator',
       'parts/wokwi-dht22',
       'parts/wokwi-dip-switch-8',
       'parts/wokwi-ds1307',
