@@ -66,6 +66,10 @@ Each part must have a unique "id" property. If two parts have the same "id",
 the simulation may not function correctly.
 :::
 
+:::tip
+Use `wokwi-cli lint` to validate your diagram.json file and catch common issues like unknown part types, invalid pin connections, and duplicate IDs. See the [CLI Usage guide](wokwi-ci/cli-usage#linting-diagrams) for more details.
+:::
+
 A partial list of part types (e.g. [wokwi-led](parts/wokwi-led)) can be found under the "Diagram Reference" section of this guide. We're currently working to expand this list. Meanwhile, some of the parts are also documented at [Wokwi Elements](https://elements.wokwi.com).
 
 If your simulation project contains code, the diagram should include a microcontroller part that will execute your code. The following microcontrollers are currently supported:

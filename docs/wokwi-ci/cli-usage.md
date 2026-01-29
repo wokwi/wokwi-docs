@@ -2,7 +2,7 @@
 title: Wokwi CLI Usage
 sidebar_label: CLI Usage
 description: Wokwi CLI command reference
-keywords: [ reference, Wokwi, CLI, API, CI Dashboard, serial monitor]
+keywords: [reference, Wokwi, CLI, API, CI Dashboard, serial monitor]
 ---
 
 Create an API token on the [Wokwi CI Dashboard](https://wokwi.com/dashboard/ci). Set the `WOKWI_CLI_TOKEN` environment variable to the token value.
@@ -50,3 +50,13 @@ You can use the following options to customize the CLI behavior:
 
 - `--help`, `-h` - Prints help information and exit
 - `--quiet`, `-q` - Quiet: do not print version or status messages
+
+## Linting Diagrams
+
+The `lint` command validates your [diagram.json](../diagram-format) file for errors and warnings before running a simulation:
+
+```bash
+wokwi-cli lint
+```
+
+The linter checks for common issues such as unknown part types, invalid pin connections, and missing components. By default, it fetches the latest board definitions from the Wokwi registry to ensure accurate validation.
