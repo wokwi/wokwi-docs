@@ -5,7 +5,7 @@ description: Simulate espressif ESP32 boards in Wokwi
 keywords: [ESP32, ESP32 Simulation, ESP32, ESP32-C3, ESP32-S2, ESP32-S3, ESP32-C5, ESP32-C6, ESP32-H2, MicroPython, Arduino, Rust, IoT, VSCode, ESP-IDF]
 ---
 
-The ESP32 is a popular WiFi and Bluetooth-enabled microcontroller, widely used for IoT Projects. Wokwi simulates the ESP32, ESP32-C3, ESP32-S2, ESP32-S3, ESP32-C6, ESP32-H2, and ESP32-P4 (beta).
+The ESP32 is a popular WiFi and Bluetooth-enabled microcontroller, widely used for IoT Projects. Wokwi simulates the ESP32, ESP32-C3, ESP32-S2, ESP32-S3, ESP32-C5 (alpha), ESP32-C6, ESP32-H2, and ESP32-P4 (beta).
 
 <wokwi-esp32-devkit-v1></wokwi-esp32-devkit-v1>
 
@@ -190,6 +190,16 @@ You can change the MAC address of the WiFi interface by adding the following att
 | Attribute  | Description                                                 | Default             |
 |------------|-------------------------------------------------------------|---------------------|
 | macAddress | MAC address of the WiFi interface, e.g. "24:0a:c4:12:45:56" | "24:0a:c4:00:01:10" |
+
+### Choosing a different chip revision
+
+For the ESP32-P4, you can choose between different [chip revisions](https://docs.espressif.com/projects/esp-idf/en/stable/esp32p4/api-reference/system/chip_revision.html) by adding the following attribute to the chip:
+
+| Attribute     | Description                                  | Default |
+|---------------|----------------------------------------------|---------|
+| chipRevision  | Chip revision. Valid values: "1.0" or "3.1"  | "3.1"   |
+
+Note that code built for a specific chip revision may not work on other revisions.
 
 ### CPU frequency limit
 
