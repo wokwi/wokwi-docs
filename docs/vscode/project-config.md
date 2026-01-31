@@ -73,7 +73,7 @@ Wokwi for VS Code allows you to connect to the serial port of the simulated micr
 rfc2217ServerPort = 4000
 ```
 
-This will start an RFC2217 server on port 4000. You can connect to the serial port using [the Serial Monitor extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-serial-monitor) (select TCP monitor mode) or [PuTTY](https://www.putty.org/) (select Telnet connection type). In addition, you can use PySerial's [RFC2217 support](https://pyserial.readthedocs.io/en/latest/url_handlers.html#rfc2217) to connect to the serial port from your Python code:
+This will start an RFC2217 server on port 4000. You can connect to the serial port using [the Serial Monitor extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-serial-monitor) (select TCP monitor mode) or [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) (select Telnet connection type). In addition, you can use PySerial's [RFC2217 support](https://pyserial.readthedocs.io/en/latest/url_handlers.html#rfc2217) to connect to the serial port from your Python code:
 
 ```python
 import serial
