@@ -20,6 +20,7 @@ module.exports = {
       'parts/board-bmp180',
       'parts/board-franzininho-wifi',
       'parts/board-grove-oled-sh1107',
+      'parts/board-mfrc522',
       'parts/board-ssd1306',
       'parts/board-st-nucleo-c031c6',
       'parts/board-st-nucleo-l031k6',
