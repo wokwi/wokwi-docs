@@ -28,7 +28,7 @@ The extension of the firmware file depends on the board you are using:
 | Board                      | Supported firmware types            |
 |----------------------------|-------------------------------------|
 | Arduino Uno/Mega, ATtiny85 | .hex, .elf                          |
-| Raspberry Pi Pico          | .hex, .uf2                          |
+| Raspberry Pi Pico          | .hex, .uf2, .elf                    |
 | ESP32 Family               | .bin, .uf2, .elf, flasher_args.json |
 | STM32 Family               | .hex, .bin, .elf                    |
 
