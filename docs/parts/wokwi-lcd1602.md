@@ -41,6 +41,23 @@ The default I2C address of the LCD1602 module is 0x27. You can change the addres
 
 Note: The I2C configuration simulates a PCF8574T chip that controls the LCD module. Normally, you wouldn't have to worry about this as the LiquidCrystal_I2C library takes care of the communication with the chip.
 
+#### PCF8574T pin mapping
+
+The following table shows how the PCF8574T I/O expander pins are mapped to the HD44780 LCD controller:
+
+| PCF8574T Pin | HD44780 Pin    |
+| ------------ | -------------- |
+| P0           | RS             |
+| P1           | R/W            |
+| P2           | E              |
+| P3           | Backlight      |
+| P4           | D4             |
+| P5           | D5             |
+| P6           | D6             |
+| P7           | D7             |
+
+For an example of controlling the LCD using direct I2C commands (without the LiquidCrystal_I2C library), see [I2C Protocol for LCD](https://wokwi.com/projects/454410801703852033).
+
 ### Standard configuration
 
 | Name | Description                         | Arduino Pin\* |
@@ -212,6 +229,7 @@ void loop() {
 
 - [LiquidCrystal Hello World](https://wokwi.com/projects/294342288335700490)
 - [LiquidCrystal I2C Hello World](https://wokwi.com/projects/344891772964438612)
+- [Direct I2C control (without library)](https://wokwi.com/projects/454410801703852033)
 - [LiquidCrystal Custom characters](https://wokwi.com/projects/294395602645549578)
 - [Electronic Safe](https://wokwi.com/projects/344891391763022419)
 - [DS1307 Clock](https://wokwi.com/projects/298783436806554120)
