@@ -17,6 +17,26 @@ The JSON file should contain a single object with the following properties:
 | `controls` | array of objects | The list of controls for the chip (optional)                            |
 | `display`  | object           | Configuration of an attached display (optional)                         |
 
+### Complete Example
+
+```json
+{
+  "name": "My Custom Chip",
+  "author": "Your Name",
+  "pins": ["VCC", "GND", "SCL", "SDA", "OUT"],
+  "controls": [
+    {
+      "id": "temperature",
+      "label": "Temperature (°C)",
+      "type": "range",
+      "min": -40,
+      "max": 125,
+      "step": 0.1
+    }
+  ]
+}
+```
+
 ## Pins
 
 The `pins` array should contain the names of the pins for your chip, starting from pin number 1. If you wish to skip some pins (e.g. you want the breakout board to only have pins on its left side), use an empty string (`""`) for the pin name.
