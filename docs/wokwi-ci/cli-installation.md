@@ -22,3 +22,12 @@ iwr https://wokwi.com/ci/install.ps1 -useb | iex
 ```
 
 Alternatively, you can download the CLI directly from the [GitHub Releases page](https://github.com/wokwi/wokwi-cli/releases/latest). Rename the file to `wokwi-cli` (or `wokwi-cli.exe` on Windows), make it executable (`chmod +x wokwi-cli` on Linux/Mac), and move it to a directory in your PATH (e.g. `/usr/local/bin` on Linux/Mac).
+
+If your project is using the ESP-IDF toolchain, you can install an extension for ESP-IDF which will allow you to access
+it from `idf.py`. To install it, simply run the following command:
+
+```bash
+pip install idf-wokwi
+```
+
+Read more about `idf-wokwi` on our [ESP-IDF simulation extension](idf-wokwi-usage) page.

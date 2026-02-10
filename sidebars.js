@@ -105,6 +105,7 @@ module.exports = {
       'wokwi-ci/getting-started',
       'wokwi-ci/cli-installation',
       'wokwi-ci/cli-usage',
+      'wokwi-ci/idf-wokwi-usage',
       'wokwi-ci/github-actions',
       'wokwi-ci/automation-scenarios',
       'wokwi-ci/mcp-support',

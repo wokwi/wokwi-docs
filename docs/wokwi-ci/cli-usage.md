@@ -51,6 +51,7 @@ You can use the following options to customize the CLI behavior:
 - `--help`, `-h` - Prints help information and exit
 - `--quiet`, `-q` - Quiet: do not print version or status messages
 
+
 ## Linting Diagrams
 
 The `lint` command validates your [diagram.json](../diagram-format) file for errors and warnings before running a simulation:
