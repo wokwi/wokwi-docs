@@ -29,3 +29,5 @@ it from `idf.py`. To install it, simply run the following command:
 ```bash
 pip install idf-wokwi
 ```
+
+Read more about `idf-wokwi` on our [ESP-IDF simulation extension](idf-wokwi-usage) page.
