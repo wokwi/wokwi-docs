@@ -109,3 +109,8 @@ For example:
 ```
 
 To draw on the display from your chip code, use the [Framebuffer API](../chips-api/framebuffer).
+
+## JSON Schema
+
+A [JSON Schema](https://github.com/wokwi/wokwi-cli/blob/main/packages/cli/src/chip/chip.schema.json) for
+validating chip definition files is available in the wokwi-cli repository.
