@@ -142,6 +142,121 @@ take-screenshot:
   compare-with: 'screenshots/oled-1.png'
 ```
 
+### Touch a Part (`touch`)
+
+Simulate a touch tap on a part with a touchscreen. Sends a press event at the given coordinates, and automatically releases after `duration`.
+
+#### Parameters
+
+| Name | Description |
+| :- | :- |
+| `part-id` | ID of the target part (e.g. the board with a touchscreen) |
+| `x` | X coordinate (touch controller coordinates) |
+| `y` | Y coordinate (touch controller coordinates) |
+| `duration` | How long to hold the touch (optional, default: `50ms`) |
+| `wait` | If `true`, wait for the touch duration before continuing (optional, default: `false`) |
+
+#### Example Usage
+
+```yaml
+touch:
+  part-id: esp32s3box
+  x: 120
+  y: 160
+  duration: 100ms
+```
+
+### Touch Press (`touch-press`)
+
+Low-level touch command: send a press event at the given coordinates. Pair with `touch-release` to complete the gesture.
+
+#### Parameters
+
+| Name | Description |
+| :- | :- |
+| `part-id` | ID of the target part |
+| `x` | X coordinate (touch controller coordinates) |
+| `y` | Y coordinate (touch controller coordinates) |
+
+#### Example Usage
+
+```yaml
+touch-press:
+  part-id: esp32s3box
+  x: 120
+  y: 160
+```
+
+### Touch Move (`touch-move`)
+
+Low-level touch command: send a move (drag) event to new coordinates. Use between `touch-press` and `touch-release`.
+
+#### Parameters
+
+| Name | Description |
+| :- | :- |
+| `part-id` | ID of the target part |
+| `x` | X coordinate (touch controller coordinates) |
+| `y` | Y coordinate (touch controller coordinates) |
+
+#### Example Usage
+
+```yaml
+touch-move:
+  part-id: esp32s3box
+  x: 150
+  y: 200
+```
+
+### Touch Release (`touch-release`)
+
+Low-level touch command: release the touch.
+
+#### Parameters
+
+| Name | Description |
+| :- | :- |
+| `part-id` | ID of the target part |
+
+#### Example Usage
+
+```yaml
+touch-release:
+  part-id: esp32s3box
+```
+
+:::info Touch Coordinate System
+Touch coordinates use the **touch controller's coordinate space**, matching real hardware behavior. For most display+touch combinations (e.g. ILI9341 with FT6206), the touch controller's origin (0, 0) is at the **bottom-right** of the display, not the top-left.
+
+Your firmware is responsible for mapping touch coordinates to display coordinates, just like on real hardware. For example, with the Adafruit FT6206 library on a 240x320 ILI9341 display:
+
+```cpp
+TS_Point p = ts.getPoint();
+// Flip to match display coordinates
+p.x = map(p.x, 0, 240, 240, 0);
+p.y = map(p.y, 0, 320, 320, 0);
+```
+:::
+
+#### Drag Gesture Example
+
+Combine the low-level touch commands to simulate a drag gesture:
+
+```yaml
+- touch-press:
+    part-id: esp32s3box
+    x: 50
+    y: 100
+- delay: 50ms
+- touch-move:
+    part-id: esp32s3box
+    x: 150
+    y: 100
+- delay: 50ms
+- touch-release:
+    part-id: esp32s3box
+```
+
 ## Running Scenarios
 
 To build the test projects and run the tests, you need to install [PlatformIO Core](https://platformio.org/install/cli)
