@@ -62,7 +62,7 @@ Then, configure the SoftwareSerial library accordingly:
 SoftwareSerial Serial(PB0, PB1);
 
 void setup() {
-  Serial.begin(9600); // Must be 9600
+  Serial.begin(115200);
   Serial.println("Hello Arduino\n");
 }
 
@@ -76,8 +76,7 @@ to the `SoftwareSerial` constructor should match the pin connected to `$serialMo
 the second parameter should match the pin connected to `$serialMonitor:RX`.
 
 :::warning
-The baud rate must be set to **9600**. This is hard coded in the simulator, and using a different
-value will get you garbage in the Serial monitor.
+The baud rate must be set to **115200**. Using a different value will get you garbage in the Serial monitor.
 :::
 
 For a complete example, check out the [ATtiny85 SoftwareSerial example project](https://wokwi.com/projects/290883003139228169).
