@@ -70,6 +70,6 @@ void loop() { }
 - [Adafruit ILI9341 GFX Example](https://wokwi.com/projects/307567201804616256)
 - [Fingerprint Pattern](https://wokwi.com/projects/307567963154678338)
 - [Mandelbrot Set](https://wokwi.com/projects/307567275170333248)
-- [Neon Ribbons](https://wokwi.com/projects/307577144545903170)
+- [Neon Ribbons](https://wokwi.com/projects/456010270409184257)
 - [Wokwi Logo over Plamsa](https://wokwi.com/projects/307664460274729536)
 - [Lode Runner with lcdgfx](https://wokwi.com/projects/308022099088245312)
