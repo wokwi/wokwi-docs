@@ -55,9 +55,9 @@ The following microcontrollers are currently supported:
 | [RGB LED](../parts/wokwi-rgb-led)             | 5mm Red, Green and Blue (RGB) LED                  |
 | [LED Bar Graph](../parts/wokwi-led-bar-graph) | 10-segment LED Bar Graph                           |
 | WS2812 LED                                    | NeoPixel Compatible LED                            |
-| WS2812 LED Ring                               | NeoPixel Compatible LED Ring                       |
-| WS2812 LED Strip                              | NeoPixel Compatible LED Strip                      |
-| WS2812 LED Matrix                             | NeoPixel Compatible LED Matrix                     |
+| WS2812 LED Ring                           | [WS2812 LED Ring](../parts/wokwi-led-ring)    | NeoPixel Compatible LED Ring                       |
+| [WS2812 LED Strip](../parts/wokwi-led-strip)  | NeoPixel Compatible LED Strip                      |
+| [WS2812 LED Matrix](../parts/wokwi-led-matrix) | NeoPixel Compatible LED Matrix                   |
 | NeoPixel Meter                                | Monitors NeoPixel frame rate and power consumption |
 | [NLSF595 LED Driver](../parts/wokwi-nlsf595)  | Serial (SPI) Tri-Color LED Driver                  |
 

@@ -55,6 +55,7 @@ module.exports = {
       'parts/wokwi-led',
       'parts/wokwi-led-bar-graph',
       'parts/wokwi-led-matrix',
+      'parts/wokwi-led-ring',
       'parts/wokwi-led-strip',
       'parts/wokwi-logic-analyzer',
       'parts/wokwi-max7219-matrix',

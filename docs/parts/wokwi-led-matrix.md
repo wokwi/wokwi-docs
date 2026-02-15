@@ -61,8 +61,14 @@ void setup() {
 }
 
 void loop() {
+  delay(10);
 }
 ```
+
+## See also
+
+- [wokwi-led-ring](wokwi-led-ring) - WS2812 NeoPixel Compatible LED Ring
+- [wokwi-led-strip](wokwi-led-strip) - WS2812 NeoPixel Compatible LED Strip
 
 ## Simulator examples
 
