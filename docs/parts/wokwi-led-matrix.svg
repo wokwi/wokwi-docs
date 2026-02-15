@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 198" width="192" height="198">
+  <!-- LED Matrix: 8x8 default, dark PCB with bottom pin leads -->
+
+  <!-- PCB board -->
+  <rect x="0" y="0" width="192" height="192" rx="3" fill="#1a1a1a" stroke="#555" stroke-width="1" />
+
+  <!-- Black canvas area (pixel display) -->
+  <rect x="4" y="4" width="184" height="184" fill="black" />
+
+  <!-- Pixel circles to show LED positions (8x8 grid, 23px spacing) -->
+  <g fill="#222">
+    <!-- Row 1 -->
+    <circle cx="15.5" cy="15.5" r="6" /><circle cx="38.5" cy="15.5" r="6" />
+    <circle cx="61.5" cy="15.5" r="6" /><circle cx="84.5" cy="15.5" r="6" />
+    <circle cx="107.5" cy="15.5" r="6" /><circle cx="130.5" cy="15.5" r="6" />
+    <circle cx="153.5" cy="15.5" r="6" /><circle cx="176.5" cy="15.5" r="6" />
+    <!-- Row 2 -->
+    <circle cx="15.5" cy="38.5" r="6" /><circle cx="38.5" cy="38.5" r="6" />
+    <circle cx="61.5" cy="38.5" r="6" /><circle cx="84.5" cy="38.5" r="6" />
+    <circle cx="107.5" cy="38.5" r="6" /><circle cx="130.5" cy="38.5" r="6" />
+    <circle cx="153.5" cy="38.5" r="6" /><circle cx="176.5" cy="38.5" r="6" />
+    <!-- Row 3 -->
+    <circle cx="15.5" cy="61.5" r="6" /><circle cx="38.5" cy="61.5" r="6" />
+    <circle cx="61.5" cy="61.5" r="6" /><circle cx="84.5" cy="61.5" r="6" />
+    <circle cx="107.5" cy="61.5" r="6" /><circle cx="130.5" cy="61.5" r="6" />
+    <circle cx="153.5" cy="61.5" r="6" /><circle cx="176.5" cy="61.5" r="6" />
+    <!-- Row 4 -->
+    <circle cx="15.5" cy="84.5" r="6" /><circle cx="38.5" cy="84.5" r="6" />
+    <circle cx="61.5" cy="84.5" r="6" /><circle cx="84.5" cy="84.5" r="6" />
+    <circle cx="107.5" cy="84.5" r="6" /><circle cx="130.5" cy="84.5" r="6" />
+    <circle cx="153.5" cy="84.5" r="6" /><circle cx="176.5" cy="84.5" r="6" />
+    <!-- Row 5 -->
+    <circle cx="15.5" cy="107.5" r="6" /><circle cx="38.5" cy="107.5" r="6" />
+    <circle cx="61.5" cy="107.5" r="6" /><circle cx="84.5" cy="107.5" r="6" />
+    <circle cx="107.5" cy="107.5" r="6" /><circle cx="130.5" cy="107.5" r="6" />
+    <circle cx="153.5" cy="107.5" r="6" /><circle cx="176.5" cy="107.5" r="6" />
+    <!-- Row 6 -->
+    <circle cx="15.5" cy="130.5" r="6" /><circle cx="38.5" cy="130.5" r="6" />
+    <circle cx="61.5" cy="130.5" r="6" /><circle cx="84.5" cy="130.5" r="6" />
+    <circle cx="107.5" cy="130.5" r="6" /><circle cx="130.5" cy="130.5" r="6" />
+    <circle cx="153.5" cy="130.5" r="6" /><circle cx="176.5" cy="130.5" r="6" />
+    <!-- Row 7 -->
+    <circle cx="15.5" cy="153.5" r="6" /><circle cx="38.5" cy="153.5" r="6" />
+    <circle cx="61.5" cy="153.5" r="6" /><circle cx="84.5" cy="153.5" r="6" />
+    <circle cx="107.5" cy="153.5" r="6" /><circle cx="130.5" cy="153.5" r="6" />
+    <circle cx="153.5" cy="153.5" r="6" /><circle cx="176.5" cy="153.5" r="6" />
+    <!-- Row 8 -->
+    <circle cx="15.5" cy="176.5" r="6" /><circle cx="38.5" cy="176.5" r="6" />
+    <circle cx="61.5" cy="176.5" r="6" /><circle cx="84.5" cy="176.5" r="6" />
+    <circle cx="107.5" cy="176.5" r="6" /><circle cx="130.5" cy="176.5" r="6" />
+    <circle cx="153.5" cy="176.5" r="6" /><circle cx="176.5" cy="176.5" r="6" />
+  </g>
+
+  <!-- Bottom pin leads (DIN, VDD, VSS, DOUT) -->
+  <rect x="80" y="192" width="2" height="6" rx="0.5" fill="#ccc" />
+  <rect x="90" y="192" width="2" height="6" rx="0.5" fill="#ccc" />
+  <rect x="100" y="192" width="2" height="6" rx="0.5" fill="#ccc" />
+  <rect x="110" y="192" width="2" height="6" rx="0.5" fill="#ccc" />
+</svg>
