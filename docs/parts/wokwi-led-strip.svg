@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 35" width="200" height="35">
+  <!-- LED Strip: 8 pixels default, dark PCB with pin leads -->
+
+  <!-- Left pin leads (VDD, DIN, VSS) -->
+  <rect x="0" y="7.5" width="6" height="2" rx="0.5" fill="#ccc" />
+  <rect x="0" y="16.5" width="6" height="2" rx="0.5" fill="#ccc" />
+  <rect x="0" y="25.5" width="6" height="2" rx="0.5" fill="#ccc" />
+
+  <!-- Right pin leads (VDD.2, DOUT, VSS.2) -->
+  <rect x="194" y="7.5" width="6" height="2" rx="0.5" fill="#ccc" />
+  <rect x="194" y="16.5" width="6" height="2" rx="0.5" fill="#ccc" />
+  <rect x="194" y="25.5" width="6" height="2" rx="0.5" fill="#ccc" />
+
+  <!-- PCB board -->
+  <rect x="6" y="0" width="188" height="35" rx="3" fill="#1a1a1a" stroke="#555" stroke-width="1" />
+
+  <!-- Black canvas area (pixel display) -->
+  <rect x="8" y="6" width="184" height="23" fill="black" />
+
+  <!-- Pixel circles to show LED positions -->
+  <circle cx="19.5" cy="17.5" r="6" fill="#222" />
+  <circle cx="42.5" cy="17.5" r="6" fill="#222" />
+  <circle cx="65.5" cy="17.5" r="6" fill="#222" />
+  <circle cx="88.5" cy="17.5" r="6" fill="#222" />
+  <circle cx="111.5" cy="17.5" r="6" fill="#222" />
+  <circle cx="134.5" cy="17.5" r="6" fill="#222" />
+  <circle cx="157.5" cy="17.5" r="6" fill="#222" />
+  <circle cx="180.5" cy="17.5" r="6" fill="#222" />
+
+  <!-- Data direction indicator -->
+  <text x="100" y="34" fill="#666" font-size="5" text-anchor="middle" font-family="sans-serif">DIN ▶ DOUT</text>
+</svg>

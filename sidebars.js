@@ -54,6 +54,7 @@ module.exports = {
       'parts/wokwi-lcd2004',
       'parts/wokwi-led',
       'parts/wokwi-led-bar-graph',
+      'parts/wokwi-led-strip',
       'parts/wokwi-logic-analyzer',
       'parts/wokwi-max7219-matrix',
       'parts/wokwi-membrane-keypad',
