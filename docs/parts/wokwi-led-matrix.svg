@@ -1,59 +1,521 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 198" width="192" height="198">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 193 203.246"
+   width="193"
+   height="203.246"
+   version="1.1"
+   id="svg68"
+   sodipodi:docname="wokwi-led-matrix.svg"
+   inkscape:version="1.3 (0e150ed, 2023-07-21)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs68">
+    <filter
+       id="glow"
+       x="-0.040079097"
+       y="-0.040660421"
+       width="1.0801582"
+       height="1.0813208">
+      <feGaussianBlur
+         in="SourceGraphic"
+         stdDeviation="3"
+         result="blur"
+         id="feGaussianBlur1" />
+      <feMerge
+         id="feMerge3">
+        <feMergeNode
+           in="blur"
+           id="feMergeNode1" />
+        <feMergeNode
+           in="blur"
+           id="feMergeNode2" />
+        <feMergeNode
+           in="SourceGraphic"
+           id="feMergeNode3" />
+      </feMerge>
+    </filter>
+  </defs>
+  <sodipodi:namedview
+     id="namedview68"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="1.6856283"
+     inkscape:cx="-69.113695"
+     inkscape:cy="58.435184"
+     inkscape:window-width="1920"
+     inkscape:window-height="1172"
+     inkscape:window-x="1352"
+     inkscape:window-y="28"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="g65" />
   <!-- LED Matrix: 8x8 default, dark PCB with bottom pin leads -->
-
   <!-- PCB board -->
-  <rect x="0" y="0" width="192" height="192" rx="3" fill="#1a1a1a" stroke="#555" stroke-width="1" />
-
+  <rect
+     x="0.5"
+     y="0.5"
+     width="192"
+     height="192"
+     rx="3"
+     fill="#1a1a1a"
+     stroke="#555555"
+     stroke-width="1"
+     id="rect1"
+     style="fill:#4d4d4d;fill-opacity:1"
+     ry="3" />
   <!-- Black canvas area (pixel display) -->
-  <rect x="4" y="4" width="184" height="184" fill="black" />
-
+  <rect
+     x="4.5"
+     y="4.5"
+     width="184"
+     height="184"
+     fill="#000000"
+     id="rect2" />
   <!-- Pixel circles to show LED positions (8x8 grid, 23px spacing) -->
-  <g fill="#222">
+  <g
+     fill="#222222"
+     id="g65"
+     transform="translate(0.5,0.5)"
+     filter="url(#glow)">
     <!-- Row 1 -->
-    <circle cx="15.5" cy="15.5" r="6" /><circle cx="38.5" cy="15.5" r="6" />
-    <circle cx="61.5" cy="15.5" r="6" /><circle cx="84.5" cy="15.5" r="6" />
-    <circle cx="107.5" cy="15.5" r="6" /><circle cx="130.5" cy="15.5" r="6" />
-    <circle cx="153.5" cy="15.5" r="6" /><circle cx="176.5" cy="15.5" r="6" />
     <!-- Row 2 -->
-    <circle cx="15.5" cy="38.5" r="6" /><circle cx="38.5" cy="38.5" r="6" />
-    <circle cx="61.5" cy="38.5" r="6" /><circle cx="84.5" cy="38.5" r="6" />
-    <circle cx="107.5" cy="38.5" r="6" /><circle cx="130.5" cy="38.5" r="6" />
-    <circle cx="153.5" cy="38.5" r="6" /><circle cx="176.5" cy="38.5" r="6" />
+    <circle
+       cx="15.5"
+       cy="38.5"
+       id="circle10"
+       style="fill:#f9fa13;fill-opacity:1"
+       r="9" />
+    <circle
+       cx="38.5"
+       cy="38.5"
+       r="9"
+       id="circle11"
+       style="fill:#faa313;fill-opacity:1" />
+    <circle
+       cx="61.5"
+       cy="38.5"
+       r="9"
+       id="circle12"
+       style="fill:#fa3e13;fill-opacity:1" />
+    <circle
+       cx="84.5"
+       cy="38.5"
+       r="9"
+       id="circle13"
+       style="fill:#fa1392;fill-opacity:1" />
+    <circle
+       cx="107.5"
+       cy="38.5"
+       r="9"
+       id="circle14"
+       style="fill:#da13fa;fill-opacity:1" />
+    <circle
+       cx="130.5"
+       cy="38.5"
+       r="9"
+       id="circle15"
+       style="fill:#135afa;fill-opacity:1" />
+    <circle
+       cx="153.5"
+       cy="38.5"
+       r="9"
+       id="circle16"
+       style="fill:#13f6fa;fill-opacity:1" />
+    <circle
+       cx="176.5"
+       cy="38.5"
+       r="9"
+       id="circle17"
+       style="fill:#08f256;fill-opacity:1" />
+    <circle
+       cx="14.855236"
+       cy="17.423622"
+       id="circle10-7"
+       style="fill:#f9fa13;fill-opacity:1"
+       r="9" />
+    <circle
+       cx="37.855236"
+       cy="17.423622"
+       r="9"
+       id="circle11-7"
+       style="fill:#faa313;fill-opacity:1" />
+    <circle
+       cx="60.855236"
+       cy="17.423622"
+       r="9"
+       id="circle12-9"
+       style="fill:#fa3e13;fill-opacity:1" />
+    <circle
+       cx="83.85524"
+       cy="17.423622"
+       r="9"
+       id="circle13-7"
+       style="fill:#fa1392;fill-opacity:1" />
+    <circle
+       cx="106.85524"
+       cy="17.423622"
+       r="9"
+       id="circle14-5"
+       style="fill:#da13fa;fill-opacity:1" />
+    <circle
+       cx="129.85524"
+       cy="17.423622"
+       r="9"
+       id="circle15-3"
+       style="fill:#135afa;fill-opacity:1" />
+    <circle
+       cx="152.85524"
+       cy="17.423622"
+       r="9"
+       id="circle16-9"
+       style="fill:#13f6fa;fill-opacity:1" />
+    <circle
+       cx="175.85524"
+       cy="17.423622"
+       r="9"
+       id="circle17-9"
+       style="fill:#08f256;fill-opacity:1" />
     <!-- Row 3 -->
-    <circle cx="15.5" cy="61.5" r="6" /><circle cx="38.5" cy="61.5" r="6" />
-    <circle cx="61.5" cy="61.5" r="6" /><circle cx="84.5" cy="61.5" r="6" />
-    <circle cx="107.5" cy="61.5" r="6" /><circle cx="130.5" cy="61.5" r="6" />
-    <circle cx="153.5" cy="61.5" r="6" /><circle cx="176.5" cy="61.5" r="6" />
+    <circle
+       cx="15.5"
+       cy="61.5"
+       r="9"
+       id="circle18"
+       style="fill:#f9fa13;fill-opacity:1" />
+    <circle
+       cx="38.5"
+       cy="61.5"
+       r="9"
+       id="circle19"
+       style="fill:#faa313;fill-opacity:1" />
+    <circle
+       cx="61.5"
+       cy="61.5"
+       r="9"
+       id="circle20"
+       style="fill:#fa3e13;fill-opacity:1" />
+    <circle
+       cx="84.5"
+       cy="61.5"
+       r="9"
+       id="circle21"
+       style="fill:#fa1392;fill-opacity:1" />
+    <circle
+       cx="107.5"
+       cy="61.5"
+       r="9"
+       id="circle22"
+       style="fill:#da13fa;fill-opacity:1" />
+    <circle
+       cx="130.5"
+       cy="61.5"
+       r="9"
+       id="circle23"
+       style="fill:#135afa;fill-opacity:1" />
+    <circle
+       cx="153.5"
+       cy="61.5"
+       r="9"
+       id="circle24"
+       style="fill:#13f6fa;fill-opacity:1" />
+    <circle
+       cx="176.5"
+       cy="61.5"
+       r="9"
+       id="circle25"
+       style="fill:#08f256;fill-opacity:1" />
     <!-- Row 4 -->
-    <circle cx="15.5" cy="84.5" r="6" /><circle cx="38.5" cy="84.5" r="6" />
-    <circle cx="61.5" cy="84.5" r="6" /><circle cx="84.5" cy="84.5" r="6" />
-    <circle cx="107.5" cy="84.5" r="6" /><circle cx="130.5" cy="84.5" r="6" />
-    <circle cx="153.5" cy="84.5" r="6" /><circle cx="176.5" cy="84.5" r="6" />
+    <circle
+       cx="15.5"
+       cy="84.5"
+       r="9"
+       id="circle26"
+       style="fill:#f9fa13;fill-opacity:1" />
+    <circle
+       cx="38.5"
+       cy="84.5"
+       r="9"
+       id="circle27"
+       style="fill:#faa313;fill-opacity:1" />
+    <circle
+       cx="61.5"
+       cy="84.5"
+       r="9"
+       id="circle28"
+       style="fill:#fa3e13;fill-opacity:1" />
+    <circle
+       cx="84.5"
+       cy="84.5"
+       r="9"
+       id="circle29"
+       style="fill:#fa1392;fill-opacity:1" />
+    <circle
+       cx="107.5"
+       cy="84.5"
+       r="9"
+       id="circle30"
+       style="fill:#da13fa;fill-opacity:1" />
+    <circle
+       cx="130.5"
+       cy="84.5"
+       r="9"
+       id="circle31"
+       style="fill:#135afa;fill-opacity:1" />
+    <circle
+       cx="153.5"
+       cy="84.5"
+       r="9"
+       id="circle32"
+       style="fill:#13f6fa;fill-opacity:1" />
+    <circle
+       cx="176.5"
+       cy="84.5"
+       r="9"
+       id="circle33"
+       style="fill:#08f256;fill-opacity:1" />
     <!-- Row 5 -->
-    <circle cx="15.5" cy="107.5" r="6" /><circle cx="38.5" cy="107.5" r="6" />
-    <circle cx="61.5" cy="107.5" r="6" /><circle cx="84.5" cy="107.5" r="6" />
-    <circle cx="107.5" cy="107.5" r="6" /><circle cx="130.5" cy="107.5" r="6" />
-    <circle cx="153.5" cy="107.5" r="6" /><circle cx="176.5" cy="107.5" r="6" />
+    <circle
+       cx="15.5"
+       cy="107.5"
+       r="9"
+       id="circle34"
+       style="fill:#f9fa13;fill-opacity:1" />
+    <circle
+       cx="38.5"
+       cy="107.5"
+       r="9"
+       id="circle35"
+       style="fill:#faa313;fill-opacity:1" />
+    <circle
+       cx="61.5"
+       cy="107.5"
+       r="9"
+       id="circle36"
+       style="fill:#fa3e13;fill-opacity:1" />
+    <circle
+       cx="84.5"
+       cy="107.5"
+       r="9"
+       id="circle37"
+       style="fill:#fa1392;fill-opacity:1" />
+    <circle
+       cx="107.5"
+       cy="107.5"
+       r="9"
+       id="circle38"
+       style="fill:#da13fa;fill-opacity:1" />
+    <circle
+       cx="130.5"
+       cy="107.5"
+       r="9"
+       id="circle39"
+       style="fill:#135afa;fill-opacity:1" />
+    <circle
+       cx="153.5"
+       cy="107.5"
+       r="9"
+       id="circle40"
+       style="fill:#13f6fa;fill-opacity:1" />
+    <circle
+       cx="176.5"
+       cy="107.5"
+       r="9"
+       id="circle41"
+       style="fill:#08f256;fill-opacity:1" />
     <!-- Row 6 -->
-    <circle cx="15.5" cy="130.5" r="6" /><circle cx="38.5" cy="130.5" r="6" />
-    <circle cx="61.5" cy="130.5" r="6" /><circle cx="84.5" cy="130.5" r="6" />
-    <circle cx="107.5" cy="130.5" r="6" /><circle cx="130.5" cy="130.5" r="6" />
-    <circle cx="153.5" cy="130.5" r="6" /><circle cx="176.5" cy="130.5" r="6" />
+    <circle
+       cx="15.5"
+       cy="130.5"
+       r="9"
+       id="circle42"
+       style="fill:#f9fa13;fill-opacity:1" />
+    <circle
+       cx="38.5"
+       cy="130.5"
+       r="9"
+       id="circle43"
+       style="fill:#faa313;fill-opacity:1" />
+    <circle
+       cx="61.5"
+       cy="130.5"
+       r="9"
+       id="circle44"
+       style="fill:#fa3e13;fill-opacity:1" />
+    <circle
+       cx="84.5"
+       cy="130.5"
+       r="9"
+       id="circle45"
+       style="fill:#fa1392;fill-opacity:1" />
+    <circle
+       cx="107.5"
+       cy="130.5"
+       r="9"
+       id="circle46"
+       style="fill:#da13fa;fill-opacity:1" />
+    <circle
+       cx="130.5"
+       cy="130.5"
+       r="9"
+       id="circle47"
+       style="fill:#135afa;fill-opacity:1" />
+    <circle
+       cx="153.5"
+       cy="130.5"
+       r="9"
+       id="circle48"
+       style="fill:#13f6fa;fill-opacity:1" />
+    <circle
+       cx="176.5"
+       cy="130.5"
+       r="9"
+       id="circle49"
+       style="fill:#08f256;fill-opacity:1" />
     <!-- Row 7 -->
-    <circle cx="15.5" cy="153.5" r="6" /><circle cx="38.5" cy="153.5" r="6" />
-    <circle cx="61.5" cy="153.5" r="6" /><circle cx="84.5" cy="153.5" r="6" />
-    <circle cx="107.5" cy="153.5" r="6" /><circle cx="130.5" cy="153.5" r="6" />
-    <circle cx="153.5" cy="153.5" r="6" /><circle cx="176.5" cy="153.5" r="6" />
+    <circle
+       cx="15.5"
+       cy="153.5"
+       r="9"
+       id="circle50"
+       style="fill:#f9fa13;fill-opacity:1" />
+    <circle
+       cx="38.5"
+       cy="153.5"
+       r="9"
+       id="circle51"
+       style="fill:#faa313;fill-opacity:1" />
+    <circle
+       cx="61.5"
+       cy="153.5"
+       r="9"
+       id="circle52"
+       style="fill:#fa3e13;fill-opacity:1" />
+    <circle
+       cx="84.5"
+       cy="153.5"
+       r="9"
+       id="circle53"
+       style="fill:#fa1392;fill-opacity:1" />
+    <circle
+       cx="107.5"
+       cy="153.5"
+       r="9"
+       id="circle54"
+       style="fill:#da13fa;fill-opacity:1" />
+    <circle
+       cx="130.5"
+       cy="153.5"
+       r="9"
+       id="circle55"
+       style="fill:#135afa;fill-opacity:1" />
+    <circle
+       cx="153.5"
+       cy="153.5"
+       r="9"
+       id="circle56"
+       style="fill:#13f6fa;fill-opacity:1" />
+    <circle
+       cx="176.5"
+       cy="153.5"
+       r="9"
+       id="circle57"
+       style="fill:#08f256;fill-opacity:1" />
     <!-- Row 8 -->
-    <circle cx="15.5" cy="176.5" r="6" /><circle cx="38.5" cy="176.5" r="6" />
-    <circle cx="61.5" cy="176.5" r="6" /><circle cx="84.5" cy="176.5" r="6" />
-    <circle cx="107.5" cy="176.5" r="6" /><circle cx="130.5" cy="176.5" r="6" />
-    <circle cx="153.5" cy="176.5" r="6" /><circle cx="176.5" cy="176.5" r="6" />
+    <circle
+       cx="15.5"
+       cy="176.5"
+       r="9"
+       id="circle58"
+       style="fill:#f9fa13;fill-opacity:1" />
+    <circle
+       cx="38.5"
+       cy="176.5"
+       r="9"
+       id="circle59"
+       style="fill:#faa313;fill-opacity:1" />
+    <circle
+       cx="61.5"
+       cy="176.5"
+       r="9"
+       id="circle60"
+       style="fill:#fa3e13;fill-opacity:1" />
+    <circle
+       cx="84.5"
+       cy="176.5"
+       r="9"
+       id="circle61"
+       style="fill:#fa1392;fill-opacity:1" />
+    <circle
+       cx="107.5"
+       cy="176.5"
+       r="9"
+       id="circle62"
+       style="fill:#da13fa;fill-opacity:1" />
+    <circle
+       cx="130.5"
+       cy="176.5"
+       r="9"
+       id="circle63"
+       style="fill:#135afa;fill-opacity:1" />
+    <circle
+       cx="153.5"
+       cy="176.5"
+       r="9"
+       id="circle64"
+       style="fill:#13f6fa;fill-opacity:1" />
+    <circle
+       cx="176.5"
+       cy="176.5"
+       r="9"
+       id="circle65"
+       style="fill:#08f256;fill-opacity:1" />
   </g>
-
   <!-- Bottom pin leads (DIN, VDD, VSS, DOUT) -->
-  <rect x="80" y="192" width="2" height="6" rx="0.5" fill="#ccc" />
-  <rect x="90" y="192" width="2" height="6" rx="0.5" fill="#ccc" />
-  <rect x="100" y="192" width="2" height="6" rx="0.5" fill="#ccc" />
-  <rect x="110" y="192" width="2" height="6" rx="0.5" fill="#ccc" />
+  <rect
+     x="78.5"
+     y="192.5"
+     width="2.2224691"
+     height="10.746005"
+     rx="0.5"
+     fill="#cccccc"
+     id="rect65"
+     style="stroke-width:1;fill:#8a8a8a;fill-opacity:1"
+     ry="0.5" />
+  <rect
+     x="89.612343"
+     y="192.5"
+     width="2.2224691"
+     height="10.746005"
+     rx="0.5"
+     fill="#cccccc"
+     id="rect66"
+     style="stroke-width:1;fill:#8a8a8a;fill-opacity:1"
+     ry="0.5" />
+  <rect
+     x="100.72469"
+     y="192.5"
+     width="2.2224691"
+     height="10.746005"
+     rx="0.5"
+     fill="#cccccc"
+     id="rect67"
+     style="stroke-width:1;fill:#8a8a8a;fill-opacity:1"
+     ry="0.5" />
+  <rect
+     x="111.83704"
+     y="192.5"
+     width="2.2224691"
+     height="10.746005"
+     rx="0.5"
+     fill="#cccccc"
+     id="rect68"
+     style="stroke-width:1;fill:#8a8a8a;fill-opacity:1"
+     ry="0.5" />
 </svg>
