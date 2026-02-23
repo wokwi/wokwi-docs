@@ -85,3 +85,4 @@ void loop() {
 
 - [SD library example](https://wokwi.com/projects/310542489623724609)
 - [SdFat library example](https://wokwi.com/projects/310692660849410626)
+- [Display a custom bitmap from microSD card on an ILI9341 LCD](https://wokwi.com/projects/319810932695892564)
