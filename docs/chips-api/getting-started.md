@@ -54,6 +54,12 @@ In addition, you can use the [Wokwi Logic Analyzer](../guides/logic-analyzer) to
 Make sure to include a newline ("\n") at the end of your `printf()` messages. The simulator shows the messages only when it reaches a newline character.
 :::
 
+## Packaged custom chips, at Github repositories
+
+Once you consider your custom chip stable enough, you can package it and publish it as a separate Github repository, with releases. WokWi is able to fetch the releases from Github and include them into other designs. Each release must include a `chip.zip` file containing exactly one `chip.json` and one `chip.wasm` file, describing the chip. For more information, see [Packaged Chips](./packaged-chip) or see the [Inverter chip example](https://github.com/wokwi/inverter-chip/releases) in Github.
+
+To use such a packaged custom chip in your design, use the [`"dependencies"` tag in your `diagram.json`](/diagram-format#connections) file.
+
 ## Chips API reference 📖
 
 - [GPIO pins API](gpio)
