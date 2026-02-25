@@ -102,6 +102,7 @@ module.exports = {
       'vscode/diagram-editor',
       'vscode/debugging',
       'vscode/offline-mode',
+      'vscode/tips-and-tricks',
       'vscode/migrating',
       'vscode/vscode-micropython',
     ],
