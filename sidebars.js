@@ -82,6 +82,7 @@ module.exports = {
       'parts/wokwi-text',
       'parts/wokwi-tm1637-7segment',
       'parts/wokwi-tv',
+      'parts/wokwi-wifi-ap',
     ],
     'Chips API': [
       'chips-api/getting-started',

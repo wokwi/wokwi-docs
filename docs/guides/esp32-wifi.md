@@ -101,6 +101,18 @@ fn main() -> Result<(), EspError> {
 
 Note: We need to specify the auth_method to `None` in the ClientConfiguration.
 
+## Custom WiFi Access Points
+
+With a [Wokwi Hobby+ or Pro plan](https://wokwi.com/pricing?ref=docs_custom_wifi), you can add custom WiFi access points to your diagram. This lets you:
+
+- Configure custom SSID and WPA2-PSK passwords
+- Add multiple networks for testing WiFi scanning and network selection
+- Set custom WiFi channels and BSSID values
+
+To add a custom access point, use the **Add Part** dialog and search for "WiFi Access Point". You can configure the SSID, password, channel, and internet access from the part editor.
+
+When your diagram contains custom WiFi access point parts, the default **Wokwi-GUEST** network is not created. For full details and attribute reference, see the [wokwi-wifi-ap part documentation](../parts/wokwi-wifi-ap).
+
 ## Internet Access
 
 Wokwi uses a special gateway to connect your simulated ESP32 to the internet. This gateway is required since web browsers do not allow direct internet access. There are two ways you can use the Wokwi IoT Gateway: the Public Gateway, and the Private Gateway.
