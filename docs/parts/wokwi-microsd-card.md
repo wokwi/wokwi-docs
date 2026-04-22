@@ -23,7 +23,7 @@ microSD card with SPI interface
 
 ## Filesystem
 
-When you start the simulation, Wokwi creates a FAT16 file system and attaches it to the microSD card. By default, Wokwi copies all your project files into the microSD card.
+When you start the simulation, Wokwi creates a FAT16 file system and attaches it to the microSD card. The simulated card holds up to 8 MB. By default, Wokwi copies all your project files into the microSD card.
 
 ### Uploading binary files
 
