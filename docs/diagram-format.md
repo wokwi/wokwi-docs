@@ -83,7 +83,9 @@ If your simulation project contains code, the diagram should include a microcont
 - `wokwi-esp32-devkit-v1` - ESP32 (unofficial devkit)
 - `board-esp32-c3-devkitm-1` - ESP32-C3
 - `board-esp32-c3-rust-1` - ESP32-C3
+- `board-esp32-c5-devkitc-1` - ESP32-C5
 - `board-esp32-c6-devkitc-1` - ESP32-C6
+- `board-esp32-c61-devkitc-1` - ESP32-C61
 - `board-esp32-h2-devkitm-1` - ESP32-H2
 - `board-esp32-s2-devkitm-1` - ESP32-S2
 - [`board-franzininho-wifi`](parts/board-franzininho-wifi) - ESP32-S2
