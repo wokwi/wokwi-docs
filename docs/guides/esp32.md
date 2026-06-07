@@ -98,38 +98,40 @@ Follow [this guide](https://sming.readthedocs.io/en/latest/experimental/wokwi.ht
 
 ## Simulation Features
 
-| Peripheral         | ESP32 | S2 | S3 | C3 | C6 | H2 | Notes                                                            |
-|--------------------|-------|----|----|----|----|----|------------------------------------------------------------------|
-| Processor core(s)  | ✔️    | ✔️ | ✔️ | ✔️ | ✔️ | ✔️ |                                                                  |
-| GPIO               | ✔️    | ✔️ | ✔️ | ✔️ | ✔️ | ✔️ | Interrupts supported                                             |
-| IOMUX              | ✔️    | ✔️ | ✔️ | ✔️ | ✔️ | ✔️ |                                                                  |
-| PSRAM              | ✔️    | ✔️ | ✔️ | —  | —  | —  | 4MB of external SRAM \*                                          |
-| UART               | ✔️    | ✔️ | ✔️ | ✔️ | ✔️ | ✔️ |                                                                  |
-| USB                | —     | ✔️ | ✔️ | —  | —  | —  | Support for UART over USB (CDC)                                  |
-| USB Serial + JTAG  | —     | —  | ✔️ | ✔️ | ✔️ | ✔️ | Serial supported, JTAG not.                                      |
-| I2C                | ✔️    | ✔️ | ✔️ | ✔️ | ✔️ | ✔️ | Master only. 10-bit addressing not supported.                    |
-| I2S                | 🟡    | 🟡 | ❌  | ❌  | ❌  | ❌  | [Implementation in progress](https://github.com/wokwi/wokwi-features/issues/213) |
-| SPI                | ✔️    | ✔️ | ✔️ | ✔️ | ✔️ | ✔️ |                                                                  |
-| TWAI               | 🟡    | 🟡 | 🟡 | 🟡 | 🟡 | ✔️ |                                                                  |
-| RMT                | 🟡    | 🟡 | 🟡 | 🟡 | 🟡 | ✔️ | Transmit-only, use to control WS2812 LED strips                  |
-| LEDC PWM           | ✔️    | ✔️ | ✔️ | ✔️ | ✔️ | ✔️ | Used by analogWrite(), Servo, Buzzer, etc.                       |
-| MCPWM              | ❌     | —  | ❌  | —  | ❌  | ❌  |                                                                  |
-| PCNT               | ✔️    | ✔️ | ✔️ | —  | ✔️ | ✔️ |                                                                  |
-| DMA                | ✔️    | ✔️ | ✔️ | ✔️ | ✔️ | ✔️ |                                                                  |
-| WiFi               | ✔️    | ✔️ | ✔️ | ✔️ | ✔️ | —  | See the [ESP32 WiFi Guide](./esp32-wifi)                         |
-| Bluetooth          | ❌     | —  | ❌  | ❌  | ❌  | ❌  |                                                                  |
-| Timers             | ✔️    | ✔️ | ✔️ | ✔️ | ✔️ | ✔️ |                                                                  |
-| Watchdog           | ✔️    | ✔️ | ✔️ | ✔️ | ✔️ | ✔️ |                                                                  |
-| RTC                | 🟡    | 🟡 | 🟡 | 🟡 | 🟡 | 🟡 | Only RTC Pull-up / Pull-down resistors                           |
-| ADC                | ✔️    | ✔️ | ✔️ | ✔️ | ✔️ | ✔️ |                                                                  |
-| RNG                | ✔️    | ✔️ | ✔️ | ✔️ | ✔️ | ✔️ | Random Number Generator                                          |
-| AES Accelerator    | ✔️    | ✔️ | ✔️ | ✔️ | ✔️ | ✔️ |                                                                  |
-| SHA Accelerator    | ✔️    | ✔️ | ✔️ | ✔️ | ✔️ | ✔️ |                                                                  |
-| RSA Accelerator    | ✔️    | ✔️ | ✔️ | ✔️ | ✔️ | ✔️ |                                                                  |
-| ECC Accelerator    | —     | —  | —  | —  | ✔️ | ✔️ |                                                                  |
-| Hall Effect Sensor | ❌     | —  | ❌  | —  | —  | —  |                                                                  |
-| ULP Processor      | ❌     | ❌  | ❌  | —  | ✔️ | —  |                                                                  |
-| GDB Debugging      | ✔️    | ✔️ | ✔️ | ✔️ | ✔️ | ✔️ | Works with [Wokwi for VS Code](../vscode/debugging)              |
+The table below covers the most popular ESP32 chips. For the current state of the other chips Wokwi supports (e.g. ESP32-C61, ESP32-H2, ESP32-S2, ESP32-S31), see the [esp32-test-binaries test results](https://github.com/wokwi/esp32-test-binaries/actions/workflows/test.yml).
+
+| Peripheral         | ESP32 | S3 | C3 | C5 | C6 | P4 | Notes                                                              |
+|--------------------|-------|----|----|----|----|----|--------------------------------------------------------------------|
+| Processor core(s)  | ✔️    | ✔️ | ✔️ | ✔️ | ✔️ | ✔️ |                                                                    |
+| GPIO               | ✔️    | ✔️ | ✔️ | ✔️ | ✔️ | ✔️ | Interrupts supported                                               |
+| IOMUX              | ✔️    | ✔️ | ✔️ | ✔️ | ✔️ | ✔️ |                                                                    |
+| PSRAM              | ✔️    | ✔️ | —  | ✔️ | —  | ✔️ | External SRAM \*                                                   |
+| UART               | ✔️    | ✔️ | ✔️ | ✔️ | ✔️ | ✔️ |                                                                    |
+| USB                | —     | ✔️ | —  | —  | —  | ✔️ | Support for UART over USB (CDC)                                    |
+| USB Serial + JTAG  | —     | ✔️ | ✔️ | ✔️ | ✔️ | ✔️ | Serial supported, JTAG not.                                        |
+| I2C                | ✔️    | ✔️ | ✔️ | ✔️ | ✔️ | ✔️ | Master only. 10-bit addressing not supported.                      |
+| I2S                | 🟡    | ❌  | ❌  | ❌  | ❌  | ❌  | [Implementation in progress](https://github.com/wokwi/wokwi-features/issues/213) |
+| SPI                | ✔️    | ✔️ | ✔️ | ✔️ | ✔️ | ✔️ |                                                                    |
+| TWAI               | 🟡    | 🟡 | 🟡 | 🟡 | 🟡 | 🟡 |                                                                    |
+| RMT                | 🟡    | 🟡 | 🟡 | 🟡 | 🟡 | 🟡 | Transmit-only, use to control WS2812 LED strips                    |
+| LEDC PWM           | ✔️    | ✔️ | ✔️ | ✔️ | ✔️ | ✔️ | Used by analogWrite(), Servo, Buzzer, etc.                         |
+| MCPWM              | ❌     | ❌  | —  | ❌  | ❌  | ❌  |                                                                    |
+| PCNT               | ✔️    | ✔️ | —  | ✔️ | ✔️ | ✔️ |                                                                    |
+| DMA                | ✔️    | ✔️ | ✔️ | ✔️ | ✔️ | ✔️ |                                                                    |
+| WiFi               | ✔️    | ✔️ | ✔️ | ✔️ | ✔️ | ✔️ | See the [ESP32 WiFi Guide](./esp32-wifi). ESP32-P4 uses ESP-Hosted. |
+| Bluetooth          | ❌     | ❌  | ❌  | ❌  | ❌  | —  |                                                                    |
+| Timers             | ✔️    | ✔️ | ✔️ | ✔️ | ✔️ | ✔️ |                                                                    |
+| Watchdog           | ✔️    | ✔️ | ✔️ | ✔️ | ✔️ | ✔️ |                                                                    |
+| RTC                | 🟡    | 🟡 | 🟡 | 🟡 | 🟡 | 🟡 | Only RTC Pull-up / Pull-down resistors                             |
+| ADC                | ✔️    | ✔️ | ✔️ | ✔️ | ✔️ | ✔️ |                                                                    |
+| RNG                | ✔️    | ✔️ | ✔️ | ✔️ | ✔️ | ✔️ | Random Number Generator                                            |
+| AES Accelerator    | ✔️    | ✔️ | ✔️ | ✔️ | ✔️ | ✔️ |                                                                    |
+| SHA Accelerator    | ✔️    | ✔️ | ✔️ | ✔️ | ✔️ | ✔️ |                                                                    |
+| RSA Accelerator    | ✔️    | ✔️ | ✔️ | ✔️ | ✔️ | ✔️ |                                                                    |
+| ECC Accelerator    | —     | —  | —  | ✔️ | ✔️ | ✔️ |                                                                    |
+| Hall Effect Sensor | ❌     | —  | —  | —  | —  | —  |                                                                    |
+| ULP Processor      | ❌     | ❌  | —  | —  | ✔️ | ❌  |                                                                    |
+| GDB Debugging      | ✔️    | ✔️ | ✔️ | ✔️ | ✔️ | ✔️ | Works with [Wokwi for VS Code](../vscode/debugging)                |
 
 Legend:  
 ✔️ - Simulated  
