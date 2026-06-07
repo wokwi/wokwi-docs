@@ -88,6 +88,7 @@ If your simulation project contains code, the diagram should include a microcont
 - `board-esp32-s2-devkitm-1` - ESP32-S2
 - [`board-franzininho-wifi`](parts/board-franzininho-wifi) - ESP32-S2
 - `board-esp32-s3-devkitc-1` - ESP32-S3
+- `board-esp32-s31-function-coreboard-1` - ESP32-S31
 - `board-esp32-p4-preview` - ESP32-P4
 - [`board-st-nucleo-c031c6`](parts/board-st-nucleo-c031c6) - STM32 Nucleo-64 with STM32C031C6 MCU
 - [`board-st-nucleo-l031k6`](parts/board-st-nucleo-l031k6) - STM32 Nucleo-32 with STM32L031K6 MCU

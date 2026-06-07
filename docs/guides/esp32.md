@@ -2,10 +2,10 @@
 title: ESP32 Simulation
 sidebar_label: ESP32 Simulator
 description: Simulate espressif ESP32 boards in Wokwi
-keywords: [ESP32, ESP32 Simulation, ESP32, ESP32-C3, ESP32-S2, ESP32-S3, ESP32-C5, ESP32-C6, ESP32-H2, MicroPython, Arduino, Rust, IoT, VSCode, ESP-IDF]
+keywords: [ESP32, ESP32 Simulation, ESP32, ESP32-C3, ESP32-S2, ESP32-S3, ESP32-C5, ESP32-C6, ESP32-H2, ESP32-S31, MicroPython, Arduino, Rust, IoT, VSCode, ESP-IDF]
 ---
 
-The ESP32 is a popular WiFi and Bluetooth-enabled microcontroller, widely used for IoT Projects. Wokwi simulates the ESP32, ESP32-C3, ESP32-S2, ESP32-S3, ESP32-C5 (alpha), ESP32-C6, ESP32-H2, and ESP32-P4 (beta).
+The ESP32 is a popular WiFi and Bluetooth-enabled microcontroller, widely used for IoT Projects. Wokwi simulates the ESP32, ESP32-C3, ESP32-S2, ESP32-S3, ESP32-C5 (alpha), ESP32-C6, ESP32-H2, ESP32-S31 (alpha), and ESP32-P4 (beta).
 
 <wokwi-esp32-devkit-v1></wokwi-esp32-devkit-v1>
 
@@ -25,6 +25,7 @@ The ESP32 is a popular WiFi and Bluetooth-enabled microcontroller, widely used f
 | ESP32-C6-DevKitC-1                                             | ESP32-C6 | Entry-level ESP32-C6 development board                                               |
 | ESP32-H2-DevKitM-1                                             | ESP32-H2 | Entry-level ESP32-H2 development board                                               |
 | ESP32-P4-Preview-DevKitC-1                                     | ESP32-P4 | ESP32-P4 pre-release virtual evaluation board (beta)                                 |
+| ESP32-S31-Function-CoreBoard-1                                 | ESP32-S31 | ESP32-S31 development board                                                         |
 | XIAO ESP32-C3                                                  | ESP32-C3 | ESP32-C3 board by Seeed Studio                                                       |
 | XIAO ESP32-C6                                                  | ESP32-C6 | ESP32-C6 board by Seeed Studio                                                       |
 | XIAO ESP32-S3                                                  | ESP32-S3 | ESP32-S3 board by Seeed Studio                                                       |
