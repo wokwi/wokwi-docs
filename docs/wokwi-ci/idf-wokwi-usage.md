@@ -24,6 +24,10 @@ pip install idf-wokwi
 
 You can now run a simulation by executing `idf.py wokwi`!
 
+:::info
+Module extensions to ``idf.py`` are only supported on ESP-IDF versions 6.0 or greater.
+:::
+
 ## CLI Options
 
 Pass any selection of the following commands to `idf.py wokwi` to customize its behavior during runtime.
