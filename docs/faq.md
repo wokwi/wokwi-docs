@@ -39,3 +39,13 @@ Wokwi compiles your code into a binary firmware, and then executes the binary fi
 ## How can I update the payment method for my subscription?
 
 Go to [https://wokwi.com/dashboard/subscriptions](https://wokwi.com/dashboard/subscriptions) and click on "Change" next to the payment method.
+
+## How do I use multiple microcontrollers in a single project?
+
+Unfortunately this is currently unsupported.
+
+Depending on your goals, consider using multiple simulations running in separate browser/VS Code instances paired with
+the [private IoT gateway](/docs/guides/esp32-wifi.md#the-private-gateway). This will allow the microcontrollers to
+connect to your local network and communicate that way.
+
+Connecting them together with wires is not possible at this time.
