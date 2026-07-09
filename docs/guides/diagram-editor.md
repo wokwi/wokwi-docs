@@ -20,7 +20,7 @@ Not all parts are currently available through the menu. For example, MCU boards 
 
 ### Moving a part
 
-Move a part by clicking on it and then dragging it with your mouse.
+Move a part by clicking on it and then dragging it with your mouse. You can also use the arrow keys <kbd>←</kbd> <kbd>↑</kbd> <kbd>↓</kbd> <kbd>→</kbd>. Combine the arrow keys with <kbd>SHIFT</kbd> to move the component in larger steps.
 
 ### Rotating a part
 
