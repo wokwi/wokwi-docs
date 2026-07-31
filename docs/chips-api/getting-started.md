@@ -97,3 +97,4 @@ Make sure to include a newline ("\n") at the end of your `printf()` messages. Th
 
 - [CD4051B Multiplexer Example](https://wokwi.com/projects/343522915673702994) - Analog Multiplexer by Chris Schmidt
 - [PCA9685 Chip](https://wokwi.com/projects/348856116302578258) - 16-channel PWM driver over I2C by Bonny Rais
+- [Live 8-channel Logic Analyzer with Protocol Decoding](https://wokwi.com/projects/445513049908390913) - Live logic analyzer with UART, I²C and SPI decoding by Gil Tal ([GitHub](https://github.com/giltal/Wokwi-graphical-logic-analyzer))
