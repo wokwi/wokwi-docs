@@ -22,6 +22,12 @@ For a complete list of options, check out the [action's README](https://github.c
 
 You also need to set up the `WOKWI_CLI_TOKEN` secret in your repository settings. You can create an API token on the [Wokwi CI Dashboard](https://wokwi.com/dashboard/ci).
 
+:::tip
+A valid Wokwi CLI token starts with `wok_` and is exactly 44 characters long (including the `wok_` prefix). If you are
+experiencing authorization issues, double check that your token is active, correctly formatted and doesn't contain any
+spaces or fancy characters.
+:::
+
 ## Examples
 
 The following projects are set up to run on Wokwi CI. You can use them as a reference for your own projects. Check out the `.github/workflows` directory for the complete GitHub Action configuration in each example.
