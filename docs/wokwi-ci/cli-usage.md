@@ -23,6 +23,12 @@ wokwi-cli <your-project-directory>
 
 The CLI will start the simulation and display the serial output. It will automatically exit after 30 seconds.
 
+:::tip
+A valid Wokwi CLI token starts with `wok_` and is exactly 44 characters long (including the `wok_` prefix). If you are
+experiencing authorization issues, double check that your token is active, correctly formatted and doesn't contain any
+spaces or fancy characters.
+:::
+
 ## CLI Options
 
 You can use the following options to customize the CLI behavior:
