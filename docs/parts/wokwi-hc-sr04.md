@@ -20,7 +20,7 @@ HC-SR04 Ultrasonic Distance Sensor
 
 | Name     | Description                            | Default value |
 | -------- | -------------------------------------- | ------------- |
-| distance | Initial distance value, in centimeters | "400"         |
+| distance | Initial distance value, in centimeters | "20"         |
 
 ## Operation
 
