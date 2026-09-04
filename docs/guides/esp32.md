@@ -122,6 +122,7 @@ The table below covers the most popular ESP32 chips. For the current state of th
 | Bluetooth          | ❌     | ❌  | ❌  | ❌  | ❌  | —  |                                                                    |
 | Timers             | ✔️    | ✔️ | ✔️ | ✔️ | ✔️ | ✔️ |                                                                    |
 | Watchdog           | ✔️    | ✔️ | ✔️ | ✔️ | ✔️ | ✔️ |                                                                    |
+| Stack Guard        | —     | —  | ✔️ | ✔️ | ✔️ | ✔️ | Traps stack overflow via Debug Assist. RISC-V chips only.           |
 | RTC                | 🟡    | 🟡 | 🟡 | 🟡 | 🟡 | 🟡 | Only RTC Pull-up / Pull-down resistors                             |
 | ADC                | ✔️    | ✔️ | ✔️ | ✔️ | ✔️ | ✔️ |                                                                    |
 | RNG                | ✔️    | ✔️ | ✔️ | ✔️ | ✔️ | ✔️ | Random Number Generator                                            |
