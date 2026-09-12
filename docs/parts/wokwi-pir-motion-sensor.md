@@ -19,9 +19,9 @@ Passive Infrared (PIR) motion sensor.
 
 | Name        | Description                                                                 | Default value |
 | ----------- | --------------------------------------------------------------------------- | ------------- |
-| delayTime   | The number of seconds OUT pin will stay high                                | "5"           |
-| inhibitTime | The number of seconds the sensor will ignore motion when OUT returns to low | "1.2"         |
-| retrigger   | Set to "0" to disable retriggering                                          | ""            |
+| delayTime   | The number of seconds OUT pin will stay high                                | "3"           |
+| inhibitTime | The number of seconds the sensor will ignore motion when OUT returns to low | "1"         |
+| retrigger   | Set to "0" to disable retriggering                                          | "1"            |
 
 ## Using the sensor
 
