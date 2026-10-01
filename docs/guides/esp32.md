@@ -67,6 +67,8 @@ application. You can use the [esptool merge_bin command](https://docs.espressif.
 For ESP-IDF projects, you can also build a single UF2 file using the command: `idf.py uf2`. The file will be located in `build/uf2.bin`, and can be uploaded to the simulator.
 :::
 
+Using [Wokwi for VS Code](../vscode/getting-started) or the [Wokwi CLI](../wokwi-ci/getting-started)? Point `wokwi.toml` at your build output instead: see [PlatformIO projects](../vscode/platformio) and [ESP-IDF projects](../vscode/esp-idf).
+
 ## Simulator Examples
 
 ### Arduino Examples
@@ -160,6 +162,8 @@ You can customize the size of flash and PSRAM by adding the following attributes
 
 - [ESP32 Custom flash size example](https://wokwi.com/projects/349656534768157267)
 
+In Wokwi for VS Code and the Wokwi CLI, add these attributes to the board part in your `diagram.json` file (see [PlatformIO projects](../vscode/platformio#flash-size-and-psram) for an example). The flash size must be large enough for the partition table your firmware was built with, otherwise filesystems such as LittleFS/SPIFFS will fail to mount.
+
 ### USB CDC (Serial over USB) support
 
 Some chips have a built-in USB CDC (Serial over USB) + JTAG peripheral. These chips include the ESP32-S3, ESP32-C3/C5/C6/C61, and ESP32-H2. You can configure USB CDC support in Wokwi by adding the following attribute to the chip:
@@ -177,6 +181,8 @@ Note that you also need to remove any connections to the `$serialMonitor` pins f
 You can specifiy a custom partititon table by adding a "partitions.csv" file to your project. Check out the [ESP32 Partition Table Guide](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-guides/partition-tables.html) for the exact format of this file.
 
 - [ESP32 Custom partition table code example](https://wokwi.com/projects/337425600260080210)
+
+The `partitions.csv` file is only used by the simulator on Wokwi.com. In Wokwi for VS Code and the Wokwi CLI, the partition table comes from the firmware itself: load a full image that includes the partition table (see [PlatformIO projects](../vscode/platformio) / [ESP-IDF projects](../vscode/esp-idf)). An application-only image runs with Wokwi's default partition table.
 
 ### Custom firmware offset
 

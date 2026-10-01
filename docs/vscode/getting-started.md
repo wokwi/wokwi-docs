@@ -26,7 +26,11 @@ The browser will ask for a confirmation to send the license to VS Code. Confirm 
 
 ## Example Projects
 
-To configure Wokwi for your own project, see the [Project Configuration](./project-config) page.
+To configure Wokwi for your own project, follow the guide for your toolchain:
+
+- [PlatformIO projects](./platformio) (Arduino or ESP-IDF framework)
+- [ESP-IDF projects](./esp-idf) (`idf.py`)
+- Anything else: the [Project Configuration](./project-config) reference explains `wokwi.toml` and `diagram.json`.
 
 If you just want to get started quickly and play around with Wokwi for VS Code, here are some example projects, preconfigured with [diagram.json](../diagram-format) and [wokwi.toml](./project-config) files.
 

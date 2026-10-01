@@ -15,6 +15,8 @@ wokwi-cli init
 
 This command will ask you a few questions and will automatically generate [wokwi.toml](../vscode/project-config) and [diagram.json](../diagram-format) files for your project.
 
+The command detects [PlatformIO](../vscode/platformio), [ESP-IDF](../vscode/esp-idf) and Pico SDK projects and suggests the matching firmware paths. For ESP-IDF projects built with `idf.py`, you can skip `init` altogether: when you run `wokwi-cli` in a project that has a `build/flasher_args.json`, it creates `wokwi.toml` and `diagram.json` for the project's target chip automatically.
+
 To run the simulation, use the following command:
 
 ```bash

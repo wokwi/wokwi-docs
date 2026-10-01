@@ -100,6 +100,8 @@ module.exports = {
     'VS Code Extension': [
       'vscode/getting-started',
       'vscode/project-config',
+      'vscode/platformio',
+      'vscode/esp-idf',
       'vscode/diagram-editor',
       'vscode/debugging',
       'vscode/offline-mode',
