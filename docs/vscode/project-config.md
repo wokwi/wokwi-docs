@@ -89,7 +89,7 @@ writeback = true       # copy the card contents back to the folder/image when th
 
 - Use either `folder` or `image`, not both. A folder is formatted as FAT16 with the files copied in; an image is served block for block, so it may contain any filesystem your firmware understands.
 - `size` accepts `K`, `M` and `G` suffixes or a number of bytes. An image smaller than `size` is padded with zeros.
-- `writeback` mirrors the card into the source when the simulation stops or restarts: files the firmware created or changed are written, and files it deleted are removed from the folder. Nothing outside the folder is touched. It is off by default, so your assets are never modified unless you ask for it. Add the folder to `.gitignore` if you don't want the firmware's output in version control.
+- `writeback` mirrors the card into the source when the simulation stops or restarts: files the firmware created or changed are written, and files it deleted are removed from the folder. Nothing outside the folder is touched. A restarted simulation continues with the persisted contents, like a real card that stays in its slot across a reset. It is off by default, so your assets are never modified unless you ask for it. Add the folder to `.gitignore` if you don't want the firmware's output in version control.
 - The folder is read when the simulation starts. Edit or add files, then restart the simulation to pick them up.
 - If your diagram has more than one microSD card, add one `[[sdcard]]` section per card with `part = '<part id>'` (the part `id` from diagram.json).
 
