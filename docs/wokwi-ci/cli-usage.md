@@ -53,11 +53,26 @@ You can use the following options to customize the CLI behavior:
 - `--screenshot-file <string>` - File name to save the screenshot to (default: screenshot.png)
 - `--vcd-file <path>` - Export [Logic Analyzer](../parts/wokwi-logic-analyzer) data to a VCD file
 
+### SD card
+
+See [SD card contents](../vscode/project-config#sd-card-contents) for the `[[sdcard]]` configuration in wokwi.toml. These flags override it (flags > wokwi.toml > `./sdcard` directory):
+
+- `--sdcard <path>` - Directory (copied to the card) or raw disk image file to use as the [microSD card](../parts/wokwi-microsd-card). Use `<part>=<path>` to target a specific card when the diagram has several; repeat the flag for multiple cards.
+- `--sdcard-size <size>` - Card capacity, e.g. `32M` (default: 8M, up to 64M on the CI server)
+- `--sdcard-writeback` - When the simulation ends, write the card contents back to the source directory or image
+- `--sdcard-out <path>` - Write the final card contents to this path instead of the source: a path ending in `.img` produces a raw image, anything else a directory. Implies write-back. Accepts `<part>=<path>` as well.
+- `--no-sdcard` - Start with an empty card even if wokwi.toml or an `sdcard` directory configure one
+
+Example: feed the firmware a fixture directory and collect the files it produced for assertions in your test script:
+
+```bash
+wokwi-cli --sdcard tests/fixtures/sd --sdcard-out build/sd-out --expect-text "saved config"
+```
+
 ### General
 
 - `--help`, `-h` - Prints help information and exit
 - `--quiet`, `-q` - Quiet: do not print version or status messages
-
 
 ## Debugging with GDB
 
