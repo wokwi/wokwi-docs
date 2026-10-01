@@ -1,14 +1,14 @@
 ---
 title: ESP-IDF Simulation Extension Usage
 sidebar_label: ESP-IDF Simulation Extension
-descripton: idf-wokwi CLI command reference
+description: idf-wokwi CLI command reference
 keywords: [esp-idf, idf, CLI, API, CI Dashboard, esp32, simulation]
 ---
 
 The `idf-wokwi` Python package adds simulation support directly to Espressif's `idf.py` command. From `idf.py`, you can
 run a simulation and pass a selection of options to customize its behavior.
 
-Unlike `wokwi-cli`, you don't need to initalize a project as `idf-wokwi` will implicitly generate the relevant files
+Unlike `wokwi-cli`, you don't need to initialize a project as `idf-wokwi` will implicitly generate the relevant files
 (`wokwi.toml`/`diagram.json`) by inferring information from ESP-IDF. You can however still add your own files if you
 require other components.
 
@@ -42,7 +42,7 @@ Pass any selection of the following commands to `idf.py wokwi` to customize its 
 ## Example Usage
 
 ```bash
-export WOKWI_CI_TOKEN="your-token-here"
+export WOKWI_CLI_TOKEN="your-token-here"
 
 # Build and simulate
 idf.py build
