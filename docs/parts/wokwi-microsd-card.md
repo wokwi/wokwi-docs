@@ -25,6 +25,8 @@ microSD card with SPI interface
 
 When you start the simulation, Wokwi creates a FAT16 file system and attaches it to the microSD card. The simulated card holds up to 8 MB. By default, Wokwi copies all your project files into the microSD card.
 
+In [Wokwi for VS Code](../vscode/project-config#sd-card-contents) (4.0.0+) and the [Wokwi CLI](../wokwi-ci/cli-usage#sd-card) (0.28.0+), the card is filled from an `sdcard` directory next to your `wokwi.toml` (or from a raw disk image), can be larger than 8 MB, and can optionally write the firmware's changes back to your disk when the simulation stops.
+
 ### Uploading binary files
 
 [Paying users](https://wokwi.com/pricing?ref=docs_sdcard) can upload custom binary files (e.g. bitmaps, sounds, etc.) to the microSD card's filesystem. After adding a microSD card to your project, you'll see a new "SD Card" tab next to the other tabs in the code editor. Click on the "Upload Files" buttons and select any files you wish to upload.

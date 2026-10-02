@@ -1,8 +1,17 @@
 ---
 title: Configuring Your Project (wokwi.toml)
 sidebar_label: Project Config
-description: Configure your project using wokwi.toml and diagram.json files, including firmware paths, serial forwarding, custom chips, and network settings.
-keywords: [wokwi.toml, diagram.json, Wokwi project setup, serial forwarding, custom chips, ESP32 WiFi forwarding]
+description: Configure your project using wokwi.toml and diagram.json files, including firmware paths, SD card contents, serial forwarding, custom chips, and network settings.
+keywords:
+  [
+    wokwi.toml,
+    diagram.json,
+    Wokwi project setup,
+    serial forwarding,
+    custom chips,
+    ESP32 WiFi forwarding,
+    SD card,
+  ]
 ---
 
 To simulate your project on Wokwi, you need to create two files in your project's root directory:
@@ -38,7 +47,7 @@ Don't want to write these files by hand? Run [`wokwi-cli init`](../wokwi-ci/cli-
 The extension of the firmware file depends on the board you are using:
 
 | Board                      | Supported firmware types            |
-|----------------------------|-------------------------------------|
+| -------------------------- | ----------------------------------- |
 | Arduino Uno/Mega, ATtiny85 | .hex, .elf                          |
 | Raspberry Pi Pico          | .hex, .uf2, .elf                    |
 | ESP32 Family               | .bin, .uf2, .elf, flasher_args.json |
@@ -82,6 +91,32 @@ vcdFile = 'logic-capture.vcd'
 ```
 
 You can then open the VCD file with [Surfer](https://marketplace.visualstudio.com/items?itemName=surfer-project.surfer), [PulseView or GTKWave](../guides/logic-analyzer#viewing-the-data-in-pulseview) to analyze the captured signals.
+
+### SD card contents
+
+:::info
+Requires Wokwi for VS Code **4.0.0** or newer.
+:::
+
+If your diagram has a [microSD card](../parts/wokwi-microsd-card), create an `sdcard` directory next to `wokwi.toml`. Its contents (including sub-directories) are copied to the card every time the simulation starts. No configuration is needed.
+
+For a different directory, a raw disk image, a bigger card, or to keep the files the firmware writes, add an `[[sdcard]]` section:
+
+```toml
+[[sdcard]]
+folder = 'assets/sd'   # directory to copy to the card
+# image = 'sd.img'     # alternatively, a raw disk image (e.g. dumped from a real card)
+size = '32M'           # card capacity (default: 8M, maximum: 256M)
+writeback = true       # write the card contents back to the folder/image when the simulation stops
+```
+
+- Use either `folder` or `image`. A folder is formatted as FAT16 with the files copied in. An image is served as-is, so it may contain any filesystem your firmware understands. An image smaller than `size` is padded with zeros.
+- `size` accepts `K`, `M` and `G` suffixes, or a number of bytes.
+- `writeback` mirrors the card into the folder or image when the simulation stops or restarts, including removing files the firmware deleted. It is off by default. Add the folder to `.gitignore` if you don't want the firmware's output in version control.
+- Files are read when the simulation starts. After editing them, restart the simulation.
+- With more than one microSD card in the diagram, add one `[[sdcard]]` section per card and set `part` to the card's `id` from diagram.json.
+
+The [Wokwi CLI](../wokwi-ci/cli-usage#sd-card) reads the same configuration.
 
 ### GDB debugging
 
