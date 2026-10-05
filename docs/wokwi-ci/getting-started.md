@@ -28,11 +28,22 @@ Wokwi does not store your firmware, and it is deleted from the cloud server afte
 
 The simulation time is calculated as the sum of the simulation time of all the tests in your CI workflow.
 
-Each user has a limit of simulation time per month, according to their Wokwi plan:
+Each user has a limit of simulation time per rolling 30-day window, according to their Wokwi plan:
 
 - Free users: 50 minutes
-- Hobby and Hobby+ users: 200 minutes
+- Hobby users: 200 minutes
+- Hobby+ users: 500 minutes
 - Pro users: 2000 minutes
+
+The limit is not reset on a fixed date: at any moment, the sum of your simulation time over the previous 30 days must stay under your plan's limit.
+
+Each CI session also has a maximum wall-clock duration, after which the connection is closed:
+
+- Free and Hobby users: 5 minutes
+- Hobby+ users: 10 minutes
+- Pro users: 50 minutes
+
+Long test suites can be split into multiple runs. Each run counts against your minute quota.
 
 For more information about the paid plans, please see the [Pricing page](https://wokwi.com/pricing).
 
