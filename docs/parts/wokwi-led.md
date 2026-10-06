@@ -23,7 +23,7 @@ Standard 5mm LED.
 | label      | Text that appears below the led |                      |
 | gamma      | Gamma correction factor         | "2.8"                |
 | flip       | Flips the led horizontally      | ""                   |
-| fps        | The framerate of the LED        | "80"                 |
+| fps        | Brightness averaging rate       | "80"                 |
 
 Note: To rotate LEDs, click on them and press "R", or set the ["rotate" property](../diagram-format#parts).
 
@@ -55,11 +55,11 @@ For more information about _gamma correction_, including some code examples, che
 
 ### FPS
 
-The `fps` attribute controls the framerate of the LED, that is how often the LED brightness is updated. The default value is 80.
+The simulator displays the average brightness of the LED over a short time window, so PWM (`analogWrite()`) and fast multiplexing show as steady dimmed light instead of flicker. The `fps` attribute sets the length of that window: the brightness is averaged over 8 subframes of 1/fps seconds each, so the default value of 80 averages over the last 100 ms.
 
-If you are using PWM (`analogWrite()`) and noticing flickering, try setting a smaller the `fps` value.
+If you are using PWM and noticing flickering, try a smaller `fps` value (a longer window).
 
-In case you are experiencing LED light ghosting, you can try increasing the `fps` value. For example, this [rotating cube](https://wokwi.com/projects/355020415991153665) uses an `fps` value of 10000 to update the LEDs at a higher rate and avoid ghosting of the rotating cube.
+If you are experiencing ghosting, for example on a multiplexed LED matrix, try a larger `fps` value (a shorter window). The [rotating cube](https://wokwi.com/projects/355020415991153665) project uses an `fps` value of 10000 to keep its fast-changing LEDs crisp.
 
 ## Simulator examples
 
