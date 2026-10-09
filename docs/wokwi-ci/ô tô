@@ -1,0 +1,172 @@
+LiquidCrystal I2C
+#include <Wire.h>
+#include <LiquidCrystal_I2C.h>
+
+// Khởi tạo màn hình LCD2004 (Địa chỉ I2C 0x27 hoặc 0x3F)
+LiquidCrystal_I2C lcd(0x27, 20, 4);
+
+// Cấu hình chân cắm GPIO trên ESP32
+#define POT_PIN         34  // Biến trở (Analog In)
+#define BTN_MODE_PIN    13  // Nút chuyển chế độ
+#define BTN_NEXT_PIN    12  // Nút Chuyển bài / Tiến kênh
+#define BTN_PREV_PIN    14  // Nút Lùi bài / Lùi kênh
+
+// Khai báo các chế độ hoạt động
+enum MediaMode { MODE_MP3, MODE_RADIO };
+MediaMode currentMode = MODE_MP3;
+
+// Danh sách danh mục MP3
+const char* mp3Playlist[] = {
+  "01. Shape of You   ",
+  "02. Hotel California",
+  "03. Despacito      ",
+  "04. Bohemian Rapsody"
+};
+const int totalTracks = 4;
+int currentTrack = 0;
+
+// Danh sách kênh Radio FM cài sẵn
+const float radioStations[] = { 91.0, 99.9, 102.7, 104.5 };
+const int totalStations = 4;
+int currentStation = 0;
+
+// Biến lưu trạng thái chống dội nút nhấn (Debounce)
+unsigned long lastDebounceTime = 0;
+const unsigned long debounceDelay = 200; // ms
+
+// Biến lưu trữ giá trị đọc trước đó để giảm nhấp nháy màn hình
+int lastVolume = -1;
+float lastFrequency = -1.0;
+
+void setup() {
+  Serial.begin(115200);
+
+  // Khởi tạo màn hình LCD với SDA=21, SCL=22
+  Wire.begin(21, 22);
+  lcd.init();
+  lcd.backlight();
+
+  // Cấu hình các nút nhấn với điện trở kéo lên nội bộ
+  pinMode(BTN_MODE_PIN, INPUT_PULLUP);
+  pinMode(BTN_NEXT_PIN, INPUT_PULLUP);
+  pinMode(BTN_PREV_PIN, INPUT_PULLUP);
+
+  // Hiển thị giao diện ban đầu
+  renderUI();
+}
+
+void loop() {
+  handleButtons();
+  handlePotentiometer();
+  delay(20);
+}
+
+// Xử lý sự kiện nhấn nút
+void handleButtons() {
+  if (millis() - lastDebounceTime < debounceDelay) return;
+
+  // Nút Mode: Chuyển MP3 <-> Radio
+  if (digitalRead(BTN_MODE_PIN) == LOW) {
+    currentMode = (currentMode == MODE_MP3) ? MODE_RADIO : MODE_MP3;
+    lastDebounceTime = millis();
+    renderUI();
+    return;
+  }
+
+  // Nút Next: Kế tiếp
+  if (digitalRead(BTN_NEXT_PIN) == LOW) {
+    if (currentMode == MODE_MP3) {
+      currentTrack = (currentTrack + 1) % totalTracks;
+    } else {
+      currentStation = (currentStation + 1) % totalStations;
+    }
+    lastDebounceTime = millis();
+    renderUI();
+    return;
+  }
+
+  // Nút Prev: Trở về trước
+  if (digitalRead(BTN_PREV_PIN) == LOW) {
+    if (currentMode == MODE_MP3) {
+      currentTrack = (currentTrack - 1 + totalTracks) % totalTracks;
+    } else {
+      currentStation = (currentStation - 1 + totalStations) % totalStations;
+    }
+    lastDebounceTime = millis();
+    renderUI();
+    return;
+  }
+}
+
+// Xử lý giá trị từ Biến trở
+void handlePotentiometer() {
+  int rawValue = analogRead(POT_PIN);
+
+  if (currentMode == MODE_MP3) {
+    // Chế độ MP3: Tương ứng chỉnh Âm lượng (0 - 100%)
+    int volume = map(rawValue, 0, 4095, 0, 100);
+    if (abs(volume - lastVolume) >= 2) {
+      lastVolume = volume;
+      updateVolumeBar(volume);
+    }
+  } else {
+    // Chế độ Radio: Tương ứng Dò tần số FM (87.5 MHz - 108.0 MHz)
+    float freq = 87.5 + ((float)rawValue / 4095.0) * (108.0 - 87.5);
+    if (abs(freq - lastFrequency) >= 0.2) {
+      lastFrequency = freq;
+      updateRadioFrequency(freq);
+    }
+  }
+}
+
+// Vẽ toàn bộ khung giao diện LCD
+void renderUI() {
+  lcd.clear();
+  lcd.setCursor(0, 0);
+  lcd.print("=== CAR MEDIA SYSTEM ===");
+
+  if (currentMode == MODE_MP3) {
+    lcd.setCursor(0, 1);
+    lcd.print("Mode: MP3 PLAYER    ");
+    lcd.setCursor(0, 2);
+    lcd.print("Track: ");
+    lcd.print(mp3Playlist[currentTrack]);
+
+    lastVolume = -1; // Reset để bắt buộc cập nhật lại Volume bar
+    handlePotentiometer();
+  } else {
+    lcd.setCursor(0, 1);
+    lcd.print("Mode: FM RADIO      ");
+    lcd.setCursor(0, 2);
+    lcd.print("Preset: ");
+    lcd.print(radioStations[currentStation], 1);
+    lcd.print(" MHz    ");
+
+    lastFrequency = -1.0; // Reset để bắt buộc cập nhật lại Tần số Dò
+    handlePotentiometer();
+  }
+}
+
+// Cập nhật thanh âm lượng dạng đồ họa [====      ]
+void updateVolumeBar(int volume) {
+  lcd.setCursor(0, 3);
+  lcd.print("Vol: [");
+  int blocks = map(volume, 0, 100, 0, 8);
+  for (int i = 0; i < 8; i++) {
+    if (i < blocks) lcd.print("=");
+    else lcd.print(" ");
+  }
+  lcd.print("] ");
+  if (volume < 10) lcd.print(" ");
+  if (volume < 100) lcd.print(" ");
+  lcd.print(volume);
+  lcd.print("%");
+}
+
+// Cập nhật tần số dò sóng Radio thủ công
+void updateRadioFrequency(float freq) {
+  lcd.setCursor(0, 3);
+  lcd.print("Tuning: ");
+  lcd.print(freq, 1);
+  lcd.print(" MHz     ");
+}
