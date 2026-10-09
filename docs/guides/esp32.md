@@ -115,7 +115,7 @@ The table below covers the most popular ESP32 chips. For the current state of th
 | I2S                | 🟡    | ❌  | ❌  | ❌  | ❌  | ❌  | [Implementation in progress](https://github.com/wokwi/wokwi-features/issues/213) |
 | SPI                | ✔️    | ✔️ | ✔️ | ✔️ | ✔️ | ✔️ |                                                                    |
 | TWAI               | 🟡    | 🟡 | 🟡 | 🟡 | 🟡 | 🟡 |                                                                    |
-| RMT                | 🟡    | 🟡 | 🟡 | 🟡 | 🟡 | 🟡 | Transmit-only, use to control WS2812 LED strips                    |
+| RMT                | ✔️    | ✔️ | ✔️ | ✔️ | ✔️ | ✔️ |                                                           |
 | LEDC PWM           | ✔️    | ✔️ | ✔️ | ✔️ | ✔️ | ✔️ | Used by analogWrite(), Servo, Buzzer, etc.                         |
 | MCPWM              | ❌     | ❌  | —  | ❌  | ❌  | ❌  |                                                                    |
 | PCNT               | ✔️    | ✔️ | —  | ✔️ | ✔️ | ✔️ |                                                                    |
