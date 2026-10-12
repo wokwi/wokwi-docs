@@ -20,7 +20,7 @@ MQ2 Gas Sensor module
 
 | Name      | Description                                      | Default value |
 | --------- | ------------------------------------------------ | ------------- |
-| ppm       | Initial gas concentration (in parts per million) | "400"         |
+| ppm       | Initial gas concentration (in parts per million) | "100"         |
 | threshold | Digital output threshold voltage                 | "4.4"         |
 
 ## Operation
