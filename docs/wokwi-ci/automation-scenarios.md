@@ -67,7 +67,7 @@ Check if a pin is set to an expected value.
 expect-pin:
   part-id: esp
   pin: 2
-  expected: 1
+  value: 1
 ```
 
 ### Control a Part (`set-control`)
