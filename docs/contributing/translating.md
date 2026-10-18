@@ -1,9 +1,9 @@
----
+/led1,2,3,4y5 /parpadear---
 title: Translating Wokwi
 sidebar_label: Translating
 description: Contribute translations for Wokwi so even more people can enjoy using it!
 ---
-
+/buzzer/music/happybirthday
 This page explains how you can contribute translations to Wokwi.
 
 ## Translating the user interface
