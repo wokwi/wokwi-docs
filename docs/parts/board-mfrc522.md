@@ -173,12 +173,12 @@ steps:
   # Select Blue Card and present it
   - set-control:
       part-id: rfid1
-      control: card
+      name: card
       value: 0
 
   - set-control:
       part-id: rfid1
-      control: tagPresent
+      name: tagPresent
       value: 1
 
   - wait-serial: 'Welcome, Alice'
@@ -186,7 +186,7 @@ steps:
   # Remove card
   - set-control:
       part-id: rfid1
-      control: tagPresent
+      name: tagPresent
       value: 0
 
   - delay: 500ms
@@ -194,12 +194,12 @@ steps:
   # Select Red Card (unauthorized)
   - set-control:
       part-id: rfid1
-      control: card
+      name: card
       value: 3
 
   - set-control:
       part-id: rfid1
-      control: tagPresent
+      name: tagPresent
       value: 1
 
   - wait-serial: 'Access Denied'

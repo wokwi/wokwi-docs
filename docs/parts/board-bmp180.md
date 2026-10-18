@@ -112,7 +112,7 @@ steps:
   # Change the temperature to 30.5°C
   - set-control:
       part-id: bmp1
-      control: temperature
+      name: temperature
       value: 30.5
 
   # Verify the new temperature is read
@@ -121,7 +121,7 @@ steps:
   # Change the pressure to simulate higher altitude
   - set-control:
       part-id: bmp1
-      control: pressure
+      name: pressure
       value: 90000
 
   # Verify the new pressure is read

@@ -108,12 +108,12 @@ The following example simulates a button press on "btn1" for 200ms:
 ```yaml
 - set-control:
     part-id: btn1
-    control: pressed
+    name: pressed
     value: 1
 - delay: 200ms
 - set-control:
     part-id: btn1
-    control: pressed
+    name: pressed
     value: 0
 ```
 

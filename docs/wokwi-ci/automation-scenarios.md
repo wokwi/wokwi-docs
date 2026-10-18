@@ -24,7 +24,7 @@ steps:
   # List of steps:
   - set-control:
       part-id: btn1
-      control: pressed
+      name: pressed
       value: 1
   - delay: 500ms
   - wait-serial: 'Button 1 pressed'
@@ -59,14 +59,14 @@ Check if a pin is set to an expected value.
 | Name | Description |
 | :- | :- |
 | `part-id` | ID of the target compontent |
-| `pin` | Name of pin to check |
+| `name` | Name of the pin to check |
 | `value` | Expected value of the pin |
 
 #### Example Usage
 ```yaml
 expect-pin:
   part-id: esp
-  pin: 2
+  name: 2
   value: 1
 ```
 
@@ -78,16 +78,20 @@ list of [supported parts](#supported-parts-with-automation-controls) below.
 | Name | Description |
 | :- | :- |
 | `part-id` | ID of the target compontent |
-| `control` | Aspect of the target compontent to modify (e.g. temperature, humidity) |
-| `value` | Value to set the `control` to |
+| `name` | Name of the control to modify (e.g. temperature, humidity) |
+| `value` | Value to set the control to |
 
 #### Example Usage
 ```yaml
 set-control:
   part-id: dht
-  control: humidity
+  name: humidity
   value: 39
 ```
+
+:::note
+`name` replaced `control` in `set-control` and `pin` in `expect-pin` in Wokwi CLI 0.22.1. The old keys still work.
+:::
 
 ### Wait and Match Text from Serial (`wait-serial`)
 Wait for serial console output which matches a given string.

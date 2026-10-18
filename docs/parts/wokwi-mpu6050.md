@@ -100,7 +100,7 @@ The following example set the temperature to 25°C:
 ```yaml
 - set-control:
     part-id: imu1
-    control: temperature
+    name: temperature
     value: 25
 ```
 

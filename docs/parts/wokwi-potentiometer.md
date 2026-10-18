@@ -73,7 +73,7 @@ The following example set the potentiometer to the middle position:
 ```yaml
   - set-control:
       part-id: pot1
-      control: position
+      name: position
       value: 0.5
 ```
 

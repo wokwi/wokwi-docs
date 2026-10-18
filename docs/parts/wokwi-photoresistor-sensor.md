@@ -90,7 +90,7 @@ The following example sets the illumination to 100 lux:
 ```yaml
   - set-control:
       part-id: photoresistor1
-      control: lux
+      name: lux
       value: 100
 ```
 
