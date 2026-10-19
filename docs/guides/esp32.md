@@ -221,3 +221,7 @@ To override the maximum CPU frequency, you can set the "cpuFrequency" attribute 
 | Attribute    | Description                                         | Default |
 |--------------|-----------------------------------------------------|---------|
 | cpuFrequency | Maximum simulated CPU frequency, e.g. "16" or "max" | "auto"  |
+
+### Heap monitoring in CI
+
+For ESP-IDF firmware, the [Wokwi CLI](../wokwi-ci/cli-usage) can follow the free heap during a simulation and fail the run when it drops below a limit, which catches memory leaks without any logging code in your firmware. See [Heap Monitoring](../wokwi-ci/heap-monitoring).

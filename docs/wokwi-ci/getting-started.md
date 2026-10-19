@@ -66,6 +66,7 @@ The Wokwi CLI includes experimental support for the [Model Context Protocol (MCP
 - [Install the Wokwi CLI](./cli-installation) to run your firmware on your local machine or CI system.
 - [Write automation scenarios](./automation-scenarios) to automate the simulation and test your firmware.
 - [Use Wokwi with GitHub Actions](./github-actions) to run your tests on every commit.
+- [Catch memory leaks with heap monitoring](./heap-monitoring) in your ESP-IDF firmware.
 - [Check out the example projects](./github-actions#examples) that are set up to run on Wokwi CI.
 - [Set up MCP support](./mcp-support) to integrate Wokwi with AI agents.
 - [Join the Wokwi Discord server](https://wokwi.com/discord) to get help and share your projects with the community.

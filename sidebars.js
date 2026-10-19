@@ -116,6 +116,7 @@ module.exports = {
       'wokwi-ci/idf-wokwi-usage',
       'wokwi-ci/github-actions',
       'wokwi-ci/automation-scenarios',
+      'wokwi-ci/heap-monitoring',
       'wokwi-ci/mcp-support',
     ],
     'Contributing': [

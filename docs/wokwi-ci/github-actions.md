@@ -16,7 +16,7 @@ You can use Wokwi CI with GitHub Actions to run your tests on every commit. You 
     expect_text: 'Hello, world!' # optional
 ```
 
-For a complete list of options, check out the [action's README](https://github.com/wokwi/wokwi-ci-action?tab=readme-ov-file#usage).
+For a complete list of options, check out the [action's README](https://github.com/wokwi/wokwi-ci-action?tab=readme-ov-file#usage). For ESP-IDF firmware, the `heap_interval`, `heap_min_free` and `heap_csv` inputs turn on [heap monitoring](./heap-monitoring), which fails the test when the firmware leaks memory.
 
 ## CLI tokens
 
@@ -37,6 +37,7 @@ The following projects are set up to run on Wokwi CI. You can use them as a refe
 - [Raspberry Pi Pico SDK](https://github.com/wokwi/pico-sdk-blink) - Includes an [automation scenario](https://github.com/wokwi/pico-sdk-blink/blob/main/blink.test.yaml) that verifies the LED blinking pattern.
 - [PlatformIO Pushbutton Counter](https://github.com/wokwi/platform-io-esp32-counter-ci) - Includes an [automation scenario](https://github.com/wokwi/platform-io-esp32-counter-ci/blob/main/button.test.yaml) that pushes the button and checks the serial output.
 - [ESP32-C6 LP I2C (Low Power)](https://github.com/wokwi/esp32c6-i2c-lp) - Includes an [automation scenario](https://github.com/wokwi/esp32c6-i2c-lp/blob/main/lp.test.yaml) that interacts with an I2C device.
+- [ESP32-S3 Heap Leak Demo](https://github.com/wokwi/esp32-heap-leak-demo) - A test that fails when the firmware leaks memory, using [heap monitoring](./heap-monitoring).
 - [Embedded Wizard Breakout Game](https://github.com/wokwi/esp-wrover-kit-embedded-wizard-wokwi) - Example of taking a screenshot of the simulated LCD display.
 
 ## Additional resources

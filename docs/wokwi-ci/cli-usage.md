@@ -55,11 +55,15 @@ You can use the following options to customize the CLI behavior:
 - `--screenshot-file <string>` - File name to save the screenshot to (default: screenshot.png)
 - `--vcd-file <path>` - Export [Logic Analyzer](../parts/wokwi-logic-analyzer) data to a VCD file
 
-### SD card
+### Heap monitoring
 
-:::info
-Requires Wokwi CLI **0.28.0** or newer.
-:::
+Follow the free heap of ESP-IDF firmware and fail the run when it drops below a limit, without any logging code in the firmware. Needs the ELF file. See [Heap Monitoring](./heap-monitoring) for details.
+
+- `--heap-interval <ms>` - Sample the heap every `<ms>` milliseconds of simulated time (default: 1000)
+- `--heap-min-free <bytes>` - Fail the run when the free heap drops below `<bytes>`
+- `--heap-csv <path>` - Write every sample to a CSV file
+
+### SD card
 
 The `[[sdcard]]` section in wokwi.toml is described in [SD card contents](../vscode/project-config#sd-card-contents). These flags override it (flags > wokwi.toml > `sdcard` directory):
 
