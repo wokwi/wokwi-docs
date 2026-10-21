@@ -59,7 +59,16 @@ TEST FAILED.
 
 The summary shows the free heap at the first and the last sample, the lowest free heap the firmware reached, and how fast the heap shrank. When the free heap drops below `--heap-min-free`, the run fails with exit code 1.
 
-The CSV file is written as the samples arrive, so it is complete even when the run fails. Upload it as a CI artifact to chart the heap over time.
+The CSV file is written as the samples arrive, so it is complete even when the run fails. The [example project](#example-project) includes `scripts/plot-heap.py`, which turns it into a chart:
+
+```bash
+pip install matplotlib
+python3 scripts/plot-heap.py heap.csv --limit 350000
+```
+
+Here is the run above:
+
+![Free heap falling steadily until it crosses the 350,000-byte limit at 8 seconds](./images/heap-plot.png)
 
 ### Choosing a limit
 
@@ -90,7 +99,7 @@ The [Wokwi CI action](./github-actions) takes the heap options as the `heap_inte
 
 ## Example project
 
-The [ESP32-S3 heap leak demo](https://github.com/wokwi/esp32-heap-leak-demo) is a complete project you can copy: firmware with a leak in its request handler, a scenario that sends 200 requests, and a GitHub Actions workflow that fails once the leak has eaten 38 KB of heap. Its README shows where the leak is and how to fix it.
+The [ESP32-S3 heap leak demo](https://github.com/wokwi/esp32-heap-leak-demo) is a complete project you can copy: firmware with a leak in its request handler, a scenario that sends 200 requests, and a GitHub Actions workflow that fails once the leak has eaten 38 KB of heap and shows the heap plot in the job summary. Its README shows where the leak is and how to fix it.
 
 ## Notes
 
