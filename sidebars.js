@@ -22,6 +22,8 @@ module.exports = {
       'parts/board-grove-oled-sh1107',
       'parts/board-mfrc522',
       'parts/board-ssd1306',
+      'parts/board-pi-pico-2',
+      'parts/board-pi-pico-2w',
       'parts/board-st-nucleo-c031c6',
       'parts/board-st-nucleo-l031k6',
       'parts/board-stm32-bluepill',

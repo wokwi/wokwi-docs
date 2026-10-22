@@ -79,6 +79,9 @@ If your simulation project contains code, the diagram should include a microcont
 - [`wokwi-arduino-mega`](parts/wokwi-arduino-mega) - Arduino Mega 2560
 - [`wokwi-arduino-uno`](parts/wokwi-arduino-uno) - Arduino Uno R3
 - [`wokwi-pi-pico`](parts/wokwi-pi-pico) - Raspberry Pi Pico
+- `board-pi-pico-w` - Raspberry Pi Pico W
+- [`board-pi-pico-2`](parts/board-pi-pico-2) - Raspberry Pi Pico 2
+- [`board-pi-pico-2w`](parts/board-pi-pico-2w) - Raspberry Pi Pico 2 W
 - `board-esp32-devkit-c-v4` - ESP32 (official devkit)
 - `wokwi-esp32-devkit-v1` - ESP32 (unofficial devkit)
 - `board-esp32-c3-devkitm-1` - ESP32-C3

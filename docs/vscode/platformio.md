@@ -47,7 +47,7 @@ Replace `esp32dev` with your environment name. The firmware file depends on the 
 | ----------------------------- | ------------------------------------------------------------------------------------- | ------------------------------- |
 | ESP32 family                  | `.pio/build/<env>/firmware.bin` (see [below](#esp32-application-image-vs-full-image)) | `.pio/build/<env>/firmware.elf` |
 | Arduino Uno / Mega / ATtiny85 | `.pio/build/<env>/firmware.hex`                                                       | `.pio/build/<env>/firmware.elf` |
-| Raspberry Pi Pico             | `.pio/build/<env>/firmware.uf2`                                                       | `.pio/build/<env>/firmware.elf` |
+| Raspberry Pi Pico / Pico 2    | `.pio/build/<env>/firmware.uf2`                                                       | `.pio/build/<env>/firmware.elf` |
 | STM32                         | `.pio/build/<env>/firmware.bin`                                                       | `.pio/build/<env>/firmware.elf` |
 
 If `platformio.ini` has several environments, one `wokwi.toml` describes one of them. To simulate another environment, change the paths.
@@ -71,6 +71,8 @@ If `platformio.ini` has several environments, one `wokwi.toml` describes one of 
 | `uno`                                            | `wokwi-arduino-uno`        |
 | `megaatmega2560`                                 | `wokwi-arduino-mega`       |
 | `pico`                                           | `wokwi-pi-pico`            |
+| `rpipico2`                                       | `board-pi-pico-2`          |
+| `rpipico2w`                                      | `board-pi-pico-2w`         |
 
 See [ESP32 boards](../guides/esp32#esp32-boards) for the complete list. Then press **F1** and select "**Wokwi: Start Simulator**".
 
