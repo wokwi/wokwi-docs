@@ -18,6 +18,7 @@ module.exports = {
     'Diagram Reference': [
       'diagram-format',
       'parts/board-bmp180',
+      'parts/board-esp-mosaico',
       'parts/board-franzininho-wifi',
       'parts/board-grove-oled-sh1107',
       'parts/board-mfrc522',

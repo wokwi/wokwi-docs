@@ -15,7 +15,7 @@ The following microcontrollers are currently supported:
 | STM32                             | [STM32C031](../parts/board-st-nucleo-c031c6), [STM32L031](../parts/board-st-nucleo-l031k6), [STM32F103C8](../parts/board-stm32-bluepill.md)                                                        |
 | Pi Pico                           | RP2040 ([Raspberry Pi Pico](../parts/wokwi-pi-pico), Pico W), a dual-core ARM Cortex-M0+ microcontroller<br /> RP2350 ([Raspberry Pi Pico 2](../parts/board-pi-pico-2), [Pico 2 W](../parts/board-pi-pico-2w)), a dual-core ARM Cortex-M33 microcontroller                                                                                                                             |
 
-\* ESP32-P4 support is in beta, ESP32-C5 and ESP32-S31 support is in alpha.
+\* ESP32-C5, ESP32-P4 and ESP32-S31 support is in beta.
 
 ## Sensors
 
