@@ -42,19 +42,26 @@ To touch the display in the simulator, click on it with the mouse, or drag the m
 
 This table summarizes the current status of the board features:
 
-| Feature         | Status | Notes                                                               |
-| --------------- | ------ | ------------------------------------------------------------------- |
-| Display         | ✔️     | RGB565 pixels. Brightness control and rounded corners not simulated |
-| Touch           | ✔️     | Up to two touch points                                              |
-| Buttons         | ❌     |                                                                     |
-| Audio           | ❌     |                                                                     |
-| IMU             | ❌     |                                                                     |
-| Vibration motor | ❌     |                                                                     |
+| Feature                      | Status | Notes                                                               |
+| ---------------------------- | ------ | ------------------------------------------------------------------- |
+| Display (CO5300)             | ✔️     | RGB565 pixels. Brightness control and rounded corners not simulated |
+| Touch (CST9220)              | ✔️     | Up to two touch points                                              |
+| Charge LED                   | 🟡     | Always white (battery full)                                         |
+| Buttons                      | ❌     | BOOT, function (GPIO7) and power buttons                            |
+| Audio codec (ES8311)         | ❌     | Speaker (NS4150B amplifier on GPIO45) and microphone                |
+| IMU (BMI270)                 | 🧩     | I2C address 0x69                                                    |
+| Magnetometers (2x BMM150)    | 🧩     | I2C addresses 0x11 and 0x12                                         |
+| Vibration motor              | ❌     | GPIO8                                                               |
+| Battery fuel gauge (BQ27220) | 🧩     | I2C address 0x55                                                    |
+| SPI NAND flash (1 Gbit)      | ❌     | GPIO20 to GPIO25                                                    |
 
 Legend:  
 ✔️ Simulated  
 🟡 Partial implementation/work in progress  
-❌ Not implemented
+❌ Not implemented  
+🧩 Not implemented, can be added as a [custom chip](../chips-api/getting-started). If you need it, [let us know by opening an issue](https://github.com/wokwi/wokwi-features/issues/new?labels=enhancement&template=feature_request.md).
+
+The touch controller is the only device on the I2C bus (GPIO56 / GPIO3), so the codec, IMU, magnetometers and fuel gauge don't answer. Drivers for them will report that the device was not found.
 
 ### Serial Monitor
 
