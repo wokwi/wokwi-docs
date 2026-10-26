@@ -5,7 +5,7 @@
   "scripts": {
     "docusaurus": "docusaurus",
     "start": "docusaurus start",
-    "build": "docusaurus build && node scripts/thumb-urls.js",
+    "build": "docusaurus build && node scripts/social-thumbnails.mjs",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
     "serve": "docusaurus serve",
@@ -15,11 +15,14 @@
     "@algolia/client-search": "^4.22.0",
     "@docusaurus/core": "^3.6.1",
     "@docusaurus/preset-classic": "^3.6.1",
+    "@fontsource/inter": "^5.3.0",
     "@mdx-js/react": "^3.0.0",
+    "@resvg/resvg-js": "^2.6.2",
     "clsx": "^1.1.1",
     "glob": "^11.0.3",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "satori": "^0.33.5"
   },
   "devDependencies": {
     "@types/react": "^18.2.47",
