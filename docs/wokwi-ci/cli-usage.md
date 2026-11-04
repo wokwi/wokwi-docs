@@ -50,7 +50,7 @@ You can use the following options to customize the CLI behavior:
 - `--expect-text <string>` - Expect the given text in the output
 - `--fail-text <string>` - Fail if the given text is found in the output
 - `--scenario <path>` - Path to an [automation scenario](./automation-scenarios) file, relative to project root
-- `--screenshot-part <string>` - Take a screenshot of the given part id (from diagram.json)
+- `--screenshot-part <string>` - Take a screenshot of the given part id (from diagram.json): a display, a board with a display, or a [custom chip with a display](../chips-api/framebuffer#screenshots-in-ci)
 - `--screenshot-time <number>` - Time in simulation milliseconds to take the screenshot
 - `--screenshot-file <string>` - File name to save the screenshot to (default: screenshot.png)
 - `--vcd-file <path>` - Export [Logic Analyzer](../parts/wokwi-logic-analyzer) data to a VCD file

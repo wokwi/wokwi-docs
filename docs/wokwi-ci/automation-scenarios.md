@@ -129,7 +129,7 @@ Write text or an array of numbers to the serial console.
 </Tabs>
 
 ### Take a Screenshot (`take-screenshot`)
-Take a screenshot of a specific component and compare it with an existing capture.
+Take a screenshot of a specific component and compare it with an existing capture. The screenshot is the framebuffer of the part: a display (such as the ILI9341 or the SSD1306), an LED matrix, a board with a built-in display, or a [custom chip with a display](../chips-api/framebuffer#screenshots-in-ci).
 
 | Name | Description |
 | :- | :- |

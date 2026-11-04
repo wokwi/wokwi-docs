@@ -25,6 +25,10 @@ Copies `data_len` bytes from `data` into the frame buffer, at the given `offset`
 
 Copies `data_len` bytes at the given `offset` of the frame buffer into `data`.
 
+## Screenshots in CI
+
+The Wokwi CLI can capture the framebuffer of your chip as a PNG image, in a [`take-screenshot`](../wokwi-ci/automation-scenarios#take-a-screenshot-take-screenshot) scenario step or with the [`--screenshot-part`](../wokwi-ci/cli-usage#automation) option. Use the id of the chip part in `diagram.json`. For a chip that is part of a [custom board](https://github.com/wokwi/wokwi-boards), use the id of the board part instead: the image also applies the rotation and flips that the board defines for its display.
+
 ## Simulator examples
 
 - [Basic Framebuffer Chip Example](https://wokwi.com/projects/330503863007183442)
