@@ -9,11 +9,11 @@ sidebar_label: wokwi-ir-receiver
 
 ## Pin names
 
-| Name | Description      |
-| ---- | ---------------- |
-| GND  | Ground           |
-| VCC  | Positive voltage |
-| DAT  | Digital output   |
+| Name | Description                     |
+| ---- | ------------------------------- |
+| GND  | Ground                          |
+| VCC  | Positive voltage (2.7V to 5.5V) |
+| DAT  | Digital output                  |
 
 ## Using the receiver
 
