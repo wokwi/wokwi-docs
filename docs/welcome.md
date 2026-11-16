@@ -51,6 +51,7 @@ Here are some quick examples of things you can make with Wokwi:
 - [Advanced debugging with GDB](gdb-debugging) - Powerful Arduino and Raspberry Pi Pico debugger for advanced users.
 - [SD card simulation](parts/wokwi-microsd-card) - Store and retrieve files and directories from your code. [Paying users](https://wokwi.com/pricing?ref=docs_sdcard) can also upload binary files (such as images)
 - [Memory leak detection in CI](wokwi-ci/heap-monitoring) - Follow the free heap of ESP-IDF firmware during a CI run and fail the test when it leaks, with no changes to the firmware.
+- [Agent skills](wokwi-ci/agent-skills) - Teach AI coding agents (Claude Code, Cursor, Codex, Copilot) to run, test and debug your firmware in the simulator, with no board attached.
 - [Chips API](chips-api/getting-started) - Create your own custom chips and parts, and share them with the community.
 - [Visual Studio Code integration](vscode/getting-started) - Simulate your embedded projects directly from VS Code.
 

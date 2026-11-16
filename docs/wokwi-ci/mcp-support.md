@@ -1,5 +1,5 @@
 ---
-title: Model Context Protocola (MCP) support
+title: Model Context Protocol (MCP) support
 sidebar_label: MCP support
 description: Integrate AI agents like Copilot, Claude, Cursor, Gemini, and ChatGPT with Wokwi using the Model Context Protocol (MCP). This guide covers configuring the Wokwi MCP server, enabling real-time simulation, automated testing, and virtual hardware interaction.
 keywords: [MCP, Model Context Protocol, AI integration, Copilot, Claude, ChatGPT, Gemini, Cursor, automated testing, serial console]
@@ -18,6 +18,8 @@ The Wokwi CLI includes an experimental MCP server that allows AI agents to inter
 - Run automated tests on embedded projects
 - Monitor the serial console output and logs
 - Interact with the virtual hardware in real-time
+
+The MCP server gives the agent the tools. To also teach it how to test firmware with Wokwi, for example how to find a memory leak or test a display UI, install the [Wokwi agent skills](./agent-skills). The skills work with or without the MCP server.
 
 ## Configuration
 

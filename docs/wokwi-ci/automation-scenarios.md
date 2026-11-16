@@ -146,6 +146,10 @@ take-screenshot:
   compare-with: 'screenshots/oled-1.png'
 ```
 
+:::tip
+Working with an AI coding agent? The [`test-lvgl-ui` agent skill](./agent-skills) teaches it to build a screenshot regression test for a display UI from the `take-screenshot` and touch steps.
+:::
+
 ### Touch a Part (`touch`)
 
 Simulate a touch tap on a part with a touchscreen. Sends a press event at the given coordinates, and automatically releases after `duration`.

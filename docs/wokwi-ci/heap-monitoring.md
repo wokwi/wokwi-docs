@@ -101,6 +101,10 @@ The [Wokwi CI action](./github-actions) takes the heap options as the `heap_inte
 
 The [ESP32-S3 heap leak demo](https://github.com/wokwi/esp32-heap-leak-demo) is a complete project you can copy: firmware with a leak in its request handler, a scenario that sends 200 requests, and a GitHub Actions workflow that fails once the leak has eaten 38 KB of heap and shows the heap plot in the job summary. Its README shows where the leak is and how to fix it.
 
+:::tip
+Working with an AI coding agent? The [`find-memory-leaks` agent skill](./agent-skills) teaches it to write the soak scenario, pick the limit and set up the CI job.
+:::
+
 ## Notes
 
 - Heap monitoring works with firmware that uses the ESP-IDF heap allocator. For other firmware, the CLI reports that it took no samples.

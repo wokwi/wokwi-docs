@@ -109,6 +109,10 @@ The `--timeout 0` flag disables the default 30 second simulation timeout, which 
 Debugging requires a simulation server that supports it. The Wokwi cloud does; if you run a self-hosted server that doesn't, the CLI prints a warning and runs the simulation without the debugger.
 :::
 
+:::tip
+Working with an AI coding agent? The [`debug-esp32-firmware` agent skill](./agent-skills) teaches it to attach GDB to the simulation, after decoding the panic backtrace and reproducing the crash with an automation scenario.
+:::
+
 ## Linting Diagrams
 
 The `lint` command validates your [diagram.json](../diagram-format) file for errors and warnings before running a simulation:

@@ -1,9 +1,9 @@
 ---
 title: Wokwi for CI and GitHub Actions
 sidebar_label: Introduction
-description: Use Wokwi CI to automate embedded firmware testing in continuous integration workflows like GitHub Actions and GitLab CI. Learn about WITL (Wokwi in the Loop), automation scenarios, simulation limits, and integrating with AI agents using MCP.
+description: Use Wokwi CI to automate embedded firmware testing in continuous integration workflows like GitHub Actions and GitLab CI. Learn about WITL (Wokwi in the Loop), automation scenarios, simulation limits, and working with AI agents through agent skills and MCP.
 
-keywords: [Wokwi CI, embedded testing, continuous integration, GitHub Actions, GitLab CI, firmware simulation, automation scenarios, Wokwi CLI, WITL, Model Context Protocol, MCP, AI-assisted development, simulation limits, embedded workflows]
+keywords: [Wokwi CI, embedded testing, continuous integration, GitHub Actions, GitLab CI, firmware simulation, automation scenarios, Wokwi CLI, WITL, agent skills, Model Context Protocol, MCP, AI-assisted development, simulation limits, embedded workflows]
 ---
 
 Wokwi provides a robust simulation solution for automated testing of your embedded firmware on CI systems like [GitHub Actions](./github-actions), GitLab CI, and others. You can use Wokwi to run your tests on every commit, and get instant feedback on your code changes.
@@ -59,7 +59,10 @@ wokwi-cli --timeout 10000
 
 ## AI Agent Integration
 
-The Wokwi CLI includes experimental support for the [Model Context Protocol (MCP)](./mcp-support), enabling AI agents to interact with Wokwi's simulation capabilities. This allows AI assistants to run automated tests, simulate hardware behavior, and integrate Wokwi into AI-powered development workflows.
+AI coding agents can use Wokwi to check the firmware they write, without a board on the desk:
+
+- The [Wokwi agent skills](./agent-skills) teach agents such as Claude Code, Cursor, Codex and Copilot to test firmware with the Wokwi CLI: find memory leaks, test a display UI, debug a crash, or verify an ESP-IDF build.
+- The Wokwi CLI includes experimental support for the [Model Context Protocol (MCP)](./mcp-support), enabling AI agents to interact with Wokwi's simulation capabilities. This allows AI assistants to run automated tests, simulate hardware behavior, and integrate Wokwi into AI-powered development workflows.
 
 ## Next Steps
 
@@ -68,5 +71,6 @@ The Wokwi CLI includes experimental support for the [Model Context Protocol (MCP
 - [Use Wokwi with GitHub Actions](./github-actions) to run your tests on every commit.
 - [Catch memory leaks with heap monitoring](./heap-monitoring) in your ESP-IDF firmware.
 - [Check out the example projects](./github-actions#examples) that are set up to run on Wokwi CI.
+- [Install the agent skills](./agent-skills) to teach your AI coding agent to test firmware on Wokwi.
 - [Set up MCP support](./mcp-support) to integrate Wokwi with AI agents.
 - [Join the Wokwi Discord server](https://wokwi.com/discord) to get help and share your projects with the community.

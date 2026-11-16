@@ -51,3 +51,7 @@ idf.py wokwi
 # CI mode: exit when expected text appears
 idf.py wokwi --timeout 10000 --expect-text "Hello world!"
 ```
+
+:::tip
+Working with an AI coding agent? The [`verify-esp-idf-build` agent skill](./agent-skills) teaches it to run `idf.py wokwi` after a build and check the serial output, so it can verify its changes without a devkit.
+:::

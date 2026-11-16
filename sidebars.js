@@ -120,6 +120,7 @@ module.exports = {
       'wokwi-ci/github-actions',
       'wokwi-ci/automation-scenarios',
       'wokwi-ci/heap-monitoring',
+      'wokwi-ci/agent-skills',
       'wokwi-ci/mcp-support',
     ],
     'Contributing': [
