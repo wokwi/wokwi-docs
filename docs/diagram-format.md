@@ -70,6 +70,26 @@ the simulation may not function correctly.
 Use `wokwi-cli lint` to validate your diagram.json file and catch common issues like unknown part types, invalid pin connections, and duplicate IDs. See the [CLI Usage guide](wokwi-ci/cli-usage#linting-diagrams) for more details.
 :::
 
+### Setting part attributes
+
+Many parts have attributes that customize their behavior and appearance. You set them in the part's `"attrs"` object. Attribute names and values are written as strings, and multiple attributes are separated by commas:
+
+```json
+{
+  "id": "pir1",
+  "type": "wokwi-pir-motion-sensor",
+  "top": -42,
+  "left": 25.81,
+  "attrs": {
+    "delayTime": "10",
+    "inhibitTime": "0.5",
+    "retrigger": "0"
+  }
+}
+```
+
+Each part's reference page lists its attributes and their default values in an "Attributes" table (for example, [wokwi-pir-motion-sensor](parts/wokwi-pir-motion-sensor#attributes)). Any attribute you don't set keeps its default value. Some reference pages also show ready-to-copy `attrs` examples (for example, [wokwi-servo](parts/wokwi-servo#attributes)).
+
 A partial list of part types (e.g. [wokwi-led](parts/wokwi-led)) can be found under the "Diagram Reference" section of this guide. We're currently working to expand this list. Meanwhile, some of the parts are also documented at [Wokwi Elements](https://elements.wokwi.com).
 
 If your simulation project contains code, the diagram should include a microcontroller part that will execute your code. The following microcontrollers are currently supported:

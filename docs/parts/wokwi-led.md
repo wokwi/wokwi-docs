@@ -25,6 +25,8 @@ Standard 5mm LED.
 | flip       | Flips the led horizontally      | ""                   |
 | fps        | Brightness averaging rate       | "80"                 |
 
+For an example of setting attributes in diagram.json, see [Setting part attributes](../diagram-format#setting-part-attributes).
+
 Note: To rotate LEDs, click on them and press "R", or set the ["rotate" property](../diagram-format#parts).
 
 ### Examples

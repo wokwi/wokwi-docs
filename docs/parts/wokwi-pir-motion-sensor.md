@@ -23,6 +23,8 @@ Passive Infrared (PIR) motion sensor.
 | inhibitTime | The number of seconds the sensor will ignore motion when OUT returns to low | "1.2"         |
 | retrigger   | Set to "0" to disable retriggering                                          | ""            |
 
+For an example of setting these attributes in diagram.json, see [Setting part attributes](../diagram-format#setting-part-attributes).
+
 ## Using the sensor
 
 To trigger the PIR motion sensor:
